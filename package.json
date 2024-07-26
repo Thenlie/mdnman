@@ -1,5 +1,6 @@
 {
   "name": "jsman",
+  "type": "module",
   "version": "1.0.0",
   "description": "A JavaScript manual page command line interface",
   "main": "index.js",
@@ -8,5 +9,8 @@
   },
   "keywords": [],
   "author": "Thenlie",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^5.3.2"
+  }
 }
