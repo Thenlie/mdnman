@@ -21,7 +21,8 @@ const printDoc = (document) => {
         '```js',
         '```js-nolint',
         '```html',
-        '```css'
+        '```css',
+        '```plain'
     ]
 
     const mapMarkdownToLang = (markdown) => {
@@ -29,7 +30,8 @@ const printDoc = (document) => {
             '```js': 'javascript',
             '```js-nolint': 'javascript',
             '```html': 'html',
-            '```css': 'css'
+            '```css': 'css',
+            '```plain': 'plaintext'
         }
         return mapping[markdown]
     }
@@ -55,35 +57,40 @@ const printDoc = (document) => {
     });
 }
     
-
 /**
  * Search the lib folder for a directory with a name containing the users search
+ * Pass that directories index.md file on to the print function
  * @param {'html' | 'css' | 'javascript'} technology
  * @param {String} query 
  */
 const findDirectory = (technology, query) => {
     const t = technology.trim().toLowerCase()
     const q = query.trim().toLowerCase()
-    exec(`find ./lib/${t} -name '${q}' -type d`, (error, output) => {
+    exec(`find ./lib/${t} -name '${q}' -type d`, async (error, output) => {
         if (error) {
             console.error(error);
             exit(1)
         }
         const lines = output.trim().split('\n');
-        console.log(lines)
+        let selected;
         if (lines.length === 0) {
             console.log(`Sorry! No results found for ${q}. Please check for typos and search again.`)
         } else if (lines.length === 1) {
-            exec(`cat ${lines[0]}/index.md`, (e, o) => {
-                if (e) {
-                    console.error(e);
-                    exit(1);
-                }
-                printDoc(o)
-            })
+            selected = lines[0];
         } else {
             // prompt with list of files
+            selected = await select({
+                message: 'Chose reference you would like to view',
+                choices: lines.map(line => ({ name: line, value: line }))
+            });
         }
+        exec(`cat ${selected}/index.md`, (error, output) => {
+            if (error) {
+                console.error(error);
+                exit(1);
+            }
+            printDoc(output);
+        })
     });
 }
 
