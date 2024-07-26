@@ -1,20 +1,58 @@
 import { exec } from 'node:child_process';
 import { input, select } from '@inquirer/prompts';
+import { highlight } from 'cli-highlight';
 
 /**
  * Take raw markdown MDN document and format it before outputting to the console
  * @param {String} document 
  */
 const printDoc = (document) => {
-    /**
-     * Remove 'Specifications' section and everything below it
-     * This includes 'Browser Compatibility' and 'See Also'
-     */
+    // Remove 'Specifications' section and everything below it
+    // This includes 'Browser Compatibility' and 'See Also'
     const index = document.indexOf('## Specifications');
     if (index !== -1) {
         document = document.slice(0, index);
     }
-    console.log(document);
+
+    const docArr = document.split('\n');
+    let shouldHighlight = false;
+    let highlightLang = 'javascript';
+    const codeMarkdown = [
+        '```js',
+        '```js-nolint',
+        '```html',
+        '```css'
+    ]
+
+    const mapMarkdownToLang = (markdown) => {
+        const mapping = {
+            '```js': 'javascript',
+            '```js-nolint': 'javascript',
+            '```html': 'html',
+            '```css': 'css'
+        }
+        return mapping[markdown]
+    }
+
+    docArr.forEach((line) => {
+        // Check for syntax highlighting
+        if (codeMarkdown.includes(line)) {
+            shouldHighlight = true;
+            highlightLang = mapMarkdownToLang(line)
+            console.log('-----------------');
+            return;
+        }
+        if (line === '```') {
+            shouldHighlight = false;
+            console.log('-----------------');
+            return;
+        }
+        if (shouldHighlight) {
+            console.log(highlight(line, { language: highlightLang }))
+        } else {
+            console.log(line);
+        }
+    });
 }
     
 
