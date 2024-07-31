@@ -1,9 +1,10 @@
 import { exec } from 'node:child_process';
 import { input, select } from '@inquirer/prompts';
 import { highlight } from 'cli-highlight';
+import { getHeader, stripHeader } from './parser/index.js';
 
 /**
- * Take raw markdown MDN document and format it before outputting to the console
+ * Take raw markdown MDN doc and format it before outputting to the console
  * @param {String} document 
  */
 const printDoc = (document) => {
@@ -14,31 +15,28 @@ const printDoc = (document) => {
         document = document.slice(0, index);
     }
 
-    const docArr = document.split('\n');
+    const header = getHeader(document);
+    console.log(header)
+
+    const strippedDoc = stripHeader(document)
+    const docArr = strippedDoc.split('\n');
     let shouldHighlight = false;
     let highlightLang = 'javascript';
-    const codeMarkdown = [
-        '```js',
-        '```js-nolint',
-        '```html',
-        '```css',
-        '```plain'
-    ]
+    const markdownSyntaxMap = {
+        '```js': 'javascript',
+        '```js-nolint': 'javascript',
+        '```html': 'html',
+        '```css': 'css',
+        '```plain': 'plaintext'
+    }
 
     const mapMarkdownToLang = (markdown) => {
-        const mapping = {
-            '```js': 'javascript',
-            '```js-nolint': 'javascript',
-            '```html': 'html',
-            '```css': 'css',
-            '```plain': 'plaintext'
-        }
-        return mapping[markdown]
+        return markdownSyntaxMap[markdown]
     }
 
     docArr.forEach((line) => {
         // Check for syntax highlighting
-        if (codeMarkdown.includes(line)) {
+        if (line in markdownSyntaxMap) {
             shouldHighlight = true;
             highlightLang = mapMarkdownToLang(line)
             console.log('-----------------');
