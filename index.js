@@ -2,12 +2,16 @@ import { exec } from 'node:child_process';
 import { input, select } from '@inquirer/prompts';
 import { highlight } from 'cli-highlight';
 import { getHeader, stripHeader } from './parser/index.js';
+import fs from 'fs';
+import child_process from 'node:child_process';
 
 /**
  * Take raw markdown MDN doc and format it before outputting to the console
  * @param {String} document 
  */
 const printDoc = (document) => {
+    const outputPath = './out/ref.md'
+    const writeStream = fs.createWriteStream(outputPath, { flags: 'w', encoding: 'utf8' })
     // Remove 'Specifications' section and everything below it
     // This includes 'Browser Compatibility' and 'See Also'
     const index = document.indexOf('## Specifications');
@@ -16,7 +20,7 @@ const printDoc = (document) => {
     }
 
     const header = getHeader(document);
-    console.log(header)
+    writeStream.write(`# ${header.title}\n`)
 
     const strippedDoc = stripHeader(document)
     const docArr = strippedDoc.split('\n');
@@ -39,20 +43,32 @@ const printDoc = (document) => {
         if (line in markdownSyntaxMap) {
             shouldHighlight = true;
             highlightLang = mapMarkdownToLang(line)
-            console.log('-----------------');
+            // console.log('------------');
+            writeStream.write(line + '\n');
             return;
         }
         if (line === '```') {
             shouldHighlight = false;
-            console.log('-----------------');
+            // console.log('------------');
+            writeStream.write(line + '\n');
             return;
         }
         if (shouldHighlight) {
-            console.log(highlight(line, { language: highlightLang }))
+            writeStream.write(line + '\n');
+            // console.log(highlight(line, { language: highlightLang }))
         } else {
-            console.log(line);
+            writeStream.write(line + '\n');
         }
     });
+
+    writeStream.end();
+
+    // open doc in vim
+    const editor = process.env.EDITOR || 'vim';
+    const child = child_process.spawn(editor, [outputPath], {
+        stdio: 'inherit'
+    });
+    child.on('exit', () => {});
 }
     
 /**
