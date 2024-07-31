@@ -1,115 +1,37 @@
-import { exec } from 'node:child_process';
-import { input, select } from '@inquirer/prompts';
-import { highlight } from 'cli-highlight';
-import { getHeader, stripHeader } from './parser/index.js';
 import fs from 'fs';
-import child_process from 'node:child_process';
+import { execSync } from 'node:child_process';
+import { input, select } from '@inquirer/prompts';
+import { printDoc } from './output/index.js';
+import { getSection } from './parser/index.js';
 
-/**
- * Take raw markdown MDN doc and format it before outputting to the console
- * @param {String} document 
- */
-const printDoc = (document) => {
-    const outputPath = './out/ref.md'
-    const writeStream = fs.createWriteStream(outputPath, { flags: 'w', encoding: 'utf8' })
-    // Remove 'Specifications' section and everything below it
-    // This includes 'Browser Compatibility' and 'See Also'
-    const index = document.indexOf('## Specifications');
-    if (index !== -1) {
-        document = document.slice(0, index);
-    }
-
-    const header = getHeader(document);
-    writeStream.write(`# ${header.title}\n`)
-
-    const strippedDoc = stripHeader(document)
-    const docArr = strippedDoc.split('\n');
-    let shouldHighlight = false;
-    let highlightLang = 'javascript';
-    const markdownSyntaxMap = {
-        '```js': 'javascript',
-        '```js-nolint': 'javascript',
-        '```html': 'html',
-        '```css': 'css',
-        '```plain': 'plaintext'
-    }
-
-    const mapMarkdownToLang = (markdown) => {
-        return markdownSyntaxMap[markdown]
-    }
-
-    docArr.forEach((line) => {
-        // Check for syntax highlighting
-        if (line in markdownSyntaxMap) {
-            shouldHighlight = true;
-            highlightLang = mapMarkdownToLang(line)
-            // console.log('------------');
-            writeStream.write(line + '\n');
-            return;
-        }
-        if (line === '```') {
-            shouldHighlight = false;
-            // console.log('------------');
-            writeStream.write(line + '\n');
-            return;
-        }
-        if (shouldHighlight) {
-            writeStream.write(line + '\n');
-            // console.log(highlight(line, { language: highlightLang }))
-        } else {
-            writeStream.write(line + '\n');
-        }
-    });
-
-    writeStream.end();
-
-    // open doc in vim
-    const editor = process.env.EDITOR || 'vim';
-    const child = child_process.spawn(editor, [outputPath], {
-        stdio: 'inherit'
-    });
-    child.on('exit', () => {});
-}
-    
 /**
  * Search the lib folder for a directory with a name containing the users search
- * Pass that directories index.md file on to the print function
+ * Return the contents of the index.md file in that directory as a string
  * @param {'html' | 'css' | 'javascript'} technology
  * @param {String} query 
  */
-const findDirectory = (technology, query) => {
-    const t = technology.trim().toLowerCase()
-    const q = query.trim().toLowerCase()
-    exec(`find ./lib/${t} -name '${q}' -type d`, async (error, output) => {
-        if (error) {
-            console.error(error);
-            exit(1)
-        }
-        const lines = output.trim().split('\n');
-        let selected;
-        if (lines.length === 0) {
-            console.log(`Sorry! No results found for ${q}. Please check for typos and search again.`)
-        } else if (lines.length === 1) {
-            selected = lines[0];
-        } else {
-            // prompt with list of files
-            selected = await select({
-                message: 'Chose reference you would like to view',
-                choices: lines.map(line => ({ name: line, value: line }))
-            });
-        }
-        exec(`cat ${selected}/index.md`, (error, output) => {
-            if (error) {
-                console.error(error);
-                exit(1);
-            }
-            printDoc(output);
-        })
-    });
+const findDirectory = async (technology, query) => {
+    const t = technology.trim().toLowerCase();
+    const q = query.trim().toLowerCase();
+    // find all directories with the query in the name
+    const files = execSync(`find ./lib/${t} -name '${q}' -type d`);
+    const lines = files.toString().trim().split('\n');
+    let selected;
+    if (lines[0] === '') {
+        console.error(`Sorry! No results found for ${q}. Please check for typos and search again.`)
+        return;
+    } else if (lines.length === 1) {
+        selected = lines[0];
+    } else {
+        // prompt with list of files
+        selected = await select({
+            message: 'Chose reference you would like to view',
+            choices: lines.map(line => ({ name: line, value: line }))
+        });
+    }
+    const file = fs.readFileSync(selected + '/index.md').toString();
+    return file;
 }
-
-// Ask user for input of HTML, CSS or JS
-// Ask user for query
 
 const TECHNOLOGY_TYPE = await select({ 
     message: 'Choose the technology you would like to reference', 
@@ -134,9 +56,9 @@ const QUERY = await input({
     required: true
 });
 
-findDirectory(TECHNOLOGY_TYPE, QUERY)
+const doc = await findDirectory(TECHNOLOGY_TYPE, QUERY);
+// printDoc(doc);
 
-// If there is nothing returned, let the user know
-// If there is only one line returned, log that file
-// If there is more than one file, give the user the option to select one
-// Then display that file
+const sec = getSection('Examples', doc);
+// console.log(sec)
+printDoc(sec);
