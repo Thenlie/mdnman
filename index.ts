@@ -4,10 +4,9 @@ import { execSync } from 'node:child_process';
 import { select } from '@inquirer/prompts';
 import { openEditor, OUTPUT_PATH, printDoc, writeDocToFile } from './output/index.js';
 import { getHeader, getSection, stripJsxRef } from './parser/index.js';
+
 const program = new Command();
-
 type SupportedLanguages = 'javascript' | 'html' | 'css';
-
 const GENERIC_ERROR_MESSAGE = 'Error! Something went wrong while attempting to find the selected MDN directory.\nPlease try again with a different query.';
 
 /**
