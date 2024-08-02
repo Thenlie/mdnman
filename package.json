@@ -5,6 +5,9 @@
   "description": "A JavaScript manual page command line interface",
   "main": "index.js",
   "scripts": {
+    "start": "tsx main.ts",
+    "print-headers": "tsx tools/printHeaders.ts",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +16,10 @@
   "dependencies": {
     "@inquirer/prompts": "^5.3.2",
     "cli-highlight": "^2.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.2",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4"
   }
 }

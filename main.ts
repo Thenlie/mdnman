@@ -8,9 +8,9 @@ import { getSection } from './parser/index.js';
  * Search the lib folder for a directory with a name containing the users search
  * Return the contents of the index.md file in that directory as a string
  * @param {'html' | 'css' | 'javascript'} technology
- * @param {String} query 
+ * @param {string} query 
  */
-const findDirectory = async (technology, query) => {
+const findDirectory = async (technology: 'html' | 'css' | 'javascript', query: string) => {
     const t = technology.trim().toLowerCase();
     const q = query.trim().toLowerCase();
     // find all directories with the query in the name
@@ -33,7 +33,7 @@ const findDirectory = async (technology, query) => {
     return file;
 }
 
-const TECHNOLOGY_TYPE = await select({ 
+const TECHNOLOGY_TYPE: 'html' | 'css' | 'javascript' = await select({ 
     message: 'Choose the technology you would like to reference', 
     choices: [
         {
@@ -57,8 +57,12 @@ const QUERY = await input({
 });
 
 const doc = await findDirectory(TECHNOLOGY_TYPE, QUERY);
-// printDoc(doc);
+if(doc) {
+    printDoc(doc);
+} else {
+    console.error('Error! Something went wrong while attempting to find the selected MDN directory.\nPlease try again with a different query.')
+}
 
-const sec = getSection('Examples', doc);
+// const sec = getSection('Examples', doc);
 // console.log(sec)
-printDoc(sec);
+// printDoc(sec);
