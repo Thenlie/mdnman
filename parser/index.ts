@@ -40,9 +40,9 @@ const getHeader = (document: string): MDNHeader | null => {
             failSafe = true;
             break;
         } else {
-            const match = [...docArr[i].matchAll(/[^: ]+/g)];
-            if (match.length === 2 && isHeaderField(match[0][0])) {
-                header[match[0][0]] = match[1][0];
+            const match = [...docArr[i].matchAll(/(\S+):\s*(.+)/g)];
+            if (match?.[0]?.[1] && isHeaderField(match[0][1])) {
+                header[match[0][1]] = match[0][2];
             }
         }
     }
@@ -92,4 +92,14 @@ const getSection = (prefix: string, document: string) => {
     return section.join('\n');
 }
 
-export { getHeader, stripHeader, getSection }
+/**
+ * Removes all text wrapped in double curly brackets from a string
+ * @param {string} document
+ * @example Hello{{ world }}! -> Hello!
+ */
+const stripJsxRef = (document: string) => {
+    const regex = /{{.+?}}/gm;
+    return document.replace(regex, '');
+}
+
+export { getHeader, stripHeader, getSection, stripJsxRef }

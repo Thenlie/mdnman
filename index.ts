@@ -3,8 +3,10 @@ import { Command } from "commander";
 import { execSync } from 'node:child_process';
 import { select } from '@inquirer/prompts';
 import { openEditor, OUTPUT_PATH, printDoc, writeDocToFile } from "./output/index.js";
-import { getSection } from './parser/index.js';
+import { getHeader, getSection, stripJsxRef } from './parser/index.js';
 const program = new Command();
+
+type SupportedLanguages = 'javascript' | 'html' | 'css';
 
 const GENERIC_ERROR_MESSAGE = 'Error! Something went wrong while attempting to find the selected MDN directory.\nPlease try again with a different query.'
 
@@ -14,7 +16,7 @@ const GENERIC_ERROR_MESSAGE = 'Error! Something went wrong while attempting to f
  * @param {'html' | 'css' | 'javascript'} technology
  * @param {string} query 
  */
-const findDirectory = async (technology: 'html' | 'css' | 'javascript', query: string) => {
+const findDirectory = async (technology: SupportedLanguages, query: string) => {
     const t = technology.trim().toLowerCase();
     const q = query.trim().toLowerCase();
     // find all directories with the query in the name
@@ -31,7 +33,12 @@ const findDirectory = async (technology: 'html' | 'css' | 'javascript', query: s
             // prompt with list of files
             selected = await select({
                 message: 'Chose reference you would like to view',
-                choices: lines.map(line => ({ name: line, value: line }))
+                choices: lines.map(line => {
+                    const file = fs.readFileSync(line + '/index.md').toString();
+                    const header = getHeader(file);
+                    if (!header) return { name: line, value: line }
+                    return { name: header.title, value: line }
+                })
             });
         }
         const file = fs.readFileSync(selected + '/index.md').toString();
@@ -42,20 +49,20 @@ const findDirectory = async (technology: 'html' | 'css' | 'javascript', query: s
     }
 }
 
-const commandActionHandler = async (str: string, options: { output: string, section: string }) => {
-    let section = null;
-    const document = await findDirectory('javascript', str)
+const commandActionHandler = async (lang: SupportedLanguages, str: string, options: { output: string, section: string }) => {
+    let document = await findDirectory(lang, str)
     if (!document) {
         console.error(GENERIC_ERROR_MESSAGE);
         return;
     }
     if (options.section !== 'none') {
-        section = getSection(options.section, document)
+        document = getSection(options.section, document)
     }
+    const strippedDoc = stripJsxRef(document);
     if (options.output === 'stdout') {
-        printDoc(section || document);
+        printDoc(strippedDoc);
     } else {
-        writeDocToFile(section || document);
+        writeDocToFile(strippedDoc);
         openEditor(OUTPUT_PATH);
     }
 }
@@ -69,20 +76,20 @@ program.command('js')
     .argument('<string>', 'query to search')
     .option('-o, --output <stdout | vim>', 'output type', 'stdout')
     .option('-s, --section <string>', 'specified section of MDN doc', 'none')
-    .action(async (str, options) => commandActionHandler(str, options));
+    .action(async (str, options) => commandActionHandler('javascript', str, options));
 
 program.command('html')
     .description('Search the MDN HTML reference library')
     .argument('<string>', 'query to search')
     .option('-o, --output <stdout | vim>', 'output type', 'stdout')
     .option('-s, --section <string>', 'specified section of MDN doc', 'none')
-    .action(async (str, options) => commandActionHandler(str, options));
+    .action(async (str, options) => commandActionHandler('html', str, options));
 
 program.command('css')
     .description('Search the MDN CSS reference library')
     .argument('<string>', 'query to search')
     .option('-o, --output <stdout | vim>', 'output type', 'stdout')
     .option('-s, --section <string>', 'specified section of MDN doc', 'none')
-    .action(async (str, options) => commandActionHandler(str, options));
+    .action(async (str, options) => commandActionHandler('css', str, options));
 
 program.parse();
