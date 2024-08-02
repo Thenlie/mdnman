@@ -52,13 +52,14 @@ const writeDocToFile = (document: string) => {
     }
 
     // Remove MDN header and write document to file
+    let doc = document;
     const header = getHeader(document);
     if (header) {
         writeStream.write(`# ${header.title}\n`);
+        doc = stripHeader(document);
     }
-    const strippedDoc = stripHeader(document);
     // Write rest of document to file
-    const docArr = strippedDoc.split('\n');
+    const docArr = doc.split('\n');
     docArr.forEach((line) => writeStream.write(line + '\n'));
 
     writeStream.end();
@@ -107,4 +108,4 @@ const printDoc = (document: string) => {
     });
 };
 
-export { printDoc, writeDocToFile, openEditor };
+export { printDoc, writeDocToFile, openEditor, OUTPUT_PATH };

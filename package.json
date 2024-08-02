@@ -5,7 +5,7 @@
   "description": "A JavaScript manual page command line interface",
   "main": "index.js",
   "scripts": {
-    "start": "tsx main.ts",
+    "start": "tsx index.ts",
     "print-headers": "tsx tools/printHeaders.ts",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,8 @@
   "license": "MIT",
   "dependencies": {
     "@inquirer/prompts": "^5.3.2",
-    "cli-highlight": "^2.1.11"
+    "cli-highlight": "^2.1.11",
+    "commander": "^12.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.2",

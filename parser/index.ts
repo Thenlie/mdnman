@@ -74,9 +74,14 @@ const getSection = (prefix: string, document: string) => {
     let flag = false;
     let heading;
     for (let i = 0; i < docArr.length; i++) {
-        if (docArr[i].startsWith('#') && docArr[i].includes(prefix) && !flag) {
+        if (
+            docArr[i].startsWith('#') && 
+            docArr[i].toLowerCase().includes(prefix.toLowerCase()) && 
+            !flag
+        ) {
             flag = true;
             heading = docArr[i].match(/^#+/)?.[0];
+            section.push(docArr[i])
         } else if (docArr[i].match(/^#+/)?.[0] === heading && flag) {
             flag = false;
             break;
