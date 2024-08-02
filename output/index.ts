@@ -3,14 +3,14 @@ import { getHeader, stripHeader } from '../parser/index.js';
 import fs from 'fs';
 import child_process from 'node:child_process';
 
-const OUTPUT_PATH = './out/ref.md'
+const OUTPUT_PATH = './out/ref.md';
 const MARKDOWN_SYNTAX_MAP: Record<'```js' | '```js-nolint' | '```html' | '```css' | '```plain', string> = {
     '```js': 'javascript',
     '```js-nolint': 'javascript',
     '```html': 'html',
     '```css': 'css',
     '```plain': 'plaintext'
-}
+};
 
 type MarkdownField = keyof typeof MARKDOWN_SYNTAX_MAP;
 
@@ -21,10 +21,10 @@ type MarkdownField = keyof typeof MARKDOWN_SYNTAX_MAP;
  */
 const mapMarkdownToLang = (markdown: string): string | null => {
     if (markdown in MARKDOWN_SYNTAX_MAP) {
-        return MARKDOWN_SYNTAX_MAP[markdown as MarkdownField]
+        return MARKDOWN_SYNTAX_MAP[markdown as MarkdownField];
     }
     return null;
-}
+};
 
 /**
  * Opens a file in the user defined editor or vim
@@ -36,14 +36,14 @@ const openEditor = (path: string) => {
         stdio: 'inherit'
     });
     child.on('exit', () => { });
-}
+};
 
 /**
 * Take raw markdown MDN doc and write it to a file after formatting
 * @param {string} document 
 */
 const writeDocToFile = (document: string) => {
-    const writeStream = fs.createWriteStream(OUTPUT_PATH, { flags: 'w', encoding: 'utf8' })
+    const writeStream = fs.createWriteStream(OUTPUT_PATH, { flags: 'w', encoding: 'utf8' });
     // Remove 'Specifications' section and everything below it
     // This includes 'Browser Compatibility' and 'See Also'
     const index = document.indexOf('## Specifications');
@@ -63,7 +63,7 @@ const writeDocToFile = (document: string) => {
     docArr.forEach((line) => writeStream.write(line + '\n'));
 
     writeStream.end();
-}
+};
 
 /**
 * Take raw markdown MDN doc and format it before outputting to the console
@@ -81,7 +81,7 @@ const printDoc = (document: string) => {
     let strippedDoc = document;
     if (header) {
         console.log(`# ${header.title}`);
-        strippedDoc = stripHeader(document)
+        strippedDoc = stripHeader(document);
     }
     const docArr = strippedDoc.split('\n');
     let shouldHighlight = false;
@@ -91,7 +91,7 @@ const printDoc = (document: string) => {
         // Check for syntax highlighting
         if (line in MARKDOWN_SYNTAX_MAP) {
             shouldHighlight = true;
-            highlightLang = mapMarkdownToLang(line) || 'javascript'
+            highlightLang = mapMarkdownToLang(line) || 'javascript';
             console.log('------------');
             return;
         }
@@ -101,7 +101,7 @@ const printDoc = (document: string) => {
             return;
         }
         if (shouldHighlight) {
-            console.log(highlight(line, { language: highlightLang }))
+            console.log(highlight(line, { language: highlightLang }));
         } else {
             console.log(line);
         }

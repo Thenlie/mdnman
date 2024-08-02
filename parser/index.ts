@@ -20,7 +20,7 @@ type HeaderField = typeof HEADER_FIELDS[number];
  */
 const isHeaderField = (key: string): key is HeaderField => {
     return HEADER_FIELDS.includes(key as HeaderField);
-}
+};
 
 /**
  * Take raw markdown MDN doc and return an object containing the 
@@ -28,7 +28,7 @@ const isHeaderField = (key: string): key is HeaderField => {
  * @param {string} document
  */
 const getHeader = (document: string): MDNHeader | null => {
-    let header: MDNHeader = {};
+    const header: MDNHeader = {};
     let flag = false;
     let failSafe = false;
     const docArr = document.split('\n');
@@ -47,7 +47,7 @@ const getHeader = (document: string): MDNHeader | null => {
         }
     }
     if (!failSafe) return null;
-    return header
+    return header;
 };
 
 /**
@@ -57,10 +57,10 @@ const getHeader = (document: string): MDNHeader | null => {
  */
 const stripHeader = (document: string) => {
     const docArr = document.split('\n');
-    do { docArr.shift() } while (docArr[0] !== '---');
+    do { docArr.shift(); } while (docArr[0] !== '---');
     docArr.shift();
     return docArr.join('\n');
-}
+};
 
 /**
  * Take a raw markdown MDN doc and return the section of the document that
@@ -81,7 +81,7 @@ const getSection = (prefix: string, document: string) => {
         ) {
             flag = true;
             heading = docArr[i].match(/^#+/)?.[0];
-            section.push(docArr[i])
+            section.push(docArr[i]);
         } else if (docArr[i].match(/^#+/)?.[0] === heading && flag) {
             flag = false;
             break;
@@ -90,7 +90,7 @@ const getSection = (prefix: string, document: string) => {
         }
     }
     return section.join('\n');
-}
+};
 
 /**
  * Removes all text wrapped in double curly brackets from a string
@@ -100,6 +100,6 @@ const getSection = (prefix: string, document: string) => {
 const stripJsxRef = (document: string) => {
     const regex = /{{.+?}}/gm;
     return document.replace(regex, '');
-}
+};
 
-export { getHeader, stripHeader, getSection, stripJsxRef }
+export { getHeader, stripHeader, getSection, stripJsxRef };
