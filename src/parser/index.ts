@@ -1,4 +1,4 @@
-type MDNHeader = {
+export type MDNHeader = {
     title?: string,
     slug?: string,
     'page-type'?: string,

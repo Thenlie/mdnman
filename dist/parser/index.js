@@ -17,7 +17,7 @@ const isHeaderField = (key) => {
  * @param {string} document
  */
 const getHeader = (document) => {
-    let header = {};
+    const header = {};
     let flag = false;
     let failSafe = false;
     const docArr = document.split('\n');
@@ -31,10 +31,9 @@ const getHeader = (document) => {
             break;
         }
         else {
-            const match = [...docArr[i].matchAll(/[^: ]+/g)];
-            if (match.length === 2 && isHeaderField(match[0][0])) {
-                console.log('--', match[0], match[1]);
-                header[match[0][0]] = match[1][0];
+            const match = [...docArr[i].matchAll(/(\S+):\s*(.+)/g)];
+            if (match?.[0]?.[1] && isHeaderField(match[0][1])) {
+                header[match[0][1]] = match[0][2];
             }
         }
     }
@@ -67,9 +66,12 @@ const getSection = (prefix, document) => {
     let flag = false;
     let heading;
     for (let i = 0; i < docArr.length; i++) {
-        if (docArr[i].startsWith('#') && docArr[i].includes(prefix) && !flag) {
+        if (docArr[i].startsWith('#') &&
+            docArr[i].toLowerCase().includes(prefix.toLowerCase()) &&
+            !flag) {
             flag = true;
             heading = docArr[i].match(/^#+/)?.[0];
+            section.push(docArr[i]);
         }
         else if (docArr[i].match(/^#+/)?.[0] === heading && flag) {
             flag = false;
@@ -81,4 +83,13 @@ const getSection = (prefix, document) => {
     }
     return section.join('\n');
 };
-export { getHeader, stripHeader, getSection };
+/**
+ * Removes all text wrapped in double curly brackets from a string
+ * @param {string} document
+ * @example Hello{{ world }}! -> Hello!
+ */
+const stripJsxRef = (document) => {
+    const regex = /{{.+?}}/gm;
+    return document.replace(regex, '');
+};
+export { getHeader, stripHeader, getSection, stripJsxRef };

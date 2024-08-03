@@ -3,14 +3,16 @@
   "type": "module",
   "version": "1.0.0",
   "description": "A JavaScript manual page command line interface",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "scripts": {
     "start": "tsx index.ts",
     "print-headers": "tsx tools/printHeaders.ts",
     "build": "tsc",
     "lint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "prerelease": "tsc && eslint",
+    "release": "np"
   },
   "keywords": [],
   "author": "Thenlie",
@@ -29,6 +31,7 @@
     "eslint": "^9.8.0",
     "globals": "^15.9.0",
     "lint-staged": "^15.2.7",
+    "np": "^10.0.7",
     "tsx": "^4.16.5",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.0"

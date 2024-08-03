@@ -3,7 +3,13 @@ import { Command } from 'commander';
 import { execSync } from 'node:child_process';
 import { select } from '@inquirer/prompts';
 import { openEditor, OUTPUT_PATH, printDoc, writeDocToFile } from './output/index.js';
-import { getHeader, getSection, stripJsxRef } from './parser/index.js';
+import { getHeader, stripHeader, getSection, stripJsxRef } from './parser/index.js';
+import path from 'path';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const program = new Command();
 type SupportedLanguages = 'javascript' | 'html' | 'css';
@@ -20,12 +26,13 @@ const findDirectory = async (technology: SupportedLanguages, query: string) => {
     const q = query.trim().toLowerCase();
     // find all directories with the query in the name
     try {
-        const files = execSync(`find ./lib/${t} -name '${q}' -type d`);
+        const currentDir = path.join(__dirname, '..', 'lib');
+        const files = execSync(`find ${currentDir}/${t} -name '${q}' -type d`);
         const lines = files.toString().trim().split('\n');
         let selected;
         if (lines[0] === '') {
             console.error(`Sorry! No results found for ${q}. Please check for typos and search again.`);
-            return;
+            return null;
         } else if (lines.length === 1) {
             selected = lines[0];
         } else {
@@ -35,7 +42,7 @@ const findDirectory = async (technology: SupportedLanguages, query: string) => {
                 choices: lines.map(line => {
                     const file = fs.readFileSync(line + '/index.md').toString();
                     const header = getHeader(file);
-                    if (!header) return { name: line, value: line };
+                    if (!header || !header?.title) return { name: line, value: line };
                     return { name: header.title, value: line };
                 })
             });
@@ -48,7 +55,11 @@ const findDirectory = async (technology: SupportedLanguages, query: string) => {
     }
 };
 
-const commandActionHandler = async (lang: SupportedLanguages, str: string, options: { output: string, section: string }) => {
+const commandActionHandler = async (
+    lang: SupportedLanguages,
+    str: string,
+    options: { output: string, section: string }
+) => {
     let document = await findDirectory(lang, str);
     if (!document) {
         console.error(GENERIC_ERROR_MESSAGE);
@@ -92,3 +103,5 @@ program.command('css')
     .action(async (str, options) => commandActionHandler('css', str, options));
 
 program.parse();
+
+export { findDirectory, writeDocToFile, printDoc, stripJsxRef, getHeader, stripHeader };
