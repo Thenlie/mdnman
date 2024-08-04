@@ -1,6 +1,6 @@
 # JSMan
 
-JavaScript Manual Page CLI made possible by [MDN Web Docs](https://developer.mozilla.org/en-US/).
+JavaScript reference CLI made possible by [MDN Web Docs](https://developer.mozilla.org/en-US/).
 
 ## Usage
 

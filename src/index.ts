@@ -1,9 +1,8 @@
 import fs from 'fs';
-import { Command } from 'commander';
 import { execSync } from 'node:child_process';
 import { select } from '@inquirer/prompts';
-import { openEditor, OUTPUT_PATH, printDoc, writeDocToFile } from './output/index.js';
-import { getHeader, stripHeader, getSection, stripJsxRef } from './parser/index.js';
+import { printDoc, writeDocToFile } from './output/index.js';
+import { getHeader, stripHeader, stripJsxRef } from './parser/index.js';
 import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -11,9 +10,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const program = new Command();
 type SupportedLanguages = 'javascript' | 'html' | 'css';
-const GENERIC_ERROR_MESSAGE = 'Error! Something went wrong while attempting to find the selected MDN directory.\nPlease try again with a different query.';
 
 /**
  * Search the lib folder for a directory with a name containing the users search
@@ -54,54 +51,5 @@ const findDirectory = async (technology: SupportedLanguages, query: string) => {
         return null;
     }
 };
-
-const commandActionHandler = async (
-    lang: SupportedLanguages,
-    str: string,
-    options: { output: string, section: string }
-) => {
-    let document = await findDirectory(lang, str);
-    if (!document) {
-        console.error(GENERIC_ERROR_MESSAGE);
-        return;
-    }
-    if (options.section !== 'none') {
-        document = getSection(options.section, document);
-    }
-    const strippedDoc = stripJsxRef(document);
-    if (options.output === 'stdout') {
-        printDoc(strippedDoc);
-    } else {
-        writeDocToFile(strippedDoc);
-        openEditor(OUTPUT_PATH);
-    }
-};
-
-program
-    .name('jsman')
-    .description('MDN reference CLI');
-
-program.command('js')
-    .description('Search the MDN JavaScript reference library')
-    .argument('<string>', 'query to search')
-    .option('-o, --output <stdout | vim>', 'output type', 'stdout')
-    .option('-s, --section <string>', 'specified section of MDN doc', 'none')
-    .action(async (str, options) => commandActionHandler('javascript', str, options));
-
-program.command('html')
-    .description('Search the MDN HTML reference library')
-    .argument('<string>', 'query to search')
-    .option('-o, --output <stdout | vim>', 'output type', 'stdout')
-    .option('-s, --section <string>', 'specified section of MDN doc', 'none')
-    .action(async (str, options) => commandActionHandler('html', str, options));
-
-program.command('css')
-    .description('Search the MDN CSS reference library')
-    .argument('<string>', 'query to search')
-    .option('-o, --output <stdout | vim>', 'output type', 'stdout')
-    .option('-s, --section <string>', 'specified section of MDN doc', 'none')
-    .action(async (str, options) => commandActionHandler('css', str, options));
-
-program.parse();
 
 export { findDirectory, writeDocToFile, printDoc, stripJsxRef, getHeader, stripHeader };

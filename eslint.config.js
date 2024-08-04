@@ -31,5 +31,8 @@ export default [
             ],
             '@typescript-eslint/no-unused-vars': 'error',
         } 
+    },
+    {
+        ignores: ['dist/*']
     }
 ];
