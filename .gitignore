@@ -1,6 +1,7 @@
 node_modules/
-notes.md
 out/
+.vscode/
 dist/
+notes.md
 headers.txt
 .DS_Store
