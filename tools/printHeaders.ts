@@ -6,7 +6,7 @@ import path from 'path';
  * Will stop printing after 10 lines to avoid spamming the terminal
  */
 
-const DIRECTORY_PATH = './lib';
+const DIRECTORY_PATH = './lib/javascript';
 const OUTPUT_FILE_PATH = 'headers.txt';
 const LINE_COUNT = 10;
 
@@ -52,7 +52,7 @@ const traverseDirectory = async (dir: string, outputStream: fs.WriteStream) => {
                     } else if (lines[i] === '---' && flag) {
                         outputStream.write('---\n');
                         flag = false;
-                        return;
+                        break;
                     } else {
                         outputStream.write(`${lines[i]}\n`);
                     }

@@ -52,9 +52,9 @@ npm install jsman
 #### Quick Start
 
 ```ts
-import { findDirectory, printDoc } from "jsman/dist";
+import { getMDNDoc, printDoc } from "jsman/dist";
 
-const doc = await findDirectory('javascript', 'map')
+const doc = await getMDNDoc('javascript', 'map')
 if (doc) {
     printDoc(doc);
 }

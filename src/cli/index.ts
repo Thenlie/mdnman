@@ -1,7 +1,7 @@
 import { Command } from 'commander';
 import { openEditor, OUTPUT_PATH, printDoc, writeDocToFile } from '../output/index.js';
 import { getSection, stripJsxRef } from '../parser/index.js';
-import { findDirectory } from '../index.js';
+import { getMDNDoc } from '../index.js';
 
 const program = new Command();
 const GENERIC_ERROR_MESSAGE = 'Error! Something went wrong while attempting to find the selected MDN directory.\nPlease try again with a different query.';
@@ -21,7 +21,7 @@ const commandActionHandler = async (
     str: string,
     options: { output: string, section: string }
 ): Promise<void> => {
-    let document = await findDirectory(lang, str);
+    let document = await getMDNDoc(lang, str);
     if (!document) {
         console.error(GENERIC_ERROR_MESSAGE);
         return;
