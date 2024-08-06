@@ -4,5 +4,5 @@ out/
 dist/
 *.tgz
 notes.md
-headers.txt
+*.headers.txt
 .DS_Store

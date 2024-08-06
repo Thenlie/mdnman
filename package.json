@@ -5,6 +5,9 @@
   "description": "A JavaScript reference command line interface",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
+  "bin": {
+    "jsman": "./bin/jsman"
+},
   "scripts": {
     "start": "tsx src/index.ts",
     "cli": "tsx src/cli/index.ts",

@@ -38,29 +38,33 @@ const commandActionHandler = async (
     }
 };
 
-program
-    .name('jsman')
-    .description('MDN reference CLI');
+const cli = () => {
+    program
+        .name('jsman')
+        .description('MDN reference CLI');
 
-program.command('js')
-    .description('Search the MDN JavaScript reference library')
-    .argument('<string>', 'query to search')
-    .option('-o, --output <stdout | vim>', 'output type', 'stdout')
-    .option('-s, --section <string>', 'specified section of MDN doc', 'none')
-    .action(async (str, options) => commandActionHandler('javascript', str, options));
+    program.command('js')
+        .description('Search the MDN JavaScript reference library')
+        .argument('<string>', 'query to search')
+        .option('-o, --output <stdout | vim>', 'output type', 'stdout')
+        .option('-s, --section <string>', 'specified section of MDN doc', 'none')
+        .action(async (str, options) => commandActionHandler('javascript', str, options));
 
-program.command('html')
-    .description('Search the MDN HTML reference library')
-    .argument('<string>', 'query to search')
-    .option('-o, --output <stdout | vim>', 'output type', 'stdout')
-    .option('-s, --section <string>', 'specified section of MDN doc', 'none')
-    .action(async (str, options) => commandActionHandler('html', str, options));
+    program.command('html')
+        .description('Search the MDN HTML reference library')
+        .argument('<string>', 'query to search')
+        .option('-o, --output <stdout | vim>', 'output type', 'stdout')
+        .option('-s, --section <string>', 'specified section of MDN doc', 'none')
+        .action(async (str, options) => commandActionHandler('html', str, options));
 
-program.command('css')
-    .description('Search the MDN CSS reference library')
-    .argument('<string>', 'query to search')
-    .option('-o, --output <stdout | vim>', 'output type', 'stdout')
-    .option('-s, --section <string>', 'specified section of MDN doc', 'none')
-    .action(async (str, options) => commandActionHandler('css', str, options));
+    program.command('css')
+        .description('Search the MDN CSS reference library')
+        .argument('<string>', 'query to search')
+        .option('-o, --output <stdout | vim>', 'output type', 'stdout')
+        .option('-s, --section <string>', 'specified section of MDN doc', 'none')
+        .action(async (str, options) => commandActionHandler('css', str, options));
 
-program.parse();
+    program.parse();
+};
+
+export default cli;
