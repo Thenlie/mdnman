@@ -6,7 +6,7 @@ import { getHeader, stripHeader, stripJsxRef } from './parser/index.js';
 import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { jsTitles } from './titles.js';
+import { jsTitles, htmlTitles, cssTitles } from './titles/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -67,4 +67,4 @@ const getMDNDoc = async (technology: SupportedLanguages, query: string) => {
     }
 };
 
-export { getMDNDoc, getMDNFile, writeDocToFile, printDoc, stripJsxRef, getHeader, stripHeader, jsTitles };
+export { getMDNDoc, getMDNFile, writeDocToFile, printDoc, stripJsxRef, getHeader, stripHeader, jsTitles, htmlTitles, cssTitles };

@@ -1,4 +1,7 @@
-export const jsTitles = [
+export const jsTitles: {
+    file: string,
+    title: string
+}[] = [
     {
         file: 'lib/javascript/classes/constructor/index.md',
         title: 'constructor'
