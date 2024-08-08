@@ -31,7 +31,7 @@ const getMDNFile = (filepath: string) => {
  * Search the lib folder for a directory with a name containing the users search
  * Return the contents of the index.md file in that directory as a string
  * @param {'html' | 'css' | 'javascript'} technology
- * @param {string} query 
+ * @param {string} query
  */
 const getMDNDoc = async (technology: SupportedLanguages, query: string) => {
     const t = technology.trim().toLowerCase();
@@ -43,7 +43,9 @@ const getMDNDoc = async (technology: SupportedLanguages, query: string) => {
         const lines = files.toString().trim().split('\n');
         let selected;
         if (lines[0] === '') {
-            console.error(`Sorry! No results found for ${q}. Please check for typos and search again.`);
+            console.error(
+                `Sorry! No results found for ${q}. Please check for typos and search again.`
+            );
             return null;
         } else if (lines.length === 1) {
             selected = lines[0];
@@ -51,12 +53,12 @@ const getMDNDoc = async (technology: SupportedLanguages, query: string) => {
             // prompt with list of files
             selected = await select({
                 message: 'Chose reference you would like to view',
-                choices: lines.map(line => {
+                choices: lines.map((line) => {
                     const file = fs.readFileSync(line + '/index.md').toString();
                     const header = getHeader(file);
                     if (!header || !header?.title) return { name: line, value: line };
                     return { name: header.title, value: line };
-                })
+                }),
             });
         }
         const file = fs.readFileSync(selected + '/index.md').toString();
@@ -67,4 +69,15 @@ const getMDNDoc = async (technology: SupportedLanguages, query: string) => {
     }
 };
 
-export { getMDNDoc, getMDNFile, writeDocToFile, printDoc, stripJsxRef, getHeader, stripHeader, jsTitles, htmlTitles, cssTitles };
+export {
+    getMDNDoc,
+    getMDNFile,
+    writeDocToFile,
+    printDoc,
+    stripJsxRef,
+    getHeader,
+    stripHeader,
+    jsTitles,
+    htmlTitles,
+    cssTitles,
+};

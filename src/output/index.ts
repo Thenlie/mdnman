@@ -4,19 +4,22 @@ import fs from 'fs';
 import child_process from 'node:child_process';
 
 const OUTPUT_PATH = './out/ref.md';
-const MARKDOWN_SYNTAX_MAP: Record<'```js' | '```js-nolint' | '```html' | '```css' | '```plain', string> = {
+const MARKDOWN_SYNTAX_MAP: Record<
+    '```js' | '```js-nolint' | '```html' | '```css' | '```plain',
+    string
+> = {
     '```js': 'javascript',
     '```js-nolint': 'javascript',
     '```html': 'html',
     '```css': 'css',
-    '```plain': 'plaintext'
+    '```plain': 'plaintext',
 };
 
 type MarkdownField = keyof typeof MARKDOWN_SYNTAX_MAP;
 
 /**
  * Returns coding language for a given markdown codeblock indicator
- * @param markdown 
+ * @param markdown
  * @returns {string | null}
  */
 const mapMarkdownToLang = (markdown: string): string | null => {
@@ -33,15 +36,15 @@ const mapMarkdownToLang = (markdown: string): string | null => {
 const openEditor = (path: string) => {
     const editor = process.env.EDITOR || 'vim';
     const child = child_process.spawn(editor, [path], {
-        stdio: 'inherit'
+        stdio: 'inherit',
     });
-    child.on('exit', () => { });
+    child.on('exit', () => {});
 };
 
 /**
-* Take raw markdown MDN doc and write it to a file after formatting
-* @param {string} document 
-*/
+ * Take raw markdown MDN doc and write it to a file after formatting
+ * @param {string} document
+ */
 const writeDocToFile = (document: string) => {
     const writeStream = fs.createWriteStream(OUTPUT_PATH, { flags: 'w', encoding: 'utf8' });
     // Remove 'Specifications' section and everything below it
@@ -66,9 +69,9 @@ const writeDocToFile = (document: string) => {
 };
 
 /**
-* Take raw markdown MDN doc and format it before outputting to the console
-* @param {string} document 
-*/
+ * Take raw markdown MDN doc and format it before outputting to the console
+ * @param {string} document
+ */
 const printDoc = (document: string) => {
     // Remove 'Specifications' section and everything below it
     // This includes 'Browser Compatibility' and 'See Also'

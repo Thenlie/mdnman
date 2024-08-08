@@ -16,7 +16,7 @@ const readFileLines = (filePath: string): Promise<string[]> => {
     return new Promise((resolve, reject) => {
         const lines: string[] = [];
         const stream = fs.createReadStream(filePath, { encoding: 'utf8' });
-        stream.on('data', chunk => {
+        stream.on('data', (chunk) => {
             if (typeof chunk === 'string') {
                 lines.push(...chunk.split('\n'));
             }
@@ -28,7 +28,7 @@ const readFileLines = (filePath: string): Promise<string[]> => {
         stream.on('end', () => {
             resolve(lines.slice(0, LINE_COUNT));
         });
-        stream.on('error', err => {
+        stream.on('error', (err) => {
             reject(err);
         });
     });
@@ -69,8 +69,7 @@ traverseDirectory(DIRECTORY_PATH, writeStream)
         writeStream.end();
         console.log(`Output written to ${OUTPUT_FILE_PATH}`);
     })
-    .catch(err => {
+    .catch((err) => {
         writeStream.end();
         console.error('Error traversing directory:', err);
     });
-

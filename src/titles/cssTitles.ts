@@ -1,4289 +1,4289 @@
 export const cssTitles: {
-    file: string,
-    title: string
+    file: string;
+    title: string;
 }[] = [
     {
         file: 'lib/css/--_star_/index.md',
-        title: '"Custom properties (--*): CSS variables"'
+        title: 'Custom properties (--*): CSS variables',
     },
     {
         file: 'lib/css/-moz-float-edge/index.md',
-        title: '"-moz-float-edge"'
+        title: '-moz-float-edge',
     },
     {
         file: 'lib/css/-moz-force-broken-image-icon/index.md',
-        title: '"-moz-force-broken-image-icon"'
+        title: '-moz-force-broken-image-icon',
     },
     {
         file: 'lib/css/-moz-image-rect/index.md',
-        title: '"-moz-image-rect"'
+        title: '-moz-image-rect',
     },
     {
         file: 'lib/css/-moz-image-region/index.md',
-        title: '"-moz-image-region"'
+        title: '-moz-image-region',
     },
     {
         file: 'lib/css/-moz-orient/index.md',
-        title: '"-moz-orient"'
+        title: '-moz-orient',
     },
     {
         file: 'lib/css/-moz-user-focus/index.md',
-        title: '"-moz-user-focus"'
+        title: '-moz-user-focus',
     },
     {
         file: 'lib/css/-moz-user-input/index.md',
-        title: '"-moz-user-input"'
+        title: '-moz-user-input',
     },
     {
         file: 'lib/css/-webkit-border-before/index.md',
-        title: '"-webkit-border-before"'
+        title: '-webkit-border-before',
     },
     {
         file: 'lib/css/-webkit-box-reflect/index.md',
-        title: '"-webkit-box-reflect"'
+        title: '-webkit-box-reflect',
     },
     {
         file: 'lib/css/-webkit-line-clamp/index.md',
-        title: '"-webkit-line-clamp"'
+        title: '-webkit-line-clamp',
     },
     {
         file: 'lib/css/-webkit-mask-box-image/index.md',
-        title: '"-webkit-mask-box-image"'
+        title: '-webkit-mask-box-image',
     },
     {
         file: 'lib/css/-webkit-mask-composite/index.md',
-        title: '"-webkit-mask-composite"'
+        title: '-webkit-mask-composite',
     },
     {
         file: 'lib/css/-webkit-mask-position-x/index.md',
-        title: '"-webkit-mask-position-x"'
+        title: '-webkit-mask-position-x',
     },
     {
         file: 'lib/css/-webkit-mask-position-y/index.md',
-        title: '"-webkit-mask-position-y"'
+        title: '-webkit-mask-position-y',
     },
     {
         file: 'lib/css/-webkit-mask-repeat-x/index.md',
-        title: '"-webkit-mask-repeat-x"'
+        title: '-webkit-mask-repeat-x',
     },
     {
         file: 'lib/css/-webkit-mask-repeat-y/index.md',
-        title: '"-webkit-mask-repeat-y"'
+        title: '-webkit-mask-repeat-y',
     },
     {
         file: 'lib/css/-webkit-tap-highlight-color/index.md',
-        title: '"-webkit-tap-highlight-color"'
+        title: '-webkit-tap-highlight-color',
     },
     {
         file: 'lib/css/-webkit-text-fill-color/index.md',
-        title: '"-webkit-text-fill-color"'
+        title: '-webkit-text-fill-color',
     },
     {
         file: 'lib/css/-webkit-text-security/index.md',
-        title: '"-webkit-text-security"'
+        title: '-webkit-text-security',
     },
     {
         file: 'lib/css/-webkit-text-stroke/index.md',
-        title: '"-webkit-text-stroke"'
+        title: '-webkit-text-stroke',
     },
     {
         file: 'lib/css/-webkit-text-stroke-color/index.md',
-        title: '"-webkit-text-stroke-color"'
+        title: '-webkit-text-stroke-color',
     },
     {
         file: 'lib/css/-webkit-text-stroke-width/index.md',
-        title: '"-webkit-text-stroke-width"'
+        title: '-webkit-text-stroke-width',
     },
     {
         file: 'lib/css/-webkit-touch-callout/index.md',
-        title: '"-webkit-touch-callout"'
+        title: '-webkit-touch-callout',
     },
     {
         file: 'lib/css/@charset/index.md',
-        title: '"@charset"'
+        title: '@charset',
     },
     {
         file: 'lib/css/@color-profile/index.md',
-        title: '"@color-profile"'
+        title: '@color-profile',
     },
     {
         file: 'lib/css/@container/index.md',
-        title: '"@container"'
+        title: '@container',
     },
     {
         file: 'lib/css/@counter-style/additive-symbols/index.md',
-        title: 'additive-symbols'
+        title: 'additive-symbols',
     },
     {
         file: 'lib/css/@counter-style/fallback/index.md',
-        title: 'fallback'
+        title: 'fallback',
     },
     {
         file: 'lib/css/@counter-style/index.md',
-        title: '"@counter-style"'
+        title: '@counter-style',
     },
     {
         file: 'lib/css/@counter-style/negative/index.md',
-        title: 'negative'
+        title: 'negative',
     },
     {
         file: 'lib/css/@counter-style/pad/index.md',
-        title: 'pad'
+        title: 'pad',
     },
     {
         file: 'lib/css/@counter-style/prefix/index.md',
-        title: 'prefix'
+        title: 'prefix',
     },
     {
         file: 'lib/css/@counter-style/range/index.md',
-        title: 'range'
+        title: 'range',
     },
     {
         file: 'lib/css/@counter-style/speak-as/index.md',
-        title: 'speak-as'
+        title: 'speak-as',
     },
     {
         file: 'lib/css/@counter-style/suffix/index.md',
-        title: 'suffix'
+        title: 'suffix',
     },
     {
         file: 'lib/css/@counter-style/symbols/index.md',
-        title: 'symbols'
+        title: 'symbols',
     },
     {
         file: 'lib/css/@counter-style/system/index.md',
-        title: 'system'
+        title: 'system',
     },
     {
         file: 'lib/css/@document/index.md',
-        title: '"@document"'
+        title: '@document',
     },
     {
         file: 'lib/css/@font-face/ascent-override/index.md',
-        title: 'ascent-override'
+        title: 'ascent-override',
     },
     {
         file: 'lib/css/@font-face/descent-override/index.md',
-        title: 'descent-override'
+        title: 'descent-override',
     },
     {
         file: 'lib/css/@font-face/font-display/index.md',
-        title: 'font-display'
+        title: 'font-display',
     },
     {
         file: 'lib/css/@font-face/font-family/index.md',
-        title: 'font-family'
+        title: 'font-family',
     },
     {
         file: 'lib/css/@font-face/font-feature-settings/index.md',
-        title: 'font-feature-settings'
+        title: 'font-feature-settings',
     },
     {
         file: 'lib/css/@font-face/font-stretch/index.md',
-        title: 'font-stretch'
+        title: 'font-stretch',
     },
     {
         file: 'lib/css/@font-face/font-style/index.md',
-        title: 'font-style'
+        title: 'font-style',
     },
     {
         file: 'lib/css/@font-face/font-variation-settings/index.md',
-        title: 'font-variation-settings'
+        title: 'font-variation-settings',
     },
     {
         file: 'lib/css/@font-face/font-weight/index.md',
-        title: 'font-weight'
+        title: 'font-weight',
     },
     {
         file: 'lib/css/@font-face/index.md',
-        title: '"@font-face"'
+        title: '@font-face',
     },
     {
         file: 'lib/css/@font-face/line-gap-override/index.md',
-        title: 'line-gap-override'
+        title: 'line-gap-override',
     },
     {
         file: 'lib/css/@font-face/size-adjust/index.md',
-        title: 'size-adjust'
+        title: 'size-adjust',
     },
     {
         file: 'lib/css/@font-face/src/index.md',
-        title: 'src'
+        title: 'src',
     },
     {
         file: 'lib/css/@font-face/unicode-range/index.md',
-        title: 'unicode-range'
+        title: 'unicode-range',
     },
     {
         file: 'lib/css/@font-feature-values/font-display/index.md',
-        title: 'font-display'
+        title: 'font-display',
     },
     {
         file: 'lib/css/@font-feature-values/index.md',
-        title: '"@font-feature-values"'
+        title: '@font-feature-values',
     },
     {
         file: 'lib/css/@font-palette-values/base-palette/index.md',
-        title: 'base-palette'
+        title: 'base-palette',
     },
     {
         file: 'lib/css/@font-palette-values/font-family/index.md',
-        title: 'font-family'
+        title: 'font-family',
     },
     {
         file: 'lib/css/@font-palette-values/index.md',
-        title: '"@font-palette-values"'
+        title: '@font-palette-values',
     },
     {
         file: 'lib/css/@font-palette-values/override-colors/index.md',
-        title: 'override-colors'
+        title: 'override-colors',
     },
     {
         file: 'lib/css/@import/index.md',
-        title: '"@import"'
+        title: '@import',
     },
     {
         file: 'lib/css/@keyframes/index.md',
-        title: '"@keyframes"'
+        title: '@keyframes',
     },
     {
         file: 'lib/css/@layer/index.md',
-        title: '"@layer"'
+        title: '@layer',
     },
     {
         file: 'lib/css/@media/-moz-device-pixel-ratio/index.md',
-        title: '"-moz-device-pixel-ratio"'
+        title: '-moz-device-pixel-ratio',
     },
     {
         file: 'lib/css/@media/-webkit-animation/index.md',
-        title: '"-webkit-animation"'
+        title: '-webkit-animation',
     },
     {
         file: 'lib/css/@media/-webkit-device-pixel-ratio/index.md',
-        title: '"-webkit-device-pixel-ratio"'
+        title: '-webkit-device-pixel-ratio',
     },
     {
         file: 'lib/css/@media/-webkit-transform-2d/index.md',
-        title: '"-webkit-transform-2d"'
+        title: '-webkit-transform-2d',
     },
     {
         file: 'lib/css/@media/-webkit-transform-3d/index.md',
-        title: '"-webkit-transform-3d"'
+        title: '-webkit-transform-3d',
     },
     {
         file: 'lib/css/@media/-webkit-transition/index.md',
-        title: '"-webkit-transition"'
+        title: '-webkit-transition',
     },
     {
         file: 'lib/css/@media/any-hover/index.md',
-        title: 'any-hover'
+        title: 'any-hover',
     },
     {
         file: 'lib/css/@media/any-pointer/index.md',
-        title: 'any-pointer'
+        title: 'any-pointer',
     },
     {
         file: 'lib/css/@media/aspect-ratio/index.md',
-        title: 'aspect-ratio'
+        title: 'aspect-ratio',
     },
     {
         file: 'lib/css/@media/aural/index.md',
-        title: 'aural'
+        title: 'aural',
     },
     {
         file: 'lib/css/@media/color/index.md',
-        title: 'color'
+        title: 'color',
     },
     {
         file: 'lib/css/@media/color-gamut/index.md',
-        title: 'color-gamut'
+        title: 'color-gamut',
     },
     {
         file: 'lib/css/@media/color-index/index.md',
-        title: 'color-index'
+        title: 'color-index',
     },
     {
         file: 'lib/css/@media/device-aspect-ratio/index.md',
-        title: 'device-aspect-ratio'
+        title: 'device-aspect-ratio',
     },
     {
         file: 'lib/css/@media/device-height/index.md',
-        title: 'device-height'
+        title: 'device-height',
     },
     {
         file: 'lib/css/@media/device-width/index.md',
-        title: 'device-width'
+        title: 'device-width',
     },
     {
         file: 'lib/css/@media/display-mode/index.md',
-        title: 'display-mode'
+        title: 'display-mode',
     },
     {
         file: 'lib/css/@media/dynamic-range/index.md',
-        title: 'dynamic-range'
+        title: 'dynamic-range',
     },
     {
         file: 'lib/css/@media/forced-colors/index.md',
-        title: 'forced-colors'
+        title: 'forced-colors',
     },
     {
         file: 'lib/css/@media/grid/index.md',
-        title: 'grid'
+        title: 'grid',
     },
     {
         file: 'lib/css/@media/height/index.md',
-        title: 'height'
+        title: 'height',
     },
     {
         file: 'lib/css/@media/hover/index.md',
-        title: 'hover'
+        title: 'hover',
     },
     {
         file: 'lib/css/@media/index.md',
-        title: '"@media"'
+        title: '@media',
     },
     {
         file: 'lib/css/@media/inverted-colors/index.md',
-        title: 'inverted-colors'
+        title: 'inverted-colors',
     },
     {
         file: 'lib/css/@media/monochrome/index.md',
-        title: 'monochrome'
+        title: 'monochrome',
     },
     {
         file: 'lib/css/@media/orientation/index.md',
-        title: 'orientation'
+        title: 'orientation',
     },
     {
         file: 'lib/css/@media/overflow-block/index.md',
-        title: 'overflow-block'
+        title: 'overflow-block',
     },
     {
         file: 'lib/css/@media/overflow-inline/index.md',
-        title: 'overflow-inline'
+        title: 'overflow-inline',
     },
     {
         file: 'lib/css/@media/pointer/index.md',
-        title: 'pointer'
+        title: 'pointer',
     },
     {
         file: 'lib/css/@media/prefers-color-scheme/index.md',
-        title: 'prefers-color-scheme'
+        title: 'prefers-color-scheme',
     },
     {
         file: 'lib/css/@media/prefers-contrast/index.md',
-        title: 'prefers-contrast'
+        title: 'prefers-contrast',
     },
     {
         file: 'lib/css/@media/prefers-reduced-data/index.md',
-        title: 'prefers-reduced-data'
+        title: 'prefers-reduced-data',
     },
     {
         file: 'lib/css/@media/prefers-reduced-motion/index.md',
-        title: 'prefers-reduced-motion'
+        title: 'prefers-reduced-motion',
     },
     {
         file: 'lib/css/@media/prefers-reduced-transparency/index.md',
-        title: 'prefers-reduced-transparency'
+        title: 'prefers-reduced-transparency',
     },
     {
         file: 'lib/css/@media/resolution/index.md',
-        title: 'resolution'
+        title: 'resolution',
     },
     {
         file: 'lib/css/@media/scan/index.md',
-        title: 'scan'
+        title: 'scan',
     },
     {
         file: 'lib/css/@media/scripting/index.md',
-        title: 'scripting'
+        title: 'scripting',
     },
     {
         file: 'lib/css/@media/shape/index.md',
-        title: 'shape'
+        title: 'shape',
     },
     {
         file: 'lib/css/@media/update/index.md',
-        title: 'update'
+        title: 'update',
     },
     {
         file: 'lib/css/@media/video-dynamic-range/index.md',
-        title: 'video-dynamic-range'
+        title: 'video-dynamic-range',
     },
     {
         file: 'lib/css/@media/width/index.md',
-        title: 'width'
+        title: 'width',
     },
     {
         file: 'lib/css/@namespace/index.md',
-        title: '"@namespace"'
+        title: '@namespace',
     },
     {
         file: 'lib/css/@page/index.md',
-        title: '"@page"'
+        title: '@page',
     },
     {
         file: 'lib/css/@page/page-orientation/index.md',
-        title: 'page-orientation'
+        title: 'page-orientation',
     },
     {
         file: 'lib/css/@page/size/index.md',
-        title: 'size'
+        title: 'size',
     },
     {
         file: 'lib/css/@position-try/index.md',
-        title: '"@position-try"'
+        title: '@position-try',
     },
     {
         file: 'lib/css/@property/index.md',
-        title: '"@property"'
+        title: '@property',
     },
     {
         file: 'lib/css/@property/inherits/index.md',
-        title: 'inherits'
+        title: 'inherits',
     },
     {
         file: 'lib/css/@property/initial-value/index.md',
-        title: 'initial-value'
+        title: 'initial-value',
     },
     {
         file: 'lib/css/@property/syntax/index.md',
-        title: 'syntax'
+        title: 'syntax',
     },
     {
         file: 'lib/css/@scope/index.md',
-        title: '"@scope"'
+        title: '@scope',
     },
     {
         file: 'lib/css/@starting-style/index.md',
-        title: '"@starting-style"'
+        title: '@starting-style',
     },
     {
         file: 'lib/css/@supports/index.md',
-        title: '"@supports"'
+        title: '@supports',
     },
     {
         file: 'lib/css/@view-transition/index.md',
-        title: '"@view-transition"'
+        title: '@view-transition',
     },
     {
         file: 'lib/css/_colon_-moz-broken/index.md',
-        title: '":-moz-broken"'
+        title: ':-moz-broken',
     },
     {
         file: 'lib/css/_colon_-moz-drag-over/index.md',
-        title: '":-moz-drag-over"'
+        title: ':-moz-drag-over',
     },
     {
         file: 'lib/css/_colon_-moz-first-node/index.md',
-        title: '":-moz-first-node"'
+        title: ':-moz-first-node',
     },
     {
         file: 'lib/css/_colon_-moz-handler-blocked/index.md',
-        title: '":-moz-handler-blocked"'
+        title: ':-moz-handler-blocked',
     },
     {
         file: 'lib/css/_colon_-moz-handler-crashed/index.md',
-        title: '":-moz-handler-crashed"'
+        title: ':-moz-handler-crashed',
     },
     {
         file: 'lib/css/_colon_-moz-handler-disabled/index.md',
-        title: '":-moz-handler-disabled"'
+        title: ':-moz-handler-disabled',
     },
     {
         file: 'lib/css/_colon_-moz-last-node/index.md',
-        title: '":-moz-last-node"'
+        title: ':-moz-last-node',
     },
     {
         file: 'lib/css/_colon_-moz-loading/index.md',
-        title: '":-moz-loading"'
+        title: ':-moz-loading',
     },
     {
         file: 'lib/css/_colon_-moz-locale-dir_ltr/index.md',
-        title: '":-moz-locale-dir(ltr)"'
+        title: ':-moz-locale-dir(ltr)',
     },
     {
         file: 'lib/css/_colon_-moz-locale-dir_rtl/index.md',
-        title: '":-moz-locale-dir(rtl)"'
+        title: ':-moz-locale-dir(rtl)',
     },
     {
         file: 'lib/css/_colon_-moz-only-whitespace/index.md',
-        title: '":-moz-only-whitespace"'
+        title: ':-moz-only-whitespace',
     },
     {
         file: 'lib/css/_colon_-moz-submit-invalid/index.md',
-        title: '":-moz-submit-invalid"'
+        title: ':-moz-submit-invalid',
     },
     {
         file: 'lib/css/_colon_-moz-suppressed/index.md',
-        title: '":-moz-suppressed"'
+        title: ':-moz-suppressed',
     },
     {
         file: 'lib/css/_colon_-moz-user-disabled/index.md',
-        title: '":-moz-user-disabled"'
+        title: ':-moz-user-disabled',
     },
     {
         file: 'lib/css/_colon_-moz-window-inactive/index.md',
-        title: '":-moz-window-inactive"'
+        title: ':-moz-window-inactive',
     },
     {
         file: 'lib/css/_colon_active/index.md',
-        title: '":active"'
+        title: ':active',
     },
     {
         file: 'lib/css/_colon_any-link/index.md',
-        title: '":any-link"'
+        title: ':any-link',
     },
     {
         file: 'lib/css/_colon_autofill/index.md',
-        title: '":autofill"'
+        title: ':autofill',
     },
     {
         file: 'lib/css/_colon_blank/index.md',
-        title: '":blank"'
+        title: ':blank',
     },
     {
         file: 'lib/css/_colon_buffering/index.md',
-        title: '":buffering"'
+        title: ':buffering',
     },
     {
         file: 'lib/css/_colon_checked/index.md',
-        title: '":checked"'
+        title: ':checked',
     },
     {
         file: 'lib/css/_colon_current/index.md',
-        title: '":current"'
+        title: ':current',
     },
     {
         file: 'lib/css/_colon_default/index.md',
-        title: '":default"'
+        title: ':default',
     },
     {
         file: 'lib/css/_colon_defined/index.md',
-        title: '":defined"'
+        title: ':defined',
     },
     {
         file: 'lib/css/_colon_dir/index.md',
-        title: '":dir()"'
+        title: ':dir()',
     },
     {
         file: 'lib/css/_colon_disabled/index.md',
-        title: '":disabled"'
+        title: ':disabled',
     },
     {
         file: 'lib/css/_colon_empty/index.md',
-        title: '":empty"'
+        title: ':empty',
     },
     {
         file: 'lib/css/_colon_enabled/index.md',
-        title: '":enabled"'
+        title: ':enabled',
     },
     {
         file: 'lib/css/_colon_first/index.md',
-        title: '":first"'
+        title: ':first',
     },
     {
         file: 'lib/css/_colon_first-child/index.md',
-        title: '":first-child"'
+        title: ':first-child',
     },
     {
         file: 'lib/css/_colon_first-of-type/index.md',
-        title: '":first-of-type"'
+        title: ':first-of-type',
     },
     {
         file: 'lib/css/_colon_focus/index.md',
-        title: '":focus"'
+        title: ':focus',
     },
     {
         file: 'lib/css/_colon_focus-visible/index.md',
-        title: '":focus-visible"'
+        title: ':focus-visible',
     },
     {
         file: 'lib/css/_colon_focus-within/index.md',
-        title: '":focus-within"'
+        title: ':focus-within',
     },
     {
         file: 'lib/css/_colon_fullscreen/index.md',
-        title: '":fullscreen"'
+        title: ':fullscreen',
     },
     {
         file: 'lib/css/_colon_future/index.md',
-        title: '":future"'
+        title: ':future',
     },
     {
         file: 'lib/css/_colon_has/index.md',
-        title: '":has()"'
+        title: ':has()',
     },
     {
         file: 'lib/css/_colon_host/index.md',
-        title: '":host"'
+        title: ':host',
     },
     {
         file: 'lib/css/_colon_host-context/index.md',
-        title: '":host-context()"'
+        title: ':host-context()',
     },
     {
         file: 'lib/css/_colon_host_function/index.md',
-        title: '":host()"'
+        title: ':host()',
     },
     {
         file: 'lib/css/_colon_hover/index.md',
-        title: '":hover"'
+        title: ':hover',
     },
     {
         file: 'lib/css/_colon_in-range/index.md',
-        title: '":in-range"'
+        title: ':in-range',
     },
     {
         file: 'lib/css/_colon_indeterminate/index.md',
-        title: '":indeterminate"'
+        title: ':indeterminate',
     },
     {
         file: 'lib/css/_colon_invalid/index.md',
-        title: '":invalid"'
+        title: ':invalid',
     },
     {
         file: 'lib/css/_colon_is/index.md',
-        title: '":is()"'
+        title: ':is()',
     },
     {
         file: 'lib/css/_colon_lang/index.md',
-        title: '":lang()"'
+        title: ':lang()',
     },
     {
         file: 'lib/css/_colon_last-child/index.md',
-        title: '":last-child"'
+        title: ':last-child',
     },
     {
         file: 'lib/css/_colon_last-of-type/index.md',
-        title: '":last-of-type"'
+        title: ':last-of-type',
     },
     {
         file: 'lib/css/_colon_left/index.md',
-        title: '":left"'
+        title: ':left',
     },
     {
         file: 'lib/css/_colon_link/index.md',
-        title: '":link"'
+        title: ':link',
     },
     {
         file: 'lib/css/_colon_local-link/index.md',
-        title: '":local-link"'
+        title: ':local-link',
     },
     {
         file: 'lib/css/_colon_modal/index.md',
-        title: '":modal"'
+        title: ':modal',
     },
     {
         file: 'lib/css/_colon_muted/index.md',
-        title: '":muted"'
+        title: ':muted',
     },
     {
         file: 'lib/css/_colon_not/index.md',
-        title: '":not()"'
+        title: ':not()',
     },
     {
         file: 'lib/css/_colon_nth-child/index.md',
-        title: '":nth-child()"'
+        title: ':nth-child()',
     },
     {
         file: 'lib/css/_colon_nth-last-child/index.md',
-        title: '":nth-last-child()"'
+        title: ':nth-last-child()',
     },
     {
         file: 'lib/css/_colon_nth-last-of-type/index.md',
-        title: '":nth-last-of-type()"'
+        title: ':nth-last-of-type()',
     },
     {
         file: 'lib/css/_colon_nth-of-type/index.md',
-        title: '":nth-of-type()"'
+        title: ':nth-of-type()',
     },
     {
         file: 'lib/css/_colon_only-child/index.md',
-        title: '":only-child"'
+        title: ':only-child',
     },
     {
         file: 'lib/css/_colon_only-of-type/index.md',
-        title: '":only-of-type"'
+        title: ':only-of-type',
     },
     {
         file: 'lib/css/_colon_optional/index.md',
-        title: '":optional"'
+        title: ':optional',
     },
     {
         file: 'lib/css/_colon_out-of-range/index.md',
-        title: '":out-of-range"'
+        title: ':out-of-range',
     },
     {
         file: 'lib/css/_colon_past/index.md',
-        title: '":past"'
+        title: ':past',
     },
     {
         file: 'lib/css/_colon_paused/index.md',
-        title: '":paused"'
+        title: ':paused',
     },
     {
         file: 'lib/css/_colon_picture-in-picture/index.md',
-        title: '":picture-in-picture"'
+        title: ':picture-in-picture',
     },
     {
         file: 'lib/css/_colon_placeholder-shown/index.md',
-        title: '":placeholder-shown"'
+        title: ':placeholder-shown',
     },
     {
         file: 'lib/css/_colon_playing/index.md',
-        title: '":playing"'
+        title: ':playing',
     },
     {
         file: 'lib/css/_colon_popover-open/index.md',
-        title: '":popover-open"'
+        title: ':popover-open',
     },
     {
         file: 'lib/css/_colon_read-only/index.md',
-        title: '":read-only"'
+        title: ':read-only',
     },
     {
         file: 'lib/css/_colon_read-write/index.md',
-        title: '":read-write"'
+        title: ':read-write',
     },
     {
         file: 'lib/css/_colon_required/index.md',
-        title: '":required"'
+        title: ':required',
     },
     {
         file: 'lib/css/_colon_right/index.md',
-        title: '":right"'
+        title: ':right',
     },
     {
         file: 'lib/css/_colon_root/index.md',
-        title: '":root"'
+        title: ':root',
     },
     {
         file: 'lib/css/_colon_scope/index.md',
-        title: '":scope"'
+        title: ':scope',
     },
     {
         file: 'lib/css/_colon_seeking/index.md',
-        title: '":seeking"'
+        title: ':seeking',
     },
     {
         file: 'lib/css/_colon_stalled/index.md',
-        title: '":stalled"'
+        title: ':stalled',
     },
     {
         file: 'lib/css/_colon_state/index.md',
-        title: '":state()"'
+        title: ':state()',
     },
     {
         file: 'lib/css/_colon_target/index.md',
-        title: '":target"'
+        title: ':target',
     },
     {
         file: 'lib/css/_colon_target-within/index.md',
-        title: '":target-within"'
+        title: ':target-within',
     },
     {
         file: 'lib/css/_colon_user-invalid/index.md',
-        title: '":user-invalid"'
+        title: ':user-invalid',
     },
     {
         file: 'lib/css/_colon_user-valid/index.md',
-        title: '":user-valid"'
+        title: ':user-valid',
     },
     {
         file: 'lib/css/_colon_valid/index.md',
-        title: '":valid"'
+        title: ':valid',
     },
     {
         file: 'lib/css/_colon_visited/index.md',
-        title: '":visited"'
+        title: ':visited',
     },
     {
         file: 'lib/css/_colon_volume-locked/index.md',
-        title: '":volume-locked"'
+        title: ':volume-locked',
     },
     {
         file: 'lib/css/_colon_where/index.md',
-        title: '":where()"'
+        title: ':where()',
     },
     {
         file: 'lib/css/_doublecolon_-moz-color-swatch/index.md',
-        title: '"::-moz-color-swatch"'
+        title: '::-moz-color-swatch',
     },
     {
         file: 'lib/css/_doublecolon_-moz-focus-inner/index.md',
-        title: '"::-moz-focus-inner"'
+        title: '::-moz-focus-inner',
     },
     {
         file: 'lib/css/_doublecolon_-moz-list-bullet/index.md',
-        title: '"::-moz-list-bullet"'
+        title: '::-moz-list-bullet',
     },
     {
         file: 'lib/css/_doublecolon_-moz-list-number/index.md',
-        title: '"::-moz-list-number"'
+        title: '::-moz-list-number',
     },
     {
         file: 'lib/css/_doublecolon_-moz-meter-bar/index.md',
-        title: '"::-moz-meter-bar"'
+        title: '::-moz-meter-bar',
     },
     {
         file: 'lib/css/_doublecolon_-moz-progress-bar/index.md',
-        title: '"::-moz-progress-bar"'
+        title: '::-moz-progress-bar',
     },
     {
         file: 'lib/css/_doublecolon_-moz-range-progress/index.md',
-        title: '"::-moz-range-progress"'
+        title: '::-moz-range-progress',
     },
     {
         file: 'lib/css/_doublecolon_-moz-range-thumb/index.md',
-        title: '"::-moz-range-thumb"'
+        title: '::-moz-range-thumb',
     },
     {
         file: 'lib/css/_doublecolon_-moz-range-track/index.md',
-        title: '"::-moz-range-track"'
+        title: '::-moz-range-track',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-inner-spin-button/index.md',
-        title: '"::-webkit-inner-spin-button"'
+        title: '::-webkit-inner-spin-button',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-meter-bar/index.md',
-        title: '"::-webkit-meter-bar"'
+        title: '::-webkit-meter-bar',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-meter-even-less-good-value/index.md',
-        title: '"::-webkit-meter-even-less-good-value"'
+        title: '::-webkit-meter-even-less-good-value',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-meter-inner-element/index.md',
-        title: '"::-webkit-meter-inner-element"'
+        title: '::-webkit-meter-inner-element',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-meter-optimum-value/index.md',
-        title: '"::-webkit-meter-optimum-value"'
+        title: '::-webkit-meter-optimum-value',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-meter-suboptimum-value/index.md',
-        title: '"::-webkit-meter-suboptimum-value"'
+        title: '::-webkit-meter-suboptimum-value',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-progress-bar/index.md',
-        title: '"::-webkit-progress-bar"'
+        title: '::-webkit-progress-bar',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-progress-inner-element/index.md',
-        title: '"::-webkit-progress-inner-element"'
+        title: '::-webkit-progress-inner-element',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-progress-value/index.md',
-        title: '"::-webkit-progress-value"'
+        title: '::-webkit-progress-value',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-scrollbar/index.md',
-        title: '"::-webkit-scrollbar"'
+        title: '::-webkit-scrollbar',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-search-cancel-button/index.md',
-        title: '"::-webkit-search-cancel-button"'
+        title: '::-webkit-search-cancel-button',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-search-results-button/index.md',
-        title: '"::-webkit-search-results-button"'
+        title: '::-webkit-search-results-button',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-slider-runnable-track/index.md',
-        title: '"::-webkit-slider-runnable-track"'
+        title: '::-webkit-slider-runnable-track',
     },
     {
         file: 'lib/css/_doublecolon_-webkit-slider-thumb/index.md',
-        title: '"::-webkit-slider-thumb"'
+        title: '::-webkit-slider-thumb',
     },
     {
         file: 'lib/css/_doublecolon_after/index.md',
-        title: '"::after"'
+        title: '::after',
     },
     {
         file: 'lib/css/_doublecolon_backdrop/index.md',
-        title: '"::backdrop"'
+        title: '::backdrop',
     },
     {
         file: 'lib/css/_doublecolon_before/index.md',
-        title: '"::before"'
+        title: '::before',
     },
     {
         file: 'lib/css/_doublecolon_cue/index.md',
-        title: '"::cue"'
+        title: '::cue',
     },
     {
         file: 'lib/css/_doublecolon_file-selector-button/index.md',
-        title: '"::file-selector-button"'
+        title: '::file-selector-button',
     },
     {
         file: 'lib/css/_doublecolon_first-letter/index.md',
-        title: '"::first-letter"'
+        title: '::first-letter',
     },
     {
         file: 'lib/css/_doublecolon_first-line/index.md',
-        title: '"::first-line"'
+        title: '::first-line',
     },
     {
         file: 'lib/css/_doublecolon_grammar-error/index.md',
-        title: '"::grammar-error"'
+        title: '::grammar-error',
     },
     {
         file: 'lib/css/_doublecolon_highlight/index.md',
-        title: '"::highlight()"'
+        title: '::highlight()',
     },
     {
         file: 'lib/css/_doublecolon_marker/index.md',
-        title: '"::marker"'
+        title: '::marker',
     },
     {
         file: 'lib/css/_doublecolon_part/index.md',
-        title: '"::part()"'
+        title: '::part()',
     },
     {
         file: 'lib/css/_doublecolon_placeholder/index.md',
-        title: '"::placeholder"'
+        title: '::placeholder',
     },
     {
         file: 'lib/css/_doublecolon_selection/index.md',
-        title: '"::selection"'
+        title: '::selection',
     },
     {
         file: 'lib/css/_doublecolon_slotted/index.md',
-        title: '"::slotted()"'
+        title: '::slotted()',
     },
     {
         file: 'lib/css/_doublecolon_spelling-error/index.md',
-        title: '"::spelling-error"'
+        title: '::spelling-error',
     },
     {
         file: 'lib/css/_doublecolon_target-text/index.md',
-        title: '"::target-text"'
+        title: '::target-text',
     },
     {
         file: 'lib/css/_doublecolon_view-transition/index.md',
-        title: '"::view-transition"'
+        title: '::view-transition',
     },
     {
         file: 'lib/css/_doublecolon_view-transition-group/index.md',
-        title: '"::view-transition-group"'
+        title: '::view-transition-group',
     },
     {
         file: 'lib/css/_doublecolon_view-transition-image-pair/index.md',
-        title: '"::view-transition-image-pair"'
+        title: '::view-transition-image-pair',
     },
     {
         file: 'lib/css/_doublecolon_view-transition-new/index.md',
-        title: '"::view-transition-new"'
+        title: '::view-transition-new',
     },
     {
         file: 'lib/css/_doublecolon_view-transition-old/index.md',
-        title: '"::view-transition-old"'
+        title: '::view-transition-old',
     },
     {
         file: 'lib/css/abs/index.md',
-        title: 'abs()'
+        title: 'abs()',
     },
     {
         file: 'lib/css/absolute-size/index.md',
-        title: '<absolute-size>'
+        title: '<absolute-size>',
     },
     {
         file: 'lib/css/accent-color/index.md',
-        title: 'accent-color'
+        title: 'accent-color',
     },
     {
         file: 'lib/css/acos/index.md',
-        title: 'acos()'
+        title: 'acos()',
     },
     {
         file: 'lib/css/actual_value/index.md',
-        title: 'Actual value'
+        title: 'Actual value',
     },
     {
         file: 'lib/css/align-content/index.md',
-        title: 'align-content'
+        title: 'align-content',
     },
     {
         file: 'lib/css/align-items/index.md',
-        title: 'align-items'
+        title: 'align-items',
     },
     {
         file: 'lib/css/align-self/index.md',
-        title: 'align-self'
+        title: 'align-self',
     },
     {
         file: 'lib/css/all/index.md',
-        title: 'all'
+        title: 'all',
     },
     {
         file: 'lib/css/alpha-value/index.md',
-        title: '<alpha-value>'
+        title: '<alpha-value>',
     },
     {
         file: 'lib/css/alternative_style_sheets/index.md',
-        title: 'Alternative style sheets'
+        title: 'Alternative style sheets',
     },
     {
         file: 'lib/css/anchor/index.md',
-        title: 'anchor()'
+        title: 'anchor()',
     },
     {
         file: 'lib/css/anchor-name/index.md',
-        title: 'anchor-name'
+        title: 'anchor-name',
     },
     {
         file: 'lib/css/anchor-size/index.md',
-        title: 'anchor-size()'
+        title: 'anchor-size()',
     },
     {
         file: 'lib/css/angle/index.md',
-        title: '<angle>'
+        title: '<angle>',
     },
     {
         file: 'lib/css/angle-percentage/index.md',
-        title: '<angle-percentage>'
+        title: '<angle-percentage>',
     },
     {
         file: 'lib/css/animation/index.md',
-        title: 'animation'
+        title: 'animation',
     },
     {
         file: 'lib/css/animation-composition/index.md',
-        title: 'animation-composition'
+        title: 'animation-composition',
     },
     {
         file: 'lib/css/animation-delay/index.md',
-        title: 'animation-delay'
+        title: 'animation-delay',
     },
     {
         file: 'lib/css/animation-direction/index.md',
-        title: 'animation-direction'
+        title: 'animation-direction',
     },
     {
         file: 'lib/css/animation-duration/index.md',
-        title: 'animation-duration'
+        title: 'animation-duration',
     },
     {
         file: 'lib/css/animation-fill-mode/index.md',
-        title: 'animation-fill-mode'
+        title: 'animation-fill-mode',
     },
     {
         file: 'lib/css/animation-iteration-count/index.md',
-        title: 'animation-iteration-count'
+        title: 'animation-iteration-count',
     },
     {
         file: 'lib/css/animation-name/index.md',
-        title: 'animation-name'
+        title: 'animation-name',
     },
     {
         file: 'lib/css/animation-play-state/index.md',
-        title: 'animation-play-state'
+        title: 'animation-play-state',
     },
     {
         file: 'lib/css/animation-range/index.md',
-        title: 'animation-range'
+        title: 'animation-range',
     },
     {
         file: 'lib/css/animation-range-end/index.md',
-        title: 'animation-range-end'
+        title: 'animation-range-end',
     },
     {
         file: 'lib/css/animation-range-start/index.md',
-        title: 'animation-range-start'
+        title: 'animation-range-start',
     },
     {
         file: 'lib/css/animation-timeline/index.md',
-        title: 'animation-timeline'
+        title: 'animation-timeline',
     },
     {
         file: 'lib/css/animation-timeline/scroll/index.md',
-        title: 'scroll()'
+        title: 'scroll()',
     },
     {
         file: 'lib/css/animation-timeline/view/index.md',
-        title: 'view()'
+        title: 'view()',
     },
     {
         file: 'lib/css/animation-timing-function/index.md',
-        title: 'animation-timing-function'
+        title: 'animation-timing-function',
     },
     {
         file: 'lib/css/appearance/index.md',
-        title: 'appearance'
+        title: 'appearance',
     },
     {
         file: 'lib/css/asin/index.md',
-        title: 'asin()'
+        title: 'asin()',
     },
     {
         file: 'lib/css/aspect-ratio/index.md',
-        title: 'aspect-ratio'
+        title: 'aspect-ratio',
     },
     {
         file: 'lib/css/at-rule/index.md',
-        title: 'At-rules'
+        title: 'At-rules',
     },
     {
         file: 'lib/css/at-rule-functions/index.md',
-        title: 'CSS at-rule functions'
+        title: 'CSS at-rule functions',
     },
     {
         file: 'lib/css/atan/index.md',
-        title: 'atan()'
+        title: 'atan()',
     },
     {
         file: 'lib/css/atan2/index.md',
-        title: 'atan2()'
+        title: 'atan2()',
     },
     {
         file: 'lib/css/attr/index.md',
-        title: 'attr()'
+        title: 'attr()',
     },
     {
         file: 'lib/css/attribute_selectors/index.md',
-        title: 'Attribute selectors'
+        title: 'Attribute selectors',
     },
     {
         file: 'lib/css/backdrop-filter/index.md',
-        title: 'backdrop-filter'
+        title: 'backdrop-filter',
     },
     {
         file: 'lib/css/backface-visibility/index.md',
-        title: 'backface-visibility'
+        title: 'backface-visibility',
     },
     {
         file: 'lib/css/background/index.md',
-        title: 'background'
+        title: 'background',
     },
     {
         file: 'lib/css/background-attachment/index.md',
-        title: 'background-attachment'
+        title: 'background-attachment',
     },
     {
         file: 'lib/css/background-blend-mode/index.md',
-        title: 'background-blend-mode'
+        title: 'background-blend-mode',
     },
     {
         file: 'lib/css/background-clip/index.md',
-        title: 'background-clip'
+        title: 'background-clip',
     },
     {
         file: 'lib/css/background-color/index.md',
-        title: 'background-color'
+        title: 'background-color',
     },
     {
         file: 'lib/css/background-image/index.md',
-        title: 'background-image'
+        title: 'background-image',
     },
     {
         file: 'lib/css/background-origin/index.md',
-        title: 'background-origin'
+        title: 'background-origin',
     },
     {
         file: 'lib/css/background-position/index.md',
-        title: 'background-position'
+        title: 'background-position',
     },
     {
         file: 'lib/css/background-position-x/index.md',
-        title: 'background-position-x'
+        title: 'background-position-x',
     },
     {
         file: 'lib/css/background-position-y/index.md',
-        title: 'background-position-y'
+        title: 'background-position-y',
     },
     {
         file: 'lib/css/background-repeat/index.md',
-        title: 'background-repeat'
+        title: 'background-repeat',
     },
     {
         file: 'lib/css/background-size/index.md',
-        title: 'background-size'
+        title: 'background-size',
     },
     {
         file: 'lib/css/basic-shape/circle/index.md',
-        title: 'circle()'
+        title: 'circle()',
     },
     {
         file: 'lib/css/basic-shape/ellipse/index.md',
-        title: 'ellipse()'
+        title: 'ellipse()',
     },
     {
         file: 'lib/css/basic-shape/index.md',
-        title: '<basic-shape>'
+        title: '<basic-shape>',
     },
     {
         file: 'lib/css/basic-shape/inset/index.md',
-        title: 'inset()'
+        title: 'inset()',
     },
     {
         file: 'lib/css/basic-shape/path/index.md',
-        title: 'path()'
+        title: 'path()',
     },
     {
         file: 'lib/css/basic-shape/polygon/index.md',
-        title: 'polygon()'
+        title: 'polygon()',
     },
     {
         file: 'lib/css/basic-shape/rect/index.md',
-        title: 'rect()'
+        title: 'rect()',
     },
     {
         file: 'lib/css/basic-shape/shape/index.md',
-        title: 'shape()'
+        title: 'shape()',
     },
     {
         file: 'lib/css/basic-shape/xywh/index.md',
-        title: 'xywh()'
+        title: 'xywh()',
     },
     {
         file: 'lib/css/blend-mode/index.md',
-        title: '<blend-mode>'
+        title: '<blend-mode>',
     },
     {
         file: 'lib/css/block-size/index.md',
-        title: 'block-size'
+        title: 'block-size',
     },
     {
         file: 'lib/css/border/index.md',
-        title: 'border'
+        title: 'border',
     },
     {
         file: 'lib/css/border-block/index.md',
-        title: 'border-block'
+        title: 'border-block',
     },
     {
         file: 'lib/css/border-block-color/index.md',
-        title: 'border-block-color'
+        title: 'border-block-color',
     },
     {
         file: 'lib/css/border-block-end/index.md',
-        title: 'border-block-end'
+        title: 'border-block-end',
     },
     {
         file: 'lib/css/border-block-end-color/index.md',
-        title: 'border-block-end-color'
+        title: 'border-block-end-color',
     },
     {
         file: 'lib/css/border-block-end-style/index.md',
-        title: 'border-block-end-style'
+        title: 'border-block-end-style',
     },
     {
         file: 'lib/css/border-block-end-width/index.md',
-        title: 'border-block-end-width'
+        title: 'border-block-end-width',
     },
     {
         file: 'lib/css/border-block-start/index.md',
-        title: 'border-block-start'
+        title: 'border-block-start',
     },
     {
         file: 'lib/css/border-block-start-color/index.md',
-        title: 'border-block-start-color'
+        title: 'border-block-start-color',
     },
     {
         file: 'lib/css/border-block-start-style/index.md',
-        title: 'border-block-start-style'
+        title: 'border-block-start-style',
     },
     {
         file: 'lib/css/border-block-start-width/index.md',
-        title: 'border-block-start-width'
+        title: 'border-block-start-width',
     },
     {
         file: 'lib/css/border-block-style/index.md',
-        title: 'border-block-style'
+        title: 'border-block-style',
     },
     {
         file: 'lib/css/border-block-width/index.md',
-        title: 'border-block-width'
+        title: 'border-block-width',
     },
     {
         file: 'lib/css/border-bottom/index.md',
-        title: 'border-bottom'
+        title: 'border-bottom',
     },
     {
         file: 'lib/css/border-bottom-color/index.md',
-        title: 'border-bottom-color'
+        title: 'border-bottom-color',
     },
     {
         file: 'lib/css/border-bottom-left-radius/index.md',
-        title: 'border-bottom-left-radius'
+        title: 'border-bottom-left-radius',
     },
     {
         file: 'lib/css/border-bottom-right-radius/index.md',
-        title: 'border-bottom-right-radius'
+        title: 'border-bottom-right-radius',
     },
     {
         file: 'lib/css/border-bottom-style/index.md',
-        title: 'border-bottom-style'
+        title: 'border-bottom-style',
     },
     {
         file: 'lib/css/border-bottom-width/index.md',
-        title: 'border-bottom-width'
+        title: 'border-bottom-width',
     },
     {
         file: 'lib/css/border-collapse/index.md',
-        title: 'border-collapse'
+        title: 'border-collapse',
     },
     {
         file: 'lib/css/border-color/index.md',
-        title: 'border-color'
+        title: 'border-color',
     },
     {
         file: 'lib/css/border-end-end-radius/index.md',
-        title: 'border-end-end-radius'
+        title: 'border-end-end-radius',
     },
     {
         file: 'lib/css/border-end-start-radius/index.md',
-        title: 'border-end-start-radius'
+        title: 'border-end-start-radius',
     },
     {
         file: 'lib/css/border-image/index.md',
-        title: 'border-image'
+        title: 'border-image',
     },
     {
         file: 'lib/css/border-image-outset/index.md',
-        title: 'border-image-outset'
+        title: 'border-image-outset',
     },
     {
         file: 'lib/css/border-image-repeat/index.md',
-        title: 'border-image-repeat'
+        title: 'border-image-repeat',
     },
     {
         file: 'lib/css/border-image-slice/index.md',
-        title: 'border-image-slice'
+        title: 'border-image-slice',
     },
     {
         file: 'lib/css/border-image-source/index.md',
-        title: 'border-image-source'
+        title: 'border-image-source',
     },
     {
         file: 'lib/css/border-image-width/index.md',
-        title: 'border-image-width'
+        title: 'border-image-width',
     },
     {
         file: 'lib/css/border-inline/index.md',
-        title: 'border-inline'
+        title: 'border-inline',
     },
     {
         file: 'lib/css/border-inline-color/index.md',
-        title: 'border-inline-color'
+        title: 'border-inline-color',
     },
     {
         file: 'lib/css/border-inline-end/index.md',
-        title: 'border-inline-end'
+        title: 'border-inline-end',
     },
     {
         file: 'lib/css/border-inline-end-color/index.md',
-        title: 'border-inline-end-color'
+        title: 'border-inline-end-color',
     },
     {
         file: 'lib/css/border-inline-end-style/index.md',
-        title: 'border-inline-end-style'
+        title: 'border-inline-end-style',
     },
     {
         file: 'lib/css/border-inline-end-width/index.md',
-        title: 'border-inline-end-width'
+        title: 'border-inline-end-width',
     },
     {
         file: 'lib/css/border-inline-start/index.md',
-        title: 'border-inline-start'
+        title: 'border-inline-start',
     },
     {
         file: 'lib/css/border-inline-start-color/index.md',
-        title: 'border-inline-start-color'
+        title: 'border-inline-start-color',
     },
     {
         file: 'lib/css/border-inline-start-style/index.md',
-        title: 'border-inline-start-style'
+        title: 'border-inline-start-style',
     },
     {
         file: 'lib/css/border-inline-start-width/index.md',
-        title: 'border-inline-start-width'
+        title: 'border-inline-start-width',
     },
     {
         file: 'lib/css/border-inline-style/index.md',
-        title: 'border-inline-style'
+        title: 'border-inline-style',
     },
     {
         file: 'lib/css/border-inline-width/index.md',
-        title: 'border-inline-width'
+        title: 'border-inline-width',
     },
     {
         file: 'lib/css/border-left/index.md',
-        title: 'border-left'
+        title: 'border-left',
     },
     {
         file: 'lib/css/border-left-color/index.md',
-        title: 'border-left-color'
+        title: 'border-left-color',
     },
     {
         file: 'lib/css/border-left-style/index.md',
-        title: 'border-left-style'
+        title: 'border-left-style',
     },
     {
         file: 'lib/css/border-left-width/index.md',
-        title: 'border-left-width'
+        title: 'border-left-width',
     },
     {
         file: 'lib/css/border-radius/index.md',
-        title: 'border-radius'
+        title: 'border-radius',
     },
     {
         file: 'lib/css/border-right/index.md',
-        title: 'border-right'
+        title: 'border-right',
     },
     {
         file: 'lib/css/border-right-color/index.md',
-        title: 'border-right-color'
+        title: 'border-right-color',
     },
     {
         file: 'lib/css/border-right-style/index.md',
-        title: 'border-right-style'
+        title: 'border-right-style',
     },
     {
         file: 'lib/css/border-right-width/index.md',
-        title: 'border-right-width'
+        title: 'border-right-width',
     },
     {
         file: 'lib/css/border-spacing/index.md',
-        title: 'border-spacing'
+        title: 'border-spacing',
     },
     {
         file: 'lib/css/border-start-end-radius/index.md',
-        title: 'border-start-end-radius'
+        title: 'border-start-end-radius',
     },
     {
         file: 'lib/css/border-start-start-radius/index.md',
-        title: 'border-start-start-radius'
+        title: 'border-start-start-radius',
     },
     {
         file: 'lib/css/border-style/index.md',
-        title: 'border-style'
+        title: 'border-style',
     },
     {
         file: 'lib/css/border-top/index.md',
-        title: 'border-top'
+        title: 'border-top',
     },
     {
         file: 'lib/css/border-top-color/index.md',
-        title: 'border-top-color'
+        title: 'border-top-color',
     },
     {
         file: 'lib/css/border-top-left-radius/index.md',
-        title: 'border-top-left-radius'
+        title: 'border-top-left-radius',
     },
     {
         file: 'lib/css/border-top-right-radius/index.md',
-        title: 'border-top-right-radius'
+        title: 'border-top-right-radius',
     },
     {
         file: 'lib/css/border-top-style/index.md',
-        title: 'border-top-style'
+        title: 'border-top-style',
     },
     {
         file: 'lib/css/border-top-width/index.md',
-        title: 'border-top-width'
+        title: 'border-top-width',
     },
     {
         file: 'lib/css/border-width/index.md',
-        title: 'border-width'
+        title: 'border-width',
     },
     {
         file: 'lib/css/bottom/index.md',
-        title: 'bottom'
+        title: 'bottom',
     },
     {
         file: 'lib/css/box-align/index.md',
-        title: 'box-align'
+        title: 'box-align',
     },
     {
         file: 'lib/css/box-decoration-break/index.md',
-        title: 'box-decoration-break'
+        title: 'box-decoration-break',
     },
     {
         file: 'lib/css/box-direction/index.md',
-        title: 'box-direction'
+        title: 'box-direction',
     },
     {
         file: 'lib/css/box-edge/index.md',
-        title: '<box-edge>'
+        title: '<box-edge>',
     },
     {
         file: 'lib/css/box-flex/index.md',
-        title: 'box-flex'
+        title: 'box-flex',
     },
     {
         file: 'lib/css/box-flex-group/index.md',
-        title: 'box-flex-group'
+        title: 'box-flex-group',
     },
     {
         file: 'lib/css/box-lines/index.md',
-        title: 'box-lines'
+        title: 'box-lines',
     },
     {
         file: 'lib/css/box-ordinal-group/index.md',
-        title: 'box-ordinal-group'
+        title: 'box-ordinal-group',
     },
     {
         file: 'lib/css/box-orient/index.md',
-        title: 'box-orient'
+        title: 'box-orient',
     },
     {
         file: 'lib/css/box-pack/index.md',
-        title: 'box-pack'
+        title: 'box-pack',
     },
     {
         file: 'lib/css/box-shadow/index.md',
-        title: 'box-shadow'
+        title: 'box-shadow',
     },
     {
         file: 'lib/css/box-sizing/index.md',
-        title: 'box-sizing'
+        title: 'box-sizing',
     },
     {
         file: 'lib/css/break-after/index.md',
-        title: 'break-after'
+        title: 'break-after',
     },
     {
         file: 'lib/css/break-before/index.md',
-        title: 'break-before'
+        title: 'break-before',
     },
     {
         file: 'lib/css/break-inside/index.md',
-        title: 'break-inside'
+        title: 'break-inside',
     },
     {
         file: 'lib/css/calc/index.md',
-        title: 'calc()'
+        title: 'calc()',
     },
     {
         file: 'lib/css/calc-keyword/index.md',
-        title: '<calc-keyword>'
+        title: '<calc-keyword>',
     },
     {
         file: 'lib/css/calc-sum/index.md',
-        title: '<calc-sum>'
+        title: '<calc-sum>',
     },
     {
         file: 'lib/css/caption-side/index.md',
-        title: 'caption-side'
+        title: 'caption-side',
     },
     {
         file: 'lib/css/caret-color/index.md',
-        title: 'caret-color'
+        title: 'caret-color',
     },
     {
         file: 'lib/css/cascade/index.md',
-        title: 'Introducing the CSS Cascade'
+        title: 'Introducing the CSS Cascade',
     },
     {
         file: 'lib/css/child_combinator/index.md',
-        title: 'Child combinator'
+        title: 'Child combinator',
     },
     {
         file: 'lib/css/clamp/index.md',
-        title: 'clamp()'
+        title: 'clamp()',
     },
     {
         file: 'lib/css/class_selectors/index.md',
-        title: 'Class selectors'
+        title: 'Class selectors',
     },
     {
         file: 'lib/css/clear/index.md',
-        title: 'clear'
+        title: 'clear',
     },
     {
         file: 'lib/css/clip/index.md',
-        title: 'clip'
+        title: 'clip',
     },
     {
         file: 'lib/css/clip-path/index.md',
-        title: 'clip-path'
+        title: 'clip-path',
     },
     {
         file: 'lib/css/color/index.md',
-        title: 'color'
+        title: 'color',
     },
     {
         file: 'lib/css/color-interpolation/index.md',
-        title: 'color-interpolation'
+        title: 'color-interpolation',
     },
     {
         file: 'lib/css/color-interpolation-method/index.md',
-        title: '<color-interpolation-method>'
+        title: '<color-interpolation-method>',
     },
     {
         file: 'lib/css/color-scheme/index.md',
-        title: 'color-scheme'
+        title: 'color-scheme',
     },
     {
         file: 'lib/css/color_value/color/index.md',
-        title: 'color()'
+        title: 'color()',
     },
     {
         file: 'lib/css/color_value/color-contrast/index.md',
-        title: 'color-contrast()'
+        title: 'color-contrast()',
     },
     {
         file: 'lib/css/color_value/color-mix/index.md',
-        title: 'color-mix()'
+        title: 'color-mix()',
     },
     {
         file: 'lib/css/color_value/device-cmyk/index.md',
-        title: 'device-cmyk()'
+        title: 'device-cmyk()',
     },
     {
         file: 'lib/css/color_value/hsl/index.md',
-        title: 'hsl()'
+        title: 'hsl()',
     },
     {
         file: 'lib/css/color_value/hwb/index.md',
-        title: 'hwb()'
+        title: 'hwb()',
     },
     {
         file: 'lib/css/color_value/index.md',
-        title: '<color>'
+        title: '<color>',
     },
     {
         file: 'lib/css/color_value/lab/index.md',
-        title: 'lab()'
+        title: 'lab()',
     },
     {
         file: 'lib/css/color_value/lch/index.md',
-        title: 'lch()'
+        title: 'lch()',
     },
     {
         file: 'lib/css/color_value/light-dark/index.md',
-        title: 'light-dark()'
+        title: 'light-dark()',
     },
     {
         file: 'lib/css/color_value/oklab/index.md',
-        title: 'oklab()'
+        title: 'oklab()',
     },
     {
         file: 'lib/css/color_value/oklch/index.md',
-        title: 'oklch()'
+        title: 'oklch()',
     },
     {
         file: 'lib/css/color_value/rgb/index.md',
-        title: 'rgb()'
+        title: 'rgb()',
     },
     {
         file: 'lib/css/column-count/index.md',
-        title: 'column-count'
+        title: 'column-count',
     },
     {
         file: 'lib/css/column-fill/index.md',
-        title: 'column-fill'
+        title: 'column-fill',
     },
     {
         file: 'lib/css/column-gap/index.md',
-        title: 'column-gap'
+        title: 'column-gap',
     },
     {
         file: 'lib/css/column-rule/index.md',
-        title: 'column-rule'
+        title: 'column-rule',
     },
     {
         file: 'lib/css/column-rule-color/index.md',
-        title: 'column-rule-color'
+        title: 'column-rule-color',
     },
     {
         file: 'lib/css/column-rule-style/index.md',
-        title: 'column-rule-style'
+        title: 'column-rule-style',
     },
     {
         file: 'lib/css/column-rule-width/index.md',
-        title: 'column-rule-width'
+        title: 'column-rule-width',
     },
     {
         file: 'lib/css/column-span/index.md',
-        title: 'column-span'
+        title: 'column-span',
     },
     {
         file: 'lib/css/column-width/index.md',
-        title: 'column-width'
+        title: 'column-width',
     },
     {
         file: 'lib/css/column_combinator/index.md',
-        title: 'Column combinator'
+        title: 'Column combinator',
     },
     {
         file: 'lib/css/columns/index.md',
-        title: 'columns'
+        title: 'columns',
     },
     {
         file: 'lib/css/comments/index.md',
-        title: 'Comments'
+        title: 'Comments',
     },
     {
         file: 'lib/css/computed_value/index.md',
-        title: 'Computed value'
+        title: 'Computed value',
     },
     {
         file: 'lib/css/contain/index.md',
-        title: 'contain'
+        title: 'contain',
     },
     {
         file: 'lib/css/contain-intrinsic-block-size/index.md',
-        title: 'contain-intrinsic-block-size'
+        title: 'contain-intrinsic-block-size',
     },
     {
         file: 'lib/css/contain-intrinsic-height/index.md',
-        title: 'contain-intrinsic-height'
+        title: 'contain-intrinsic-height',
     },
     {
         file: 'lib/css/contain-intrinsic-inline-size/index.md',
-        title: 'contain-intrinsic-inline-size'
+        title: 'contain-intrinsic-inline-size',
     },
     {
         file: 'lib/css/contain-intrinsic-size/index.md',
-        title: 'contain-intrinsic-size'
+        title: 'contain-intrinsic-size',
     },
     {
         file: 'lib/css/contain-intrinsic-width/index.md',
-        title: 'contain-intrinsic-width'
+        title: 'contain-intrinsic-width',
     },
     {
         file: 'lib/css/container/index.md',
-        title: 'container'
+        title: 'container',
     },
     {
         file: 'lib/css/container-name/index.md',
-        title: 'container-name'
+        title: 'container-name',
     },
     {
         file: 'lib/css/container-type/index.md',
-        title: 'container-type'
+        title: 'container-type',
     },
     {
         file: 'lib/css/containing_block/index.md',
-        title: 'Layout and the containing block'
+        title: 'Layout and the containing block',
     },
     {
         file: 'lib/css/content/index.md',
-        title: 'content'
+        title: 'content',
     },
     {
         file: 'lib/css/content-visibility/index.md',
-        title: 'content-visibility'
+        title: 'content-visibility',
     },
     {
         file: 'lib/css/cos/index.md',
-        title: 'cos()'
+        title: 'cos()',
     },
     {
         file: 'lib/css/counter/index.md',
-        title: 'counter()'
+        title: 'counter()',
     },
     {
         file: 'lib/css/counter-increment/index.md',
-        title: 'counter-increment'
+        title: 'counter-increment',
     },
     {
         file: 'lib/css/counter-reset/index.md',
-        title: 'counter-reset'
+        title: 'counter-reset',
     },
     {
         file: 'lib/css/counter-set/index.md',
-        title: 'counter-set'
+        title: 'counter-set',
     },
     {
         file: 'lib/css/counters/index.md',
-        title: 'counters()'
+        title: 'counters()',
     },
     {
         file: 'lib/css/cross-fade/index.md',
-        title: 'cross-fade()'
+        title: 'cross-fade()',
     },
     {
         file: 'lib/css/css_anchor_positioning/index.md',
-        title: 'CSS anchor positioning'
+        title: 'CSS anchor positioning',
     },
     {
         file: 'lib/css/css_anchor_positioning/try_options_hiding/index.md',
-        title: '"Handling overflow: try fallbacks and conditional hiding"'
+        title: 'Handling overflow: try fallbacks and conditional hiding',
     },
     {
         file: 'lib/css/css_anchor_positioning/using/index.md',
-        title: 'Using CSS anchor positioning'
+        title: 'Using CSS anchor positioning',
     },
     {
         file: 'lib/css/css_animated_properties/index.md',
-        title: 'Animatable CSS properties'
+        title: 'Animatable CSS properties',
     },
     {
         file: 'lib/css/css_animations/index.md',
-        title: 'CSS animations'
+        title: 'CSS animations',
     },
     {
         file: 'lib/css/css_animations/tips/index.md',
-        title: 'CSS animation tips and tricks'
+        title: 'CSS animation tips and tricks',
     },
     {
         file: 'lib/css/css_animations/using_css_animations/index.md',
-        title: 'Using CSS animations'
+        title: 'Using CSS animations',
     },
     {
         file: 'lib/css/css_backgrounds_and_borders/border-image_generator/index.md',
-        title: 'Border-image generator'
+        title: 'Border-image generator',
     },
     {
         file: 'lib/css/css_backgrounds_and_borders/border-radius_generator/index.md',
-        title: 'Border-radius generator'
+        title: 'Border-radius generator',
     },
     {
         file: 'lib/css/css_backgrounds_and_borders/box-shadow_generator/index.md',
-        title: 'Box-shadow generator'
+        title: 'Box-shadow generator',
     },
     {
         file: 'lib/css/css_backgrounds_and_borders/index.md',
-        title: 'CSS backgrounds and borders'
+        title: 'CSS backgrounds and borders',
     },
     {
         file: 'lib/css/css_backgrounds_and_borders/resizing_background_images/index.md',
-        title: 'Resizing background images with background-size'
+        title: 'Resizing background images with background-size',
     },
     {
         file: 'lib/css/css_backgrounds_and_borders/using_multiple_backgrounds/index.md',
-        title: 'Using multiple backgrounds'
+        title: 'Using multiple backgrounds',
     },
     {
         file: 'lib/css/css_basic_user_interface/index.md',
-        title: 'CSS basic user interface'
+        title: 'CSS basic user interface',
     },
     {
         file: 'lib/css/css_box_alignment/box_alignment_in_block_abspos_tables/index.md',
-        title: 'Box alignment for block, absolutely positioned, and table layouts'
+        title: 'Box alignment for block, absolutely positioned, and table layouts',
     },
     {
         file: 'lib/css/css_box_alignment/box_alignment_in_flexbox/index.md',
-        title: 'Box alignment in flexbox'
+        title: 'Box alignment in flexbox',
     },
     {
         file: 'lib/css/css_box_alignment/box_alignment_in_grid_layout/index.md',
-        title: 'Box alignment in grid layout'
+        title: 'Box alignment in grid layout',
     },
     {
         file: 'lib/css/css_box_alignment/box_alignment_in_multi-column_layout/index.md',
-        title: 'Box alignment in multi-column layout'
+        title: 'Box alignment in multi-column layout',
     },
     {
         file: 'lib/css/css_box_alignment/index.md',
-        title: 'CSS box alignment'
+        title: 'CSS box alignment',
     },
     {
         file: 'lib/css/css_box_model/index.md',
-        title: 'CSS box model'
+        title: 'CSS box model',
     },
     {
         file: 'lib/css/css_box_model/introduction_to_the_css_box_model/index.md',
-        title: 'Introduction to the CSS basic box model'
+        title: 'Introduction to the CSS basic box model',
     },
     {
         file: 'lib/css/css_box_model/mastering_margin_collapsing/index.md',
-        title: 'Mastering margin collapsing'
+        title: 'Mastering margin collapsing',
     },
     {
         file: 'lib/css/css_box_sizing/index.md',
-        title: 'CSS box sizing'
+        title: 'CSS box sizing',
     },
     {
         file: 'lib/css/css_box_sizing/understanding_aspect-ratio/index.md',
-        title: 'Understanding and setting aspect ratios'
+        title: 'Understanding and setting aspect ratios',
     },
     {
         file: 'lib/css/css_cascade/index.md',
-        title: 'CSS cascade and inheritance'
+        title: 'CSS cascade and inheritance',
     },
     {
         file: 'lib/css/css_cascading_variables/index.md',
-        title: 'CSS custom properties for cascading variables'
+        title: 'CSS custom properties for cascading variables',
     },
     {
         file: 'lib/css/css_color_adjustment/index.md',
-        title: 'CSS color adjustment'
+        title: 'CSS color adjustment',
     },
     {
         file: 'lib/css/css_colors/applying_color/index.md',
-        title: 'Applying color to HTML elements using CSS'
+        title: 'Applying color to HTML elements using CSS',
     },
     {
         file: 'lib/css/css_colors/color_picker_tool/index.md',
-        title: 'Color picker tool'
+        title: 'Color picker tool',
     },
     {
         file: 'lib/css/css_colors/color_values/index.md',
-        title: 'CSS color values'
+        title: 'CSS color values',
     },
     {
         file: 'lib/css/css_colors/index.md',
-        title: 'CSS colors'
+        title: 'CSS colors',
     },
     {
         file: 'lib/css/css_colors/relative_colors/index.md',
-        title: 'Using relative colors'
+        title: 'Using relative colors',
     },
     {
         file: 'lib/css/css_colors/using_color_wisely/index.md',
-        title: 'Using color wisely'
+        title: 'Using color wisely',
     },
     {
         file: 'lib/css/css_compositing_and_blending/index.md',
-        title: 'CSS compositing and blending'
+        title: 'CSS compositing and blending',
     },
     {
         file: 'lib/css/css_conditional_rules/index.md',
-        title: 'CSS conditional rules'
+        title: 'CSS conditional rules',
     },
     {
         file: 'lib/css/css_conditional_rules/using_feature_queries/index.md',
-        title: 'Using feature queries'
+        title: 'Using feature queries',
     },
     {
         file: 'lib/css/css_containment/container_queries/index.md',
-        title: 'CSS container queries'
+        title: 'CSS container queries',
     },
     {
         file: 'lib/css/css_containment/container_size_and_style_queries/index.md',
-        title: 'Using container size and style queries'
+        title: 'Using container size and style queries',
     },
     {
         file: 'lib/css/css_containment/index.md',
-        title: 'CSS containment'
+        title: 'CSS containment',
     },
     {
         file: 'lib/css/css_containment/using_css_containment/index.md',
-        title: 'Using CSS containment'
+        title: 'Using CSS containment',
     },
     {
         file: 'lib/css/css_counter_styles/index.md',
-        title: 'CSS counter styles'
+        title: 'CSS counter styles',
     },
     {
         file: 'lib/css/css_counter_styles/using_css_counters/index.md',
-        title: 'Using CSS counters'
+        title: 'Using CSS counters',
     },
     {
         file: 'lib/css/css_display/block_formatting_context/index.md',
-        title: 'Block formatting context'
+        title: 'Block formatting context',
     },
     {
         file: 'lib/css/css_display/index.md',
-        title: 'CSS display'
+        title: 'CSS display',
     },
     {
         file: 'lib/css/css_filter_effects/index.md',
-        title: 'CSS filter effects'
+        title: 'CSS filter effects',
     },
     {
         file: 'lib/css/css_filter_effects/using_filter_effects/index.md',
-        title: 'Using filter effects'
+        title: 'Using filter effects',
     },
     {
         file: 'lib/css/css_flexible_box_layout/aligning_items_in_a_flex_container/index.md',
-        title: 'Aligning items in a flex container'
+        title: 'Aligning items in a flex container',
     },
     {
         file: 'lib/css/css_flexible_box_layout/basic_concepts_of_flexbox/index.md',
-        title: 'Basic concepts of flexbox'
+        title: 'Basic concepts of flexbox',
     },
     {
         file: 'lib/css/css_flexible_box_layout/controlling_ratios_of_flex_items_along_the_main_axis/index.md',
-        title: 'Controlling ratios of flex items along the main axis'
+        title: 'Controlling ratios of flex items along the main axis',
     },
     {
         file: 'lib/css/css_flexible_box_layout/index.md',
-        title: 'CSS flexible box layout'
+        title: 'CSS flexible box layout',
     },
     {
         file: 'lib/css/css_flexible_box_layout/mastering_wrapping_of_flex_items/index.md',
-        title: 'Mastering wrapping of flex items'
+        title: 'Mastering wrapping of flex items',
     },
     {
         file: 'lib/css/css_flexible_box_layout/ordering_flex_items/index.md',
-        title: 'Ordering flex items'
+        title: 'Ordering flex items',
     },
     {
         file: 'lib/css/css_flexible_box_layout/relationship_of_flexbox_to_other_layout_methods/index.md',
-        title: 'Relationship of flexbox to other layout methods'
+        title: 'Relationship of flexbox to other layout methods',
     },
     {
         file: 'lib/css/css_flexible_box_layout/typical_use_cases_of_flexbox/index.md',
-        title: 'Typical use cases of flexbox'
+        title: 'Typical use cases of flexbox',
     },
     {
         file: 'lib/css/css_flow_layout/block_and_inline_layout_in_normal_flow/index.md',
-        title: 'Block and inline layout in normal flow'
+        title: 'Block and inline layout in normal flow',
     },
     {
         file: 'lib/css/css_flow_layout/flow_layout_and_overflow/index.md',
-        title: 'Flow layout and overflow'
+        title: 'Flow layout and overflow',
     },
     {
         file: 'lib/css/css_flow_layout/flow_layout_and_writing_modes/index.md',
-        title: 'Flow layout and writing modes'
+        title: 'Flow layout and writing modes',
     },
     {
         file: 'lib/css/css_flow_layout/in_flow_and_out_of_flow/index.md',
-        title: 'In flow and out of flow'
+        title: 'In flow and out of flow',
     },
     {
         file: 'lib/css/css_flow_layout/index.md',
-        title: 'CSS flow layout'
+        title: 'CSS flow layout',
     },
     {
         file: 'lib/css/css_flow_layout/introduction_to_formatting_contexts/index.md',
-        title: 'Introduction to formatting contexts'
+        title: 'Introduction to formatting contexts',
     },
     {
         file: 'lib/css/css_font_loading/index.md',
-        title: 'CSS font loading'
+        title: 'CSS font loading',
     },
     {
         file: 'lib/css/css_fonts/index.md',
-        title: 'CSS fonts'
+        title: 'CSS fonts',
     },
     {
         file: 'lib/css/css_fonts/opentype_fonts_guide/index.md',
-        title: 'OpenType font features guide'
+        title: 'OpenType font features guide',
     },
     {
         file: 'lib/css/css_fonts/variable_fonts_guide/index.md',
-        title: 'Variable fonts guide'
+        title: 'Variable fonts guide',
     },
     {
         file: 'lib/css/css_fonts/woff/index.md',
-        title: 'The Web Open Font Format (WOFF)'
+        title: 'The Web Open Font Format (WOFF)',
     },
     {
         file: 'lib/css/css_fragmentation/index.md',
-        title: 'CSS fragmentation'
+        title: 'CSS fragmentation',
     },
     {
         file: 'lib/css/css_functions/index.md',
-        title: 'CSS value functions'
+        title: 'CSS value functions',
     },
     {
         file: 'lib/css/css_functions/using_css_math_functions/index.md',
-        title: 'Using CSS math functions'
+        title: 'Using CSS math functions',
     },
     {
         file: 'lib/css/css_generated_content/index.md',
-        title: 'CSS generated content'
+        title: 'CSS generated content',
     },
     {
         file: 'lib/css/css_grid_layout/auto-placement_in_grid_layout/index.md',
-        title: 'Auto-placement in grid layout'
+        title: 'Auto-placement in grid layout',
     },
     {
         file: 'lib/css/css_grid_layout/basic_concepts_of_grid_layout/index.md',
-        title: 'Basic concepts of grid layout'
+        title: 'Basic concepts of grid layout',
     },
     {
         file: 'lib/css/css_grid_layout/box_alignment_in_grid_layout/index.md',
-        title: 'Box alignment in grid layout'
+        title: 'Box alignment in grid layout',
     },
     {
         file: 'lib/css/css_grid_layout/grid_layout_and_accessibility/index.md',
-        title: 'Grid layout and accessibility'
+        title: 'Grid layout and accessibility',
     },
     {
         file: 'lib/css/css_grid_layout/grid_layout_and_progressive_enhancement/index.md',
-        title: 'CSS grid layout and progressive enhancement'
+        title: 'CSS grid layout and progressive enhancement',
     },
     {
         file: 'lib/css/css_grid_layout/grid_layout_using_line-based_placement/index.md',
-        title: 'Grid layout using line-based placement'
+        title: 'Grid layout using line-based placement',
     },
     {
         file: 'lib/css/css_grid_layout/grid_layout_using_named_grid_lines/index.md',
-        title: 'Layout using named grid lines'
+        title: 'Layout using named grid lines',
     },
     {
         file: 'lib/css/css_grid_layout/grid_template_areas/index.md',
-        title: 'Grid template areas'
+        title: 'Grid template areas',
     },
     {
         file: 'lib/css/css_grid_layout/grids_logical_values_and_writing_modes/index.md',
-        title: 'Grids, logical values, and writing modes'
+        title: 'Grids, logical values, and writing modes',
     },
     {
         file: 'lib/css/css_grid_layout/index.md',
-        title: 'CSS grid layout'
+        title: 'CSS grid layout',
     },
     {
         file: 'lib/css/css_grid_layout/masonry_layout/index.md',
-        title: 'Masonry layout'
+        title: 'Masonry layout',
     },
     {
         file: 'lib/css/css_grid_layout/realizing_common_layouts_using_grids/index.md',
-        title: 'Realizing common layouts using grids'
+        title: 'Realizing common layouts using grids',
     },
     {
         file: 'lib/css/css_grid_layout/relationship_of_grid_layout_with_other_layout_methods/index.md',
-        title: 'Relationship of grid layout to other layout methods'
+        title: 'Relationship of grid layout to other layout methods',
     },
     {
         file: 'lib/css/css_grid_layout/subgrid/index.md',
-        title: 'Subgrid'
+        title: 'Subgrid',
     },
     {
         file: 'lib/css/css_houdini/index.md',
-        title: 'CSS Houdini'
+        title: 'CSS Houdini',
     },
     {
         file: 'lib/css/css_images/implementing_image_sprites_in_css/index.md',
-        title: 'Implementing image sprites in CSS'
+        title: 'Implementing image sprites in CSS',
     },
     {
         file: 'lib/css/css_images/index.md',
-        title: 'CSS images'
+        title: 'CSS images',
     },
     {
         file: 'lib/css/css_images/using_css_gradients/index.md',
-        title: 'Using CSS gradients'
+        title: 'Using CSS gradients',
     },
     {
         file: 'lib/css/css_lists/consistent_list_indentation/index.md',
-        title: 'Consistent list indentation'
+        title: 'Consistent list indentation',
     },
     {
         file: 'lib/css/css_lists/index.md',
-        title: 'CSS lists and counters'
+        title: 'CSS lists and counters',
     },
     {
         file: 'lib/css/css_logical_properties_and_values/basic_concepts_of_logical_properties_and_values/index.md',
-        title: 'Basic concepts of logical properties and values'
+        title: 'Basic concepts of logical properties and values',
     },
     {
         file: 'lib/css/css_logical_properties_and_values/floating_and_positioning/index.md',
-        title: 'Logical properties for floating and positioning'
+        title: 'Logical properties for floating and positioning',
     },
     {
         file: 'lib/css/css_logical_properties_and_values/index.md',
-        title: 'CSS logical properties and values'
+        title: 'CSS logical properties and values',
     },
     {
         file: 'lib/css/css_logical_properties_and_values/margins_borders_padding/index.md',
-        title: 'Logical properties for margins, borders, and padding'
+        title: 'Logical properties for margins, borders, and padding',
     },
     {
         file: 'lib/css/css_logical_properties_and_values/sizing/index.md',
-        title: 'Logical properties for sizing'
+        title: 'Logical properties for sizing',
     },
     {
         file: 'lib/css/css_masking/index.md',
-        title: 'CSS masking'
+        title: 'CSS masking',
     },
     {
         file: 'lib/css/css_media_queries/index.md',
-        title: 'CSS media queries'
+        title: 'CSS media queries',
     },
     {
         file: 'lib/css/css_media_queries/printing/index.md',
-        title: 'Printing'
+        title: 'Printing',
     },
     {
         file: 'lib/css/css_media_queries/testing_media_queries/index.md',
-        title: 'Testing media queries programmatically'
+        title: 'Testing media queries programmatically',
     },
     {
         file: 'lib/css/css_media_queries/using_media_queries/index.md',
-        title: 'Using media queries'
+        title: 'Using media queries',
     },
     {
         file: 'lib/css/css_media_queries/using_media_queries_for_accessibility/index.md',
-        title: 'Using media queries for accessibility'
+        title: 'Using media queries for accessibility',
     },
     {
         file: 'lib/css/css_miscellaneous/index.md',
-        title: 'CSS miscellaneous'
+        title: 'CSS miscellaneous',
     },
     {
         file: 'lib/css/css_motion_path/index.md',
-        title: 'CSS motion path'
+        title: 'CSS motion path',
     },
     {
         file: 'lib/css/css_multicol_layout/basic_concepts/index.md',
-        title: 'Basic concepts of multi-column layout'
+        title: 'Basic concepts of multi-column layout',
     },
     {
         file: 'lib/css/css_multicol_layout/handling_content_breaks_in_multicol_layout/index.md',
-        title: 'Handling content breaks in multi-column layout'
+        title: 'Handling content breaks in multi-column layout',
     },
     {
         file: 'lib/css/css_multicol_layout/handling_overflow_in_multicol_layout/index.md',
-        title: 'Handling overflow in multi-column layout'
+        title: 'Handling overflow in multi-column layout',
     },
     {
         file: 'lib/css/css_multicol_layout/index.md',
-        title: 'CSS multi-column layout'
+        title: 'CSS multi-column layout',
     },
     {
         file: 'lib/css/css_multicol_layout/spanning_balancing_columns/index.md',
-        title: 'Spanning and balancing columns'
+        title: 'Spanning and balancing columns',
     },
     {
         file: 'lib/css/css_multicol_layout/styling_columns/index.md',
-        title: 'Styling columns'
+        title: 'Styling columns',
     },
     {
         file: 'lib/css/css_multicol_layout/using_multicol_layouts/index.md',
-        title: 'Using multi-column layouts'
+        title: 'Using multi-column layouts',
     },
     {
         file: 'lib/css/css_namespaces/index.md',
-        title: 'CSS namespaces'
+        title: 'CSS namespaces',
     },
     {
         file: 'lib/css/css_nesting/index.md',
-        title: 'CSS nesting'
+        title: 'CSS nesting',
     },
     {
         file: 'lib/css/css_nesting/nesting_and_specificity/index.md',
-        title: 'CSS nesting and specificity'
+        title: 'CSS nesting and specificity',
     },
     {
         file: 'lib/css/css_nesting/nesting_at-rules/index.md',
-        title: 'CSS nesting at-rules'
+        title: 'CSS nesting at-rules',
     },
     {
         file: 'lib/css/css_nesting/using_css_nesting/index.md',
-        title: 'Using CSS nesting'
+        title: 'Using CSS nesting',
     },
     {
         file: 'lib/css/css_overflow/index.md',
-        title: 'CSS overflow'
+        title: 'CSS overflow',
     },
     {
         file: 'lib/css/css_overscroll_behavior/index.md',
-        title: 'CSS overscroll behavior'
+        title: 'CSS overscroll behavior',
     },
     {
         file: 'lib/css/css_paged_media/index.md',
-        title: 'CSS paged media'
+        title: 'CSS paged media',
     },
     {
         file: 'lib/css/css_positioned_layout/index.md',
-        title: 'CSS positioned layout'
+        title: 'CSS positioned layout',
     },
     {
         file: 'lib/css/css_positioned_layout/understanding_z-index/index.md',
-        title: 'Understanding z-index'
+        title: 'Understanding z-index',
     },
     {
         file: 'lib/css/css_positioned_layout/understanding_z-index/stacking_context/index.md',
-        title: 'Stacking context'
+        title: 'Stacking context',
     },
     {
         file: 'lib/css/css_positioned_layout/understanding_z-index/stacking_context_example_1/index.md',
-        title: 'Stacking context example 1'
+        title: 'Stacking context example 1',
     },
     {
         file: 'lib/css/css_positioned_layout/understanding_z-index/stacking_context_example_2/index.md',
-        title: 'Stacking context example 2'
+        title: 'Stacking context example 2',
     },
     {
         file: 'lib/css/css_positioned_layout/understanding_z-index/stacking_context_example_3/index.md',
-        title: 'Stacking context example 3'
+        title: 'Stacking context example 3',
     },
     {
         file: 'lib/css/css_positioned_layout/understanding_z-index/stacking_floating_elements/index.md',
-        title: 'Stacking floating elements'
+        title: 'Stacking floating elements',
     },
     {
         file: 'lib/css/css_positioned_layout/understanding_z-index/stacking_without_z-index/index.md',
-        title: 'Stacking without the z-index property'
+        title: 'Stacking without the z-index property',
     },
     {
         file: 'lib/css/css_positioned_layout/understanding_z-index/using_z-index/index.md',
-        title: 'Using z-index'
+        title: 'Using z-index',
     },
     {
         file: 'lib/css/css_properties_and_values_api/index.md',
-        title: 'CSS properties and values API'
+        title: 'CSS properties and values API',
     },
     {
         file: 'lib/css/css_pseudo-elements/index.md',
-        title: 'CSS pseudo-elements'
+        title: 'CSS pseudo-elements',
     },
     {
         file: 'lib/css/css_ruby_layout/index.md',
-        title: 'CSS ruby layout'
+        title: 'CSS ruby layout',
     },
     {
         file: 'lib/css/css_scoping/index.md',
-        title: 'CSS scoping'
+        title: 'CSS scoping',
     },
     {
         file: 'lib/css/css_scroll-driven_animations/index.md',
-        title: 'CSS scroll-driven animations'
+        title: 'CSS scroll-driven animations',
     },
     {
         file: 'lib/css/css_scroll_snap/basic_concepts/index.md',
-        title: 'Basic concepts of scroll snap'
+        title: 'Basic concepts of scroll snap',
     },
     {
         file: 'lib/css/css_scroll_snap/index.md',
-        title: 'CSS scroll snap'
+        title: 'CSS scroll snap',
     },
     {
         file: 'lib/css/css_scrollbars_styling/index.md',
-        title: 'CSS scrollbars styling'
+        title: 'CSS scrollbars styling',
     },
     {
         file: 'lib/css/css_selectors/index.md',
-        title: 'CSS selectors'
+        title: 'CSS selectors',
     },
     {
         file: 'lib/css/css_selectors/selector_structure/index.md',
-        title: 'CSS selector structure'
+        title: 'CSS selector structure',
     },
     {
         file: 'lib/css/css_selectors/selectors_and_combinators/index.md',
-        title: 'CSS selectors and combinators'
+        title: 'CSS selectors and combinators',
     },
     {
         file: 'lib/css/css_selectors/using_the__colon_target_pseudo-class_in_selectors/index.md',
-        title: 'Using the :target pseudo-class in selectors'
+        title: 'Using the :target pseudo-class in selectors',
     },
     {
         file: 'lib/css/css_shadow_parts/index.md',
-        title: 'CSS shadow parts'
+        title: 'CSS shadow parts',
     },
     {
         file: 'lib/css/css_shapes/basic_shapes/index.md',
-        title: 'Basic shapes with shape-outside'
+        title: 'Basic shapes with shape-outside',
     },
     {
         file: 'lib/css/css_shapes/from_box_values/index.md',
-        title: 'Shapes from box values'
+        title: 'Shapes from box values',
     },
     {
         file: 'lib/css/css_shapes/index.md',
-        title: 'CSS shapes'
+        title: 'CSS shapes',
     },
     {
         file: 'lib/css/css_shapes/overview_of_shapes/index.md',
-        title: 'Overview of shapes'
+        title: 'Overview of shapes',
     },
     {
         file: 'lib/css/css_shapes/shapes_from_images/index.md',
-        title: 'Shapes from images'
+        title: 'Shapes from images',
     },
     {
         file: 'lib/css/css_syntax/error_handling/index.md',
-        title: 'CSS error handling'
+        title: 'CSS error handling',
     },
     {
         file: 'lib/css/css_syntax/index.md',
-        title: 'CSS syntax'
+        title: 'CSS syntax',
     },
     {
         file: 'lib/css/css_table/index.md',
-        title: 'CSS table'
+        title: 'CSS table',
     },
     {
         file: 'lib/css/css_text/index.md',
-        title: 'CSS text'
+        title: 'CSS text',
     },
     {
         file: 'lib/css/css_text/wrapping_breaking_text/index.md',
-        title: 'Wrapping and breaking text'
+        title: 'Wrapping and breaking text',
     },
     {
         file: 'lib/css/css_text_decoration/index.md',
-        title: 'CSS text decoration'
+        title: 'CSS text decoration',
     },
     {
         file: 'lib/css/css_transforms/index.md',
-        title: 'CSS transforms'
+        title: 'CSS transforms',
     },
     {
         file: 'lib/css/css_transforms/using_css_transforms/index.md',
-        title: 'Using CSS transforms'
+        title: 'Using CSS transforms',
     },
     {
         file: 'lib/css/css_transitions/index.md',
-        title: 'CSS transitions'
+        title: 'CSS transitions',
     },
     {
         file: 'lib/css/css_transitions/using_css_transitions/index.md',
-        title: 'Using CSS transitions'
+        title: 'Using CSS transitions',
     },
     {
         file: 'lib/css/css_types/index.md',
-        title: 'CSS data types'
+        title: 'CSS data types',
     },
     {
         file: 'lib/css/css_values_and_units/index.md',
-        title: 'CSS values and units'
+        title: 'CSS values and units',
     },
     {
         file: 'lib/css/css_writing_modes/index.md',
-        title: 'CSS writing modes'
+        title: 'CSS writing modes',
     },
     {
         file: 'lib/css/css_writing_modes/vertical_controls/index.md',
-        title: 'Creating vertical form controls'
+        title: 'Creating vertical form controls',
     },
     {
         file: 'lib/css/cssom_view/coordinate_systems/index.md',
-        title: 'Coordinate systems'
+        title: 'Coordinate systems',
     },
     {
         file: 'lib/css/cssom_view/index.md',
-        title: 'CSSOM view'
+        title: 'CSSOM view',
     },
     {
         file: 'lib/css/cursor/index.md',
-        title: 'cursor'
+        title: 'cursor',
     },
     {
         file: 'lib/css/custom-ident/index.md',
-        title: '<custom-ident>'
+        title: '<custom-ident>',
     },
     {
         file: 'lib/css/cx/index.md',
-        title: 'cx'
+        title: 'cx',
     },
     {
         file: 'lib/css/cy/index.md',
-        title: 'cy'
+        title: 'cy',
     },
     {
         file: 'lib/css/dashed-ident/index.md',
-        title: '<dashed-ident>'
+        title: '<dashed-ident>',
     },
     {
         file: 'lib/css/descendant_combinator/index.md',
-        title: 'Descendant combinator'
+        title: 'Descendant combinator',
     },
     {
         file: 'lib/css/dimension/index.md',
-        title: '<dimension>'
+        title: '<dimension>',
     },
     {
         file: 'lib/css/direction/index.md',
-        title: 'direction'
+        title: 'direction',
     },
     {
         file: 'lib/css/display/index.md',
-        title: 'display'
+        title: 'display',
     },
     {
         file: 'lib/css/display/multi-keyword_syntax_of_display/index.md',
-        title: 'Using the multi-keyword syntax with CSS display'
+        title: 'Using the multi-keyword syntax with CSS display',
     },
     {
         file: 'lib/css/display-box/index.md',
-        title: '<display-box>'
+        title: '<display-box>',
     },
     {
         file: 'lib/css/display-inside/index.md',
-        title: '<display-inside>'
+        title: '<display-inside>',
     },
     {
         file: 'lib/css/display-internal/index.md',
-        title: '<display-internal>'
+        title: '<display-internal>',
     },
     {
         file: 'lib/css/display-legacy/index.md',
-        title: '<display-legacy>'
+        title: '<display-legacy>',
     },
     {
         file: 'lib/css/display-listitem/index.md',
-        title: '<display-listitem>'
+        title: '<display-listitem>',
     },
     {
         file: 'lib/css/display-outside/index.md',
-        title: '<display-outside>'
+        title: '<display-outside>',
     },
     {
         file: 'lib/css/easing-function/index.md',
-        title: '<easing-function>'
+        title: '<easing-function>',
     },
     {
         file: 'lib/css/element/index.md',
-        title: 'element()'
+        title: 'element()',
     },
     {
         file: 'lib/css/empty-cells/index.md',
-        title: 'empty-cells'
+        title: 'empty-cells',
     },
     {
         file: 'lib/css/env/index.md',
-        title: 'env()'
+        title: 'env()',
     },
     {
         file: 'lib/css/exp/index.md',
-        title: 'exp()'
+        title: 'exp()',
     },
     {
         file: 'lib/css/field-sizing/index.md',
-        title: 'field-sizing'
+        title: 'field-sizing',
     },
     {
         file: 'lib/css/filter/index.md',
-        title: 'filter'
+        title: 'filter',
     },
     {
         file: 'lib/css/filter-function/blur/index.md',
-        title: 'blur()'
+        title: 'blur()',
     },
     {
         file: 'lib/css/filter-function/brightness/index.md',
-        title: 'brightness()'
+        title: 'brightness()',
     },
     {
         file: 'lib/css/filter-function/contrast/index.md',
-        title: 'contrast()'
+        title: 'contrast()',
     },
     {
         file: 'lib/css/filter-function/drop-shadow/index.md',
-        title: 'drop-shadow()'
+        title: 'drop-shadow()',
     },
     {
         file: 'lib/css/filter-function/grayscale/index.md',
-        title: 'grayscale()'
+        title: 'grayscale()',
     },
     {
         file: 'lib/css/filter-function/hue-rotate/index.md',
-        title: 'hue-rotate()'
+        title: 'hue-rotate()',
     },
     {
         file: 'lib/css/filter-function/index.md',
-        title: '<filter-function>'
+        title: '<filter-function>',
     },
     {
         file: 'lib/css/filter-function/invert/index.md',
-        title: 'invert()'
+        title: 'invert()',
     },
     {
         file: 'lib/css/filter-function/opacity/index.md',
-        title: 'opacity()'
+        title: 'opacity()',
     },
     {
         file: 'lib/css/filter-function/saturate/index.md',
-        title: 'saturate()'
+        title: 'saturate()',
     },
     {
         file: 'lib/css/filter-function/sepia/index.md',
-        title: 'sepia()'
+        title: 'sepia()',
     },
     {
         file: 'lib/css/fit-content/index.md',
-        title: 'fit-content'
+        title: 'fit-content',
     },
     {
         file: 'lib/css/fit-content_function/index.md',
-        title: 'fit-content()'
+        title: 'fit-content()',
     },
     {
         file: 'lib/css/flex/index.md',
-        title: 'flex'
+        title: 'flex',
     },
     {
         file: 'lib/css/flex-basis/index.md',
-        title: 'flex-basis'
+        title: 'flex-basis',
     },
     {
         file: 'lib/css/flex-direction/index.md',
-        title: 'flex-direction'
+        title: 'flex-direction',
     },
     {
         file: 'lib/css/flex-flow/index.md',
-        title: 'flex-flow'
+        title: 'flex-flow',
     },
     {
         file: 'lib/css/flex-grow/index.md',
-        title: 'flex-grow'
+        title: 'flex-grow',
     },
     {
         file: 'lib/css/flex-shrink/index.md',
-        title: 'flex-shrink'
+        title: 'flex-shrink',
     },
     {
         file: 'lib/css/flex-wrap/index.md',
-        title: 'flex-wrap'
+        title: 'flex-wrap',
     },
     {
         file: 'lib/css/flex_value/index.md',
-        title: '<flex>'
+        title: '<flex>',
     },
     {
         file: 'lib/css/float/index.md',
-        title: 'float'
+        title: 'float',
     },
     {
         file: 'lib/css/font/index.md',
-        title: 'font'
+        title: 'font',
     },
     {
         file: 'lib/css/font-family/index.md',
-        title: 'font-family'
+        title: 'font-family',
     },
     {
         file: 'lib/css/font-feature-settings/index.md',
-        title: 'font-feature-settings'
+        title: 'font-feature-settings',
     },
     {
         file: 'lib/css/font-kerning/index.md',
-        title: 'font-kerning'
+        title: 'font-kerning',
     },
     {
         file: 'lib/css/font-language-override/index.md',
-        title: 'font-language-override'
+        title: 'font-language-override',
     },
     {
         file: 'lib/css/font-optical-sizing/index.md',
-        title: 'font-optical-sizing'
+        title: 'font-optical-sizing',
     },
     {
         file: 'lib/css/font-palette/index.md',
-        title: 'font-palette'
+        title: 'font-palette',
     },
     {
         file: 'lib/css/font-palette/palette-mix/index.md',
-        title: 'palette-mix()'
+        title: 'palette-mix()',
     },
     {
         file: 'lib/css/font-size/index.md',
-        title: 'font-size'
+        title: 'font-size',
     },
     {
         file: 'lib/css/font-size-adjust/index.md',
-        title: 'font-size-adjust'
+        title: 'font-size-adjust',
     },
     {
         file: 'lib/css/font-smooth/index.md',
-        title: 'font-smooth'
+        title: 'font-smooth',
     },
     {
         file: 'lib/css/font-stretch/index.md',
-        title: 'font-stretch'
+        title: 'font-stretch',
     },
     {
         file: 'lib/css/font-style/index.md',
-        title: 'font-style'
+        title: 'font-style',
     },
     {
         file: 'lib/css/font-synthesis/index.md',
-        title: 'font-synthesis'
+        title: 'font-synthesis',
     },
     {
         file: 'lib/css/font-synthesis-position/index.md',
-        title: 'font-synthesis-position'
+        title: 'font-synthesis-position',
     },
     {
         file: 'lib/css/font-synthesis-small-caps/index.md',
-        title: 'font-synthesis-small-caps'
+        title: 'font-synthesis-small-caps',
     },
     {
         file: 'lib/css/font-synthesis-style/index.md',
-        title: 'font-synthesis-style'
+        title: 'font-synthesis-style',
     },
     {
         file: 'lib/css/font-synthesis-weight/index.md',
-        title: 'font-synthesis-weight'
+        title: 'font-synthesis-weight',
     },
     {
         file: 'lib/css/font-variant/index.md',
-        title: 'font-variant'
+        title: 'font-variant',
     },
     {
         file: 'lib/css/font-variant-alternates/index.md',
-        title: 'font-variant-alternates'
+        title: 'font-variant-alternates',
     },
     {
         file: 'lib/css/font-variant-caps/index.md',
-        title: 'font-variant-caps'
+        title: 'font-variant-caps',
     },
     {
         file: 'lib/css/font-variant-east-asian/index.md',
-        title: 'font-variant-east-asian'
+        title: 'font-variant-east-asian',
     },
     {
         file: 'lib/css/font-variant-emoji/index.md',
-        title: 'font-variant-emoji'
+        title: 'font-variant-emoji',
     },
     {
         file: 'lib/css/font-variant-ligatures/index.md',
-        title: 'font-variant-ligatures'
+        title: 'font-variant-ligatures',
     },
     {
         file: 'lib/css/font-variant-numeric/index.md',
-        title: 'font-variant-numeric'
+        title: 'font-variant-numeric',
     },
     {
         file: 'lib/css/font-variant-position/index.md',
-        title: 'font-variant-position'
+        title: 'font-variant-position',
     },
     {
         file: 'lib/css/font-variation-settings/index.md',
-        title: 'font-variation-settings'
+        title: 'font-variation-settings',
     },
     {
         file: 'lib/css/font-weight/index.md',
-        title: 'font-weight'
+        title: 'font-weight',
     },
     {
         file: 'lib/css/forced-color-adjust/index.md',
-        title: 'forced-color-adjust'
+        title: 'forced-color-adjust',
     },
     {
         file: 'lib/css/frequency/index.md',
-        title: '<frequency>'
+        title: '<frequency>',
     },
     {
         file: 'lib/css/frequency-percentage/index.md',
-        title: '<frequency-percentage>'
+        title: '<frequency-percentage>',
     },
     {
         file: 'lib/css/gap/index.md',
-        title: 'gap'
+        title: 'gap',
     },
     {
         file: 'lib/css/generic-family/index.md',
-        title: '<generic-family>'
+        title: '<generic-family>',
     },
     {
         file: 'lib/css/gradient/conic-gradient/index.md',
-        title: 'conic-gradient()'
+        title: 'conic-gradient()',
     },
     {
         file: 'lib/css/gradient/index.md',
-        title: '<gradient>'
+        title: '<gradient>',
     },
     {
         file: 'lib/css/gradient/linear-gradient/index.md',
-        title: 'linear-gradient()'
+        title: 'linear-gradient()',
     },
     {
         file: 'lib/css/gradient/radial-gradient/index.md',
-        title: 'radial-gradient()'
+        title: 'radial-gradient()',
     },
     {
         file: 'lib/css/gradient/repeating-conic-gradient/index.md',
-        title: 'repeating-conic-gradient()'
+        title: 'repeating-conic-gradient()',
     },
     {
         file: 'lib/css/gradient/repeating-linear-gradient/index.md',
-        title: 'repeating-linear-gradient()'
+        title: 'repeating-linear-gradient()',
     },
     {
         file: 'lib/css/gradient/repeating-radial-gradient/index.md',
-        title: 'repeating-radial-gradient()'
+        title: 'repeating-radial-gradient()',
     },
     {
         file: 'lib/css/grid/index.md',
-        title: 'grid'
+        title: 'grid',
     },
     {
         file: 'lib/css/grid-area/index.md',
-        title: 'grid-area'
+        title: 'grid-area',
     },
     {
         file: 'lib/css/grid-auto-columns/index.md',
-        title: 'grid-auto-columns'
+        title: 'grid-auto-columns',
     },
     {
         file: 'lib/css/grid-auto-flow/index.md',
-        title: 'grid-auto-flow'
+        title: 'grid-auto-flow',
     },
     {
         file: 'lib/css/grid-auto-rows/index.md',
-        title: 'grid-auto-rows'
+        title: 'grid-auto-rows',
     },
     {
         file: 'lib/css/grid-column/index.md',
-        title: 'grid-column'
+        title: 'grid-column',
     },
     {
         file: 'lib/css/grid-column-end/index.md',
-        title: 'grid-column-end'
+        title: 'grid-column-end',
     },
     {
         file: 'lib/css/grid-column-start/index.md',
-        title: 'grid-column-start'
+        title: 'grid-column-start',
     },
     {
         file: 'lib/css/grid-row/index.md',
-        title: 'grid-row'
+        title: 'grid-row',
     },
     {
         file: 'lib/css/grid-row-end/index.md',
-        title: 'grid-row-end'
+        title: 'grid-row-end',
     },
     {
         file: 'lib/css/grid-row-start/index.md',
-        title: 'grid-row-start'
+        title: 'grid-row-start',
     },
     {
         file: 'lib/css/grid-template/index.md',
-        title: 'grid-template'
+        title: 'grid-template',
     },
     {
         file: 'lib/css/grid-template-areas/index.md',
-        title: 'grid-template-areas'
+        title: 'grid-template-areas',
     },
     {
         file: 'lib/css/grid-template-columns/index.md',
-        title: 'grid-template-columns'
+        title: 'grid-template-columns',
     },
     {
         file: 'lib/css/grid-template-rows/index.md',
-        title: 'grid-template-rows'
+        title: 'grid-template-rows',
     },
     {
         file: 'lib/css/hanging-punctuation/index.md',
-        title: 'hanging-punctuation'
+        title: 'hanging-punctuation',
     },
     {
         file: 'lib/css/height/index.md',
-        title: 'height'
+        title: 'height',
     },
     {
         file: 'lib/css/hex-color/index.md',
-        title: '<hex-color>'
+        title: '<hex-color>',
     },
     {
         file: 'lib/css/hue/index.md',
-        title: '<hue>'
+        title: '<hue>',
     },
     {
         file: 'lib/css/hue-interpolation-method/index.md',
-        title: '<hue-interpolation-method>'
+        title: '<hue-interpolation-method>',
     },
     {
         file: 'lib/css/hyphenate-character/index.md',
-        title: 'hyphenate-character'
+        title: 'hyphenate-character',
     },
     {
         file: 'lib/css/hyphenate-limit-chars/index.md',
-        title: 'hyphenate-limit-chars'
+        title: 'hyphenate-limit-chars',
     },
     {
         file: 'lib/css/hyphens/index.md',
-        title: 'hyphens'
+        title: 'hyphens',
     },
     {
         file: 'lib/css/hypot/index.md',
-        title: 'hypot()'
+        title: 'hypot()',
     },
     {
         file: 'lib/css/id_selectors/index.md',
-        title: 'ID selectors'
+        title: 'ID selectors',
     },
     {
         file: 'lib/css/ident/index.md',
-        title: '<ident>'
+        title: '<ident>',
     },
     {
         file: 'lib/css/image/image/index.md',
-        title: 'image()'
+        title: 'image()',
     },
     {
         file: 'lib/css/image/image-set/index.md',
-        title: 'image-set()'
+        title: 'image-set()',
     },
     {
         file: 'lib/css/image/index.md',
-        title: '<image>'
+        title: '<image>',
     },
     {
         file: 'lib/css/image/paint/index.md',
-        title: 'paint()'
+        title: 'paint()',
     },
     {
         file: 'lib/css/image-orientation/index.md',
-        title: 'image-orientation'
+        title: 'image-orientation',
     },
     {
         file: 'lib/css/image-rendering/index.md',
-        title: 'image-rendering'
+        title: 'image-rendering',
     },
     {
         file: 'lib/css/image-resolution/index.md',
-        title: 'image-resolution'
+        title: 'image-resolution',
     },
     {
         file: 'lib/css/important/index.md',
-        title: '"!important"'
+        title: '!important',
     },
     {
         file: 'lib/css/index.md',
-        title: '"CSS: Cascading Style Sheets"'
+        title: 'CSS: Cascading Style Sheets',
     },
     {
         file: 'lib/css/inherit/index.md',
-        title: 'inherit'
+        title: 'inherit',
     },
     {
         file: 'lib/css/inheritance/index.md',
-        title: 'Inheritance'
+        title: 'Inheritance',
     },
     {
         file: 'lib/css/initial/index.md',
-        title: 'initial'
+        title: 'initial',
     },
     {
         file: 'lib/css/initial-letter/index.md',
-        title: 'initial-letter'
+        title: 'initial-letter',
     },
     {
         file: 'lib/css/initial_value/index.md',
-        title: 'Initial value'
+        title: 'Initial value',
     },
     {
         file: 'lib/css/inline-size/index.md',
-        title: 'inline-size'
+        title: 'inline-size',
     },
     {
         file: 'lib/css/inline_formatting_context/index.md',
-        title: 'Inline formatting context'
+        title: 'Inline formatting context',
     },
     {
         file: 'lib/css/inset/index.md',
-        title: 'inset'
+        title: 'inset',
     },
     {
         file: 'lib/css/inset-area/index.md',
-        title: 'inset-area'
+        title: 'inset-area',
     },
     {
         file: 'lib/css/inset-area_value/index.md',
-        title: '<inset-area>'
+        title: '<inset-area>',
     },
     {
         file: 'lib/css/inset-block/index.md',
-        title: 'inset-block'
+        title: 'inset-block',
     },
     {
         file: 'lib/css/inset-block-end/index.md',
-        title: 'inset-block-end'
+        title: 'inset-block-end',
     },
     {
         file: 'lib/css/inset-block-start/index.md',
-        title: 'inset-block-start'
+        title: 'inset-block-start',
     },
     {
         file: 'lib/css/inset-inline/index.md',
-        title: 'inset-inline'
+        title: 'inset-inline',
     },
     {
         file: 'lib/css/inset-inline-end/index.md',
-        title: 'inset-inline-end'
+        title: 'inset-inline-end',
     },
     {
         file: 'lib/css/inset-inline-start/index.md',
-        title: 'inset-inline-start'
+        title: 'inset-inline-start',
     },
     {
         file: 'lib/css/integer/index.md',
-        title: '<integer>'
+        title: '<integer>',
     },
     {
         file: 'lib/css/isolation/index.md',
-        title: 'isolation'
+        title: 'isolation',
     },
     {
         file: 'lib/css/justify-content/index.md',
-        title: 'justify-content'
+        title: 'justify-content',
     },
     {
         file: 'lib/css/justify-items/index.md',
-        title: 'justify-items'
+        title: 'justify-items',
     },
     {
         file: 'lib/css/justify-self/index.md',
-        title: 'justify-self'
+        title: 'justify-self',
     },
     {
         file: 'lib/css/layout_cookbook/breadcrumb_navigation/index.md',
-        title: 'Breadcrumb navigation'
+        title: 'Breadcrumb navigation',
     },
     {
         file: 'lib/css/layout_cookbook/card/index.md',
-        title: 'Card'
+        title: 'Card',
     },
     {
         file: 'lib/css/layout_cookbook/center_an_element/index.md',
-        title: 'Center an element'
+        title: 'Center an element',
     },
     {
         file: 'lib/css/layout_cookbook/column_layouts/index.md',
-        title: 'Column layouts'
+        title: 'Column layouts',
     },
     {
         file: 'lib/css/layout_cookbook/contribute_a_recipe/cookbook_template/index.md',
-        title: 'Cookbook template'
+        title: 'Cookbook template',
     },
     {
         file: 'lib/css/layout_cookbook/contribute_a_recipe/index.md',
-        title: 'Contribute a recipe'
+        title: 'Contribute a recipe',
     },
     {
         file: 'lib/css/layout_cookbook/grid_wrapper/index.md',
-        title: 'Grid wrapper'
+        title: 'Grid wrapper',
     },
     {
         file: 'lib/css/layout_cookbook/index.md',
-        title: 'CSS Layout cookbook'
+        title: 'CSS Layout cookbook',
     },
     {
         file: 'lib/css/layout_cookbook/list_group_with_badges/index.md',
-        title: 'List group with badges'
+        title: 'List group with badges',
     },
     {
         file: 'lib/css/layout_cookbook/media_objects/index.md',
-        title: '"Recipe: Media objects"'
+        title: 'Recipe: Media objects',
     },
     {
         file: 'lib/css/layout_cookbook/pagination/index.md',
-        title: 'Pagination'
+        title: 'Pagination',
     },
     {
         file: 'lib/css/layout_cookbook/split_navigation/index.md',
-        title: 'Split navigation'
+        title: 'Split navigation',
     },
     {
         file: 'lib/css/layout_cookbook/sticky_footers/index.md',
-        title: 'Sticky footers'
+        title: 'Sticky footers',
     },
     {
         file: 'lib/css/layout_mode/index.md',
-        title: 'Layout mode'
+        title: 'Layout mode',
     },
     {
         file: 'lib/css/left/index.md',
-        title: 'left'
+        title: 'left',
     },
     {
         file: 'lib/css/length/index.md',
-        title: '<length>'
+        title: '<length>',
     },
     {
         file: 'lib/css/length-percentage/index.md',
-        title: '<length-percentage>'
+        title: '<length-percentage>',
     },
     {
         file: 'lib/css/letter-spacing/index.md',
-        title: 'letter-spacing'
+        title: 'letter-spacing',
     },
     {
         file: 'lib/css/line-break/index.md',
-        title: 'line-break'
+        title: 'line-break',
     },
     {
         file: 'lib/css/line-height/index.md',
-        title: 'line-height'
+        title: 'line-height',
     },
     {
         file: 'lib/css/line-height-step/index.md',
-        title: 'line-height-step'
+        title: 'line-height-step',
     },
     {
         file: 'lib/css/line-style/index.md',
-        title: '<line-style>'
+        title: '<line-style>',
     },
     {
         file: 'lib/css/list-style/index.md',
-        title: 'list-style'
+        title: 'list-style',
     },
     {
         file: 'lib/css/list-style-image/index.md',
-        title: 'list-style-image'
+        title: 'list-style-image',
     },
     {
         file: 'lib/css/list-style-position/index.md',
-        title: 'list-style-position'
+        title: 'list-style-position',
     },
     {
         file: 'lib/css/list-style-type/index.md',
-        title: 'list-style-type'
+        title: 'list-style-type',
     },
     {
         file: 'lib/css/log/index.md',
-        title: 'log()'
+        title: 'log()',
     },
     {
         file: 'lib/css/margin/index.md',
-        title: 'margin'
+        title: 'margin',
     },
     {
         file: 'lib/css/margin-block/index.md',
-        title: 'margin-block'
+        title: 'margin-block',
     },
     {
         file: 'lib/css/margin-block-end/index.md',
-        title: 'margin-block-end'
+        title: 'margin-block-end',
     },
     {
         file: 'lib/css/margin-block-start/index.md',
-        title: 'margin-block-start'
+        title: 'margin-block-start',
     },
     {
         file: 'lib/css/margin-bottom/index.md',
-        title: 'margin-bottom'
+        title: 'margin-bottom',
     },
     {
         file: 'lib/css/margin-inline/index.md',
-        title: 'margin-inline'
+        title: 'margin-inline',
     },
     {
         file: 'lib/css/margin-inline-end/index.md',
-        title: 'margin-inline-end'
+        title: 'margin-inline-end',
     },
     {
         file: 'lib/css/margin-inline-start/index.md',
-        title: 'margin-inline-start'
+        title: 'margin-inline-start',
     },
     {
         file: 'lib/css/margin-left/index.md',
-        title: 'margin-left'
+        title: 'margin-left',
     },
     {
         file: 'lib/css/margin-right/index.md',
-        title: 'margin-right'
+        title: 'margin-right',
     },
     {
         file: 'lib/css/margin-top/index.md',
-        title: 'margin-top'
+        title: 'margin-top',
     },
     {
         file: 'lib/css/margin-trim/index.md',
-        title: 'margin-trim'
+        title: 'margin-trim',
     },
     {
         file: 'lib/css/mask/index.md',
-        title: 'mask'
+        title: 'mask',
     },
     {
         file: 'lib/css/mask-border/index.md',
-        title: 'mask-border'
+        title: 'mask-border',
     },
     {
         file: 'lib/css/mask-border-mode/index.md',
-        title: 'mask-border-mode'
+        title: 'mask-border-mode',
     },
     {
         file: 'lib/css/mask-border-outset/index.md',
-        title: 'mask-border-outset'
+        title: 'mask-border-outset',
     },
     {
         file: 'lib/css/mask-border-repeat/index.md',
-        title: 'mask-border-repeat'
+        title: 'mask-border-repeat',
     },
     {
         file: 'lib/css/mask-border-slice/index.md',
-        title: 'mask-border-slice'
+        title: 'mask-border-slice',
     },
     {
         file: 'lib/css/mask-border-source/index.md',
-        title: 'mask-border-source'
+        title: 'mask-border-source',
     },
     {
         file: 'lib/css/mask-border-width/index.md',
-        title: 'mask-border-width'
+        title: 'mask-border-width',
     },
     {
         file: 'lib/css/mask-clip/index.md',
-        title: 'mask-clip'
+        title: 'mask-clip',
     },
     {
         file: 'lib/css/mask-composite/index.md',
-        title: 'mask-composite'
+        title: 'mask-composite',
     },
     {
         file: 'lib/css/mask-image/index.md',
-        title: 'mask-image'
+        title: 'mask-image',
     },
     {
         file: 'lib/css/mask-mode/index.md',
-        title: 'mask-mode'
+        title: 'mask-mode',
     },
     {
         file: 'lib/css/mask-origin/index.md',
-        title: 'mask-origin'
+        title: 'mask-origin',
     },
     {
         file: 'lib/css/mask-position/index.md',
-        title: 'mask-position'
+        title: 'mask-position',
     },
     {
         file: 'lib/css/mask-repeat/index.md',
-        title: 'mask-repeat'
+        title: 'mask-repeat',
     },
     {
         file: 'lib/css/mask-size/index.md',
-        title: 'mask-size'
+        title: 'mask-size',
     },
     {
         file: 'lib/css/mask-type/index.md',
-        title: 'mask-type'
+        title: 'mask-type',
     },
     {
         file: 'lib/css/masonry-auto-flow/index.md',
-        title: 'masonry-auto-flow'
+        title: 'masonry-auto-flow',
     },
     {
         file: 'lib/css/math-depth/index.md',
-        title: 'math-depth'
+        title: 'math-depth',
     },
     {
         file: 'lib/css/math-shift/index.md',
-        title: 'math-shift'
+        title: 'math-shift',
     },
     {
         file: 'lib/css/math-style/index.md',
-        title: 'math-style'
+        title: 'math-style',
     },
     {
         file: 'lib/css/max/index.md',
-        title: 'max()'
+        title: 'max()',
     },
     {
         file: 'lib/css/max-block-size/index.md',
-        title: 'max-block-size'
+        title: 'max-block-size',
     },
     {
         file: 'lib/css/max-content/index.md',
-        title: 'max-content'
+        title: 'max-content',
     },
     {
         file: 'lib/css/max-height/index.md',
-        title: 'max-height'
+        title: 'max-height',
     },
     {
         file: 'lib/css/max-inline-size/index.md',
-        title: 'max-inline-size'
+        title: 'max-inline-size',
     },
     {
         file: 'lib/css/max-width/index.md',
-        title: 'max-width'
+        title: 'max-width',
     },
     {
         file: 'lib/css/min/index.md',
-        title: 'min()'
+        title: 'min()',
     },
     {
         file: 'lib/css/min-block-size/index.md',
-        title: 'min-block-size'
+        title: 'min-block-size',
     },
     {
         file: 'lib/css/min-content/index.md',
-        title: 'min-content'
+        title: 'min-content',
     },
     {
         file: 'lib/css/min-height/index.md',
-        title: 'min-height'
+        title: 'min-height',
     },
     {
         file: 'lib/css/min-inline-size/index.md',
-        title: 'min-inline-size'
+        title: 'min-inline-size',
     },
     {
         file: 'lib/css/min-width/index.md',
-        title: 'min-width'
+        title: 'min-width',
     },
     {
         file: 'lib/css/minmax/index.md',
-        title: 'minmax()'
+        title: 'minmax()',
     },
     {
         file: 'lib/css/mix-blend-mode/index.md',
-        title: 'mix-blend-mode'
+        title: 'mix-blend-mode',
     },
     {
         file: 'lib/css/mod/index.md',
-        title: 'mod()'
+        title: 'mod()',
     },
     {
         file: 'lib/css/mozilla_extensions/index.md',
-        title: 'Mozilla vendor-prefixed CSS extensions'
+        title: 'Mozilla vendor-prefixed CSS extensions',
     },
     {
         file: 'lib/css/named-color/index.md',
-        title: '<named-color>'
+        title: '<named-color>',
     },
     {
         file: 'lib/css/namespace_separator/index.md',
-        title: 'Namespace separator'
+        title: 'Namespace separator',
     },
     {
         file: 'lib/css/nesting_selector/index.md',
-        title: '"& nesting selector"'
+        title: '& nesting selector',
     },
     {
         file: 'lib/css/next-sibling_combinator/index.md',
-        title: 'Next-sibling combinator'
+        title: 'Next-sibling combinator',
     },
     {
         file: 'lib/css/number/index.md',
-        title: '<number>'
+        title: '<number>',
     },
     {
         file: 'lib/css/object-fit/index.md',
-        title: 'object-fit'
+        title: 'object-fit',
     },
     {
         file: 'lib/css/object-position/index.md',
-        title: 'object-position'
+        title: 'object-position',
     },
     {
         file: 'lib/css/offset/index.md',
-        title: 'offset'
+        title: 'offset',
     },
     {
         file: 'lib/css/offset-anchor/index.md',
-        title: 'offset-anchor'
+        title: 'offset-anchor',
     },
     {
         file: 'lib/css/offset-distance/index.md',
-        title: 'offset-distance'
+        title: 'offset-distance',
     },
     {
         file: 'lib/css/offset-path/index.md',
-        title: 'offset-path'
+        title: 'offset-path',
     },
     {
         file: 'lib/css/offset-position/index.md',
-        title: 'offset-position'
+        title: 'offset-position',
     },
     {
         file: 'lib/css/offset-rotate/index.md',
-        title: 'offset-rotate'
+        title: 'offset-rotate',
     },
     {
         file: 'lib/css/opacity/index.md',
-        title: 'opacity'
+        title: 'opacity',
     },
     {
         file: 'lib/css/order/index.md',
-        title: 'order'
+        title: 'order',
     },
     {
         file: 'lib/css/orphans/index.md',
-        title: 'orphans'
+        title: 'orphans',
     },
     {
         file: 'lib/css/outline/index.md',
-        title: 'outline'
+        title: 'outline',
     },
     {
         file: 'lib/css/outline-color/index.md',
-        title: 'outline-color'
+        title: 'outline-color',
     },
     {
         file: 'lib/css/outline-offset/index.md',
-        title: 'outline-offset'
+        title: 'outline-offset',
     },
     {
         file: 'lib/css/outline-style/index.md',
-        title: 'outline-style'
+        title: 'outline-style',
     },
     {
         file: 'lib/css/outline-width/index.md',
-        title: 'outline-width'
+        title: 'outline-width',
     },
     {
         file: 'lib/css/overflow/index.md',
-        title: 'overflow'
+        title: 'overflow',
     },
     {
         file: 'lib/css/overflow-anchor/guide_to_scroll_anchoring/index.md',
-        title: 'Guide to scroll anchoring'
+        title: 'Guide to scroll anchoring',
     },
     {
         file: 'lib/css/overflow-anchor/index.md',
-        title: 'overflow-anchor'
+        title: 'overflow-anchor',
     },
     {
         file: 'lib/css/overflow-block/index.md',
-        title: 'overflow-block'
+        title: 'overflow-block',
     },
     {
         file: 'lib/css/overflow-clip-margin/index.md',
-        title: 'overflow-clip-margin'
+        title: 'overflow-clip-margin',
     },
     {
         file: 'lib/css/overflow-inline/index.md',
-        title: 'overflow-inline'
+        title: 'overflow-inline',
     },
     {
         file: 'lib/css/overflow-wrap/index.md',
-        title: 'overflow-wrap'
+        title: 'overflow-wrap',
     },
     {
         file: 'lib/css/overflow-x/index.md',
-        title: 'overflow-x'
+        title: 'overflow-x',
     },
     {
         file: 'lib/css/overflow-y/index.md',
-        title: 'overflow-y'
+        title: 'overflow-y',
     },
     {
         file: 'lib/css/overflow_value/index.md',
-        title: '<overflow>'
+        title: '<overflow>',
     },
     {
         file: 'lib/css/overlay/index.md',
-        title: 'overlay'
+        title: 'overlay',
     },
     {
         file: 'lib/css/overscroll-behavior/index.md',
-        title: 'overscroll-behavior'
+        title: 'overscroll-behavior',
     },
     {
         file: 'lib/css/overscroll-behavior-block/index.md',
-        title: 'overscroll-behavior-block'
+        title: 'overscroll-behavior-block',
     },
     {
         file: 'lib/css/overscroll-behavior-inline/index.md',
-        title: 'overscroll-behavior-inline'
+        title: 'overscroll-behavior-inline',
     },
     {
         file: 'lib/css/overscroll-behavior-x/index.md',
-        title: 'overscroll-behavior-x'
+        title: 'overscroll-behavior-x',
     },
     {
         file: 'lib/css/overscroll-behavior-y/index.md',
-        title: 'overscroll-behavior-y'
+        title: 'overscroll-behavior-y',
     },
     {
         file: 'lib/css/padding/index.md',
-        title: 'padding'
+        title: 'padding',
     },
     {
         file: 'lib/css/padding-block/index.md',
-        title: 'padding-block'
+        title: 'padding-block',
     },
     {
         file: 'lib/css/padding-block-end/index.md',
-        title: 'padding-block-end'
+        title: 'padding-block-end',
     },
     {
         file: 'lib/css/padding-block-start/index.md',
-        title: 'padding-block-start'
+        title: 'padding-block-start',
     },
     {
         file: 'lib/css/padding-bottom/index.md',
-        title: 'padding-bottom'
+        title: 'padding-bottom',
     },
     {
         file: 'lib/css/padding-inline/index.md',
-        title: 'padding-inline'
+        title: 'padding-inline',
     },
     {
         file: 'lib/css/padding-inline-end/index.md',
-        title: 'padding-inline-end'
+        title: 'padding-inline-end',
     },
     {
         file: 'lib/css/padding-inline-start/index.md',
-        title: 'padding-inline-start'
+        title: 'padding-inline-start',
     },
     {
         file: 'lib/css/padding-left/index.md',
-        title: 'padding-left'
+        title: 'padding-left',
     },
     {
         file: 'lib/css/padding-right/index.md',
-        title: 'padding-right'
+        title: 'padding-right',
     },
     {
         file: 'lib/css/padding-top/index.md',
-        title: 'padding-top'
+        title: 'padding-top',
     },
     {
         file: 'lib/css/page/index.md',
-        title: 'page'
+        title: 'page',
     },
     {
         file: 'lib/css/page-break-after/index.md',
-        title: 'page-break-after'
+        title: 'page-break-after',
     },
     {
         file: 'lib/css/page-break-before/index.md',
-        title: 'page-break-before'
+        title: 'page-break-before',
     },
     {
         file: 'lib/css/page-break-inside/index.md',
-        title: 'page-break-inside'
+        title: 'page-break-inside',
     },
     {
         file: 'lib/css/paint-order/index.md',
-        title: 'paint-order'
+        title: 'paint-order',
     },
     {
         file: 'lib/css/percentage/index.md',
-        title: '<percentage>'
+        title: '<percentage>',
     },
     {
         file: 'lib/css/perspective/index.md',
-        title: 'perspective'
+        title: 'perspective',
     },
     {
         file: 'lib/css/perspective-origin/index.md',
-        title: 'perspective-origin'
+        title: 'perspective-origin',
     },
     {
         file: 'lib/css/place-content/index.md',
-        title: 'place-content'
+        title: 'place-content',
     },
     {
         file: 'lib/css/place-items/index.md',
-        title: 'place-items'
+        title: 'place-items',
     },
     {
         file: 'lib/css/place-self/index.md',
-        title: 'place-self'
+        title: 'place-self',
     },
     {
         file: 'lib/css/pointer-events/index.md',
-        title: 'pointer-events'
+        title: 'pointer-events',
     },
     {
         file: 'lib/css/position/index.md',
-        title: 'position'
+        title: 'position',
     },
     {
         file: 'lib/css/position-anchor/index.md',
-        title: 'position-anchor'
+        title: 'position-anchor',
     },
     {
         file: 'lib/css/position-try/index.md',
-        title: 'position-try'
+        title: 'position-try',
     },
     {
         file: 'lib/css/position-try-fallbacks/index.md',
-        title: 'position-try-fallbacks'
+        title: 'position-try-fallbacks',
     },
     {
         file: 'lib/css/position-try-order/index.md',
-        title: 'position-try-order'
+        title: 'position-try-order',
     },
     {
         file: 'lib/css/position-visibility/index.md',
-        title: 'position-visibility'
+        title: 'position-visibility',
     },
     {
         file: 'lib/css/position_value/index.md',
-        title: '<position>'
+        title: '<position>',
     },
     {
         file: 'lib/css/pow/index.md',
-        title: 'pow()'
+        title: 'pow()',
     },
     {
         file: 'lib/css/print-color-adjust/index.md',
-        title: 'print-color-adjust'
+        title: 'print-color-adjust',
     },
     {
         file: 'lib/css/privacy_and_the__colon_visited_selector/index.md',
-        title: 'Privacy and the :visited selector'
+        title: 'Privacy and the :visited selector',
     },
     {
         file: 'lib/css/pseudo-classes/index.md',
-        title: 'Pseudo-classes'
+        title: 'Pseudo-classes',
     },
     {
         file: 'lib/css/pseudo-elements/index.md',
-        title: 'Pseudo-elements'
+        title: 'Pseudo-elements',
     },
     {
         file: 'lib/css/quotes/index.md',
-        title: 'quotes'
+        title: 'quotes',
     },
     {
         file: 'lib/css/r/index.md',
-        title: 'r'
+        title: 'r',
     },
     {
         file: 'lib/css/ratio/index.md',
-        title: '<ratio>'
+        title: '<ratio>',
     },
     {
         file: 'lib/css/ray/index.md',
-        title: 'ray()'
+        title: 'ray()',
     },
     {
         file: 'lib/css/reference/index.md',
-        title: 'CSS reference'
+        title: 'CSS reference',
     },
     {
         file: 'lib/css/relative-size/index.md',
-        title: '<relative-size>'
+        title: '<relative-size>',
     },
     {
         file: 'lib/css/rem/index.md',
-        title: 'rem()'
+        title: 'rem()',
     },
     {
         file: 'lib/css/repeat/index.md',
-        title: 'repeat()'
+        title: 'repeat()',
     },
     {
         file: 'lib/css/replaced_element/index.md',
-        title: 'Replaced elements'
+        title: 'Replaced elements',
     },
     {
         file: 'lib/css/resize/index.md',
-        title: 'resize'
+        title: 'resize',
     },
     {
         file: 'lib/css/resolution/index.md',
-        title: '<resolution>'
+        title: '<resolution>',
     },
     {
         file: 'lib/css/resolved_value/index.md',
-        title: 'Resolved value'
+        title: 'Resolved value',
     },
     {
         file: 'lib/css/revert/index.md',
-        title: 'revert'
+        title: 'revert',
     },
     {
         file: 'lib/css/revert-layer/index.md',
-        title: 'revert-layer'
+        title: 'revert-layer',
     },
     {
         file: 'lib/css/right/index.md',
-        title: 'right'
+        title: 'right',
     },
     {
         file: 'lib/css/rotate/index.md',
-        title: 'rotate'
+        title: 'rotate',
     },
     {
         file: 'lib/css/round/index.md',
-        title: 'round()'
+        title: 'round()',
     },
     {
         file: 'lib/css/row-gap/index.md',
-        title: 'row-gap'
+        title: 'row-gap',
     },
     {
         file: 'lib/css/ruby-align/index.md',
-        title: 'ruby-align'
+        title: 'ruby-align',
     },
     {
         file: 'lib/css/ruby-position/index.md',
-        title: 'ruby-position'
+        title: 'ruby-position',
     },
     {
         file: 'lib/css/rx/index.md',
-        title: 'rx'
+        title: 'rx',
     },
     {
         file: 'lib/css/ry/index.md',
-        title: 'ry'
+        title: 'ry',
     },
     {
         file: 'lib/css/scale/index.md',
-        title: 'scale'
+        title: 'scale',
     },
     {
         file: 'lib/css/scaling_of_svg_backgrounds/index.md',
-        title: 'Scaling of SVG backgrounds'
+        title: 'Scaling of SVG backgrounds',
     },
     {
         file: 'lib/css/scroll-behavior/index.md',
-        title: 'scroll-behavior'
+        title: 'scroll-behavior',
     },
     {
         file: 'lib/css/scroll-margin/index.md',
-        title: 'scroll-margin'
+        title: 'scroll-margin',
     },
     {
         file: 'lib/css/scroll-margin-block/index.md',
-        title: 'scroll-margin-block'
+        title: 'scroll-margin-block',
     },
     {
         file: 'lib/css/scroll-margin-block-end/index.md',
-        title: 'scroll-margin-block-end'
+        title: 'scroll-margin-block-end',
     },
     {
         file: 'lib/css/scroll-margin-block-start/index.md',
-        title: 'scroll-margin-block-start'
+        title: 'scroll-margin-block-start',
     },
     {
         file: 'lib/css/scroll-margin-bottom/index.md',
-        title: 'scroll-margin-bottom'
+        title: 'scroll-margin-bottom',
     },
     {
         file: 'lib/css/scroll-margin-inline/index.md',
-        title: 'scroll-margin-inline'
+        title: 'scroll-margin-inline',
     },
     {
         file: 'lib/css/scroll-margin-inline-end/index.md',
-        title: 'scroll-margin-inline-end'
+        title: 'scroll-margin-inline-end',
     },
     {
         file: 'lib/css/scroll-margin-inline-start/index.md',
-        title: 'scroll-margin-inline-start'
+        title: 'scroll-margin-inline-start',
     },
     {
         file: 'lib/css/scroll-margin-left/index.md',
-        title: 'scroll-margin-left'
+        title: 'scroll-margin-left',
     },
     {
         file: 'lib/css/scroll-margin-right/index.md',
-        title: 'scroll-margin-right'
+        title: 'scroll-margin-right',
     },
     {
         file: 'lib/css/scroll-margin-top/index.md',
-        title: 'scroll-margin-top'
+        title: 'scroll-margin-top',
     },
     {
         file: 'lib/css/scroll-padding/index.md',
-        title: 'scroll-padding'
+        title: 'scroll-padding',
     },
     {
         file: 'lib/css/scroll-padding-block/index.md',
-        title: 'scroll-padding-block'
+        title: 'scroll-padding-block',
     },
     {
         file: 'lib/css/scroll-padding-block-end/index.md',
-        title: 'scroll-padding-block-end'
+        title: 'scroll-padding-block-end',
     },
     {
         file: 'lib/css/scroll-padding-block-start/index.md',
-        title: 'scroll-padding-block-start'
+        title: 'scroll-padding-block-start',
     },
     {
         file: 'lib/css/scroll-padding-bottom/index.md',
-        title: 'scroll-padding-bottom'
+        title: 'scroll-padding-bottom',
     },
     {
         file: 'lib/css/scroll-padding-inline/index.md',
-        title: 'scroll-padding-inline'
+        title: 'scroll-padding-inline',
     },
     {
         file: 'lib/css/scroll-padding-inline-end/index.md',
-        title: 'scroll-padding-inline-end'
+        title: 'scroll-padding-inline-end',
     },
     {
         file: 'lib/css/scroll-padding-inline-start/index.md',
-        title: 'scroll-padding-inline-start'
+        title: 'scroll-padding-inline-start',
     },
     {
         file: 'lib/css/scroll-padding-left/index.md',
-        title: 'scroll-padding-left'
+        title: 'scroll-padding-left',
     },
     {
         file: 'lib/css/scroll-padding-right/index.md',
-        title: 'scroll-padding-right'
+        title: 'scroll-padding-right',
     },
     {
         file: 'lib/css/scroll-padding-top/index.md',
-        title: 'scroll-padding-top'
+        title: 'scroll-padding-top',
     },
     {
         file: 'lib/css/scroll-snap-align/index.md',
-        title: 'scroll-snap-align'
+        title: 'scroll-snap-align',
     },
     {
         file: 'lib/css/scroll-snap-stop/index.md',
-        title: 'scroll-snap-stop'
+        title: 'scroll-snap-stop',
     },
     {
         file: 'lib/css/scroll-snap-type/index.md',
-        title: 'scroll-snap-type'
+        title: 'scroll-snap-type',
     },
     {
         file: 'lib/css/scroll-timeline/index.md',
-        title: 'scroll-timeline'
+        title: 'scroll-timeline',
     },
     {
         file: 'lib/css/scroll-timeline-axis/index.md',
-        title: 'scroll-timeline-axis'
+        title: 'scroll-timeline-axis',
     },
     {
         file: 'lib/css/scroll-timeline-name/index.md',
-        title: 'scroll-timeline-name'
+        title: 'scroll-timeline-name',
     },
     {
         file: 'lib/css/scrollbar-color/index.md',
-        title: 'scrollbar-color'
+        title: 'scrollbar-color',
     },
     {
         file: 'lib/css/scrollbar-gutter/index.md',
-        title: 'scrollbar-gutter'
+        title: 'scrollbar-gutter',
     },
     {
         file: 'lib/css/scrollbar-width/index.md',
-        title: 'scrollbar-width'
+        title: 'scrollbar-width',
     },
     {
         file: 'lib/css/selector_list/index.md',
-        title: 'Selector list'
+        title: 'Selector list',
     },
     {
         file: 'lib/css/shape/index.md',
-        title: '<shape>'
+        title: '<shape>',
     },
     {
         file: 'lib/css/shape-image-threshold/index.md',
-        title: 'shape-image-threshold'
+        title: 'shape-image-threshold',
     },
     {
         file: 'lib/css/shape-margin/index.md',
-        title: 'shape-margin'
+        title: 'shape-margin',
     },
     {
         file: 'lib/css/shape-outside/index.md',
-        title: 'shape-outside'
+        title: 'shape-outside',
     },
     {
         file: 'lib/css/shorthand_properties/index.md',
-        title: 'Shorthand properties'
+        title: 'Shorthand properties',
     },
     {
         file: 'lib/css/sign/index.md',
-        title: 'sign()'
+        title: 'sign()',
     },
     {
         file: 'lib/css/sin/index.md',
-        title: 'sin()'
+        title: 'sin()',
     },
     {
         file: 'lib/css/specificity/index.md',
-        title: 'Specificity'
+        title: 'Specificity',
     },
     {
         file: 'lib/css/specified_value/index.md',
-        title: 'Specified value'
+        title: 'Specified value',
     },
     {
         file: 'lib/css/sqrt/index.md',
-        title: 'sqrt()'
+        title: 'sqrt()',
     },
     {
         file: 'lib/css/string/index.md',
-        title: '<string>'
+        title: '<string>',
     },
     {
         file: 'lib/css/subsequent-sibling_combinator/index.md',
-        title: 'Subsequent-sibling combinator'
+        title: 'Subsequent-sibling combinator',
     },
     {
         file: 'lib/css/symbols/index.md',
-        title: 'symbols()'
+        title: 'symbols()',
     },
     {
         file: 'lib/css/syntax/index.md',
-        title: 'Syntax'
+        title: 'Syntax',
     },
     {
         file: 'lib/css/system-color/index.md',
-        title: '<system-color>'
+        title: '<system-color>',
     },
     {
         file: 'lib/css/tab-size/index.md',
-        title: 'tab-size'
+        title: 'tab-size',
     },
     {
         file: 'lib/css/table-layout/index.md',
-        title: 'table-layout'
+        title: 'table-layout',
     },
     {
         file: 'lib/css/tan/index.md',
-        title: 'tan()'
+        title: 'tan()',
     },
     {
         file: 'lib/css/text-align/index.md',
-        title: 'text-align'
+        title: 'text-align',
     },
     {
         file: 'lib/css/text-align-last/index.md',
-        title: 'text-align-last'
+        title: 'text-align-last',
     },
     {
         file: 'lib/css/text-combine-upright/index.md',
-        title: 'text-combine-upright'
+        title: 'text-combine-upright',
     },
     {
         file: 'lib/css/text-decoration/index.md',
-        title: 'text-decoration'
+        title: 'text-decoration',
     },
     {
         file: 'lib/css/text-decoration-color/index.md',
-        title: 'text-decoration-color'
+        title: 'text-decoration-color',
     },
     {
         file: 'lib/css/text-decoration-line/index.md',
-        title: 'text-decoration-line'
+        title: 'text-decoration-line',
     },
     {
         file: 'lib/css/text-decoration-skip/index.md',
-        title: 'text-decoration-skip'
+        title: 'text-decoration-skip',
     },
     {
         file: 'lib/css/text-decoration-skip-ink/index.md',
-        title: 'text-decoration-skip-ink'
+        title: 'text-decoration-skip-ink',
     },
     {
         file: 'lib/css/text-decoration-style/index.md',
-        title: 'text-decoration-style'
+        title: 'text-decoration-style',
     },
     {
         file: 'lib/css/text-decoration-thickness/index.md',
-        title: 'text-decoration-thickness'
+        title: 'text-decoration-thickness',
     },
     {
         file: 'lib/css/text-emphasis/index.md',
-        title: 'text-emphasis'
+        title: 'text-emphasis',
     },
     {
         file: 'lib/css/text-emphasis-color/index.md',
-        title: 'text-emphasis-color'
+        title: 'text-emphasis-color',
     },
     {
         file: 'lib/css/text-emphasis-position/index.md',
-        title: 'text-emphasis-position'
+        title: 'text-emphasis-position',
     },
     {
         file: 'lib/css/text-emphasis-style/index.md',
-        title: 'text-emphasis-style'
+        title: 'text-emphasis-style',
     },
     {
         file: 'lib/css/text-indent/index.md',
-        title: 'text-indent'
+        title: 'text-indent',
     },
     {
         file: 'lib/css/text-justify/index.md',
-        title: 'text-justify'
+        title: 'text-justify',
     },
     {
         file: 'lib/css/text-orientation/index.md',
-        title: 'text-orientation'
+        title: 'text-orientation',
     },
     {
         file: 'lib/css/text-overflow/index.md',
-        title: 'text-overflow'
+        title: 'text-overflow',
     },
     {
         file: 'lib/css/text-rendering/index.md',
-        title: 'text-rendering'
+        title: 'text-rendering',
     },
     {
         file: 'lib/css/text-shadow/index.md',
-        title: 'text-shadow'
+        title: 'text-shadow',
     },
     {
         file: 'lib/css/text-size-adjust/index.md',
-        title: 'text-size-adjust'
+        title: 'text-size-adjust',
     },
     {
         file: 'lib/css/text-spacing-trim/index.md',
-        title: 'text-spacing-trim'
+        title: 'text-spacing-trim',
     },
     {
         file: 'lib/css/text-transform/index.md',
-        title: 'text-transform'
+        title: 'text-transform',
     },
     {
         file: 'lib/css/text-underline-offset/index.md',
-        title: 'text-underline-offset'
+        title: 'text-underline-offset',
     },
     {
         file: 'lib/css/text-underline-position/index.md',
-        title: 'text-underline-position'
+        title: 'text-underline-position',
     },
     {
         file: 'lib/css/text-wrap/index.md',
-        title: 'text-wrap'
+        title: 'text-wrap',
     },
     {
         file: 'lib/css/text-wrap-mode/index.md',
-        title: 'text-wrap-mode'
+        title: 'text-wrap-mode',
     },
     {
         file: 'lib/css/text-wrap-style/index.md',
-        title: 'text-wrap-style'
+        title: 'text-wrap-style',
     },
     {
         file: 'lib/css/time/index.md',
-        title: '<time>'
+        title: '<time>',
     },
     {
         file: 'lib/css/time-percentage/index.md',
-        title: '<time-percentage>'
+        title: '<time-percentage>',
     },
     {
         file: 'lib/css/timeline-scope/index.md',
-        title: 'timeline-scope'
+        title: 'timeline-scope',
     },
     {
         file: 'lib/css/top/index.md',
-        title: 'top'
+        title: 'top',
     },
     {
         file: 'lib/css/touch-action/index.md',
-        title: 'touch-action'
+        title: 'touch-action',
     },
     {
         file: 'lib/css/transform/index.md',
-        title: 'transform'
+        title: 'transform',
     },
     {
         file: 'lib/css/transform-box/index.md',
-        title: 'transform-box'
+        title: 'transform-box',
     },
     {
         file: 'lib/css/transform-function/index.md',
-        title: '<transform-function>'
+        title: '<transform-function>',
     },
     {
         file: 'lib/css/transform-function/matrix/index.md',
-        title: 'matrix()'
+        title: 'matrix()',
     },
     {
         file: 'lib/css/transform-function/matrix3d/index.md',
-        title: 'matrix3d()'
+        title: 'matrix3d()',
     },
     {
         file: 'lib/css/transform-function/perspective/index.md',
-        title: 'perspective()'
+        title: 'perspective()',
     },
     {
         file: 'lib/css/transform-function/rotate/index.md',
-        title: 'rotate()'
+        title: 'rotate()',
     },
     {
         file: 'lib/css/transform-function/rotate3d/index.md',
-        title: 'rotate3d()'
+        title: 'rotate3d()',
     },
     {
         file: 'lib/css/transform-function/rotatex/index.md',
-        title: 'rotateX()'
+        title: 'rotateX()',
     },
     {
         file: 'lib/css/transform-function/rotatey/index.md',
-        title: 'rotateY()'
+        title: 'rotateY()',
     },
     {
         file: 'lib/css/transform-function/rotatez/index.md',
-        title: 'rotateZ()'
+        title: 'rotateZ()',
     },
     {
         file: 'lib/css/transform-function/scale/index.md',
-        title: 'scale()'
+        title: 'scale()',
     },
     {
         file: 'lib/css/transform-function/scale3d/index.md',
-        title: 'scale3d()'
+        title: 'scale3d()',
     },
     {
         file: 'lib/css/transform-function/scalex/index.md',
-        title: 'scaleX()'
+        title: 'scaleX()',
     },
     {
         file: 'lib/css/transform-function/scaley/index.md',
-        title: 'scaleY()'
+        title: 'scaleY()',
     },
     {
         file: 'lib/css/transform-function/scalez/index.md',
-        title: 'scaleZ()'
+        title: 'scaleZ()',
     },
     {
         file: 'lib/css/transform-function/skew/index.md',
-        title: 'skew()'
+        title: 'skew()',
     },
     {
         file: 'lib/css/transform-function/skewx/index.md',
-        title: 'skewX()'
+        title: 'skewX()',
     },
     {
         file: 'lib/css/transform-function/skewy/index.md',
-        title: 'skewY()'
+        title: 'skewY()',
     },
     {
         file: 'lib/css/transform-function/translate/index.md',
-        title: 'translate()'
+        title: 'translate()',
     },
     {
         file: 'lib/css/transform-function/translate3d/index.md',
-        title: 'translate3d()'
+        title: 'translate3d()',
     },
     {
         file: 'lib/css/transform-function/translatex/index.md',
-        title: 'translateX()'
+        title: 'translateX()',
     },
     {
         file: 'lib/css/transform-function/translatey/index.md',
-        title: 'translateY()'
+        title: 'translateY()',
     },
     {
         file: 'lib/css/transform-function/translatez/index.md',
-        title: 'translateZ()'
+        title: 'translateZ()',
     },
     {
         file: 'lib/css/transform-origin/index.md',
-        title: 'transform-origin'
+        title: 'transform-origin',
     },
     {
         file: 'lib/css/transform-style/index.md',
-        title: 'transform-style'
+        title: 'transform-style',
     },
     {
         file: 'lib/css/transition/index.md',
-        title: 'transition'
+        title: 'transition',
     },
     {
         file: 'lib/css/transition-behavior/index.md',
-        title: 'transition-behavior'
+        title: 'transition-behavior',
     },
     {
         file: 'lib/css/transition-delay/index.md',
-        title: 'transition-delay'
+        title: 'transition-delay',
     },
     {
         file: 'lib/css/transition-duration/index.md',
-        title: 'transition-duration'
+        title: 'transition-duration',
     },
     {
         file: 'lib/css/transition-property/index.md',
-        title: 'transition-property'
+        title: 'transition-property',
     },
     {
         file: 'lib/css/transition-timing-function/index.md',
-        title: 'transition-timing-function'
+        title: 'transition-timing-function',
     },
     {
         file: 'lib/css/translate/index.md',
-        title: 'translate'
+        title: 'translate',
     },
     {
         file: 'lib/css/tutorials/index.md',
-        title: 'CSS Tutorials'
+        title: 'CSS Tutorials',
     },
     {
         file: 'lib/css/type_selectors/index.md',
-        title: 'Type selectors'
+        title: 'Type selectors',
     },
     {
         file: 'lib/css/unicode-bidi/index.md',
-        title: 'unicode-bidi'
+        title: 'unicode-bidi',
     },
     {
         file: 'lib/css/universal_selectors/index.md',
-        title: 'Universal selectors'
+        title: 'Universal selectors',
     },
     {
         file: 'lib/css/unset/index.md',
-        title: 'unset'
+        title: 'unset',
     },
     {
         file: 'lib/css/url/index.md',
-        title: 'url()'
+        title: 'url()',
     },
     {
         file: 'lib/css/used_value/index.md',
-        title: 'Used value'
+        title: 'Used value',
     },
     {
         file: 'lib/css/user-modify/index.md',
-        title: 'user-modify'
+        title: 'user-modify',
     },
     {
         file: 'lib/css/user-select/index.md',
-        title: 'user-select'
+        title: 'user-select',
     },
     {
         file: 'lib/css/using_css_custom_properties/index.md',
-        title: 'Using CSS custom properties (variables)'
+        title: 'Using CSS custom properties (variables)',
     },
     {
         file: 'lib/css/value_definition_syntax/index.md',
-        title: 'Value definition syntax'
+        title: 'Value definition syntax',
     },
     {
         file: 'lib/css/var/index.md',
-        title: 'var()'
+        title: 'var()',
     },
     {
         file: 'lib/css/vertical-align/index.md',
-        title: 'vertical-align'
+        title: 'vertical-align',
     },
     {
         file: 'lib/css/view-timeline/index.md',
-        title: 'view-timeline'
+        title: 'view-timeline',
     },
     {
         file: 'lib/css/view-timeline-axis/index.md',
-        title: 'view-timeline-axis'
+        title: 'view-timeline-axis',
     },
     {
         file: 'lib/css/view-timeline-inset/index.md',
-        title: 'view-timeline-inset'
+        title: 'view-timeline-inset',
     },
     {
         file: 'lib/css/view-timeline-name/index.md',
-        title: 'view-timeline-name'
+        title: 'view-timeline-name',
     },
     {
         file: 'lib/css/view-transition-name/index.md',
-        title: 'view-transition-name'
+        title: 'view-transition-name',
     },
     {
         file: 'lib/css/viewport_concepts/index.md',
-        title: 'Viewport concepts'
+        title: 'Viewport concepts',
     },
     {
         file: 'lib/css/visibility/index.md',
-        title: 'visibility'
+        title: 'visibility',
     },
     {
         file: 'lib/css/visual_formatting_model/index.md',
-        title: 'Visual formatting model'
+        title: 'Visual formatting model',
     },
     {
         file: 'lib/css/webkit_extensions/index.md',
-        title: '"-webkit-prefixed CSS extensions"'
+        title: '-webkit-prefixed CSS extensions',
     },
     {
         file: 'lib/css/white-space/index.md',
-        title: 'white-space'
+        title: 'white-space',
     },
     {
         file: 'lib/css/white-space-collapse/index.md',
-        title: 'white-space-collapse'
+        title: 'white-space-collapse',
     },
     {
         file: 'lib/css/widows/index.md',
-        title: 'widows'
+        title: 'widows',
     },
     {
         file: 'lib/css/width/index.md',
-        title: 'width'
+        title: 'width',
     },
     {
         file: 'lib/css/will-change/index.md',
-        title: 'will-change'
+        title: 'will-change',
     },
     {
         file: 'lib/css/word-break/index.md',
-        title: 'word-break'
+        title: 'word-break',
     },
     {
         file: 'lib/css/word-spacing/index.md',
-        title: 'word-spacing'
+        title: 'word-spacing',
     },
     {
         file: 'lib/css/writing-mode/index.md',
-        title: 'writing-mode'
+        title: 'writing-mode',
     },
     {
         file: 'lib/css/z-index/index.md',
-        title: 'z-index'
+        title: 'z-index',
     },
     {
         file: 'lib/css/zoom/index.md',
-        title: 'zoom'
-    }
+        title: 'zoom',
+    },
 ];

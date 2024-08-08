@@ -1,6 +1,9 @@
 // Main
 export type SupportedLanguages = 'javascript' | 'html' | 'css';
-export function findDirectory(technology: SupportedLanguages, query: string): Promise<string | null>
+export function findDirectory(
+    technology: SupportedLanguages,
+    query: string
+): Promise<string | null>;
 
 // Parser
 export { getHeader, getSection, stripHeader, stripJsxRef } from './parser';

@@ -1,20 +1,15 @@
 export type MDNHeader = {
-    title?: string,
-    slug?: string,
-    'page-type'?: string,
-    'browser-compat'?: string
-}
+    title?: string;
+    slug?: string;
+    'page-type'?: string;
+    'browser-compat'?: string;
+};
 
-const HEADER_FIELDS = [
-    'title',
-    'slug',
-    'page-type',
-    'browser-compat'
-] as const;
+const HEADER_FIELDS = ['title', 'slug', 'page-type', 'browser-compat'] as const;
 
-type HeaderField = typeof HEADER_FIELDS[number];
+type HeaderField = (typeof HEADER_FIELDS)[number];
 
-/** 
+/**
  * Type guard to check if a string is a valid header field
  * @param {string} key
  */
@@ -23,7 +18,7 @@ const isHeaderField = (key: string): key is HeaderField => {
 };
 
 /**
- * Take raw markdown MDN doc and return an object containing the 
+ * Take raw markdown MDN doc and return an object containing the
  * document title, slug and page-type
  * @param {string} document
  */
@@ -57,7 +52,9 @@ const getHeader = (document: string): MDNHeader | null => {
  */
 const stripHeader = (document: string) => {
     const docArr = document.split('\n');
-    do { docArr.shift(); } while (docArr[0] !== '---');
+    do {
+        docArr.shift();
+    } while (docArr[0] !== '---');
     docArr.shift();
     return docArr.join('\n');
 };
@@ -75,8 +72,8 @@ const getSection = (prefix: string, document: string) => {
     let heading;
     for (let i = 0; i < docArr.length; i++) {
         if (
-            docArr[i].startsWith('#') && 
-            docArr[i].toLowerCase().includes(prefix.toLowerCase()) && 
+            docArr[i].startsWith('#') &&
+            docArr[i].toLowerCase().includes(prefix.toLowerCase()) &&
             !flag
         ) {
             flag = true;
