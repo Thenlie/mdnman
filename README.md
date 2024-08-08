@@ -1,12 +1,26 @@
-# JSMan
+# MDNMan
 
 JavaScript reference CLI made possible by [MDN Web Docs](https://developer.mozilla.org/en-US/).
+
+## Installation
+
+When using mdnman within a JavaScript or TypeScript project, install locally via NPM.
+
+```sh
+npm install mdnman
+```
+
+If you would like access to the CLI at all times in your terminal, install globally via NPM.
+
+```sh
+npm install --global mdnman
+```
 
 ## Usage
 
 ### Command Line Interface
 
-At it's core, jsman is a command line interface for the MDN Web Docs. It is intended to be a quick, non-network dependent resource for web developers.
+At it's core, mdnman is a command line interface for the MDN Web Docs. It is intended to be a quick, non-network dependent resource for web developers.
 
 #### Commands
 
@@ -28,31 +42,25 @@ At it's core, jsman is a command line interface for the MDN Web Docs. It is inte
 #### Examples
 
 ```sh
-jsman --help
+mdnman --help
 ```
 
 ```sh
-jsman js map
+mdnman js map
 ```
 
 ```sh
-jsman --output vim --section parameters splice
+mdnman --output vim --section parameters splice
 ```
 
 ### Node Package Manager
 
-You can also install jsman through npm to utilize it in your own project. The jsman package comes with built in TypeScript support and exposes all utility methods built in to the CLI.
-
-#### Installation
-
-```sh
-npm install jsman
-```
+You can also install mdnman through npm to utilize it in your own project. The mdnman package comes with built in TypeScript support and exposes all utility methods built in to the CLI.
 
 #### Quick Start
 
 ```ts
-import { getMDNDoc, printDoc } from "jsman/dist";
+import { getMDNDoc, printDoc } from "mdnman/dist";
 
 const doc = await getMDNDoc('javascript', 'map')
 if (doc) {

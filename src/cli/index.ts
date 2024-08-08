@@ -40,7 +40,7 @@ const commandActionHandler = async (
 
 const cli = () => {
     program
-        .name('jsman')
+        .name('mdnman')
         .description('MDN reference CLI');
 
     program.command('js')

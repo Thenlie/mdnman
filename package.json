@@ -1,12 +1,12 @@
 {
-  "name": "jsman",
+  "name": "mdnman",
   "type": "module",
   "version": "1.0.0",
-  "description": "A JavaScript reference command line interface",
+  "description": "Command line interface for the MDN Web Docs",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "bin": {
-    "jsman": "./bin/jsman"
+    "mdnman": "./bin/mdnman"
 },
   "scripts": {
     "start": "tsx src/index.ts",
