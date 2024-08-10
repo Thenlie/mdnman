@@ -8,6 +8,7 @@ import {
 import fs from 'fs';
 import mapHeader from '../__fixtures__/map.header.json';
 import titleDescription from '../__fixtures__/title.description.json';
+import spliceDescription from '../__fixtures__/splice.description.json';
 
 const JS_FILE_PATH = './lib/javascript/global_objects/array/map/index.md';
 const HTML_FILE_PATH = './lib/html/global_attributes/title/index.md';
@@ -67,6 +68,10 @@ describe('parser', () => {
         it('properly expands links to a valid MDN URL', () => {
             expect(expandLinks('[data tables](/en-US/docs/Web/HTML/Element/table)')).toBe(
                 '[data tables](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)'
+            );
+            expect(expandLinks(spliceDescription.description)).toBe(
+                // eslint-disable-next-line quotes
+                "The `splice()` method is a [mutating method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#copying_methods_and_mutating_methods). It may change the content of `this`. If the specified number of elements to insert differs from the number of elements being removed, the array's `length` will be changed as well. At the same time, it uses [`[Symbol.species]`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Symbol.species) to create a new array instance to be returned. If the deleted portion is [sparse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections#sparse_arrays), the array returned by `splice()` is sparse as well, with those corresponding indices being empty slots. The `splice()` method is [generic](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#generic_array_methods). It only expects the `this` value to have a `length` property and integer-keyed properties. Although strings are also array-like, this method is not suitable to be applied on them, as strings are immutable."
             );
         });
     });

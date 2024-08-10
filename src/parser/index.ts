@@ -120,17 +120,18 @@ const getHtmlDescription = (document: string) => {
 };
 
 /**
- * Updates all links to provide the full path to the MDN docs
+ * Updates all markdown links formatted as "[text](url)" to provide the full path to the MDN docs
+ * Uses some weird regex to account for cases where the text has brackets.
  * @param {string} document
  */
 const expandLinks = (document: string) => {
-    const regex = /\[.+\]\(.+\)/;
+    const regex = /\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(([^)]+)\)/gm;
     return document.replace(regex, (match) => {
         if (match.match(/\(.+\)/)) {
-            const mask = match.match(/\[.+\]/);
-            const path = match.match(/\(.+\)/);
+            const mask = match.match(/\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(/);
+            const path = match.match(/\(([^)]+)\)/);
             if (mask && path) {
-                return `${mask[0]}(${BASE_URL + path[0].slice(1, path[0].length - 1)})`;
+                return `${mask[0].slice(0, -1)}(${BASE_URL + path[0].slice(1, path[0].length - 1)})`;
             }
         }
         return match;
