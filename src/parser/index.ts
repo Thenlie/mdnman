@@ -96,7 +96,14 @@ const getSection = (prefix: string, document: string) => {
  */
 const stripJsxRef = (document: string) => {
     const regex = /{{.+?}}/gm;
-    return document.replace(regex, '');
+    return document.replace(regex, (match) => {
+        // if match contains HTMLElement("*"), transform to <*>
+        if (match.match(/{{HTMLElement\("\S+"\)}}/) || match.match(/{{htmlelement\("\S+"\)}}/)) {
+            const element = match.match(/"([^"]*)"/);
+            return element ? `<${element[1]}>` : '';
+        }
+        return '';
+    });
 };
 
 /**
