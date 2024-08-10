@@ -6,6 +6,7 @@ export type MDNHeader = {
 };
 
 const HEADER_FIELDS = ['title', 'slug', 'page-type', 'browser-compat'] as const;
+const BASE_URL = 'https://developer.mozilla.org';
 
 type HeaderField = (typeof HEADER_FIELDS)[number];
 
@@ -118,4 +119,22 @@ const getHtmlDescription = (document: string) => {
     return document.substring(0, headingIndex);
 };
 
-export { getHeader, stripHeader, getSection, stripJsxRef, getHtmlDescription };
+/**
+ * Updates all links to provide the full path to the MDN docs
+ * @param {string} document
+ */
+const expandLinks = (document: string) => {
+    const regex = /\[.+\]\(.+\)/;
+    return document.replace(regex, (match) => {
+        if (match.match(/\(.+\)/)) {
+            const mask = match.match(/\[.+\]/);
+            const path = match.match(/\(.+\)/);
+            if (mask && path) {
+                return `${mask[0]}(${BASE_URL + path[0].slice(1, path[0].length - 1)})`;
+            }
+        }
+        return match;
+    });
+};
+
+export { getHeader, stripHeader, getSection, stripJsxRef, getHtmlDescription, expandLinks };

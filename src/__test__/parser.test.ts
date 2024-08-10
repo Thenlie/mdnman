@@ -1,4 +1,10 @@
-import { getHeader, getHtmlDescription, stripHeader, stripJsxRef } from '../parser/index.js';
+import {
+    expandLinks,
+    getHeader,
+    getHtmlDescription,
+    stripHeader,
+    stripJsxRef,
+} from '../parser/index.js';
 import fs from 'fs';
 import mapHeader from '../__fixtures__/map.header.json';
 import titleDescription from '../__fixtures__/title.description.json';
@@ -54,6 +60,14 @@ describe('parser', () => {
             const strippedFile = stripHeader(htmlFile);
             const description = getHtmlDescription(strippedFile);
             expect(description.trim()).toBe(titleDescription.description);
+        });
+    });
+
+    describe('expandLinks', () => {
+        it('properly expands links to a valid MDN URL', () => {
+            expect(expandLinks('[data tables](/en-US/docs/Web/HTML/Element/table)')).toBe(
+                '[data tables](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)'
+            );
         });
     });
 });
