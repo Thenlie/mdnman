@@ -99,4 +99,16 @@ const stripJsxRef = (document: string) => {
     return document.replace(regex, '');
 };
 
-export { getHeader, stripHeader, getSection, stripJsxRef };
+/**
+ * Returns all text until the first `#` in a document.
+ * This is because HTML documents do not specify a "Description" heading,
+ * it is just the first paragraph of text.
+ * @param {string} document
+ */
+const getHtmlDescription = (document: string) => {
+    const headingIndex = document.indexOf('#');
+    if (!headingIndex) return document;
+    return document.substring(0, headingIndex);
+};
+
+export { getHeader, stripHeader, getSection, stripJsxRef, getHtmlDescription };
