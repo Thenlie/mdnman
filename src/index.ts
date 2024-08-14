@@ -2,7 +2,7 @@ import fs from 'fs';
 import { execSync } from 'node:child_process';
 import { select } from '@inquirer/prompts';
 import { printDoc, writeDocToFile } from './output/index.js';
-import { getHeader, stripHeader, stripJsxRef } from './parser/index.js';
+import { getHeader, stripHeader, stripJsxRef, convertEmojiTags } from './parser/index.js';
 import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -77,6 +77,7 @@ export {
     stripJsxRef,
     getHeader,
     stripHeader,
+    convertEmojiTags,
     jsTitles,
     htmlTitles,
     cssTitles,

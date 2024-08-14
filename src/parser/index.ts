@@ -138,4 +138,19 @@ const expandLinks = (document: string) => {
     });
 };
 
-export { getHeader, stripHeader, getSection, stripJsxRef, getHtmlDescription, expandLinks };
+const convertEmojiTags = (document: string) => {
+    const regex = /\[!WARNING\]/;
+    const newDoc = document.replace(regex, '⚠️');
+    const regex2 = /\[!NOTE\]/;
+    return newDoc.replace(regex2, 'ℹ️');
+};
+
+export {
+    getHeader,
+    stripHeader,
+    getSection,
+    stripJsxRef,
+    getHtmlDescription,
+    expandLinks,
+    convertEmojiTags,
+};
