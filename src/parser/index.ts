@@ -6,7 +6,7 @@ export type MDNHeader = {
 };
 
 const HEADER_FIELDS = ['title', 'slug', 'page-type', 'browser-compat'] as const;
-const BASE_URL = 'https://developer.mozilla.org';
+const MDN_BASE_URL = 'https://developer.mozilla.org';
 
 type HeaderField = (typeof HEADER_FIELDS)[number];
 
@@ -131,7 +131,7 @@ const expandLinks = (document: string) => {
             const mask = match.match(/\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(/);
             const path = match.match(/\(([^)]+)\)/);
             if (mask && path) {
-                return `${mask[0].slice(0, -1)}(${BASE_URL + path[0].slice(1, path[0].length - 1)})`;
+                return `${mask[0].slice(0, -1)}(${MDN_BASE_URL + path[0].slice(1, path[0].length - 1)})`;
             }
         }
         return match;
@@ -164,18 +164,18 @@ const removeTitle = (document: string) => {
 };
 
 /**
- * Cuts a string down to the discord character limit if needed
+ * Cuts a string down to the specified length if needed
  * Appends '...' if the string was trimmed
  * @param {string} document
+ * @param {number} length
  */
-const truncateString = (document: string) => {
-    const MAX_LENGTH = 1024;
-    return document.length > MAX_LENGTH ? document.slice(0, MAX_LENGTH - 3) + '...' : document;
+const truncateString = (document: string, length: number) => {
+    return document.length > length ? document.slice(0, length - 3) + '...' : document;
 };
 
 /**
- * Creates and array of objects containing all titles and filepaths
- * from a given mdnman title file.
+ * Creates an array of objects containing all titles and filepaths
+ * from a given mdnman title file
  * @param {Array<{ title: string; file: string }>} titles
  */
 const createChoicesFromTitles = (titles: Array<{ title: string; file: string }>) => {

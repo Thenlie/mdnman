@@ -1,7 +1,7 @@
 import { Command } from 'commander';
 import { openEditor, DEFAULT_OUTPUT_PATH, printDoc, writeDocToFile } from './output.js';
 import { getSection, stripJsxRef } from '../parser/index.js';
-import { getMDNDoc } from '../index.js';
+import { findMDNFile } from './file_handler.js';
 
 const program = new Command();
 const GENERIC_ERROR_MESSAGE =
@@ -22,7 +22,7 @@ const commandActionHandler = async (
     str: string,
     options: { output: string; section: string; path: string }
 ): Promise<void> => {
-    let document = await getMDNDoc(lang, str);
+    let document = await findMDNFile(lang, str);
     if (!document) {
         console.error(GENERIC_ERROR_MESSAGE);
         return;
