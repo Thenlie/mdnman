@@ -3,7 +3,7 @@ import { getHeader, stripHeader } from '../parser/index.js';
 import fs from 'fs';
 import child_process from 'node:child_process';
 
-const OUTPUT_PATH = './out/ref.md';
+const DEFAULT_OUTPUT_PATH = './out/ref.md';
 
 const MARKDOWN_SYNTAX_MAP: Record<
     '```js' | '```js-nolint' | '```html' | '```css' | '```plain',
@@ -44,9 +44,10 @@ const openEditor = (path: string) => {
 /**
  * Take raw markdown MDN doc and write it to a file after formatting
  * @param {string} document
+ * @param {string} [outputPath]
  */
-const writeDocToFile = (document: string) => {
-    const writeStream = fs.createWriteStream(OUTPUT_PATH, { flags: 'w', encoding: 'utf8' });
+const writeDocToFile = (document: string, outputPath: string = DEFAULT_OUTPUT_PATH) => {
+    const writeStream = fs.createWriteStream(outputPath, { flags: 'w', encoding: 'utf8' });
     // Remove 'Specifications' section and everything below it
     // This includes 'Browser Compatibility' and 'See Also'
     const index = document.indexOf('## Specifications');
@@ -111,4 +112,4 @@ const printDoc = (document: string) => {
     });
 };
 
-export { printDoc, writeDocToFile, openEditor, OUTPUT_PATH };
+export { printDoc, writeDocToFile, openEditor, DEFAULT_OUTPUT_PATH };

@@ -1,5 +1,5 @@
 import { Command } from 'commander';
-import { openEditor, OUTPUT_PATH, printDoc, writeDocToFile } from './output.js';
+import { openEditor, DEFAULT_OUTPUT_PATH, printDoc, writeDocToFile } from './output.js';
 import { getSection, stripJsxRef } from '../parser/index.js';
 import { getMDNDoc } from '../index.js';
 
@@ -20,7 +20,7 @@ type SupportedLanguages = 'javascript' | 'html' | 'css';
 const commandActionHandler = async (
     lang: SupportedLanguages,
     str: string,
-    options: { output: string; section: string }
+    options: { output: string; section: string; path: string }
 ): Promise<void> => {
     let document = await getMDNDoc(lang, str);
     if (!document) {
@@ -33,9 +33,11 @@ const commandActionHandler = async (
     const strippedDoc = stripJsxRef(document);
     if (options.output === 'stdout') {
         printDoc(strippedDoc);
-    } else {
+    } else if (options.output === 'vim') {
         writeDocToFile(strippedDoc);
-        openEditor(OUTPUT_PATH);
+        openEditor(DEFAULT_OUTPUT_PATH);
+    } else if (options.output === 'file' && options.path) {
+        writeDocToFile(strippedDoc, options.path);
     }
 };
 
@@ -46,8 +48,9 @@ const cli = () => {
         .command('js')
         .description('Search the MDN JavaScript reference library')
         .argument('<string>', 'query to search')
-        .option('-o, --output <stdout | vim>', 'output type', 'stdout')
+        .option('-o, --output <stdout | file | vim>', 'output type', 'stdout')
         .option('-s, --section <string>', 'specified section of MDN doc', 'none')
+        .option('-p, --path <string>', 'output path', './out/ref.md')
         .action(async (str, options) => commandActionHandler('javascript', str, options));
 
     program
