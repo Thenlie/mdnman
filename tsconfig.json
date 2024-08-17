@@ -12,5 +12,5 @@
     "resolveJsonModule": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules, **/*.test.*", "src/__test__", "src/__fixtures__"]
+  "exclude": ["node_modules, **/*.test.*", "src/__test__/", "src/__fixtures__/"]
 }

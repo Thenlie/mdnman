@@ -1,5 +1,5 @@
 import { Command } from 'commander';
-import { openEditor, OUTPUT_PATH, printDoc, writeDocToFile } from '../output/index.js';
+import { openEditor, OUTPUT_PATH, printDoc, writeDocToFile } from './output.js';
 import { getSection, stripJsxRef } from '../parser/index.js';
 import { getMDNDoc } from '../index.js';
 
@@ -70,3 +70,4 @@ const cli = () => {
 };
 
 export default cli;
+export * from './output.js';

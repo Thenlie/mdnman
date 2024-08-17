@@ -1,20 +1,10 @@
 import fs from 'fs';
 import { execSync } from 'node:child_process';
 import { select } from '@inquirer/prompts';
-import { printDoc, writeDocToFile } from './output/index.js';
-import {
-    getHeader,
-    stripHeader,
-    stripJsxRef,
-    convertEmojiTags,
-    removeTitle,
-    truncateString,
-    createChoicesFromTitles,
-} from './parser/index.js';
+import { getHeader } from './parser/index.js';
 import path from 'path';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { jsTitles, htmlTitles, cssTitles } from './titles/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -77,19 +67,7 @@ const getMDNDoc = async (technology: SupportedLanguages, query: string) => {
     }
 };
 
-export {
-    getMDNDoc,
-    getMDNFile,
-    writeDocToFile,
-    printDoc,
-    stripJsxRef,
-    getHeader,
-    stripHeader,
-    convertEmojiTags,
-    removeTitle,
-    truncateString,
-    createChoicesFromTitles,
-    jsTitles,
-    htmlTitles,
-    cssTitles,
-};
+export { getMDNDoc, getMDNFile };
+export * from './parser/index.js';
+export * from './cli/index.js';
+export * from './titles/index.js';

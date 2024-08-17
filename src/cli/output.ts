@@ -4,6 +4,7 @@ import fs from 'fs';
 import child_process from 'node:child_process';
 
 const OUTPUT_PATH = './out/ref.md';
+
 const MARKDOWN_SYNTAX_MAP: Record<
     '```js' | '```js-nolint' | '```html' | '```css' | '```plain',
     string
@@ -14,7 +15,6 @@ const MARKDOWN_SYNTAX_MAP: Record<
     '```css': 'css',
     '```plain': 'plaintext',
 };
-
 type MarkdownField = keyof typeof MARKDOWN_SYNTAX_MAP;
 
 /**
