@@ -7,9 +7,9 @@ import {
     convertEmojiTags,
 } from '../parser/index.js';
 import fs from 'fs';
-import mapHeader from '../__fixtures__/map.header.json';
-import titleDescription from '../__fixtures__/title.description.json';
-import spliceDescription from '../__fixtures__/splice.description.json';
+import mapHeader from './__fixtures__/map.header.json';
+import titleDescription from './__fixtures__/title.description.json';
+import spliceDescription from './__fixtures__/splice.description.json';
 
 const JS_FILE_PATH = './lib/javascript/global_objects/array/map/index.md';
 const HTML_FILE_PATH = './lib/html/global_attributes/title/index.md';

@@ -1,0 +1,779 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getMDNFile returns MDN doc when provided valid parameters 1`] = `
+"---
+title: Array.prototype.filter()
+slug: Web/JavaScript/Reference/Global_Objects/Array/filter
+page-type: javascript-instance-method
+browser-compat: javascript.builtins.Array.filter
+---
+
+{{JSRef}}
+
+The **\`filter()\`** method of {{jsxref("Array")}} instances creates a [shallow copy](/en-US/docs/Glossary/Shallow_copy) of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+
+{{EmbedInteractiveExample("pages/js/array-filter.html", "shorter")}}
+
+## Syntax
+
+\`\`\`js-nolint
+filter(callbackFn)
+filter(callbackFn, thisArg)
+\`\`\`
+
+### Parameters
+
+- \`callbackFn\`
+  - : A function to execute for each element in the array. It should return a [truthy](/en-US/docs/Glossary/Truthy) value to keep the element in the resulting array, and a [falsy](/en-US/docs/Glossary/Falsy) value otherwise. The function is called with the following arguments:
+    - \`element\`
+      - : The current element being processed in the array.
+    - \`index\`
+      - : The index of the current element being processed in the array.
+    - \`array\`
+      - : The array \`filter()\` was called upon.
+- \`thisArg\` {{optional_inline}}
+  - : A value to use as \`this\` when executing \`callbackFn\`. See [iterative methods](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#iterative_methods).
+
+### Return value
+
+A [shallow copy](/en-US/docs/Glossary/Shallow_copy) of the given array containing just the elements that pass the test. If no elements pass the test, an empty array is returned.
+
+## Description
+
+The \`filter()\` method is an [iterative method](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#iterative_methods). It calls a provided \`callbackFn\` function once for each element in an array, and constructs a new array of all the values for which \`callbackFn\` returns a [truthy](/en-US/docs/Glossary/Truthy) value. Array elements which do not pass the \`callbackFn\` test are not included in the new array. Read the [iterative methods](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#iterative_methods) section for more information about how these methods work in general.
+
+\`callbackFn\` is invoked only for array indexes which have assigned values. It is not invoked for empty slots in [sparse arrays](/en-US/docs/Web/JavaScript/Guide/Indexed_collections#sparse_arrays).
+
+The \`filter()\` method is [generic](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#generic_array_methods). It only expects the \`this\` value to have a \`length\` property and integer-keyed properties.
+
+## Examples
+
+### Filtering out all small values
+
+The following example uses \`filter()\` to create a filtered array that has all elements with values less than 10 removed.
+
+\`\`\`js
+function isBigEnough(value) {
+  return value >= 10;
+}
+
+const filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+// filtered is [12, 130, 44]
+\`\`\`
+
+### Find all prime numbers in an array
+
+The following example returns all prime numbers in the array:
+
+\`\`\`js
+const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+function isPrime(num) {
+  for (let i = 2; num > i; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return num > 1;
+}
+
+console.log(array.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
+\`\`\`
+
+### Filtering invalid entries from JSON
+
+The following example uses \`filter()\` to create a filtered JSON of all elements with non-zero, numeric \`id\`.
+
+\`\`\`js
+const arr = [
+  { id: 15 },
+  { id: -1 },
+  { id: 0 },
+  { id: 3 },
+  { id: 12.2 },
+  {},
+  { id: null },
+  { id: NaN },
+  { id: "undefined" },
+];
+
+let invalidEntries = 0;
+
+function filterByID(item) {
+  if (Number.isFinite(item.id) && item.id !== 0) {
+    return true;
+  }
+  invalidEntries++;
+  return false;
+}
+
+const arrByID = arr.filter(filterByID);
+
+console.log("Filtered Array\\n", arrByID);
+// Filtered Array
+// [{ id: 15 }, { id: -1 }, { id: 3 }, { id: 12.2 }]
+
+console.log("Number of Invalid Entries =", invalidEntries);
+// Number of Invalid Entries = 5
+\`\`\`
+
+### Searching in array
+
+Following example uses \`filter()\` to filter array content based on search criteria.
+
+\`\`\`js
+const fruits = ["apple", "banana", "grapes", "mango", "orange"];
+
+/**
+ * Filter array items based on search criteria (query)
+ */
+function filterItems(arr, query) {
+  return arr.filter((el) => el.toLowerCase().includes(query.toLowerCase()));
+}
+
+console.log(filterItems(fruits, "ap")); // ['apple', 'grapes']
+console.log(filterItems(fruits, "an")); // ['banana', 'mango', 'orange']
+\`\`\`
+
+### Using the third argument of callbackFn
+
+The \`array\` argument is useful if you want to access another element in the array, especially when you don't have an existing variable that refers to the array. The following example first uses \`map()\` to extract the numerical ID from each name and then uses \`filter()\` to select the ones that are greater than its neighbors.
+
+\`\`\`js
+const names = ["JC63", "Bob132", "Ursula89", "Ben96"];
+const greatIDs = names
+  .map((name) => parseInt(name.match(/[0-9]+/)[0], 10))
+  .filter((id, idx, arr) => {
+    // Without the arr argument, there's no way to easily access the
+    // intermediate array without saving it to a variable.
+    if (idx > 0 && id <= arr[idx - 1]) return false;
+    if (idx < arr.length - 1 && id <= arr[idx + 1]) return false;
+    return true;
+  });
+console.log(greatIDs); // [132, 96]
+\`\`\`
+
+The \`array\` argument is _not_ the array that is being built — there is no way to access the array being built from the callback function.
+
+### Using filter() on sparse arrays
+
+\`filter()\` will skip empty slots.
+
+\`\`\`js
+console.log([1, , undefined].filter((x) => x === undefined)); // [undefined]
+console.log([1, , undefined].filter((x) => x !== 2)); // [1, undefined]
+\`\`\`
+
+### Calling filter() on non-array objects
+
+The \`filter()\` method reads the \`length\` property of \`this\` and then accesses each property whose key is a nonnegative integer less than \`length\`.
+
+\`\`\`js
+const arrayLike = {
+  length: 3,
+  0: "a",
+  1: "b",
+  2: "c",
+  3: "a", // ignored by filter() since length is 3
+};
+console.log(Array.prototype.filter.call(arrayLike, (x) => x <= "b"));
+// [ 'a', 'b' ]
+\`\`\`
+
+## Specifications
+
+{{Specifications}}
+
+## Browser compatibility
+
+{{Compat}}
+
+## See also
+
+- [Polyfill of \`Array.prototype.filter\` in \`core-js\`](https://github.com/zloirock/core-js#ecmascript-array)
+- [Indexed collections](/en-US/docs/Web/JavaScript/Guide/Indexed_collections) guide
+- {{jsxref("Array")}}
+- {{jsxref("Array.prototype.forEach()")}}
+- {{jsxref("Array.prototype.every()")}}
+- {{jsxref("Array.prototype.map()")}}
+- {{jsxref("Array.prototype.some()")}}
+- {{jsxref("Array.prototype.reduce()")}}
+- {{jsxref("TypedArray.prototype.filter()")}}
+"
+`;
+
+exports[`getMDNFile returns MDN doc when provided valid parameters 2`] = `
+"---
+title: "<div>: The Content Division element"
+slug: Web/HTML/Element/div
+page-type: html-element
+browser-compat: html.elements.div
+---
+
+{{HTMLSidebar}}
+
+The **\`<div>\`** [HTML](/en-US/docs/Web/HTML) element is the generic container for flow content. It has no effect on the content or layout until styled in some way using {{glossary("CSS")}} (e.g. styling is directly applied to it, or some kind of layout model like [Flexbox](/en-US/docs/Web/CSS/CSS_flexible_box_layout) is applied to its parent element).
+
+{{EmbedInteractiveExample("pages/tabbed/div.html","tabbed-standard")}}
+
+As a "pure" container, the \`<div>\` element does not inherently represent anything. Instead, it's used to group content so it can be easily styled using the [\`class\`](/en-US/docs/Web/HTML/Global_attributes#class) or [\`id\`](/en-US/docs/Web/HTML/Global_attributes#id) attributes, marking a section of a document as being written in a different language (using the [\`lang\`](/en-US/docs/Web/HTML/Global_attributes#lang) attribute), and so on.
+
+## Attributes
+
+This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attributes).
+
+> [!NOTE]
+> The \`align\` attribute is obsolete; do not use it anymore. Instead, you should use CSS properties or techniques such as [CSS Grid](/en-US/docs/Web/CSS/CSS_grid_layout) or [CSS Flexbox](/en-US/docs/Learn/CSS/CSS_layout/Flexbox) to align and position \`<div>\` elements on the page.
+
+## Usage notes
+
+- The \`<div>\` element should be used only when no other semantic element (such as {{HTMLElement("article")}} or {{HTMLElement("nav")}}) is appropriate.
+
+## Accessibility
+
+The \`<div>\` element has [an implicit role of \`generic\`](https://www.w3.org/TR/wai-aria-1.2/#generic), and not none. This may affect certain ARIA combination declarations that expect a direct descendant element with a certain role to function properly.
+
+## Examples
+
+### A simple example
+
+\`\`\`html
+<div>
+  <p>
+    Any kind of content here. Such as &lt;p&gt;, &lt;table&gt;. You name it!
+  </p>
+</div>
+\`\`\`
+
+#### Result
+
+{{EmbedLiveSample("A_simple_example", 650, 60)}}
+
+### A styled example
+
+This example creates a shadowed box by applying a style to the \`<div>\` using CSS. Note the use of the [\`class\`](/en-US/docs/Web/HTML/Global_attributes#class) attribute on the \`<div>\` to apply the style named \`"shadowbox"\` to the element.
+
+#### HTML
+
+\`\`\`html
+<div class="shadowbox">
+  <p>Here's a very interesting note displayed in a lovely shadowed box.</p>
+</div>
+\`\`\`
+
+#### CSS
+
+\`\`\`css
+.shadowbox {
+  width: 15em;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+\`\`\`
+
+#### Result
+
+{{EmbedLiveSample("A_styled_example", 650, 120)}}
+
+## Technical summary
+
+<table class="properties">
+  <tbody>
+    <tr>
+      <th scope="row">
+        <a href="/en-US/docs/Web/HTML/Content_categories"
+          >Content categories</a
+        >
+      </th>
+      <td>
+        <a href="/en-US/docs/Web/HTML/Content_categories#flow_content"
+          >Flow content</a
+        >, <a href="/en-US/docs/Web/HTML/Content_categories#palpable_content">palpable content</a>.
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Permitted content</th>
+      <td>
+        <a href="/en-US/docs/Web/HTML/Content_categories#flow_content"
+          >Flow content</a
+        >.<br />Or (in {{glossary("WHATWG")}} HTML): If the parent is a
+        {{HTMLElement("dl")}} element: one or more
+        {{HTMLElement("dt")}} elements followed by one or more
+        {{HTMLElement("dd")}} elements, optionally intermixed with
+        {{HTMLElement("script")}} and
+        {{HTMLElement("template")}} elements.
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Tag omission</th>
+      <td>None, both the starting and ending tag are mandatory.</td>
+    </tr>
+    <tr>
+      <th scope="row">Permitted parents</th>
+      <td>
+        Any element that accepts
+        <a href="/en-US/docs/Web/HTML/Content_categories#flow_content"
+          >flow content</a
+        >.<br />Or (in {{glossary("WHATWG")}} HTML):
+        {{HTMLElement("dl")}} element.
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Implicit ARIA role</th>
+      <td>
+        <code
+          ><a href="/en-US/docs/Web/Accessibility/ARIA/Roles/generic_role"
+            >generic</a
+          ></code
+        >
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Permitted ARIA roles</th>
+      <td>Any</td>
+    </tr>
+    <tr>
+      <th scope="row">DOM interface</th>
+      <td>{{domxref("HTMLDivElement")}}</td>
+    </tr>
+  </tbody>
+</table>
+
+## Specifications
+
+{{Specifications}}
+
+## Browser compatibility
+
+{{Compat}}
+
+## See also
+
+- Semantic sectioning elements: {{HTMLElement("section")}}, {{HTMLElement("article")}}, {{HTMLElement("nav")}}, {{HTMLElement("header")}}, {{HTMLElement("footer")}}
+- {{HTMLElement("span")}} element for styling of phrasing content
+"
+`;
+
+exports[`getMDNFile returns MDN doc when provided valid parameters 3`] = `
+"---
+title: border
+slug: Web/CSS/border
+page-type: css-shorthand-property
+browser-compat: css.properties.border
+---
+
+{{CSSRef}}
+
+The **\`border\`** [shorthand](/en-US/docs/Web/CSS/Shorthand_properties) [CSS](/en-US/docs/Web/CSS) property sets an element's border. It sets the values of {{Cssxref("border-width")}}, {{Cssxref("border-style")}}, and {{Cssxref("border-color")}}.
+
+{{EmbedInteractiveExample("pages/css/border.html")}}
+
+## Constituent properties
+
+This property is a shorthand for the following CSS properties:
+
+- [\`border-width\`](/en-US/docs/Web/CSS/border-width)
+- [\`border-style\`](/en-US/docs/Web/CSS/border-style)
+- [\`border-color\`](/en-US/docs/Web/CSS/border-color)
+
+## Syntax
+
+\`\`\`css
+/* style */
+border: solid;
+
+/* width | style */
+border: 2px dotted;
+
+/* style | color */
+border: outset #f33;
+
+/* width | style | color */
+border: medium dashed green;
+
+/* Global values */
+border: inherit;
+border: initial;
+border: revert;
+border: revert-layer;
+border: unset;
+\`\`\`
+
+The \`border\` property may be specified using one, two, or three of the values listed below. The order of the values does not matter.
+
+> **Note:** The border will be invisible if its style is not defined. This is because the style defaults to \`none\`.
+
+### Values
+
+- \`<line-width>\`
+  - : Sets the thickness of the border. Defaults to \`medium\` if absent. See {{Cssxref("border-width")}}.
+- {{cssxref("&lt;line-style&gt;")}}
+  - : Sets the style of the border. Defaults to \`none\` if absent. See {{Cssxref("border-style")}}.
+- {{cssxref("&lt;color&gt;")}}
+  - : Sets the color of the border. Defaults to \`currentcolor\` if absent. See {{Cssxref("border-color")}}.
+
+## Description
+
+As with all shorthand properties, any omitted sub-values will be set to their [initial value](/en-US/docs/Web/CSS/initial_value). Importantly, \`border\` cannot be used to specify a custom value for {{cssxref("border-image")}}, but instead sets it to its initial value, i.e., \`none\`.
+
+The \`border\` shorthand is especially useful when you want all four borders to be the same. To make them different from each other, however, you can use the longhand {{Cssxref("border-width")}}, {{Cssxref("border-style")}}, and {{Cssxref("border-color")}} properties, which accept different values for each side. Alternatively, you can target one border at a time with the physical (e.g., {{Cssxref("border-top")}} ) and logical (e.g., {{Cssxref("border-block-start")}}) border properties.
+
+### Borders vs. outlines
+
+Borders and [outlines](/en-US/docs/Web/CSS/outline) are very similar. However, outlines differ from borders in the following ways:
+
+- Outlines never take up space, as they are drawn outside of an element's content.
+- According to the spec, outlines don't have to be rectangular, although they usually are.
+
+## Formal definition
+
+{{cssinfo}}
+
+## Formal syntax
+
+{{csssyntax}}
+
+## Examples
+
+### Setting a pink outset border
+
+#### HTML
+
+\`\`\`html
+<div>I have a border, an outline, and a box shadow! Amazing, isn't it?</div>
+\`\`\`
+
+#### CSS
+
+\`\`\`css
+div {
+  border: 0.5rem outset pink;
+  outline: 0.5rem solid khaki;
+  box-shadow: 0 0 0 2rem skyblue;
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 0.5rem;
+}
+\`\`\`
+
+#### Result
+
+{{EmbedLiveSample('Setting_a_pink_outset_border')}}
+
+## Specifications
+
+{{Specifications}}
+
+## Browser compatibility
+
+{{Compat}}
+
+## See also
+
+- {{Cssxref("border-width")}}
+- {{Cssxref("border-style")}}
+- {{Cssxref("border-color")}}
+- {{Cssxref("outline")}}
+- [Backgrounds and borders](/en-US/docs/Web/CSS/CSS_backgrounds_and_borders)
+- [Learn CSS: Backgrounds and borders](/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders)
+"
+`;
+
+exports[`optimisticallyFindMDNFile returns MDN doc when provided valid parameters 1`] = `
+"---
+title: RegExp.prototype[Symbol.split]()
+slug: Web/JavaScript/Reference/Global_Objects/RegExp/Symbol.split
+page-type: javascript-instance-method
+browser-compat: javascript.builtins.RegExp.@@split
+---
+
+{{JSRef}}
+
+The **\`[Symbol.split]()\`** method of {{jsxref("RegExp")}} instances specifies how [\`String.prototype.split\`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) should behave when the regular expression is passed in as the separator.
+
+{{EmbedInteractiveExample("pages/js/regexp-prototype-@@split.html")}}
+
+## Syntax
+
+\`\`\`js-nolint
+regexp[Symbol.split](str)
+regexp[Symbol.split](str, limit)
+\`\`\`
+
+### Parameters
+
+- \`str\`
+  - : The target of the split operation.
+- \`limit\` {{optional_inline}}
+  - : Integer specifying a limit on the number of splits to be found. The \`[Symbol.split]()\` method still splits on every match of \`this\` RegExp pattern (or, in the Syntax above, \`regexp\`), until the number of split items match the \`limit\` or the string falls short of \`this\` pattern.
+
+### Return value
+
+An {{jsxref("Array")}} containing substrings as its elements. Capturing groups are included.
+
+## Description
+
+This method is called internally in {{jsxref("String.prototype.split()")}} when a \`RegExp\` is passed as the separator. For example, the following two examples return the same result.
+
+\`\`\`js
+"a-b-c".split(/-/);
+
+/-/[Symbol.split]("a-b-c");
+\`\`\`
+
+This method exists for customizing the behavior of \`split()\` in \`RegExp\` subclasses.
+
+The \`RegExp.prototype[Symbol.split]()\` base method exhibits the following behaviors:
+
+- It starts by using [\`[Symbol.species]\`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/Symbol.species) to construct a new regexp, thus avoiding mutating the original regexp in any way.
+- The regexp's \`g\` ("global") flag is ignored, and the \`y\` ("sticky") flag is always applied even when it was not originally present.
+- If the target string is empty, and the regexp can match empty strings (for example, \`/a?/\`), an empty array is returned. Otherwise, if the regexp can't match an empty string, \`[""]\` is returned.
+- The matching proceeds by continuously calling \`this.exec()\`. Since the regexp is always sticky, this will move along the string, each time yielding a matching string, index, and any capturing groups.
+- For each match, the substring between the last matched string's end and the current matched string's beginning is first appended to the result array. Then, the capturing groups' values are appended one-by-one.
+- If the current match is an empty string, or if the regexp doesn't match at the current position (since it's sticky), the \`lastIndex\` would still be advanced — if the regex is [Unicode-aware](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode#unicode-aware_mode), it would advance by one Unicode code point; otherwise, it advances by one UTF-16 code unit.
+- If the regexp doesn't match the target string, the target string is returned as-is, wrapped in an array.
+- The returned array's length will never exceed the \`limit\` parameter, if provided, while trying to be as close as possible. Therefore, the last match and its capturing groups may not all be present in the returned array if the array is already filled.
+
+## Examples
+
+### Direct call
+
+This method can be used in almost the same way as
+{{jsxref("String.prototype.split()")}}, except the different \`this\` and the
+different order of arguments.
+
+\`\`\`js
+const re = /-/g;
+const str = "2016-01-02";
+const result = re[Symbol.split](str);
+console.log(result); // ["2016", "01", "02"]
+\`\`\`
+
+### Using \`[Symbol.split]()\` in subclasses
+
+Subclasses of {{jsxref("RegExp")}} can override the \`[Symbol.split]()\` method to
+modify the default behavior.
+
+\`\`\`js
+class MyRegExp extends RegExp {
+  [Symbol.split](str, limit) {
+    const result = RegExp.prototype[Symbol.split].call(this, str, limit);
+    return result.map((x) => \`(\${x})\`);
+  }
+}
+
+const re = new MyRegExp("-");
+const str = "2016-01-02";
+const result = str.split(re); // String.prototype.split calls re[Symbol.split]().
+console.log(result); // ["(2016)", "(01)", "(02)"]
+\`\`\`
+
+## Specifications
+
+{{Specifications}}
+
+## Browser compatibility
+
+{{Compat}}
+
+## See also
+
+- [Polyfill of \`RegExp.prototype[Symbol.split]\` in \`core-js\`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+- {{jsxref("String.prototype.split()")}}
+- [\`RegExp.prototype[Symbol.match]()\`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/Symbol.match)
+- [\`RegExp.prototype[Symbol.matchAll]()\`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/Symbol.matchAll)
+- [\`RegExp.prototype[Symbol.replace]()\`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/Symbol.replace)
+- [\`RegExp.prototype[Symbol.search]()\`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/Symbol.search)
+- {{jsxref("RegExp.prototype.exec()")}}
+- {{jsxref("RegExp.prototype.test()")}}
+- {{jsxref("Symbol.split")}}
+"
+`;
+
+exports[`optimisticallyFindMDNFile returns MDN doc when provided valid parameters 2`] = `
+"---
+title: "HTML attribute: dirname"
+slug: Web/HTML/Attributes/dirname
+page-type: html-attribute
+browser-compat:
+  - html.elements.textarea.dirname
+  - html.elements.input.dirname
+---
+
+{{HTMLSidebar}}
+
+The **\`dirname\`** attribute can be used on the {{htmlelement("textarea")}} element and several {{htmlelement("input")}} types and describes the directionality of the element's text content during form submission.
+The browser uses this attribute's value to determine whether text the user has entered is left-to-right or right-to-left oriented.
+When used, the element's text directionality value is included in form submission data along with the \`dirname\` attribute's value as the name of the field.
+
+## Usage notes
+
+The \`dirname\` attribute can be used on any {{htmlelement("textarea")}} element, or any {{htmlelement("input")}} element with {{htmlelement("input/hidden", "hidden")}}, {{htmlelement("input/text", "text")}}, {{htmlelement("input/search", "search")}}, {{htmlelement("input/tel", "tel")}}, {{htmlelement("input/url", "url")}}, {{htmlelement("input/email", "email")}}, {{htmlelement("input/password", "password")}}, {{htmlelement("input/submit", "submit")}}, {{htmlelement("input/reset", "reset")}} or {{htmlelement("input/button", "button")}} type.
+
+The format of the submitted data is \`{dirname_value}={direction}\` where \`{dirname_value}\` is the value of the \`dirname\` attribute and \`{direction}\` is the directionality of the text.
+For example, if the user enters "Hello" in an element with the attributes \`name="comment"\` and \`dirname="comment-direction"\`, the URL-encoded form submission data for \`GET\` requests will be \`comment=Hello&comment-direction=ltr\`.
+The directionality is one of the following:
+
+- \`rtl\`
+  - : The text entered by the user is in a right-to-left writing direction.
+- \`ltr\`
+  - : The text entered by the user is in a left-to-right writing direction.
+
+If no text directionality is specified, the user agent will use the directionality of the parent element containing the form, and if that is not specified, the default directionality of the user agent.
+
+## Examples
+
+### Textarea element directionality
+
+In this example, the \`dir="auto"\` attribute on the textarea element allows the text directionality to be determined automatically based on the text entered by the user:
+
+\`\`\`html
+<form method="get" action="https://www.example.com/submit">
+  <textarea name="comment" dir="auto" dirname="comment-direction">سيب</textarea>
+  <button type="submit">Send my greetings</button>
+</form>
+\`\`\`
+
+When the user submits the form, the user agent includes two fields, one called \`comment\` with the value "سيب", and one called \`comment-direction\` with the value "rtl".
+The URL-encoded submission body looks like this:
+
+\`\`\`url
+https://www.example.com/submit?comment=%D8%B3%D9%8A%D8%A8&comment-direction=rtl
+\`\`\`
+
+### Input element directionality
+
+In this example, the \`dir="auto"\` attribute on the input element allows the text directionality to be determined automatically based on the text entered by the user:
+
+\`\`\`html
+<form method="get" action="https://www.example.com/submit">
+  <input
+    type="text"
+    name="comment-input"
+    dir="auto"
+    dirname="comment-direction"
+    value="Hello" />
+  <button type="submit">Send my greetings</button>
+</form>
+\`\`\`
+
+When the user submits the form, the user agent includes two fields, one called \`comment-input\` with the value "Hello", and one called \`comment-direction\` with the value "ltr":
+
+\`\`\`url
+https://www.example.com/submit?comment-input=Hello&comment-direction=ltr
+\`\`\`
+
+### Inheriting directionality
+
+The following \`<input>\` and \`<textarea>\` elements do not have a \`dir\` attribute, so they inherit the explicit directionality of their parent element, which is \`rtl\`:
+
+\`\`\`html
+<div dir="rtl">
+  <form method="get" action="https://www.example.com/submit">
+    <input
+      type="text"
+      name="user"
+      dirname="user-direction"
+      value="LTR Username" />
+    <textarea name="comment" dirname="comment-direction">LTR Comment</textarea>
+    <button type="submit">Post Comment</button>
+  </form>
+</div>
+\`\`\`
+
+The URL-encoded submission body looks like this:
+
+\`\`\`url
+https://www.example.com/submit?user=LTR+Username&user-direction=rtl&comment=LTR+Comment&comment-direction=rtl
+\`\`\`
+
+## Specifications
+
+{{Specifications}}
+
+## Browser compatibility
+
+{{Compat}}
+
+## See also
+
+- [\`dir\` attribute](/en-US/docs/Web/HTML/Global_attributes/dir)
+- {{htmlelement("input")}}
+- {{htmlelement("textarea")}}
+"
+`;
+
+exports[`optimisticallyFindMDNFile returns MDN doc when provided valid parameters 3`] = `
+"---
+title: font-family
+slug: Web/CSS/@font-face/font-family
+page-type: css-at-rule-descriptor
+browser-compat: css.at-rules.font-face.font-family
+---
+
+{{CSSRef}}
+
+The **\`font-family\`** CSS descriptor sets the font family for a font specified in an {{cssxref("@font-face")}} at-rule.
+
+The value is used for name matching against a particular \`@font-face\` when styling elements using the [\`font-family\`](/en-US/docs/Web/CSS/font-family) property.
+Any name may be used, and this overrides any name specified in the underlying font data.
+
+## Syntax
+
+\`\`\`css
+/* <string> values */
+font-family: "font family";
+font-family: "another font family";
+
+/* <custom-ident> value */
+font-family: examplefont;
+\`\`\`
+
+### Values
+
+- \`<family-name>\`
+  - : Specifies the name of the font family.
+
+## Formal definition
+
+{{cssinfo}}
+
+## Formal syntax
+
+{{csssyntax}}
+
+## Examples
+
+### Setting the font family name
+
+\`\`\`css
+@font-face {
+  font-family: "Some font family";
+  src: url("some_font_name.ttf");
+}
+\`\`\`
+
+## Specifications
+
+{{Specifications}}
+
+## Browser compatibility
+
+{{Compat}}
+
+## See also
+
+- {{cssxref("@font-face/font-display", "font-display")}}
+- {{cssxref("@font-face/font-stretch", "font-stretch")}}
+- {{cssxref("@font-face/font-style", "font-style")}}
+- {{cssxref("@font-face/font-weight", "font-weight")}}
+- {{cssxref("font-feature-settings", "font-feature-settings")}}
+- {{cssxref("@font-face/font-variation-settings", "font-variation-settings")}}
+- {{cssxref("@font-face/src", "src")}}
+- {{cssxref("@font-face/unicode-range", "unicode-range")}}
+"
+`;
