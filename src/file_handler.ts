@@ -14,25 +14,51 @@ const FILE_OPTIONS = {
 };
 
 /**
- * Get an MDN reference doc based on an explicit file path starting at the 'lib' directory
+ * Check if a provided filepath is valid.
+ * Returns:
+ * 0 - Path is a valid file
+ * 1 - Path is invalid
+ * 2 - Path is a directory
+ * @param filepath
+ * @returns {0 | 1 | 2}
+ */
+const validateFilePath = (filepath: string): 0 | 1 | 2 => {
+    // Check if path exists
+    if (!fs.existsSync(filepath)) {
+        return 1;
+    }
+    const stats = fs.statSync(filepath);
+    // Check if path is a directory
+    if (stats.isDirectory()) {
+        return 2;
+    }
+    return 0;
+};
+
+/**
+ * Get an MDN reference doc based on an explicit file path starting at the 'lib' directory.
+ * The function assumes you add 'index.md' to the end of the string, but will attempt to
+ * add it for you if the path is a directory.
  * @param filepath ex: 'lib/javascript/global_objects/string/split/index.md'
+ * @returns {string | null}
  */
 const getMDNFile = (filepath: string): string | null => {
-    const fullPath = path.join(_dirname, '..', filepath);
-    // Ensure file exists
-    if (!fs.existsSync(filepath)) {
+    let fullPath = path.join(_dirname, '..', filepath);
+    const validation = validateFilePath(fullPath);
+    if (validation === 1) {
         console.error('File does not exist:', fullPath);
         return null;
-    }
-    const stats = fs.statSync(fullPath);
-    // Ensure file is not a directory
-    if (stats.isDirectory()) {
-        console.error('Path is a directory, not a file:', fullPath);
-        return null;
+    } else if (validation === 2) {
+        // If path is a directory, check for an index.md file
+        const revalidation = validateFilePath(path.join(fullPath, 'index.md'));
+        if (revalidation !== 0) {
+            console.error('Path is a directory, not a file:', fullPath);
+            return null;
+        }
+        fullPath = path.join(fullPath, 'index.md');
     }
     try {
-        const file = fs.readFileSync(fullPath).toString();
-        return file;
+        return fs.readFileSync(fullPath).toString();
     } catch (error) {
         console.error(error);
         return null;
@@ -40,21 +66,21 @@ const getMDNFile = (filepath: string): string | null => {
 };
 
 /**
- * Search the lib folder for a directory with a name containing the users search
- * Return the contents of the index.md file in that directory as a string
- * If multiple directories are found, return the first one
+ * Search the lib folder for a directory with a name containing the users search.
+ * Return the contents of the index.md file in that directory as a string.
+ * If multiple directories are found, return the first one.
  * @param {SupportedLanguages} technology
  * @param {string} query
+ * @returns {string | null}
  */
 const optimisticallyFindMDNFile = (
     technology: SupportedLanguages,
     query: string
 ): string | null => {
-    const t = technology.trim().toLowerCase();
     const q = query.trim().toLowerCase();
-    const files = FILE_OPTIONS[t as SupportedLanguages];
-    // find all directories with the query in the name
-    const matchedTitles = files.filter((file) => file.path.includes(q));
+    const files = FILE_OPTIONS[technology];
+    // find all files with the query in the title
+    const matchedTitles = files.filter((file) => file.title.includes(q));
     if (matchedTitles.length < 1) {
         console.error('No files found for query:', query);
         return null;

@@ -22,8 +22,13 @@ describe('getMDNFile', () => {
         expect(getMDNFile('lib/html/element/div/index.md')).toMatchSnapshot();
         expect(getMDNFile('lib/css/border/index.md')).toMatchSnapshot();
     });
+    it('appends `index.md` when provided a directory', () => {
+        expect(getMDNFile('lib/javascript/global_objects/array/map')).toMatchSnapshot();
+        expect(getMDNFile('lib/html/element/a')).toMatchSnapshot();
+        expect(getMDNFile('lib/css/color')).toMatchSnapshot();
+    });
     it('returns null when provided invalid parameters', () => {
-        expect(getMDNFile('lib/javascript/global_objects/array/filter')).toBeNull();
+        expect(getMDNFile('lib/javascript')).toBeNull();
         expect(mockConsoleError).toHaveBeenCalledTimes(1);
         expect(mockConsoleError).toHaveBeenCalledWith(
             'Path is a directory, not a file:',
