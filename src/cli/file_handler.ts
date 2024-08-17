@@ -1,9 +1,18 @@
 import fs from 'fs';
 import path from 'path';
-import { execSync } from 'node:child_process';
 import { select } from '@inquirer/prompts';
-import { getHeader } from '../parser/index.js';
 import type { SupportedLanguages } from '../types.js';
+import { jsTitles } from '../titles/js_titles.js';
+import { htmlTitles } from '../titles/html_titles.js';
+import { cssTitles } from '../titles/css_titles.js';
+
+const _dirname = import.meta.dirname;
+
+const FILE_LIST = {
+    javascript: jsTitles,
+    html: htmlTitles,
+    css: cssTitles,
+};
 
 /**
  * Search the lib folder for a directory with a name containing the users search
@@ -16,34 +25,24 @@ const findMDNFile = async (
     technology: SupportedLanguages,
     query: string
 ): Promise<string | null> => {
-    const t = technology.trim().toLowerCase();
     const q = query.trim().toLowerCase();
-    // find all directories with the query in the name
+    const files = FILE_LIST[technology];
+    // find all files with the query in the title
+    const matchedTitles = files.filter((file) => file.title.includes(q));
+    if (matchedTitles.length < 1) {
+        console.error('No files found for query:', query);
+        return null;
+    }
+    let selected = matchedTitles[0].path;
+    if (matchedTitles.length > 1) {
+        // prompt with list of matching files
+        selected = await select({
+            message: 'Chose reference you would like to view',
+            choices: matchedTitles.map((title) => ({ name: title.title, value: title.path })),
+        });
+    }
     try {
-        const currentDir = path.join(__dirname, '..', 'lib');
-        const files = execSync(`find ${currentDir}/${t} -name '${q}' -type d`);
-        const lines = files.toString().trim().split('\n');
-        let selected;
-        if (lines[0] === '') {
-            console.error(
-                `Sorry! No results found for ${q}. Please check for typos and search again.`
-            );
-            return null;
-        } else if (lines.length === 1) {
-            selected = lines[0];
-        } else {
-            // prompt with list of files
-            selected = await select({
-                message: 'Chose reference you would like to view',
-                choices: lines.map((line) => {
-                    const file = fs.readFileSync(line + '/index.md').toString();
-                    const header = getHeader(file);
-                    if (!header || !header?.title) return { name: line, value: line };
-                    return { name: header.title, value: line };
-                }),
-            });
-        }
-        const file = fs.readFileSync(selected + '/index.md').toString();
+        const file = fs.readFileSync(path.join(_dirname, '../..', selected)).toString();
         return file;
     } catch (error) {
         console.error(error);

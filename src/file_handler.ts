@@ -7,7 +7,7 @@ import { cssTitles } from './titles/css_titles.js';
 
 const _dirname = import.meta.dirname;
 
-const FILE_OPTIONS = {
+const FILE_LIST = {
     javascript: jsTitles,
     html: htmlTitles,
     css: cssTitles,
@@ -78,7 +78,7 @@ const optimisticallyFindMDNFile = (
     query: string
 ): string | null => {
     const q = query.trim().toLowerCase();
-    const files = FILE_OPTIONS[technology];
+    const files = FILE_LIST[technology];
     // find all files with the query in the title
     const matchedTitles = files.filter((file) => file.title.includes(q));
     if (matchedTitles.length < 1) {
