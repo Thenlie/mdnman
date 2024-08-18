@@ -61,36 +61,6 @@ const stripHeader = (document: string) => {
 };
 
 /**
- * Take a raw markdown MDN doc and return the section of the document that
- * with the provided prefix
- * @param {string} prefix
- * @param {string} document
- */
-const getSection = (prefix: string, document: string) => {
-    const docArr = document.split('\n');
-    const section = [];
-    let flag = false;
-    let heading;
-    for (let i = 0; i < docArr.length; i++) {
-        if (
-            docArr[i].startsWith('#') &&
-            docArr[i].toLowerCase().includes(prefix.toLowerCase()) &&
-            !flag
-        ) {
-            flag = true;
-            heading = docArr[i].match(/^#+/)?.[0];
-            section.push(docArr[i]);
-        } else if (docArr[i].match(/^#+/)?.[0] === heading && flag) {
-            flag = false;
-            break;
-        } else if (flag) {
-            section.push(docArr[i]);
-        }
-    }
-    return section.join('\n');
-};
-
-/**
  * Removes all text wrapped in double curly brackets from a string
  * @param {string} document
  * @example Hello{{ world }}! -> Hello!
@@ -175,12 +145,15 @@ const truncateString = (document: string, length: number) => {
     if (length > document.length) return document;
     // Prepare document for truncate, appending ellipsis
     const truncatedStr = document.slice(0, length - 3) + '...';
-    // Splits truncated string on \n and \r characters 
-    let lines = truncatedStr.match(/[^\r\n]+/g);
+    // Splits truncated string on \n and \r characters
+    const lines = truncatedStr.match(/[^\r\n]+/g);
     // Filter lines for codeblock backticks, store array length
-    let backtickMatches = lines?.filter(item => item.startsWith('```')).length;
+    const backtickMatches = lines?.filter((item) => item.startsWith('```')).length;
     // If the number of backtick instances is odd, returns document with an additional 3 backticks alongside the ellipsis. Else, return original truncated string
-    if (backtickMatches) return backtickMatches % 2 !== 0 ? document.slice(0, length - 7) + '...\n```' : truncatedStr;
+    if (backtickMatches)
+        return backtickMatches % 2 !== 0
+            ? document.slice(0, length - 7) + '...\n```'
+            : truncatedStr;
 };
 
 /**
@@ -198,7 +171,6 @@ const createChoicesFromTitles = (titles: Array<{ title: string; file: string }>)
 export {
     getHeader,
     stripHeader,
-    getSection,
     stripJsxRef,
     getHtmlDescription,
     expandLinks,

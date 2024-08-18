@@ -6,8 +6,8 @@ import {
     stripJsxRef,
     convertEmojiTags,
     truncateString,
-    getSection
 } from '../parser/index.js';
+import { getSection } from '../parser/sections.js';
 import fs from 'fs';
 import mapHeader from './__fixtures__/map.header.json';
 import titleDescription from './__fixtures__/title.description.json';
@@ -38,12 +38,6 @@ describe('parser', () => {
     });
 
     describe('stripHeader', () => {
-        it('passes', () => {
-            expect(1 + 1).toBe(2);
-        });
-    });
-
-    describe('getSection', () => {
         it('passes', () => {
             expect(1 + 1).toBe(2);
         });
@@ -93,10 +87,10 @@ describe('parser', () => {
 
     describe('truncateString', () => {
         it('cuts a string down to the provided length and corrects missing codeblock backticks if needed', () => {
-            const section = getSection("Example", substrFile);
+            const section = getSection('Example', substrFile);
             const truncatedStr = truncateString(section, 1024);
             expect(truncatedStr).toHaveLength(1024);
-        })
-    })
-
+            expect(truncatedStr).toMatchSnapshot();
+        });
+    });
 });

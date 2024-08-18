@@ -1,6 +1,7 @@
 import { Command } from 'commander';
 import { openEditor, DEFAULT_OUTPUT_PATH, printDoc, writeDocToFile } from './output.js';
-import { getSection, stripJsxRef } from '../parser/index.js';
+import { stripJsxRef } from '../parser/index.js';
+import { getSection } from '../parser/sections.js';
 import { findMDNFile } from './file_handler.js';
 
 const program = new Command();

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parser truncateString cuts a string down to the provided length and corrects missing codeblock backticks if needed 1`] = `
+"## Examples
+
+### Using substring()
+
+The following example uses \`substring()\` to display characters from the
+string \`"Mozilla"\`:
+
+\`\`\`js
+const anyString = "Mozilla";
+
+console.log(anyString.substring(0, 1)); // "M"
+console.log(anyString.substring(1, 0)); // "M"
+
+console.log(anyString.substring(0, 6)); // "Mozill"
+
+console.log(anyString.substring(4)); // "lla"
+console.log(anyString.substring(4, 7)); // "lla"
+console.log(anyString.substring(7, 4)); // "lla"
+
+console.log(anyString.substring(0, 7)); // "Mozilla"
+console.log(anyString.substring(0, 10)); // "Mozilla"
+\`\`\`
+
+### Using substring() with length property
+
+The following example uses the \`substring()\` method and
+{{jsxref("String/length", "length")}} property to extract the last characters of a
+particular string. This method may be easier to remember, given that you don't need to
+know the starting and ending indices as you would in the above examples.
+
+\`\`\`js
+const text = "Mozilla";
+
+// Takes 4 last characters of string
+console.log(text.substring(text.len...
+\`\`\`"
+`;
