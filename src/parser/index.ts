@@ -164,13 +164,23 @@ const removeTitle = (document: string) => {
 };
 
 /**
- * Cuts a string down to the specified length if needed
+ * Cuts a string down to the provided length and corrects missing codeblock backticks if needed
  * Appends '...' if the string was trimmed
+ * Appends '...```' if the codeblock backticks were corrected
  * @param {string} document
  * @param {number} length
  */
 const truncateString = (document: string, length: number) => {
-    return document.length > length ? document.slice(0, length - 3) + '...' : document;
+    // Returns original document if its length is smaller than the discord maximum length
+    if (length > document.length) return document;
+    // Prepare document for truncate, appending ellipsis
+    const truncatedStr = document.slice(0, length - 3) + '...';
+    // Splits truncated string on \n and \r characters 
+    let lines = truncatedStr.match(/[^\r\n]+/g);
+    // Filter lines for codeblock backticks, store array length
+    let backtickMatches = lines?.filter(item => item.startsWith('```')).length;
+    // If the number of backtick instances is odd, returns document with an additional 3 backticks alongside the ellipsis. Else, return original truncated string
+    if (backtickMatches) return backtickMatches % 2 !== 0 ? document.slice(0, length - 7) + '...\n```' : truncatedStr;
 };
 
 /**
