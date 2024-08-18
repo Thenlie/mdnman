@@ -5,6 +5,8 @@ import {
     stripHeader,
     stripJsxRef,
     convertEmojiTags,
+    truncateString,
+    getSection
 } from '../parser/index.js';
 import fs from 'fs';
 import mapHeader from './__fixtures__/map.header.json';
@@ -12,8 +14,10 @@ import titleDescription from './__fixtures__/title.description.json';
 import spliceDescription from './__fixtures__/splice.description.json';
 
 const JS_FILE_PATH = './lib/javascript/global_objects/array/map/index.md';
+const JS_STR_SUBSTR_PATH = './lib/javascript/global_objects/string/substring/index.md';
 const HTML_FILE_PATH = './lib/html/global_attributes/title/index.md';
 let jsFile: string;
+let substrFile: string;
 let htmlFile: string;
 
 describe('parser', () => {
@@ -21,6 +25,7 @@ describe('parser', () => {
         try {
             jsFile = fs.readFileSync(JS_FILE_PATH).toString();
             htmlFile = fs.readFileSync(HTML_FILE_PATH).toString();
+            substrFile = fs.readFileSync(JS_STR_SUBSTR_PATH).toString();
         } catch (error) {
             throw new Error('Error reading file: ' + error);
         }
@@ -85,4 +90,13 @@ describe('parser', () => {
             expect(convertEmojiTags('[!WARN]')).toBe('[!WARN]');
         });
     });
+
+    describe('truncateString', () => {
+        it('cuts a string down to the provided length and corrects missing codeblock backticks if needed', () => {
+            const section = getSection("Example", substrFile);
+            const truncatedStr = truncateString(section, 1024);
+            expect(truncatedStr).toHaveLength(1024);
+        })
+    })
+
 });
