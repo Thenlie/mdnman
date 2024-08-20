@@ -168,6 +168,15 @@ const createChoicesFromTitles = (titles: Array<{ title: string; file: string }>)
     }));
 };
 
+/**
+ * Removes duplicate newlines from a given string
+ * @param document
+ * @returns {string}
+ */
+const removeEmptyLines = (document: string): string => {
+    return document.replace(/(\n\n)\n+/g, '$1');
+};
+
 export {
     getHeader,
     stripHeader,
@@ -178,4 +187,5 @@ export {
     removeTitle,
     truncateString,
     createChoicesFromTitles,
+    removeEmptyLines,
 };
