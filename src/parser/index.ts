@@ -159,12 +159,12 @@ const truncateString = (document: string, length: number) => {
 /**
  * Creates an array of objects containing all titles and filepaths
  * from a given mdnman title file
- * @param {Array<{ title: string; file: string }>} titles
+ * @param {Array<{ title: string; path: string }>} titles
  */
-const createChoicesFromTitles = (titles: Array<{ title: string; file: string }>) => {
+const createChoicesFromTitles = (titles: Array<{ title: string; path: string }>) => {
     return titles.map((title) => ({
         name: title.title,
-        value: title.file,
+        value: title.path,
     }));
 };
 
