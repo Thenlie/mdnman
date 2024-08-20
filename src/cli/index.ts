@@ -29,7 +29,7 @@ const commandActionHandler = async (
         return;
     }
     if (options.section !== 'none') {
-        document = getSection(options.section, document);
+        document = getSection(document, options.section);
     }
     const strippedDoc = stripJsxRef(document);
     if (options.output === 'stdout') {

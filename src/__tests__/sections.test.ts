@@ -1,5 +1,11 @@
 import fs from 'fs';
-import { getSection, getAllSections } from '../parser/sections.js';
+import { stripJsxRef } from '../parser/index.js';
+import {
+    getSection,
+    getAllSections,
+    removeEmptySections,
+    removeSection,
+} from '../parser/sections.js';
 import mapDocument from './__fixtures__/map.document.json';
 
 const JS_FILE_PATH = './lib/javascript/global_objects/array/map/index.md';
@@ -20,14 +26,27 @@ describe('sections', () => {
 
     describe('getSection', () => {
         it('passes', () => {
-            expect(getSection('Description', jsFile)).toMatchSnapshot();
-            expect(getSection('Accessibility concerns', htmlFile)).toMatchSnapshot();
+            expect(getSection(jsFile, 'Description')).toMatchSnapshot();
+            expect(getSection(htmlFile, 'Accessibility concerns')).toMatchSnapshot();
         });
     });
 
     describe('getAllSections', () => {
         it('returns all sections from a given document', () => {
             expect(getAllSections(mapDocument.document)).toMatchSnapshot();
+        });
+    });
+
+    describe('removeSection', () => {
+        it('returns a document with the specified section removed', () => {
+            expect(removeSection(jsFile, 'Description')).toMatchSnapshot();
+        });
+    });
+
+    describe('removeEmptySections', () => {
+        it('removes empty sections from a given document', () => {
+            const trimmedDoc = stripJsxRef(mapDocument.document);
+            expect(removeEmptySections(trimmedDoc)).toMatchSnapshot();
         });
     });
 });

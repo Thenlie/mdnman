@@ -1,38 +1,42 @@
+type MDNSection = {
+    name: string;
+    level: number;
+    position: number;
+};
+
 /**
  * Take a raw markdown MDN doc and return the section of the document that
- * with the provided prefix
- * @param {string} prefix
+ * with the provided section name
  * @param {string} document
+ * @param {string} sectionName
  * @returns {string}
  */
-const getSection = (prefix: string, document: string): string => {
+const getSection = (document: string, sectionName: string): string => {
     const docArr = document.split('\n');
     const section = [];
     let flag = false;
-    let heading;
+    let heading = '';
     for (let i = 0; i < docArr.length; i++) {
+        const currentHeading = docArr[i].match(/^#+/)?.[0];
+        // Check for matching section name and set flag
         if (
+            !flag &&
             docArr[i].startsWith('#') &&
-            docArr[i].toLowerCase().includes(prefix.toLowerCase()) &&
-            !flag
+            docArr[i].toLowerCase().includes(sectionName.toLowerCase())
         ) {
             flag = true;
-            heading = docArr[i].match(/^#+/)?.[0];
+            heading = currentHeading || '';
             section.push(docArr[i]);
-        } else if (docArr[i].match(/^#+/)?.[0] === heading && flag) {
+            // Check for end of section by finding matching or higher markdown heading
+        } else if (flag && currentHeading && currentHeading.length <= heading.length) {
             flag = false;
             break;
+            // Add lines of section if not at a heading
         } else if (flag) {
             section.push(docArr[i]);
         }
     }
     return section.join('\n');
-};
-
-type MDNSection = {
-    name: string;
-    level: number;
-    position: number;
 };
 
 /**
@@ -55,4 +59,60 @@ const getAllSections = (document: string): MDNSection[] => {
     });
 };
 
-export { getSection, getAllSections };
+/**
+ * Take a raw markdown MDN doc and return the document with the specified section removed.
+ * This is done by removing all content from the section heading, until the next heading of
+ * equal or higher value.
+ * @param document
+ * @param sectionName
+ * @returns {string}
+ */
+const removeSection = (document: string, sectionName: string): string => {
+    const docArr = document.split('\n');
+    const section = [];
+    let flag = false;
+    let heading = '';
+    for (let i = 0; i < docArr.length; i++) {
+        const currentHeading = docArr[i].match(/^#+/)?.[0];
+        // Check for matching section name and set flag
+        if (
+            !flag &&
+            docArr[i].startsWith('#') &&
+            docArr[i].toLowerCase().includes(sectionName.toLowerCase())
+        ) {
+            flag = true;
+            heading = currentHeading || '';
+            // Check for end of section by finding matching or higher markdown heading
+        } else if (flag && currentHeading && currentHeading.length <= heading.length) {
+            flag = false;
+            // Add all lines when section not flagged
+        } else if (!flag) {
+            section.push(docArr[i]);
+        }
+    }
+    return section.join('\n');
+};
+
+/**
+ * Take a raw markdown MDN doc and return the document with any empty sections removed
+ * @param {string} document
+ * @returns {string}
+ */
+const removeEmptySections = (document: string): string => {
+    const sections = getAllSections(document);
+    let trimmedDoc = document;
+    for (let i = 0; i < sections.length; i++) {
+        const section = getSection(document, sections[i].name);
+        const lines = section.split('\n');
+        // Remove the heading line from the section
+        lines.shift();
+        // Filter out empty line and lines only containing '\n'
+        const filteredLines = lines.filter((line) => line !== '');
+        if (filteredLines.length === 0) {
+            trimmedDoc = removeSection(trimmedDoc, sections[i].name);
+        }
+    }
+    return trimmedDoc;
+};
+
+export { getSection, getAllSections, removeSection, removeEmptySections };
