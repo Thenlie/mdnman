@@ -33,7 +33,7 @@ You can control the gaps between columns with the {{cssxref("column-gap")}} or {
 In this example, we used the {{cssxref("column-width")}} property to set a minimum width that the columns need to be before the browser adds an additional column. The {{cssxref("columns")}} shorthand property can be used to set the `column-width` and {{cssxref("column-count")}} properties, either of which can define the maximum number of columns allowed.
 
 > [!CALLOUT]
->
+> 
 > [Download this example](https://github.com/mdn/css-examples/blob/main/css-cookbook/columns-multicol--download.html)
 
 Use multicol when:
@@ -51,7 +51,7 @@ Margins or the `gap` property can be used to create gaps between items, but ther
 {{EmbedGHLiveSample("css-examples/css-cookbook/columns-flexbox.html", '100%', 720)}}
 
 > [!CALLOUT]
->
+> 
 > [Download this example](https://github.com/mdn/css-examples/blob/main/css-cookbook/columns-flexbox--download.html)
 
 To create a layout with flex items that wrap onto new rows, set the {{cssxref("flex-wrap")}} property on the container to `wrap`. Note that each flex line distributes space for that line only. Items in one line will not necessarily line up with items on other lines, as you'll see in the example below. This is why flexbox is described as one-dimensional. It is designed for controlling layout as a row or a column, but not both at the same time.
@@ -59,7 +59,7 @@ To create a layout with flex items that wrap onto new rows, set the {{cssxref("f
 {{EmbedGHLiveSample("css-examples/css-cookbook/columns-flexbox-wrapping.html", '100%', 720)}}
 
 > [!CALLOUT]
->
+> 
 > [Download this example](https://github.com/mdn/css-examples/blob/main/css-cookbook/columns-flexbox-wrapping--download.html)
 
 Use flexbox:
@@ -75,7 +75,7 @@ If you want a two-dimensional grid where items line up in rows _and_ columns, th
 {{EmbedGHLiveSample("css-examples/css-cookbook/columns-grid.html", '100%', 720)}}
 
 > [!CALLOUT]
->
+> 
 > [Download this example](https://github.com/mdn/css-examples/blob/main/css-cookbook/columns-grid--download.html)
 
 Use grid:

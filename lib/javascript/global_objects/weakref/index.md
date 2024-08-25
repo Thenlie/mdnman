@@ -22,7 +22,7 @@ Correct use of `WeakRef` takes careful thought, and it's best avoided if possibl
 Here are some specific points included by the authors in the [proposal](https://github.com/tc39/proposal-weakrefs) that introduced `WeakRef`:
 
 > [Garbage collectors](<https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)>) are complicated. If an application or library depends on GC cleaning up a WeakRef or calling a finalizer \[cleanup callback] in a timely, predictable manner, it's likely to be disappointed: the cleanup may happen much later than expected, or not at all. Sources of variability include:
->
+> 
 > - One object might be garbage-collected much sooner than another object, even if they become unreachable at the same time, e.g., due to generational collection.
 > - Garbage collection work can be split up over time using incremental and concurrent techniques.
 > - Various runtime heuristics can be used to balance memory usage, responsiveness.

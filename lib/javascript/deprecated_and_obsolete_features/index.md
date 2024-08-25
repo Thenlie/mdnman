@@ -15,7 +15,7 @@ These deprecated features can still be used, but should be used with caution bec
 Some of these deprecated features are listed in the [Annex B](https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html) section of the ECMAScript specification. This section is described as normative optional — that is, web browser hosts must implement these features, while non-web hosts may not. These features are likely stable because removing them will cause backward compatibility issues and break legacy websites. (JavaScript has the design goal of "don't break the web".) Still, they are not cross-platform portable and may not be supported by all analysis tools, so you are advised to not use them, as the introduction of Annex B states:
 
 > … All of the language features and behaviors specified in this annex have one or more undesirable characteristics and in the absence of legacy usage would be removed from this specification. …
->
+> 
 > … Programmers should not use or assume the existence of these features and behaviors when writing new ECMAScript code. …
 
 Some others, albeit in the main spec body, are also marked as normative optional and should not be depended on.

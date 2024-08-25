@@ -19,7 +19,7 @@ It can have the following values:
 
 > [!NOTE]
 > This attribute is mandatory for the {{ HTMLElement("bdo") }} element where it has a different semantic meaning.
->
+> 
 > - This attribute is _not_ inherited by the {{ HTMLElement("bdi") }} element. If not set, its value is `auto`.
 > - This attribute can be overridden by the CSS properties {{ cssxref("direction") }} and {{ cssxref("unicode-bidi") }}, if a CSS page is active and the element supports these properties.
 > - As the directionality of the text is semantically related to its content and not to its presentation, it is recommended that web developers use this attribute instead of the related CSS properties when possible. That way, the text will display correctly even on a browser that doesn't support CSS or has the CSS deactivated.

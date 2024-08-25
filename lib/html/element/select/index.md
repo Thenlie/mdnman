@@ -62,7 +62,7 @@ Mouse users can hold the <kbd>Ctrl</kbd>, <kbd>Command</kbd>, or <kbd>Shift</kbd
 
 > [!WARNING]
 > The mechanism for selecting multiple non-contiguous items via the keyboard described below currently only seems to work in Firefox.
->
+> 
 > On macOS, the <kbd>Ctrl</kbd> + <kbd>Up</kbd> and <kbd>Ctrl</kbd> + <kbd>Down</kbd> shortcuts conflict with the OS default shortcuts for _Mission Control_ and _Application windows_, so you'll have to turn these off before it will work.
 
 Keyboard users can select multiple contiguous items by:

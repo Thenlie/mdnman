@@ -23,7 +23,7 @@ The cards in the group should line up in two dimensions — both vertically and 
 {{EmbedGHLiveSample("css-examples/css-cookbook/card.html", '100%', 1720)}}
 
 > [!CALLOUT]
->
+> 
 > [Download this example](https://github.com/mdn/css-examples/blob/main/css-cookbook/card--download.html)
 
 ## Choices made

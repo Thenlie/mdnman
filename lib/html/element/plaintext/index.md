@@ -13,7 +13,7 @@ The **`<plaintext>`** [HTML](/en-US/docs/Web/HTML) element renders everything fo
 
 > [!WARNING]
 > Do not use this element.
->
+> 
 > - `<plaintext>` is deprecated since HTML 2, and not all browsers implemented it. Browsers that did implement it didn't do so consistently.
 > - `<plaintext>` is obsolete; browsers that accept it may instead treat it as a {{HTMLElement("pre")}} element that still interprets HTML within.
 > - If `<plaintext>` is the first element on the page (other than any non-displayed elements, like {{HTMLElement("head")}}), do not use HTML at all. Instead serve a text file with the `text/plain` [MIME-type](/en-US/docs/Learn/Server-side/Configuring_server_MIME_types).

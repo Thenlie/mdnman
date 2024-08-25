@@ -32,7 +32,7 @@ If an {{HTMLElement("input")}}, {{HTMLElement("select")}} or {{HTMLElement("text
 
 > [!NOTE]
 > In order to provide autocompletion, user-agents might require `<input>`/`<select>`/`<textarea>` elements to:
->
+> 
 > 1. Have a `name` and/or `id` attribute
 > 2. Be descendants of a `<form>` element
 > 3. Be owned by a form with a {{HTMLElement("input/submit", "submit")}} button

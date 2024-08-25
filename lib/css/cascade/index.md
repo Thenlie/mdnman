@@ -69,9 +69,9 @@ The cascading algorithm determines how to find the value to apply for each prope
 The cascade is in ascending order, meaning animations have precedence of normal values, whether those are declared in user, author, or user-agent styles, important values take precedence over animations, and transitions have precedence over important values.
 
 > **Note:** **Transitions and animations**
->
+> 
 > Property values set by animation {{cssxref('@keyframes')}} are more important than all normal styles (those with no [`!important`](/en-US/docs/Web/CSS/Specificity#the_!important_exception) set).
->
+> 
 > Property values being set in a {{cssxref('transition')}} take precedence over all other values set, even those marked with `!important`.
 
 The cascade algorithm is applied _before_ the specificity algorithm, meaning if `:root p { color: red;}` is declared in the user stylesheet (row 2) and a less specific `p {color: blue;}` is in the author stylesheet (row 3), the paragraphs will be blue.

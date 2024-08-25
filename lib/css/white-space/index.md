@@ -129,12 +129,12 @@ The following table summarizes the behavior of the various `white-space` keyword
 </table>
 
 > **Note:** There is a distinction made between **spaces** and **other space separators**. These are defined as follows:
->
+> 
 > - spaces
 >   - : Spaces (U+0020), tabs (U+0009), and segment breaks (such as newlines).
 > - other space separators
 >   - : All other space separators defined in Unicode, other than those already defined as spaces.
->
+> 
 > Where white space is said to _hang_, this can affect the size of the box when measured for intrinsic sizing.
 
 ## Collapsing of white space

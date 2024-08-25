@@ -399,7 +399,7 @@ The code renders as follows:
 
 > [!NOTE]
 > Because `<dialog>`s change from `display: none` to `display: block` each time they are shown, the `<dialog>` transitions from its `@starting-style` styles to its `dialog[open]` styles every time the entry transition occurs. When the `<dialog>` closes, it transitions from its `dialog[open]` state to the default `dialog` state.
->
+> 
 > It is possible for the style transition on entry and exit to be different in such cases. See our [Demonstration of when starting styles are used](/en-US/docs/Web/CSS/@starting-style#demonstration_of_when_starting_styles_are_used) example for a proof of this.
 
 #### dialog keyframe animations

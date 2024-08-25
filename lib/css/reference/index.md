@@ -100,7 +100,7 @@ Combinators are selectors that establish a relationship between two or more simp
   - : Represents entities that are not included in HTML.
 
 > [!CALLOUT]
->
+> 
 > See also [selectors in the Selectors specification](https://drafts.csswg.org/selectors/) and the [pseudo-element specification](https://drafts.csswg.org/css-pseudo/).
 
 ## Concepts

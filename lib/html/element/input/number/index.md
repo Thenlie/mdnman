@@ -262,9 +262,9 @@ We put it on a separate `<span>` element for added flexibility. Some browsers do
 
 > [!WARNING]
 > HTML form validation is _not_ a substitute for server-side scripts that ensure that the entered data is in the proper format!
->
+> 
 > It's far too easy for someone to make adjustments to the HTML that allow them to bypass the validation, or to remove it entirely. It's also possible for someone to bypass your HTML and submit the data directly to your server.
->
+> 
 > If your server-side code fails to validate the data it receives, disaster could strike when improperly-formatted data is submitted (or data which is too large, is of the wrong type, and so forth).
 
 ### Pattern validation
@@ -403,7 +403,7 @@ After declaring a few variables, an event listener is added to the `button` to c
 
 > [!NOTE]
 > When the user clicks the button, the `required` attribute(s) are removed from the input(s) we are hiding, and empty the `value` attribute(s). This is so the form can be submitted if both input sets aren't filled in. It also ensures that the form won't submit data that the user didn't mean to.
->
+> 
 > If you didn't do this, you'd have to fill in both feet/inches **and** meters to submit the form!
 
 ## Technical summary

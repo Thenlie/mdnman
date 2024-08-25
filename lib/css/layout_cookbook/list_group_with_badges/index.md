@@ -19,7 +19,7 @@ The list items should be displayed with the badges. The badge should be aligned 
 {{EmbedGHLiveSample("css-examples/css-cookbook/list-group-badges.html", '100%', 720)}}
 
 > [!CALLOUT]
->
+> 
 > [Download this example](https://github.com/mdn/css-examples/blob/main/css-cookbook/list-group-badges--download.html)
 
 ## Choices made

@@ -118,7 +118,7 @@ To check if a font format is supported by a browser within CSS, use the {{cssxre
 | `woff2`             | WOFF 2.0              | .woff2            |
 
 > **Note:**
->
+> 
 > - `format(svg)` stands for [SVG fonts](/en-US/docs/Web/SVG/Tutorial/SVG_fonts), and `tech(color-SVG)` stands for [OpenType fonts with SVG table](https://learn.microsoft.com/en-us/typography/opentype/spec/svg) (also called OpenType-SVG color fonts), which are completely different.
 > - The `opentype` and `truetype` values are equivalent whether the font file uses cubic bezier curves (within CFF/CFF2 table) or quadratic bezier curves (within glyph table).
 
