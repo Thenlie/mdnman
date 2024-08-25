@@ -150,10 +150,10 @@ const truncateString = (document: string, length: number) => {
     // Filter lines for codeblock backticks, store array length
     const backtickMatches = lines?.filter((item) => item.startsWith('```')).length;
     // If the number of backtick instances is odd, returns document with an additional 3 backticks alongside the ellipsis. Else, return original truncated string
-    if (backtickMatches)
-        return backtickMatches % 2 !== 0
-            ? document.slice(0, length - 7) + '...\n```'
-            : truncatedStr;
+    if (backtickMatches && backtickMatches % 2 !== 0) {
+        return document.slice(0, length - 7) + '...\n```';
+    }
+    return truncatedStr;
 };
 
 /**

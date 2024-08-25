@@ -22,6 +22,35 @@ let jsFile: string;
 let substrFile: string;
 let htmlFile: string;
 
+const failingStr = `
+## Description
+
+\`undefined\` is a property of the _global object_. That is, it is a variable in global scope.
+
+In all non-legacy browsers, \`undefined\` is a non-configurable, non-writable property. Even when this is not the case, avoid overriding it.
+
+A variable that has not been assigned a value is of type \`undefined\`. A
+method or statement also returns \`undefined\` if the variable that is being
+evaluated does not have an assigned value. A function returns \`undefined\` if
+a value was not .
+
+> ℹ️
+> While you can use \`undefined\` as an  (variable name) in any scope other than the global scope (because \`undefined\` is not a [reserved word](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#reserved_words)), doing so is a very bad idea that will make your code difficult to maintain and debug.
+>
+> \`\`\`js example-bad
+> // DON'T DO THIS
+>
+> (() => {
+>   const undefined = "foo";
+>   console.log(undefined, typeof undefined); // foo string
+> })();
+>
+> ((undefined) => {
+>   console.log(undefined, typeof undefined); // foo string
+> })("foo");
+> \`\`\`
+`;
+
 describe('parser', () => {
     beforeAll(() => {
         try {
@@ -93,6 +122,7 @@ describe('parser', () => {
             const truncatedStr = truncateString(section, 1024);
             expect(truncatedStr).toHaveLength(1024);
             expect(truncatedStr).toMatchSnapshot();
+            expect(truncateString(failingStr, 1024)).toMatchSnapshot();
         });
     });
 
