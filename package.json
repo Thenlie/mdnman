@@ -11,7 +11,7 @@
   "scripts": {
     "start": "tsx src/index.ts",
     "cli": "tsx src/cli/index.ts",
-    "print-headers": "tsx tools/print_headers.ts",
+    "titles": "tsx tools/generate_titles.ts",
     "build": "tsc",
     "lint": "eslint",
     "test": "jest",

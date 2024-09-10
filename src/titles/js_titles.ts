@@ -36,6 +36,570 @@ export const javascriptTitles: {
         title: 'Deprecated and obsolete features',
     },
     {
+        path: 'lib/javascript/document/activeelement/index.md',
+        title: 'Document: activeElement property',
+    },
+    {
+        path: 'lib/javascript/document/adoptedstylesheets/index.md',
+        title: 'Document: adoptedStyleSheets property',
+    },
+    {
+        path: 'lib/javascript/document/adoptnode/index.md',
+        title: 'Document: adoptNode() method',
+    },
+    {
+        path: 'lib/javascript/document/afterscriptexecute_event/index.md',
+        title: 'Document: afterscriptexecute event',
+    },
+    {
+        path: 'lib/javascript/document/alinkcolor/index.md',
+        title: 'Document: alinkColor property',
+    },
+    {
+        path: 'lib/javascript/document/all/index.md',
+        title: 'Document: all property',
+    },
+    {
+        path: 'lib/javascript/document/anchors/index.md',
+        title: 'Document: anchors property',
+    },
+    {
+        path: 'lib/javascript/document/append/index.md',
+        title: 'Document: append() method',
+    },
+    {
+        path: 'lib/javascript/document/applets/index.md',
+        title: 'Document: applets property',
+    },
+    {
+        path: 'lib/javascript/document/beforescriptexecute_event/index.md',
+        title: 'Document: beforescriptexecute event',
+    },
+    {
+        path: 'lib/javascript/document/bgcolor/index.md',
+        title: 'Document: bgColor property',
+    },
+    {
+        path: 'lib/javascript/document/body/index.md',
+        title: 'Document: body property',
+    },
+    {
+        path: 'lib/javascript/document/browsingtopics/index.md',
+        title: 'Document: browsingTopics() method',
+    },
+    {
+        path: 'lib/javascript/document/caretpositionfrompoint/index.md',
+        title: 'Document: caretPositionFromPoint() method',
+    },
+    {
+        path: 'lib/javascript/document/caretrangefrompoint/index.md',
+        title: 'Document: caretRangeFromPoint() method',
+    },
+    {
+        path: 'lib/javascript/document/characterset/index.md',
+        title: 'Document: characterSet property',
+    },
+    {
+        path: 'lib/javascript/document/childelementcount/index.md',
+        title: 'Document: childElementCount property',
+    },
+    {
+        path: 'lib/javascript/document/children/index.md',
+        title: 'Document: children property',
+    },
+    {
+        path: 'lib/javascript/document/clear/index.md',
+        title: 'Document: clear() method',
+    },
+    {
+        path: 'lib/javascript/document/close/index.md',
+        title: 'Document: close() method',
+    },
+    {
+        path: 'lib/javascript/document/compatmode/index.md',
+        title: 'Document: compatMode property',
+    },
+    {
+        path: 'lib/javascript/document/contenttype/index.md',
+        title: 'Document: contentType property',
+    },
+    {
+        path: 'lib/javascript/document/cookie/index.md',
+        title: 'Document: cookie property',
+    },
+    {
+        path: 'lib/javascript/document/copy_event/index.md',
+        title: 'Document: copy event',
+    },
+    {
+        path: 'lib/javascript/document/createattribute/index.md',
+        title: 'Document: createAttribute() method',
+    },
+    {
+        path: 'lib/javascript/document/createattributens/index.md',
+        title: 'Document: createAttributeNS() method',
+    },
+    {
+        path: 'lib/javascript/document/createcdatasection/index.md',
+        title: 'Document: createCDATASection() method',
+    },
+    {
+        path: 'lib/javascript/document/createcomment/index.md',
+        title: 'Document: createComment() method',
+    },
+    {
+        path: 'lib/javascript/document/createdocumentfragment/index.md',
+        title: 'Document: createDocumentFragment() method',
+    },
+    {
+        path: 'lib/javascript/document/createelement/index.md',
+        title: 'Document: createElement() method',
+    },
+    {
+        path: 'lib/javascript/document/createelementns/index.md',
+        title: 'Document: createElementNS() method',
+    },
+    {
+        path: 'lib/javascript/document/createevent/index.md',
+        title: 'Document: createEvent() method',
+    },
+    {
+        path: 'lib/javascript/document/createexpression/index.md',
+        title: 'Document: createExpression() method',
+    },
+    {
+        path: 'lib/javascript/document/createnodeiterator/index.md',
+        title: 'Document: createNodeIterator() method',
+    },
+    {
+        path: 'lib/javascript/document/creatensresolver/index.md',
+        title: 'Document: createNSResolver() method',
+    },
+    {
+        path: 'lib/javascript/document/createprocessinginstruction/index.md',
+        title: 'Document: createProcessingInstruction() method',
+    },
+    {
+        path: 'lib/javascript/document/createrange/index.md',
+        title: 'Document: createRange() method',
+    },
+    {
+        path: 'lib/javascript/document/createtextnode/index.md',
+        title: 'Document: createTextNode() method',
+    },
+    {
+        path: 'lib/javascript/document/createtouch/index.md',
+        title: 'Document: createTouch() method',
+    },
+    {
+        path: 'lib/javascript/document/createtouchlist/index.md',
+        title: 'Document: createTouchList() method',
+    },
+    {
+        path: 'lib/javascript/document/createtreewalker/index.md',
+        title: 'Document: createTreeWalker() method',
+    },
+    {
+        path: 'lib/javascript/document/currentscript/index.md',
+        title: 'Document: currentScript property',
+    },
+    {
+        path: 'lib/javascript/document/cut_event/index.md',
+        title: 'Document: cut event',
+    },
+    {
+        path: 'lib/javascript/document/defaultview/index.md',
+        title: 'Document: defaultView property',
+    },
+    {
+        path: 'lib/javascript/document/designmode/index.md',
+        title: 'Document: designMode property',
+    },
+    {
+        path: 'lib/javascript/document/dir/index.md',
+        title: 'Document: dir property',
+    },
+    {
+        path: 'lib/javascript/document/doctype/index.md',
+        title: 'Document: doctype property',
+    },
+    {
+        path: 'lib/javascript/document/document/index.md',
+        title: 'Document: Document() constructor',
+    },
+    {
+        path: 'lib/javascript/document/documentelement/index.md',
+        title: 'Document: documentElement property',
+    },
+    {
+        path: 'lib/javascript/document/documenturi/index.md',
+        title: 'Document: documentURI property',
+    },
+    {
+        path: 'lib/javascript/document/domain/index.md',
+        title: 'Document: domain property',
+    },
+    {
+        path: 'lib/javascript/document/domcontentloaded_event/index.md',
+        title: 'Document: DOMContentLoaded event',
+    },
+    {
+        path: 'lib/javascript/document/elementfrompoint/index.md',
+        title: 'Document: elementFromPoint() method',
+    },
+    {
+        path: 'lib/javascript/document/elementsfrompoint/index.md',
+        title: 'Document: elementsFromPoint() method',
+    },
+    {
+        path: 'lib/javascript/document/embeds/index.md',
+        title: 'Document: embeds property',
+    },
+    {
+        path: 'lib/javascript/document/enablestylesheetsforset/index.md',
+        title: 'Document: enableStyleSheetsForSet() method',
+    },
+    {
+        path: 'lib/javascript/document/evaluate/index.md',
+        title: 'Document: evaluate() method',
+    },
+    {
+        path: 'lib/javascript/document/execcommand/index.md',
+        title: 'Document: execCommand() method',
+    },
+    {
+        path: 'lib/javascript/document/exitfullscreen/index.md',
+        title: 'Document: exitFullscreen() method',
+    },
+    {
+        path: 'lib/javascript/document/exitpictureinpicture/index.md',
+        title: 'Document: exitPictureInPicture() method',
+    },
+    {
+        path: 'lib/javascript/document/exitpointerlock/index.md',
+        title: 'Document: exitPointerLock() method',
+    },
+    {
+        path: 'lib/javascript/document/featurepolicy/index.md',
+        title: 'Document: featurePolicy property',
+    },
+    {
+        path: 'lib/javascript/document/fgcolor/index.md',
+        title: 'Document: fgColor property',
+    },
+    {
+        path: 'lib/javascript/document/firstelementchild/index.md',
+        title: 'Document: firstElementChild property',
+    },
+    {
+        path: 'lib/javascript/document/fonts/index.md',
+        title: 'Document: fonts property',
+    },
+    {
+        path: 'lib/javascript/document/forms/index.md',
+        title: 'Document: forms property',
+    },
+    {
+        path: 'lib/javascript/document/fragmentdirective/index.md',
+        title: 'Document: fragmentDirective property',
+    },
+    {
+        path: 'lib/javascript/document/fullscreen/index.md',
+        title: 'Document: fullscreen property',
+    },
+    {
+        path: 'lib/javascript/document/fullscreenchange_event/index.md',
+        title: 'Document: fullscreenchange event',
+    },
+    {
+        path: 'lib/javascript/document/fullscreenelement/index.md',
+        title: 'Document: fullscreenElement property',
+    },
+    {
+        path: 'lib/javascript/document/fullscreenenabled/index.md',
+        title: 'Document: fullscreenEnabled property',
+    },
+    {
+        path: 'lib/javascript/document/fullscreenerror_event/index.md',
+        title: 'Document: fullscreenerror event',
+    },
+    {
+        path: 'lib/javascript/document/getanimations/index.md',
+        title: 'Document: getAnimations() method',
+    },
+    {
+        path: 'lib/javascript/document/getelementbyid/index.md',
+        title: 'Document: getElementById() method',
+    },
+    {
+        path: 'lib/javascript/document/getelementsbyclassname/index.md',
+        title: 'Document: getElementsByClassName() method',
+    },
+    {
+        path: 'lib/javascript/document/getelementsbyname/index.md',
+        title: 'Document: getElementsByName() method',
+    },
+    {
+        path: 'lib/javascript/document/getelementsbytagname/index.md',
+        title: 'Document: getElementsByTagName() method',
+    },
+    {
+        path: 'lib/javascript/document/getelementsbytagnamens/index.md',
+        title: 'Document: getElementsByTagNameNS() method',
+    },
+    {
+        path: 'lib/javascript/document/getselection/index.md',
+        title: 'Document: getSelection() method',
+    },
+    {
+        path: 'lib/javascript/document/hasfocus/index.md',
+        title: 'Document: hasFocus() method',
+    },
+    {
+        path: 'lib/javascript/document/hasstorageaccess/index.md',
+        title: 'Document: hasStorageAccess() method',
+    },
+    {
+        path: 'lib/javascript/document/hasunpartitionedcookieaccess/index.md',
+        title: 'Document: hasUnpartitionedCookieAccess() method',
+    },
+    {
+        path: 'lib/javascript/document/head/index.md',
+        title: 'Document: head property',
+    },
+    {
+        path: 'lib/javascript/document/hidden/index.md',
+        title: 'Document: hidden property',
+    },
+    {
+        path: 'lib/javascript/document/images/index.md',
+        title: 'Document: images property',
+    },
+    {
+        path: 'lib/javascript/document/implementation/index.md',
+        title: 'Document: implementation property',
+    },
+    {
+        path: 'lib/javascript/document/importnode/index.md',
+        title: 'Document: importNode() method',
+    },
+    {
+        path: 'lib/javascript/document/index.md',
+        title: 'Document',
+    },
+    {
+        path: 'lib/javascript/document/lastelementchild/index.md',
+        title: 'Document: lastElementChild property',
+    },
+    {
+        path: 'lib/javascript/document/lastmodified/index.md',
+        title: 'Document: lastModified property',
+    },
+    {
+        path: 'lib/javascript/document/laststylesheetset/index.md',
+        title: 'Document: lastStyleSheetSet property',
+    },
+    {
+        path: 'lib/javascript/document/linkcolor/index.md',
+        title: 'Document: linkColor property',
+    },
+    {
+        path: 'lib/javascript/document/links/index.md',
+        title: 'Document: links property',
+    },
+    {
+        path: 'lib/javascript/document/location/index.md',
+        title: 'Document: location property',
+    },
+    {
+        path: 'lib/javascript/document/mozsetimageelement/index.md',
+        title: 'Document: mozSetImageElement() method',
+    },
+    {
+        path: 'lib/javascript/document/open/index.md',
+        title: 'Document: open() method',
+    },
+    {
+        path: 'lib/javascript/document/parsehtmlunsafe_static/index.md',
+        title: 'Document: parseHTMLUnsafe() static method',
+    },
+    {
+        path: 'lib/javascript/document/paste_event/index.md',
+        title: 'Document: paste event',
+    },
+    {
+        path: 'lib/javascript/document/pictureinpictureelement/index.md',
+        title: 'Document: pictureInPictureElement property',
+    },
+    {
+        path: 'lib/javascript/document/pictureinpictureenabled/index.md',
+        title: 'Document: pictureInPictureEnabled property',
+    },
+    {
+        path: 'lib/javascript/document/plugins/index.md',
+        title: 'Document: plugins property',
+    },
+    {
+        path: 'lib/javascript/document/pointerlockchange_event/index.md',
+        title: 'Document: pointerlockchange event',
+    },
+    {
+        path: 'lib/javascript/document/pointerlockelement/index.md',
+        title: 'Document: pointerLockElement property',
+    },
+    {
+        path: 'lib/javascript/document/pointerlockerror_event/index.md',
+        title: 'Document: pointerlockerror event',
+    },
+    {
+        path: 'lib/javascript/document/preferredstylesheetset/index.md',
+        title: 'Document: preferredStyleSheetSet property',
+    },
+    {
+        path: 'lib/javascript/document/prepend/index.md',
+        title: 'Document: prepend() method',
+    },
+    {
+        path: 'lib/javascript/document/prerendering/index.md',
+        title: 'Document: prerendering property',
+    },
+    {
+        path: 'lib/javascript/document/prerenderingchange_event/index.md',
+        title: 'Document: prerenderingchange event',
+    },
+    {
+        path: 'lib/javascript/document/querycommandenabled/index.md',
+        title: 'Document: queryCommandEnabled() method',
+    },
+    {
+        path: 'lib/javascript/document/querycommandstate/index.md',
+        title: 'Document: queryCommandState() method',
+    },
+    {
+        path: 'lib/javascript/document/querycommandsupported/index.md',
+        title: 'Document: queryCommandSupported() method',
+    },
+    {
+        path: 'lib/javascript/document/queryselector/index.md',
+        title: 'Document: querySelector() method',
+    },
+    {
+        path: 'lib/javascript/document/queryselectorall/index.md',
+        title: 'Document: querySelectorAll() method',
+    },
+    {
+        path: 'lib/javascript/document/readystate/index.md',
+        title: 'Document: readyState property',
+    },
+    {
+        path: 'lib/javascript/document/readystatechange_event/index.md',
+        title: 'Document: readystatechange event',
+    },
+    {
+        path: 'lib/javascript/document/referrer/index.md',
+        title: 'Document: referrer property',
+    },
+    {
+        path: 'lib/javascript/document/releasecapture/index.md',
+        title: 'Document: releaseCapture() method',
+    },
+    {
+        path: 'lib/javascript/document/replacechildren/index.md',
+        title: 'Document: replaceChildren() method',
+    },
+    {
+        path: 'lib/javascript/document/requeststorageaccess/index.md',
+        title: 'Document: requestStorageAccess() method',
+    },
+    {
+        path: 'lib/javascript/document/requeststorageaccessfor/index.md',
+        title: 'Document: requestStorageAccessFor() method',
+    },
+    {
+        path: 'lib/javascript/document/rootelement/index.md',
+        title: 'Document: rootElement property',
+    },
+    {
+        path: 'lib/javascript/document/scripts/index.md',
+        title: 'Document: scripts property',
+    },
+    {
+        path: 'lib/javascript/document/scroll_event/index.md',
+        title: 'Document: scroll event',
+    },
+    {
+        path: 'lib/javascript/document/scrollend_event/index.md',
+        title: 'Document: scrollend event',
+    },
+    {
+        path: 'lib/javascript/document/scrollingelement/index.md',
+        title: 'Document: scrollingElement property',
+    },
+    {
+        path: 'lib/javascript/document/securitypolicyviolation_event/index.md',
+        title: 'Document: securitypolicyviolation event',
+    },
+    {
+        path: 'lib/javascript/document/selectedstylesheetset/index.md',
+        title: 'Document: selectedStyleSheetSet property',
+    },
+    {
+        path: 'lib/javascript/document/selectionchange_event/index.md',
+        title: 'Document: selectionchange event',
+    },
+    {
+        path: 'lib/javascript/document/startviewtransition/index.md',
+        title: 'Document: startViewTransition() method',
+    },
+    {
+        path: 'lib/javascript/document/stylesheets/index.md',
+        title: 'Document: styleSheets property',
+    },
+    {
+        path: 'lib/javascript/document/stylesheetsets/index.md',
+        title: 'Document: styleSheetSets property',
+    },
+    {
+        path: 'lib/javascript/document/timeline/index.md',
+        title: 'Document: timeline property',
+    },
+    {
+        path: 'lib/javascript/document/title/index.md',
+        title: 'Document: title property',
+    },
+    {
+        path: 'lib/javascript/document/url/index.md',
+        title: 'Document: URL property',
+    },
+    {
+        path: 'lib/javascript/document/visibilitychange_event/index.md',
+        title: 'Document: visibilitychange event',
+    },
+    {
+        path: 'lib/javascript/document/visibilitystate/index.md',
+        title: 'Document: visibilityState property',
+    },
+    {
+        path: 'lib/javascript/document/vlinkcolor/index.md',
+        title: 'Document: vlinkColor property',
+    },
+    {
+        path: 'lib/javascript/document/write/index.md',
+        title: 'Document: write() method',
+    },
+    {
+        path: 'lib/javascript/document/writeln/index.md',
+        title: 'Document: writeln() method',
+    },
+    {
+        path: 'lib/javascript/document/xmlencoding/index.md',
+        title: 'Document: xmlEncoding property',
+    },
+    {
+        path: 'lib/javascript/document/xmlversion/index.md',
+        title: 'Document: xmlVersion property',
+    },
+    {
         path: 'lib/javascript/errors/already_has_pragma/index.md',
         title: 'Warning: -file- is being assigned a //# sourceMappingURL, but already has one',
     },

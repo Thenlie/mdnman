@@ -4,9 +4,9 @@ import path from 'path';
 import { escapeSingleQuotes, replaceDoubleSingleQuotes } from './utils';
 
 const DIRECTORY_MAP = [
-    { name: 'javascript', path: 'lib/javascript', out: 'tmp/javascript.headers.ts' },
-    { name: 'html', path: 'lib/html', out: 'tmp/html.headers.ts' },
-    { name: 'css', path: 'lib/css', out: 'tmp/css.headers.ts' },
+    { name: 'javascript', path: 'lib/javascript', out: 'src/titles/js_titles.ts' },
+    { name: 'html', path: 'lib/html', out: 'src/titles/html_titles.ts' },
+    { name: 'css', path: 'lib/css', out: 'src/titles/css_titles.ts' },
 ];
 
 /**
