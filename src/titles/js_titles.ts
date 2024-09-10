@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-export const jsTitles: {
+export const javascriptTitles: {
     path: string;
     title: string;
 }[] = [
@@ -121,7 +121,7 @@ export const jsTitles: {
     },
     {
         path: 'lib/javascript/errors/cant_assign_to_property/index.md',
-        title: 'TypeError: can\'\'t assign to property "x" on "y": not an object',
+        title: 'TypeError: can\'t assign to property "x" on "y": not an object',
     },
     {
         path: 'lib/javascript/errors/cant_be_converted_to_bigint_because_it_isnt_an_integer/index.md',
@@ -137,11 +137,11 @@ export const jsTitles: {
     },
     {
         path: 'lib/javascript/errors/cant_define_property_object_not_extensible/index.md',
-        title: 'TypeError: can\'\'t define property "x": "obj" is not extensible',
+        title: 'TypeError: can\'t define property "x": "obj" is not extensible',
     },
     {
         path: 'lib/javascript/errors/cant_delete/index.md',
-        title: 'TypeError: property "x" is non-configurable and can\'\'t be deleted',
+        title: 'TypeError: property "x" is non-configurable and can\'t be deleted',
     },
     {
         path: 'lib/javascript/errors/cant_delete_private_fields/index.md',
@@ -149,7 +149,7 @@ export const jsTitles: {
     },
     {
         path: 'lib/javascript/errors/cant_redefine_property/index.md',
-        title: '\'TypeError: can\'\'t redefine non-configurable property "x"\'',
+        title: 'TypeError: can\'t redefine non-configurable property "x"',
     },
     {
         path: 'lib/javascript/errors/cant_set_prototype/index.md',
@@ -265,7 +265,7 @@ export const jsTitles: {
     },
     {
         path: 'lib/javascript/errors/invalid_const_assignment/index.md',
-        title: '\'TypeError: invalid assignment to const "x"\'',
+        title: 'TypeError: invalid assignment to const "x"',
     },
     {
         path: 'lib/javascript/errors/invalid_date/index.md',
@@ -353,7 +353,7 @@ export const jsTitles: {
     },
     {
         path: 'lib/javascript/errors/no_non-null_object/index.md',
-        title: '\'TypeError: "x" is not a non-null object\'',
+        title: 'TypeError: "x" is not a non-null object',
     },
     {
         path: 'lib/javascript/errors/no_properties/index.md',
@@ -369,11 +369,11 @@ export const jsTitles: {
     },
     {
         path: 'lib/javascript/errors/not_a_constructor/index.md',
-        title: '\'TypeError: "x" is not a constructor\'',
+        title: 'TypeError: "x" is not a constructor',
     },
     {
         path: 'lib/javascript/errors/not_a_function/index.md',
-        title: '\'TypeError: "x" is not a function\'',
+        title: 'TypeError: "x" is not a function',
     },
     {
         path: 'lib/javascript/errors/not_a_valid_code_point/index.md',
@@ -381,7 +381,7 @@ export const jsTitles: {
     },
     {
         path: 'lib/javascript/errors/not_defined/index.md',
-        title: '\'ReferenceError: "x" is not defined\'',
+        title: 'ReferenceError: "x" is not defined',
     },
     {
         path: 'lib/javascript/errors/parameter_after_rest_parameter/index.md',
@@ -497,7 +497,7 @@ export const jsTitles: {
     },
     {
         path: 'lib/javascript/errors/reserved_identifier/index.md',
-        title: '\'SyntaxError: "x" is a reserved identifier\'',
+        title: 'SyntaxError: "x" is a reserved identifier',
     },
     {
         path: 'lib/javascript/errors/rest_with_default/index.md',
@@ -1360,7 +1360,7 @@ export const jsTitles: {
         title: 'Error: fileName',
     },
     {
-        path: ' lib/javascript/global_objects/error/index.md',
+        path: 'lib/javascript/global_objects/error/index.md',
         title: 'Error',
     },
     {

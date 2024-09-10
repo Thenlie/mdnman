@@ -1,14 +1,14 @@
 import fs from 'fs';
 import path from 'path';
 import type { SupportedLanguages } from './types.js';
-import { jsTitles } from './titles/js_titles.js';
+import { javascriptTitles } from './titles/js_titles.js';
 import { htmlTitles } from './titles/html_titles.js';
 import { cssTitles } from './titles/css_titles.js';
 
 const _dirname = import.meta.dirname;
 
 const FILE_LIST = {
-    javascript: jsTitles,
+    javascript: javascriptTitles,
     html: htmlTitles,
     css: cssTitles,
 };
