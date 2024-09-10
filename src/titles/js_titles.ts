@@ -4,6 +4,66 @@ export const javascriptTitles: {
     title: string;
 }[] = [
     {
+        path: 'lib/javascript/canvas_api/index.md',
+        title: 'Canvas API',
+    },
+    {
+        path: 'lib/javascript/canvas_api/manipulating_video_using_canvas/index.md',
+        title: 'Manipulating video using canvas',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/advanced_animations/index.md',
+        title: 'Advanced animations',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/applying_styles_and_colors/index.md',
+        title: 'Applying styles and colors',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/basic_animations/index.md',
+        title: 'Basic animations',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/basic_usage/index.md',
+        title: 'Basic usage of canvas',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/compositing/index.md',
+        title: 'Compositing and clipping',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/drawing_shapes/index.md',
+        title: 'Drawing shapes with canvas',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/drawing_text/index.md',
+        title: 'Drawing text',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/finale/index.md',
+        title: 'Finale',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/index.md',
+        title: 'Canvas tutorial',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/optimizing_canvas/index.md',
+        title: 'Optimizing canvas',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/pixel_manipulation_with_canvas/index.md',
+        title: 'Pixel manipulation with canvas',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/transformations/index.md',
+        title: 'Transformations',
+    },
+    {
+        path: 'lib/javascript/canvas_api/tutorial/using_images/index.md',
+        title: 'Using images',
+    },
+    {
         path: 'lib/javascript/classes/constructor/index.md',
         title: 'constructor',
     },
@@ -1122,6 +1182,14 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/errors/unparenthesized_unary_expr_lhs_exponentiation/index.md',
         title: 'SyntaxError: unparenthesized unary expression can\'t appear on the left-hand side of \'**\'',
+    },
+    {
+        path: 'lib/javascript/fetch_api/index.md',
+        title: 'Fetch API',
+    },
+    {
+        path: 'lib/javascript/fetch_api/using_fetch/index.md',
+        title: 'Using the Fetch API',
     },
     {
         path: 'lib/javascript/functions/arguments/callee/index.md',
@@ -4558,6 +4626,18 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/template_literals/index.md',
         title: 'Template literals (Template strings)',
+    },
+    {
+        path: 'lib/javascript/touch_events/index.md',
+        title: 'Touch events',
+    },
+    {
+        path: 'lib/javascript/touch_events/multi-touch_interaction/index.md',
+        title: 'Multi-touch interaction',
+    },
+    {
+        path: 'lib/javascript/touch_events/using_touch_events/index.md',
+        title: 'Using Touch Events',
     },
     {
         path: 'lib/javascript/trailing_commas/index.md',
