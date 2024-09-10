@@ -3,6 +3,222 @@ export const htmlTitles: {
     title: string;
 }[] = [
     {
+        path: 'lib/html/aria/aria-activedescendant/index.md',
+        title: 'aria-activedescendant',
+    },
+    {
+        path: 'lib/html/aria/aria-atomic/index.md',
+        title: 'aria-atomic',
+    },
+    {
+        path: 'lib/html/aria/aria-autocomplete/index.md',
+        title: 'aria-autocomplete',
+    },
+    {
+        path: 'lib/html/aria/aria-braillelabel/index.md',
+        title: 'aria-braillelabel',
+    },
+    {
+        path: 'lib/html/aria/aria-brailleroledescription/index.md',
+        title: 'aria-brailleroledescription',
+    },
+    {
+        path: 'lib/html/aria/aria-busy/index.md',
+        title: 'aria-busy',
+    },
+    {
+        path: 'lib/html/aria/aria-checked/index.md',
+        title: 'aria-checked',
+    },
+    {
+        path: 'lib/html/aria/aria-colcount/index.md',
+        title: 'aria-colcount',
+    },
+    {
+        path: 'lib/html/aria/aria-colindex/index.md',
+        title: 'aria-colindex',
+    },
+    {
+        path: 'lib/html/aria/aria-colindextext/index.md',
+        title: 'aria-colindextext',
+    },
+    {
+        path: 'lib/html/aria/aria-colspan/index.md',
+        title: 'aria-colspan',
+    },
+    {
+        path: 'lib/html/aria/aria-controls/index.md',
+        title: 'aria-controls',
+    },
+    {
+        path: 'lib/html/aria/aria-current/index.md',
+        title: 'aria-current',
+    },
+    {
+        path: 'lib/html/aria/aria-describedby/index.md',
+        title: 'aria-describedby',
+    },
+    {
+        path: 'lib/html/aria/aria-description/index.md',
+        title: 'aria-description',
+    },
+    {
+        path: 'lib/html/aria/aria-details/index.md',
+        title: 'aria-details',
+    },
+    {
+        path: 'lib/html/aria/aria-disabled/index.md',
+        title: 'aria-disabled',
+    },
+    {
+        path: 'lib/html/aria/aria-dropeffect/index.md',
+        title: 'aria-dropeffect',
+    },
+    {
+        path: 'lib/html/aria/aria-errormessage/index.md',
+        title: 'aria-errormessage',
+    },
+    {
+        path: 'lib/html/aria/aria-expanded/index.md',
+        title: 'aria-expanded',
+    },
+    {
+        path: 'lib/html/aria/aria-flowto/index.md',
+        title: 'aria-flowto',
+    },
+    {
+        path: 'lib/html/aria/aria-grabbed/index.md',
+        title: 'aria-grabbed',
+    },
+    {
+        path: 'lib/html/aria/aria-haspopup/index.md',
+        title: 'aria-haspopup',
+    },
+    {
+        path: 'lib/html/aria/aria-hidden/index.md',
+        title: 'aria-hidden',
+    },
+    {
+        path: 'lib/html/aria/aria-invalid/index.md',
+        title: 'aria-invalid',
+    },
+    {
+        path: 'lib/html/aria/aria-keyshortcuts/index.md',
+        title: 'aria-keyshortcuts',
+    },
+    {
+        path: 'lib/html/aria/aria-label/index.md',
+        title: 'aria-label',
+    },
+    {
+        path: 'lib/html/aria/aria-labelledby/index.md',
+        title: 'aria-labelledby',
+    },
+    {
+        path: 'lib/html/aria/aria-level/index.md',
+        title: 'aria-level',
+    },
+    {
+        path: 'lib/html/aria/aria-live/index.md',
+        title: 'aria-live',
+    },
+    {
+        path: 'lib/html/aria/aria-modal/index.md',
+        title: 'aria-modal',
+    },
+    {
+        path: 'lib/html/aria/aria-multiline/index.md',
+        title: 'aria-multiline',
+    },
+    {
+        path: 'lib/html/aria/aria-multiselectable/index.md',
+        title: 'aria-multiselectable',
+    },
+    {
+        path: 'lib/html/aria/aria-orientation/index.md',
+        title: 'aria-orientation',
+    },
+    {
+        path: 'lib/html/aria/aria-owns/index.md',
+        title: 'aria-owns',
+    },
+    {
+        path: 'lib/html/aria/aria-placeholder/index.md',
+        title: 'aria-placeholder',
+    },
+    {
+        path: 'lib/html/aria/aria-posinset/index.md',
+        title: 'aria-posinset',
+    },
+    {
+        path: 'lib/html/aria/aria-pressed/index.md',
+        title: 'aria-pressed',
+    },
+    {
+        path: 'lib/html/aria/aria-readonly/index.md',
+        title: 'aria-readonly',
+    },
+    {
+        path: 'lib/html/aria/aria-relevant/index.md',
+        title: 'aria-relevant',
+    },
+    {
+        path: 'lib/html/aria/aria-required/index.md',
+        title: 'aria-required',
+    },
+    {
+        path: 'lib/html/aria/aria-roledescription/index.md',
+        title: 'aria-roledescription',
+    },
+    {
+        path: 'lib/html/aria/aria-rowcount/index.md',
+        title: 'aria-rowcount',
+    },
+    {
+        path: 'lib/html/aria/aria-rowindex/index.md',
+        title: 'aria-rowindex',
+    },
+    {
+        path: 'lib/html/aria/aria-rowindextext/index.md',
+        title: 'aria-rowindextext',
+    },
+    {
+        path: 'lib/html/aria/aria-rowspan/index.md',
+        title: 'aria-rowspan',
+    },
+    {
+        path: 'lib/html/aria/aria-selected/index.md',
+        title: 'aria-selected',
+    },
+    {
+        path: 'lib/html/aria/aria-setsize/index.md',
+        title: 'aria-setsize',
+    },
+    {
+        path: 'lib/html/aria/aria-sort/index.md',
+        title: 'aria-sort',
+    },
+    {
+        path: 'lib/html/aria/aria-valuemax/index.md',
+        title: 'aria-valuemax',
+    },
+    {
+        path: 'lib/html/aria/aria-valuemin/index.md',
+        title: 'aria-valuemin',
+    },
+    {
+        path: 'lib/html/aria/aria-valuenow/index.md',
+        title: 'aria-valuenow',
+    },
+    {
+        path: 'lib/html/aria/aria-valuetext/index.md',
+        title: 'aria-valuetext',
+    },
+    {
+        path: 'lib/html/aria/index.md',
+        title: 'ARIA states and properties',
+    },
+    {
         path: 'lib/html/attributes/accept/index.md',
         title: 'HTML attribute: accept',
     },
