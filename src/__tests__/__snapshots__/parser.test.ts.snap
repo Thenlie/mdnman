@@ -269,11 +269,6 @@ You can also use  to transform \`elems\` to an array, and then access the \`map(
 
 - [Polyfill of \`Array.prototype.map\` in \`core-js\`](https://github.com/zloirock/core-js#ecmascript-array)
 - [Indexed collections](/en-US/docs/Web/JavaScript/Guide/Indexed_collections) guide
-- 
-- 
-- 
-- 
-- 
 "
 `;
 

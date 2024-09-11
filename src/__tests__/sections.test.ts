@@ -46,7 +46,7 @@ describe('sections', () => {
     describe('removeEmptySections', () => {
         it('removes empty sections from a given document', () => {
             const trimmedDoc = stripJsxRef(mapDocument.document);
-            expect(removeEmptySections(trimmedDoc)).toMatchSnapshot();
+            expect(removeEmptySections(trimmedDoc || '')).toMatchSnapshot();
         });
     });
 });

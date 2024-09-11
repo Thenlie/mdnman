@@ -61,20 +61,49 @@ const stripHeader = (document: string) => {
 };
 
 /**
- * Removes all text wrapped in double curly brackets from a string
+ * Removes all text wrapped in double curly brackets from a string.
+ * If this results in an empty line, or a line only containing a '-'
+ * that line is removed from the document.
  * @param {string} document
+ * @returns {string | null}
  * @example Hello{{ world }}! -> Hello!
  */
-const stripJsxRef = (document: string) => {
+const stripJsxRef = (document: string): string | null => {
     const regex = /{{.+?}}/gm;
-    return document.replace(regex, (match) => {
-        // if match contains HTMLElement("*"), transform to <*>
-        if (match.match(/{{HTMLElement\("\S+"\)}}/) || match.match(/{{htmlelement\("\S+"\)}}/)) {
-            const element = match.match(/"([^"]*)"/);
-            return element ? `<${element[1]}>` : '';
+    const lines = document.split('\n');
+
+    const transformedLines = lines.map((line) => {
+        if (!regex.test(line)) {
+            return line;
         }
-        return '';
+        const newLine = line.replace(regex, (match) => {
+            // if match contains HTMLElement("*"), transform to <*>
+            if (
+                match.match(/{{HTMLElement\("\S+"\)}}/) ||
+                match.match(/{{htmlelement\("\S+"\)}}/)
+            ) {
+                const element = match.match(/"([^"]*)"/);
+                return element ? `<${element[1]}>` : '';
+            }
+            return '';
+        });
+        const trimmedLine = newLine.trim();
+        // Only return lines that are non-empty and contain more than a single '-'
+        if (trimmedLine !== '-' && trimmedLine !== '' && trimmedLine !== '- .') {
+            return newLine;
+        }
     });
+
+    // Remove all instances of undefined from the lines array
+    const filteredLines = transformedLines.filter((line) => line !== undefined);
+
+    if (filteredLines.length === 0) {
+        return null;
+    } else if (filteredLines.length === 1) {
+        return filteredLines[0];
+    } else {
+        return filteredLines.join('\n');
+    }
 };
 
 /**

@@ -77,13 +77,16 @@ describe('parser', () => {
     describe('stripJsxRef', () => {
         it('properly removes or transforms text wrapped in double curly braces `{{ }}`', () => {
             expect(stripJsxRef('Hello{{ hello }}')).toBe('Hello');
-            expect(stripJsxRef('{{ hello }}')).toBe('');
+            expect(stripJsxRef('{{ hello }}')).toBeNull();
             expect(stripJsxRef('Some test {{HTMLElement("input")}} string')).toBe(
                 'Some test <input> string'
             );
             expect(stripJsxRef('Some test {{htmlelement("div")}} string')).toBe(
                 'Some test <div> string'
             );
+            expect(stripJsxRef('- {{cssxref(div)}} other text')).toBe('-  other text');
+            expect(stripJsxRef('- {{cssxref(div)}}')).toBeNull();
+            expect(stripJsxRef('- {{cssxref(div)}}.')).toBeNull();
         });
     });
 
@@ -128,7 +131,7 @@ describe('parser', () => {
 
     describe('removeEmptyLines', () => {
         it('removes duplicate newlines from a document', () => {
-            const trimmedDoc = removeEmptySections(stripJsxRef(mapDocument.document));
+            const trimmedDoc = removeEmptySections(stripJsxRef(mapDocument.document) || '');
             expect(removeEmptyLines(trimmedDoc)).toMatchSnapshot();
         });
     });
