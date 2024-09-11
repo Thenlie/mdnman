@@ -32,6 +32,12 @@ const commandActionHandler = async (
         document = getSection(document, options.section);
     }
     const strippedDoc = stripJsxRef(document);
+
+    if (!strippedDoc) {
+        console.error('Nothing was returned from stripJsxRef!\nDocument:', document);
+        return;
+    }
+
     if (options.output === 'stdout') {
         printDoc(strippedDoc);
     } else if (options.output === 'vim') {
