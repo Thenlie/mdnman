@@ -23,6 +23,9 @@ const getPathFromTitle = (inputTitle: string, language: SupportedLanguages): str
             titles = javascriptTitles;
             break;
         default:
+            console.error(
+                `[getPathFromTitle] Error: "${language}" is not a supported language! Please choose "javascript", "html" or "css".`
+            );
             return null;
     }
     const match = titles.find((title) => title.title === inputTitle);
