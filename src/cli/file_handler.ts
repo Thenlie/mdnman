@@ -30,7 +30,7 @@ const findMDNFile = async (
     // find all files with the query in the title
     const matchedTitles = files.filter((file) => file.title.includes(q));
     if (matchedTitles.length < 1) {
-        console.error('No files found for query:', query);
+        console.error(`[findMDNFile] Error: No files found for query "${query}"!`);
         return null;
     }
     let selected = matchedTitles[0].path;
@@ -45,7 +45,7 @@ const findMDNFile = async (
         const file = fs.readFileSync(path.join(_dirname, '../..', selected)).toString();
         return file;
     } catch (error) {
-        console.error(error);
+        console.error('[findMDNFile]', error);
         return null;
     }
 };

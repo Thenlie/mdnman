@@ -4,9 +4,9 @@ import { getMDNFile, optimisticallyFindMDNFile } from '../file_handler.js';
 const mockConsoleError = jest.spyOn(console, 'error').mockImplementation((...args) => {
     const str = args.join(' ');
     if (
-        str.startsWith('File does not exist:') ||
-        str.startsWith('Path is a directory, not a file:') ||
-        str.startsWith('No files found for query:')
+        str.startsWith('[getMDNFile] Error: File') ||
+        str.startsWith('[getMDNFile] Error: Path') ||
+        str.startsWith('[optimisticallyFindMDNFile] Error: No files found for query')
     ) {
         return;
     }
@@ -31,14 +31,17 @@ describe('getMDNFile', () => {
         expect(getMDNFile('lib/javascript')).toBeNull();
         expect(mockConsoleError).toHaveBeenCalledTimes(1);
         expect(mockConsoleError).toHaveBeenCalledWith(
-            'Path is a directory, not a file:',
-            expect.anything()
+            '[getMDNFile] Error: Path "lib/javascript" is a directory, not a file!'
         );
         expect(getMDNFile('lib/global_attributes/div/index.md')).toBeNull();
         expect(mockConsoleError).toHaveBeenCalledTimes(2);
-        expect(mockConsoleError).toHaveBeenCalledWith('File does not exist:', expect.anything());
+        expect(mockConsoleError).toHaveBeenCalledWith(
+            '[getMDNFile] Error: File "lib/global_attributes/div/index.md" does not exist!'
+        );
         expect(getMDNFile('css/border/index.md')).toBeNull();
-        expect(mockConsoleError).toHaveBeenCalledWith('File does not exist:', expect.anything());
+        expect(mockConsoleError).toHaveBeenCalledWith(
+            '[getMDNFile] Error: File "css/border/index.md" does not exist!'
+        );
         expect(mockConsoleError).toHaveBeenCalledTimes(3);
     });
 });
@@ -55,20 +58,17 @@ describe('optimisticallyFindMDNFile', () => {
     it('returns null when provided invalid parameters', () => {
         expect(optimisticallyFindMDNFile('javascript', 'notfound')).toBeNull();
         expect(mockConsoleError).toHaveBeenCalledWith(
-            'No files found for query:',
-            expect.anything()
+            '[optimisticallyFindMDNFile] Error: No files found for query "notfound"!'
         );
         expect(mockConsoleError).toHaveBeenCalledTimes(1);
         expect(optimisticallyFindMDNFile('html', 'notfound')).toBeNull();
         expect(mockConsoleError).toHaveBeenCalledWith(
-            'No files found for query:',
-            expect.anything()
+            '[optimisticallyFindMDNFile] Error: No files found for query "notfound"!'
         );
         expect(mockConsoleError).toHaveBeenCalledTimes(2);
         expect(optimisticallyFindMDNFile('css', 'notfound')).toBeNull();
         expect(mockConsoleError).toHaveBeenCalledWith(
-            'No files found for query:',
-            expect.anything()
+            '[optimisticallyFindMDNFile] Error: No files found for query "notfound"!'
         );
         expect(mockConsoleError).toHaveBeenCalledTimes(3);
     });

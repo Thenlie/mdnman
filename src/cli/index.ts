@@ -6,7 +6,7 @@ import { findMDNFile } from './file_handler.js';
 
 const program = new Command();
 const GENERIC_ERROR_MESSAGE =
-    'Error! Something went wrong while attempting to find the selected MDN directory.\nPlease try again with a different query.';
+    'Error: Something went wrong while attempting to find the selected MDN directory.\nPlease try again with a different query.';
 
 type SupportedLanguages = 'javascript' | 'html' | 'css';
 
@@ -25,7 +25,7 @@ const commandActionHandler = async (
 ): Promise<void> => {
     let document = await findMDNFile(lang, str);
     if (!document) {
-        console.error(GENERIC_ERROR_MESSAGE);
+        console.error('[commandActionHandler]', GENERIC_ERROR_MESSAGE);
         return;
     }
     if (options.section !== 'none') {
@@ -34,7 +34,10 @@ const commandActionHandler = async (
     const strippedDoc = stripJsxRef(document);
 
     if (!strippedDoc) {
-        console.error('Nothing was returned from stripJsxRef!\nDocument:', document);
+        console.error(
+            '[commandActionHandler] Error: Nothing was returned from stripJsxRef!\nDocument:',
+            document
+        );
         return;
     }
 

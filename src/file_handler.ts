@@ -46,13 +46,13 @@ const getMDNFile = (filepath: string): string | null => {
     let fullPath = path.join(_dirname, '..', filepath);
     const validation = validateFilePath(fullPath);
     if (validation === 1) {
-        console.error('File does not exist:', fullPath);
+        console.error(`[getMDNFile] Error: File "${fullPath}" does not exist!`);
         return null;
     } else if (validation === 2) {
         // If path is a directory, check for an index.md file
         const revalidation = validateFilePath(path.join(fullPath, 'index.md'));
         if (revalidation !== 0) {
-            console.error('Path is a directory, not a file:', fullPath);
+            console.error(`[getMDNFile] Error: Path "${fullPath}" is a directory, not a file!`);
             return null;
         }
         fullPath = path.join(fullPath, 'index.md');
@@ -60,7 +60,7 @@ const getMDNFile = (filepath: string): string | null => {
     try {
         return fs.readFileSync(fullPath).toString();
     } catch (error) {
-        console.error(error);
+        console.error('[getMDNFile]', error);
         return null;
     }
 };
@@ -82,7 +82,7 @@ const optimisticallyFindMDNFile = (
     // find all files with the query in the title
     const matchedTitles = files.filter((file) => file.title.includes(q));
     if (matchedTitles.length < 1) {
-        console.error('No files found for query:', query);
+        console.error(`[optimisticallyFindMDNFile] Error: No files found for query "${query}"!`);
         return null;
     }
     const selected = matchedTitles[0].path;
@@ -90,7 +90,7 @@ const optimisticallyFindMDNFile = (
         const file = fs.readFileSync(path.join(_dirname, '..', selected)).toString();
         return file;
     } catch (error) {
-        console.error(error);
+        console.error('[optimisticallyFindMDNFile]', error);
         return null;
     }
 };
