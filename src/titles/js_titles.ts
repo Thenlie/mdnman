@@ -4643,4 +4643,2148 @@ export const javascriptTitles: {
         path: 'lib/javascript/trailing_commas/index.md',
         title: 'Trailing commas',
     },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/attributionsrc/index.md',
+        title: 'HTMLAnchorElement: attributionSrc property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/download/index.md',
+        title: 'HTMLAnchorElement: download property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/hash/index.md',
+        title: 'HTMLAnchorElement: hash property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/host/index.md',
+        title: 'HTMLAnchorElement: host property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/hostname/index.md',
+        title: 'HTMLAnchorElement: hostname property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/href/index.md',
+        title: 'HTMLAnchorElement: href property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/hreflang/index.md',
+        title: 'HTMLAnchorElement: hreflang property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/index.md',
+        title: 'HTMLAnchorElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/origin/index.md',
+        title: 'HTMLAnchorElement: origin property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/password/index.md',
+        title: 'HTMLAnchorElement: password property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/pathname/index.md',
+        title: 'HTMLAnchorElement: pathname property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/ping/index.md',
+        title: 'HTMLAnchorElement: ping property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/port/index.md',
+        title: 'HTMLAnchorElement: port property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/protocol/index.md',
+        title: 'HTMLAnchorElement: protocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/referrerpolicy/index.md',
+        title: 'HTMLAnchorElement: referrerPolicy property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/rel/index.md',
+        title: 'HTMLAnchorElement: rel property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/rellist/index.md',
+        title: 'HTMLAnchorElement: relList property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/search/index.md',
+        title: 'HTMLAnchorElement: search property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/target/index.md',
+        title: 'HTMLAnchorElement: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/text/index.md',
+        title: 'HTMLAnchorElement: text property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/tostring/index.md',
+        title: 'HTMLAnchorElement: toString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/type/index.md',
+        title: 'HTMLAnchorElement: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlanchorelement/username/index.md',
+        title: 'HTMLAnchorElement: username property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/hash/index.md',
+        title: 'HTMLAreaElement: hash property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/host/index.md',
+        title: 'HTMLAreaElement: host property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/hostname/index.md',
+        title: 'HTMLAreaElement: hostname property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/href/index.md',
+        title: 'HTMLAreaElement: href property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/index.md',
+        title: 'HTMLAreaElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/origin/index.md',
+        title: 'HTMLAreaElement: origin property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/password/index.md',
+        title: 'HTMLAreaElement: password property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/pathname/index.md',
+        title: 'HTMLAreaElement: pathname property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/ping/index.md',
+        title: 'HTMLAreaElement: ping property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/port/index.md',
+        title: 'HTMLAreaElement: port property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/protocol/index.md',
+        title: 'HTMLAreaElement: protocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/referrerpolicy/index.md',
+        title: 'HTMLAreaElement: referrerPolicy property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/rel/index.md',
+        title: 'HTMLAreaElement: rel property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/rellist/index.md',
+        title: 'HTMLAreaElement: relList property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/search/index.md',
+        title: 'HTMLAreaElement: search property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/target/index.md',
+        title: 'HTMLAreaElement: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/tostring/index.md',
+        title: 'HTMLAreaElement: toString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlareaelement/username/index.md',
+        title: 'HTMLAreaElement: username property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlaudioelement/audio/index.md',
+        title: 'HTMLAudioElement: Audio() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlaudioelement/index.md',
+        title: 'HTMLAudioElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlbaseelement/href/index.md',
+        title: 'HTMLBaseElement: href property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlbaseelement/index.md',
+        title: 'HTMLBaseElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlbaseelement/target/index.md',
+        title: 'HTMLBaseElement: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlbodyelement/index.md',
+        title: 'HTMLBodyElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlbrelement/index.md',
+        title: 'HTMLBRElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlbuttonelement/disabled/index.md',
+        title: 'HTMLButtonElement: disabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlbuttonelement/index.md',
+        title: 'HTMLButtonElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlbuttonelement/labels/index.md',
+        title: 'HTMLButtonElement: labels property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlbuttonelement/popovertargetaction/index.md',
+        title: 'HTMLButtonElement: popoverTargetAction property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlbuttonelement/popovertargetelement/index.md',
+        title: 'HTMLButtonElement: popoverTargetElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlbuttonelement/type/index.md',
+        title: 'HTMLButtonElement: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/capturestream/index.md',
+        title: 'HTMLCanvasElement: captureStream() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/contextlost_event/index.md',
+        title: 'HTMLCanvasElement: contextlost event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/contextrestored_event/index.md',
+        title: 'HTMLCanvasElement: contextrestored event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/getcontext/index.md',
+        title: 'HTMLCanvasElement: getContext() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/height/index.md',
+        title: 'HTMLCanvasElement: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/index.md',
+        title: 'HTMLCanvasElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/mozopaque/index.md',
+        title: 'HTMLCanvasElement: mozOpaque property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/toblob/index.md',
+        title: 'HTMLCanvasElement: toBlob() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/todataurl/index.md',
+        title: 'HTMLCanvasElement: toDataURL() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/transfercontroltooffscreen/index.md',
+        title: 'HTMLCanvasElement: transferControlToOffscreen() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/webglcontextcreationerror_event/index.md',
+        title: 'HTMLCanvasElement: webglcontextcreationerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/webglcontextlost_event/index.md',
+        title: 'HTMLCanvasElement: webglcontextlost event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/webglcontextrestored_event/index.md',
+        title: 'HTMLCanvasElement: webglcontextrestored event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcanvaselement/width/index.md',
+        title: 'HTMLCanvasElement: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcollection/index.md',
+        title: 'HTMLCollection',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcollection/item/index.md',
+        title: 'HTMLCollection: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcollection/length/index.md',
+        title: 'HTMLCollection: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlcollection/nameditem/index.md',
+        title: 'HTMLCollection: namedItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldataelement/index.md',
+        title: 'HTMLDataElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldataelement/value/index.md',
+        title: 'HTMLDataElement: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldatalistelement/index.md',
+        title: 'HTMLDataListElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldetailselement/index.md',
+        title: 'HTMLDetailsElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldetailselement/open/index.md',
+        title: 'HTMLDetailsElement: open property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldetailselement/toggle_event/index.md',
+        title: 'HTMLDetailsElement: toggle event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldialogelement/close/index.md',
+        title: 'HTMLDialogElement: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldialogelement/close_event/index.md',
+        title: 'HTMLDialogElement: close event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldialogelement/index.md',
+        title: 'HTMLDialogElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldialogelement/open/index.md',
+        title: 'HTMLDialogElement: open property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldialogelement/returnvalue/index.md',
+        title: 'HTMLDialogElement: returnValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldialogelement/show/index.md',
+        title: 'HTMLDialogElement: show() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldialogelement/showmodal/index.md',
+        title: 'HTMLDialogElement: showModal() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldivelement/index.md',
+        title: 'HTMLDivElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldlistelement/index.md',
+        title: 'HTMLDListElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmldocument/index.md',
+        title: 'HTMLDocument',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/accesskey/index.md',
+        title: 'HTMLElement: accessKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/accesskeylabel/index.md',
+        title: 'HTMLElement: accessKeyLabel property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/anchorelement/index.md',
+        title: 'HTMLElement: anchorElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/attachinternals/index.md',
+        title: 'HTMLElement: attachInternals() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/attributestylemap/index.md',
+        title: 'HTMLElement: attributeStyleMap property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/autocapitalize/index.md',
+        title: 'HTMLElement: autocapitalize property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/autofocus/index.md',
+        title: 'HTMLElement: autofocus property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/beforetoggle_event/index.md',
+        title: 'HTMLElement: beforetoggle event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/blur/index.md',
+        title: 'HTMLElement: blur() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/cancel_event/index.md',
+        title: 'HTMLElement: cancel event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/change_event/index.md',
+        title: 'HTMLElement: change event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/click/index.md',
+        title: 'HTMLElement: click() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/contenteditable/index.md',
+        title: 'HTMLElement: contentEditable property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/copy_event/index.md',
+        title: 'HTMLElement: copy event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/cut_event/index.md',
+        title: 'HTMLElement: cut event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/dataset/index.md',
+        title: 'HTMLElement: dataset property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/dir/index.md',
+        title: 'HTMLElement: dir property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/drag_event/index.md',
+        title: 'HTMLElement: drag event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/dragend_event/index.md',
+        title: 'HTMLElement: dragend event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/dragenter_event/index.md',
+        title: 'HTMLElement: dragenter event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/draggable/index.md',
+        title: 'HTMLElement: draggable property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/dragleave_event/index.md',
+        title: 'HTMLElement: dragleave event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/dragover_event/index.md',
+        title: 'HTMLElement: dragover event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/dragstart_event/index.md',
+        title: 'HTMLElement: dragstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/drop_event/index.md',
+        title: 'HTMLElement: drop event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/editcontext/index.md',
+        title: 'HTMLElement: editContext property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/enterkeyhint/index.md',
+        title: 'HTMLElement: enterKeyHint property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/error_event/index.md',
+        title: 'HTMLElement: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/focus/index.md',
+        title: 'HTMLElement: focus() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/hidden/index.md',
+        title: 'HTMLElement: hidden property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/hidepopover/index.md',
+        title: 'HTMLElement: hidePopover() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/index.md',
+        title: 'HTMLElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/inert/index.md',
+        title: 'HTMLElement: inert property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/innertext/index.md',
+        title: 'HTMLElement: innerText property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/inputmode/index.md',
+        title: 'HTMLElement: inputMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/iscontenteditable/index.md',
+        title: 'HTMLElement: isContentEditable property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/lang/index.md',
+        title: 'HTMLElement: lang property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/load_event/index.md',
+        title: 'HTMLElement: load event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/nonce/index.md',
+        title: 'HTMLElement: nonce property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/offsetheight/index.md',
+        title: 'HTMLElement: offsetHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/offsetleft/index.md',
+        title: 'HTMLElement: offsetLeft property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/offsetparent/index.md',
+        title: 'HTMLElement: offsetParent property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/offsettop/index.md',
+        title: 'HTMLElement: offsetTop property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/offsetwidth/index.md',
+        title: 'HTMLElement: offsetWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/outertext/index.md',
+        title: 'HTMLElement: outerText property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/paste_event/index.md',
+        title: 'HTMLElement: paste event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/popover/index.md',
+        title: 'HTMLElement: popover property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/showpopover/index.md',
+        title: 'HTMLElement: showPopover() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/spellcheck/index.md',
+        title: 'HTMLElement: spellcheck property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/style/index.md',
+        title: 'HTMLElement: style property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/tabindex/index.md',
+        title: 'HTMLElement: tabIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/title/index.md',
+        title: 'HTMLElement: title property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/toggle_event/index.md',
+        title: 'HTMLElement: toggle event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/togglepopover/index.md',
+        title: 'HTMLElement: togglePopover() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/translate/index.md',
+        title: 'HTMLElement: translate property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlelement/virtualkeyboardpolicy/index.md',
+        title: 'HTMLElement: virtualKeyboardPolicy property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlembedelement/height/index.md',
+        title: 'HTMLEmbedElement: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlembedelement/index.md',
+        title: 'HTMLEmbedElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlembedelement/src/index.md',
+        title: 'HTMLEmbedElement: src property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlembedelement/width/index.md',
+        title: 'HTMLEmbedElement: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlfencedframeelement/allow/index.md',
+        title: 'HTMLFencedFrameElement: allow property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlfencedframeelement/config/index.md',
+        title: 'HTMLFencedFrameElement: config property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlfencedframeelement/height/index.md',
+        title: 'HTMLFencedFrameElement: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlfencedframeelement/index.md',
+        title: 'HTMLFencedFrameElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlfencedframeelement/width/index.md',
+        title: 'HTMLFencedFrameElement: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlfieldsetelement/index.md',
+        title: 'HTMLFieldSetElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlfontelement/color/index.md',
+        title: 'HTMLFontElement: color property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlfontelement/face/index.md',
+        title: 'HTMLFontElement: face property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlfontelement/index.md',
+        title: 'HTMLFontElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlfontelement/size/index.md',
+        title: 'HTMLFontElement: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformcontrolscollection/index.md',
+        title: 'HTMLFormControlsCollection',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformcontrolscollection/nameditem/index.md',
+        title: 'HTMLFormControlsCollection: namedItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/acceptcharset/index.md',
+        title: 'HTMLFormElement: acceptCharset property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/action/index.md',
+        title: 'HTMLFormElement: action property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/elements/index.md',
+        title: 'HTMLFormElement: elements property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/encoding/index.md',
+        title: 'HTMLFormElement: encoding property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/enctype/index.md',
+        title: 'HTMLFormElement: enctype property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/formdata_event/index.md',
+        title: 'HTMLFormElement: formdata event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/index.md',
+        title: 'HTMLFormElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/length/index.md',
+        title: 'HTMLFormElement: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/method/index.md',
+        title: 'HTMLFormElement: method property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/name/index.md',
+        title: 'HTMLFormElement: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/reportvalidity/index.md',
+        title: 'HTMLFormElement: reportValidity() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/requestsubmit/index.md',
+        title: 'HTMLFormElement: requestSubmit() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/reset/index.md',
+        title: 'HTMLFormElement: reset() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/reset_event/index.md',
+        title: 'HTMLFormElement: reset event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/submit/index.md',
+        title: 'HTMLFormElement: submit() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/submit_event/index.md',
+        title: 'HTMLFormElement: submit event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlformelement/target/index.md',
+        title: 'HTMLFormElement: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlframesetelement/index.md',
+        title: 'HTMLFrameSetElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlheadelement/index.md',
+        title: 'HTMLHeadElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlheadingelement/index.md',
+        title: 'HTMLHeadingElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlhrelement/index.md',
+        title: 'HTMLHRElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlhtmlelement/index.md',
+        title: 'HTMLHtmlElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlhtmlelement/version/index.md',
+        title: 'HTMLHtmlElement: version property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/allow/index.md',
+        title: 'HTMLIFrameElement: allow property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/allowfullscreen/index.md',
+        title: 'HTMLIFrameElement: allowFullscreen property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/allowpaymentrequest/index.md',
+        title: 'HTMLIFrameElement: allowPaymentRequest property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/browsingtopics/index.md',
+        title: 'HTMLIFrameElement: browsingTopics property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/contentdocument/index.md',
+        title: 'HTMLIFrameElement: contentDocument property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/contentwindow/index.md',
+        title: 'HTMLIFrameElement: contentWindow property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/credentialless/index.md',
+        title: 'HTMLIFrameElement: credentialless property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/csp/index.md',
+        title: 'HTMLIFrameElement: csp property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/featurepolicy/index.md',
+        title: 'HTMLIFrameElement: featurePolicy property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/height/index.md',
+        title: 'HTMLIFrameElement: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/index.md',
+        title: 'HTMLIFrameElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/loading/index.md',
+        title: 'HTMLIFrameElement: loading property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/name/index.md',
+        title: 'HTMLIFrameElement: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/referrerpolicy/index.md',
+        title: 'HTMLIFrameElement: referrerPolicy property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/sandbox/index.md',
+        title: 'HTMLIFrameElement: sandbox property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/src/index.md',
+        title: 'HTMLIFrameElement: src property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/srcdoc/index.md',
+        title: 'HTMLIFrameElement: srcdoc property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmliframeelement/width/index.md',
+        title: 'HTMLIFrameElement: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/align/index.md',
+        title: 'HTMLImageElement: align property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/alt/index.md',
+        title: 'HTMLImageElement: alt property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/attributionsrc/index.md',
+        title: 'HTMLImageElement: attributionSrc property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/border/index.md',
+        title: 'HTMLImageElement: border property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/complete/index.md',
+        title: 'HTMLImageElement: complete property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/crossorigin/index.md',
+        title: 'HTMLImageElement: crossOrigin property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/currentsrc/index.md',
+        title: 'HTMLImageElement: currentSrc property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/decode/index.md',
+        title: 'HTMLImageElement: decode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/decoding/index.md',
+        title: 'HTMLImageElement: decoding property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/fetchpriority/index.md',
+        title: 'HTMLImageElement: fetchPriority property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/height/index.md',
+        title: 'HTMLImageElement: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/hspace/index.md',
+        title: 'HTMLImageElement: hspace property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/image/index.md',
+        title: 'HTMLImageElement: Image() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/index.md',
+        title: 'HTMLImageElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/ismap/index.md',
+        title: 'HTMLImageElement: isMap property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/loading/index.md',
+        title: 'HTMLImageElement: loading property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/longdesc/index.md',
+        title: 'HTMLImageElement: longDesc property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/name/index.md',
+        title: 'HTMLImageElement: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/naturalheight/index.md',
+        title: 'HTMLImageElement: naturalHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/naturalwidth/index.md',
+        title: 'HTMLImageElement: naturalWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/referrerpolicy/index.md',
+        title: 'HTMLImageElement: referrerPolicy property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/sizes/index.md',
+        title: 'HTMLImageElement: sizes property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/src/index.md',
+        title: 'HTMLImageElement: src property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/srcset/index.md',
+        title: 'HTMLImageElement: srcset property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/usemap/index.md',
+        title: 'HTMLImageElement: useMap property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/vspace/index.md',
+        title: 'HTMLImageElement: vspace property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/width/index.md',
+        title: 'HTMLImageElement: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/x/index.md',
+        title: 'HTMLImageElement: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlimageelement/y/index.md',
+        title: 'HTMLImageElement: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/checkvalidity/index.md',
+        title: 'HTMLInputElement: checkValidity() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/disabled/index.md',
+        title: 'HTMLInputElement: disabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/files/index.md',
+        title: 'HTMLInputElement: files property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/index.md',
+        title: 'HTMLInputElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/invalid_event/index.md',
+        title: 'HTMLInputElement: invalid event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/labels/index.md',
+        title: 'HTMLInputElement: labels property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/multiple/index.md',
+        title: 'HTMLInputElement: multiple property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/popovertargetaction/index.md',
+        title: 'HTMLInputElement: popoverTargetAction property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/popovertargetelement/index.md',
+        title: 'HTMLInputElement: popoverTargetElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/reportvalidity/index.md',
+        title: 'HTMLInputElement: reportValidity() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/search_event/index.md',
+        title: 'HTMLInputElement: search event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/select/index.md',
+        title: 'HTMLInputElement: select() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/select_event/index.md',
+        title: 'HTMLInputElement: select event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/selectionchange_event/index.md',
+        title: 'HTMLInputElement: selectionchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/selectiondirection/index.md',
+        title: 'HTMLInputElement: selectionDirection property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/selectionend/index.md',
+        title: 'HTMLInputElement: selectionEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/selectionstart/index.md',
+        title: 'HTMLInputElement: selectionStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/setcustomvalidity/index.md',
+        title: 'HTMLInputElement: setCustomValidity() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/setrangetext/index.md',
+        title: 'HTMLInputElement: setRangeText() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/setselectionrange/index.md',
+        title: 'HTMLInputElement: setSelectionRange() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/showpicker/index.md',
+        title: 'HTMLInputElement: showPicker() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/stepdown/index.md',
+        title: 'HTMLInputElement: stepDown() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/stepup/index.md',
+        title: 'HTMLInputElement: stepUp() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/type/index.md',
+        title: 'HTMLInputElement: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/webkitdirectory/index.md',
+        title: 'HTMLInputElement: webkitdirectory property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/webkitentries/index.md',
+        title: 'HTMLInputElement: webkitEntries property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllabelelement/control/index.md',
+        title: 'HTMLLabelElement: control property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllabelelement/form/index.md',
+        title: 'HTMLLabelElement: form property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllabelelement/htmlfor/index.md',
+        title: 'HTMLLabelElement: htmlFor property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllabelelement/index.md',
+        title: 'HTMLLabelElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllegendelement/index.md',
+        title: 'HTMLLegendElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllielement/index.md',
+        title: 'HTMLLIElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/as/index.md',
+        title: 'HTMLLinkElement: as property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/blocking/index.md',
+        title: 'HTMLLinkElement: blocking property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/crossorigin/index.md',
+        title: 'HTMLLinkElement: crossOrigin property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/disabled/index.md',
+        title: 'HTMLLinkElement: disabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/fetchpriority/index.md',
+        title: 'HTMLLinkElement: fetchPriority property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/href/index.md',
+        title: 'HTMLLinkElement: href property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/hreflang/index.md',
+        title: 'HTMLLinkElement: hreflang property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/index.md',
+        title: 'HTMLLinkElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/integrity/index.md',
+        title: 'HTMLLinkElement: integrity property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/media/index.md',
+        title: 'HTMLLinkElement: media property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/referrerpolicy/index.md',
+        title: 'HTMLLinkElement: referrerPolicy property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/rel/index.md',
+        title: 'HTMLLinkElement: rel property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/rellist/index.md',
+        title: 'HTMLLinkElement: relList property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/sheet/index.md',
+        title: 'HTMLLinkElement: sheet property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmllinkelement/type/index.md',
+        title: 'HTMLLinkElement: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmapelement/areas/index.md',
+        title: 'HTMLMapElement: areas property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmapelement/index.md',
+        title: 'HTMLMapElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmapelement/name/index.md',
+        title: 'HTMLMapElement: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmarqueeelement/index.md',
+        title: 'HTMLMarqueeElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/abort_event/index.md',
+        title: 'HTMLMediaElement: abort event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/audiotracks/index.md',
+        title: 'HTMLMediaElement: audioTracks property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/autoplay/index.md',
+        title: 'HTMLMediaElement: autoplay property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/buffered/index.md',
+        title: 'HTMLMediaElement: buffered property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/canplay_event/index.md',
+        title: 'HTMLMediaElement: canplay event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/canplaythrough_event/index.md',
+        title: 'HTMLMediaElement: canplaythrough event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/canplaytype/index.md',
+        title: 'HTMLMediaElement: canPlayType() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/capturestream/index.md',
+        title: 'HTMLMediaElement: captureStream() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/controller/index.md',
+        title: 'HTMLMediaElement: controller property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/controls/index.md',
+        title: 'HTMLMediaElement: controls property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/controlslist/index.md',
+        title: 'HTMLMediaElement: controlsList property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/crossorigin/index.md',
+        title: 'HTMLMediaElement: crossOrigin property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/currentsrc/index.md',
+        title: 'HTMLMediaElement: currentSrc property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/currenttime/index.md',
+        title: 'HTMLMediaElement: currentTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/defaultmuted/index.md',
+        title: 'HTMLMediaElement: defaultMuted property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/defaultplaybackrate/index.md',
+        title: 'HTMLMediaElement: defaultPlaybackRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/disableremoteplayback/index.md',
+        title: 'HTMLMediaElement: disableRemotePlayback property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/duration/index.md',
+        title: 'HTMLMediaElement: duration property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/durationchange_event/index.md',
+        title: 'HTMLMediaElement: durationchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/emptied_event/index.md',
+        title: 'HTMLMediaElement: emptied event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/encrypted_event/index.md',
+        title: 'HTMLMediaElement: encrypted event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/ended/index.md',
+        title: 'HTMLMediaElement: ended property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/ended_event/index.md',
+        title: 'HTMLMediaElement: ended event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/error/index.md',
+        title: 'HTMLMediaElement: error property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/error_event/index.md',
+        title: 'HTMLMediaElement: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/fastseek/index.md',
+        title: 'HTMLMediaElement: fastSeek() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/index.md',
+        title: 'HTMLMediaElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/load/index.md',
+        title: 'HTMLMediaElement: load() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/loadeddata_event/index.md',
+        title: 'HTMLMediaElement: loadeddata event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/loadedmetadata_event/index.md',
+        title: 'HTMLMediaElement: loadedmetadata event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/loadstart_event/index.md',
+        title: 'HTMLMediaElement: loadstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/loop/index.md',
+        title: 'HTMLMediaElement: loop property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/mediagroup/index.md',
+        title: 'HTMLMediaElement: mediaGroup property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/mediakeys/index.md',
+        title: 'HTMLMediaElement: mediaKeys property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/muted/index.md',
+        title: 'HTMLMediaElement: muted property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/networkstate/index.md',
+        title: 'HTMLMediaElement: networkState property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/pause/index.md',
+        title: 'HTMLMediaElement: pause() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/pause_event/index.md',
+        title: 'HTMLMediaElement: pause event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/paused/index.md',
+        title: 'HTMLMediaElement: paused property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/play/index.md',
+        title: 'HTMLMediaElement: play() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/play_event/index.md',
+        title: 'HTMLMediaElement: play event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/playbackrate/index.md',
+        title: 'HTMLMediaElement: playbackRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/playing_event/index.md',
+        title: 'HTMLMediaElement: playing event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/preload/index.md',
+        title: 'HTMLMediaElement: preload property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/preservespitch/index.md',
+        title: 'HTMLMediaElement: preservesPitch property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/progress_event/index.md',
+        title: 'HTMLMediaElement: progress event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/ratechange_event/index.md',
+        title: 'HTMLMediaElement: ratechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/readystate/index.md',
+        title: 'HTMLMediaElement: readyState property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/remote/index.md',
+        title: 'HTMLMediaElement: remote property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/seekable/index.md',
+        title: 'HTMLMediaElement: seekable property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/seeked_event/index.md',
+        title: 'HTMLMediaElement: seeked event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/seeking_event/index.md',
+        title: 'HTMLMediaElement: seeking event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/seektonextframe/index.md',
+        title: 'HTMLMediaElement: seekToNextFrame() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/setmediakeys/index.md',
+        title: 'HTMLMediaElement: setMediaKeys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/setsinkid/index.md',
+        title: 'HTMLMediaElement: setSinkId() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/sinkid/index.md',
+        title: 'HTMLMediaElement: sinkId property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/src/index.md',
+        title: 'HTMLMediaElement: src property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/srcobject/index.md',
+        title: 'HTMLMediaElement: srcObject property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/stalled_event/index.md',
+        title: 'HTMLMediaElement: stalled event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/suspend_event/index.md',
+        title: 'HTMLMediaElement: suspend event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/texttracks/index.md',
+        title: 'HTMLMediaElement: textTracks property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/timeupdate_event/index.md',
+        title: 'HTMLMediaElement: timeupdate event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/videotracks/index.md',
+        title: 'HTMLMediaElement: videoTracks property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/volume/index.md',
+        title: 'HTMLMediaElement: volume property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/volumechange_event/index.md',
+        title: 'HTMLMediaElement: volumechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmediaelement/waiting_event/index.md',
+        title: 'HTMLMediaElement: waiting event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmenuelement/index.md',
+        title: 'HTMLMenuElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmetaelement/content/index.md',
+        title: 'HTMLMetaElement: content property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmetaelement/httpequiv/index.md',
+        title: 'HTMLMetaElement: httpEquiv property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmetaelement/index.md',
+        title: 'HTMLMetaElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmetaelement/media/index.md',
+        title: 'HTMLMetaElement: media property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmetaelement/name/index.md',
+        title: 'HTMLMetaElement: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmetaelement/scheme/index.md',
+        title: 'HTMLMetaElement: scheme property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmeterelement/index.md',
+        title: 'HTMLMeterElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmeterelement/labels/index.md',
+        title: 'HTMLMeterElement: labels property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlmodelement/index.md',
+        title: 'HTMLModElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/checkvalidity/index.md',
+        title: 'HTMLObjectElement: checkValidity() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/contentdocument/index.md',
+        title: 'HTMLObjectElement: contentDocument property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/contentwindow/index.md',
+        title: 'HTMLObjectElement: contentWindow property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/data/index.md',
+        title: 'HTMLObjectElement: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/form/index.md',
+        title: 'HTMLObjectElement: form property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/height/index.md',
+        title: 'HTMLObjectElement: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/index.md',
+        title: 'HTMLObjectElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/name/index.md',
+        title: 'HTMLObjectElement: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/setcustomvalidity/index.md',
+        title: 'HTMLObjectElement: setCustomValidity() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/type/index.md',
+        title: 'HTMLObjectElement: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/usemap/index.md',
+        title: 'HTMLObjectElement: useMap property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/validationmessage/index.md',
+        title: 'HTMLObjectElement: validationMessage property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/validity/index.md',
+        title: 'HTMLObjectElement: validity property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/width/index.md',
+        title: 'HTMLObjectElement: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlobjectelement/willvalidate/index.md',
+        title: 'HTMLObjectElement: willValidate property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlolistelement/index.md',
+        title: 'HTMLOListElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlolistelement/reversed/index.md',
+        title: 'HTMLOListElement: reversed property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlolistelement/start/index.md',
+        title: 'HTMLOListElement: start property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlolistelement/type/index.md',
+        title: 'HTMLOListElement: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmloptgroupelement/index.md',
+        title: 'HTMLOptGroupElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmloptionelement/index.md',
+        title: 'HTMLOptionElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmloptionelement/option/index.md',
+        title: 'HTMLOptionElement: Option() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/htmloptionscollection/index.md',
+        title: 'HTMLOptionsCollection',
+    },
+    {
+        path: 'lib/javascript/web_api/htmloutputelement/index.md',
+        title: 'HTMLOutputElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmloutputelement/labels/index.md',
+        title: 'HTMLOutputElement: labels property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlparagraphelement/index.md',
+        title: 'HTMLParagraphElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlparamelement/index.md',
+        title: 'HTMLParamElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlpictureelement/index.md',
+        title: 'HTMLPictureElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlpreelement/index.md',
+        title: 'HTMLPreElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlprogresselement/index.md',
+        title: 'HTMLProgressElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlprogresselement/labels/index.md',
+        title: 'HTMLProgressElement: labels property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlprogresselement/max/index.md',
+        title: 'HTMLProgressElement: max property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlprogresselement/position/index.md',
+        title: 'HTMLProgressElement: position property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlprogresselement/value/index.md',
+        title: 'HTMLProgressElement: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlquoteelement/index.md',
+        title: 'HTMLQuoteElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/async/index.md',
+        title: 'HTMLScriptElement: async property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/attributionsrc/index.md',
+        title: 'HTMLScriptElement: attributionSrc property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/blocking/index.md',
+        title: 'HTMLScriptElement: blocking property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/crossorigin/index.md',
+        title: 'HTMLScriptElement: crossOrigin property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/defer/index.md',
+        title: 'HTMLScriptElement: defer property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/fetchpriority/index.md',
+        title: 'HTMLScriptElement: fetchPriority property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/index.md',
+        title: 'HTMLScriptElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/integrity/index.md',
+        title: 'HTMLScriptElement: integrity property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/nomodule/index.md',
+        title: 'HTMLScriptElement: noModule property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/referrerpolicy/index.md',
+        title: 'HTMLScriptElement: referrerPolicy property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/src/index.md',
+        title: 'HTMLScriptElement: src property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/supports_static/index.md',
+        title: 'HTMLScriptElement: supports() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/text/index.md',
+        title: 'HTMLScriptElement: text property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlscriptelement/type/index.md',
+        title: 'HTMLScriptElement: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/add/index.md',
+        title: 'HTMLSelectElement: add() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/checkvalidity/index.md',
+        title: 'HTMLSelectElement: checkValidity() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/disabled/index.md',
+        title: 'HTMLSelectElement: disabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/form/index.md',
+        title: 'HTMLSelectElement: form property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/index.md',
+        title: 'HTMLSelectElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/item/index.md',
+        title: 'HTMLSelectElement: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/labels/index.md',
+        title: 'HTMLSelectElement: labels property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/nameditem/index.md',
+        title: 'HTMLSelectElement: namedItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/options/index.md',
+        title: 'HTMLSelectElement: options property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/remove/index.md',
+        title: 'HTMLSelectElement: remove() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/selectedindex/index.md',
+        title: 'HTMLSelectElement: selectedIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/selectedoptions/index.md',
+        title: 'HTMLSelectElement: selectedOptions property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/setcustomvalidity/index.md',
+        title: 'HTMLSelectElement: setCustomValidity() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/showpicker/index.md',
+        title: 'HTMLSelectElement: showPicker() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/type/index.md',
+        title: 'HTMLSelectElement: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlselectelement/value/index.md',
+        title: 'HTMLSelectElement: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlslotelement/assign/index.md',
+        title: 'HTMLSlotElement: assign() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlslotelement/assignedelements/index.md',
+        title: 'HTMLSlotElement: assignedElements() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlslotelement/assignednodes/index.md',
+        title: 'HTMLSlotElement: assignedNodes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlslotelement/index.md',
+        title: 'HTMLSlotElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlslotelement/name/index.md',
+        title: 'HTMLSlotElement: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlslotelement/slotchange_event/index.md',
+        title: 'HTMLSlotElement: slotchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlsourceelement/height/index.md',
+        title: 'HTMLSourceElement: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlsourceelement/index.md',
+        title: 'HTMLSourceElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlsourceelement/width/index.md',
+        title: 'HTMLSourceElement: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlspanelement/index.md',
+        title: 'HTMLSpanElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlstyleelement/blocking/index.md',
+        title: 'HTMLStyleElement: blocking property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlstyleelement/disabled/index.md',
+        title: 'HTMLStyleElement: disabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlstyleelement/index.md',
+        title: 'HTMLStyleElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlstyleelement/media/index.md',
+        title: 'HTMLStyleElement: media property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlstyleelement/sheet/index.md',
+        title: 'HTMLStyleElement: sheet property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlstyleelement/type/index.md',
+        title: 'HTMLStyleElement: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecaptionelement/align/index.md',
+        title: 'HTMLTableCaptionElement: align property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecaptionelement/index.md',
+        title: 'HTMLTableCaptionElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/abbr/index.md',
+        title: 'HTMLTableCellElement: abbr property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/align/index.md',
+        title: 'HTMLTableCellElement: align property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/bgcolor/index.md',
+        title: 'HTMLTableCellElement: bgColor property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/cellindex/index.md',
+        title: 'HTMLTableCellElement: cellIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/ch/index.md',
+        title: 'HTMLTableCellElement: ch property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/choff/index.md',
+        title: 'HTMLTableCellElement: chOff property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/colspan/index.md',
+        title: 'HTMLTableCellElement: colSpan property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/headers/index.md',
+        title: 'HTMLTableCellElement: headers property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/index.md',
+        title: 'HTMLTableCellElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/nowrap/index.md',
+        title: 'HTMLTableCellElement: noWrap property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/rowspan/index.md',
+        title: 'HTMLTableCellElement: rowSpan property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/scope/index.md',
+        title: 'HTMLTableCellElement: scope property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecellelement/valign/index.md',
+        title: 'HTMLTableCellElement: vAlign property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecolelement/align/index.md',
+        title: 'HTMLTableColElement: align property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecolelement/ch/index.md',
+        title: 'HTMLTableColElement: ch property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecolelement/choff/index.md',
+        title: 'HTMLTableColElement: chOff property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecolelement/index.md',
+        title: 'HTMLTableColElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecolelement/span/index.md',
+        title: 'HTMLTableColElement: span property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablecolelement/valign/index.md',
+        title: 'HTMLTableColElement: vAlign property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/align/index.md',
+        title: 'HTMLTableElement: align property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/bgcolor/index.md',
+        title: 'HTMLTableElement: bgColor property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/border/index.md',
+        title: 'HTMLTableElement: border property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/caption/index.md',
+        title: 'HTMLTableElement: caption property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/cellpadding/index.md',
+        title: 'HTMLTableElement: cellPadding property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/cellspacing/index.md',
+        title: 'HTMLTableElement: cellSpacing property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/createcaption/index.md',
+        title: 'HTMLTableElement: createCaption() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/createtbody/index.md',
+        title: 'HTMLTableElement: createTBody() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/createtfoot/index.md',
+        title: 'HTMLTableElement: createTFoot() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/createthead/index.md',
+        title: 'HTMLTableElement: createTHead() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/deletecaption/index.md',
+        title: 'HTMLTableElement: deleteCaption() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/deleterow/index.md',
+        title: 'HTMLTableElement: deleteRow() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/deletetfoot/index.md',
+        title: 'HTMLTableElement: deleteTFoot() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/deletethead/index.md',
+        title: 'HTMLTableElement: deleteTHead() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/frame/index.md',
+        title: 'HTMLTableElement: frame property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/index.md',
+        title: 'HTMLTableElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/insertrow/index.md',
+        title: 'HTMLTableElement: insertRow() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/rows/index.md',
+        title: 'HTMLTableElement: rows property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/rules/index.md',
+        title: 'HTMLTableElement: rules property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/summary/index.md',
+        title: 'HTMLTableElement: summary property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/tbodies/index.md',
+        title: 'HTMLTableElement: tBodies property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/tfoot/index.md',
+        title: 'HTMLTableElement: tFoot property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/thead/index.md',
+        title: 'HTMLTableElement: tHead property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltableelement/width/index.md',
+        title: 'HTMLTableElement: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablerowelement/align/index.md',
+        title: 'HTMLTableRowElement: align property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablerowelement/bgcolor/index.md',
+        title: 'HTMLTableRowElement: bgColor property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablerowelement/cells/index.md',
+        title: 'HTMLTableRowElement: cells property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablerowelement/ch/index.md',
+        title: 'HTMLTableRowElement: ch property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablerowelement/choff/index.md',
+        title: 'HTMLTableRowElement: chOff property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablerowelement/deletecell/index.md',
+        title: 'HTMLTableRowElement: deleteCell() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablerowelement/index.md',
+        title: 'HTMLTableRowElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablerowelement/insertcell/index.md',
+        title: 'HTMLTableRowElement: insertCell() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablerowelement/rowindex/index.md',
+        title: 'HTMLTableRowElement: rowIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablerowelement/sectionrowindex/index.md',
+        title: 'HTMLTableRowElement: sectionRowIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablerowelement/valign/index.md',
+        title: 'HTMLTableRowElement: vAlign property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablesectionelement/align/index.md',
+        title: 'HTMLTableSectionElement: align property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablesectionelement/ch/index.md',
+        title: 'HTMLTableSectionElement: ch property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablesectionelement/choff/index.md',
+        title: 'HTMLTableSectionElement: chOff property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablesectionelement/deleterow/index.md',
+        title: 'HTMLTableSectionElement: deleteRow() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablesectionelement/index.md',
+        title: 'HTMLTableSectionElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablesectionelement/insertrow/index.md',
+        title: 'HTMLTableSectionElement: insertRow() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablesectionelement/rows/index.md',
+        title: 'HTMLTableSectionElement: rows property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltablesectionelement/valign/index.md',
+        title: 'HTMLTableSectionElement: vAlign property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltemplateelement/content/index.md',
+        title: 'HTMLTemplateElement: content property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltemplateelement/index.md',
+        title: 'HTMLTemplateElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltemplateelement/shadowrootclonable/index.md',
+        title: 'HTMLTemplateElement: shadowRootClonable property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltemplateelement/shadowrootdelegatesfocus/index.md',
+        title: 'HTMLTemplateElement: shadowRootDelegatesFocus property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltemplateelement/shadowrootmode/index.md',
+        title: 'HTMLTemplateElement: shadowRootMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltemplateelement/shadowrootserializable/index.md',
+        title: 'HTMLTemplateElement: shadowRootSerializable property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltextareaelement/index.md',
+        title: 'HTMLTextAreaElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltextareaelement/labels/index.md',
+        title: 'HTMLTextAreaElement: labels property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltextareaelement/select_event/index.md',
+        title: 'HTMLTextAreaElement: select event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltextareaelement/selectionchange_event/index.md',
+        title: 'HTMLTextAreaElement: selectionchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltextareaelement/type/index.md',
+        title: 'HTMLTextAreaElement: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltimeelement/datetime/index.md',
+        title: 'HTMLTimeElement: dateTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltimeelement/index.md',
+        title: 'HTMLTimeElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltitleelement/index.md',
+        title: 'HTMLTitleElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltitleelement/text/index.md',
+        title: 'HTMLTitleElement: text property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltrackelement/cuechange_event/index.md',
+        title: 'HTMLTrackElement: cuechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltrackelement/index.md',
+        title: 'HTMLTrackElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmltrackelement/src/index.md',
+        title: 'HTMLTrackElement: src property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlulistelement/index.md',
+        title: 'HTMLUListElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlunknownelement/index.md',
+        title: 'HTMLUnknownElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/cancelvideoframecallback/index.md',
+        title: 'HTMLVideoElement: cancelVideoFrameCallback() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/disablepictureinpicture/index.md',
+        title: 'HTMLVideoElement: disablePictureInPicture property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/enterpictureinpicture_event/index.md',
+        title: 'HTMLVideoElement: enterpictureinpicture event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/getvideoplaybackquality/index.md',
+        title: 'HTMLVideoElement: getVideoPlaybackQuality() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/height/index.md',
+        title: 'HTMLVideoElement: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/index.md',
+        title: 'HTMLVideoElement',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/leavepictureinpicture_event/index.md',
+        title: 'HTMLVideoElement: leavepictureinpicture event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/poster/index.md',
+        title: 'HTMLVideoElement: poster property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/requestpictureinpicture/index.md',
+        title: 'HTMLVideoElement: requestPictureInPicture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/requestvideoframecallback/index.md',
+        title: 'HTMLVideoElement: requestVideoFrameCallback() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/resize_event/index.md',
+        title: 'HTMLVideoElement: resize event',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/videoheight/index.md',
+        title: 'HTMLVideoElement: videoHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/videowidth/index.md',
+        title: 'HTMLVideoElement: videoWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlvideoelement/width/index.md',
+        title: 'HTMLVideoElement: width property',
+    },
 ];
