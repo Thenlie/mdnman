@@ -10,30 +10,37 @@ import type { MDNSection } from '../types.js';
  */
 const getFirstSection = (document: string, sectionName: string): string => {
     const docArr = document.split('\n');
-    const section = [];
-    let flag = false;
-    let heading = '';
+    const result = [];
+    let inSection = false;
+    let hashes = '';
     for (let i = 0; i < docArr.length; i++) {
-        const currentHeading = docArr[i].match(/^#+/)?.[0];
-        // Check for matching section name and set flag
-        if (
-            !flag &&
-            docArr[i].startsWith('#') &&
-            docArr[i].toLowerCase().includes(sectionName.toLowerCase())
-        ) {
-            flag = true;
-            heading = currentHeading || '';
-            section.push(docArr[i]);
+        const line = docArr[i];
+        const currentHashes = line.match(/^#+/)?.[0];
+
+        if (inSection) {
             // Check for end of section by finding matching or higher markdown heading
-        } else if (flag && currentHeading && currentHeading.length <= heading.length) {
-            flag = false;
-            break;
-            // Add lines of section if not at a heading
-        } else if (flag) {
-            section.push(docArr[i]);
+            if (currentHashes && currentHashes.length <= hashes.length) {
+                inSection = false;
+                break;
+            }
+            // Add content to final output
+            result.push(line);
+        }
+
+        // Check for matching section name and set flag
+        // Regex to split line into two parts, hashes and text
+        const re = /^(?<hashes>#+)(?<text>.*)/;
+        const match = line.match(re);
+        // Check if line is a markdown heading
+        if (!match) continue;
+        // Check for matching heading name
+        if (match.groups?.text.trim().toLowerCase() === sectionName.trim().toLowerCase()) {
+            inSection = true;
+            hashes = match.groups.hashes;
+            result.push(line);
         }
     }
-    return section.join('\n');
+    return result.join('\n');
 };
 
 /**
@@ -76,19 +83,12 @@ const getSection = (document: string, inputSection: MDNSection): string | null =
             result.push(line);
         }
 
-        // Check if line is a markdown heading
-        if (!line.startsWith('#')) continue;
-        position++;
         // Regex to split line into two parts, hashes and text
-        const re = /(?<hashes>#+)(?<text>.*)/;
+        const re = /^(?<hashes>#+)(?<text>.*)/;
         const match = line.match(re);
-        // Null check to keep typescript happy
-        if (!match) {
-            console.warn(
-                `[getSection] Warn: No match found for line ${line}. This shouldn't happen!`
-            );
-            continue;
-        }
+        // Check if line is a markdown heading
+        if (!match) continue;
+        position++;
         // Check if heading title matches the input section
         if (match.groups?.text.trim() !== inputSection.name.trim()) continue;
         // Check if line position matches input position

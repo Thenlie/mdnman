@@ -121,7 +121,7 @@ describe('parser', () => {
 
     describe('truncateString', () => {
         it('cuts a string down to the provided length and corrects missing codeblock backticks if needed', () => {
-            const section = getFirstSection(substrFile, 'Example');
+            const section = getFirstSection(substrFile, 'Examples');
             const truncatedStr = truncateString(section, 1024);
             expect(truncatedStr).toHaveLength(1024);
             expect(truncatedStr).toMatchSnapshot();
