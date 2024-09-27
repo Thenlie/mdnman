@@ -1,7 +1,7 @@
 import { Command } from 'commander';
 import { openEditor, DEFAULT_OUTPUT_PATH, printDoc, writeDocToFile } from './output.js';
 import { stripJsxRef } from '../parser/index.js';
-import { getSection } from '../parser/sections.js';
+import { getFirstSection } from '../parser/sections.js';
 import { findMDNFile } from './file_handler.js';
 
 const program = new Command();
@@ -29,7 +29,7 @@ const commandActionHandler = async (
         return;
     }
     if (options.section !== 'none') {
-        document = getSection(document, options.section);
+        document = getFirstSection(document, options.section);
     }
     const strippedDoc = stripJsxRef(document);
 

@@ -8,7 +8,7 @@ import {
     truncateString,
     removeEmptyLines,
 } from '../parser/index.js';
-import { getSection, removeEmptySections } from '../parser/sections.js';
+import { getFirstSection, removeEmptySections } from '../parser/sections.js';
 import fs from 'fs';
 import mapHeader from './__fixtures__/map.header.json';
 import titleDescription from './__fixtures__/title.description.json';
@@ -121,7 +121,7 @@ describe('parser', () => {
 
     describe('truncateString', () => {
         it('cuts a string down to the provided length and corrects missing codeblock backticks if needed', () => {
-            const section = getSection(substrFile, 'Example');
+            const section = getFirstSection(substrFile, 'Example');
             const truncatedStr = truncateString(section, 1024);
             expect(truncatedStr).toHaveLength(1024);
             expect(truncatedStr).toMatchSnapshot();
