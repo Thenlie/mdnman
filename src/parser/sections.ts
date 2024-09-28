@@ -109,7 +109,7 @@ const getSection = (document: string, inputSection: MDNSection): string | null =
  */
 const getAllSections = (document: string): MDNSection[] => {
     const docArr = document.split('\n');
-    const sections = docArr.filter((line) => line.startsWith('#'));
+    const sections = docArr.filter((line) => /^#+ /.test(line));
     return sections.map((line, i) => {
         // Create a two element array where the first element is the '#'s
         // and the second is the string that follows
