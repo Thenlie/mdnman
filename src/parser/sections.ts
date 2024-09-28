@@ -74,7 +74,7 @@ const getSection = (document: string, inputSection: MDNSection): string | null =
 
         if (inSection) {
             // Check for end of section by finding matching or higher markdown heading
-            const hashes = line.match(/^#+/)?.[0];
+            const hashes = line.match(/^#+ /)?.[0].trim();
             if (hashes && hashes.length <= inputSection.level) {
                 inSection = false;
                 break;
@@ -136,13 +136,10 @@ const removeSection = (document: string, sectionName: string): string => {
     let flag = false;
     let heading = '';
     for (let i = 0; i < docArr.length; i++) {
-        const currentHeading = docArr[i].match(/^#+/)?.[0];
+        const line = docArr[i];
+        const currentHeading = line.match(/^#+ /)?.[0].trim();
         // Check for matching section name and set flag
-        if (
-            !flag &&
-            docArr[i].startsWith('#') &&
-            docArr[i].toLowerCase().includes(sectionName.toLowerCase())
-        ) {
+        if (!flag && /^#+ /.test(line) && line.toLowerCase().includes(sectionName.toLowerCase())) {
             flag = true;
             heading = currentHeading || '';
             // Check for end of section by finding matching or higher markdown heading
@@ -150,7 +147,7 @@ const removeSection = (document: string, sectionName: string): string => {
             flag = false;
             // Add all lines when section not flagged
         } else if (!flag) {
-            section.push(docArr[i]);
+            section.push(line);
         }
     }
     return section.join('\n');
