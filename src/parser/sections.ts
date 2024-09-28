@@ -15,7 +15,7 @@ const getFirstSection = (document: string, sectionName: string): string => {
     let hashes = '';
     for (let i = 0; i < docArr.length; i++) {
         const line = docArr[i];
-        const currentHashes = line.match(/^#+/)?.[0];
+        const currentHashes = line.match(/^#+ /)?.[0].trim();
 
         if (inSection) {
             // Check for end of section by finding matching or higher markdown heading
