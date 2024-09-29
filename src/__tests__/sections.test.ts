@@ -13,10 +13,12 @@ import { MDNSection } from '../types.js';
 const JS_FILE_PATH = './lib/javascript/global_objects/array/map/index.md';
 const HTML_FILE_PATH = './lib/html/global_attributes/title/index.md';
 const CSS_FILE_PATH = './lib/css/color_value/color-mix/index.md';
+const CSS_2_FILE_PATH = './lib/css/color_value/index.md';
 
 let jsFile: string;
 let htmlFile: string;
 let cssFile: string;
+let css2File: string;
 
 const mockJsSection: MDNSection = {
     name: 'Description',
@@ -36,12 +38,19 @@ const mockCssSection: MDNSection = {
     position: 11,
 };
 
+const mockCss2Section: MDNSection = {
+    name: 'CSS',
+    level: 4,
+    position: 24,
+};
+
 describe('sections', () => {
     beforeAll(() => {
         try {
             jsFile = fs.readFileSync(JS_FILE_PATH).toString();
             htmlFile = fs.readFileSync(HTML_FILE_PATH).toString();
             cssFile = fs.readFileSync(CSS_FILE_PATH).toString();
+            css2File = fs.readFileSync(CSS_2_FILE_PATH).toString();
         } catch (error) {
             throw new Error('Error reading file: ' + error);
         }
@@ -51,15 +60,17 @@ describe('sections', () => {
         it('properly returns a section with the provided name', () => {
             expect(getFirstSection(jsFile, 'Description')).toMatchSnapshot();
             expect(getFirstSection(htmlFile, 'Accessibility concerns')).toMatchSnapshot();
+            expect(getFirstSection(css2File, 'Syntax')).toMatchSnapshot();
         });
     });
 
-    describe('getSection', () => {
+    describe.only('getSection', () => {
         it('properly returns the section with the provided name and position', () => {
             expect(getSection(jsFile, mockJsSection)).toMatchSnapshot();
             expect(getSection(htmlFile, mockHtmlSection)).toMatchSnapshot();
             // This document contains duplicate section names
             expect(getSection(cssFile, mockCssSection)).toMatchSnapshot();
+            expect(getSection(css2File, mockCss2Section)).toMatchSnapshot();
         });
     });
 

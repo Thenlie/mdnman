@@ -118,6 +118,106 @@ This is due to inconsistent browser support, compounded by the additional assist
 "
 `;
 
+exports[`sections getFirstSection properly returns a section with the provided name 3`] = `
+"## Syntax
+
+\`\`\`css
+/* Named colors */
+rebeccapurple
+aliceblue
+
+/* RGB Hexadecimal */
+#f09
+#ff0099
+
+/* RGB (Red, Green, Blue) */
+rgb(255 0 153)
+rgb(255 0 153 / 80%)
+
+/* HSL (Hue, Saturation, Lightness) */
+hsl(150 30% 60%)
+hsl(150 30% 60% / 80%)
+
+/* HWB (Hue, Whiteness, Blackness) */
+hwb(12 50% 0%)
+hwb(194 0% 0% / 0.5)
+
+/* LAB (Lightness, A-axis, B-axis) */
+lab(50% 40 59.5)
+lab(50% 40 59.5 / 0.5)
+
+/* LCH (Lightness, Chroma, Hue) */
+lch(52.2% 72.2 50)
+lch(52.2% 72.2 50 / 0.5)
+
+/* Oklab (Lightness, A-axis, B-axis) */
+oklab(59% 0.1 0.1)
+oklab(59% 0.1 0.1 / 0.5)
+
+/* Oklch (Lightness, Chroma, Hue) */
+oklch(60% 0.15 50)
+oklch(60% 0.15 50 / 0.5)
+
+/* Relative CSS colors */
+/* HSL hue change */
+hsl(from red 240deg s l)
+/* HWB alpha channel change */
+hwb(from green h w b / 0.5)
+/* LCH lightness change */
+lch(from blue calc(l + 20) c h)
+
+/* light-dark */
+light-dark(white, black)
+light-dark(rgb(255 255 255), rgb(0 0 0))
+\`\`\`
+
+A \`<color>\` value can be specified using one of the methods listed below:
+
+- By keywords: {{CSSXref("&lt;named-color&gt;")}} (such as \`blue\` or \`pink\`), {{CSSXref("&lt;system-color&gt;")}}, and [\`currentcolor\`](#currentcolor_keyword).
+- By hexadecimal notations: {{CSSXref("&lt;hex-color&gt;")}} (such as \`#ff0000\`).
+- By \`<color-function>\`, with parameters in a {{glossary("color space")}} using functional notations:
+  - [sRGB](https://en.wikipedia.org/wiki/SRGB) color space: {{CSSXref("color_value/hsl", "hsl()")}}, {{CSSXref("color_value/hwb", "hwb()")}}, and {{CSSXref("color_value/rgb", "rgb()")}}.
+  - [CIELAB](https://en.wikipedia.org/wiki/CIELAB_color_space) color space: {{CSSXref("color_value/lab", "lab()")}} and {{CSSXref("color_value/lch", "lch()")}}.
+  - [Oklab](https://bottosson.github.io/posts/oklab/) color space: {{CSSXref("color_value/oklab", "oklab()")}} and {{CSSXref("color_value/oklch", "oklch()")}}.
+  - Other color spaces: {{CSSXref("color_value/color", "color()")}}.
+- By using [relative color](/en-US/docs/Web/CSS/CSS_colors/Relative_colors) syntax to output a new color based on an existing color. Any of the above color functions can take an **origin color** preceded by the \`from\` keyword and followed by definitions of the channel values for the new **output color**.
+- By mixing two colors: {{CSSXref("color_value/color-mix", "color-mix()")}}.
+- By specifying two colors, using the first for light color-schemes and the second for dark color-schemes: {{CSSXref("color_value/light-dark", "light-dark()")}}.
+
+### \`currentcolor\` keyword
+
+The \`currentcolor\` keyword represents the value of an element's {{Cssxref("color")}} property. This lets you use the \`color\` value on properties that do not receive it by default.
+
+If \`currentcolor\` is used as the value of the \`color\` property, it instead takes its value from the inherited value of the \`color\` property.
+
+\`\`\`html
+<div style="color: blue; border: 1px dashed currentcolor;">
+  The color of this text is blue.
+  <div style="background: currentcolor; height:9px;"></div>
+  This block is surrounded by a blue border.
+</div>
+\`\`\`
+
+{{EmbedLiveSample("currentcolor_keyword", "100%", 80)}}
+
+### Missing color components
+
+Each component of any CSS color functions - except for those using the legacy comma-separated syntax - can be specified as the keyword \`none\` to be a missing component.
+
+Explicitly specifying [missing components in color interpolation](#interpolation_with_missing_components) is useful for cases where you would like to {{glossary("interpolation", "interpolate")}} some color components but not others. For all other purposes, a missing component will effectively have a zero value in an appropriate unit: \`0\`, \`0%\`, or \`0deg\`. For example, the following colors are equivalent when used outside of interpolation:
+
+\`\`\`css
+/* These are equivalent */
+color: oklab(50% none -0.25);
+color: oklab(50% 0 -0.25);
+
+/* These are equivalent */
+background-color: hsl(none 100% 50%);
+background-color: hsl(0deg 100% 50%);
+\`\`\`
+"
+`;
+
 exports[`sections getSection properly returns the section with the provided name and position 1`] = `
 "## Description
 
@@ -211,6 +311,44 @@ background-color: color-mix(in srgb, var(--base) 100%, transparent);
 
 li:nth-child(6) {
 background-color: color-mix(in srgb, var(--base), transparent);
+}
+\`\`\`
+"
+`;
+
+exports[`sections getSection properly returns the section with the provided name and position 4`] = `
+"#### CSS
+
+\`\`\`css hidden
+body {
+display: flex;
+flex-wrap: wrap;
+}
+div {
+height: 80px;
+margin: 10px;
+width: 80px;
+}
+\`\`\`
+
+\`\`\`css
+div:nth-child(1) {
+background-color: hsl(0 0% 50%);
+}
+div:nth-child(2) {
+background-color: hsl(0 20% 50%);
+}
+div:nth-child(3) {
+background-color: hsl(0 40% 50%);
+}
+div:nth-child(4) {
+background-color: hsl(0 60% 50%);
+}
+div:nth-child(5) {
+background-color: hsl(0 80% 50%);
+}
+div:nth-child(6) {
+background-color: hsl(0 100% 50%);
 }
 \`\`\`
 "

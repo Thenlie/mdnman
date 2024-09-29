@@ -29,14 +29,14 @@ const getFirstSection = (document: string, sectionName: string): string => {
 
         // Check for matching section name and set flag
         // Regex to split line into two parts, hashes and text
-        const re = /^(?<hashes>#+)(?<text>.*)/;
+        const re = /^(?<hashes>#+ )(?<text>.*)/;
         const match = line.match(re);
         // Check if line is a markdown heading
         if (!match) continue;
         // Check for matching heading name
         if (match.groups?.text.trim().toLowerCase() === sectionName.trim().toLowerCase()) {
             inSection = true;
-            hashes = match.groups.hashes;
+            hashes = match.groups.hashes.trim();
             result.push(line);
         }
     }
@@ -84,7 +84,7 @@ const getSection = (document: string, inputSection: MDNSection): string | null =
         }
 
         // Regex to split line into two parts, hashes and text
-        const re = /^(?<hashes>#+)(?<text>.*)/;
+        const re = /^(?<hashes>#+ )(?<text>.*)/;
         const match = line.match(re);
         // Check if line is a markdown heading
         if (!match) continue;
