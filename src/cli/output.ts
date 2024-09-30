@@ -42,6 +42,17 @@ const openEditor = (path: string) => {
 };
 
 /**
+ * Opens a file using less
+ * @param {string} path
+ */
+const openLess = (path: string) => {
+    const child = child_process.spawn('less', ['-R', path], {
+        stdio: 'inherit',
+    });
+    child.on('exit', () => {});
+};
+
+/**
  * Take raw markdown MDN doc and write it to a file after formatting
  * @param {string} document
  * @param {string} [outputPath]
@@ -112,4 +123,4 @@ const printDoc = (document: string) => {
     });
 };
 
-export { printDoc, writeDocToFile, openEditor, DEFAULT_OUTPUT_PATH };
+export { printDoc, writeDocToFile, openEditor, openLess, DEFAULT_OUTPUT_PATH };
