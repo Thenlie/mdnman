@@ -64,7 +64,7 @@ describe('sections', () => {
         });
     });
 
-    describe.only('getSection', () => {
+    describe('getSection', () => {
         it('properly returns the section with the provided name and position', () => {
             expect(getSection(jsFile, mockJsSection)).toMatchSnapshot();
             expect(getSection(htmlFile, mockHtmlSection)).toMatchSnapshot();

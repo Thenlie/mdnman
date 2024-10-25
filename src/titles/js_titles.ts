@@ -4,66 +4,6 @@ export const javascriptTitles: {
     title: string;
 }[] = [
     {
-        path: 'lib/javascript/canvas_api/index.md',
-        title: 'Canvas API',
-    },
-    {
-        path: 'lib/javascript/canvas_api/manipulating_video_using_canvas/index.md',
-        title: 'Manipulating video using canvas',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/advanced_animations/index.md',
-        title: 'Advanced animations',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/applying_styles_and_colors/index.md',
-        title: 'Applying styles and colors',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/basic_animations/index.md',
-        title: 'Basic animations',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/basic_usage/index.md',
-        title: 'Basic usage of canvas',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/compositing/index.md',
-        title: 'Compositing and clipping',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/drawing_shapes/index.md',
-        title: 'Drawing shapes with canvas',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/drawing_text/index.md',
-        title: 'Drawing text',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/finale/index.md',
-        title: 'Finale',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/index.md',
-        title: 'Canvas tutorial',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/optimizing_canvas/index.md',
-        title: 'Optimizing canvas',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/pixel_manipulation_with_canvas/index.md',
-        title: 'Pixel manipulation with canvas',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/transformations/index.md',
-        title: 'Transformations',
-    },
-    {
-        path: 'lib/javascript/canvas_api/tutorial/using_images/index.md',
-        title: 'Using images',
-    },
-    {
         path: 'lib/javascript/classes/constructor/index.md',
         title: 'constructor',
     },
@@ -1182,14 +1122,6 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/errors/unparenthesized_unary_expr_lhs_exponentiation/index.md',
         title: 'SyntaxError: unparenthesized unary expression can\'t appear on the left-hand side of \'**\'',
-    },
-    {
-        path: 'lib/javascript/fetch_api/index.md',
-        title: 'Fetch API',
-    },
-    {
-        path: 'lib/javascript/fetch_api/using_fetch/index.md',
-        title: 'Using the Fetch API',
     },
     {
         path: 'lib/javascript/functions/arguments/callee/index.md',
@@ -4644,6 +4576,8994 @@ export const javascriptTitles: {
         title: 'Trailing commas',
     },
     {
+        path: 'lib/javascript/web_api/abortcontroller/abort/index.md',
+        title: 'AbortController: abort() method',
+    },
+    {
+        path: 'lib/javascript/web_api/abortcontroller/abortcontroller/index.md',
+        title: 'AbortController: AbortController() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/abortcontroller/index.md',
+        title: 'AbortController',
+    },
+    {
+        path: 'lib/javascript/web_api/abortcontroller/signal/index.md',
+        title: 'AbortController: signal property',
+    },
+    {
+        path: 'lib/javascript/web_api/abortsignal/abort_event/index.md',
+        title: 'AbortSignal: abort event',
+    },
+    {
+        path: 'lib/javascript/web_api/abortsignal/abort_static/index.md',
+        title: 'AbortSignal: abort() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/abortsignal/aborted/index.md',
+        title: 'AbortSignal: aborted property',
+    },
+    {
+        path: 'lib/javascript/web_api/abortsignal/any_static/index.md',
+        title: 'AbortSignal: any() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/abortsignal/index.md',
+        title: 'AbortSignal',
+    },
+    {
+        path: 'lib/javascript/web_api/abortsignal/reason/index.md',
+        title: 'AbortSignal: reason property',
+    },
+    {
+        path: 'lib/javascript/web_api/abortsignal/throwifaborted/index.md',
+        title: 'AbortSignal: throwIfAborted() method',
+    },
+    {
+        path: 'lib/javascript/web_api/abortsignal/timeout_static/index.md',
+        title: 'AbortSignal: timeout() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/absoluteorientationsensor/absoluteorientationsensor/index.md',
+        title: 'AbsoluteOrientationSensor: AbsoluteOrientationSensor() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/absoluteorientationsensor/index.md',
+        title: 'AbsoluteOrientationSensor',
+    },
+    {
+        path: 'lib/javascript/web_api/abstractrange/collapsed/index.md',
+        title: 'AbstractRange: collapsed property',
+    },
+    {
+        path: 'lib/javascript/web_api/abstractrange/endcontainer/index.md',
+        title: 'AbstractRange: endContainer property',
+    },
+    {
+        path: 'lib/javascript/web_api/abstractrange/endoffset/index.md',
+        title: 'AbstractRange: endOffset property',
+    },
+    {
+        path: 'lib/javascript/web_api/abstractrange/index.md',
+        title: 'AbstractRange',
+    },
+    {
+        path: 'lib/javascript/web_api/abstractrange/startcontainer/index.md',
+        title: 'AbstractRange: startContainer property',
+    },
+    {
+        path: 'lib/javascript/web_api/abstractrange/startoffset/index.md',
+        title: 'AbstractRange: startOffset property',
+    },
+    {
+        path: 'lib/javascript/web_api/accelerometer/accelerometer/index.md',
+        title: 'Accelerometer: Accelerometer() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/accelerometer/index.md',
+        title: 'Accelerometer',
+    },
+    {
+        path: 'lib/javascript/web_api/accelerometer/x/index.md',
+        title: 'Accelerometer: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/accelerometer/y/index.md',
+        title: 'Accelerometer: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/accelerometer/z/index.md',
+        title: 'Accelerometer: z property',
+    },
+    {
+        path: 'lib/javascript/web_api/aescbcparams/index.md',
+        title: 'AesCbcParams',
+    },
+    {
+        path: 'lib/javascript/web_api/aesctrparams/index.md',
+        title: 'AesCtrParams',
+    },
+    {
+        path: 'lib/javascript/web_api/aesgcmparams/index.md',
+        title: 'AesGcmParams',
+    },
+    {
+        path: 'lib/javascript/web_api/aeskeygenparams/index.md',
+        title: 'AesKeyGenParams',
+    },
+    {
+        path: 'lib/javascript/web_api/ambientlightsensor/ambientlightsensor/index.md',
+        title: 'AmbientLightSensor: AmbientLightSensor() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/ambientlightsensor/illuminance/index.md',
+        title: 'AmbientLightSensor: illuminance property',
+    },
+    {
+        path: 'lib/javascript/web_api/ambientlightsensor/index.md',
+        title: 'AmbientLightSensor',
+    },
+    {
+        path: 'lib/javascript/web_api/analysernode/analysernode/index.md',
+        title: 'AnalyserNode: AnalyserNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/analysernode/fftsize/index.md',
+        title: 'AnalyserNode: fftSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/analysernode/frequencybincount/index.md',
+        title: 'AnalyserNode: frequencyBinCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/analysernode/getbytefrequencydata/index.md',
+        title: 'AnalyserNode: getByteFrequencyData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/analysernode/getbytetimedomaindata/index.md',
+        title: 'AnalyserNode: getByteTimeDomainData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/analysernode/getfloatfrequencydata/index.md',
+        title: 'AnalyserNode: getFloatFrequencyData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/analysernode/getfloattimedomaindata/index.md',
+        title: 'AnalyserNode: getFloatTimeDomainData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/analysernode/index.md',
+        title: 'AnalyserNode',
+    },
+    {
+        path: 'lib/javascript/web_api/analysernode/maxdecibels/index.md',
+        title: 'AnalyserNode: maxDecibels property',
+    },
+    {
+        path: 'lib/javascript/web_api/analysernode/mindecibels/index.md',
+        title: 'AnalyserNode: minDecibels property',
+    },
+    {
+        path: 'lib/javascript/web_api/analysernode/smoothingtimeconstant/index.md',
+        title: 'AnalyserNode: smoothingTimeConstant property',
+    },
+    {
+        path: 'lib/javascript/web_api/angle_instanced_arrays/drawarraysinstancedangle/index.md',
+        title: 'ANGLE_instanced_arrays: drawArraysInstancedANGLE() method',
+    },
+    {
+        path: 'lib/javascript/web_api/angle_instanced_arrays/drawelementsinstancedangle/index.md',
+        title: 'ANGLE_instanced_arrays: drawElementsInstancedANGLE() method',
+    },
+    {
+        path: 'lib/javascript/web_api/angle_instanced_arrays/index.md',
+        title: 'ANGLE_instanced_arrays',
+    },
+    {
+        path: 'lib/javascript/web_api/angle_instanced_arrays/vertexattribdivisorangle/index.md',
+        title: 'ANGLE_instanced_arrays: vertexAttribDivisorANGLE() method',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/animation/index.md',
+        title: 'Animation: Animation() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/cancel/index.md',
+        title: 'Animation: cancel() method',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/cancel_event/index.md',
+        title: 'Animation: cancel event',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/commitstyles/index.md',
+        title: 'Animation: commitStyles() method',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/currenttime/index.md',
+        title: 'Animation: currentTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/effect/index.md',
+        title: 'Animation: effect property',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/finish/index.md',
+        title: 'Animation: finish() method',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/finish_event/index.md',
+        title: 'Animation: finish event',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/finished/index.md',
+        title: 'Animation: finished property',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/id/index.md',
+        title: 'Animation: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/index.md',
+        title: 'Animation',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/pause/index.md',
+        title: 'Animation: pause() method',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/pending/index.md',
+        title: 'Animation: pending property',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/persist/index.md',
+        title: 'Animation: persist() method',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/play/index.md',
+        title: 'Animation: play() method',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/playbackrate/index.md',
+        title: 'Animation: playbackRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/playstate/index.md',
+        title: 'Animation: playState property',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/ready/index.md',
+        title: 'Animation: ready property',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/remove_event/index.md',
+        title: 'Animation: remove event',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/replacestate/index.md',
+        title: 'Animation: replaceState property',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/reverse/index.md',
+        title: 'Animation: reverse() method',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/starttime/index.md',
+        title: 'Animation: startTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/timeline/index.md',
+        title: 'Animation: timeline property',
+    },
+    {
+        path: 'lib/javascript/web_api/animation/updateplaybackrate/index.md',
+        title: 'Animation: updatePlaybackRate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/animationeffect/getcomputedtiming/index.md',
+        title: 'AnimationEffect: getComputedTiming() method',
+    },
+    {
+        path: 'lib/javascript/web_api/animationeffect/gettiming/index.md',
+        title: 'AnimationEffect: getTiming() method',
+    },
+    {
+        path: 'lib/javascript/web_api/animationeffect/index.md',
+        title: 'AnimationEffect',
+    },
+    {
+        path: 'lib/javascript/web_api/animationeffect/updatetiming/index.md',
+        title: 'AnimationEffect: updateTiming() method',
+    },
+    {
+        path: 'lib/javascript/web_api/animationevent/animationevent/index.md',
+        title: 'AnimationEvent: AnimationEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/animationevent/animationname/index.md',
+        title: 'AnimationEvent: animationName property',
+    },
+    {
+        path: 'lib/javascript/web_api/animationevent/elapsedtime/index.md',
+        title: 'AnimationEvent: elapsedTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/animationevent/index.md',
+        title: 'AnimationEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/animationevent/pseudoelement/index.md',
+        title: 'AnimationEvent: pseudoElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/animationplaybackevent/animationplaybackevent/index.md',
+        title: 'AnimationPlaybackEvent: AnimationPlaybackEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/animationplaybackevent/currenttime/index.md',
+        title: 'AnimationPlaybackEvent: currentTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/animationplaybackevent/index.md',
+        title: 'AnimationPlaybackEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/animationplaybackevent/timelinetime/index.md',
+        title: 'AnimationPlaybackEvent: timelineTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/animationtimeline/currenttime/index.md',
+        title: 'AnimationTimeline: currentTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/animationtimeline/index.md',
+        title: 'AnimationTimeline',
+    },
+    {
+        path: 'lib/javascript/web_api/attr/index.md',
+        title: 'Attr',
+    },
+    {
+        path: 'lib/javascript/web_api/attr/localname/index.md',
+        title: 'Attr: localName property',
+    },
+    {
+        path: 'lib/javascript/web_api/attr/name/index.md',
+        title: 'Attr: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/attr/namespaceuri/index.md',
+        title: 'Attr: namespaceURI property',
+    },
+    {
+        path: 'lib/javascript/web_api/attr/ownerelement/index.md',
+        title: 'Attr: ownerElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/attr/prefix/index.md',
+        title: 'Attr: prefix property',
+    },
+    {
+        path: 'lib/javascript/web_api/attr/specified/index.md',
+        title: 'Attr: specified property',
+    },
+    {
+        path: 'lib/javascript/web_api/attr/value/index.md',
+        title: 'Attr: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/attribution_reporting_api/generating_reports/index.md',
+        title: 'Generating attribution reports',
+    },
+    {
+        path: 'lib/javascript/web_api/attribution_reporting_api/index.md',
+        title: 'Attribution Reporting API',
+    },
+    {
+        path: 'lib/javascript/web_api/attribution_reporting_api/registering_sources/index.md',
+        title: 'Registering attribution sources',
+    },
+    {
+        path: 'lib/javascript/web_api/attribution_reporting_api/registering_triggers/index.md',
+        title: 'Registering attribution triggers',
+    },
+    {
+        path: 'lib/javascript/web_api/audio_output_devices_api/index.md',
+        title: 'Audio Output Devices API',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffer/audiobuffer/index.md',
+        title: 'AudioBuffer: AudioBuffer() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffer/copyfromchannel/index.md',
+        title: 'AudioBuffer: copyFromChannel() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffer/copytochannel/index.md',
+        title: 'AudioBuffer: copyToChannel() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffer/duration/index.md',
+        title: 'AudioBuffer: duration property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffer/getchanneldata/index.md',
+        title: 'AudioBuffer: getChannelData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffer/index.md',
+        title: 'AudioBuffer',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffer/length/index.md',
+        title: 'AudioBuffer: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffer/numberofchannels/index.md',
+        title: 'AudioBuffer: numberOfChannels property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffer/samplerate/index.md',
+        title: 'AudioBuffer: sampleRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffersourcenode/audiobuffersourcenode/index.md',
+        title: 'AudioBufferSourceNode: AudioBufferSourceNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffersourcenode/buffer/index.md',
+        title: 'AudioBufferSourceNode: buffer property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffersourcenode/detune/index.md',
+        title: 'AudioBufferSourceNode: detune property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffersourcenode/index.md',
+        title: 'AudioBufferSourceNode',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffersourcenode/loop/index.md',
+        title: 'AudioBufferSourceNode: loop property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffersourcenode/loopend/index.md',
+        title: 'AudioBufferSourceNode: loopEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffersourcenode/loopstart/index.md',
+        title: 'AudioBufferSourceNode: loopStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffersourcenode/playbackrate/index.md',
+        title: 'AudioBufferSourceNode: playbackRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiobuffersourcenode/start/index.md',
+        title: 'AudioBufferSourceNode: start() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/audiocontext/index.md',
+        title: 'AudioContext: AudioContext() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/baselatency/index.md',
+        title: 'AudioContext: baseLatency property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/close/index.md',
+        title: 'AudioContext: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/createmediaelementsource/index.md',
+        title: 'AudioContext: createMediaElementSource() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/createmediastreamdestination/index.md',
+        title: 'AudioContext: createMediaStreamDestination() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/createmediastreamsource/index.md',
+        title: 'AudioContext: createMediaStreamSource() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/createmediastreamtracksource/index.md',
+        title: 'AudioContext: createMediaStreamTrackSource() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/getoutputtimestamp/index.md',
+        title: 'AudioContext: getOutputTimestamp() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/index.md',
+        title: 'AudioContext',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/outputlatency/index.md',
+        title: 'AudioContext: outputLatency property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/resume/index.md',
+        title: 'AudioContext: resume() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/setsinkid/index.md',
+        title: 'AudioContext: setSinkId() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/sinkchange_event/index.md',
+        title: 'AudioContext: sinkchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/sinkid/index.md',
+        title: 'AudioContext: sinkId property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiocontext/suspend/index.md',
+        title: 'AudioContext: suspend() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodata/allocationsize/index.md',
+        title: 'AudioData: allocationSize() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodata/audiodata/index.md',
+        title: 'AudioData: AudioData() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodata/clone/index.md',
+        title: 'AudioData: clone() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodata/close/index.md',
+        title: 'AudioData: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodata/copyto/index.md',
+        title: 'AudioData: copyTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodata/duration/index.md',
+        title: 'AudioData: duration property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodata/format/index.md',
+        title: 'AudioData: format property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodata/index.md',
+        title: 'AudioData',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodata/numberofchannels/index.md',
+        title: 'AudioData: numberOfChannels property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodata/numberofframes/index.md',
+        title: 'AudioData: numberOfFrames property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodata/samplerate/index.md',
+        title: 'AudioData: sampleRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodata/timestamp/index.md',
+        title: 'AudioData: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodecoder/audiodecoder/index.md',
+        title: 'AudioDecoder: AudioDecoder() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodecoder/close/index.md',
+        title: 'AudioDecoder: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodecoder/configure/index.md',
+        title: 'AudioDecoder: configure() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodecoder/decode/index.md',
+        title: 'AudioDecoder: decode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodecoder/decodequeuesize/index.md',
+        title: 'AudioDecoder: decodeQueueSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodecoder/dequeue_event/index.md',
+        title: 'AudioDecoder: dequeue event',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodecoder/flush/index.md',
+        title: 'AudioDecoder: flush() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodecoder/index.md',
+        title: 'AudioDecoder',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodecoder/isconfigsupported_static/index.md',
+        title: 'AudioDecoder: isConfigSupported() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodecoder/reset/index.md',
+        title: 'AudioDecoder: reset() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodecoder/state/index.md',
+        title: 'AudioDecoder: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodestinationnode/index.md',
+        title: 'AudioDestinationNode',
+    },
+    {
+        path: 'lib/javascript/web_api/audiodestinationnode/maxchannelcount/index.md',
+        title: 'AudioDestinationNode: maxChannelCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioencoder/audioencoder/index.md',
+        title: 'AudioEncoder: AudioEncoder() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/audioencoder/close/index.md',
+        title: 'AudioEncoder: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioencoder/configure/index.md',
+        title: 'AudioEncoder: configure() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioencoder/dequeue_event/index.md',
+        title: 'AudioEncoder: dequeue event',
+    },
+    {
+        path: 'lib/javascript/web_api/audioencoder/encode/index.md',
+        title: 'AudioEncoder: encode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioencoder/encodequeuesize/index.md',
+        title: 'AudioEncoder: encodeQueueSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioencoder/flush/index.md',
+        title: 'AudioEncoder: flush() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioencoder/index.md',
+        title: 'AudioEncoder',
+    },
+    {
+        path: 'lib/javascript/web_api/audioencoder/isconfigsupported_static/index.md',
+        title: 'AudioEncoder: isConfigSupported() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioencoder/reset/index.md',
+        title: 'AudioEncoder: reset() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioencoder/state/index.md',
+        title: 'AudioEncoder: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiolistener/forwardx/index.md',
+        title: 'AudioListener: forwardX property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiolistener/forwardy/index.md',
+        title: 'AudioListener: forwardY property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiolistener/forwardz/index.md',
+        title: 'AudioListener: forwardZ property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiolistener/index.md',
+        title: 'AudioListener',
+    },
+    {
+        path: 'lib/javascript/web_api/audiolistener/positionx/index.md',
+        title: 'AudioListener: positionX property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiolistener/positiony/index.md',
+        title: 'AudioListener: positionY property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiolistener/positionz/index.md',
+        title: 'AudioListener: positionZ property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiolistener/setorientation/index.md',
+        title: 'AudioListener: setOrientation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiolistener/setposition/index.md',
+        title: 'AudioListener: setPosition() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiolistener/upx/index.md',
+        title: 'AudioListener: upX property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiolistener/upy/index.md',
+        title: 'AudioListener: upY property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiolistener/upz/index.md',
+        title: 'AudioListener: upZ property',
+    },
+    {
+        path: 'lib/javascript/web_api/audionode/channelcount/index.md',
+        title: 'AudioNode: channelCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/audionode/channelcountmode/index.md',
+        title: 'AudioNode: channelCountMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/audionode/channelinterpretation/index.md',
+        title: 'AudioNode: channelInterpretation property',
+    },
+    {
+        path: 'lib/javascript/web_api/audionode/connect/index.md',
+        title: 'AudioNode: connect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audionode/context/index.md',
+        title: 'AudioNode: context property',
+    },
+    {
+        path: 'lib/javascript/web_api/audionode/disconnect/index.md',
+        title: 'AudioNode: disconnect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audionode/index.md',
+        title: 'AudioNode',
+    },
+    {
+        path: 'lib/javascript/web_api/audionode/numberofinputs/index.md',
+        title: 'AudioNode: numberOfInputs property',
+    },
+    {
+        path: 'lib/javascript/web_api/audionode/numberofoutputs/index.md',
+        title: 'AudioNode: numberOfOutputs property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparam/cancelandholdattime/index.md',
+        title: 'AudioParam: cancelAndHoldAtTime() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparam/cancelscheduledvalues/index.md',
+        title: 'AudioParam: cancelScheduledValues() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparam/defaultvalue/index.md',
+        title: 'AudioParam: defaultValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparam/exponentialramptovalueattime/index.md',
+        title: 'AudioParam: exponentialRampToValueAtTime() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparam/index.md',
+        title: 'AudioParam',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparam/linearramptovalueattime/index.md',
+        title: 'AudioParam: linearRampToValueAtTime() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparam/maxvalue/index.md',
+        title: 'AudioParam: maxValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparam/minvalue/index.md',
+        title: 'AudioParam: minValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparam/settargetattime/index.md',
+        title: 'AudioParam: setTargetAtTime() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparam/setvalueattime/index.md',
+        title: 'AudioParam: setValueAtTime() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparam/setvaluecurveattime/index.md',
+        title: 'AudioParam: setValueCurveAtTime() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparam/value/index.md',
+        title: 'AudioParam: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparamdescriptor/index.md',
+        title: 'AudioParamDescriptor',
+    },
+    {
+        path: 'lib/javascript/web_api/audioparammap/index.md',
+        title: 'AudioParamMap',
+    },
+    {
+        path: 'lib/javascript/web_api/audioprocessingevent/audioprocessingevent/index.md',
+        title: 'AudioProcessingEvent: AudioProcessingEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/audioprocessingevent/index.md',
+        title: 'AudioProcessingEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/audioprocessingevent/inputbuffer/index.md',
+        title: 'AudioProcessingEvent: inputBuffer property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioprocessingevent/outputbuffer/index.md',
+        title: 'AudioProcessingEvent: outputBuffer property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioprocessingevent/playbacktime/index.md',
+        title: 'AudioProcessingEvent: playbackTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioscheduledsourcenode/ended_event/index.md',
+        title: 'AudioScheduledSourceNode: ended event',
+    },
+    {
+        path: 'lib/javascript/web_api/audioscheduledsourcenode/index.md',
+        title: 'AudioScheduledSourceNode',
+    },
+    {
+        path: 'lib/javascript/web_api/audioscheduledsourcenode/start/index.md',
+        title: 'AudioScheduledSourceNode: start() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioscheduledsourcenode/stop/index.md',
+        title: 'AudioScheduledSourceNode: stop() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiosinkinfo/index.md',
+        title: 'AudioSinkInfo',
+    },
+    {
+        path: 'lib/javascript/web_api/audiosinkinfo/type/index.md',
+        title: 'AudioSinkInfo: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotrack/enabled/index.md',
+        title: 'AudioTrack: enabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotrack/id/index.md',
+        title: 'AudioTrack: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotrack/index.md',
+        title: 'AudioTrack',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotrack/kind/index.md',
+        title: 'AudioTrack: kind property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotrack/label/index.md',
+        title: 'AudioTrack: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotrack/language/index.md',
+        title: 'AudioTrack: language property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotrack/sourcebuffer/index.md',
+        title: 'AudioTrack: sourceBuffer property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotracklist/addtrack_event/index.md',
+        title: 'AudioTrackList: addtrack event',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotracklist/change_event/index.md',
+        title: 'AudioTrackList: change event',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotracklist/gettrackbyid/index.md',
+        title: 'AudioTrackList: getTrackById() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotracklist/index.md',
+        title: 'AudioTrackList',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotracklist/length/index.md',
+        title: 'AudioTrackList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/audiotracklist/removetrack_event/index.md',
+        title: 'AudioTrackList: removetrack event',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworklet/index.md',
+        title: 'AudioWorklet',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletglobalscope/currentframe/index.md',
+        title: 'AudioWorkletGlobalScope: currentFrame property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletglobalscope/currenttime/index.md',
+        title: 'AudioWorkletGlobalScope: currentTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletglobalscope/index.md',
+        title: 'AudioWorkletGlobalScope',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletglobalscope/registerprocessor/index.md',
+        title: 'AudioWorkletGlobalScope: registerProcessor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletglobalscope/samplerate/index.md',
+        title: 'AudioWorkletGlobalScope: sampleRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletnode/audioworkletnode/index.md',
+        title: 'AudioWorkletNode: AudioWorkletNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletnode/index.md',
+        title: 'AudioWorkletNode',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletnode/parameters/index.md',
+        title: 'AudioWorkletNode: parameters property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletnode/port/index.md',
+        title: 'AudioWorkletNode: port property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletnode/processorerror_event/index.md',
+        title: 'AudioWorkletNode: processorerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletprocessor/audioworkletprocessor/index.md',
+        title: 'AudioWorkletProcessor: AudioWorkletProcessor() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletprocessor/index.md',
+        title: 'AudioWorkletProcessor',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletprocessor/parameterdescriptors/index.md',
+        title: 'AudioWorkletProcessor: parameterDescriptors property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletprocessor/port/index.md',
+        title: 'AudioWorkletProcessor: port property',
+    },
+    {
+        path: 'lib/javascript/web_api/audioworkletprocessor/process/index.md',
+        title: 'AudioWorkletProcessor: process() method',
+    },
+    {
+        path: 'lib/javascript/web_api/authenticatorassertionresponse/authenticatordata/index.md',
+        title: 'AuthenticatorAssertionResponse: authenticatorData property',
+    },
+    {
+        path: 'lib/javascript/web_api/authenticatorassertionresponse/index.md',
+        title: 'AuthenticatorAssertionResponse',
+    },
+    {
+        path: 'lib/javascript/web_api/authenticatorassertionresponse/signature/index.md',
+        title: 'AuthenticatorAssertionResponse: signature property',
+    },
+    {
+        path: 'lib/javascript/web_api/authenticatorassertionresponse/userhandle/index.md',
+        title: 'AuthenticatorAssertionResponse: userHandle property',
+    },
+    {
+        path: 'lib/javascript/web_api/authenticatorattestationresponse/attestationobject/index.md',
+        title: 'AuthenticatorAttestationResponse: attestationObject property',
+    },
+    {
+        path: 'lib/javascript/web_api/authenticatorattestationresponse/getauthenticatordata/index.md',
+        title: 'AuthenticatorAttestationResponse: getAuthenticatorData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/authenticatorattestationresponse/getpublickey/index.md',
+        title: 'AuthenticatorAttestationResponse: getPublicKey() method',
+    },
+    {
+        path: 'lib/javascript/web_api/authenticatorattestationresponse/getpublickeyalgorithm/index.md',
+        title: 'AuthenticatorAttestationResponse: getPublicKeyAlgorithm() method',
+    },
+    {
+        path: 'lib/javascript/web_api/authenticatorattestationresponse/gettransports/index.md',
+        title: 'AuthenticatorAttestationResponse: getTransports() method',
+    },
+    {
+        path: 'lib/javascript/web_api/authenticatorattestationresponse/index.md',
+        title: 'AuthenticatorAttestationResponse',
+    },
+    {
+        path: 'lib/javascript/web_api/authenticatorresponse/clientdatajson/index.md',
+        title: 'AuthenticatorResponse: clientDataJSON property',
+    },
+    {
+        path: 'lib/javascript/web_api/authenticatorresponse/index.md',
+        title: 'AuthenticatorResponse',
+    },
+    {
+        path: 'lib/javascript/web_api/background_fetch_api/index.md',
+        title: 'Background Fetch API',
+    },
+    {
+        path: 'lib/javascript/web_api/background_synchronization_api/index.md',
+        title: 'Background Synchronization API',
+    },
+    {
+        path: 'lib/javascript/web_api/background_tasks_api/index.md',
+        title: 'Background Tasks API',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchevent/backgroundfetchevent/index.md',
+        title: 'BackgroundFetchEvent: BackgroundFetchEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchevent/index.md',
+        title: 'BackgroundFetchEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchevent/registration/index.md',
+        title: 'BackgroundFetchEvent: registration property',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchmanager/fetch/index.md',
+        title: 'BackgroundFetchManager: fetch() method',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchmanager/get/index.md',
+        title: 'BackgroundFetchManager: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchmanager/getids/index.md',
+        title: 'BackgroundFetchManager: getIds() method',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchmanager/index.md',
+        title: 'BackgroundFetchManager',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchrecord/index.md',
+        title: 'BackgroundFetchRecord',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchrecord/request/index.md',
+        title: 'BackgroundFetchRecord: request property',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchrecord/responseready/index.md',
+        title: 'BackgroundFetchRecord: responseReady property',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/abort/index.md',
+        title: 'BackgroundFetchRegistration: abort() method',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/downloaded/index.md',
+        title: 'BackgroundFetchRegistration: downloaded property',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/downloadtotal/index.md',
+        title: 'BackgroundFetchRegistration: downloadTotal property',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/failurereason/index.md',
+        title: 'BackgroundFetchRegistration: failureReason property',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/id/index.md',
+        title: 'BackgroundFetchRegistration: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/index.md',
+        title: 'BackgroundFetchRegistration',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/match/index.md',
+        title: 'BackgroundFetchRegistration: match() method',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/matchall/index.md',
+        title: 'BackgroundFetchRegistration: matchAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/progress_event/index.md',
+        title: 'BackgroundFetchRegistration: progress event',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/recordsavailable/index.md',
+        title: 'BackgroundFetchRegistration: recordsAvailable property',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/result/index.md',
+        title: 'BackgroundFetchRegistration: result property',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/uploaded/index.md',
+        title: 'BackgroundFetchRegistration: uploaded property',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchregistration/uploadtotal/index.md',
+        title: 'BackgroundFetchRegistration: uploadTotal property',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchupdateuievent/backgroundfetchupdateuievent/index.md',
+        title: 'BackgroundFetchUpdateUIEvent: BackgroundFetchUpdateUIEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchupdateuievent/index.md',
+        title: 'BackgroundFetchUpdateUIEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/backgroundfetchupdateuievent/updateui/index.md',
+        title: 'BackgroundFetchUpdateUIEvent: updateUI() method',
+    },
+    {
+        path: 'lib/javascript/web_api/badging_api/index.md',
+        title: 'Badging API',
+    },
+    {
+        path: 'lib/javascript/web_api/barcode_detection_api/index.md',
+        title: 'Barcode Detection API',
+    },
+    {
+        path: 'lib/javascript/web_api/barcodedetector/barcodedetector/index.md',
+        title: 'BarcodeDetector: BarcodeDetector() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/barcodedetector/detect/index.md',
+        title: 'BarcodeDetector: detect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/barcodedetector/getsupportedformats_static/index.md',
+        title: 'BarcodeDetector: getSupportedFormats() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/barcodedetector/index.md',
+        title: 'BarcodeDetector',
+    },
+    {
+        path: 'lib/javascript/web_api/barprop/index.md',
+        title: 'BarProp',
+    },
+    {
+        path: 'lib/javascript/web_api/barprop/visible/index.md',
+        title: 'BarProp: visible property',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/audioworklet/index.md',
+        title: 'BaseAudioContext: audioWorklet property',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createanalyser/index.md',
+        title: 'BaseAudioContext: createAnalyser() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createbiquadfilter/index.md',
+        title: 'BaseAudioContext: createBiquadFilter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createbuffer/index.md',
+        title: 'BaseAudioContext: createBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createbuffersource/index.md',
+        title: 'BaseAudioContext: createBufferSource() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createchannelmerger/index.md',
+        title: 'BaseAudioContext: createChannelMerger() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createchannelsplitter/index.md',
+        title: 'BaseAudioContext: createChannelSplitter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createconstantsource/index.md',
+        title: 'BaseAudioContext: createConstantSource() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createconvolver/index.md',
+        title: 'BaseAudioContext: createConvolver() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createdelay/index.md',
+        title: 'BaseAudioContext: createDelay() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createdynamicscompressor/index.md',
+        title: 'BaseAudioContext: createDynamicsCompressor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/creategain/index.md',
+        title: 'BaseAudioContext: createGain() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createiirfilter/index.md',
+        title: 'BaseAudioContext: createIIRFilter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createoscillator/index.md',
+        title: 'BaseAudioContext: createOscillator() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createpanner/index.md',
+        title: 'BaseAudioContext: createPanner() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createperiodicwave/index.md',
+        title: 'BaseAudioContext: createPeriodicWave() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createscriptprocessor/index.md',
+        title: 'BaseAudioContext: createScriptProcessor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createstereopanner/index.md',
+        title: 'BaseAudioContext: createStereoPanner() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/createwaveshaper/index.md',
+        title: 'BaseAudioContext: createWaveShaper() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/currenttime/index.md',
+        title: 'BaseAudioContext: currentTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/decodeaudiodata/index.md',
+        title: 'BaseAudioContext: decodeAudioData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/destination/index.md',
+        title: 'BaseAudioContext: destination property',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/index.md',
+        title: 'BaseAudioContext',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/listener/index.md',
+        title: 'BaseAudioContext: listener property',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/samplerate/index.md',
+        title: 'BaseAudioContext: sampleRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/state/index.md',
+        title: 'BaseAudioContext: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/baseaudiocontext/statechange_event/index.md',
+        title: 'BaseAudioContext: statechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/battery_status_api/index.md',
+        title: 'Battery Status API',
+    },
+    {
+        path: 'lib/javascript/web_api/batterymanager/charging/index.md',
+        title: 'BatteryManager: charging property',
+    },
+    {
+        path: 'lib/javascript/web_api/batterymanager/chargingchange_event/index.md',
+        title: 'BatteryManager: chargingchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/batterymanager/chargingtime/index.md',
+        title: 'BatteryManager: chargingTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/batterymanager/chargingtimechange_event/index.md',
+        title: 'BatteryManager: chargingtimechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/batterymanager/dischargingtime/index.md',
+        title: 'BatteryManager: dischargingTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/batterymanager/dischargingtimechange_event/index.md',
+        title: 'BatteryManager: dischargingtimechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/batterymanager/index.md',
+        title: 'BatteryManager',
+    },
+    {
+        path: 'lib/javascript/web_api/batterymanager/level/index.md',
+        title: 'BatteryManager: level property',
+    },
+    {
+        path: 'lib/javascript/web_api/batterymanager/levelchange_event/index.md',
+        title: 'BatteryManager: levelchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/beacon_api/index.md',
+        title: 'Beacon API',
+    },
+    {
+        path: 'lib/javascript/web_api/beforeinstallpromptevent/beforeinstallpromptevent/index.md',
+        title: 'BeforeInstallPromptEvent: BeforeInstallPromptEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/beforeinstallpromptevent/index.md',
+        title: 'BeforeInstallPromptEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/beforeinstallpromptevent/platforms/index.md',
+        title: 'BeforeInstallPromptEvent: platforms property',
+    },
+    {
+        path: 'lib/javascript/web_api/beforeinstallpromptevent/prompt/index.md',
+        title: 'BeforeInstallPromptEvent: prompt() method',
+    },
+    {
+        path: 'lib/javascript/web_api/beforeinstallpromptevent/userchoice/index.md',
+        title: 'BeforeInstallPromptEvent: userChoice property',
+    },
+    {
+        path: 'lib/javascript/web_api/beforeunloadevent/index.md',
+        title: 'BeforeUnloadEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/beforeunloadevent/returnvalue/index.md',
+        title: 'BeforeUnloadEvent: returnValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/biquadfilternode/biquadfilternode/index.md',
+        title: 'BiquadFilterNode: BiquadFilterNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/biquadfilternode/detune/index.md',
+        title: 'BiquadFilterNode: detune property',
+    },
+    {
+        path: 'lib/javascript/web_api/biquadfilternode/frequency/index.md',
+        title: 'BiquadFilterNode: frequency property',
+    },
+    {
+        path: 'lib/javascript/web_api/biquadfilternode/gain/index.md',
+        title: 'BiquadFilterNode: gain property',
+    },
+    {
+        path: 'lib/javascript/web_api/biquadfilternode/getfrequencyresponse/index.md',
+        title: 'BiquadFilterNode: getFrequencyResponse() method',
+    },
+    {
+        path: 'lib/javascript/web_api/biquadfilternode/index.md',
+        title: 'BiquadFilterNode',
+    },
+    {
+        path: 'lib/javascript/web_api/biquadfilternode/q/index.md',
+        title: 'BiquadFilterNode: Q property',
+    },
+    {
+        path: 'lib/javascript/web_api/biquadfilternode/type/index.md',
+        title: 'BiquadFilterNode: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/blob/arraybuffer/index.md',
+        title: 'Blob: arrayBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/blob/blob/index.md',
+        title: 'Blob: Blob() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/blob/bytes/index.md',
+        title: 'Blob: bytes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/blob/index.md',
+        title: 'Blob',
+    },
+    {
+        path: 'lib/javascript/web_api/blob/size/index.md',
+        title: 'Blob: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/blob/slice/index.md',
+        title: 'Blob: slice() method',
+    },
+    {
+        path: 'lib/javascript/web_api/blob/stream/index.md',
+        title: 'Blob: stream() method',
+    },
+    {
+        path: 'lib/javascript/web_api/blob/text/index.md',
+        title: 'Blob: text() method',
+    },
+    {
+        path: 'lib/javascript/web_api/blob/type/index.md',
+        title: 'Blob: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/blobevent/blobevent/index.md',
+        title: 'BlobEvent: BlobEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/blobevent/data/index.md',
+        title: 'BlobEvent: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/blobevent/index.md',
+        title: 'BlobEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/blobevent/timecode/index.md',
+        title: 'BlobEvent: timecode property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetooth/getavailability/index.md',
+        title: 'Bluetooth: getAvailability() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetooth/getdevices/index.md',
+        title: 'Bluetooth: getDevices() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetooth/index.md',
+        title: 'Bluetooth',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetooth/requestdevice/index.md',
+        title: 'Bluetooth: requestDevice() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothcharacteristicproperties/authenticatedsignedwrites/index.md',
+        title: 'BluetoothCharacteristicProperties: authenticatedSignedWrites property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothcharacteristicproperties/broadcast/index.md',
+        title: 'BluetoothCharacteristicProperties: broadcast property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothcharacteristicproperties/index.md',
+        title: 'BluetoothCharacteristicProperties',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothcharacteristicproperties/indicate/index.md',
+        title: 'BluetoothCharacteristicProperties: indicate property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothcharacteristicproperties/notify/index.md',
+        title: 'BluetoothCharacteristicProperties: notify property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothcharacteristicproperties/read/index.md',
+        title: 'BluetoothCharacteristicProperties: read property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothcharacteristicproperties/reliablewrite/index.md',
+        title: 'BluetoothCharacteristicProperties: reliableWrite property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothcharacteristicproperties/writableauxiliaries/index.md',
+        title: 'BluetoothCharacteristicProperties: writableAuxiliaries property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothcharacteristicproperties/write/index.md',
+        title: 'BluetoothCharacteristicProperties: write property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothcharacteristicproperties/writewithoutresponse/index.md',
+        title: 'BluetoothCharacteristicProperties: writeWithoutResponse property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothdevice/gatt/index.md',
+        title: 'BluetoothDevice: gatt property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothdevice/id/index.md',
+        title: 'BluetoothDevice: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothdevice/index.md',
+        title: 'BluetoothDevice',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothdevice/name/index.md',
+        title: 'BluetoothDevice: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/getdescriptor/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic: getDescriptor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/getdescriptors/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic: getDescriptors() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/properties/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic: properties property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/readvalue/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic: readValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/service/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic: service property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/startnotifications/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic: startNotifications() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/stopnotifications/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic: stopNotifications() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/uuid/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic: uuid property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/value/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/writevalue/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic: writeValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/writevaluewithoutresponse/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic: writeValueWithoutResponse() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattcharacteristic/writevaluewithresponse/index.md',
+        title: 'BluetoothRemoteGATTCharacteristic: writeValueWithResponse() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattdescriptor/characteristic/index.md',
+        title: 'BluetoothRemoteGATTDescriptor: characteristic property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattdescriptor/index.md',
+        title: 'BluetoothRemoteGATTDescriptor',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattdescriptor/readvalue/index.md',
+        title: 'BluetoothRemoteGATTDescriptor: readValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattdescriptor/uuid/index.md',
+        title: 'BluetoothRemoteGATTDescriptor: uuid property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattdescriptor/value/index.md',
+        title: 'BluetoothRemoteGATTDescriptor: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattdescriptor/writevalue/index.md',
+        title: 'BluetoothRemoteGATTDescriptor: writeValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattserver/connect/index.md',
+        title: 'BluetoothRemoteGATTServer: connect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattserver/connected/index.md',
+        title: 'BluetoothRemoteGATTServer: connected property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattserver/device/index.md',
+        title: 'BluetoothRemoteGATTServer: device property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattserver/disconnect/index.md',
+        title: 'BluetoothRemoteGATTServer: disconnect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattserver/getprimaryservice/index.md',
+        title: 'BluetoothRemoteGATTServer: getPrimaryService() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattserver/getprimaryservices/index.md',
+        title: 'BluetoothRemoteGATTServer: getPrimaryServices() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattserver/index.md',
+        title: 'BluetoothRemoteGATTServer',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattservice/device/index.md',
+        title: 'BluetoothRemoteGATTService: device property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattservice/getcharacteristic/index.md',
+        title: 'BluetoothRemoteGATTService: getCharacteristic() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattservice/getcharacteristics/index.md',
+        title: 'BluetoothRemoteGATTService: getCharacteristics() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattservice/index.md',
+        title: 'BluetoothRemoteGATTService',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattservice/isprimary/index.md',
+        title: 'BluetoothRemoteGATTService: isPrimary property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothremotegattservice/uuid/index.md',
+        title: 'BluetoothRemoteGATTService: uuid property',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothuuid/canonicaluuid_static/index.md',
+        title: 'BluetoothUUID: canonicalUUID() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothuuid/getcharacteristic_static/index.md',
+        title: 'BluetoothUUID: getCharacteristic() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothuuid/getdescriptor_static/index.md',
+        title: 'BluetoothUUID: getDescriptor() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothuuid/getservice_static/index.md',
+        title: 'BluetoothUUID: getService() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/bluetoothuuid/index.md',
+        title: 'BluetoothUUID',
+    },
+    {
+        path: 'lib/javascript/web_api/broadcast_channel_api/index.md',
+        title: 'Broadcast Channel API',
+    },
+    {
+        path: 'lib/javascript/web_api/broadcastchannel/broadcastchannel/index.md',
+        title: 'BroadcastChannel: BroadcastChannel() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/broadcastchannel/close/index.md',
+        title: 'BroadcastChannel: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/broadcastchannel/index.md',
+        title: 'BroadcastChannel',
+    },
+    {
+        path: 'lib/javascript/web_api/broadcastchannel/message_event/index.md',
+        title: 'BroadcastChannel: message event',
+    },
+    {
+        path: 'lib/javascript/web_api/broadcastchannel/messageerror_event/index.md',
+        title: 'BroadcastChannel: messageerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/broadcastchannel/name/index.md',
+        title: 'BroadcastChannel: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/broadcastchannel/postmessage/index.md',
+        title: 'BroadcastChannel: postMessage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/bytelengthqueuingstrategy/bytelengthqueuingstrategy/index.md',
+        title: 'ByteLengthQueuingStrategy: ByteLengthQueuingStrategy() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/bytelengthqueuingstrategy/highwatermark/index.md',
+        title: 'ByteLengthQueuingStrategy: highWaterMark property',
+    },
+    {
+        path: 'lib/javascript/web_api/bytelengthqueuingstrategy/index.md',
+        title: 'ByteLengthQueuingStrategy',
+    },
+    {
+        path: 'lib/javascript/web_api/bytelengthqueuingstrategy/size/index.md',
+        title: 'ByteLengthQueuingStrategy: size() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cache/add/index.md',
+        title: 'Cache: add() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cache/addall/index.md',
+        title: 'Cache: addAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cache/delete/index.md',
+        title: 'Cache: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cache/index.md',
+        title: 'Cache',
+    },
+    {
+        path: 'lib/javascript/web_api/cache/keys/index.md',
+        title: 'Cache: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cache/match/index.md',
+        title: 'Cache: match() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cache/matchall/index.md',
+        title: 'Cache: matchAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cache/put/index.md',
+        title: 'Cache: put() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cachestorage/delete/index.md',
+        title: 'CacheStorage: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cachestorage/has/index.md',
+        title: 'CacheStorage: has() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cachestorage/index.md',
+        title: 'CacheStorage',
+    },
+    {
+        path: 'lib/javascript/web_api/cachestorage/keys/index.md',
+        title: 'CacheStorage: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cachestorage/match/index.md',
+        title: 'CacheStorage: match() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cachestorage/open/index.md',
+        title: 'CacheStorage: open() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canmakepaymentevent/canmakepaymentevent/index.md',
+        title: 'CanMakePaymentEvent: CanMakePaymentEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/canmakepaymentevent/index.md',
+        title: 'CanMakePaymentEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/canmakepaymentevent/respondwith/index.md',
+        title: 'CanMakePaymentEvent: respondWith() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/index.md',
+        title: 'Canvas API',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/manipulating_video_using_canvas/index.md',
+        title: 'Manipulating video using canvas',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/advanced_animations/index.md',
+        title: 'Advanced animations',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/applying_styles_and_colors/index.md',
+        title: 'Applying styles and colors',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/basic_animations/index.md',
+        title: 'Basic animations',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/basic_usage/index.md',
+        title: 'Basic usage of canvas',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/compositing/index.md',
+        title: 'Compositing and clipping',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/drawing_shapes/index.md',
+        title: 'Drawing shapes with canvas',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/drawing_text/index.md',
+        title: 'Drawing text',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/finale/index.md',
+        title: 'Finale',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/index.md',
+        title: 'Canvas tutorial',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/optimizing_canvas/index.md',
+        title: 'Optimizing canvas',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/pixel_manipulation_with_canvas/index.md',
+        title: 'Pixel manipulation with canvas',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/transformations/index.md',
+        title: 'Transformations',
+    },
+    {
+        path: 'lib/javascript/web_api/canvas_api/tutorial/using_images/index.md',
+        title: 'Using images',
+    },
+    {
+        path: 'lib/javascript/web_api/canvascapturemediastreamtrack/canvas/index.md',
+        title: 'CanvasCaptureMediaStreamTrack: canvas property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvascapturemediastreamtrack/index.md',
+        title: 'CanvasCaptureMediaStreamTrack',
+    },
+    {
+        path: 'lib/javascript/web_api/canvascapturemediastreamtrack/requestframe/index.md',
+        title: 'CanvasCaptureMediaStreamTrack: requestFrame() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasgradient/addcolorstop/index.md',
+        title: 'CanvasGradient: addColorStop() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasgradient/index.md',
+        title: 'CanvasGradient',
+    },
+    {
+        path: 'lib/javascript/web_api/canvaspattern/index.md',
+        title: 'CanvasPattern',
+    },
+    {
+        path: 'lib/javascript/web_api/canvaspattern/settransform/index.md',
+        title: 'CanvasPattern: setTransform() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/arc/index.md',
+        title: 'CanvasRenderingContext2D: arc() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/arcto/index.md',
+        title: 'CanvasRenderingContext2D: arcTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/beginpath/index.md',
+        title: 'CanvasRenderingContext2D: beginPath() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/beziercurveto/index.md',
+        title: 'CanvasRenderingContext2D: bezierCurveTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/canvas/index.md',
+        title: 'CanvasRenderingContext2D: canvas property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/clearrect/index.md',
+        title: 'CanvasRenderingContext2D: clearRect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/clip/index.md',
+        title: 'CanvasRenderingContext2D: clip() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/closepath/index.md',
+        title: 'CanvasRenderingContext2D: closePath() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/createconicgradient/index.md',
+        title: 'CanvasRenderingContext2D: createConicGradient() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/createimagedata/index.md',
+        title: 'CanvasRenderingContext2D: createImageData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/createlineargradient/index.md',
+        title: 'CanvasRenderingContext2D: createLinearGradient() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/createpattern/index.md',
+        title: 'CanvasRenderingContext2D: createPattern() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/createradialgradient/index.md',
+        title: 'CanvasRenderingContext2D: createRadialGradient() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/direction/index.md',
+        title: 'CanvasRenderingContext2D: direction property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/drawfocusifneeded/index.md',
+        title: 'CanvasRenderingContext2D: drawFocusIfNeeded() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/drawimage/index.md',
+        title: 'CanvasRenderingContext2D: drawImage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/ellipse/index.md',
+        title: 'CanvasRenderingContext2D: ellipse() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/fill/index.md',
+        title: 'CanvasRenderingContext2D: fill() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/fillrect/index.md',
+        title: 'CanvasRenderingContext2D: fillRect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/fillstyle/index.md',
+        title: 'CanvasRenderingContext2D: fillStyle property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/filltext/index.md',
+        title: 'CanvasRenderingContext2D: fillText() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/filter/index.md',
+        title: 'CanvasRenderingContext2D: filter property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/font/index.md',
+        title: 'CanvasRenderingContext2D: font property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/fontkerning/index.md',
+        title: 'CanvasRenderingContext2D: fontKerning property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/fontstretch/index.md',
+        title: 'CanvasRenderingContext2D: fontStretch property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/fontvariantcaps/index.md',
+        title: 'CanvasRenderingContext2D: fontVariantCaps property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/getcontextattributes/index.md',
+        title: 'CanvasRenderingContext2D: getContextAttributes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/getimagedata/index.md',
+        title: 'CanvasRenderingContext2D: getImageData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/getlinedash/index.md',
+        title: 'CanvasRenderingContext2D: getLineDash() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/gettransform/index.md',
+        title: 'CanvasRenderingContext2D: getTransform() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/globalalpha/index.md',
+        title: 'CanvasRenderingContext2D: globalAlpha property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/globalcompositeoperation/index.md',
+        title: 'CanvasRenderingContext2D: globalCompositeOperation property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/imagesmoothingenabled/index.md',
+        title: 'CanvasRenderingContext2D: imageSmoothingEnabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/imagesmoothingquality/index.md',
+        title: 'CanvasRenderingContext2D: imageSmoothingQuality property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/index.md',
+        title: 'CanvasRenderingContext2D',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/iscontextlost/index.md',
+        title: 'CanvasRenderingContext2D: isContextLost() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/ispointinpath/index.md',
+        title: 'CanvasRenderingContext2D: isPointInPath() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/ispointinstroke/index.md',
+        title: 'CanvasRenderingContext2D: isPointInStroke() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/letterspacing/index.md',
+        title: 'CanvasRenderingContext2D: letterSpacing property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/linecap/index.md',
+        title: 'CanvasRenderingContext2D: lineCap property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/linedashoffset/index.md',
+        title: 'CanvasRenderingContext2D: lineDashOffset property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/linejoin/index.md',
+        title: 'CanvasRenderingContext2D: lineJoin property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/lineto/index.md',
+        title: 'CanvasRenderingContext2D: lineTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/linewidth/index.md',
+        title: 'CanvasRenderingContext2D: lineWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/measuretext/index.md',
+        title: 'CanvasRenderingContext2D: measureText() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/miterlimit/index.md',
+        title: 'CanvasRenderingContext2D: miterLimit property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/moveto/index.md',
+        title: 'CanvasRenderingContext2D: moveTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/putimagedata/index.md',
+        title: 'CanvasRenderingContext2D: putImageData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/quadraticcurveto/index.md',
+        title: 'CanvasRenderingContext2D: quadraticCurveTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/rect/index.md',
+        title: 'CanvasRenderingContext2D: rect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/reset/index.md',
+        title: 'CanvasRenderingContext2D: reset() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/resettransform/index.md',
+        title: 'CanvasRenderingContext2D: resetTransform() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/restore/index.md',
+        title: 'CanvasRenderingContext2D: restore() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/rotate/index.md',
+        title: 'CanvasRenderingContext2D: rotate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/roundrect/index.md',
+        title: 'CanvasRenderingContext2D: roundRect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/save/index.md',
+        title: 'CanvasRenderingContext2D: save() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/scale/index.md',
+        title: 'CanvasRenderingContext2D: scale() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/setlinedash/index.md',
+        title: 'CanvasRenderingContext2D: setLineDash() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/settransform/index.md',
+        title: 'CanvasRenderingContext2D: setTransform() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/shadowblur/index.md',
+        title: 'CanvasRenderingContext2D: shadowBlur property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/shadowcolor/index.md',
+        title: 'CanvasRenderingContext2D: shadowColor property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/shadowoffsetx/index.md',
+        title: 'CanvasRenderingContext2D: shadowOffsetX property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/shadowoffsety/index.md',
+        title: 'CanvasRenderingContext2D: shadowOffsetY property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/stroke/index.md',
+        title: 'CanvasRenderingContext2D: stroke() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/strokerect/index.md',
+        title: 'CanvasRenderingContext2D: strokeRect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/strokestyle/index.md',
+        title: 'CanvasRenderingContext2D: strokeStyle property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/stroketext/index.md',
+        title: 'CanvasRenderingContext2D: strokeText() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/textalign/index.md',
+        title: 'CanvasRenderingContext2D: textAlign property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/textbaseline/index.md',
+        title: 'CanvasRenderingContext2D: textBaseline property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/textrendering/index.md',
+        title: 'CanvasRenderingContext2D: textRendering property',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/transform/index.md',
+        title: 'CanvasRenderingContext2D: transform() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/translate/index.md',
+        title: 'CanvasRenderingContext2D: translate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/canvasrenderingcontext2d/wordspacing/index.md',
+        title: 'CanvasRenderingContext2D: wordSpacing property',
+    },
+    {
+        path: 'lib/javascript/web_api/capturecontroller/capturecontroller/index.md',
+        title: 'CaptureController: CaptureController() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/capturecontroller/index.md',
+        title: 'CaptureController',
+    },
+    {
+        path: 'lib/javascript/web_api/capturecontroller/setfocusbehavior/index.md',
+        title: 'CaptureController: setFocusBehavior() method',
+    },
+    {
+        path: 'lib/javascript/web_api/caretposition/index.md',
+        title: 'CaretPosition',
+    },
+    {
+        path: 'lib/javascript/web_api/cdatasection/index.md',
+        title: 'CDATASection',
+    },
+    {
+        path: 'lib/javascript/web_api/channel_messaging_api/index.md',
+        title: 'Channel Messaging API',
+    },
+    {
+        path: 'lib/javascript/web_api/channel_messaging_api/using_channel_messaging/index.md',
+        title: 'Using channel messaging',
+    },
+    {
+        path: 'lib/javascript/web_api/channelmergernode/channelmergernode/index.md',
+        title: 'ChannelMergerNode: ChannelMergerNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/channelmergernode/index.md',
+        title: 'ChannelMergerNode',
+    },
+    {
+        path: 'lib/javascript/web_api/channelsplitternode/channelsplitternode/index.md',
+        title: 'ChannelSplitterNode: ChannelSplitterNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/channelsplitternode/index.md',
+        title: 'ChannelSplitterNode',
+    },
+    {
+        path: 'lib/javascript/web_api/characterboundsupdateevent/characterboundsupdateevent/index.md',
+        title: 'CharacterBoundsUpdateEvent: CharacterBoundsUpdateEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/characterboundsupdateevent/index.md',
+        title: 'CharacterBoundsUpdateEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/characterboundsupdateevent/rangeend/index.md',
+        title: 'CharacterBoundsUpdateEvent: rangeEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/characterboundsupdateevent/rangestart/index.md',
+        title: 'CharacterBoundsUpdateEvent: rangeStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/after/index.md',
+        title: 'CharacterData: after() method',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/appenddata/index.md',
+        title: 'CharacterData: appendData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/before/index.md',
+        title: 'CharacterData: before() method',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/data/index.md',
+        title: 'CharacterData: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/deletedata/index.md',
+        title: 'CharacterData: deleteData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/index.md',
+        title: 'CharacterData',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/insertdata/index.md',
+        title: 'CharacterData: insertData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/length/index.md',
+        title: 'CharacterData: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/nextelementsibling/index.md',
+        title: 'CharacterData: nextElementSibling property',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/previouselementsibling/index.md',
+        title: 'CharacterData: previousElementSibling property',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/remove/index.md',
+        title: 'CharacterData: remove() method',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/replacedata/index.md',
+        title: 'CharacterData: replaceData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/replacewith/index.md',
+        title: 'CharacterData: replaceWith() method',
+    },
+    {
+        path: 'lib/javascript/web_api/characterdata/substringdata/index.md',
+        title: 'CharacterData: substringData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/clearinterval/index.md',
+        title: 'clearInterval() global function',
+    },
+    {
+        path: 'lib/javascript/web_api/cleartimeout/index.md',
+        title: 'clearTimeout() global function',
+    },
+    {
+        path: 'lib/javascript/web_api/client/frametype/index.md',
+        title: 'Client: frameType property',
+    },
+    {
+        path: 'lib/javascript/web_api/client/id/index.md',
+        title: 'Client: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/client/index.md',
+        title: 'Client',
+    },
+    {
+        path: 'lib/javascript/web_api/client/postmessage/index.md',
+        title: 'Client: postMessage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/client/type/index.md',
+        title: 'Client: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/client/url/index.md',
+        title: 'Client: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/clients/claim/index.md',
+        title: 'Clients: claim() method',
+    },
+    {
+        path: 'lib/javascript/web_api/clients/get/index.md',
+        title: 'Clients: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/clients/index.md',
+        title: 'Clients',
+    },
+    {
+        path: 'lib/javascript/web_api/clients/matchall/index.md',
+        title: 'Clients: matchAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/clients/openwindow/index.md',
+        title: 'Clients: openWindow() method',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboard/index.md',
+        title: 'Clipboard',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboard/read/index.md',
+        title: 'Clipboard: read() method',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboard/readtext/index.md',
+        title: 'Clipboard: readText() method',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboard/write/index.md',
+        title: 'Clipboard: write() method',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboard/writetext/index.md',
+        title: 'Clipboard: writeText() method',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboard_api/index.md',
+        title: 'Clipboard API',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboardevent/clipboarddata/index.md',
+        title: 'ClipboardEvent: clipboardData property',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboardevent/clipboardevent/index.md',
+        title: 'ClipboardEvent: ClipboardEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboardevent/index.md',
+        title: 'ClipboardEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboarditem/clipboarditem/index.md',
+        title: 'ClipboardItem: ClipboardItem() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboarditem/gettype/index.md',
+        title: 'ClipboardItem: getType() method',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboarditem/index.md',
+        title: 'ClipboardItem',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboarditem/presentationstyle/index.md',
+        title: 'ClipboardItem: presentationStyle property',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboarditem/supports_static/index.md',
+        title: 'ClipboardItem: supports() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/clipboarditem/types/index.md',
+        title: 'ClipboardItem: types property',
+    },
+    {
+        path: 'lib/javascript/web_api/closeevent/closeevent/index.md',
+        title: 'CloseEvent: CloseEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/closeevent/code/index.md',
+        title: 'CloseEvent: code property',
+    },
+    {
+        path: 'lib/javascript/web_api/closeevent/index.md',
+        title: 'CloseEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/closeevent/reason/index.md',
+        title: 'CloseEvent: reason property',
+    },
+    {
+        path: 'lib/javascript/web_api/closeevent/wasclean/index.md',
+        title: 'CloseEvent: wasClean property',
+    },
+    {
+        path: 'lib/javascript/web_api/closewatcher/cancel_event/index.md',
+        title: 'CloseWatcher: cancel event',
+    },
+    {
+        path: 'lib/javascript/web_api/closewatcher/close/index.md',
+        title: 'CloseWatcher: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/closewatcher/close_event/index.md',
+        title: 'CloseWatcher: close event',
+    },
+    {
+        path: 'lib/javascript/web_api/closewatcher/closewatcher/index.md',
+        title: 'CloseWatcher: CloseWatcher() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/closewatcher/destroy/index.md',
+        title: 'CloseWatcher: destroy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/closewatcher/index.md',
+        title: 'CloseWatcher',
+    },
+    {
+        path: 'lib/javascript/web_api/closewatcher/requestclose/index.md',
+        title: 'CloseWatcher: requestClose() method',
+    },
+    {
+        path: 'lib/javascript/web_api/comment/comment/index.md',
+        title: 'Comment: Comment() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/comment/index.md',
+        title: 'Comment',
+    },
+    {
+        path: 'lib/javascript/web_api/compositionevent/compositionevent/index.md',
+        title: 'CompositionEvent: CompositionEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/compositionevent/data/index.md',
+        title: 'CompositionEvent: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/compositionevent/index.md',
+        title: 'CompositionEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/compositionevent/initcompositionevent/index.md',
+        title: 'CompositionEvent: initCompositionEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/compositionevent/locale/index.md',
+        title: 'CompositionEvent: locale property',
+    },
+    {
+        path: 'lib/javascript/web_api/compression_streams_api/index.md',
+        title: 'Compression Streams API',
+    },
+    {
+        path: 'lib/javascript/web_api/compressionstream/compressionstream/index.md',
+        title: 'CompressionStream: CompressionStream() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/compressionstream/index.md',
+        title: 'CompressionStream',
+    },
+    {
+        path: 'lib/javascript/web_api/compressionstream/readable/index.md',
+        title: 'CompressionStream: readable property',
+    },
+    {
+        path: 'lib/javascript/web_api/compressionstream/writable/index.md',
+        title: 'CompressionStream: writable property',
+    },
+    {
+        path: 'lib/javascript/web_api/compute_pressure_api/index.md',
+        title: 'Compute Pressure API',
+    },
+    {
+        path: 'lib/javascript/web_api/console/assert_static/index.md',
+        title: 'console: assert() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/clear_static/index.md',
+        title: 'console: clear() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/count_static/index.md',
+        title: 'console: count() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/countreset_static/index.md',
+        title: 'console: countReset() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/debug_static/index.md',
+        title: 'console: debug() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/dir_static/index.md',
+        title: 'console: dir() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/dirxml_static/index.md',
+        title: 'console: dirxml() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/error_static/index.md',
+        title: 'console: error() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/group_static/index.md',
+        title: 'console: group() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/groupcollapsed_static/index.md',
+        title: 'console: groupCollapsed() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/groupend_static/index.md',
+        title: 'console: groupEnd() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/index.md',
+        title: 'console',
+    },
+    {
+        path: 'lib/javascript/web_api/console/info_static/index.md',
+        title: 'console: info() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/log_static/index.md',
+        title: 'console: log() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/profile_static/index.md',
+        title: 'console: profile() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/profileend_static/index.md',
+        title: 'console: profileEnd() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/table_static/index.md',
+        title: 'console: table() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/time_static/index.md',
+        title: 'console: time() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/timeend_static/index.md',
+        title: 'console: timeEnd() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/timelog_static/index.md',
+        title: 'console: timeLog() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/timestamp_static/index.md',
+        title: 'console: timeStamp() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/trace_static/index.md',
+        title: 'console: trace() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console/warn_static/index.md',
+        title: 'console: warn() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/console_api/index.md',
+        title: 'Console API',
+    },
+    {
+        path: 'lib/javascript/web_api/constantsourcenode/constantsourcenode/index.md',
+        title: 'ConstantSourceNode: ConstantSourceNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/constantsourcenode/index.md',
+        title: 'ConstantSourceNode',
+    },
+    {
+        path: 'lib/javascript/web_api/constantsourcenode/offset/index.md',
+        title: 'ConstantSourceNode: offset property',
+    },
+    {
+        path: 'lib/javascript/web_api/contact_picker_api/index.md',
+        title: 'Contact Picker API',
+    },
+    {
+        path: 'lib/javascript/web_api/contactaddress/addressline/index.md',
+        title: 'ContactAddress: addressLine property',
+    },
+    {
+        path: 'lib/javascript/web_api/contactaddress/city/index.md',
+        title: 'ContactAddress: city property',
+    },
+    {
+        path: 'lib/javascript/web_api/contactaddress/country/index.md',
+        title: 'ContactAddress: country property',
+    },
+    {
+        path: 'lib/javascript/web_api/contactaddress/dependentlocality/index.md',
+        title: 'ContactAddress: dependentLocality property',
+    },
+    {
+        path: 'lib/javascript/web_api/contactaddress/index.md',
+        title: 'ContactAddress',
+    },
+    {
+        path: 'lib/javascript/web_api/contactaddress/organization/index.md',
+        title: 'ContactAddress: organization property',
+    },
+    {
+        path: 'lib/javascript/web_api/contactaddress/phone/index.md',
+        title: 'ContactAddress: phone property',
+    },
+    {
+        path: 'lib/javascript/web_api/contactaddress/postalcode/index.md',
+        title: 'ContactAddress: postalCode property',
+    },
+    {
+        path: 'lib/javascript/web_api/contactaddress/recipient/index.md',
+        title: 'ContactAddress: recipient property',
+    },
+    {
+        path: 'lib/javascript/web_api/contactaddress/region/index.md',
+        title: 'ContactAddress: region property',
+    },
+    {
+        path: 'lib/javascript/web_api/contactaddress/sortingcode/index.md',
+        title: 'ContactAddress: sortingCode property',
+    },
+    {
+        path: 'lib/javascript/web_api/contactaddress/tojson/index.md',
+        title: 'ContactAddress: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/contactsmanager/getproperties/index.md',
+        title: 'ContactsManager: getProperties() method',
+    },
+    {
+        path: 'lib/javascript/web_api/contactsmanager/index.md',
+        title: 'ContactsManager',
+    },
+    {
+        path: 'lib/javascript/web_api/contactsmanager/select/index.md',
+        title: 'ContactsManager: select() method',
+    },
+    {
+        path: 'lib/javascript/web_api/content_index_api/index.md',
+        title: 'Content Index API',
+    },
+    {
+        path: 'lib/javascript/web_api/contentindex/add/index.md',
+        title: 'ContentIndex: add() method',
+    },
+    {
+        path: 'lib/javascript/web_api/contentindex/delete/index.md',
+        title: 'ContentIndex: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/contentindex/getall/index.md',
+        title: 'ContentIndex: getAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/contentindex/index.md',
+        title: 'ContentIndex',
+    },
+    {
+        path: 'lib/javascript/web_api/contentindexevent/contentindexevent/index.md',
+        title: 'ContentIndexEvent: ContentIndexEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/contentindexevent/id/index.md',
+        title: 'ContentIndexEvent: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/contentindexevent/index.md',
+        title: 'ContentIndexEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/contentvisibilityautostatechangeevent/contentvisibilityautostatechangeevent/index.md',
+        title: 'ContentVisibilityAutoStateChangeEvent: ContentVisibilityAutoStateChangeEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/contentvisibilityautostatechangeevent/index.md',
+        title: 'ContentVisibilityAutoStateChangeEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/contentvisibilityautostatechangeevent/skipped/index.md',
+        title: 'ContentVisibilityAutoStateChangeEvent: skipped property',
+    },
+    {
+        path: 'lib/javascript/web_api/convolvernode/buffer/index.md',
+        title: 'ConvolverNode: buffer property',
+    },
+    {
+        path: 'lib/javascript/web_api/convolvernode/convolvernode/index.md',
+        title: 'ConvolverNode: ConvolverNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/convolvernode/index.md',
+        title: 'ConvolverNode',
+    },
+    {
+        path: 'lib/javascript/web_api/convolvernode/normalize/index.md',
+        title: 'ConvolverNode: normalize property',
+    },
+    {
+        path: 'lib/javascript/web_api/cookie_store_api/index.md',
+        title: 'Cookie Store API',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiechangeevent/changed/index.md',
+        title: 'CookieChangeEvent: changed property',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiechangeevent/cookiechangeevent/index.md',
+        title: 'CookieChangeEvent: CookieChangeEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiechangeevent/deleted/index.md',
+        title: 'CookieChangeEvent: deleted property',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiechangeevent/index.md',
+        title: 'CookieChangeEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiestore/change_event/index.md',
+        title: 'CookieStore: change event',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiestore/delete/index.md',
+        title: 'CookieStore: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiestore/get/index.md',
+        title: 'CookieStore: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiestore/getall/index.md',
+        title: 'CookieStore: getAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiestore/index.md',
+        title: 'CookieStore',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiestore/set/index.md',
+        title: 'CookieStore: set() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiestoremanager/getsubscriptions/index.md',
+        title: 'CookieStoreManager: getSubscriptions() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiestoremanager/index.md',
+        title: 'CookieStoreManager',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiestoremanager/subscribe/index.md',
+        title: 'CookieStoreManager: subscribe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cookiestoremanager/unsubscribe/index.md',
+        title: 'CookieStoreManager: unsubscribe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/countqueuingstrategy/countqueuingstrategy/index.md',
+        title: 'CountQueuingStrategy: CountQueuingStrategy() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/countqueuingstrategy/highwatermark/index.md',
+        title: 'CountQueuingStrategy: highWaterMark property',
+    },
+    {
+        path: 'lib/javascript/web_api/countqueuingstrategy/index.md',
+        title: 'CountQueuingStrategy',
+    },
+    {
+        path: 'lib/javascript/web_api/countqueuingstrategy/size/index.md',
+        title: 'CountQueuingStrategy: size() method',
+    },
+    {
+        path: 'lib/javascript/web_api/createimagebitmap/index.md',
+        title: 'createImageBitmap() global function',
+    },
+    {
+        path: 'lib/javascript/web_api/credential/id/index.md',
+        title: 'Credential: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/credential/index.md',
+        title: 'Credential',
+    },
+    {
+        path: 'lib/javascript/web_api/credential/type/index.md',
+        title: 'Credential: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/credential_management_api/credential_types/index.md',
+        title: 'Credential types',
+    },
+    {
+        path: 'lib/javascript/web_api/credential_management_api/index.md',
+        title: 'Credential Management API',
+    },
+    {
+        path: 'lib/javascript/web_api/credentialscontainer/create/index.md',
+        title: 'CredentialsContainer: create() method',
+    },
+    {
+        path: 'lib/javascript/web_api/credentialscontainer/get/index.md',
+        title: 'CredentialsContainer: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/credentialscontainer/index.md',
+        title: 'CredentialsContainer',
+    },
+    {
+        path: 'lib/javascript/web_api/credentialscontainer/preventsilentaccess/index.md',
+        title: 'CredentialsContainer: preventSilentAccess() method',
+    },
+    {
+        path: 'lib/javascript/web_api/credentialscontainer/store/index.md',
+        title: 'CredentialsContainer: store() method',
+    },
+    {
+        path: 'lib/javascript/web_api/crypto/getrandomvalues/index.md',
+        title: 'Crypto: getRandomValues() method',
+    },
+    {
+        path: 'lib/javascript/web_api/crypto/index.md',
+        title: 'Crypto',
+    },
+    {
+        path: 'lib/javascript/web_api/crypto/randomuuid/index.md',
+        title: 'Crypto: randomUUID() method',
+    },
+    {
+        path: 'lib/javascript/web_api/crypto/subtle/index.md',
+        title: 'Crypto: subtle property',
+    },
+    {
+        path: 'lib/javascript/web_api/cryptokey/algorithm/index.md',
+        title: 'CryptoKey: algorithm property',
+    },
+    {
+        path: 'lib/javascript/web_api/cryptokey/extractable/index.md',
+        title: 'CryptoKey: extractable property',
+    },
+    {
+        path: 'lib/javascript/web_api/cryptokey/index.md',
+        title: 'CryptoKey',
+    },
+    {
+        path: 'lib/javascript/web_api/cryptokey/type/index.md',
+        title: 'CryptoKey: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/cryptokey/usages/index.md',
+        title: 'CryptoKey: usages property',
+    },
+    {
+        path: 'lib/javascript/web_api/cryptokeypair/index.md',
+        title: 'CryptoKeyPair',
+    },
+    {
+        path: 'lib/javascript/web_api/cspviolationreportbody/index.md',
+        title: 'CSPViolationReportBody',
+    },
+    {
+        path: 'lib/javascript/web_api/css/escape_static/index.md',
+        title: 'CSS: escape() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/css/factory_functions_static/index.md',
+        title: 'CSS numeric factory functions',
+    },
+    {
+        path: 'lib/javascript/web_api/css/highlights_static/index.md',
+        title: 'CSS: highlights static property',
+    },
+    {
+        path: 'lib/javascript/web_api/css/index.md',
+        title: 'CSS',
+    },
+    {
+        path: 'lib/javascript/web_api/css/paintworklet_static/index.md',
+        title: 'CSS: paintWorklet static property',
+    },
+    {
+        path: 'lib/javascript/web_api/css/registerproperty_static/index.md',
+        title: 'CSS: registerProperty() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/css/supports_static/index.md',
+        title: 'CSS: supports() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/css_counter_styles/index.md',
+        title: 'CSS Counter Styles',
+    },
+    {
+        path: 'lib/javascript/web_api/css_custom_highlight_api/index.md',
+        title: 'CSS Custom Highlight API',
+    },
+    {
+        path: 'lib/javascript/web_api/css_font_loading_api/index.md',
+        title: 'CSS Font Loading API',
+    },
+    {
+        path: 'lib/javascript/web_api/css_object_model/css_declaration/index.md',
+        title: 'CSS Declaration',
+    },
+    {
+        path: 'lib/javascript/web_api/css_object_model/css_declaration_block/index.md',
+        title: 'CSS Declaration Block',
+    },
+    {
+        path: 'lib/javascript/web_api/css_object_model/determining_the_dimensions_of_elements/index.md',
+        title: 'Determining the dimensions of elements',
+    },
+    {
+        path: 'lib/javascript/web_api/css_object_model/index.md',
+        title: 'CSS Object Model (CSSOM)',
+    },
+    {
+        path: 'lib/javascript/web_api/css_object_model/managing_screen_orientation/index.md',
+        title: 'Managing screen orientation',
+    },
+    {
+        path: 'lib/javascript/web_api/css_object_model/using_dynamic_styling_information/index.md',
+        title: 'Using dynamic styling information',
+    },
+    {
+        path: 'lib/javascript/web_api/css_painting_api/guide/index.md',
+        title: 'Using the CSS Painting API',
+    },
+    {
+        path: 'lib/javascript/web_api/css_painting_api/index.md',
+        title: 'CSS Painting API',
+    },
+    {
+        path: 'lib/javascript/web_api/css_properties_and_values_api/guide/index.md',
+        title: 'Using the CSS properties and values API',
+    },
+    {
+        path: 'lib/javascript/web_api/css_properties_and_values_api/index.md',
+        title: 'CSS Properties and Values API',
+    },
+    {
+        path: 'lib/javascript/web_api/css_typed_om_api/guide/index.md',
+        title: 'Using the CSS Typed Object Model',
+    },
+    {
+        path: 'lib/javascript/web_api/css_typed_om_api/index.md',
+        title: 'CSS Typed Object Model API',
+    },
+    {
+        path: 'lib/javascript/web_api/cssanimation/animationname/index.md',
+        title: 'CSSAnimation: animationName property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssanimation/index.md',
+        title: 'CSSAnimation',
+    },
+    {
+        path: 'lib/javascript/web_api/cssconditionrule/conditiontext/index.md',
+        title: 'CSSConditionRule: conditionText property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssconditionrule/index.md',
+        title: 'CSSConditionRule',
+    },
+    {
+        path: 'lib/javascript/web_api/csscontainerrule/containername/index.md',
+        title: 'CSSContainerRule: containerName property',
+    },
+    {
+        path: 'lib/javascript/web_api/csscontainerrule/containerquery/index.md',
+        title: 'CSSContainerRule: containerQuery property',
+    },
+    {
+        path: 'lib/javascript/web_api/csscontainerrule/index.md',
+        title: 'CSSContainerRule',
+    },
+    {
+        path: 'lib/javascript/web_api/csscounterstylerule/additivesymbols/index.md',
+        title: 'CSSCounterStyleRule: additiveSymbols property',
+    },
+    {
+        path: 'lib/javascript/web_api/csscounterstylerule/fallback/index.md',
+        title: 'CSSCounterStyleRule: fallback property',
+    },
+    {
+        path: 'lib/javascript/web_api/csscounterstylerule/index.md',
+        title: 'CSSCounterStyleRule',
+    },
+    {
+        path: 'lib/javascript/web_api/csscounterstylerule/name/index.md',
+        title: 'CSSCounterStyleRule: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/csscounterstylerule/negative/index.md',
+        title: 'CSSCounterStyleRule: negative property',
+    },
+    {
+        path: 'lib/javascript/web_api/csscounterstylerule/pad/index.md',
+        title: 'CSSCounterStyleRule: pad property',
+    },
+    {
+        path: 'lib/javascript/web_api/csscounterstylerule/prefix/index.md',
+        title: 'CSSCounterStyleRule: prefix property',
+    },
+    {
+        path: 'lib/javascript/web_api/csscounterstylerule/range/index.md',
+        title: 'CSSCounterStyleRule: range property',
+    },
+    {
+        path: 'lib/javascript/web_api/csscounterstylerule/speakas/index.md',
+        title: 'CSSCounterStyleRule: speakAs property',
+    },
+    {
+        path: 'lib/javascript/web_api/csscounterstylerule/suffix/index.md',
+        title: 'CSSCounterStyleRule: suffix property',
+    },
+    {
+        path: 'lib/javascript/web_api/csscounterstylerule/symbols/index.md',
+        title: 'CSSCounterStyleRule: symbols property',
+    },
+    {
+        path: 'lib/javascript/web_api/csscounterstylerule/system/index.md',
+        title: 'CSSCounterStyleRule: system property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssfontfacerule/index.md',
+        title: 'CSSFontFaceRule',
+    },
+    {
+        path: 'lib/javascript/web_api/cssfontfacerule/style/index.md',
+        title: 'CSSFontFaceRule: style property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssfontfeaturevaluesrule/fontfamily/index.md',
+        title: 'CSSFontFeatureValuesRule: fontFamily property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssfontfeaturevaluesrule/index.md',
+        title: 'CSSFontFeatureValuesRule',
+    },
+    {
+        path: 'lib/javascript/web_api/cssfontpalettevaluesrule/basepalette/index.md',
+        title: 'CSSFontPaletteValuesRule: basePalette property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssfontpalettevaluesrule/fontfamily/index.md',
+        title: 'CSSFontPaletteValuesRule: fontFamily property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssfontpalettevaluesrule/index.md',
+        title: 'CSSFontPaletteValuesRule',
+    },
+    {
+        path: 'lib/javascript/web_api/cssfontpalettevaluesrule/name/index.md',
+        title: 'CSSFontPaletteValuesRule: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssfontpalettevaluesrule/overridecolors/index.md',
+        title: 'CSSFontPaletteValuesRule: overrideColors property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssgroupingrule/cssrules/index.md',
+        title: 'CSSGroupingRule: cssRules property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssgroupingrule/deleterule/index.md',
+        title: 'CSSGroupingRule: deleteRule() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssgroupingrule/index.md',
+        title: 'CSSGroupingRule',
+    },
+    {
+        path: 'lib/javascript/web_api/cssgroupingrule/insertrule/index.md',
+        title: 'CSSGroupingRule: insertRule() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssimagevalue/index.md',
+        title: 'CSSImageValue',
+    },
+    {
+        path: 'lib/javascript/web_api/cssimportrule/href/index.md',
+        title: 'CSSImportRule: href property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssimportrule/index.md',
+        title: 'CSSImportRule',
+    },
+    {
+        path: 'lib/javascript/web_api/cssimportrule/layername/index.md',
+        title: 'CSSImportRule: layerName property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssimportrule/media/index.md',
+        title: 'CSSImportRule: media property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssimportrule/stylesheet/index.md',
+        title: 'CSSImportRule: stylesheet property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssimportrule/supportstext/index.md',
+        title: 'CSSImportRule: supportsText property',
+    },
+    {
+        path: 'lib/javascript/web_api/csskeyframerule/index.md',
+        title: 'CSSKeyframeRule',
+    },
+    {
+        path: 'lib/javascript/web_api/csskeyframerule/keytext/index.md',
+        title: 'CSSKeyframeRule: keyText property',
+    },
+    {
+        path: 'lib/javascript/web_api/csskeyframerule/style/index.md',
+        title: 'CSSKeyframeRule: style property',
+    },
+    {
+        path: 'lib/javascript/web_api/csskeyframesrule/appendrule/index.md',
+        title: 'CSSKeyframesRule: appendRule() method',
+    },
+    {
+        path: 'lib/javascript/web_api/csskeyframesrule/cssrules/index.md',
+        title: 'CSSKeyframesRule: cssRules property',
+    },
+    {
+        path: 'lib/javascript/web_api/csskeyframesrule/deleterule/index.md',
+        title: 'CSSKeyframesRule: deleteRule() method',
+    },
+    {
+        path: 'lib/javascript/web_api/csskeyframesrule/findrule/index.md',
+        title: 'CSSKeyframesRule: findRule() method',
+    },
+    {
+        path: 'lib/javascript/web_api/csskeyframesrule/index.md',
+        title: 'CSSKeyframesRule',
+    },
+    {
+        path: 'lib/javascript/web_api/csskeyframesrule/name/index.md',
+        title: 'CSSKeyframesRule: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/csskeywordvalue/csskeywordvalue/index.md',
+        title: 'CSSKeywordValue: CSSKeywordValue() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/csskeywordvalue/index.md',
+        title: 'CSSKeywordValue',
+    },
+    {
+        path: 'lib/javascript/web_api/csskeywordvalue/value/index.md',
+        title: 'CSSKeywordValue: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/csslayerblockrule/index.md',
+        title: 'CSSLayerBlockRule',
+    },
+    {
+        path: 'lib/javascript/web_api/csslayerblockrule/name/index.md',
+        title: 'CSSLayerBlockRule: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/csslayerstatementrule/index.md',
+        title: 'CSSLayerStatementRule',
+    },
+    {
+        path: 'lib/javascript/web_api/csslayerstatementrule/namelist/index.md',
+        title: 'CSSLayerStatementRule: nameList property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathinvert/cssmathinvert/index.md',
+        title: 'CSSMathInvert: CSSMathInvert() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathinvert/index.md',
+        title: 'CSSMathInvert',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathinvert/value/index.md',
+        title: 'CSSMathInvert: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathmax/cssmathmax/index.md',
+        title: 'CSSMathMax: CSSMathMax() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathmax/index.md',
+        title: 'CSSMathMax',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathmax/values/index.md',
+        title: 'CSSMathMax: values property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathmin/cssmathmin/index.md',
+        title: 'CSSMathMin: CSSMathMin() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathmin/index.md',
+        title: 'CSSMathMin',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathmin/values/index.md',
+        title: 'CSSMathMin: values property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathnegate/cssmathnegate/index.md',
+        title: 'CSSMathNegate: CSSMathNegate() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathnegate/index.md',
+        title: 'CSSMathNegate',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathnegate/value/index.md',
+        title: 'CSSMathNegate: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathproduct/cssmathproduct/index.md',
+        title: 'CSSMathProduct: CSSMathProduct() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathproduct/index.md',
+        title: 'CSSMathProduct',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathproduct/values/index.md',
+        title: 'CSSMathProduct: values property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathsum/cssmathsum/index.md',
+        title: 'CSSMathSum: CSSMathSum() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathsum/index.md',
+        title: 'CSSMathSum',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathsum/values/index.md',
+        title: 'CSSMathSum: values property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathvalue/index.md',
+        title: 'CSSMathValue',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmathvalue/operator/index.md',
+        title: 'CSSMathValue: operator property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmatrixcomponent/cssmatrixcomponent/index.md',
+        title: 'CSSMatrixComponent: CSSMatrixComponent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmatrixcomponent/index.md',
+        title: 'CSSMatrixComponent',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmatrixcomponent/matrix/index.md',
+        title: 'CSSMatrixComponent: matrix property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmediarule/index.md',
+        title: 'CSSMediaRule',
+    },
+    {
+        path: 'lib/javascript/web_api/cssmediarule/media/index.md',
+        title: 'CSSMediaRule: media property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnamespacerule/index.md',
+        title: 'CSSNamespaceRule',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnamespacerule/namespaceuri/index.md',
+        title: 'CSSNamespaceRule: namespaceURI property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnamespacerule/prefix/index.md',
+        title: 'CSSNamespaceRule: prefix property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericarray/index.md',
+        title: 'CSSNumericArray',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericarray/length/index.md',
+        title: 'CSSNumericArray: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericvalue/add/index.md',
+        title: 'CSSNumericValue: add() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericvalue/div/index.md',
+        title: 'CSSNumericValue: div() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericvalue/equals/index.md',
+        title: 'CSSNumericValue: equals() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericvalue/index.md',
+        title: 'CSSNumericValue',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericvalue/max/index.md',
+        title: 'CSSNumericValue: max() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericvalue/min/index.md',
+        title: 'CSSNumericValue: min() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericvalue/mul/index.md',
+        title: 'CSSNumericValue: mul() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericvalue/parse_static/index.md',
+        title: 'CSSNumericValue: parse() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericvalue/sub/index.md',
+        title: 'CSSNumericValue: sub() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericvalue/to/index.md',
+        title: 'CSSNumericValue: to() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericvalue/tosum/index.md',
+        title: 'CSSNumericValue: toSum() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssnumericvalue/type/index.md',
+        title: 'CSSNumericValue: type() method',
+    },
+    {
+        path: 'lib/javascript/web_api/csspagerule/index.md',
+        title: 'CSSPageRule',
+    },
+    {
+        path: 'lib/javascript/web_api/csspagerule/selectortext/index.md',
+        title: 'CSSPageRule: selectorText property',
+    },
+    {
+        path: 'lib/javascript/web_api/csspagerule/style/index.md',
+        title: 'CSSPageRule: style property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssperspective/cssperspective/index.md',
+        title: 'CSSPerspective: CSSPerspective() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssperspective/index.md',
+        title: 'CSSPerspective',
+    },
+    {
+        path: 'lib/javascript/web_api/cssperspective/length/index.md',
+        title: 'CSSPerspective: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/csspositiontrydescriptors/index.md',
+        title: 'CSSPositionTryDescriptors',
+    },
+    {
+        path: 'lib/javascript/web_api/csspositiontryrule/index.md',
+        title: 'CSSPositionTryRule',
+    },
+    {
+        path: 'lib/javascript/web_api/csspositiontryrule/name/index.md',
+        title: 'CSSPositionTryRule: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/csspositiontryrule/style/index.md',
+        title: 'CSSPositionTryRule: style property',
+    },
+    {
+        path: 'lib/javascript/web_api/csspositionvalue/csspositionvalue/index.md',
+        title: 'CSSPositionValue: CSSPositionValue() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/csspositionvalue/index.md',
+        title: 'CSSPositionValue',
+    },
+    {
+        path: 'lib/javascript/web_api/csspositionvalue/x/index.md',
+        title: 'CSSPositionValue: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/csspositionvalue/y/index.md',
+        title: 'CSSPositionValue: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssprimitivevalue/getcountervalue/index.md',
+        title: 'CSSPrimitiveValue: getCounterValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssprimitivevalue/getfloatvalue/index.md',
+        title: 'CSSPrimitiveValue: getFloatValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssprimitivevalue/getrectvalue/index.md',
+        title: 'CSSPrimitiveValue: getRectValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssprimitivevalue/getrgbcolorvalue/index.md',
+        title: 'CSSPrimitiveValue: getRGBColorValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssprimitivevalue/getstringvalue/index.md',
+        title: 'CSSPrimitiveValue: getStringValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssprimitivevalue/index.md',
+        title: 'CSSPrimitiveValue',
+    },
+    {
+        path: 'lib/javascript/web_api/cssprimitivevalue/primitivetype/index.md',
+        title: 'CSSPrimitiveValue: primitiveType property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssprimitivevalue/setfloatvalue/index.md',
+        title: 'CSSPrimitiveValue: setFloatValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssprimitivevalue/setstringvalue/index.md',
+        title: 'CSSPrimitiveValue: setStringValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/csspropertyrule/index.md',
+        title: 'CSSPropertyRule',
+    },
+    {
+        path: 'lib/javascript/web_api/csspropertyrule/inherits/index.md',
+        title: 'CSSPropertyRule: inherits property',
+    },
+    {
+        path: 'lib/javascript/web_api/csspropertyrule/initialvalue/index.md',
+        title: 'CSSPropertyRule: initialValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/csspropertyrule/name/index.md',
+        title: 'CSSPropertyRule: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/csspropertyrule/syntax/index.md',
+        title: 'CSSPropertyRule: syntax property',
+    },
+    {
+        path: 'lib/javascript/web_api/csspseudoelement/element/index.md',
+        title: 'CSSPseudoElement: element property',
+    },
+    {
+        path: 'lib/javascript/web_api/csspseudoelement/index.md',
+        title: 'CSSPseudoElement',
+    },
+    {
+        path: 'lib/javascript/web_api/csspseudoelement/type/index.md',
+        title: 'CSSPseudoElement: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrotate/angle/index.md',
+        title: 'CSSRotate: angle property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrotate/cssrotate/index.md',
+        title: 'CSSRotate: CSSRotate() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrotate/index.md',
+        title: 'CSSRotate',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrotate/x/index.md',
+        title: 'CSSRotate: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrotate/y/index.md',
+        title: 'CSSRotate: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrotate/z/index.md',
+        title: 'CSSRotate: z property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrule/csstext/index.md',
+        title: 'CSSRule: cssText property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrule/index.md',
+        title: 'CSSRule',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrule/parentrule/index.md',
+        title: 'CSSRule: parentRule property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrule/parentstylesheet/index.md',
+        title: 'CSSRule: parentStyleSheet property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrule/type/index.md',
+        title: 'CSSRule: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrulelist/index.md',
+        title: 'CSSRuleList',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrulelist/item/index.md',
+        title: 'CSSRuleList: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssrulelist/length/index.md',
+        title: 'CSSRuleList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssscale/cssscale/index.md',
+        title: 'CSSScale: CSSScale() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssscale/index.md',
+        title: 'CSSScale',
+    },
+    {
+        path: 'lib/javascript/web_api/cssscale/x/index.md',
+        title: 'CSSScale: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssscale/y/index.md',
+        title: 'CSSScale: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssscale/z/index.md',
+        title: 'CSSScale: z property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssscoperule/end/index.md',
+        title: 'CSSScopeRule: end property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssscoperule/index.md',
+        title: 'CSSScopeRule',
+    },
+    {
+        path: 'lib/javascript/web_api/cssscoperule/start/index.md',
+        title: 'CSSScopeRule: start property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssskew/ax/index.md',
+        title: 'CSSSkew: ax property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssskew/ay/index.md',
+        title: 'CSSSkew: ay property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssskew/cssskew/index.md',
+        title: 'CSSSkew: CSSSkew() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssskew/index.md',
+        title: 'CSSSkew',
+    },
+    {
+        path: 'lib/javascript/web_api/cssskewx/ax/index.md',
+        title: 'CSSSkewX: ax property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssskewx/cssskewx/index.md',
+        title: 'CSSSkewX: CSSSkewX() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssskewx/index.md',
+        title: 'CSSSkewX',
+    },
+    {
+        path: 'lib/javascript/web_api/cssskewy/ay/index.md',
+        title: 'CSSSkewY: ay property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssskewy/cssskewy/index.md',
+        title: 'CSSSkewY: CSSSkewY() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssskewy/index.md',
+        title: 'CSSSkewY',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstartingstylerule/index.md',
+        title: 'CSSStartingStyleRule',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstyledeclaration/cssfloat/index.md',
+        title: 'CSSStyleDeclaration: cssFloat property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstyledeclaration/csstext/index.md',
+        title: 'CSSStyleDeclaration: cssText property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstyledeclaration/getpropertycssvalue/index.md',
+        title: 'CSSStyleDeclaration: getPropertyCSSValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstyledeclaration/getpropertypriority/index.md',
+        title: 'CSSStyleDeclaration: getPropertyPriority() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstyledeclaration/getpropertyvalue/index.md',
+        title: 'CSSStyleDeclaration: getPropertyValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstyledeclaration/index.md',
+        title: 'CSSStyleDeclaration',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstyledeclaration/item/index.md',
+        title: 'CSSStyleDeclaration: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstyledeclaration/length/index.md',
+        title: 'CSSStyleDeclaration: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstyledeclaration/parentrule/index.md',
+        title: 'CSSStyleDeclaration: parentRule property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstyledeclaration/removeproperty/index.md',
+        title: 'CSSStyleDeclaration: removeProperty() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstyledeclaration/setproperty/index.md',
+        title: 'CSSStyleDeclaration: setProperty() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylerule/index.md',
+        title: 'CSSStyleRule',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylerule/selectortext/index.md',
+        title: 'CSSStyleRule: selectorText property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylerule/style/index.md',
+        title: 'CSSStyleRule: style property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylerule/stylemap/index.md',
+        title: 'CSSStyleRule: styleMap property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylesheet/addrule/index.md',
+        title: 'CSSStyleSheet: addRule() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylesheet/cssrules/index.md',
+        title: 'CSSStyleSheet: cssRules property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylesheet/cssstylesheet/index.md',
+        title: 'CSSStyleSheet: CSSStyleSheet() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylesheet/deleterule/index.md',
+        title: 'CSSStyleSheet: deleteRule() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylesheet/index.md',
+        title: 'CSSStyleSheet',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylesheet/insertrule/index.md',
+        title: 'CSSStyleSheet: insertRule() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylesheet/ownerrule/index.md',
+        title: 'CSSStyleSheet: ownerRule property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylesheet/removerule/index.md',
+        title: 'CSSStyleSheet: removeRule() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylesheet/replace/index.md',
+        title: 'CSSStyleSheet: replace() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylesheet/replacesync/index.md',
+        title: 'CSSStyleSheet: replaceSync() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylesheet/rules/index.md',
+        title: 'CSSStyleSheet: rules property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylevalue/index.md',
+        title: 'CSSStyleValue',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylevalue/parse_static/index.md',
+        title: 'CSSStyleValue: parse() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssstylevalue/parseall_static/index.md',
+        title: 'CSSStyleValue: parseAll() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/csssupportsrule/index.md',
+        title: 'CSSSupportsRule',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformcomponent/index.md',
+        title: 'CSSTransformComponent',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformcomponent/is2d/index.md',
+        title: 'CSSTransformComponent: is2D property',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformcomponent/tomatrix/index.md',
+        title: 'CSSTransformComponent: toMatrix() method',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformcomponent/tostring/index.md',
+        title: 'CSSTransformComponent: toString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformvalue/csstransformvalue/index.md',
+        title: 'CSSTransformValue: CSSTransformValue() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformvalue/entries/index.md',
+        title: 'CSSTransformValue: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformvalue/foreach/index.md',
+        title: 'CSSTransformValue: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformvalue/index.md',
+        title: 'CSSTransformValue',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformvalue/is2d/index.md',
+        title: 'CSSTransformValue: is2D property',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformvalue/keys/index.md',
+        title: 'CSSTransformValue: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformvalue/length/index.md',
+        title: 'CSSTransformValue: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformvalue/tomatrix/index.md',
+        title: 'CSSTransformValue: toMatrix() method',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransformvalue/values/index.md',
+        title: 'CSSTransformValue: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransition/index.md',
+        title: 'CSSTransition',
+    },
+    {
+        path: 'lib/javascript/web_api/csstransition/transitionproperty/index.md',
+        title: 'CSSTransition: transitionProperty property',
+    },
+    {
+        path: 'lib/javascript/web_api/csstranslate/csstranslate/index.md',
+        title: 'CSSTranslate: CSSTranslate() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/csstranslate/index.md',
+        title: 'CSSTranslate',
+    },
+    {
+        path: 'lib/javascript/web_api/csstranslate/x/index.md',
+        title: 'CSSTranslate: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/csstranslate/y/index.md',
+        title: 'CSSTranslate: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/csstranslate/z/index.md',
+        title: 'CSSTranslate: z property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssunitvalue/cssunitvalue/index.md',
+        title: 'CSSUnitValue: CSSUnitValue() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssunitvalue/index.md',
+        title: 'CSSUnitValue',
+    },
+    {
+        path: 'lib/javascript/web_api/cssunitvalue/unit/index.md',
+        title: 'CSSUnitValue: unit property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssunitvalue/value/index.md',
+        title: 'CSSUnitValue: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssunparsedvalue/cssunparsedvalue/index.md',
+        title: 'CSSUnparsedValue: CSSUnparsedValue() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssunparsedvalue/entries/index.md',
+        title: 'CSSUnparsedValue: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssunparsedvalue/foreach/index.md',
+        title: 'CSSUnparsedValue: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssunparsedvalue/index.md',
+        title: 'CSSUnparsedValue',
+    },
+    {
+        path: 'lib/javascript/web_api/cssunparsedvalue/keys/index.md',
+        title: 'CSSUnparsedValue: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssunparsedvalue/length/index.md',
+        title: 'CSSUnparsedValue: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssunparsedvalue/values/index.md',
+        title: 'CSSUnparsedValue: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssvalue/csstext/index.md',
+        title: 'CSSValue: cssText property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssvalue/cssvaluetype/index.md',
+        title: 'CSSValue: cssValueType property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssvalue/index.md',
+        title: 'CSSValue',
+    },
+    {
+        path: 'lib/javascript/web_api/cssvaluelist/index.md',
+        title: 'CSSValueList',
+    },
+    {
+        path: 'lib/javascript/web_api/cssvaluelist/item/index.md',
+        title: 'CSSValueList: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/cssvaluelist/length/index.md',
+        title: 'CSSValueList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssvariablereferencevalue/cssvariablereferencevalue/index.md',
+        title: 'CSSVariableReferenceValue: CSSVariableReferenceValue() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/cssvariablereferencevalue/fallback/index.md',
+        title: 'CSSVariableReferenceValue: fallback property',
+    },
+    {
+        path: 'lib/javascript/web_api/cssvariablereferencevalue/index.md',
+        title: 'CSSVariableReferenceValue',
+    },
+    {
+        path: 'lib/javascript/web_api/cssvariablereferencevalue/variable/index.md',
+        title: 'CSSVariableReferenceValue: variable property',
+    },
+    {
+        path: 'lib/javascript/web_api/customelementregistry/define/index.md',
+        title: 'CustomElementRegistry: define() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customelementregistry/get/index.md',
+        title: 'CustomElementRegistry: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customelementregistry/getname/index.md',
+        title: 'CustomElementRegistry: getName() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customelementregistry/index.md',
+        title: 'CustomElementRegistry',
+    },
+    {
+        path: 'lib/javascript/web_api/customelementregistry/upgrade/index.md',
+        title: 'CustomElementRegistry: upgrade() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customelementregistry/whendefined/index.md',
+        title: 'CustomElementRegistry: whenDefined() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customevent/customevent/index.md',
+        title: 'CustomEvent: CustomEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/customevent/detail/index.md',
+        title: 'CustomEvent: detail property',
+    },
+    {
+        path: 'lib/javascript/web_api/customevent/index.md',
+        title: 'CustomEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/customevent/initcustomevent/index.md',
+        title: 'CustomEvent: initCustomEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customstateset/add/index.md',
+        title: 'CustomStateSet: add() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customstateset/clear/index.md',
+        title: 'CustomStateSet: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customstateset/delete/index.md',
+        title: 'CustomStateSet: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customstateset/entries/index.md',
+        title: 'CustomStateSet: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customstateset/foreach/index.md',
+        title: 'CustomStateSet: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customstateset/has/index.md',
+        title: 'CustomStateSet: has() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customstateset/index.md',
+        title: 'CustomStateSet',
+    },
+    {
+        path: 'lib/javascript/web_api/customstateset/keys/index.md',
+        title: 'CustomStateSet: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/customstateset/size/index.md',
+        title: 'CustomStateSet: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/customstateset/values/index.md',
+        title: 'CustomStateSet: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransfer/addelement/index.md',
+        title: 'DataTransfer: addElement() method',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransfer/cleardata/index.md',
+        title: 'DataTransfer: clearData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransfer/datatransfer/index.md',
+        title: 'DataTransfer: DataTransfer() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransfer/dropeffect/index.md',
+        title: 'DataTransfer: dropEffect property',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransfer/effectallowed/index.md',
+        title: 'DataTransfer: effectAllowed property',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransfer/files/index.md',
+        title: 'DataTransfer: files property',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransfer/getdata/index.md',
+        title: 'DataTransfer: getData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransfer/index.md',
+        title: 'DataTransfer',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransfer/items/index.md',
+        title: 'DataTransfer: items property',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransfer/setdata/index.md',
+        title: 'DataTransfer: setData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransfer/setdragimage/index.md',
+        title: 'DataTransfer: setDragImage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransfer/types/index.md',
+        title: 'DataTransfer: types property',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransferitem/getasfile/index.md',
+        title: 'DataTransferItem: getAsFile() method',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransferitem/getasfilesystemhandle/index.md',
+        title: 'DataTransferItem: getAsFileSystemHandle() method',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransferitem/getasstring/index.md',
+        title: 'DataTransferItem: getAsString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransferitem/index.md',
+        title: 'DataTransferItem',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransferitem/kind/index.md',
+        title: 'DataTransferItem: kind property',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransferitem/type/index.md',
+        title: 'DataTransferItem: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransferitem/webkitgetasentry/index.md',
+        title: 'DataTransferItem: webkitGetAsEntry() method',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransferitemlist/add/index.md',
+        title: 'DataTransferItemList: add() method',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransferitemlist/clear/index.md',
+        title: 'DataTransferItemList: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransferitemlist/index.md',
+        title: 'DataTransferItemList',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransferitemlist/length/index.md',
+        title: 'DataTransferItemList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/datatransferitemlist/remove/index.md',
+        title: 'DataTransferItemList: remove() method',
+    },
+    {
+        path: 'lib/javascript/web_api/decompressionstream/decompressionstream/index.md',
+        title: 'DecompressionStream: DecompressionStream() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/decompressionstream/index.md',
+        title: 'DecompressionStream',
+    },
+    {
+        path: 'lib/javascript/web_api/decompressionstream/readable/index.md',
+        title: 'DecompressionStream: readable property',
+    },
+    {
+        path: 'lib/javascript/web_api/decompressionstream/writable/index.md',
+        title: 'DecompressionStream: writable property',
+    },
+    {
+        path: 'lib/javascript/web_api/dedicatedworkerglobalscope/cancelanimationframe/index.md',
+        title: 'DedicatedWorkerGlobalScope: cancelAnimationFrame() method',
+    },
+    {
+        path: 'lib/javascript/web_api/dedicatedworkerglobalscope/close/index.md',
+        title: 'DedicatedWorkerGlobalScope: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/dedicatedworkerglobalscope/index.md',
+        title: 'DedicatedWorkerGlobalScope',
+    },
+    {
+        path: 'lib/javascript/web_api/dedicatedworkerglobalscope/message_event/index.md',
+        title: 'DedicatedWorkerGlobalScope: message event',
+    },
+    {
+        path: 'lib/javascript/web_api/dedicatedworkerglobalscope/messageerror_event/index.md',
+        title: 'DedicatedWorkerGlobalScope: messageerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/dedicatedworkerglobalscope/name/index.md',
+        title: 'DedicatedWorkerGlobalScope: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/dedicatedworkerglobalscope/postmessage/index.md',
+        title: 'DedicatedWorkerGlobalScope: postMessage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/dedicatedworkerglobalscope/requestanimationframe/index.md',
+        title: 'DedicatedWorkerGlobalScope: requestAnimationFrame() method',
+    },
+    {
+        path: 'lib/javascript/web_api/dedicatedworkerglobalscope/rtctransform_event/index.md',
+        title: 'DedicatedWorkerGlobalScope: rtctransform event',
+    },
+    {
+        path: 'lib/javascript/web_api/delaynode/delaynode/index.md',
+        title: 'DelayNode: DelayNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/delaynode/delaytime/index.md',
+        title: 'DelayNode: delayTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/delaynode/index.md',
+        title: 'DelayNode',
+    },
+    {
+        path: 'lib/javascript/web_api/deprecationreportbody/anticipatedremoval/index.md',
+        title: 'DeprecationReportBody: anticipatedRemoval property',
+    },
+    {
+        path: 'lib/javascript/web_api/deprecationreportbody/columnnumber/index.md',
+        title: 'DeprecationReportBody: columnNumber property',
+    },
+    {
+        path: 'lib/javascript/web_api/deprecationreportbody/id/index.md',
+        title: 'DeprecationReportBody: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/deprecationreportbody/index.md',
+        title: 'DeprecationReportBody',
+    },
+    {
+        path: 'lib/javascript/web_api/deprecationreportbody/linenumber/index.md',
+        title: 'DeprecationReportBody: lineNumber property',
+    },
+    {
+        path: 'lib/javascript/web_api/deprecationreportbody/message/index.md',
+        title: 'DeprecationReportBody: message property',
+    },
+    {
+        path: 'lib/javascript/web_api/deprecationreportbody/sourcefile/index.md',
+        title: 'DeprecationReportBody: sourceFile property',
+    },
+    {
+        path: 'lib/javascript/web_api/deprecationreportbody/tojson/index.md',
+        title: 'DeprecationReportBody: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/device_memory_api/index.md',
+        title: 'Device Memory API',
+    },
+    {
+        path: 'lib/javascript/web_api/device_orientation_events/detecting_device_orientation/index.md',
+        title: 'Detecting device orientation',
+    },
+    {
+        path: 'lib/javascript/web_api/device_orientation_events/index.md',
+        title: 'Device orientation events',
+    },
+    {
+        path: 'lib/javascript/web_api/device_orientation_events/orientation_and_motion_data_explained/index.md',
+        title: 'Orientation and motion data explained',
+    },
+    {
+        path: 'lib/javascript/web_api/device_orientation_events/using_device_orientation_with_3d_transforms/index.md',
+        title: 'Using device orientation with 3D transforms',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotionevent/acceleration/index.md',
+        title: 'DeviceMotionEvent: acceleration property',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotionevent/accelerationincludinggravity/index.md',
+        title: 'DeviceMotionEvent: accelerationIncludingGravity property',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotionevent/devicemotionevent/index.md',
+        title: 'DeviceMotionEvent: DeviceMotionEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotionevent/index.md',
+        title: 'DeviceMotionEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotionevent/interval/index.md',
+        title: 'DeviceMotionEvent: interval property',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotionevent/rotationrate/index.md',
+        title: 'DeviceMotionEvent: rotationRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotioneventacceleration/index.md',
+        title: 'DeviceMotionEventAcceleration',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotioneventacceleration/x/index.md',
+        title: 'DeviceMotionEventAcceleration: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotioneventacceleration/y/index.md',
+        title: 'DeviceMotionEventAcceleration: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotioneventacceleration/z/index.md',
+        title: 'DeviceMotionEventAcceleration: z property',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotioneventrotationrate/alpha/index.md',
+        title: 'DeviceMotionEventRotationRate: alpha property',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotioneventrotationrate/beta/index.md',
+        title: 'DeviceMotionEventRotationRate: beta property',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotioneventrotationrate/gamma/index.md',
+        title: 'DeviceMotionEventRotationRate: gamma property',
+    },
+    {
+        path: 'lib/javascript/web_api/devicemotioneventrotationrate/index.md',
+        title: 'DeviceMotionEventRotationRate',
+    },
+    {
+        path: 'lib/javascript/web_api/deviceorientationevent/absolute/index.md',
+        title: 'DeviceOrientationEvent: absolute property',
+    },
+    {
+        path: 'lib/javascript/web_api/deviceorientationevent/alpha/index.md',
+        title: 'DeviceOrientationEvent: alpha property',
+    },
+    {
+        path: 'lib/javascript/web_api/deviceorientationevent/beta/index.md',
+        title: 'DeviceOrientationEvent: beta property',
+    },
+    {
+        path: 'lib/javascript/web_api/deviceorientationevent/deviceorientationevent/index.md',
+        title: 'DeviceOrientationEvent: DeviceOrientationEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/deviceorientationevent/gamma/index.md',
+        title: 'DeviceOrientationEvent: gamma property',
+    },
+    {
+        path: 'lib/javascript/web_api/deviceorientationevent/index.md',
+        title: 'DeviceOrientationEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/directoryentrysync/index.md',
+        title: 'DirectoryEntrySync',
+    },
+    {
+        path: 'lib/javascript/web_api/directoryreadersync/index.md',
+        title: 'DirectoryReaderSync',
+    },
+    {
+        path: 'lib/javascript/web_api/document/activeelement/index.md',
+        title: 'Document: activeElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/adoptedstylesheets/index.md',
+        title: 'Document: adoptedStyleSheets property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/adoptnode/index.md',
+        title: 'Document: adoptNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/afterscriptexecute_event/index.md',
+        title: 'Document: afterscriptexecute event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/alinkcolor/index.md',
+        title: 'Document: alinkColor property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/all/index.md',
+        title: 'Document: all property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/anchors/index.md',
+        title: 'Document: anchors property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/append/index.md',
+        title: 'Document: append() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/applets/index.md',
+        title: 'Document: applets property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/beforescriptexecute_event/index.md',
+        title: 'Document: beforescriptexecute event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/bgcolor/index.md',
+        title: 'Document: bgColor property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/body/index.md',
+        title: 'Document: body property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/browsingtopics/index.md',
+        title: 'Document: browsingTopics() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/caretpositionfrompoint/index.md',
+        title: 'Document: caretPositionFromPoint() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/caretrangefrompoint/index.md',
+        title: 'Document: caretRangeFromPoint() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/characterset/index.md',
+        title: 'Document: characterSet property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/childelementcount/index.md',
+        title: 'Document: childElementCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/children/index.md',
+        title: 'Document: children property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/clear/index.md',
+        title: 'Document: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/close/index.md',
+        title: 'Document: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/compatmode/index.md',
+        title: 'Document: compatMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/contenttype/index.md',
+        title: 'Document: contentType property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/cookie/index.md',
+        title: 'Document: cookie property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/copy_event/index.md',
+        title: 'Document: copy event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createattribute/index.md',
+        title: 'Document: createAttribute() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createattributens/index.md',
+        title: 'Document: createAttributeNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createcdatasection/index.md',
+        title: 'Document: createCDATASection() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createcomment/index.md',
+        title: 'Document: createComment() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createdocumentfragment/index.md',
+        title: 'Document: createDocumentFragment() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createelement/index.md',
+        title: 'Document: createElement() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createelementns/index.md',
+        title: 'Document: createElementNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createevent/index.md',
+        title: 'Document: createEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createexpression/index.md',
+        title: 'Document: createExpression() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createnodeiterator/index.md',
+        title: 'Document: createNodeIterator() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/creatensresolver/index.md',
+        title: 'Document: createNSResolver() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createprocessinginstruction/index.md',
+        title: 'Document: createProcessingInstruction() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createrange/index.md',
+        title: 'Document: createRange() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createtextnode/index.md',
+        title: 'Document: createTextNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createtouch/index.md',
+        title: 'Document: createTouch() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createtouchlist/index.md',
+        title: 'Document: createTouchList() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/createtreewalker/index.md',
+        title: 'Document: createTreeWalker() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/currentscript/index.md',
+        title: 'Document: currentScript property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/cut_event/index.md',
+        title: 'Document: cut event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/defaultview/index.md',
+        title: 'Document: defaultView property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/designmode/index.md',
+        title: 'Document: designMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/dir/index.md',
+        title: 'Document: dir property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/doctype/index.md',
+        title: 'Document: doctype property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/document/index.md',
+        title: 'Document: Document() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/document/documentelement/index.md',
+        title: 'Document: documentElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/documenturi/index.md',
+        title: 'Document: documentURI property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/domain/index.md',
+        title: 'Document: domain property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/domcontentloaded_event/index.md',
+        title: 'Document: DOMContentLoaded event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/elementfrompoint/index.md',
+        title: 'Document: elementFromPoint() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/elementsfrompoint/index.md',
+        title: 'Document: elementsFromPoint() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/embeds/index.md',
+        title: 'Document: embeds property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/enablestylesheetsforset/index.md',
+        title: 'Document: enableStyleSheetsForSet() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/evaluate/index.md',
+        title: 'Document: evaluate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/execcommand/index.md',
+        title: 'Document: execCommand() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/exitfullscreen/index.md',
+        title: 'Document: exitFullscreen() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/exitpictureinpicture/index.md',
+        title: 'Document: exitPictureInPicture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/exitpointerlock/index.md',
+        title: 'Document: exitPointerLock() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/featurepolicy/index.md',
+        title: 'Document: featurePolicy property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/fgcolor/index.md',
+        title: 'Document: fgColor property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/firstelementchild/index.md',
+        title: 'Document: firstElementChild property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/fonts/index.md',
+        title: 'Document: fonts property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/forms/index.md',
+        title: 'Document: forms property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/fragmentdirective/index.md',
+        title: 'Document: fragmentDirective property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/fullscreen/index.md',
+        title: 'Document: fullscreen property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/fullscreenchange_event/index.md',
+        title: 'Document: fullscreenchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/fullscreenelement/index.md',
+        title: 'Document: fullscreenElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/fullscreenenabled/index.md',
+        title: 'Document: fullscreenEnabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/fullscreenerror_event/index.md',
+        title: 'Document: fullscreenerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/getanimations/index.md',
+        title: 'Document: getAnimations() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/getelementbyid/index.md',
+        title: 'Document: getElementById() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/getelementsbyclassname/index.md',
+        title: 'Document: getElementsByClassName() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/getelementsbyname/index.md',
+        title: 'Document: getElementsByName() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/getelementsbytagname/index.md',
+        title: 'Document: getElementsByTagName() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/getelementsbytagnamens/index.md',
+        title: 'Document: getElementsByTagNameNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/getselection/index.md',
+        title: 'Document: getSelection() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/hasfocus/index.md',
+        title: 'Document: hasFocus() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/hasstorageaccess/index.md',
+        title: 'Document: hasStorageAccess() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/hasunpartitionedcookieaccess/index.md',
+        title: 'Document: hasUnpartitionedCookieAccess() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/head/index.md',
+        title: 'Document: head property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/hidden/index.md',
+        title: 'Document: hidden property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/images/index.md',
+        title: 'Document: images property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/implementation/index.md',
+        title: 'Document: implementation property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/importnode/index.md',
+        title: 'Document: importNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/index.md',
+        title: 'Document',
+    },
+    {
+        path: 'lib/javascript/web_api/document/lastelementchild/index.md',
+        title: 'Document: lastElementChild property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/lastmodified/index.md',
+        title: 'Document: lastModified property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/laststylesheetset/index.md',
+        title: 'Document: lastStyleSheetSet property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/linkcolor/index.md',
+        title: 'Document: linkColor property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/links/index.md',
+        title: 'Document: links property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/location/index.md',
+        title: 'Document: location property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/mozsetimageelement/index.md',
+        title: 'Document: mozSetImageElement() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/open/index.md',
+        title: 'Document: open() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/parsehtmlunsafe_static/index.md',
+        title: 'Document: parseHTMLUnsafe() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/paste_event/index.md',
+        title: 'Document: paste event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/pictureinpictureelement/index.md',
+        title: 'Document: pictureInPictureElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/pictureinpictureenabled/index.md',
+        title: 'Document: pictureInPictureEnabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/plugins/index.md',
+        title: 'Document: plugins property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/pointerlockchange_event/index.md',
+        title: 'Document: pointerlockchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/pointerlockelement/index.md',
+        title: 'Document: pointerLockElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/pointerlockerror_event/index.md',
+        title: 'Document: pointerlockerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/preferredstylesheetset/index.md',
+        title: 'Document: preferredStyleSheetSet property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/prepend/index.md',
+        title: 'Document: prepend() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/prerendering/index.md',
+        title: 'Document: prerendering property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/prerenderingchange_event/index.md',
+        title: 'Document: prerenderingchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/querycommandenabled/index.md',
+        title: 'Document: queryCommandEnabled() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/querycommandstate/index.md',
+        title: 'Document: queryCommandState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/querycommandsupported/index.md',
+        title: 'Document: queryCommandSupported() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/queryselector/index.md',
+        title: 'Document: querySelector() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/queryselectorall/index.md',
+        title: 'Document: querySelectorAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/readystate/index.md',
+        title: 'Document: readyState property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/readystatechange_event/index.md',
+        title: 'Document: readystatechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/referrer/index.md',
+        title: 'Document: referrer property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/releasecapture/index.md',
+        title: 'Document: releaseCapture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/replacechildren/index.md',
+        title: 'Document: replaceChildren() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/requeststorageaccess/index.md',
+        title: 'Document: requestStorageAccess() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/requeststorageaccessfor/index.md',
+        title: 'Document: requestStorageAccessFor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/rootelement/index.md',
+        title: 'Document: rootElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/scripts/index.md',
+        title: 'Document: scripts property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/scroll_event/index.md',
+        title: 'Document: scroll event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/scrollend_event/index.md',
+        title: 'Document: scrollend event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/scrollingelement/index.md',
+        title: 'Document: scrollingElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/securitypolicyviolation_event/index.md',
+        title: 'Document: securitypolicyviolation event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/selectedstylesheetset/index.md',
+        title: 'Document: selectedStyleSheetSet property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/selectionchange_event/index.md',
+        title: 'Document: selectionchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/startviewtransition/index.md',
+        title: 'Document: startViewTransition() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/stylesheets/index.md',
+        title: 'Document: styleSheets property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/stylesheetsets/index.md',
+        title: 'Document: styleSheetSets property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/timeline/index.md',
+        title: 'Document: timeline property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/title/index.md',
+        title: 'Document: title property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/url/index.md',
+        title: 'Document: URL property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/visibilitychange_event/index.md',
+        title: 'Document: visibilitychange event',
+    },
+    {
+        path: 'lib/javascript/web_api/document/visibilitystate/index.md',
+        title: 'Document: visibilityState property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/vlinkcolor/index.md',
+        title: 'Document: vlinkColor property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/write/index.md',
+        title: 'Document: write() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/writeln/index.md',
+        title: 'Document: writeln() method',
+    },
+    {
+        path: 'lib/javascript/web_api/document/xmlencoding/index.md',
+        title: 'Document: xmlEncoding property',
+    },
+    {
+        path: 'lib/javascript/web_api/document/xmlversion/index.md',
+        title: 'Document: xmlVersion property',
+    },
+    {
+        path: 'lib/javascript/web_api/document_object_model/examples/index.md',
+        title: 'Examples of web and XML development using the DOM',
+    },
+    {
+        path: 'lib/javascript/web_api/document_object_model/index.md',
+        title: 'Document Object Model (DOM)',
+    },
+    {
+        path: 'lib/javascript/web_api/document_object_model/introduction/index.md',
+        title: 'Introduction to the DOM',
+    },
+    {
+        path: 'lib/javascript/web_api/document_object_model/locating_dom_elements_using_selectors/index.md',
+        title: 'Locating DOM elements using selectors',
+    },
+    {
+        path: 'lib/javascript/web_api/document_object_model/traversing_an_html_table_with_javascript_and_dom_interfaces/index.md',
+        title: 'Traversing an HTML table with JavaScript and DOM Interfaces',
+    },
+    {
+        path: 'lib/javascript/web_api/document_object_model/using_the_document_object_model/index.md',
+        title: 'Using the Document Object Model',
+    },
+    {
+        path: 'lib/javascript/web_api/document_object_model/whitespace/index.md',
+        title: 'How whitespace is handled by HTML, CSS, and in the DOM',
+    },
+    {
+        path: 'lib/javascript/web_api/document_picture-in-picture_api/index.md',
+        title: 'Document Picture-in-Picture API',
+    },
+    {
+        path: 'lib/javascript/web_api/document_picture-in-picture_api/using/index.md',
+        title: 'Using the Document Picture-in-Picture API',
+    },
+    {
+        path: 'lib/javascript/web_api/documentfragment/append/index.md',
+        title: 'DocumentFragment: append() method',
+    },
+    {
+        path: 'lib/javascript/web_api/documentfragment/childelementcount/index.md',
+        title: 'DocumentFragment: childElementCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/documentfragment/children/index.md',
+        title: 'DocumentFragment: children property',
+    },
+    {
+        path: 'lib/javascript/web_api/documentfragment/documentfragment/index.md',
+        title: 'DocumentFragment: DocumentFragment() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/documentfragment/firstelementchild/index.md',
+        title: 'DocumentFragment: firstElementChild property',
+    },
+    {
+        path: 'lib/javascript/web_api/documentfragment/getelementbyid/index.md',
+        title: 'DocumentFragment: getElementById() method',
+    },
+    {
+        path: 'lib/javascript/web_api/documentfragment/index.md',
+        title: 'DocumentFragment',
+    },
+    {
+        path: 'lib/javascript/web_api/documentfragment/lastelementchild/index.md',
+        title: 'DocumentFragment: lastElementChild property',
+    },
+    {
+        path: 'lib/javascript/web_api/documentfragment/prepend/index.md',
+        title: 'DocumentFragment: prepend() method',
+    },
+    {
+        path: 'lib/javascript/web_api/documentfragment/queryselector/index.md',
+        title: 'DocumentFragment: querySelector() method',
+    },
+    {
+        path: 'lib/javascript/web_api/documentfragment/queryselectorall/index.md',
+        title: 'DocumentFragment: querySelectorAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/documentfragment/replacechildren/index.md',
+        title: 'DocumentFragment: replaceChildren() method',
+    },
+    {
+        path: 'lib/javascript/web_api/documentpictureinpicture/enter_event/index.md',
+        title: 'DocumentPictureInPicture: enter event',
+    },
+    {
+        path: 'lib/javascript/web_api/documentpictureinpicture/index.md',
+        title: 'DocumentPictureInPicture',
+    },
+    {
+        path: 'lib/javascript/web_api/documentpictureinpicture/requestwindow/index.md',
+        title: 'DocumentPictureInPicture: requestWindow() method',
+    },
+    {
+        path: 'lib/javascript/web_api/documentpictureinpicture/window/index.md',
+        title: 'DocumentPictureInPicture: window property',
+    },
+    {
+        path: 'lib/javascript/web_api/documentpictureinpictureevent/documentpictureinpictureevent/index.md',
+        title: 'DocumentPictureInPictureEvent: DocumentPictureInPictureEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/documentpictureinpictureevent/index.md',
+        title: 'DocumentPictureInPictureEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/documentpictureinpictureevent/window/index.md',
+        title: 'DocumentPictureInPictureEvent: window property',
+    },
+    {
+        path: 'lib/javascript/web_api/documenttimeline/documenttimeline/index.md',
+        title: 'DocumentTimeline: DocumentTimeline() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/documenttimeline/index.md',
+        title: 'DocumentTimeline',
+    },
+    {
+        path: 'lib/javascript/web_api/documenttype/after/index.md',
+        title: 'DocumentType: after() method',
+    },
+    {
+        path: 'lib/javascript/web_api/documenttype/before/index.md',
+        title: 'DocumentType: before() method',
+    },
+    {
+        path: 'lib/javascript/web_api/documenttype/index.md',
+        title: 'DocumentType',
+    },
+    {
+        path: 'lib/javascript/web_api/documenttype/name/index.md',
+        title: 'DocumentType: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/documenttype/publicid/index.md',
+        title: 'DocumentType: publicId property',
+    },
+    {
+        path: 'lib/javascript/web_api/documenttype/remove/index.md',
+        title: 'DocumentType: remove() method',
+    },
+    {
+        path: 'lib/javascript/web_api/documenttype/replacewith/index.md',
+        title: 'DocumentType: replaceWith() method',
+    },
+    {
+        path: 'lib/javascript/web_api/documenttype/systemid/index.md',
+        title: 'DocumentType: systemId property',
+    },
+    {
+        path: 'lib/javascript/web_api/domerror/index.md',
+        title: 'DOMError',
+    },
+    {
+        path: 'lib/javascript/web_api/domexception/code/index.md',
+        title: 'DOMException: code property',
+    },
+    {
+        path: 'lib/javascript/web_api/domexception/domexception/index.md',
+        title: 'DOMException: DOMException() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/domexception/index.md',
+        title: 'DOMException',
+    },
+    {
+        path: 'lib/javascript/web_api/domexception/message/index.md',
+        title: 'DOMException: message property',
+    },
+    {
+        path: 'lib/javascript/web_api/domexception/name/index.md',
+        title: 'DOMException: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/domhighrestimestamp/index.md',
+        title: 'DOMHighResTimeStamp',
+    },
+    {
+        path: 'lib/javascript/web_api/domimplementation/createdocument/index.md',
+        title: 'DOMImplementation: createDocument() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domimplementation/createdocumenttype/index.md',
+        title: 'DOMImplementation: createDocumentType() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domimplementation/createhtmldocument/index.md',
+        title: 'DOMImplementation: createHTMLDocument() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domimplementation/hasfeature/index.md',
+        title: 'DOMImplementation: hasFeature() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domimplementation/index.md',
+        title: 'DOMImplementation',
+    },
+    {
+        path: 'lib/javascript/web_api/dommatrix/dommatrix/index.md',
+        title: 'DOMMatrix: DOMMatrix() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/dommatrix/index.md',
+        title: 'DOMMatrix (WebKitCSSMatrix)',
+    },
+    {
+        path: 'lib/javascript/web_api/dommatrixreadonly/dommatrixreadonly/index.md',
+        title: 'DOMMatrixReadOnly: DOMMatrixReadOnly() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/dommatrixreadonly/flipx/index.md',
+        title: 'DOMMatrixReadOnly: flipX() method',
+    },
+    {
+        path: 'lib/javascript/web_api/dommatrixreadonly/index.md',
+        title: 'DOMMatrixReadOnly',
+    },
+    {
+        path: 'lib/javascript/web_api/dommatrixreadonly/scale/index.md',
+        title: 'DOMMatrixReadOnly: scale() method',
+    },
+    {
+        path: 'lib/javascript/web_api/dommatrixreadonly/translate/index.md',
+        title: 'DOMMatrixReadOnly: translate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domparser/domparser/index.md',
+        title: 'DOMParser: DOMParser() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/domparser/index.md',
+        title: 'DOMParser',
+    },
+    {
+        path: 'lib/javascript/web_api/domparser/parsefromstring/index.md',
+        title: 'DOMParser: parseFromString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/dompoint/dompoint/index.md',
+        title: 'DOMPoint: DOMPoint() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/dompoint/frompoint_static/index.md',
+        title: 'DOMPoint: fromPoint() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/dompoint/index.md',
+        title: 'DOMPoint',
+    },
+    {
+        path: 'lib/javascript/web_api/dompoint/w/index.md',
+        title: 'DOMPoint: w property',
+    },
+    {
+        path: 'lib/javascript/web_api/dompoint/x/index.md',
+        title: 'DOMPoint: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/dompoint/y/index.md',
+        title: 'DOMPoint: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/dompoint/z/index.md',
+        title: 'DOMPoint: z property',
+    },
+    {
+        path: 'lib/javascript/web_api/dompointreadonly/dompointreadonly/index.md',
+        title: 'DOMPointReadOnly: DOMPointReadOnly() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/dompointreadonly/frompoint_static/index.md',
+        title: 'DOMPointReadOnly: fromPoint() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/dompointreadonly/index.md',
+        title: 'DOMPointReadOnly',
+    },
+    {
+        path: 'lib/javascript/web_api/dompointreadonly/tojson/index.md',
+        title: 'DOMPointReadOnly: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/dompointreadonly/w/index.md',
+        title: 'DOMPointReadOnly: w property',
+    },
+    {
+        path: 'lib/javascript/web_api/dompointreadonly/x/index.md',
+        title: 'DOMPointReadOnly: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/dompointreadonly/y/index.md',
+        title: 'DOMPointReadOnly: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/dompointreadonly/z/index.md',
+        title: 'DOMPointReadOnly: z property',
+    },
+    {
+        path: 'lib/javascript/web_api/domquad/index.md',
+        title: 'DOMQuad',
+    },
+    {
+        path: 'lib/javascript/web_api/domrect/domrect/index.md',
+        title: 'DOMRect: DOMRect() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/domrect/fromrect_static/index.md',
+        title: 'DOMRect: fromRect() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/domrect/index.md',
+        title: 'DOMRect',
+    },
+    {
+        path: 'lib/javascript/web_api/domrectreadonly/bottom/index.md',
+        title: 'DOMRectReadOnly: bottom property',
+    },
+    {
+        path: 'lib/javascript/web_api/domrectreadonly/domrectreadonly/index.md',
+        title: 'DOMRectReadOnly: DOMRectReadOnly() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/domrectreadonly/fromrect_static/index.md',
+        title: 'DOMRectReadOnly: fromRect() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/domrectreadonly/height/index.md',
+        title: 'DOMRectReadOnly: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/domrectreadonly/index.md',
+        title: 'DOMRectReadOnly',
+    },
+    {
+        path: 'lib/javascript/web_api/domrectreadonly/left/index.md',
+        title: 'DOMRectReadOnly: left property',
+    },
+    {
+        path: 'lib/javascript/web_api/domrectreadonly/right/index.md',
+        title: 'DOMRectReadOnly: right property',
+    },
+    {
+        path: 'lib/javascript/web_api/domrectreadonly/top/index.md',
+        title: 'DOMRectReadOnly: top property',
+    },
+    {
+        path: 'lib/javascript/web_api/domrectreadonly/width/index.md',
+        title: 'DOMRectReadOnly: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/domrectreadonly/x/index.md',
+        title: 'DOMRectReadOnly: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/domrectreadonly/y/index.md',
+        title: 'DOMRectReadOnly: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/domstringlist/contains/index.md',
+        title: 'DOMStringList: contains() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domstringlist/index.md',
+        title: 'DOMStringList',
+    },
+    {
+        path: 'lib/javascript/web_api/domstringlist/item/index.md',
+        title: 'DOMStringList: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domstringlist/length/index.md',
+        title: 'DOMStringList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/domstringmap/index.md',
+        title: 'DOMStringMap',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/add/index.md',
+        title: 'DOMTokenList: add() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/contains/index.md',
+        title: 'DOMTokenList: contains() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/entries/index.md',
+        title: 'DOMTokenList: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/foreach/index.md',
+        title: 'DOMTokenList: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/index.md',
+        title: 'DOMTokenList',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/item/index.md',
+        title: 'DOMTokenList: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/keys/index.md',
+        title: 'DOMTokenList: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/length/index.md',
+        title: 'DOMTokenList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/remove/index.md',
+        title: 'DOMTokenList: remove() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/replace/index.md',
+        title: 'DOMTokenList: replace() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/supports/index.md',
+        title: 'DOMTokenList: supports() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/toggle/index.md',
+        title: 'DOMTokenList: toggle() method',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/value/index.md',
+        title: 'DOMTokenList: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/domtokenlist/values/index.md',
+        title: 'DOMTokenList: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/dragevent/datatransfer/index.md',
+        title: 'DragEvent: dataTransfer property',
+    },
+    {
+        path: 'lib/javascript/web_api/dragevent/dragevent/index.md',
+        title: 'DragEvent: DragEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/dragevent/index.md',
+        title: 'DragEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/dynamicscompressornode/attack/index.md',
+        title: 'DynamicsCompressorNode: attack property',
+    },
+    {
+        path: 'lib/javascript/web_api/dynamicscompressornode/dynamicscompressornode/index.md',
+        title: 'DynamicsCompressorNode: DynamicsCompressorNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/dynamicscompressornode/index.md',
+        title: 'DynamicsCompressorNode',
+    },
+    {
+        path: 'lib/javascript/web_api/dynamicscompressornode/knee/index.md',
+        title: 'DynamicsCompressorNode: knee property',
+    },
+    {
+        path: 'lib/javascript/web_api/dynamicscompressornode/ratio/index.md',
+        title: 'DynamicsCompressorNode: ratio property',
+    },
+    {
+        path: 'lib/javascript/web_api/dynamicscompressornode/reduction/index.md',
+        title: 'DynamicsCompressorNode: reduction property',
+    },
+    {
+        path: 'lib/javascript/web_api/dynamicscompressornode/release/index.md',
+        title: 'DynamicsCompressorNode: release property',
+    },
+    {
+        path: 'lib/javascript/web_api/dynamicscompressornode/threshold/index.md',
+        title: 'DynamicsCompressorNode: threshold property',
+    },
+    {
+        path: 'lib/javascript/web_api/ecdhkeyderiveparams/index.md',
+        title: 'EcdhKeyDeriveParams',
+    },
+    {
+        path: 'lib/javascript/web_api/ecdsaparams/index.md',
+        title: 'EcdsaParams',
+    },
+    {
+        path: 'lib/javascript/web_api/eckeygenparams/index.md',
+        title: 'EcKeyGenParams',
+    },
+    {
+        path: 'lib/javascript/web_api/eckeyimportparams/index.md',
+        title: 'EcKeyImportParams',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/attachedelements/index.md',
+        title: 'EditContext: attachedElements() method',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/characterbounds/index.md',
+        title: 'EditContext: characterBounds() method',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/characterboundsrangestart/index.md',
+        title: 'EditContext: characterBoundsRangeStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/characterboundsupdate_event/index.md',
+        title: 'EditContext: characterboundsupdate event',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/compositionend_event/index.md',
+        title: 'EditContext: compositionend event',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/compositionstart_event/index.md',
+        title: 'EditContext: compositionstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/editcontext/index.md',
+        title: 'EditContext: EditContext() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/index.md',
+        title: 'EditContext',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/selectionend/index.md',
+        title: 'EditContext: selectionEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/selectionstart/index.md',
+        title: 'EditContext: selectionStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/text/index.md',
+        title: 'EditContext: text property',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/textformatupdate_event/index.md',
+        title: 'EditContext: textformatupdate event',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/textupdate_event/index.md',
+        title: 'EditContext: textupdate event',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/updatecharacterbounds/index.md',
+        title: 'EditContext: updateCharacterBounds() method',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/updatecontrolbounds/index.md',
+        title: 'EditContext: updateControlBounds() method',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/updateselection/index.md',
+        title: 'EditContext: updateSelection() method',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/updateselectionbounds/index.md',
+        title: 'EditContext: updateSelectionBounds() method',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext/updatetext/index.md',
+        title: 'EditContext: updateText() method',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext_api/guide/index.md',
+        title: 'Using the EditContext API',
+    },
+    {
+        path: 'lib/javascript/web_api/editcontext_api/index.md',
+        title: 'EditContext API',
+    },
+    {
+        path: 'lib/javascript/web_api/element/after/index.md',
+        title: 'Element: after() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/afterscriptexecute_event/index.md',
+        title: 'Element: afterscriptexecute event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/animate/index.md',
+        title: 'Element: animate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/animationcancel_event/index.md',
+        title: 'Element: animationcancel event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/animationend_event/index.md',
+        title: 'Element: animationend event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/animationiteration_event/index.md',
+        title: 'Element: animationiteration event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/animationstart_event/index.md',
+        title: 'Element: animationstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/append/index.md',
+        title: 'Element: append() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariaatomic/index.md',
+        title: 'Element: ariaAtomic property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariaautocomplete/index.md',
+        title: 'Element: ariaAutoComplete property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariabraillelabel/index.md',
+        title: 'Element: ariaBrailleLabel property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariabrailleroledescription/index.md',
+        title: 'Element: ariaBrailleRoleDescription property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariabusy/index.md',
+        title: 'Element: ariaBusy property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariachecked/index.md',
+        title: 'Element: ariaChecked property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariacolcount/index.md',
+        title: 'Element: ariaColCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariacolindex/index.md',
+        title: 'Element: ariaColIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariacolindextext/index.md',
+        title: 'Element.ariaColIndexText',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariacolspan/index.md',
+        title: 'Element: ariaColSpan property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariacurrent/index.md',
+        title: 'Element: ariaCurrent property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariadescription/index.md',
+        title: 'Element: ariaDescription property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariadisabled/index.md',
+        title: 'Element: ariaDisabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariaexpanded/index.md',
+        title: 'Element: ariaExpanded property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariahaspopup/index.md',
+        title: 'Element: ariaHasPopup property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariahidden/index.md',
+        title: 'Element: ariaHidden property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariakeyshortcuts/index.md',
+        title: 'Element: ariaKeyShortcuts property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/arialabel/index.md',
+        title: 'Element: ariaLabel property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/arialevel/index.md',
+        title: 'Element: ariaLevel property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/arialive/index.md',
+        title: 'Element: ariaLive property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariamodal/index.md',
+        title: 'Element: ariaModal property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariamultiline/index.md',
+        title: 'Element: ariaMultiLine property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariamultiselectable/index.md',
+        title: 'Element: ariaMultiSelectable property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariaorientation/index.md',
+        title: 'Element: ariaOrientation property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariaplaceholder/index.md',
+        title: 'Element: ariaPlaceholder property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariaposinset/index.md',
+        title: 'Element: ariaPosInSet property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariapressed/index.md',
+        title: 'Element: ariaPressed property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariareadonly/index.md',
+        title: 'Element: ariaReadOnly property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariarelevant/index.md',
+        title: 'Element: ariaRelevant property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariarequired/index.md',
+        title: 'Element: ariaRequired property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariaroledescription/index.md',
+        title: 'Element: ariaRoleDescription property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariarowcount/index.md',
+        title: 'Element: ariaRowCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariarowindex/index.md',
+        title: 'Element: ariaRowIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariarowindextext/index.md',
+        title: 'Element.ariaRowIndexText',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariarowspan/index.md',
+        title: 'Element: ariaRowSpan property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariaselected/index.md',
+        title: 'Element: ariaSelected property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariasetsize/index.md',
+        title: 'Element: ariaSetSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariasort/index.md',
+        title: 'Element: ariaSort property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariavaluemax/index.md',
+        title: 'Element: ariaValueMax property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariavaluemin/index.md',
+        title: 'Element: ariaValueMin property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariavaluenow/index.md',
+        title: 'Element: ariaValueNow property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/ariavaluetext/index.md',
+        title: 'Element: ariaValueText property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/assignedslot/index.md',
+        title: 'Element: assignedSlot property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/attachshadow/index.md',
+        title: 'Element: attachShadow() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/attributes/index.md',
+        title: 'Element: attributes property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/auxclick_event/index.md',
+        title: 'Element: auxclick event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/before/index.md',
+        title: 'Element: before() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/beforeinput_event/index.md',
+        title: 'Element: beforeinput event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/beforematch_event/index.md',
+        title: 'Element: beforematch event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/beforescriptexecute_event/index.md',
+        title: 'Element: beforescriptexecute event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/beforexrselect_event/index.md',
+        title: 'Element: beforexrselect event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/blur_event/index.md',
+        title: 'Element: blur event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/checkvisibility/index.md',
+        title: 'Element: checkVisibility() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/childelementcount/index.md',
+        title: 'Element: childElementCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/children/index.md',
+        title: 'Element: children property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/classlist/index.md',
+        title: 'Element: classList property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/classname/index.md',
+        title: 'Element: className property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/click_event/index.md',
+        title: 'Element: click event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/clientheight/index.md',
+        title: 'Element: clientHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/clientleft/index.md',
+        title: 'Element: clientLeft property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/clienttop/index.md',
+        title: 'Element: clientTop property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/clientwidth/index.md',
+        title: 'Element: clientWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/closest/index.md',
+        title: 'Element: closest() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/compositionend_event/index.md',
+        title: 'Element: compositionend event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/compositionstart_event/index.md',
+        title: 'Element: compositionstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/compositionupdate_event/index.md',
+        title: 'Element: compositionupdate event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/computedstylemap/index.md',
+        title: 'Element: computedStyleMap() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/contentvisibilityautostatechange_event/index.md',
+        title: 'Element: contentvisibilityautostatechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/contextmenu_event/index.md',
+        title: 'Element: contextmenu event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/copy_event/index.md',
+        title: 'Element: copy event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/currentcsszoom/index.md',
+        title: 'Element: currentCSSZoom property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/cut_event/index.md',
+        title: 'Element: cut event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/dblclick_event/index.md',
+        title: 'Element: dblclick event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/domactivate_event/index.md',
+        title: 'Element: DOMActivate event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/dommousescroll_event/index.md',
+        title: 'Element: DOMMouseScroll event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/elementtiming/index.md',
+        title: 'Element: elementTiming property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/firstelementchild/index.md',
+        title: 'Element: firstElementChild property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/focus_event/index.md',
+        title: 'Element: focus event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/focusin_event/index.md',
+        title: 'Element: focusin event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/focusout_event/index.md',
+        title: 'Element: focusout event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/fullscreenchange_event/index.md',
+        title: 'Element: fullscreenchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/fullscreenerror_event/index.md',
+        title: 'Element: fullscreenerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/gesturechange_event/index.md',
+        title: 'Element: gesturechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/gestureend_event/index.md',
+        title: 'Element: gestureend event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/gesturestart_event/index.md',
+        title: 'Element: gesturestart event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/getanimations/index.md',
+        title: 'Element: getAnimations() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/getattribute/index.md',
+        title: 'Element: getAttribute() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/getattributenames/index.md',
+        title: 'Element: getAttributeNames() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/getattributenode/index.md',
+        title: 'Element: getAttributeNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/getattributenodens/index.md',
+        title: 'Element: getAttributeNodeNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/getattributens/index.md',
+        title: 'Element: getAttributeNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/getboundingclientrect/index.md',
+        title: 'Element: getBoundingClientRect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/getclientrects/index.md',
+        title: 'Element: getClientRects() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/getelementsbyclassname/index.md',
+        title: 'Element: getElementsByClassName() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/getelementsbytagname/index.md',
+        title: 'Element: getElementsByTagName() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/getelementsbytagnamens/index.md',
+        title: 'Element: getElementsByTagNameNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/gethtml/index.md',
+        title: 'Element: getHTML() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/gotpointercapture_event/index.md',
+        title: 'Element: gotpointercapture event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/hasattribute/index.md',
+        title: 'Element: hasAttribute() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/hasattributens/index.md',
+        title: 'Element: hasAttributeNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/hasattributes/index.md',
+        title: 'Element: hasAttributes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/haspointercapture/index.md',
+        title: 'Element: hasPointerCapture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/id/index.md',
+        title: 'Element: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/index.md',
+        title: 'Element',
+    },
+    {
+        path: 'lib/javascript/web_api/element/innerhtml/index.md',
+        title: 'Element: innerHTML property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/input_event/index.md',
+        title: 'Element: input event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/insertadjacentelement/index.md',
+        title: 'Element: insertAdjacentElement() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/insertadjacenthtml/index.md',
+        title: 'Element: insertAdjacentHTML() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/insertadjacenttext/index.md',
+        title: 'Element: insertAdjacentText() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/keydown_event/index.md',
+        title: 'Element: keydown event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/keypress_event/index.md',
+        title: 'Element: keypress event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/keyup_event/index.md',
+        title: 'Element: keyup event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/lastelementchild/index.md',
+        title: 'Element: lastElementChild property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/localname/index.md',
+        title: 'Element: localName property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/lostpointercapture_event/index.md',
+        title: 'Element: lostpointercapture event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/matches/index.md',
+        title: 'Element: matches() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/mousedown_event/index.md',
+        title: 'Element: mousedown event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/mouseenter_event/index.md',
+        title: 'Element: mouseenter event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/mouseleave_event/index.md',
+        title: 'Element: mouseleave event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/mousemove_event/index.md',
+        title: 'Element: mousemove event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/mouseout_event/index.md',
+        title: 'Element: mouseout event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/mouseover_event/index.md',
+        title: 'Element: mouseover event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/mouseup_event/index.md',
+        title: 'Element: mouseup event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/mousewheel_event/index.md',
+        title: 'Element: mousewheel event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/mozmousepixelscroll_event/index.md',
+        title: 'Element: MozMousePixelScroll event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/namespaceuri/index.md',
+        title: 'Element: namespaceURI property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/nextelementsibling/index.md',
+        title: 'Element: nextElementSibling property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/outerhtml/index.md',
+        title: 'Element: outerHTML property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/part/index.md',
+        title: 'Element: part property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/paste_event/index.md',
+        title: 'Element: paste event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/pointercancel_event/index.md',
+        title: 'Element: pointercancel event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/pointerdown_event/index.md',
+        title: 'Element: pointerdown event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/pointerenter_event/index.md',
+        title: 'Element: pointerenter event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/pointerleave_event/index.md',
+        title: 'Element: pointerleave event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/pointermove_event/index.md',
+        title: 'Element: pointermove event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/pointerout_event/index.md',
+        title: 'Element: pointerout event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/pointerover_event/index.md',
+        title: 'Element: pointerover event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/pointerrawupdate_event/index.md',
+        title: 'Element: pointerrawupdate event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/pointerup_event/index.md',
+        title: 'Element: pointerup event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/prefix/index.md',
+        title: 'Element: prefix property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/prepend/index.md',
+        title: 'Element: prepend() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/previouselementsibling/index.md',
+        title: 'Element: previousElementSibling property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/queryselector/index.md',
+        title: 'Element: querySelector() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/queryselectorall/index.md',
+        title: 'Element: querySelectorAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/releasepointercapture/index.md',
+        title: 'Element: releasePointerCapture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/remove/index.md',
+        title: 'Element: remove() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/removeattribute/index.md',
+        title: 'Element: removeAttribute() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/removeattributenode/index.md',
+        title: 'Element: removeAttributeNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/removeattributens/index.md',
+        title: 'Element: removeAttributeNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/replacechildren/index.md',
+        title: 'Element: replaceChildren() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/replacewith/index.md',
+        title: 'Element: replaceWith() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/requestfullscreen/index.md',
+        title: 'Element: requestFullscreen() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/requestpointerlock/index.md',
+        title: 'Element: requestPointerLock() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scroll/index.md',
+        title: 'Element: scroll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scroll_event/index.md',
+        title: 'Element: scroll event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scrollby/index.md',
+        title: 'Element: scrollBy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scrollend_event/index.md',
+        title: 'Element: scrollend event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scrollheight/index.md',
+        title: 'Element: scrollHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scrollintoview/index.md',
+        title: 'Element: scrollIntoView() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scrollintoviewifneeded/index.md',
+        title: 'Element: scrollIntoViewIfNeeded() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scrollleft/index.md',
+        title: 'Element: scrollLeft property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scrollleftmax/index.md',
+        title: 'Element: scrollLeftMax property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scrollto/index.md',
+        title: 'Element: scrollTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scrolltop/index.md',
+        title: 'Element: scrollTop property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scrolltopmax/index.md',
+        title: 'Element: scrollTopMax property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/scrollwidth/index.md',
+        title: 'Element: scrollWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/securitypolicyviolation_event/index.md',
+        title: 'Element: securitypolicyviolation event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/setattribute/index.md',
+        title: 'Element: setAttribute() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/setattributenode/index.md',
+        title: 'Element: setAttributeNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/setattributenodens/index.md',
+        title: 'Element: setAttributeNodeNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/setattributens/index.md',
+        title: 'Element: setAttributeNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/setcapture/index.md',
+        title: 'Element: setCapture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/sethtml/index.md',
+        title: 'Element: setHTML() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/sethtmlunsafe/index.md',
+        title: 'Element: setHTMLUnsafe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/setpointercapture/index.md',
+        title: 'Element: setPointerCapture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/shadowroot/index.md',
+        title: 'Element: shadowRoot property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/slot/index.md',
+        title: 'Element: slot property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/tagname/index.md',
+        title: 'Element: tagName property',
+    },
+    {
+        path: 'lib/javascript/web_api/element/toggleattribute/index.md',
+        title: 'Element: toggleAttribute() method',
+    },
+    {
+        path: 'lib/javascript/web_api/element/touchcancel_event/index.md',
+        title: 'Element: touchcancel event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/touchend_event/index.md',
+        title: 'Element: touchend event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/touchmove_event/index.md',
+        title: 'Element: touchmove event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/touchstart_event/index.md',
+        title: 'Element: touchstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/transitioncancel_event/index.md',
+        title: 'Element: transitioncancel event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/transitionend_event/index.md',
+        title: 'Element: transitionend event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/transitionrun_event/index.md',
+        title: 'Element: transitionrun event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/transitionstart_event/index.md',
+        title: 'Element: transitionstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/webkitmouseforcechanged_event/index.md',
+        title: 'Element: webkitmouseforcechanged event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/webkitmouseforcedown_event/index.md',
+        title: 'Element: webkitmouseforcedown event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/webkitmouseforceup_event/index.md',
+        title: 'Element: webkitmouseforceup event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/webkitmouseforcewillbegin_event/index.md',
+        title: 'Element: webkitmouseforcewillbegin event',
+    },
+    {
+        path: 'lib/javascript/web_api/element/wheel_event/index.md',
+        title: 'Element: wheel event',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariaatomic/index.md',
+        title: 'ElementInternals: ariaAtomic property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariaautocomplete/index.md',
+        title: 'ElementInternals: ariaAutoComplete property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariabusy/index.md',
+        title: 'ElementInternals: ariaBusy property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariachecked/index.md',
+        title: 'ElementInternals: ariaChecked property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariacolcount/index.md',
+        title: 'ElementInternals: ariaColCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariacolindex/index.md',
+        title: 'ElementInternals: ariaColIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariacolindextext/index.md',
+        title: 'ElementInternals.ariaColIndexText',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariacolspan/index.md',
+        title: 'ElementInternals: ariaColSpan property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariacurrent/index.md',
+        title: 'ElementInternals: ariaCurrent property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariadescription/index.md',
+        title: 'ElementInternals: ariaDescription property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariadisabled/index.md',
+        title: 'ElementInternals: ariaDisabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariaexpanded/index.md',
+        title: 'ElementInternals: ariaExpanded property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariahaspopup/index.md',
+        title: 'ElementInternals: ariaHasPopup property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariahidden/index.md',
+        title: 'ElementInternals: ariaHidden property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariakeyshortcuts/index.md',
+        title: 'ElementInternals: ariaKeyShortcuts property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/arialabel/index.md',
+        title: 'ElementInternals: ariaLabel property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/arialevel/index.md',
+        title: 'ElementInternals: ariaLevel property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/arialive/index.md',
+        title: 'ElementInternals: ariaLive property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariamodal/index.md',
+        title: 'ElementInternals: ariaModal property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariamultiline/index.md',
+        title: 'ElementInternals: ariaMultiLine property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariamultiselectable/index.md',
+        title: 'ElementInternals: ariaMultiSelectable property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariaorientation/index.md',
+        title: 'ElementInternals: ariaOrientation property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariaplaceholder/index.md',
+        title: 'ElementInternals: ariaPlaceholder property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariaposinset/index.md',
+        title: 'ElementInternals: ariaPosInSet property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariapressed/index.md',
+        title: 'ElementInternals: ariaPressed property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariareadonly/index.md',
+        title: 'ElementInternals: ariaReadOnly property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariarelevant/index.md',
+        title: 'ElementInternals: ariaRelevant property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariarequired/index.md',
+        title: 'ElementInternals: ariaRequired property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariaroledescription/index.md',
+        title: 'ElementInternals: ariaRoleDescription property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariarowcount/index.md',
+        title: 'ElementInternals: ariaRowCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariarowindex/index.md',
+        title: 'ElementInternals: ariaRowIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariarowindextext/index.md',
+        title: 'ElementInternals.ariaRowIndexText',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariarowspan/index.md',
+        title: 'ElementInternals: ariaRowSpan property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariaselected/index.md',
+        title: 'ElementInternals: ariaSelected property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariasetsize/index.md',
+        title: 'ElementInternals: ariaSetSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariasort/index.md',
+        title: 'ElementInternals: ariaSort property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariavaluemax/index.md',
+        title: 'ElementInternals: ariaValueMax property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariavaluemin/index.md',
+        title: 'ElementInternals: ariaValueMin property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariavaluenow/index.md',
+        title: 'ElementInternals: ariaValueNow property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/ariavaluetext/index.md',
+        title: 'ElementInternals: ariaValueText property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/checkvalidity/index.md',
+        title: 'ElementInternals: checkValidity() method',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/form/index.md',
+        title: 'ElementInternals: form property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/index.md',
+        title: 'ElementInternals',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/labels/index.md',
+        title: 'ElementInternals: labels property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/reportvalidity/index.md',
+        title: 'ElementInternals: reportValidity() method',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/role/index.md',
+        title: 'ElementInternals: role property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/setformvalue/index.md',
+        title: 'ElementInternals: setFormValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/setvalidity/index.md',
+        title: 'ElementInternals: setValidity() method',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/shadowroot/index.md',
+        title: 'ElementInternals: shadowRoot property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/states/index.md',
+        title: 'ElementInternals: states property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/validationmessage/index.md',
+        title: 'ElementInternals: validationMessage property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/validity/index.md',
+        title: 'ElementInternals: validity property',
+    },
+    {
+        path: 'lib/javascript/web_api/elementinternals/willvalidate/index.md',
+        title: 'ElementInternals: willValidate property',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedaudiochunk/bytelength/index.md',
+        title: 'EncodedAudioChunk: byteLength property',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedaudiochunk/copyto/index.md',
+        title: 'EncodedAudioChunk: copyTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedaudiochunk/duration/index.md',
+        title: 'EncodedAudioChunk: duration property',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedaudiochunk/encodedaudiochunk/index.md',
+        title: 'EncodedAudioChunk: EncodedAudioChunk() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedaudiochunk/index.md',
+        title: 'EncodedAudioChunk',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedaudiochunk/timestamp/index.md',
+        title: 'EncodedAudioChunk: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedaudiochunk/type/index.md',
+        title: 'EncodedAudioChunk: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedvideochunk/bytelength/index.md',
+        title: 'EncodedVideoChunk: byteLength property',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedvideochunk/copyto/index.md',
+        title: 'EncodedVideoChunk: copyTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedvideochunk/duration/index.md',
+        title: 'EncodedVideoChunk: duration property',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedvideochunk/encodedvideochunk/index.md',
+        title: 'EncodedVideoChunk: EncodedVideoChunk() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedvideochunk/index.md',
+        title: 'EncodedVideoChunk',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedvideochunk/timestamp/index.md',
+        title: 'EncodedVideoChunk: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/encodedvideochunk/type/index.md',
+        title: 'EncodedVideoChunk: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/encoding_api/encodings/index.md',
+        title: 'Encoding API Encodings',
+    },
+    {
+        path: 'lib/javascript/web_api/encoding_api/index.md',
+        title: 'Encoding API',
+    },
+    {
+        path: 'lib/javascript/web_api/encrypted_media_extensions_api/index.md',
+        title: 'Encrypted Media Extensions API',
+    },
+    {
+        path: 'lib/javascript/web_api/errorevent/index.md',
+        title: 'ErrorEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/event/bubbles/index.md',
+        title: 'Event: bubbles property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/cancelable/index.md',
+        title: 'Event: cancelable property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/cancelbubble/index.md',
+        title: 'Event: cancelBubble property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/composed/index.md',
+        title: 'Event: composed property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/composedpath/index.md',
+        title: 'Event: composedPath() method',
+    },
+    {
+        path: 'lib/javascript/web_api/event/currenttarget/index.md',
+        title: 'Event: currentTarget property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/defaultprevented/index.md',
+        title: 'Event: defaultPrevented property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/event/index.md',
+        title: 'Event: Event() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/event/eventphase/index.md',
+        title: 'Event: eventPhase property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/explicitoriginaltarget/index.md',
+        title: 'Event: explicitOriginalTarget property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/index.md',
+        title: 'Event',
+    },
+    {
+        path: 'lib/javascript/web_api/event/initevent/index.md',
+        title: 'Event: initEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/event/istrusted/index.md',
+        title: 'Event: isTrusted property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/originaltarget/index.md',
+        title: 'Event: originalTarget property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/preventdefault/index.md',
+        title: 'Event: preventDefault() method',
+    },
+    {
+        path: 'lib/javascript/web_api/event/returnvalue/index.md',
+        title: 'Event: returnValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/srcelement/index.md',
+        title: 'Event: srcElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/stopimmediatepropagation/index.md',
+        title: 'Event: stopImmediatePropagation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/event/stoppropagation/index.md',
+        title: 'Event: stopPropagation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/event/target/index.md',
+        title: 'Event: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/timestamp/index.md',
+        title: 'Event: timeStamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/event/type/index.md',
+        title: 'Event: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/eventcounts/index.md',
+        title: 'EventCounts',
+    },
+    {
+        path: 'lib/javascript/web_api/eventsource/close/index.md',
+        title: 'EventSource: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/eventsource/error_event/index.md',
+        title: 'EventSource: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/eventsource/eventsource/index.md',
+        title: 'EventSource: EventSource() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/eventsource/index.md',
+        title: 'EventSource',
+    },
+    {
+        path: 'lib/javascript/web_api/eventsource/message_event/index.md',
+        title: 'EventSource: message event',
+    },
+    {
+        path: 'lib/javascript/web_api/eventsource/open_event/index.md',
+        title: 'EventSource: open event',
+    },
+    {
+        path: 'lib/javascript/web_api/eventsource/readystate/index.md',
+        title: 'EventSource: readyState property',
+    },
+    {
+        path: 'lib/javascript/web_api/eventsource/url/index.md',
+        title: 'EventSource: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/eventsource/withcredentials/index.md',
+        title: 'EventSource: withCredentials property',
+    },
+    {
+        path: 'lib/javascript/web_api/eventtarget/addeventlistener/index.md',
+        title: 'EventTarget: addEventListener() method',
+    },
+    {
+        path: 'lib/javascript/web_api/eventtarget/dispatchevent/index.md',
+        title: 'EventTarget: dispatchEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/eventtarget/eventtarget/index.md',
+        title: 'EventTarget: EventTarget() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/eventtarget/index.md',
+        title: 'EventTarget',
+    },
+    {
+        path: 'lib/javascript/web_api/eventtarget/removeeventlistener/index.md',
+        title: 'EventTarget: removeEventListener() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_blend_minmax/index.md',
+        title: 'EXT_blend_minmax extension',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_color_buffer_float/index.md',
+        title: 'EXT_color_buffer_float extension',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_color_buffer_half_float/index.md',
+        title: 'EXT_color_buffer_half_float extension',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_disjoint_timer_query/beginqueryext/index.md',
+        title: 'EXT_disjoint_timer_query: beginQueryEXT() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_disjoint_timer_query/createqueryext/index.md',
+        title: 'EXT_disjoint_timer_query: createQueryEXT() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_disjoint_timer_query/deletequeryext/index.md',
+        title: 'EXT_disjoint_timer_query: deleteQueryEXT() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_disjoint_timer_query/endqueryext/index.md',
+        title: 'EXT_disjoint_timer_query: endQueryEXT() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_disjoint_timer_query/getqueryext/index.md',
+        title: 'EXT_disjoint_timer_query: getQueryEXT() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_disjoint_timer_query/getqueryobjectext/index.md',
+        title: 'EXT_disjoint_timer_query: getQueryObjectEXT() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_disjoint_timer_query/index.md',
+        title: 'EXT_disjoint_timer_query extension',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_disjoint_timer_query/isqueryext/index.md',
+        title: 'EXT_disjoint_timer_query: isQueryEXT() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_disjoint_timer_query/querycounterext/index.md',
+        title: 'EXT_disjoint_timer_query: queryCounterEXT() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_float_blend/index.md',
+        title: 'EXT_float_blend extension',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_frag_depth/index.md',
+        title: 'EXT_frag_depth extension',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_shader_texture_lod/index.md',
+        title: 'EXT_shader_texture_lod extension',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_srgb/index.md',
+        title: 'EXT_sRGB extension',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_texture_compression_bptc/index.md',
+        title: 'EXT_texture_compression_bptc extension',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_texture_compression_rgtc/index.md',
+        title: 'EXT_texture_compression_rgtc extension',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_texture_filter_anisotropic/index.md',
+        title: 'EXT_texture_filter_anisotropic extension',
+    },
+    {
+        path: 'lib/javascript/web_api/ext_texture_norm16/index.md',
+        title: 'EXT_texture_norm16 extension',
+    },
+    {
+        path: 'lib/javascript/web_api/extendablecookiechangeevent/changed/index.md',
+        title: 'ExtendableCookieChangeEvent: changed property',
+    },
+    {
+        path: 'lib/javascript/web_api/extendablecookiechangeevent/deleted/index.md',
+        title: 'ExtendableCookieChangeEvent: deleted property',
+    },
+    {
+        path: 'lib/javascript/web_api/extendablecookiechangeevent/extendablecookiechangeevent/index.md',
+        title: 'ExtendableCookieChangeEvent: ExtendableCookieChangeEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/extendablecookiechangeevent/index.md',
+        title: 'ExtendableCookieChangeEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/extendableevent/extendableevent/index.md',
+        title: 'ExtendableEvent: ExtendableEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/extendableevent/index.md',
+        title: 'ExtendableEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/extendableevent/waituntil/index.md',
+        title: 'ExtendableEvent: waitUntil() method',
+    },
+    {
+        path: 'lib/javascript/web_api/extendablemessageevent/data/index.md',
+        title: 'ExtendableMessageEvent: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/extendablemessageevent/extendablemessageevent/index.md',
+        title: 'ExtendableMessageEvent: ExtendableMessageEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/extendablemessageevent/index.md',
+        title: 'ExtendableMessageEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/extendablemessageevent/lasteventid/index.md',
+        title: 'ExtendableMessageEvent: lastEventId property',
+    },
+    {
+        path: 'lib/javascript/web_api/extendablemessageevent/origin/index.md',
+        title: 'ExtendableMessageEvent: origin property',
+    },
+    {
+        path: 'lib/javascript/web_api/extendablemessageevent/ports/index.md',
+        title: 'ExtendableMessageEvent: ports property',
+    },
+    {
+        path: 'lib/javascript/web_api/extendablemessageevent/source/index.md',
+        title: 'ExtendableMessageEvent: source property',
+    },
+    {
+        path: 'lib/javascript/web_api/eyedropper/eyedropper/index.md',
+        title: 'EyeDropper: EyeDropper() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/eyedropper/index.md',
+        title: 'EyeDropper',
+    },
+    {
+        path: 'lib/javascript/web_api/eyedropper/open/index.md',
+        title: 'EyeDropper: open() method',
+    },
+    {
+        path: 'lib/javascript/web_api/eyedropper_api/index.md',
+        title: 'EyeDropper API',
+    },
+    {
+        path: 'lib/javascript/web_api/featurepolicy/allowedfeatures/index.md',
+        title: 'FeaturePolicy: allowedFeatures() method',
+    },
+    {
+        path: 'lib/javascript/web_api/featurepolicy/allowsfeature/index.md',
+        title: 'FeaturePolicy: allowsFeature() method',
+    },
+    {
+        path: 'lib/javascript/web_api/featurepolicy/features/index.md',
+        title: 'FeaturePolicy: features() method',
+    },
+    {
+        path: 'lib/javascript/web_api/featurepolicy/getallowlistforfeature/index.md',
+        title: 'FeaturePolicy: getAllowlistForFeature() method',
+    },
+    {
+        path: 'lib/javascript/web_api/featurepolicy/index.md',
+        title: 'FeaturePolicy',
+    },
+    {
+        path: 'lib/javascript/web_api/fedcm_api/idp_integration/index.md',
+        title: 'Identity provider integration with FedCM',
+    },
+    {
+        path: 'lib/javascript/web_api/fedcm_api/index.md',
+        title: 'Federated Credential Management (FedCM) API',
+    },
+    {
+        path: 'lib/javascript/web_api/fedcm_api/rp_sign-in/index.md',
+        title: 'Relying party federated sign-in',
+    },
+    {
+        path: 'lib/javascript/web_api/federatedcredential/federatedcredential/index.md',
+        title: 'FederatedCredential: FederatedCredential() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/federatedcredential/index.md',
+        title: 'FederatedCredential',
+    },
+    {
+        path: 'lib/javascript/web_api/federatedcredential/protocol/index.md',
+        title: 'FederatedCredential: protocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/federatedcredential/provider/index.md',
+        title: 'FederatedCredential: provider property',
+    },
+    {
+        path: 'lib/javascript/web_api/federatedcredentialinit/index.md',
+        title: 'FederatedCredentialInit',
+    },
+    {
+        path: 'lib/javascript/web_api/fence/getnestedconfigs/index.md',
+        title: 'Fence: getNestedConfigs() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fence/index.md',
+        title: 'Fence',
+    },
+    {
+        path: 'lib/javascript/web_api/fence/reportevent/index.md',
+        title: 'Fence: reportEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fence/setreporteventdataforautomaticbeacons/index.md',
+        title: 'Fence: setReportEventDataForAutomaticBeacons() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fenced_frame_api/communication_with_embedded_frames/index.md',
+        title: 'Communication with embedded frames',
+    },
+    {
+        path: 'lib/javascript/web_api/fenced_frame_api/index.md',
+        title: 'Fenced Frame API',
+    },
+    {
+        path: 'lib/javascript/web_api/fencedframeconfig/index.md',
+        title: 'FencedFrameConfig',
+    },
+    {
+        path: 'lib/javascript/web_api/fencedframeconfig/setsharedstoragecontext/index.md',
+        title: 'FencedFrameConfig: setSharedStorageContext() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fetch_api/index.md',
+        title: 'Fetch API',
+    },
+    {
+        path: 'lib/javascript/web_api/fetch_api/using_fetch/index.md',
+        title: 'Using the Fetch API',
+    },
+    {
+        path: 'lib/javascript/web_api/fetchevent/clientid/index.md',
+        title: 'FetchEvent: clientId property',
+    },
+    {
+        path: 'lib/javascript/web_api/fetchevent/fetchevent/index.md',
+        title: 'FetchEvent: FetchEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/fetchevent/handled/index.md',
+        title: 'FetchEvent: handled property',
+    },
+    {
+        path: 'lib/javascript/web_api/fetchevent/index.md',
+        title: 'FetchEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/fetchevent/isreload/index.md',
+        title: 'FetchEvent: isReload property',
+    },
+    {
+        path: 'lib/javascript/web_api/fetchevent/preloadresponse/index.md',
+        title: 'FetchEvent: preloadResponse property',
+    },
+    {
+        path: 'lib/javascript/web_api/fetchevent/replacesclientid/index.md',
+        title: 'FetchEvent: replacesClientId property',
+    },
+    {
+        path: 'lib/javascript/web_api/fetchevent/request/index.md',
+        title: 'FetchEvent: request property',
+    },
+    {
+        path: 'lib/javascript/web_api/fetchevent/respondwith/index.md',
+        title: 'FetchEvent: respondWith() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fetchevent/resultingclientid/index.md',
+        title: 'FetchEvent: resultingClientId property',
+    },
+    {
+        path: 'lib/javascript/web_api/file/file/index.md',
+        title: 'File: File() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/file/index.md',
+        title: 'File',
+    },
+    {
+        path: 'lib/javascript/web_api/file/lastmodified/index.md',
+        title: 'File: lastModified property',
+    },
+    {
+        path: 'lib/javascript/web_api/file/lastmodifieddate/index.md',
+        title: 'File: lastModifiedDate property',
+    },
+    {
+        path: 'lib/javascript/web_api/file/name/index.md',
+        title: 'File: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/file/webkitrelativepath/index.md',
+        title: 'File: webkitRelativePath property',
+    },
+    {
+        path: 'lib/javascript/web_api/file_and_directory_entries_api/firefox_support/index.md',
+        title: 'File and Directory Entries API support in Firefox',
+    },
+    {
+        path: 'lib/javascript/web_api/file_and_directory_entries_api/index.md',
+        title: 'File and Directory Entries API',
+    },
+    {
+        path: 'lib/javascript/web_api/file_and_directory_entries_api/introduction/index.md',
+        title: 'Introduction to the File and Directory Entries API',
+    },
+    {
+        path: 'lib/javascript/web_api/file_api/index.md',
+        title: 'File API',
+    },
+    {
+        path: 'lib/javascript/web_api/file_api/using_files_from_web_applications/index.md',
+        title: 'Using files from web applications',
+    },
+    {
+        path: 'lib/javascript/web_api/file_system_api/index.md',
+        title: 'File System API',
+    },
+    {
+        path: 'lib/javascript/web_api/file_system_api/origin_private_file_system/index.md',
+        title: 'Origin private file system',
+    },
+    {
+        path: 'lib/javascript/web_api/fileentrysync/index.md',
+        title: 'FileEntrySync',
+    },
+    {
+        path: 'lib/javascript/web_api/filelist/index.md',
+        title: 'FileList',
+    },
+    {
+        path: 'lib/javascript/web_api/filelist/item/index.md',
+        title: 'FileList: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filelist/length/index.md',
+        title: 'FileList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/abort/index.md',
+        title: 'FileReader: abort() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/abort_event/index.md',
+        title: 'FileReader: abort event',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/error/index.md',
+        title: 'FileReader: error property',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/error_event/index.md',
+        title: 'FileReader: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/filereader/index.md',
+        title: 'FileReader: FileReader() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/index.md',
+        title: 'FileReader',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/load_event/index.md',
+        title: 'FileReader: load event',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/loadend_event/index.md',
+        title: 'FileReader: loadend event',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/loadstart_event/index.md',
+        title: 'FileReader: loadstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/progress_event/index.md',
+        title: 'FileReader: progress event',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/readasarraybuffer/index.md',
+        title: 'FileReader: readAsArrayBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/readasbinarystring/index.md',
+        title: 'FileReader: readAsBinaryString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/readasdataurl/index.md',
+        title: 'FileReader: readAsDataURL() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/readastext/index.md',
+        title: 'FileReader: readAsText() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/readystate/index.md',
+        title: 'FileReader: readyState property',
+    },
+    {
+        path: 'lib/javascript/web_api/filereader/result/index.md',
+        title: 'FileReader: result property',
+    },
+    {
+        path: 'lib/javascript/web_api/filereadersync/filereadersync/index.md',
+        title: 'FileReaderSync: FileReaderSync() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/filereadersync/index.md',
+        title: 'FileReaderSync',
+    },
+    {
+        path: 'lib/javascript/web_api/filereadersync/readasarraybuffer/index.md',
+        title: 'FileReaderSync: readAsArrayBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filereadersync/readasbinarystring/index.md',
+        title: 'FileReaderSync: readAsBinaryString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filereadersync/readasdataurl/index.md',
+        title: 'FileReaderSync: readAsDataURL() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filereadersync/readastext/index.md',
+        title: 'FileReaderSync: readAsText() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystem/index.md',
+        title: 'FileSystem',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystem/name/index.md',
+        title: 'FileSystem: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystem/root/index.md',
+        title: 'FileSystem: root property',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryentry/createreader/index.md',
+        title: 'FileSystemDirectoryEntry: createReader() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryentry/getdirectory/index.md',
+        title: 'FileSystemDirectoryEntry: getDirectory() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryentry/getfile/index.md',
+        title: 'FileSystemDirectoryEntry: getFile() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryentry/index.md',
+        title: 'FileSystemDirectoryEntry',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryentry/removerecursively/index.md',
+        title: 'FileSystemDirectoryEntry: removeRecursively() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryhandle/entries/index.md',
+        title: 'FileSystemDirectoryHandle: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryhandle/getdirectoryhandle/index.md',
+        title: 'FileSystemDirectoryHandle: getDirectoryHandle() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryhandle/getfilehandle/index.md',
+        title: 'FileSystemDirectoryHandle: getFileHandle() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryhandle/index.md',
+        title: 'FileSystemDirectoryHandle',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryhandle/keys/index.md',
+        title: 'FileSystemDirectoryHandle: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryhandle/removeentry/index.md',
+        title: 'FileSystemDirectoryHandle: removeEntry() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryhandle/resolve/index.md',
+        title: 'FileSystemDirectoryHandle: resolve() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryhandle/values/index.md',
+        title: 'FileSystemDirectoryHandle: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryreader/index.md',
+        title: 'FileSystemDirectoryReader',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemdirectoryreader/readentries/index.md',
+        title: 'FileSystemDirectoryReader: readEntries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystementry/copyto/index.md',
+        title: 'FileSystemEntry: copyTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystementry/filesystem/index.md',
+        title: 'FileSystemEntry: filesystem property',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystementry/fullpath/index.md',
+        title: 'FileSystemEntry: fullPath property',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystementry/getmetadata/index.md',
+        title: 'FileSystemEntry: getMetadata() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystementry/getparent/index.md',
+        title: 'FileSystemEntry: getParent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystementry/index.md',
+        title: 'FileSystemEntry',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystementry/isdirectory/index.md',
+        title: 'FileSystemEntry: isDirectory property',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystementry/isfile/index.md',
+        title: 'FileSystemEntry: isFile property',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystementry/moveto/index.md',
+        title: 'FileSystemEntry: moveTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystementry/name/index.md',
+        title: 'FileSystemEntry: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystementry/remove/index.md',
+        title: 'FileSystemEntry: remove() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystementry/tourl/index.md',
+        title: 'FileSystemEntry: toURL() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemfileentry/createwriter/index.md',
+        title: 'FileSystemFileEntry: createWriter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemfileentry/file/index.md',
+        title: 'FileSystemFileEntry: file() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemfileentry/index.md',
+        title: 'FileSystemFileEntry',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemfilehandle/createsyncaccesshandle/index.md',
+        title: 'FileSystemFileHandle: createSyncAccessHandle() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemfilehandle/createwritable/index.md',
+        title: 'FileSystemFileHandle: createWritable() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemfilehandle/getfile/index.md',
+        title: 'FileSystemFileHandle: getFile() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemfilehandle/index.md',
+        title: 'FileSystemFileHandle',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemhandle/index.md',
+        title: 'FileSystemHandle',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemhandle/issameentry/index.md',
+        title: 'FileSystemHandle: isSameEntry() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemhandle/kind/index.md',
+        title: 'FileSystemHandle: kind property',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemhandle/name/index.md',
+        title: 'FileSystemHandle: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemhandle/querypermission/index.md',
+        title: 'FileSystemHandle: queryPermission() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemhandle/remove/index.md',
+        title: 'FileSystemHandle: remove() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemhandle/requestpermission/index.md',
+        title: 'FileSystemHandle: requestPermission() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemsync/index.md',
+        title: 'FileSystemSync',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemsyncaccesshandle/close/index.md',
+        title: 'FileSystemSyncAccessHandle: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemsyncaccesshandle/flush/index.md',
+        title: 'FileSystemSyncAccessHandle: flush() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemsyncaccesshandle/getsize/index.md',
+        title: 'FileSystemSyncAccessHandle: getSize() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemsyncaccesshandle/index.md',
+        title: 'FileSystemSyncAccessHandle',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemsyncaccesshandle/read/index.md',
+        title: 'FileSystemSyncAccessHandle: read() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemsyncaccesshandle/truncate/index.md',
+        title: 'FileSystemSyncAccessHandle: truncate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemsyncaccesshandle/write/index.md',
+        title: 'FileSystemSyncAccessHandle: write() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemwritablefilestream/index.md',
+        title: 'FileSystemWritableFileStream',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemwritablefilestream/seek/index.md',
+        title: 'FileSystemWritableFileStream: seek() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemwritablefilestream/truncate/index.md',
+        title: 'FileSystemWritableFileStream: truncate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/filesystemwritablefilestream/write/index.md',
+        title: 'FileSystemWritableFileStream: write() method',
+    },
+    {
+        path: 'lib/javascript/web_api/focusevent/focusevent/index.md',
+        title: 'FocusEvent: FocusEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/focusevent/index.md',
+        title: 'FocusEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/focusevent/relatedtarget/index.md',
+        title: 'FocusEvent: relatedTarget property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontdata/blob/index.md',
+        title: 'FontData: blob() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fontdata/family/index.md',
+        title: 'FontData: family property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontdata/fullname/index.md',
+        title: 'FontData: fullName property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontdata/index.md',
+        title: 'FontData',
+    },
+    {
+        path: 'lib/javascript/web_api/fontdata/postscriptname/index.md',
+        title: 'FontData: postscriptName property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontdata/style/index.md',
+        title: 'FontData: style property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/ascentoverride/index.md',
+        title: 'FontFace: ascentOverride property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/descentoverride/index.md',
+        title: 'FontFace: descentOverride property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/display/index.md',
+        title: 'FontFace: display property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/family/index.md',
+        title: 'FontFace: family property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/featuresettings/index.md',
+        title: 'FontFace: featureSettings property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/fontface/index.md',
+        title: 'FontFace: FontFace() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/index.md',
+        title: 'FontFace',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/linegapoverride/index.md',
+        title: 'FontFace: lineGapOverride property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/load/index.md',
+        title: 'FontFace: load() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/loaded/index.md',
+        title: 'FontFace: loaded property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/status/index.md',
+        title: 'FontFace: status property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/stretch/index.md',
+        title: 'FontFace: stretch property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/style/index.md',
+        title: 'FontFace: style property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/unicoderange/index.md',
+        title: 'FontFace: unicodeRange property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/variant/index.md',
+        title: 'FontFace: variant property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/variationsettings/index.md',
+        title: 'FontFace: variationSettings property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontface/weight/index.md',
+        title: 'FontFace: weight property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/add/index.md',
+        title: 'FontFaceSet: add() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/check/index.md',
+        title: 'FontFaceSet: check() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/clear/index.md',
+        title: 'FontFaceSet: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/delete/index.md',
+        title: 'FontFaceSet: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/entries/index.md',
+        title: 'FontFaceSet: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/foreach/index.md',
+        title: 'FontFaceSet: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/has/index.md',
+        title: 'FontFaceSet: has() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/index.md',
+        title: 'FontFaceSet',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/keys/index.md',
+        title: 'FontFaceSet: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/load/index.md',
+        title: 'FontFaceSet: load() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/loading_event/index.md',
+        title: 'FontFaceSet: loading event',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/loadingdone_event/index.md',
+        title: 'FontFaceSet: loadingdone event',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/loadingerror_event/index.md',
+        title: 'FontFaceSet: loadingerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/ready/index.md',
+        title: 'FontFaceSet: ready property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/size/index.md',
+        title: 'FontFaceSet: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/status/index.md',
+        title: 'FontFaceSet: status property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfaceset/values/index.md',
+        title: 'FontFaceSet: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfacesetloadevent/fontfaces/index.md',
+        title: 'FontFaceSetLoadEvent: fontfaces property',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfacesetloadevent/fontfacesetloadevent/index.md',
+        title: 'FontFaceSetLoadEvent: FontFaceSetLoadEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/fontfacesetloadevent/index.md',
+        title: 'FontFaceSetLoadEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/force_touch_events/index.md',
+        title: 'Force Touch events',
+    },
+    {
+        path: 'lib/javascript/web_api/formdata/append/index.md',
+        title: 'FormData: append() method',
+    },
+    {
+        path: 'lib/javascript/web_api/formdata/delete/index.md',
+        title: 'FormData: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/formdata/entries/index.md',
+        title: 'FormData: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/formdata/formdata/index.md',
+        title: 'FormData: FormData() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/formdata/get/index.md',
+        title: 'FormData: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/formdata/getall/index.md',
+        title: 'FormData: getAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/formdata/has/index.md',
+        title: 'FormData: has() method',
+    },
+    {
+        path: 'lib/javascript/web_api/formdata/index.md',
+        title: 'FormData',
+    },
+    {
+        path: 'lib/javascript/web_api/formdata/keys/index.md',
+        title: 'FormData: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/formdata/set/index.md',
+        title: 'FormData: set() method',
+    },
+    {
+        path: 'lib/javascript/web_api/formdata/values/index.md',
+        title: 'FormData: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/formdataevent/formdata/index.md',
+        title: 'FormDataEvent: formData property',
+    },
+    {
+        path: 'lib/javascript/web_api/formdataevent/formdataevent/index.md',
+        title: 'FormDataEvent: FormDataEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/formdataevent/index.md',
+        title: 'FormDataEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/fragmentdirective/index.md',
+        title: 'FragmentDirective',
+    },
+    {
+        path: 'lib/javascript/web_api/fullscreen_api/guide/index.md',
+        title: 'Guide to the Fullscreen API',
+    },
+    {
+        path: 'lib/javascript/web_api/fullscreen_api/index.md',
+        title: 'Fullscreen API',
+    },
+    {
+        path: 'lib/javascript/web_api/gainnode/gain/index.md',
+        title: 'GainNode: gain property',
+    },
+    {
+        path: 'lib/javascript/web_api/gainnode/gainnode/index.md',
+        title: 'GainNode: GainNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/gainnode/index.md',
+        title: 'GainNode',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/axes/index.md',
+        title: 'Gamepad: axes property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/buttons/index.md',
+        title: 'Gamepad: buttons property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/connected/index.md',
+        title: 'Gamepad: connected property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/displayid/index.md',
+        title: 'Gamepad: displayId property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/hand/index.md',
+        title: 'Gamepad: hand property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/hapticactuators/index.md',
+        title: 'Gamepad: hapticActuators property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/id/index.md',
+        title: 'Gamepad: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/index/index.md',
+        title: 'Gamepad: index property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/index.md',
+        title: 'Gamepad',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/mapping/index.md',
+        title: 'Gamepad: mapping property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/pose/index.md',
+        title: 'Gamepad: pose property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/timestamp/index.md',
+        title: 'Gamepad: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad/vibrationactuator/index.md',
+        title: 'Gamepad: vibrationActuator property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad_api/index.md',
+        title: 'Gamepad API',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepad_api/using_the_gamepad_api/index.md',
+        title: 'Using the Gamepad API',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadbutton/index.md',
+        title: 'GamepadButton',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadbutton/pressed/index.md',
+        title: 'GamepadButton: pressed property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadbutton/touched/index.md',
+        title: 'GamepadButton: touched property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadbutton/value/index.md',
+        title: 'GamepadButton: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadevent/gamepad/index.md',
+        title: 'GamepadEvent: gamepad property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadevent/gamepadevent/index.md',
+        title: 'GamepadEvent: GamepadEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadevent/index.md',
+        title: 'GamepadEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadhapticactuator/effects/index.md',
+        title: 'GamepadHapticActuator: effects property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadhapticactuator/index.md',
+        title: 'GamepadHapticActuator',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadhapticactuator/playeffect/index.md',
+        title: 'GamepadHapticActuator: playEffect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadhapticactuator/pulse/index.md',
+        title: 'GamepadHapticActuator: pulse() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadhapticactuator/reset/index.md',
+        title: 'GamepadHapticActuator: reset() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadhapticactuator/type/index.md',
+        title: 'GamepadHapticActuator: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadpose/angularacceleration/index.md',
+        title: 'GamepadPose: angularAcceleration property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadpose/angularvelocity/index.md',
+        title: 'GamepadPose: angularVelocity property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadpose/hasorientation/index.md',
+        title: 'GamepadPose: hasOrientation property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadpose/hasposition/index.md',
+        title: 'GamepadPose: hasPosition property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadpose/index.md',
+        title: 'GamepadPose',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadpose/linearacceleration/index.md',
+        title: 'GamepadPose: linearAcceleration property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadpose/linearvelocity/index.md',
+        title: 'GamepadPose: linearVelocity property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadpose/orientation/index.md',
+        title: 'GamepadPose: orientation property',
+    },
+    {
+        path: 'lib/javascript/web_api/gamepadpose/position/index.md',
+        title: 'GamepadPose: position property',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocation/clearwatch/index.md',
+        title: 'Geolocation: clearWatch() method',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocation/getcurrentposition/index.md',
+        title: 'Geolocation: getCurrentPosition() method',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocation/index.md',
+        title: 'Geolocation',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocation/watchposition/index.md',
+        title: 'Geolocation: watchPosition() method',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocation_api/index.md',
+        title: 'Geolocation API',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocation_api/using_the_geolocation_api/index.md',
+        title: 'Using the Geolocation API',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationcoordinates/accuracy/index.md',
+        title: 'GeolocationCoordinates: accuracy property',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationcoordinates/altitude/index.md',
+        title: 'GeolocationCoordinates: altitude property',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationcoordinates/altitudeaccuracy/index.md',
+        title: 'GeolocationCoordinates: altitudeAccuracy property',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationcoordinates/heading/index.md',
+        title: 'GeolocationCoordinates: heading property',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationcoordinates/index.md',
+        title: 'GeolocationCoordinates',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationcoordinates/latitude/index.md',
+        title: 'GeolocationCoordinates: latitude property',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationcoordinates/longitude/index.md',
+        title: 'GeolocationCoordinates: longitude property',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationcoordinates/speed/index.md',
+        title: 'GeolocationCoordinates: speed property',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationcoordinates/tojson/index.md',
+        title: 'GeolocationCoordinates: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationposition/coords/index.md',
+        title: 'GeolocationPosition: coords property',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationposition/index.md',
+        title: 'GeolocationPosition',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationposition/timestamp/index.md',
+        title: 'GeolocationPosition: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationposition/tojson/index.md',
+        title: 'GeolocationPosition: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationpositionerror/code/index.md',
+        title: 'GeolocationPositionError: code property',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationpositionerror/index.md',
+        title: 'GeolocationPositionError',
+    },
+    {
+        path: 'lib/javascript/web_api/geolocationpositionerror/message/index.md',
+        title: 'GeolocationPositionError: message property',
+    },
+    {
+        path: 'lib/javascript/web_api/geometry_interfaces/index.md',
+        title: 'Geometry interfaces',
+    },
+    {
+        path: 'lib/javascript/web_api/gestureevent/index.md',
+        title: 'GestureEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/gpu/getpreferredcanvasformat/index.md',
+        title: 'GPU: getPreferredCanvasFormat() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpu/index.md',
+        title: 'GPU',
+    },
+    {
+        path: 'lib/javascript/web_api/gpu/requestadapter/index.md',
+        title: 'GPU: requestAdapter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpu/wgsllanguagefeatures/index.md',
+        title: 'GPU: wgslLanguageFeatures property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuadapter/features/index.md',
+        title: 'GPUAdapter: features property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuadapter/index.md',
+        title: 'GPUAdapter',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuadapter/isfallbackadapter/index.md',
+        title: 'GPUAdapter: isFallbackAdapter property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuadapter/limits/index.md',
+        title: 'GPUAdapter: limits property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuadapter/requestadapterinfo/index.md',
+        title: 'GPUAdapter: requestAdapterInfo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuadapter/requestdevice/index.md',
+        title: 'GPUAdapter: requestDevice() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuadapterinfo/architecture/index.md',
+        title: 'GPUAdapterInfo: architecture property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuadapterinfo/description/index.md',
+        title: 'GPUAdapterInfo: description property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuadapterinfo/device/index.md',
+        title: 'GPUAdapterInfo: device property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuadapterinfo/index.md',
+        title: 'GPUAdapterInfo',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuadapterinfo/vendor/index.md',
+        title: 'GPUAdapterInfo: vendor property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubindgroup/index.md',
+        title: 'GPUBindGroup',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubindgroup/label/index.md',
+        title: 'GPUBindGroup: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubindgrouplayout/index.md',
+        title: 'GPUBindGroupLayout',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubindgrouplayout/label/index.md',
+        title: 'GPUBindGroupLayout: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubuffer/destroy/index.md',
+        title: 'GPUBuffer: destroy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubuffer/getmappedrange/index.md',
+        title: 'GPUBuffer: getMappedRange() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubuffer/index.md',
+        title: 'GPUBuffer',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubuffer/label/index.md',
+        title: 'GPUBuffer: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubuffer/mapasync/index.md',
+        title: 'GPUBuffer: mapAsync() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubuffer/mapstate/index.md',
+        title: 'GPUBuffer: mapState property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubuffer/size/index.md',
+        title: 'GPUBuffer: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubuffer/unmap/index.md',
+        title: 'GPUBuffer: unmap() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpubuffer/usage/index.md',
+        title: 'GPUBuffer: usage property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucanvascontext/canvas/index.md',
+        title: 'GPUCanvasContext: canvas property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucanvascontext/configure/index.md',
+        title: 'GPUCanvasContext: configure() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucanvascontext/getcurrenttexture/index.md',
+        title: 'GPUCanvasContext: getCurrentTexture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucanvascontext/index.md',
+        title: 'GPUCanvasContext',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucanvascontext/unconfigure/index.md',
+        title: 'GPUCanvasContext: unconfigure() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandbuffer/index.md',
+        title: 'GPUCommandBuffer',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandbuffer/label/index.md',
+        title: 'GPUCommandBuffer: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/begincomputepass/index.md',
+        title: 'GPUCommandEncoder: beginComputePass() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/beginrenderpass/index.md',
+        title: 'GPUCommandEncoder: beginRenderPass() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/clearbuffer/index.md',
+        title: 'GPUCommandEncoder: clearBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/copybuffertobuffer/index.md',
+        title: 'GPUCommandEncoder: copyBufferToBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/copybuffertotexture/index.md',
+        title: 'GPUCommandEncoder: copyBufferToTexture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/copytexturetobuffer/index.md',
+        title: 'GPUCommandEncoder: copyTextureToBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/copytexturetotexture/index.md',
+        title: 'GPUCommandEncoder: copyTextureToTexture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/finish/index.md',
+        title: 'GPUCommandEncoder: finish() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/index.md',
+        title: 'GPUCommandEncoder',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/insertdebugmarker/index.md',
+        title: 'GPUCommandEncoder: insertDebugMarker() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/label/index.md',
+        title: 'GPUCommandEncoder: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/popdebuggroup/index.md',
+        title: 'GPUCommandEncoder: popDebugGroup() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/pushdebuggroup/index.md',
+        title: 'GPUCommandEncoder: pushDebugGroup() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/resolvequeryset/index.md',
+        title: 'GPUCommandEncoder: resolveQuerySet() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucommandencoder/writetimestamp/index.md',
+        title: 'GPUCommandEncoder: writeTimestamp() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucompilationinfo/index.md',
+        title: 'GPUCompilationInfo',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucompilationinfo/messages/index.md',
+        title: 'GPUCompilationInfo: messages property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucompilationmessage/index.md',
+        title: 'GPUCompilationMessage',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucompilationmessage/length/index.md',
+        title: 'GPUCompilationMessage: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucompilationmessage/linenum/index.md',
+        title: 'GPUCompilationMessage: lineNum property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucompilationmessage/linepos/index.md',
+        title: 'GPUCompilationMessage: linePos property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucompilationmessage/message/index.md',
+        title: 'GPUCompilationMessage: message property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucompilationmessage/offset/index.md',
+        title: 'GPUCompilationMessage: offset property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucompilationmessage/type/index.md',
+        title: 'GPUCompilationMessage: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepassencoder/dispatchworkgroups/index.md',
+        title: 'GPUComputePassEncoder: dispatchWorkgroups() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepassencoder/dispatchworkgroupsindirect/index.md',
+        title: 'GPUComputePassEncoder: dispatchWorkgroupsIndirect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepassencoder/end/index.md',
+        title: 'GPUComputePassEncoder: end() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepassencoder/index.md',
+        title: 'GPUComputePassEncoder',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepassencoder/insertdebugmarker/index.md',
+        title: 'GPUComputePassEncoder: insertDebugMarker() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepassencoder/label/index.md',
+        title: 'GPUComputePassEncoder: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepassencoder/popdebuggroup/index.md',
+        title: 'GPUComputePassEncoder: popDebugGroup() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepassencoder/pushdebuggroup/index.md',
+        title: 'GPUComputePassEncoder: pushDebugGroup() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepassencoder/setbindgroup/index.md',
+        title: 'GPUComputePassEncoder: setBindGroup() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepassencoder/setpipeline/index.md',
+        title: 'GPUComputePassEncoder: setPipeline() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepipeline/getbindgrouplayout/index.md',
+        title: 'GPUComputePipeline: getBindGroupLayout() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepipeline/index.md',
+        title: 'GPUComputePipeline',
+    },
+    {
+        path: 'lib/javascript/web_api/gpucomputepipeline/label/index.md',
+        title: 'GPUComputePipeline: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createbindgroup/index.md',
+        title: 'GPUDevice: createBindGroup() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createbindgrouplayout/index.md',
+        title: 'GPUDevice: createBindGroupLayout() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createbuffer/index.md',
+        title: 'GPUDevice: createBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createcommandencoder/index.md',
+        title: 'GPUDevice: createCommandEncoder() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createcomputepipeline/index.md',
+        title: 'GPUDevice: createComputePipeline() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createcomputepipelineasync/index.md',
+        title: 'GPUDevice: createComputePipelineAsync() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createpipelinelayout/index.md',
+        title: 'GPUDevice: createPipelineLayout() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createqueryset/index.md',
+        title: 'GPUDevice: createQuerySet() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createrenderbundleencoder/index.md',
+        title: 'GPUDevice: createRenderBundleEncoder() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createrenderpipeline/index.md',
+        title: 'GPUDevice: createRenderPipeline() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createrenderpipelineasync/index.md',
+        title: 'GPUDevice: createRenderPipelineAsync() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createsampler/index.md',
+        title: 'GPUDevice: createSampler() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createshadermodule/index.md',
+        title: 'GPUDevice: createShaderModule() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/createtexture/index.md',
+        title: 'GPUDevice: createTexture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/destroy/index.md',
+        title: 'GPUDevice: destroy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/features/index.md',
+        title: 'GPUDevice: features property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/importexternaltexture/index.md',
+        title: 'GPUDevice: importExternalTexture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/index.md',
+        title: 'GPUDevice',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/label/index.md',
+        title: 'GPUDevice: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/limits/index.md',
+        title: 'GPUDevice: limits property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/lost/index.md',
+        title: 'GPUDevice: lost property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/poperrorscope/index.md',
+        title: 'GPUDevice: popErrorScope() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/pusherrorscope/index.md',
+        title: 'GPUDevice: pushErrorScope() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/queue/index.md',
+        title: 'GPUDevice: queue property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevice/uncapturederror_event/index.md',
+        title: 'GPUDevice: uncapturederror event',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevicelostinfo/index.md',
+        title: 'GPUDeviceLostInfo',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevicelostinfo/message/index.md',
+        title: 'GPUDeviceLostInfo: message property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpudevicelostinfo/reason/index.md',
+        title: 'GPUDeviceLostInfo: reason property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuerror/index.md',
+        title: 'GPUError',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuerror/message/index.md',
+        title: 'GPUError: message property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuexternaltexture/index.md',
+        title: 'GPUExternalTexture',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuexternaltexture/label/index.md',
+        title: 'GPUExternalTexture: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuinternalerror/gpuinternalerror/index.md',
+        title: 'GPUInternalError: GPUInternalError() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuinternalerror/index.md',
+        title: 'GPUInternalError',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuoutofmemoryerror/gpuoutofmemoryerror/index.md',
+        title: 'GPUOutOfMemoryError: GPUOutOfMemoryError() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuoutofmemoryerror/index.md',
+        title: 'GPUOutOfMemoryError',
+    },
+    {
+        path: 'lib/javascript/web_api/gpupipelineerror/gpupipelineerror/index.md',
+        title: 'GPUPipelineError: GPUPipelineError() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/gpupipelineerror/index.md',
+        title: 'GPUPipelineError',
+    },
+    {
+        path: 'lib/javascript/web_api/gpupipelineerror/reason/index.md',
+        title: 'GPUPipelineError: reason property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpupipelinelayout/index.md',
+        title: 'GPUPipelineLayout',
+    },
+    {
+        path: 'lib/javascript/web_api/gpupipelinelayout/label/index.md',
+        title: 'GPUPipelineLayout: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuqueryset/count/index.md',
+        title: 'GPUQuerySet: count property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuqueryset/destroy/index.md',
+        title: 'GPUQuerySet: destroy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuqueryset/index.md',
+        title: 'GPUQuerySet',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuqueryset/label/index.md',
+        title: 'GPUQuerySet: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuqueryset/type/index.md',
+        title: 'GPUQuerySet: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuqueue/copyexternalimagetotexture/index.md',
+        title: 'GPUQueue: copyExternalImageToTexture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuqueue/index.md',
+        title: 'GPUQueue',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuqueue/label/index.md',
+        title: 'GPUQueue: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuqueue/onsubmittedworkdone/index.md',
+        title: 'GPUQueue: onSubmittedWorkDone() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuqueue/submit/index.md',
+        title: 'GPUQueue: submit() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuqueue/writebuffer/index.md',
+        title: 'GPUQueue: writeBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuqueue/writetexture/index.md',
+        title: 'GPUQueue: writeTexture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundle/index.md',
+        title: 'GPURenderBundle',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundle/label/index.md',
+        title: 'GPURenderBundle: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/draw/index.md',
+        title: 'GPURenderBundleEncoder: draw() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/drawindexed/index.md',
+        title: 'GPURenderBundleEncoder: drawIndexed() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/drawindexedindirect/index.md',
+        title: 'GPURenderBundleEncoder: drawIndexedIndirect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/drawindirect/index.md',
+        title: 'GPURenderBundleEncoder: drawIndirect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/finish/index.md',
+        title: 'GPURenderBundleEncoder: finish() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/index.md',
+        title: 'GPURenderBundleEncoder',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/insertdebugmarker/index.md',
+        title: 'GPURenderBundleEncoder: insertDebugMarker() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/label/index.md',
+        title: 'GPURenderBundleEncoder: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/popdebuggroup/index.md',
+        title: 'GPURenderBundleEncoder: popDebugGroup() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/pushdebuggroup/index.md',
+        title: 'GPURenderBundleEncoder: pushDebugGroup() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/setbindgroup/index.md',
+        title: 'GPURenderBundleEncoder: setBindGroup() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/setindexbuffer/index.md',
+        title: 'GPURenderBundleEncoder: setIndexBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/setpipeline/index.md',
+        title: 'GPURenderBundleEncoder: setPipeline() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderbundleencoder/setvertexbuffer/index.md',
+        title: 'GPURenderBundleEncoder: setVertexBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/beginocclusionquery/index.md',
+        title: 'GPURenderPassEncoder: beginOcclusionQuery() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/draw/index.md',
+        title: 'GPURenderPassEncoder: draw() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/drawindexed/index.md',
+        title: 'GPURenderPassEncoder: drawIndexed() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/drawindexedindirect/index.md',
+        title: 'GPURenderPassEncoder: drawIndexedIndirect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/drawindirect/index.md',
+        title: 'GPURenderPassEncoder: drawIndirect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/end/index.md',
+        title: 'GPURenderPassEncoder: end() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/endocclusionquery/index.md',
+        title: 'GPURenderPassEncoder: endOcclusionQuery() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/executebundles/index.md',
+        title: 'GPURenderPassEncoder: executeBundles() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/index.md',
+        title: 'GPURenderPassEncoder',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/insertdebugmarker/index.md',
+        title: 'GPURenderPassEncoder: insertDebugMarker() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/label/index.md',
+        title: 'GPURenderPassEncoder: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/popdebuggroup/index.md',
+        title: 'GPURenderPassEncoder: popDebugGroup() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/pushdebuggroup/index.md',
+        title: 'GPURenderPassEncoder: pushDebugGroup() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/setbindgroup/index.md',
+        title: 'GPURenderPassEncoder: setBindGroup() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/setblendconstant/index.md',
+        title: 'GPURenderPassEncoder: setBlendConstant() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/setindexbuffer/index.md',
+        title: 'GPURenderPassEncoder: setIndexBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/setpipeline/index.md',
+        title: 'GPURenderPassEncoder: setPipeline() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/setscissorrect/index.md',
+        title: 'GPURenderPassEncoder: setScissorRect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/setstencilreference/index.md',
+        title: 'GPURenderPassEncoder: setStencilReference() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/setvertexbuffer/index.md',
+        title: 'GPURenderPassEncoder: setVertexBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpassencoder/setviewport/index.md',
+        title: 'GPURenderPassEncoder: setViewport() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpipeline/getbindgrouplayout/index.md',
+        title: 'GPURenderPipeline: getBindGroupLayout() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpipeline/index.md',
+        title: 'GPURenderPipeline',
+    },
+    {
+        path: 'lib/javascript/web_api/gpurenderpipeline/label/index.md',
+        title: 'GPURenderPipeline: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpusampler/index.md',
+        title: 'GPUSampler',
+    },
+    {
+        path: 'lib/javascript/web_api/gpusampler/label/index.md',
+        title: 'GPUSampler: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpushadermodule/getcompilationinfo/index.md',
+        title: 'GPUShaderModule: getCompilationInfo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gpushadermodule/index.md',
+        title: 'GPUShaderModule',
+    },
+    {
+        path: 'lib/javascript/web_api/gpushadermodule/label/index.md',
+        title: 'GPUShaderModule: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpusupportedfeatures/index.md',
+        title: 'GPUSupportedFeatures',
+    },
+    {
+        path: 'lib/javascript/web_api/gpusupportedlimits/index.md',
+        title: 'GPUSupportedLimits',
+    },
+    {
+        path: 'lib/javascript/web_api/gputexture/createview/index.md',
+        title: 'GPUTexture: createView() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gputexture/depthorarraylayers/index.md',
+        title: 'GPUTexture: depthOrArrayLayers property',
+    },
+    {
+        path: 'lib/javascript/web_api/gputexture/destroy/index.md',
+        title: 'GPUTexture: destroy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/gputexture/dimension/index.md',
+        title: 'GPUTexture: dimension property',
+    },
+    {
+        path: 'lib/javascript/web_api/gputexture/format/index.md',
+        title: 'GPUTexture: format property',
+    },
+    {
+        path: 'lib/javascript/web_api/gputexture/height/index.md',
+        title: 'GPUTexture: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/gputexture/index.md',
+        title: 'GPUTexture',
+    },
+    {
+        path: 'lib/javascript/web_api/gputexture/label/index.md',
+        title: 'GPUTexture: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gputexture/miplevelcount/index.md',
+        title: 'GPUTexture: mipLevelCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/gputexture/samplecount/index.md',
+        title: 'GPUTexture: sampleCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/gputexture/usage/index.md',
+        title: 'GPUTexture: usage property',
+    },
+    {
+        path: 'lib/javascript/web_api/gputexture/width/index.md',
+        title: 'GPUTexture: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/gputextureview/index.md',
+        title: 'GPUTextureView',
+    },
+    {
+        path: 'lib/javascript/web_api/gputextureview/label/index.md',
+        title: 'GPUTextureView: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuuncapturederrorevent/error/index.md',
+        title: 'GPUUncapturedErrorEvent: error property',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuuncapturederrorevent/gpuuncapturederrorevent/index.md',
+        title: 'GPUUncapturedErrorEvent: GPUUncapturedErrorEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuuncapturederrorevent/index.md',
+        title: 'GPUUncapturedErrorEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuvalidationerror/gpuvalidationerror/index.md',
+        title: 'GPUValidationError: GPUValidationError() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/gpuvalidationerror/index.md',
+        title: 'GPUValidationError',
+    },
+    {
+        path: 'lib/javascript/web_api/gravitysensor/gravitysensor/index.md',
+        title: 'GravitySensor: GravitySensor() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/gravitysensor/index.md',
+        title: 'GravitySensor',
+    },
+    {
+        path: 'lib/javascript/web_api/gyroscope/gyroscope/index.md',
+        title: 'Gyroscope: Gyroscope() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/gyroscope/index.md',
+        title: 'Gyroscope',
+    },
+    {
+        path: 'lib/javascript/web_api/gyroscope/x/index.md',
+        title: 'Gyroscope: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/gyroscope/y/index.md',
+        title: 'Gyroscope: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/gyroscope/z/index.md',
+        title: 'Gyroscope: z property',
+    },
+    {
+        path: 'lib/javascript/web_api/hashchangeevent/hashchangeevent/index.md',
+        title: 'HashChangeEvent: HashChangeEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/hashchangeevent/index.md',
+        title: 'HashChangeEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/hashchangeevent/newurl/index.md',
+        title: 'HashChangeEvent: newURL property',
+    },
+    {
+        path: 'lib/javascript/web_api/hashchangeevent/oldurl/index.md',
+        title: 'HashChangeEvent: oldURL property',
+    },
+    {
+        path: 'lib/javascript/web_api/headers/append/index.md',
+        title: 'Headers: append() method',
+    },
+    {
+        path: 'lib/javascript/web_api/headers/delete/index.md',
+        title: 'Headers: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/headers/entries/index.md',
+        title: 'Headers: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/headers/foreach/index.md',
+        title: 'Headers: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/headers/get/index.md',
+        title: 'Headers: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/headers/getsetcookie/index.md',
+        title: 'Headers: getSetCookie() method',
+    },
+    {
+        path: 'lib/javascript/web_api/headers/has/index.md',
+        title: 'Headers: has() method',
+    },
+    {
+        path: 'lib/javascript/web_api/headers/headers/index.md',
+        title: 'Headers: Headers() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/headers/index.md',
+        title: 'Headers',
+    },
+    {
+        path: 'lib/javascript/web_api/headers/keys/index.md',
+        title: 'Headers: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/headers/set/index.md',
+        title: 'Headers: set() method',
+    },
+    {
+        path: 'lib/javascript/web_api/headers/values/index.md',
+        title: 'Headers: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/hid/connect_event/index.md',
+        title: 'HID: connect event',
+    },
+    {
+        path: 'lib/javascript/web_api/hid/disconnect_event/index.md',
+        title: 'HID: disconnect event',
+    },
+    {
+        path: 'lib/javascript/web_api/hid/getdevices/index.md',
+        title: 'HID: getDevices() method',
+    },
+    {
+        path: 'lib/javascript/web_api/hid/index.md',
+        title: 'HID',
+    },
+    {
+        path: 'lib/javascript/web_api/hid/requestdevice/index.md',
+        title: 'HID: requestDevice() method',
+    },
+    {
+        path: 'lib/javascript/web_api/hidconnectionevent/device/index.md',
+        title: 'HIDConnectionEvent: device property',
+    },
+    {
+        path: 'lib/javascript/web_api/hidconnectionevent/hidconnectionevent/index.md',
+        title: 'HIDConnectionEvent: HIDConnectionEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/hidconnectionevent/index.md',
+        title: 'HIDConnectionEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/close/index.md',
+        title: 'HIDDevice: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/collections/index.md',
+        title: 'HIDDevice: collections property',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/forget/index.md',
+        title: 'HIDDevice: forget() method',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/index.md',
+        title: 'HIDDevice',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/inputreport_event/index.md',
+        title: 'HIDDevice: inputreport event',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/open/index.md',
+        title: 'HIDDevice: open() method',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/opened/index.md',
+        title: 'HIDDevice: opened property',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/productid/index.md',
+        title: 'HIDDevice: productId property',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/productname/index.md',
+        title: 'HIDDevice: productName property',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/receivefeaturereport/index.md',
+        title: 'HIDDevice: receiveFeatureReport() method',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/sendfeaturereport/index.md',
+        title: 'HIDDevice: sendFeatureReport() method',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/sendreport/index.md',
+        title: 'HIDDevice: sendReport() method',
+    },
+    {
+        path: 'lib/javascript/web_api/hiddevice/vendorid/index.md',
+        title: 'HIDDevice: vendorId property',
+    },
+    {
+        path: 'lib/javascript/web_api/hidinputreportevent/data/index.md',
+        title: 'HIDInputReportEvent: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/hidinputreportevent/device/index.md',
+        title: 'HIDInputReportEvent: device property',
+    },
+    {
+        path: 'lib/javascript/web_api/hidinputreportevent/index.md',
+        title: 'HIDInputReportEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/hidinputreportevent/reportid/index.md',
+        title: 'HIDInputReportEvent: reportId property',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/add/index.md',
+        title: 'Highlight: add() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/clear/index.md',
+        title: 'Highlight: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/delete/index.md',
+        title: 'Highlight: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/entries/index.md',
+        title: 'Highlight: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/foreach/index.md',
+        title: 'Highlight: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/has/index.md',
+        title: 'Highlight: has() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/highlight/index.md',
+        title: 'Highlight: Highlight() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/index.md',
+        title: 'Highlight',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/keys/index.md',
+        title: 'Highlight: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/priority/index.md',
+        title: 'Highlight: priority property',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/size/index.md',
+        title: 'Highlight: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/type/index.md',
+        title: 'Highlight: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/highlight/values/index.md',
+        title: 'Highlight: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlightregistry/clear/index.md',
+        title: 'HighlightRegistry: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlightregistry/delete/index.md',
+        title: 'HighlightRegistry: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlightregistry/entries/index.md',
+        title: 'HighlightRegistry: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlightregistry/foreach/index.md',
+        title: 'HighlightRegistry: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlightregistry/get/index.md',
+        title: 'HighlightRegistry: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlightregistry/has/index.md',
+        title: 'HighlightRegistry: has() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlightregistry/index.md',
+        title: 'HighlightRegistry',
+    },
+    {
+        path: 'lib/javascript/web_api/highlightregistry/keys/index.md',
+        title: 'HighlightRegistry: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlightregistry/set/index.md',
+        title: 'HighlightRegistry: set() method',
+    },
+    {
+        path: 'lib/javascript/web_api/highlightregistry/size/index.md',
+        title: 'HighlightRegistry: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/highlightregistry/values/index.md',
+        title: 'HighlightRegistry: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/history/back/index.md',
+        title: 'History: back() method',
+    },
+    {
+        path: 'lib/javascript/web_api/history/forward/index.md',
+        title: 'History: forward() method',
+    },
+    {
+        path: 'lib/javascript/web_api/history/go/index.md',
+        title: 'History: go() method',
+    },
+    {
+        path: 'lib/javascript/web_api/history/index.md',
+        title: 'History',
+    },
+    {
+        path: 'lib/javascript/web_api/history/length/index.md',
+        title: 'History: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/history/pushstate/index.md',
+        title: 'History: pushState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/history/replacestate/index.md',
+        title: 'History: replaceState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/history/scrollrestoration/index.md',
+        title: 'History: scrollRestoration property',
+    },
+    {
+        path: 'lib/javascript/web_api/history/state/index.md',
+        title: 'History: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/history_api/index.md',
+        title: 'History API',
+    },
+    {
+        path: 'lib/javascript/web_api/history_api/working_with_the_history_api/index.md',
+        title: 'Working with the History API',
+    },
+    {
+        path: 'lib/javascript/web_api/hkdfparams/index.md',
+        title: 'HkdfParams',
+    },
+    {
+        path: 'lib/javascript/web_api/hmacimportparams/index.md',
+        title: 'HmacImportParams',
+    },
+    {
+        path: 'lib/javascript/web_api/hmackeygenparams/index.md',
+        title: 'HmacKeyGenParams',
+    },
+    {
+        path: 'lib/javascript/web_api/hmdvrdevice/geteyeparameters/index.md',
+        title: 'HMDVRDevice: getEyeParameters() method',
+    },
+    {
+        path: 'lib/javascript/web_api/hmdvrdevice/index.md',
+        title: 'HMDVRDevice',
+    },
+    {
+        path: 'lib/javascript/web_api/hmdvrdevice/setfieldofview/index.md',
+        title: 'HMDVRDevice: setFieldOfView() method',
+    },
+    {
+        path: 'lib/javascript/web_api/houdini_apis/index.md',
+        title: 'Houdini APIs',
+    },
+    {
+        path: 'lib/javascript/web_api/html_dom_api/index.md',
+        title: 'The HTML DOM API',
+    },
+    {
+        path: 'lib/javascript/web_api/html_dom_api/microtask_guide/in_depth/index.md',
+        title: 'In depth: Microtasks and the JavaScript runtime environment',
+    },
+    {
+        path: 'lib/javascript/web_api/html_dom_api/microtask_guide/index.md',
+        title: 'Using microtasks in JavaScript with queueMicrotask()',
+    },
+    {
+        path: 'lib/javascript/web_api/html_drag_and_drop_api/drag_operations/index.md',
+        title: 'Drag operations',
+    },
+    {
+        path: 'lib/javascript/web_api/html_drag_and_drop_api/file_drag_and_drop/index.md',
+        title: 'File drag and drop',
+    },
+    {
+        path: 'lib/javascript/web_api/html_drag_and_drop_api/index.md',
+        title: 'HTML Drag and Drop API',
+    },
+    {
+        path: 'lib/javascript/web_api/html_drag_and_drop_api/recommended_drag_types/index.md',
+        title: 'Recommended Drag Types',
+    },
+    {
+        path: 'lib/javascript/web_api/html_sanitizer_api/index.md',
+        title: 'HTML Sanitizer API',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlallcollection/index.md',
+        title: 'HTMLAllCollection',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlallcollection/item/index.md',
+        title: 'HTMLAllCollection: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlallcollection/length/index.md',
+        title: 'HTMLAllCollection: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlallcollection/nameditem/index.md',
+        title: 'HTMLAllCollection: namedItem() method',
+    },
+    {
         path: 'lib/javascript/web_api/htmlanchorelement/attributionsrc/index.md',
         title: 'HTMLAnchorElement: attributionSrc property',
     },
@@ -6786,5 +15706,16337 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/web_api/htmlvideoelement/width/index.md',
         title: 'HTMLVideoElement: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursor/advance/index.md',
+        title: 'IDBCursor: advance() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursor/continue/index.md',
+        title: 'IDBCursor: continue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursor/continueprimarykey/index.md',
+        title: 'IDBCursor: continuePrimaryKey() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursor/delete/index.md',
+        title: 'IDBCursor: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursor/direction/index.md',
+        title: 'IDBCursor: direction property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursor/index.md',
+        title: 'IDBCursor',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursor/key/index.md',
+        title: 'IDBCursor: key property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursor/primarykey/index.md',
+        title: 'IDBCursor: primaryKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursor/request/index.md',
+        title: 'IDBCursor: request property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursor/source/index.md',
+        title: 'IDBCursor: source property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursor/update/index.md',
+        title: 'IDBCursor: update() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursorwithvalue/index.md',
+        title: 'IDBCursorWithValue',
+    },
+    {
+        path: 'lib/javascript/web_api/idbcursorwithvalue/value/index.md',
+        title: 'IDBCursorWithValue: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbdatabase/close/index.md',
+        title: 'IDBDatabase: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbdatabase/close_event/index.md',
+        title: 'IDBDatabase: close event',
+    },
+    {
+        path: 'lib/javascript/web_api/idbdatabase/createobjectstore/index.md',
+        title: 'IDBDatabase: createObjectStore() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbdatabase/deleteobjectstore/index.md',
+        title: 'IDBDatabase: deleteObjectStore() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbdatabase/index.md',
+        title: 'IDBDatabase',
+    },
+    {
+        path: 'lib/javascript/web_api/idbdatabase/name/index.md',
+        title: 'IDBDatabase: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbdatabase/objectstorenames/index.md',
+        title: 'IDBDatabase: objectStoreNames property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbdatabase/transaction/index.md',
+        title: 'IDBDatabase: transaction() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbdatabase/version/index.md',
+        title: 'IDBDatabase: version property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbdatabase/versionchange_event/index.md',
+        title: 'IDBDatabase: versionchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/idbfactory/cmp/index.md',
+        title: 'IDBFactory: cmp() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbfactory/databases/index.md',
+        title: 'IDBFactory: databases() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbfactory/deletedatabase/index.md',
+        title: 'IDBFactory: deleteDatabase() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbfactory/index.md',
+        title: 'IDBFactory',
+    },
+    {
+        path: 'lib/javascript/web_api/idbfactory/open/index.md',
+        title: 'IDBFactory: open() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/count/index.md',
+        title: 'IDBIndex: count() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/get/index.md',
+        title: 'IDBIndex: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/getall/index.md',
+        title: 'IDBIndex: getAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/getallkeys/index.md',
+        title: 'IDBIndex: getAllKeys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/getkey/index.md',
+        title: 'IDBIndex: getKey() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/index.md',
+        title: 'IDBIndex',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/isautolocale/index.md',
+        title: 'IDBIndex: isAutoLocale property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/keypath/index.md',
+        title: 'IDBIndex: keyPath property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/locale/index.md',
+        title: 'IDBIndex: locale property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/multientry/index.md',
+        title: 'IDBIndex: multiEntry property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/name/index.md',
+        title: 'IDBIndex: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/objectstore/index.md',
+        title: 'IDBIndex: objectStore property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/opencursor/index.md',
+        title: 'IDBIndex: openCursor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/openkeycursor/index.md',
+        title: 'IDBIndex: openKeyCursor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbindex/unique/index.md',
+        title: 'IDBIndex: unique property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbkeyrange/bound_static/index.md',
+        title: 'IDBKeyRange: bound() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbkeyrange/includes/index.md',
+        title: 'IDBKeyRange: includes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbkeyrange/index.md',
+        title: 'IDBKeyRange',
+    },
+    {
+        path: 'lib/javascript/web_api/idbkeyrange/lower/index.md',
+        title: 'IDBKeyRange: lower property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbkeyrange/lowerbound_static/index.md',
+        title: 'IDBKeyRange: lowerBound() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbkeyrange/loweropen/index.md',
+        title: 'IDBKeyRange: lowerOpen property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbkeyrange/only_static/index.md',
+        title: 'IDBKeyRange: only() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbkeyrange/upper/index.md',
+        title: 'IDBKeyRange: upper property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbkeyrange/upperbound_static/index.md',
+        title: 'IDBKeyRange: upperBound() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbkeyrange/upperopen/index.md',
+        title: 'IDBKeyRange: upperOpen property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/add/index.md',
+        title: 'IDBObjectStore: add() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/autoincrement/index.md',
+        title: 'IDBObjectStore: autoIncrement property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/clear/index.md',
+        title: 'IDBObjectStore: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/count/index.md',
+        title: 'IDBObjectStore: count() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/createindex/index.md',
+        title: 'IDBObjectStore: createIndex() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/delete/index.md',
+        title: 'IDBObjectStore: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/deleteindex/index.md',
+        title: 'IDBObjectStore: deleteIndex() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/get/index.md',
+        title: 'IDBObjectStore: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/getall/index.md',
+        title: 'IDBObjectStore: getAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/getallkeys/index.md',
+        title: 'IDBObjectStore: getAllKeys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/getkey/index.md',
+        title: 'IDBObjectStore: getKey() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/index/index.md',
+        title: 'IDBObjectStore: index() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/index.md',
+        title: 'IDBObjectStore',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/indexnames/index.md',
+        title: 'IDBObjectStore: indexNames property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/keypath/index.md',
+        title: 'IDBObjectStore: keyPath property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/name/index.md',
+        title: 'IDBObjectStore: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/opencursor/index.md',
+        title: 'IDBObjectStore: openCursor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/openkeycursor/index.md',
+        title: 'IDBObjectStore: openKeyCursor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/put/index.md',
+        title: 'IDBObjectStore: put() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbobjectstore/transaction/index.md',
+        title: 'IDBObjectStore: transaction property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbopendbrequest/blocked_event/index.md',
+        title: 'IDBOpenDBRequest: blocked event',
+    },
+    {
+        path: 'lib/javascript/web_api/idbopendbrequest/index.md',
+        title: 'IDBOpenDBRequest',
+    },
+    {
+        path: 'lib/javascript/web_api/idbopendbrequest/upgradeneeded_event/index.md',
+        title: 'IDBOpenDBRequest: upgradeneeded event',
+    },
+    {
+        path: 'lib/javascript/web_api/idbrequest/error/index.md',
+        title: 'IDBRequest: error property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbrequest/error_event/index.md',
+        title: 'IDBRequest: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/idbrequest/index.md',
+        title: 'IDBRequest',
+    },
+    {
+        path: 'lib/javascript/web_api/idbrequest/readystate/index.md',
+        title: 'IDBRequest: readyState property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbrequest/result/index.md',
+        title: 'IDBRequest: result property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbrequest/source/index.md',
+        title: 'IDBRequest: source property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbrequest/success_event/index.md',
+        title: 'IDBRequest: success event',
+    },
+    {
+        path: 'lib/javascript/web_api/idbrequest/transaction/index.md',
+        title: 'IDBRequest: transaction property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbtransaction/abort/index.md',
+        title: 'IDBTransaction: abort() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbtransaction/abort_event/index.md',
+        title: 'IDBTransaction: abort event',
+    },
+    {
+        path: 'lib/javascript/web_api/idbtransaction/commit/index.md',
+        title: 'IDBTransaction: commit() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbtransaction/complete_event/index.md',
+        title: 'IDBTransaction: complete event',
+    },
+    {
+        path: 'lib/javascript/web_api/idbtransaction/db/index.md',
+        title: 'IDBTransaction: db property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbtransaction/durability/index.md',
+        title: 'IDBTransaction: durability property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbtransaction/error/index.md',
+        title: 'IDBTransaction: error property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbtransaction/error_event/index.md',
+        title: 'IDBTransaction: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/idbtransaction/index.md',
+        title: 'IDBTransaction',
+    },
+    {
+        path: 'lib/javascript/web_api/idbtransaction/mode/index.md',
+        title: 'IDBTransaction: mode property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbtransaction/objectstore/index.md',
+        title: 'IDBTransaction: objectStore() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idbtransaction/objectstorenames/index.md',
+        title: 'IDBTransaction: objectStoreNames property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbversionchangeevent/idbversionchangeevent/index.md',
+        title: 'IDBVersionChangeEvent: IDBVersionChangeEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/idbversionchangeevent/index.md',
+        title: 'IDBVersionChangeEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/idbversionchangeevent/newversion/index.md',
+        title: 'IDBVersionChangeEvent: newVersion property',
+    },
+    {
+        path: 'lib/javascript/web_api/idbversionchangeevent/oldversion/index.md',
+        title: 'IDBVersionChangeEvent: oldVersion property',
+    },
+    {
+        path: 'lib/javascript/web_api/identitycredential/index.md',
+        title: 'IdentityCredential',
+    },
+    {
+        path: 'lib/javascript/web_api/identitycredential/isautoselected/index.md',
+        title: 'IdentityCredential: isAutoSelected property',
+    },
+    {
+        path: 'lib/javascript/web_api/identitycredential/token/index.md',
+        title: 'IdentityCredential: token property',
+    },
+    {
+        path: 'lib/javascript/web_api/identityprovider/close_static/index.md',
+        title: 'IdentityProvider: close() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/identityprovider/getuserinfo_static/index.md',
+        title: 'IdentityProvider: getUserInfo() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/identityprovider/index.md',
+        title: 'IdentityProvider',
+    },
+    {
+        path: 'lib/javascript/web_api/idle_detection_api/index.md',
+        title: 'Idle Detection API',
+    },
+    {
+        path: 'lib/javascript/web_api/idledeadline/didtimeout/index.md',
+        title: 'IdleDeadline: didTimeout property',
+    },
+    {
+        path: 'lib/javascript/web_api/idledeadline/index.md',
+        title: 'IdleDeadline',
+    },
+    {
+        path: 'lib/javascript/web_api/idledeadline/timeremaining/index.md',
+        title: 'IdleDeadline: timeRemaining() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idledetector/change_event/index.md',
+        title: 'IdleDetector: change event',
+    },
+    {
+        path: 'lib/javascript/web_api/idledetector/idledetector/index.md',
+        title: 'IdleDetector: IdleDetector() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/idledetector/index.md',
+        title: 'IdleDetector',
+    },
+    {
+        path: 'lib/javascript/web_api/idledetector/requestpermission_static/index.md',
+        title: 'IdleDetector: requestPermission() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/idledetector/screenstate/index.md',
+        title: 'IdleDetector: screenState property',
+    },
+    {
+        path: 'lib/javascript/web_api/idledetector/start/index.md',
+        title: 'IdleDetector: start() method',
+    },
+    {
+        path: 'lib/javascript/web_api/idledetector/userstate/index.md',
+        title: 'IdleDetector: userState property',
+    },
+    {
+        path: 'lib/javascript/web_api/iirfilternode/getfrequencyresponse/index.md',
+        title: 'IIRFilterNode: getFrequencyResponse() method',
+    },
+    {
+        path: 'lib/javascript/web_api/iirfilternode/iirfilternode/index.md',
+        title: 'IIRFilterNode: IIRFilterNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/iirfilternode/index.md',
+        title: 'IIRFilterNode',
+    },
+    {
+        path: 'lib/javascript/web_api/imagebitmap/close/index.md',
+        title: 'ImageBitmap: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/imagebitmap/height/index.md',
+        title: 'ImageBitmap: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagebitmap/index.md',
+        title: 'ImageBitmap',
+    },
+    {
+        path: 'lib/javascript/web_api/imagebitmap/width/index.md',
+        title: 'ImageBitmap: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagebitmaprenderingcontext/index.md',
+        title: 'ImageBitmapRenderingContext',
+    },
+    {
+        path: 'lib/javascript/web_api/imagebitmaprenderingcontext/transferfromimagebitmap/index.md',
+        title: 'ImageBitmapRenderingContext: transferFromImageBitmap() method',
+    },
+    {
+        path: 'lib/javascript/web_api/imagecapture/getphotocapabilities/index.md',
+        title: 'ImageCapture: getPhotoCapabilities() method',
+    },
+    {
+        path: 'lib/javascript/web_api/imagecapture/getphotosettings/index.md',
+        title: 'ImageCapture: getPhotoSettings() method',
+    },
+    {
+        path: 'lib/javascript/web_api/imagecapture/grabframe/index.md',
+        title: 'ImageCapture: grabFrame() method',
+    },
+    {
+        path: 'lib/javascript/web_api/imagecapture/imagecapture/index.md',
+        title: 'ImageCapture: ImageCapture() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/imagecapture/index.md',
+        title: 'ImageCapture',
+    },
+    {
+        path: 'lib/javascript/web_api/imagecapture/takephoto/index.md',
+        title: 'ImageCapture: takePhoto() method',
+    },
+    {
+        path: 'lib/javascript/web_api/imagecapture/track/index.md',
+        title: 'ImageCapture: track property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedata/colorspace/index.md',
+        title: 'ImageData: colorSpace property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedata/data/index.md',
+        title: 'ImageData: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedata/height/index.md',
+        title: 'ImageData: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedata/imagedata/index.md',
+        title: 'ImageData: ImageData() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedata/index.md',
+        title: 'ImageData',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedata/width/index.md',
+        title: 'ImageData: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedecoder/close/index.md',
+        title: 'ImageDecoder: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedecoder/complete/index.md',
+        title: 'ImageDecoder: complete property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedecoder/completed/index.md',
+        title: 'ImageDecoder: completed property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedecoder/decode/index.md',
+        title: 'ImageDecoder: decode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedecoder/imagedecoder/index.md',
+        title: 'ImageDecoder: ImageDecoder() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedecoder/index.md',
+        title: 'ImageDecoder',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedecoder/istypesupported_static/index.md',
+        title: 'ImageDecoder: isTypeSupported() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedecoder/reset/index.md',
+        title: 'ImageDecoder: reset() method',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedecoder/tracks/index.md',
+        title: 'ImageDecoder: tracks property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagedecoder/type/index.md',
+        title: 'ImageDecoder: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagetrack/animated/index.md',
+        title: 'ImageTrack: animated property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagetrack/framecount/index.md',
+        title: 'ImageTrack: frameCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagetrack/index.md',
+        title: 'ImageTrack',
+    },
+    {
+        path: 'lib/javascript/web_api/imagetrack/repetitioncount/index.md',
+        title: 'ImageTrack: repetitionCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagetrack/selected/index.md',
+        title: 'ImageTrack: selected property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagetracklist/index.md',
+        title: 'ImageTrackList',
+    },
+    {
+        path: 'lib/javascript/web_api/imagetracklist/length/index.md',
+        title: 'ImageTrackList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagetracklist/ready/index.md',
+        title: 'ImageTrackList: ready property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagetracklist/selectedindex/index.md',
+        title: 'ImageTrackList: selectedIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/imagetracklist/selectedtrack/index.md',
+        title: 'ImageTrackList: selectedTrack property',
+    },
+    {
+        path: 'lib/javascript/web_api/indexeddb_api/basic_terminology/index.md',
+        title: 'IndexedDB key characteristics and basic terminology',
+    },
+    {
+        path: 'lib/javascript/web_api/indexeddb_api/checking_when_a_deadline_is_due/index.md',
+        title: 'Checking when a deadline is due',
+    },
+    {
+        path: 'lib/javascript/web_api/indexeddb_api/index.md',
+        title: 'IndexedDB API',
+    },
+    {
+        path: 'lib/javascript/web_api/indexeddb_api/using_indexeddb/index.md',
+        title: 'Using IndexedDB',
+    },
+    {
+        path: 'lib/javascript/web_api/ink/index.md',
+        title: 'Ink',
+    },
+    {
+        path: 'lib/javascript/web_api/ink/requestpresenter/index.md',
+        title: 'Ink: requestPresenter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ink_api/index.md',
+        title: 'Ink API',
+    },
+    {
+        path: 'lib/javascript/web_api/inkpresenter/expectedimprovement/index.md',
+        title: 'InkPresenter: expectedImprovement property',
+    },
+    {
+        path: 'lib/javascript/web_api/inkpresenter/index.md',
+        title: 'InkPresenter',
+    },
+    {
+        path: 'lib/javascript/web_api/inkpresenter/presentationarea/index.md',
+        title: 'InkPresenter: presentationArea property',
+    },
+    {
+        path: 'lib/javascript/web_api/inkpresenter/updateinktrailstartpoint/index.md',
+        title: 'InkPresenter: updateInkTrailStartPoint() method',
+    },
+    {
+        path: 'lib/javascript/web_api/inputdevicecapabilities/firestouchevents/index.md',
+        title: 'InputDeviceCapabilities: firesTouchEvents property',
+    },
+    {
+        path: 'lib/javascript/web_api/inputdevicecapabilities/index.md',
+        title: 'InputDeviceCapabilities',
+    },
+    {
+        path: 'lib/javascript/web_api/inputdevicecapabilities/inputdevicecapabilities/index.md',
+        title: 'InputDeviceCapabilities: InputDeviceCapabilities() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/inputdevicecapabilities_api/index.md',
+        title: 'InputDeviceCapabilities API',
+    },
+    {
+        path: 'lib/javascript/web_api/inputdeviceinfo/getcapabilities/index.md',
+        title: 'InputDeviceInfo: getCapabilities() method',
+    },
+    {
+        path: 'lib/javascript/web_api/inputdeviceinfo/index.md',
+        title: 'InputDeviceInfo',
+    },
+    {
+        path: 'lib/javascript/web_api/inputevent/data/index.md',
+        title: 'InputEvent: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/inputevent/datatransfer/index.md',
+        title: 'InputEvent: dataTransfer property',
+    },
+    {
+        path: 'lib/javascript/web_api/inputevent/gettargetranges/index.md',
+        title: 'InputEvent: getTargetRanges() method',
+    },
+    {
+        path: 'lib/javascript/web_api/inputevent/index.md',
+        title: 'InputEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/inputevent/inputevent/index.md',
+        title: 'InputEvent: InputEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/inputevent/inputtype/index.md',
+        title: 'InputEvent: inputType property',
+    },
+    {
+        path: 'lib/javascript/web_api/inputevent/iscomposing/index.md',
+        title: 'InputEvent: isComposing property',
+    },
+    {
+        path: 'lib/javascript/web_api/insertable_streams_for_mediastreamtrack_api/index.md',
+        title: 'Insertable Streams for MediaStreamTrack API',
+    },
+    {
+        path: 'lib/javascript/web_api/installevent/addroutes/index.md',
+        title: 'InstallEvent: addRoutes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/installevent/index.md',
+        title: 'InstallEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/installevent/installevent/index.md',
+        title: 'InstallEvent: InstallEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/intersection_observer_api/index.md',
+        title: 'Intersection Observer API',
+    },
+    {
+        path: 'lib/javascript/web_api/intersection_observer_api/timing_element_visibility/index.md',
+        title: 'Timing element visibility with the Intersection Observer API',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserver/disconnect/index.md',
+        title: 'IntersectionObserver: disconnect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserver/index.md',
+        title: 'IntersectionObserver',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserver/intersectionobserver/index.md',
+        title: 'IntersectionObserver: IntersectionObserver() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserver/observe/index.md',
+        title: 'IntersectionObserver: observe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserver/root/index.md',
+        title: 'IntersectionObserver: root property',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserver/rootmargin/index.md',
+        title: 'IntersectionObserver: rootMargin property',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserver/takerecords/index.md',
+        title: 'IntersectionObserver: takeRecords() method',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserver/thresholds/index.md',
+        title: 'IntersectionObserver: thresholds property',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserver/unobserve/index.md',
+        title: 'IntersectionObserver: unobserve() method',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserverentry/boundingclientrect/index.md',
+        title: 'IntersectionObserverEntry: boundingClientRect property',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserverentry/index.md',
+        title: 'IntersectionObserverEntry',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserverentry/intersectionratio/index.md',
+        title: 'IntersectionObserverEntry: intersectionRatio property',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserverentry/intersectionrect/index.md',
+        title: 'IntersectionObserverEntry: intersectionRect property',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserverentry/isintersecting/index.md',
+        title: 'IntersectionObserverEntry: isIntersecting property',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserverentry/rootbounds/index.md',
+        title: 'IntersectionObserverEntry: rootBounds property',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserverentry/target/index.md',
+        title: 'IntersectionObserverEntry: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserverentry/time/index.md',
+        title: 'IntersectionObserverEntry: time property',
+    },
+    {
+        path: 'lib/javascript/web_api/interventionreportbody/columnnumber/index.md',
+        title: 'InterventionReportBody: columnNumber property',
+    },
+    {
+        path: 'lib/javascript/web_api/interventionreportbody/id/index.md',
+        title: 'InterventionReportBody: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/interventionreportbody/index.md',
+        title: 'InterventionReportBody',
+    },
+    {
+        path: 'lib/javascript/web_api/interventionreportbody/linenumber/index.md',
+        title: 'InterventionReportBody: lineNumber property',
+    },
+    {
+        path: 'lib/javascript/web_api/interventionreportbody/message/index.md',
+        title: 'InterventionReportBody: message property',
+    },
+    {
+        path: 'lib/javascript/web_api/interventionreportbody/sourcefile/index.md',
+        title: 'InterventionReportBody: sourceFile property',
+    },
+    {
+        path: 'lib/javascript/web_api/interventionreportbody/tojson/index.md',
+        title: 'InterventionReportBody: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/item/index.md',
+        title: 'HTMLCollection: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboard/getlayoutmap/index.md',
+        title: 'Keyboard: getLayoutMap() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboard/index.md',
+        title: 'Keyboard',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboard/lock/index.md',
+        title: 'Keyboard: lock() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboard/unlock/index.md',
+        title: 'Keyboard: unlock() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboard_api/index.md',
+        title: 'Keyboard API',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/altkey/index.md',
+        title: 'KeyboardEvent: altKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/charcode/index.md',
+        title: 'KeyboardEvent: charCode property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/code/index.md',
+        title: 'KeyboardEvent: code property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/ctrlkey/index.md',
+        title: 'KeyboardEvent: ctrlKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/getmodifierstate/index.md',
+        title: 'KeyboardEvent: getModifierState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/index.md',
+        title: 'KeyboardEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/initkeyboardevent/index.md',
+        title: 'KeyboardEvent: initKeyboardEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/initkeyevent/index.md',
+        title: 'KeyboardEvent: initKeyEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/iscomposing/index.md',
+        title: 'KeyboardEvent: isComposing property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/key/index.md',
+        title: 'KeyboardEvent: key property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/keyboardevent/index.md',
+        title: 'KeyboardEvent: KeyboardEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/keycode/index.md',
+        title: 'KeyboardEvent: keyCode property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/keyidentifier/index.md',
+        title: 'KeyboardEvent: keyIdentifier property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/location/index.md',
+        title: 'KeyboardEvent: location property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/metakey/index.md',
+        title: 'KeyboardEvent: metaKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/repeat/index.md',
+        title: 'KeyboardEvent: repeat property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardevent/shiftkey/index.md',
+        title: 'KeyboardEvent: shiftKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardlayoutmap/entries/index.md',
+        title: 'KeyboardLayoutMap: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardlayoutmap/foreach/index.md',
+        title: 'KeyboardLayoutMap: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardlayoutmap/get/index.md',
+        title: 'KeyboardLayoutMap: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardlayoutmap/has/index.md',
+        title: 'KeyboardLayoutMap: has() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardlayoutmap/index.md',
+        title: 'KeyboardLayoutMap',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardlayoutmap/keys/index.md',
+        title: 'KeyboardLayoutMap: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardlayoutmap/size/index.md',
+        title: 'KeyboardLayoutMap: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyboardlayoutmap/values/index.md',
+        title: 'KeyboardLayoutMap: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyframeeffect/composite/index.md',
+        title: 'KeyframeEffect: composite property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyframeeffect/getkeyframes/index.md',
+        title: 'KeyframeEffect: getKeyframes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyframeeffect/index.md',
+        title: 'KeyframeEffect',
+    },
+    {
+        path: 'lib/javascript/web_api/keyframeeffect/iterationcomposite/index.md',
+        title: 'KeyframeEffect: iterationComposite property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyframeeffect/keyframeeffect/index.md',
+        title: 'KeyframeEffect: KeyframeEffect() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/keyframeeffect/pseudoelement/index.md',
+        title: 'KeyframeEffect: pseudoElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/keyframeeffect/setkeyframes/index.md',
+        title: 'KeyframeEffect: setKeyframes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/keyframeeffect/target/index.md',
+        title: 'KeyframeEffect: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/khr_parallel_shader_compile/index.md',
+        title: 'KHR_parallel_shader_compile extension',
+    },
+    {
+        path: 'lib/javascript/web_api/largestcontentfulpaint/element/index.md',
+        title: 'LargestContentfulPaint: element property',
+    },
+    {
+        path: 'lib/javascript/web_api/largestcontentfulpaint/id/index.md',
+        title: 'LargestContentfulPaint: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/largestcontentfulpaint/index.md',
+        title: 'LargestContentfulPaint',
+    },
+    {
+        path: 'lib/javascript/web_api/largestcontentfulpaint/loadtime/index.md',
+        title: 'LargestContentfulPaint: loadTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/largestcontentfulpaint/rendertime/index.md',
+        title: 'LargestContentfulPaint: renderTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/largestcontentfulpaint/size/index.md',
+        title: 'LargestContentfulPaint: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/largestcontentfulpaint/tojson/index.md',
+        title: 'LargestContentfulPaint: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/largestcontentfulpaint/url/index.md',
+        title: 'LargestContentfulPaint: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/launch_handler_api/index.md',
+        title: 'Launch Handler API',
+    },
+    {
+        path: 'lib/javascript/web_api/launchparams/files/index.md',
+        title: 'LaunchParams: files property',
+    },
+    {
+        path: 'lib/javascript/web_api/launchparams/index.md',
+        title: 'LaunchParams',
+    },
+    {
+        path: 'lib/javascript/web_api/launchparams/targeturl/index.md',
+        title: 'LaunchParams: targetURL property',
+    },
+    {
+        path: 'lib/javascript/web_api/launchqueue/index.md',
+        title: 'LaunchQueue',
+    },
+    {
+        path: 'lib/javascript/web_api/launchqueue/setconsumer/index.md',
+        title: 'LaunchQueue: setConsumer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/layoutshift/hadrecentinput/index.md',
+        title: 'LayoutShift: hadRecentInput property',
+    },
+    {
+        path: 'lib/javascript/web_api/layoutshift/index.md',
+        title: 'LayoutShift',
+    },
+    {
+        path: 'lib/javascript/web_api/layoutshift/lastinputtime/index.md',
+        title: 'LayoutShift: lastInputTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/layoutshift/sources/index.md',
+        title: 'LayoutShift: sources property',
+    },
+    {
+        path: 'lib/javascript/web_api/layoutshift/tojson/index.md',
+        title: 'LayoutShift: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/layoutshift/value/index.md',
+        title: 'LayoutShift: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/layoutshiftattribution/currentrect/index.md',
+        title: 'LayoutShiftAttribution: currentRect property',
+    },
+    {
+        path: 'lib/javascript/web_api/layoutshiftattribution/index.md',
+        title: 'LayoutShiftAttribution',
+    },
+    {
+        path: 'lib/javascript/web_api/layoutshiftattribution/node/index.md',
+        title: 'LayoutShiftAttribution: node property',
+    },
+    {
+        path: 'lib/javascript/web_api/layoutshiftattribution/previousrect/index.md',
+        title: 'LayoutShiftAttribution: previousRect property',
+    },
+    {
+        path: 'lib/javascript/web_api/layoutshiftattribution/tojson/index.md',
+        title: 'LayoutShiftAttribution: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/length/index.md',
+        title: 'HTMLCollection: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/linearaccelerationsensor/index.md',
+        title: 'LinearAccelerationSensor',
+    },
+    {
+        path: 'lib/javascript/web_api/linearaccelerationsensor/linearaccelerationsensor/index.md',
+        title: 'LinearAccelerationSensor: LinearAccelerationSensor() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/local_font_access_api/index.md',
+        title: 'Local Font Access API',
+    },
+    {
+        path: 'lib/javascript/web_api/location/ancestororigins/index.md',
+        title: 'Location: ancestorOrigins property',
+    },
+    {
+        path: 'lib/javascript/web_api/location/assign/index.md',
+        title: 'Location: assign() method',
+    },
+    {
+        path: 'lib/javascript/web_api/location/hash/index.md',
+        title: 'Location: hash property',
+    },
+    {
+        path: 'lib/javascript/web_api/location/host/index.md',
+        title: 'Location: host property',
+    },
+    {
+        path: 'lib/javascript/web_api/location/hostname/index.md',
+        title: 'Location: hostname property',
+    },
+    {
+        path: 'lib/javascript/web_api/location/href/index.md',
+        title: 'Location: href property',
+    },
+    {
+        path: 'lib/javascript/web_api/location/index.md',
+        title: 'Location',
+    },
+    {
+        path: 'lib/javascript/web_api/location/origin/index.md',
+        title: 'Location: origin property',
+    },
+    {
+        path: 'lib/javascript/web_api/location/pathname/index.md',
+        title: 'Location: pathname property',
+    },
+    {
+        path: 'lib/javascript/web_api/location/port/index.md',
+        title: 'Location: port property',
+    },
+    {
+        path: 'lib/javascript/web_api/location/protocol/index.md',
+        title: 'Location: protocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/location/reload/index.md',
+        title: 'Location: reload() method',
+    },
+    {
+        path: 'lib/javascript/web_api/location/replace/index.md',
+        title: 'Location: replace() method',
+    },
+    {
+        path: 'lib/javascript/web_api/location/search/index.md',
+        title: 'Location: search property',
+    },
+    {
+        path: 'lib/javascript/web_api/location/tostring/index.md',
+        title: 'Location: toString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/lock/index.md',
+        title: 'Lock',
+    },
+    {
+        path: 'lib/javascript/web_api/lock/mode/index.md',
+        title: 'Lock: mode property',
+    },
+    {
+        path: 'lib/javascript/web_api/lock/name/index.md',
+        title: 'Lock: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/lockmanager/index.md',
+        title: 'LockManager',
+    },
+    {
+        path: 'lib/javascript/web_api/lockmanager/query/index.md',
+        title: 'LockManager: query() method',
+    },
+    {
+        path: 'lib/javascript/web_api/lockmanager/request/index.md',
+        title: 'LockManager: request() method',
+    },
+    {
+        path: 'lib/javascript/web_api/magnetometer/index.md',
+        title: 'Magnetometer',
+    },
+    {
+        path: 'lib/javascript/web_api/magnetometer/magnetometer/index.md',
+        title: 'Magnetometer: Magnetometer() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/magnetometer/x/index.md',
+        title: 'Magnetometer: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/magnetometer/y/index.md',
+        title: 'Magnetometer: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/magnetometer/z/index.md',
+        title: 'Magnetometer: z property',
+    },
+    {
+        path: 'lib/javascript/web_api/mathmlelement/attributestylemap/index.md',
+        title: 'MathMLElement: attributeStyleMap property',
+    },
+    {
+        path: 'lib/javascript/web_api/mathmlelement/index.md',
+        title: 'MathMLElement',
+    },
+    {
+        path: 'lib/javascript/web_api/mathmlelement/style/index.md',
+        title: 'MathMLElement: style property',
+    },
+    {
+        path: 'lib/javascript/web_api/media_capabilities_api/index.md',
+        title: 'Media Capabilities API',
+    },
+    {
+        path: 'lib/javascript/web_api/media_capabilities_api/using_the_media_capabilities_api/index.md',
+        title: 'Using the Media Capabilities API',
+    },
+    {
+        path: 'lib/javascript/web_api/media_capture_and_streams_api/constraints/index.md',
+        title: 'Capabilities, constraints, and settings',
+    },
+    {
+        path: 'lib/javascript/web_api/media_capture_and_streams_api/index.md',
+        title: 'Media Capture and Streams API (Media Stream)',
+    },
+    {
+        path: 'lib/javascript/web_api/media_capture_and_streams_api/taking_still_photos/index.md',
+        title: 'Taking still photos with getUserMedia()',
+    },
+    {
+        path: 'lib/javascript/web_api/media_session_api/index.md',
+        title: 'Media Session API',
+    },
+    {
+        path: 'lib/javascript/web_api/media_source_extensions_api/index.md',
+        title: 'Media Source API',
+    },
+    {
+        path: 'lib/javascript/web_api/media_source_extensions_api/transcoding_assets_for_mse/index.md',
+        title: 'Transcoding assets for Media Source Extensions',
+    },
+    {
+        path: 'lib/javascript/web_api/mediacapabilities/decodinginfo/index.md',
+        title: 'MediaCapabilities: decodingInfo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediacapabilities/encodinginfo/index.md',
+        title: 'MediaCapabilities: encodingInfo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediacapabilities/index.md',
+        title: 'MediaCapabilities',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadeviceinfo/deviceid/index.md',
+        title: 'MediaDeviceInfo: deviceId property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadeviceinfo/groupid/index.md',
+        title: 'MediaDeviceInfo: groupId property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadeviceinfo/index.md',
+        title: 'MediaDeviceInfo',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadeviceinfo/kind/index.md',
+        title: 'MediaDeviceInfo: kind property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadeviceinfo/label/index.md',
+        title: 'MediaDeviceInfo: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadeviceinfo/tojson/index.md',
+        title: 'MediaDeviceInfo: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadevices/devicechange_event/index.md',
+        title: 'MediaDevices: devicechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadevices/enumeratedevices/index.md',
+        title: 'MediaDevices: enumerateDevices() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadevices/getdisplaymedia/index.md',
+        title: 'MediaDevices: getDisplayMedia() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadevices/getsupportedconstraints/index.md',
+        title: 'MediaDevices: getSupportedConstraints() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadevices/getusermedia/index.md',
+        title: 'MediaDevices: getUserMedia() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadevices/index.md',
+        title: 'MediaDevices',
+    },
+    {
+        path: 'lib/javascript/web_api/mediadevices/selectaudiooutput/index.md',
+        title: 'MediaDevices: selectAudioOutput() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaelementaudiosourcenode/index.md',
+        title: 'MediaElementAudioSourceNode',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaelementaudiosourcenode/mediaelement/index.md',
+        title: 'MediaElementAudioSourceNode: mediaElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaelementaudiosourcenode/mediaelementaudiosourcenode/index.md',
+        title: 'MediaElementAudioSourceNode: MediaElementAudioSourceNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaencryptedevent/index.md',
+        title: 'MediaEncryptedEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaencryptedevent/initdata/index.md',
+        title: 'MediaEncryptedEvent: initData property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaencryptedevent/initdatatype/index.md',
+        title: 'MediaEncryptedEvent: initDataType property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaencryptedevent/mediaencryptedevent/index.md',
+        title: 'MediaEncryptedEvent: MediaEncryptedEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaerror/code/index.md',
+        title: 'MediaError: code property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaerror/index.md',
+        title: 'MediaError',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaerror/message/index.md',
+        title: 'MediaError: message property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeymessageevent/index.md',
+        title: 'MediaKeyMessageEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeymessageevent/mediakeymessageevent/index.md',
+        title: 'MediaKeyMessageEvent: MediaKeyMessageEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeymessageevent/message/index.md',
+        title: 'MediaKeyMessageEvent: message property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeymessageevent/messagetype/index.md',
+        title: 'MediaKeyMessageEvent: messageType property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeys/createsession/index.md',
+        title: 'MediaKeys: createSession() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeys/getstatusforpolicy/index.md',
+        title: 'MediaKeys: getStatusForPolicy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeys/index.md',
+        title: 'MediaKeys',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeys/setservercertificate/index.md',
+        title: 'MediaKeys: setServerCertificate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysession/close/index.md',
+        title: 'MediaKeySession: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysession/closed/index.md',
+        title: 'MediaKeySession: closed property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysession/expiration/index.md',
+        title: 'MediaKeySession: expiration property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysession/generaterequest/index.md',
+        title: 'MediaKeySession: generateRequest() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysession/index.md',
+        title: 'MediaKeySession',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysession/keystatuses/index.md',
+        title: 'MediaKeySession: keyStatuses property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysession/keystatuseschange_event/index.md',
+        title: 'MediaKeySession: keystatuseschange event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysession/load/index.md',
+        title: 'MediaKeySession: load() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysession/message_event/index.md',
+        title: 'MediaKeySession: message event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysession/remove/index.md',
+        title: 'MediaKeySession: remove() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysession/sessionid/index.md',
+        title: 'MediaKeySession: sessionId property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysession/update/index.md',
+        title: 'MediaKeySession: update() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeystatusmap/entries/index.md',
+        title: 'MediaKeyStatusMap: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeystatusmap/foreach/index.md',
+        title: 'MediaKeyStatusMap: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeystatusmap/get/index.md',
+        title: 'MediaKeyStatusMap: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeystatusmap/has/index.md',
+        title: 'MediaKeyStatusMap: has() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeystatusmap/index.md',
+        title: 'MediaKeyStatusMap',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeystatusmap/keys/index.md',
+        title: 'MediaKeyStatusMap: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeystatusmap/size/index.md',
+        title: 'MediaKeyStatusMap: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeystatusmap/values/index.md',
+        title: 'MediaKeyStatusMap: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysystemaccess/createmediakeys/index.md',
+        title: 'MediaKeySystemAccess: createMediaKeys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysystemaccess/getconfiguration/index.md',
+        title: 'MediaKeySystemAccess: getConfiguration() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysystemaccess/index.md',
+        title: 'MediaKeySystemAccess',
+    },
+    {
+        path: 'lib/javascript/web_api/mediakeysystemaccess/keysystem/index.md',
+        title: 'MediaKeySystemAccess: keySystem property',
+    },
+    {
+        path: 'lib/javascript/web_api/medialist/appendmedium/index.md',
+        title: 'MediaList: appendMedium() method',
+    },
+    {
+        path: 'lib/javascript/web_api/medialist/deletemedium/index.md',
+        title: 'MediaList: deleteMedium() method',
+    },
+    {
+        path: 'lib/javascript/web_api/medialist/index.md',
+        title: 'MediaList',
+    },
+    {
+        path: 'lib/javascript/web_api/medialist/item/index.md',
+        title: 'MediaList: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/medialist/length/index.md',
+        title: 'MediaList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/medialist/mediatext/index.md',
+        title: 'MediaList: mediaText property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediametadata/album/index.md',
+        title: 'MediaMetadata: album property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediametadata/artist/index.md',
+        title: 'MediaMetadata: artist property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediametadata/artwork/index.md',
+        title: 'MediaMetadata: artwork property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediametadata/index.md',
+        title: 'MediaMetadata',
+    },
+    {
+        path: 'lib/javascript/web_api/mediametadata/mediametadata/index.md',
+        title: 'MediaMetadata: MediaMetadata() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediametadata/title/index.md',
+        title: 'MediaMetadata: title property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaquerylist/addlistener/index.md',
+        title: 'MediaQueryList: addListener() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaquerylist/change_event/index.md',
+        title: 'MediaQueryList: change event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaquerylist/index.md',
+        title: 'MediaQueryList',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaquerylist/matches/index.md',
+        title: 'MediaQueryList: matches property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaquerylist/media/index.md',
+        title: 'MediaQueryList: media property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaquerylist/removelistener/index.md',
+        title: 'MediaQueryList: removeListener() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaquerylistevent/index.md',
+        title: 'MediaQueryListEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaquerylistevent/matches/index.md',
+        title: 'MediaQueryListEvent: matches property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaquerylistevent/media/index.md',
+        title: 'MediaQueryListEvent: media property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediaquerylistevent/mediaquerylistevent/index.md',
+        title: 'MediaQueryListEvent: MediaQueryListEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/audiobitratemode/index.md',
+        title: 'MediaRecorder: audioBitrateMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/audiobitspersecond/index.md',
+        title: 'MediaRecorder: audioBitsPerSecond property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/dataavailable_event/index.md',
+        title: 'MediaRecorder: dataavailable event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/error_event/index.md',
+        title: 'MediaRecorder: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/index.md',
+        title: 'MediaRecorder',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/istypesupported_static/index.md',
+        title: 'MediaRecorder: isTypeSupported() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/mediarecorder/index.md',
+        title: 'MediaRecorder: MediaRecorder() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/mimetype/index.md',
+        title: 'MediaRecorder: mimeType property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/pause/index.md',
+        title: 'MediaRecorder: pause() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/pause_event/index.md',
+        title: 'MediaRecorder: pause event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/requestdata/index.md',
+        title: 'MediaRecorder: requestData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/resume/index.md',
+        title: 'MediaRecorder: resume() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/resume_event/index.md',
+        title: 'MediaRecorder: resume event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/start/index.md',
+        title: 'MediaRecorder: start() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/start_event/index.md',
+        title: 'MediaRecorder: start event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/state/index.md',
+        title: 'MediaRecorder: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/stop/index.md',
+        title: 'MediaRecorder: stop() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/stop_event/index.md',
+        title: 'MediaRecorder: stop event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/stream/index.md',
+        title: 'MediaRecorder: stream property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecorder/videobitspersecond/index.md',
+        title: 'MediaRecorder: videoBitsPerSecond property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecordererrorevent/error/index.md',
+        title: 'MediaRecorderErrorEvent: error property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecordererrorevent/index.md',
+        title: 'MediaRecorderErrorEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/mediarecordererrorevent/mediarecordererrorevent/index.md',
+        title: 'MediaRecorderErrorEvent: MediaRecorderErrorEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasession/index.md',
+        title: 'MediaSession',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasession/metadata/index.md',
+        title: 'MediaSession: metadata property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasession/playbackstate/index.md',
+        title: 'MediaSession: playbackState property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasession/setactionhandler/index.md',
+        title: 'MediaSession: setActionHandler() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasession/setcameraactive/index.md',
+        title: 'MediaSession: setCameraActive() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasession/setmicrophoneactive/index.md',
+        title: 'MediaSession: setMicrophoneActive() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasession/setpositionstate/index.md',
+        title: 'MediaSession: setPositionState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/activesourcebuffers/index.md',
+        title: 'MediaSource: activeSourceBuffers property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/addsourcebuffer/index.md',
+        title: 'MediaSource: addSourceBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/canconstructindedicatedworker_static/index.md',
+        title: 'MediaSource: canConstructInDedicatedWorker static property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/clearliveseekablerange/index.md',
+        title: 'MediaSource: clearLiveSeekableRange() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/duration/index.md',
+        title: 'MediaSource: duration property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/endofstream/index.md',
+        title: 'MediaSource: endOfStream() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/handle/index.md',
+        title: 'MediaSource: handle property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/index.md',
+        title: 'MediaSource',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/istypesupported_static/index.md',
+        title: 'MediaSource: isTypeSupported() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/mediasource/index.md',
+        title: 'MediaSource: MediaSource() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/readystate/index.md',
+        title: 'MediaSource: readyState property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/removesourcebuffer/index.md',
+        title: 'MediaSource: removeSourceBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/setliveseekablerange/index.md',
+        title: 'MediaSource: setLiveSeekableRange() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/sourcebuffers/index.md',
+        title: 'MediaSource: sourceBuffers property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasourcehandle/index.md',
+        title: 'MediaSourceHandle',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/active/index.md',
+        title: 'MediaStream: active property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/addtrack/index.md',
+        title: 'MediaStream: addTrack() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/addtrack_event/index.md',
+        title: 'MediaStream: addtrack event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/clone/index.md',
+        title: 'MediaStream: clone() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/getaudiotracks/index.md',
+        title: 'MediaStream: getAudioTracks() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/gettrackbyid/index.md',
+        title: 'MediaStream: getTrackById() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/gettracks/index.md',
+        title: 'MediaStream: getTracks() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/getvideotracks/index.md',
+        title: 'MediaStream: getVideoTracks() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/id/index.md',
+        title: 'MediaStream: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/index.md',
+        title: 'MediaStream',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/mediastream/index.md',
+        title: 'MediaStream: MediaStream() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/removetrack/index.md',
+        title: 'MediaStream: removeTrack() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream/removetrack_event/index.md',
+        title: 'MediaStream: removetrack event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream_image_capture_api/index.md',
+        title: 'MediaStream Image Capture API',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream_recording_api/index.md',
+        title: 'MediaStream Recording API',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream_recording_api/recording_a_media_element/index.md',
+        title: 'Recording a media element',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastream_recording_api/using_the_mediastream_recording_api/index.md',
+        title: 'Using the MediaStream Recording API',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamaudiodestinationnode/index.md',
+        title: 'MediaStreamAudioDestinationNode',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamaudiodestinationnode/mediastreamaudiodestinationnode/index.md',
+        title: 'MediaStreamAudioDestinationNode: MediaStreamAudioDestinationNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamaudiodestinationnode/stream/index.md',
+        title: 'MediaStreamAudioDestinationNode: stream property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamaudiosourcenode/index.md',
+        title: 'MediaStreamAudioSourceNode',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamaudiosourcenode/mediastream/index.md',
+        title: 'MediaStreamAudioSourceNode: mediaStream property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamaudiosourcenode/mediastreamaudiosourcenode/index.md',
+        title: 'MediaStreamAudioSourceNode: MediaStreamAudioSourceNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamevent/index.md',
+        title: 'MediaStreamEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamevent/mediastreamevent/index.md',
+        title: 'MediaStreamEvent: MediaStreamEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamevent/stream/index.md',
+        title: 'MediaStreamEvent: stream property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/applyconstraints/index.md',
+        title: 'MediaStreamTrack: applyConstraints() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/clone/index.md',
+        title: 'MediaStreamTrack: clone() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/contenthint/index.md',
+        title: 'MediaStreamTrack: contentHint property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/enabled/index.md',
+        title: 'MediaStreamTrack: enabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/ended_event/index.md',
+        title: 'MediaStreamTrack: ended event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/getcapabilities/index.md',
+        title: 'MediaStreamTrack: getCapabilities() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/getconstraints/index.md',
+        title: 'MediaStreamTrack: getConstraints() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/getsettings/index.md',
+        title: 'MediaStreamTrack: getSettings() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/id/index.md',
+        title: 'MediaStreamTrack: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/index.md',
+        title: 'MediaStreamTrack',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/kind/index.md',
+        title: 'MediaStreamTrack: kind property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/label/index.md',
+        title: 'MediaStreamTrack: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/mute_event/index.md',
+        title: 'MediaStreamTrack: mute event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/muted/index.md',
+        title: 'MediaStreamTrack: muted property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/readystate/index.md',
+        title: 'MediaStreamTrack: readyState property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/stop/index.md',
+        title: 'MediaStreamTrack: stop() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrack/unmute_event/index.md',
+        title: 'MediaStreamTrack: unmute event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrackaudiosourcenode/index.md',
+        title: 'MediaStreamTrackAudioSourceNode',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrackaudiosourcenode/mediastreamtrackaudiosourcenode/index.md',
+        title: 'MediaStreamTrackAudioSourceNode: MediaStreamTrackAudioSourceNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrackevent/index.md',
+        title: 'MediaStreamTrackEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrackevent/mediastreamtrackevent/index.md',
+        title: 'MediaStreamTrackEvent: MediaStreamTrackEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrackevent/track/index.md',
+        title: 'MediaStreamTrackEvent: track property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrackgenerator/index.md',
+        title: 'MediaStreamTrackGenerator',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrackgenerator/mediastreamtrackgenerator/index.md',
+        title: 'MediaStreamTrackGenerator: MediaStreamTrackGenerator() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrackgenerator/writable/index.md',
+        title: 'MediaStreamTrackGenerator: writable property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrackprocessor/index.md',
+        title: 'MediaStreamTrackProcessor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrackprocessor/mediastreamtrackprocessor/index.md',
+        title: 'MediaStreamTrackProcessor: MediaStreamTrackProcessor() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mediastreamtrackprocessor/readable/index.md',
+        title: 'MediaStreamTrackProcessor: readable property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/aspectratio/index.md',
+        title: 'MediaTrackConstraints: aspectRatio property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/autogaincontrol/index.md',
+        title: 'MediaTrackConstraints: autoGainControl property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/channelcount/index.md',
+        title: 'MediaTrackConstraints: channelCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/deviceid/index.md',
+        title: 'MediaTrackConstraints: deviceId property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/displaysurface/index.md',
+        title: 'MediaTrackConstraints: displaySurface property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/echocancellation/index.md',
+        title: 'MediaTrackConstraints: echoCancellation property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/facingmode/index.md',
+        title: 'MediaTrackConstraints: facingMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/framerate/index.md',
+        title: 'MediaTrackConstraints: frameRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/groupid/index.md',
+        title: 'MediaTrackConstraints: groupId property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/height/index.md',
+        title: 'MediaTrackConstraints: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/index.md',
+        title: 'MediaTrackConstraints',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/latency/index.md',
+        title: 'MediaTrackConstraints: latency property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/logicalsurface/index.md',
+        title: 'MediaTrackConstraints: logicalSurface property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/noisesuppression/index.md',
+        title: 'MediaTrackConstraints: noiseSuppression property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/samplerate/index.md',
+        title: 'MediaTrackConstraints: sampleRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/samplesize/index.md',
+        title: 'MediaTrackConstraints: sampleSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/suppresslocalaudioplayback/index.md',
+        title: 'MediaTrackConstraints: suppressLocalAudioPlayback property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/volume/index.md',
+        title: 'MediaTrackConstraints: volume property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatrackconstraints/width/index.md',
+        title: 'MediaTrackConstraints: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/aspectratio/index.md',
+        title: 'MediaTrackSettings: aspectRatio property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/autogaincontrol/index.md',
+        title: 'MediaTrackSettings: autoGainControl property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/channelcount/index.md',
+        title: 'MediaTrackSettings: channelCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/cursor/index.md',
+        title: 'MediaTrackSettings: cursor property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/deviceid/index.md',
+        title: 'MediaTrackSettings: deviceId property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/displaysurface/index.md',
+        title: 'MediaTrackSettings: displaySurface property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/echocancellation/index.md',
+        title: 'MediaTrackSettings: echoCancellation property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/facingmode/index.md',
+        title: 'MediaTrackSettings: facingMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/framerate/index.md',
+        title: 'MediaTrackSettings: frameRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/groupid/index.md',
+        title: 'MediaTrackSettings: groupId property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/height/index.md',
+        title: 'MediaTrackSettings: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/index.md',
+        title: 'MediaTrackSettings',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/latency/index.md',
+        title: 'MediaTrackSettings: latency property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/logicalsurface/index.md',
+        title: 'MediaTrackSettings: logicalSurface property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/noisesuppression/index.md',
+        title: 'MediaTrackSettings: noiseSuppression property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/samplerate/index.md',
+        title: 'MediaTrackSettings: sampleRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/samplesize/index.md',
+        title: 'MediaTrackSettings: sampleSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/suppresslocalaudioplayback/index.md',
+        title: 'MediaTrackSettings: suppressLocalAudioPlayback property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/volume/index.md',
+        title: 'MediaTrackSettings: volume property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/width/index.md',
+        title: 'MediaTrackSettings: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/aspectratio/index.md',
+        title: 'MediaTrackSupportedConstraints: aspectRatio property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/autogaincontrol/index.md',
+        title: 'MediaTrackSupportedConstraints: autoGainControl property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/channelcount/index.md',
+        title: 'MediaTrackSupportedConstraints: channelCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/deviceid/index.md',
+        title: 'MediaTrackSupportedConstraints: deviceId property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/displaysurface/index.md',
+        title: 'MediaTrackSupportedConstraints: displaySurface property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/echocancellation/index.md',
+        title: 'MediaTrackSupportedConstraints: echoCancellation property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/facingmode/index.md',
+        title: 'MediaTrackSupportedConstraints: facingMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/framerate/index.md',
+        title: 'MediaTrackSupportedConstraints: frameRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/groupid/index.md',
+        title: 'MediaTrackSupportedConstraints: groupId property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/height/index.md',
+        title: 'MediaTrackSupportedConstraints: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/index.md',
+        title: 'MediaTrackSupportedConstraints',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/latency/index.md',
+        title: 'MediaTrackSupportedConstraints: latency property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/logicalsurface/index.md',
+        title: 'MediaTrackSupportedConstraints: logicalSurface property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/noisesuppression/index.md',
+        title: 'MediaTrackSupportedConstraints: noiseSuppression property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/samplerate/index.md',
+        title: 'MediaTrackSupportedConstraints: sampleRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/samplesize/index.md',
+        title: 'MediaTrackSupportedConstraints: sampleSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/suppresslocalaudioplayback/index.md',
+        title: 'MediaTrackSupportedConstraints: suppressLocalAudioPlayback property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/volume/index.md',
+        title: 'MediaTrackSupportedConstraints: volume property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksupportedconstraints/width/index.md',
+        title: 'MediaTrackSupportedConstraints: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/merchantvalidationevent/complete/index.md',
+        title: 'MerchantValidationEvent: complete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/merchantvalidationevent/index.md',
+        title: 'MerchantValidationEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/merchantvalidationevent/merchantvalidationevent/index.md',
+        title: 'MerchantValidationEvent: MerchantValidationEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/merchantvalidationevent/methodname/index.md',
+        title: 'MerchantValidationEvent: methodName property',
+    },
+    {
+        path: 'lib/javascript/web_api/merchantvalidationevent/validationurl/index.md',
+        title: 'MerchantValidationEvent: validationURL property',
+    },
+    {
+        path: 'lib/javascript/web_api/messagechannel/index.md',
+        title: 'MessageChannel',
+    },
+    {
+        path: 'lib/javascript/web_api/messagechannel/messagechannel/index.md',
+        title: 'MessageChannel: MessageChannel() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/messagechannel/port1/index.md',
+        title: 'MessageChannel: port1 property',
+    },
+    {
+        path: 'lib/javascript/web_api/messagechannel/port2/index.md',
+        title: 'MessageChannel: port2 property',
+    },
+    {
+        path: 'lib/javascript/web_api/messageevent/data/index.md',
+        title: 'MessageEvent: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/messageevent/index.md',
+        title: 'MessageEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/messageevent/lasteventid/index.md',
+        title: 'MessageEvent: lastEventId property',
+    },
+    {
+        path: 'lib/javascript/web_api/messageevent/messageevent/index.md',
+        title: 'MessageEvent: MessageEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/messageevent/origin/index.md',
+        title: 'MessageEvent: origin property',
+    },
+    {
+        path: 'lib/javascript/web_api/messageevent/ports/index.md',
+        title: 'MessageEvent: ports property',
+    },
+    {
+        path: 'lib/javascript/web_api/messageevent/source/index.md',
+        title: 'MessageEvent: source property',
+    },
+    {
+        path: 'lib/javascript/web_api/messageport/close/index.md',
+        title: 'MessagePort: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/messageport/index.md',
+        title: 'MessagePort',
+    },
+    {
+        path: 'lib/javascript/web_api/messageport/message_event/index.md',
+        title: 'MessagePort: message event',
+    },
+    {
+        path: 'lib/javascript/web_api/messageport/messageerror_event/index.md',
+        title: 'MessagePort: messageerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/messageport/postmessage/index.md',
+        title: 'MessagePort: postMessage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/messageport/start/index.md',
+        title: 'MessagePort: start() method',
+    },
+    {
+        path: 'lib/javascript/web_api/metadata/index.md',
+        title: 'Metadata',
+    },
+    {
+        path: 'lib/javascript/web_api/metadata/modificationtime/index.md',
+        title: 'Metadata: modificationTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/metadata/size/index.md',
+        title: 'Metadata: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/midiaccess/index.md',
+        title: 'MIDIAccess',
+    },
+    {
+        path: 'lib/javascript/web_api/midiaccess/inputs/index.md',
+        title: 'MIDIAccess: inputs property',
+    },
+    {
+        path: 'lib/javascript/web_api/midiaccess/outputs/index.md',
+        title: 'MIDIAccess: outputs property',
+    },
+    {
+        path: 'lib/javascript/web_api/midiaccess/statechange_event/index.md',
+        title: 'MIDIAccess: statechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/midiaccess/sysexenabled/index.md',
+        title: 'MIDIAccess: sysexEnabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/midiconnectionevent/index.md',
+        title: 'MIDIConnectionEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/midiconnectionevent/midiconnectionevent/index.md',
+        title: 'MIDIConnectionEvent: MIDIConnectionEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/midiconnectionevent/port/index.md',
+        title: 'MIDIConnectionEvent: port property',
+    },
+    {
+        path: 'lib/javascript/web_api/midiinput/index.md',
+        title: 'MIDIInput',
+    },
+    {
+        path: 'lib/javascript/web_api/midiinput/midimessage_event/index.md',
+        title: 'MIDIInput: midimessage event',
+    },
+    {
+        path: 'lib/javascript/web_api/midiinputmap/index.md',
+        title: 'MIDIInputMap',
+    },
+    {
+        path: 'lib/javascript/web_api/midimessageevent/data/index.md',
+        title: 'MIDIMessageEvent: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/midimessageevent/index.md',
+        title: 'MIDIMessageEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/midimessageevent/midimessageevent/index.md',
+        title: 'MIDIMessageEvent: MIDIMessageEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/midioutput/clear/index.md',
+        title: 'MIDIOutput: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/midioutput/index.md',
+        title: 'MIDIOutput',
+    },
+    {
+        path: 'lib/javascript/web_api/midioutput/send/index.md',
+        title: 'MIDIOutput: send() method',
+    },
+    {
+        path: 'lib/javascript/web_api/midioutputmap/index.md',
+        title: 'MIDIOutputMap',
+    },
+    {
+        path: 'lib/javascript/web_api/midiport/close/index.md',
+        title: 'MIDIPort: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/midiport/connection/index.md',
+        title: 'MIDIPort: connection property',
+    },
+    {
+        path: 'lib/javascript/web_api/midiport/id/index.md',
+        title: 'MIDIPort: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/midiport/index.md',
+        title: 'MIDIPort',
+    },
+    {
+        path: 'lib/javascript/web_api/midiport/manufacturer/index.md',
+        title: 'MIDIPort: manufacturer property',
+    },
+    {
+        path: 'lib/javascript/web_api/midiport/name/index.md',
+        title: 'MIDIPort: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/midiport/open/index.md',
+        title: 'MIDIPort: open() method',
+    },
+    {
+        path: 'lib/javascript/web_api/midiport/state/index.md',
+        title: 'MIDIPort: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/midiport/statechange_event/index.md',
+        title: 'MIDIPort: statechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/midiport/type/index.md',
+        title: 'MIDIPort: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/midiport/version/index.md',
+        title: 'MIDIPort: version property',
+    },
+    {
+        path: 'lib/javascript/web_api/mimetype/index.md',
+        title: 'MimeType',
+    },
+    {
+        path: 'lib/javascript/web_api/mimetypearray/index.md',
+        title: 'MimeTypeArray',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/altkey/index.md',
+        title: 'MouseEvent: altKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/button/index.md',
+        title: 'MouseEvent: button property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/buttons/index.md',
+        title: 'MouseEvent: buttons property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/clientx/index.md',
+        title: 'MouseEvent: clientX property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/clienty/index.md',
+        title: 'MouseEvent: clientY property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/ctrlkey/index.md',
+        title: 'MouseEvent: ctrlKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/getmodifierstate/index.md',
+        title: 'MouseEvent: getModifierState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/index.md',
+        title: 'MouseEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/initmouseevent/index.md',
+        title: 'MouseEvent: initMouseEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/layerx/index.md',
+        title: 'MouseEvent: layerX property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/layery/index.md',
+        title: 'MouseEvent: layerY property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/metakey/index.md',
+        title: 'MouseEvent: metaKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/mouseevent/index.md',
+        title: 'MouseEvent: MouseEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/movementx/index.md',
+        title: 'MouseEvent: movementX property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/movementy/index.md',
+        title: 'MouseEvent: movementY property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/mozinputsource/index.md',
+        title: 'MouseEvent: mozInputSource property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/offsetx/index.md',
+        title: 'MouseEvent: offsetX property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/offsety/index.md',
+        title: 'MouseEvent: offsetY property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/pagex/index.md',
+        title: 'MouseEvent: pageX property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/pagey/index.md',
+        title: 'MouseEvent: pageY property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/relatedtarget/index.md',
+        title: 'MouseEvent: relatedTarget property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/screenx/index.md',
+        title: 'MouseEvent: screenX property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/screeny/index.md',
+        title: 'MouseEvent: screenY property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/shiftkey/index.md',
+        title: 'MouseEvent: shiftKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/webkit_force_at_force_mouse_down_static/index.md',
+        title: 'MouseEvent: WEBKIT_FORCE_AT_FORCE_MOUSE_DOWN static property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/webkit_force_at_mouse_down_static/index.md',
+        title: 'MouseEvent: WEBKIT_FORCE_AT_MOUSE_DOWN static property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/webkitforce/index.md',
+        title: 'MouseEvent: webkitForce property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/x/index.md',
+        title: 'MouseEvent: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/mouseevent/y/index.md',
+        title: 'MouseEvent: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/mousescrollevent/index.md',
+        title: 'MouseScrollEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationevent/attrchange/index.md',
+        title: 'MutationEvent: attrChange property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationevent/attrname/index.md',
+        title: 'MutationEvent: attrName property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationevent/index.md',
+        title: 'MutationEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationevent/initmutationevent/index.md',
+        title: 'MutationEvent: initMutationEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationevent/newvalue/index.md',
+        title: 'MutationEvent: newValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationevent/prevvalue/index.md',
+        title: 'MutationEvent: prevValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationevent/relatednode/index.md',
+        title: 'MutationEvent: relatedNode property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationobserver/disconnect/index.md',
+        title: 'MutationObserver: disconnect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationobserver/index.md',
+        title: 'MutationObserver',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationobserver/mutationobserver/index.md',
+        title: 'MutationObserver: MutationObserver() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationobserver/observe/index.md',
+        title: 'MutationObserver: observe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationobserver/takerecords/index.md',
+        title: 'MutationObserver: takeRecords() method',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationrecord/addednodes/index.md',
+        title: 'MutationRecord: addedNodes property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationrecord/attributename/index.md',
+        title: 'MutationRecord: attributeName property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationrecord/attributenamespace/index.md',
+        title: 'MutationRecord: attributeNamespace property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationrecord/index.md',
+        title: 'MutationRecord',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationrecord/nextsibling/index.md',
+        title: 'MutationRecord: nextSibling property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationrecord/oldvalue/index.md',
+        title: 'MutationRecord: oldValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationrecord/previoussibling/index.md',
+        title: 'MutationRecord: previousSibling property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationrecord/removednodes/index.md',
+        title: 'MutationRecord: removedNodes property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationrecord/target/index.md',
+        title: 'MutationRecord: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/mutationrecord/type/index.md',
+        title: 'MutationRecord: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/nameditem/index.md',
+        title: 'HTMLFormControlsCollection: namedItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/namednodemap/getnameditem/index.md',
+        title: 'NamedNodeMap: getNamedItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/namednodemap/getnameditemns/index.md',
+        title: 'NamedNodeMap: getNamedItemNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/namednodemap/index.md',
+        title: 'NamedNodeMap',
+    },
+    {
+        path: 'lib/javascript/web_api/namednodemap/item/index.md',
+        title: 'NamedNodeMap: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/namednodemap/length/index.md',
+        title: 'NamedNodeMap: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/namednodemap/removenameditem/index.md',
+        title: 'NamedNodeMap: removeNamedItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/namednodemap/removenameditemns/index.md',
+        title: 'NamedNodeMap: removeNamedItemNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/namednodemap/setnameditem/index.md',
+        title: 'NamedNodeMap: setNamedItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/namednodemap/setnameditemns/index.md',
+        title: 'NamedNodeMap: setNamedItemNS() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/canintercept/index.md',
+        title: 'NavigateEvent: canIntercept property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/destination/index.md',
+        title: 'NavigateEvent: destination property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/downloadrequest/index.md',
+        title: 'NavigateEvent: downloadRequest property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/formdata/index.md',
+        title: 'NavigateEvent: formData property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/hashchange/index.md',
+        title: 'NavigateEvent: hashChange property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/index.md',
+        title: 'NavigateEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/info/index.md',
+        title: 'NavigateEvent: info property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/intercept/index.md',
+        title: 'NavigateEvent: intercept() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/navigateevent/index.md',
+        title: 'NavigateEvent: NavigateEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/navigationtype/index.md',
+        title: 'NavigateEvent: navigationType property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/scroll/index.md',
+        title: 'NavigateEvent: scroll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/signal/index.md',
+        title: 'NavigateEvent: signal property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigateevent/userinitiated/index.md',
+        title: 'NavigateEvent: userInitiated property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/back/index.md',
+        title: 'Navigation: back() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/cangoback/index.md',
+        title: 'Navigation: canGoBack property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/cangoforward/index.md',
+        title: 'Navigation: canGoForward property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/currententry/index.md',
+        title: 'Navigation: currentEntry property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/currententrychange_event/index.md',
+        title: 'Navigation: currententrychange event',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/entries/index.md',
+        title: 'Navigation: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/forward/index.md',
+        title: 'Navigation: forward() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/index.md',
+        title: 'Navigation',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/navigate/index.md',
+        title: 'Navigation: navigate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/navigate_event/index.md',
+        title: 'Navigation: navigate event',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/navigateerror_event/index.md',
+        title: 'Navigation: navigateerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/navigatesuccess_event/index.md',
+        title: 'Navigation: navigatesuccess event',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/reload/index.md',
+        title: 'Navigation: reload() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/transition/index.md',
+        title: 'Navigation: transition property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/traverseto/index.md',
+        title: 'Navigation: traverseTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation/updatecurrententry/index.md',
+        title: 'Navigation: updateCurrentEntry() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigation_api/index.md',
+        title: 'Navigation API',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationactivation/entry/index.md',
+        title: 'NavigationActivation: entry property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationactivation/from/index.md',
+        title: 'NavigationActivation: from property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationactivation/index.md',
+        title: 'NavigationActivation',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationactivation/navigationtype/index.md',
+        title: 'NavigationActivation: navigationType property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationcurrententrychangeevent/from/index.md',
+        title: 'NavigationCurrentEntryChangeEvent: from property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationcurrententrychangeevent/index.md',
+        title: 'NavigationCurrentEntryChangeEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationcurrententrychangeevent/navigationcurrententrychangeevent/index.md',
+        title: 'NavigationCurrentEntryChangeEvent: NavigationCurrentEntryChangeEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationcurrententrychangeevent/navigationtype/index.md',
+        title: 'NavigationCurrentEntryChangeEvent: navigationType property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationdestination/getstate/index.md',
+        title: 'NavigationDestination: getState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationdestination/id/index.md',
+        title: 'NavigationDestination: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationdestination/index/index.md',
+        title: 'NavigationDestination: index property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationdestination/index.md',
+        title: 'NavigationDestination',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationdestination/key/index.md',
+        title: 'NavigationDestination: key property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationdestination/samedocument/index.md',
+        title: 'NavigationDestination: sameDocument property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationdestination/url/index.md',
+        title: 'NavigationDestination: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationhistoryentry/dispose_event/index.md',
+        title: 'NavigationHistoryEntry: dispose event',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationhistoryentry/getstate/index.md',
+        title: 'NavigationHistoryEntry: getState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationhistoryentry/id/index.md',
+        title: 'NavigationHistoryEntry: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationhistoryentry/index/index.md',
+        title: 'NavigationHistoryEntry: index property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationhistoryentry/index.md',
+        title: 'NavigationHistoryEntry',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationhistoryentry/key/index.md',
+        title: 'NavigationHistoryEntry: key property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationhistoryentry/samedocument/index.md',
+        title: 'NavigationHistoryEntry: sameDocument property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationhistoryentry/url/index.md',
+        title: 'NavigationHistoryEntry: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationpreloadmanager/disable/index.md',
+        title: 'NavigationPreloadManager: disable() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationpreloadmanager/enable/index.md',
+        title: 'NavigationPreloadManager: enable() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationpreloadmanager/getstate/index.md',
+        title: 'NavigationPreloadManager: getState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationpreloadmanager/index.md',
+        title: 'NavigationPreloadManager',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationpreloadmanager/setheadervalue/index.md',
+        title: 'NavigationPreloadManager: setHeaderValue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationtransition/finished/index.md',
+        title: 'NavigationTransition: finished property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationtransition/from/index.md',
+        title: 'NavigationTransition: from property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationtransition/index.md',
+        title: 'NavigationTransition',
+    },
+    {
+        path: 'lib/javascript/web_api/navigationtransition/navigationtype/index.md',
+        title: 'NavigationTransition: navigationType property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/activevrdisplays/index.md',
+        title: 'Navigator: activeVRDisplays property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/appcodename/index.md',
+        title: 'Navigator: appCodeName property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/appname/index.md',
+        title: 'Navigator: appName property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/appversion/index.md',
+        title: 'Navigator: appVersion property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/bluetooth/index.md',
+        title: 'Navigator: bluetooth property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/buildid/index.md',
+        title: 'Navigator: buildID property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/canshare/index.md',
+        title: 'Navigator: canShare() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/clearappbadge/index.md',
+        title: 'Navigator: clearAppBadge() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/clipboard/index.md',
+        title: 'Navigator: clipboard property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/connection/index.md',
+        title: 'Navigator: connection property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/contacts/index.md',
+        title: 'Navigator: contacts property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/cookieenabled/index.md',
+        title: 'Navigator: cookieEnabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/credentials/index.md',
+        title: 'Navigator: credentials property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/deprecatedreplaceinurn/index.md',
+        title: 'Navigator: deprecatedReplaceInURN() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/devicememory/index.md',
+        title: 'Navigator: deviceMemory property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/donottrack/index.md',
+        title: 'Navigator: doNotTrack property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/geolocation/index.md',
+        title: 'Navigator: geolocation property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/getautoplaypolicy/index.md',
+        title: 'Navigator: getAutoplayPolicy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/getbattery/index.md',
+        title: 'Navigator: getBattery() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/getgamepads/index.md',
+        title: 'Navigator: getGamepads() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/getinstalledrelatedapps/index.md',
+        title: 'Navigator: getInstalledRelatedApps() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/getusermedia/index.md',
+        title: 'Navigator: getUserMedia() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/getvrdisplays/index.md',
+        title: 'Navigator: getVRDisplays() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/globalprivacycontrol/index.md',
+        title: 'Navigator: globalPrivacyControl property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/gpu/index.md',
+        title: 'Navigator: gpu property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/hardwareconcurrency/index.md',
+        title: 'Navigator: hardwareConcurrency property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/hid/index.md',
+        title: 'Navigator: hid property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/index.md',
+        title: 'Navigator',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/ink/index.md',
+        title: 'Navigator: ink property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/javaenabled/index.md',
+        title: 'Navigator: javaEnabled() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/keyboard/index.md',
+        title: 'Navigator: keyboard property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/language/index.md',
+        title: 'Navigator: language property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/languages/index.md',
+        title: 'Navigator: languages property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/locks/index.md',
+        title: 'Navigator: locks property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/login/index.md',
+        title: 'Navigator: login property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/maxtouchpoints/index.md',
+        title: 'Navigator: maxTouchPoints property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/mediacapabilities/index.md',
+        title: 'Navigator: mediaCapabilities property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/mediadevices/index.md',
+        title: 'Navigator: mediaDevices property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/mediasession/index.md',
+        title: 'Navigator: mediaSession property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/mimetypes/index.md',
+        title: 'Navigator: mimeTypes property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/online/index.md',
+        title: 'Navigator: onLine property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/oscpu/index.md',
+        title: 'Navigator: oscpu property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/pdfviewerenabled/index.md',
+        title: 'Navigator: pdfViewerEnabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/permissions/index.md',
+        title: 'Navigator: permissions property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/platform/index.md',
+        title: 'Navigator: platform property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/plugins/index.md',
+        title: 'Navigator: plugins property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/presentation/index.md',
+        title: 'Navigator: presentation property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/product/index.md',
+        title: 'Navigator: product property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/productsub/index.md',
+        title: 'Navigator: productSub property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/registerprotocolhandler/index.md',
+        title: 'Navigator: registerProtocolHandler() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/registerprotocolhandler/web-based_protocol_handlers/index.md',
+        title: 'Web-based protocol handlers',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/requestmediakeysystemaccess/index.md',
+        title: 'Navigator: requestMediaKeySystemAccess() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/requestmidiaccess/index.md',
+        title: 'Navigator: requestMIDIAccess() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/scheduling/index.md',
+        title: 'Navigator: scheduling property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/sendbeacon/index.md',
+        title: 'Navigator: sendBeacon() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/serial/index.md',
+        title: 'Navigator: serial property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/serviceworker/index.md',
+        title: 'Navigator: serviceWorker property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/setappbadge/index.md',
+        title: 'Navigator: setAppBadge() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/share/index.md',
+        title: 'Navigator: share() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/storage/index.md',
+        title: 'Navigator: storage property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/taintenabled/index.md',
+        title: 'Navigator: taintEnabled() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/unregisterprotocolhandler/index.md',
+        title: 'Navigator: unregisterProtocolHandler() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/usb/index.md',
+        title: 'Navigator: usb property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/useractivation/index.md',
+        title: 'Navigator: userActivation property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/useragent/index.md',
+        title: 'Navigator: userAgent property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/useragentdata/index.md',
+        title: 'Navigator: userAgentData property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/vendor/index.md',
+        title: 'Navigator: vendor property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/vendorsub/index.md',
+        title: 'Navigator: vendorSub property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/vibrate/index.md',
+        title: 'Navigator: vibrate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/virtualkeyboard/index.md',
+        title: 'Navigator: virtualKeyboard property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/wakelock/index.md',
+        title: 'Navigator: wakeLock property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/webdriver/index.md',
+        title: 'Navigator: webdriver property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/windowcontrolsoverlay/index.md',
+        title: 'Navigator: windowControlsOverlay property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigator/xr/index.md',
+        title: 'Navigator: xr property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigatorlogin/index.md',
+        title: 'NavigatorLogin',
+    },
+    {
+        path: 'lib/javascript/web_api/navigatorlogin/setstatus/index.md',
+        title: 'NavigatorLogin: setStatus() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigatoruadata/brands/index.md',
+        title: 'NavigatorUAData: brands property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigatoruadata/gethighentropyvalues/index.md',
+        title: 'NavigatorUAData: getHighEntropyValues() method',
+    },
+    {
+        path: 'lib/javascript/web_api/navigatoruadata/index.md',
+        title: 'NavigatorUAData',
+    },
+    {
+        path: 'lib/javascript/web_api/navigatoruadata/mobile/index.md',
+        title: 'NavigatorUAData: mobile property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigatoruadata/platform/index.md',
+        title: 'NavigatorUAData: platform property',
+    },
+    {
+        path: 'lib/javascript/web_api/navigatoruadata/tojson/index.md',
+        title: 'NavigatorUAData: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefmessage/index.md',
+        title: 'NDEFMessage',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefmessage/ndefmessage/index.md',
+        title: 'NDEFMessage: NDEFMessage() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefmessage/records/index.md',
+        title: 'NDEFMessage: records property',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefreader/index.md',
+        title: 'NDEFReader',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefreader/ndefreader/index.md',
+        title: 'NDEFReader: NDEFReader() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefreader/reading_event/index.md',
+        title: 'NDEFReader: reading event',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefreader/readingerror_event/index.md',
+        title: 'NDEFReader: readingerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefreader/scan/index.md',
+        title: 'NDEFReader: scan() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefreader/write/index.md',
+        title: 'NDEFReader: write() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefreadingevent/index.md',
+        title: 'NDEFReadingEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefreadingevent/message/index.md',
+        title: 'NDEFReadingEvent: message property',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefreadingevent/ndefreadingevent/index.md',
+        title: 'NDEFReadingEvent: NDEFReadingEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefreadingevent/serialnumber/index.md',
+        title: 'NDEFReadingEvent: serialNumber property',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefrecord/data/index.md',
+        title: 'NDEFRecord: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefrecord/encoding/index.md',
+        title: 'NDEFRecord: encoding property',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefrecord/id/index.md',
+        title: 'NDEFRecord: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefrecord/index.md',
+        title: 'NDEFRecord',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefrecord/lang/index.md',
+        title: 'NDEFRecord: lang property',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefrecord/mediatype/index.md',
+        title: 'NDEFRecord: mediaType property',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefrecord/ndefrecord/index.md',
+        title: 'NDEFRecord: NDEFRecord() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefrecord/recordtype/index.md',
+        title: 'NDEFRecord: recordType property',
+    },
+    {
+        path: 'lib/javascript/web_api/ndefrecord/torecords/index.md',
+        title: 'NDEFRecord: toRecords() method',
+    },
+    {
+        path: 'lib/javascript/web_api/network_information_api/index.md',
+        title: 'Network Information API',
+    },
+    {
+        path: 'lib/javascript/web_api/networkinformation/change_event/index.md',
+        title: 'NetworkInformation: change event',
+    },
+    {
+        path: 'lib/javascript/web_api/networkinformation/downlink/index.md',
+        title: 'NetworkInformation: downlink property',
+    },
+    {
+        path: 'lib/javascript/web_api/networkinformation/downlinkmax/index.md',
+        title: 'NetworkInformation: downlinkMax property',
+    },
+    {
+        path: 'lib/javascript/web_api/networkinformation/effectivetype/index.md',
+        title: 'NetworkInformation: effectiveType property',
+    },
+    {
+        path: 'lib/javascript/web_api/networkinformation/index.md',
+        title: 'NetworkInformation',
+    },
+    {
+        path: 'lib/javascript/web_api/networkinformation/rtt/index.md',
+        title: 'NetworkInformation: rtt property',
+    },
+    {
+        path: 'lib/javascript/web_api/networkinformation/savedata/index.md',
+        title: 'NetworkInformation: saveData property',
+    },
+    {
+        path: 'lib/javascript/web_api/networkinformation/type/index.md',
+        title: 'NetworkInformation: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/appendchild/index.md',
+        title: 'Node: appendChild() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/baseuri/index.md',
+        title: 'Node: baseURI property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/childnodes/index.md',
+        title: 'Node: childNodes property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/clonenode/index.md',
+        title: 'Node: cloneNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/comparedocumentposition/index.md',
+        title: 'Node: compareDocumentPosition() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/contains/index.md',
+        title: 'Node: contains() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/firstchild/index.md',
+        title: 'Node: firstChild property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/getrootnode/index.md',
+        title: 'Node: getRootNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/haschildnodes/index.md',
+        title: 'Node: hasChildNodes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/index.md',
+        title: 'Node',
+    },
+    {
+        path: 'lib/javascript/web_api/node/insertbefore/index.md',
+        title: 'Node: insertBefore() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/isconnected/index.md',
+        title: 'Node: isConnected property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/isdefaultnamespace/index.md',
+        title: 'Node: isDefaultNamespace() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/isequalnode/index.md',
+        title: 'Node: isEqualNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/issamenode/index.md',
+        title: 'Node: isSameNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/lastchild/index.md',
+        title: 'Node: lastChild property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/lookupnamespaceuri/index.md',
+        title: 'Node: lookupNamespaceURI() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/lookupprefix/index.md',
+        title: 'Node: lookupPrefix() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/nextsibling/index.md',
+        title: 'Node: nextSibling property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/nodename/index.md',
+        title: 'Node: nodeName property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/nodetype/index.md',
+        title: 'Node: nodeType property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/nodevalue/index.md',
+        title: 'Node: nodeValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/normalize/index.md',
+        title: 'Node: normalize() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/ownerdocument/index.md',
+        title: 'Node: ownerDocument property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/parentelement/index.md',
+        title: 'Node: parentElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/parentnode/index.md',
+        title: 'Node: parentNode property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/previoussibling/index.md',
+        title: 'Node: previousSibling property',
+    },
+    {
+        path: 'lib/javascript/web_api/node/removechild/index.md',
+        title: 'Node: removeChild() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/replacechild/index.md',
+        title: 'Node: replaceChild() method',
+    },
+    {
+        path: 'lib/javascript/web_api/node/selectstart_event/index.md',
+        title: 'Node: selectstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/node/textcontent/index.md',
+        title: 'Node: textContent property',
+    },
+    {
+        path: 'lib/javascript/web_api/nodeiterator/detach/index.md',
+        title: 'NodeIterator: detach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/nodeiterator/filter/index.md',
+        title: 'NodeIterator: filter property',
+    },
+    {
+        path: 'lib/javascript/web_api/nodeiterator/index.md',
+        title: 'NodeIterator',
+    },
+    {
+        path: 'lib/javascript/web_api/nodeiterator/nextnode/index.md',
+        title: 'NodeIterator: nextNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/nodeiterator/pointerbeforereferencenode/index.md',
+        title: 'NodeIterator: pointerBeforeReferenceNode property',
+    },
+    {
+        path: 'lib/javascript/web_api/nodeiterator/previousnode/index.md',
+        title: 'NodeIterator: previousNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/nodeiterator/referencenode/index.md',
+        title: 'NodeIterator: referenceNode property',
+    },
+    {
+        path: 'lib/javascript/web_api/nodeiterator/root/index.md',
+        title: 'NodeIterator: root property',
+    },
+    {
+        path: 'lib/javascript/web_api/nodeiterator/whattoshow/index.md',
+        title: 'NodeIterator: whatToShow property',
+    },
+    {
+        path: 'lib/javascript/web_api/nodelist/entries/index.md',
+        title: 'NodeList: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/nodelist/foreach/index.md',
+        title: 'NodeList: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/nodelist/index.md',
+        title: 'NodeList',
+    },
+    {
+        path: 'lib/javascript/web_api/nodelist/item/index.md',
+        title: 'NodeList: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/nodelist/keys/index.md',
+        title: 'NodeList: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/nodelist/length/index.md',
+        title: 'NodeList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/nodelist/values/index.md',
+        title: 'NodeList: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/actions/index.md',
+        title: 'Notification: actions property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/badge/index.md',
+        title: 'Notification: badge property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/body/index.md',
+        title: 'Notification: body property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/click_event/index.md',
+        title: 'Notification: click event',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/close/index.md',
+        title: 'Notification: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/close_event/index.md',
+        title: 'Notification: close event',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/data/index.md',
+        title: 'Notification: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/dir/index.md',
+        title: 'Notification: dir property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/error_event/index.md',
+        title: 'Notification: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/icon/index.md',
+        title: 'Notification: icon property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/image/index.md',
+        title: 'Notification: image property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/index.md',
+        title: 'Notification',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/lang/index.md',
+        title: 'Notification: lang property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/maxactions_static/index.md',
+        title: 'Notification: maxActions static property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/notification/index.md',
+        title: 'Notification: Notification() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/permission_static/index.md',
+        title: 'Notification: permission static property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/renotify/index.md',
+        title: 'Notification: renotify property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/requestpermission_static/index.md',
+        title: 'Notification: requestPermission() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/requireinteraction/index.md',
+        title: 'Notification: requireInteraction property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/show_event/index.md',
+        title: 'Notification: show event',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/silent/index.md',
+        title: 'Notification: silent property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/tag/index.md',
+        title: 'Notification: tag property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/timestamp/index.md',
+        title: 'Notification: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/title/index.md',
+        title: 'Notification: title property',
+    },
+    {
+        path: 'lib/javascript/web_api/notification/vibrate/index.md',
+        title: 'Notification: vibrate property',
+    },
+    {
+        path: 'lib/javascript/web_api/notificationevent/action/index.md',
+        title: 'NotificationEvent: action property',
+    },
+    {
+        path: 'lib/javascript/web_api/notificationevent/index.md',
+        title: 'NotificationEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/notificationevent/notification/index.md',
+        title: 'NotificationEvent: notification property',
+    },
+    {
+        path: 'lib/javascript/web_api/notificationevent/notificationevent/index.md',
+        title: 'NotificationEvent: NotificationEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/notifications_api/index.md',
+        title: 'Notifications API',
+    },
+    {
+        path: 'lib/javascript/web_api/notifications_api/using_the_notifications_api/index.md',
+        title: 'Using the Notifications API',
+    },
+    {
+        path: 'lib/javascript/web_api/notrestoredreasondetails/index.md',
+        title: 'NotRestoredReasonDetails',
+    },
+    {
+        path: 'lib/javascript/web_api/notrestoredreasondetails/reason/index.md',
+        title: 'NotRestoredReasonDetails: reason property',
+    },
+    {
+        path: 'lib/javascript/web_api/notrestoredreasondetails/tojson/index.md',
+        title: 'NotRestoredReasonDetails: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/notrestoredreasons/children/index.md',
+        title: 'NotRestoredReasons: children property',
+    },
+    {
+        path: 'lib/javascript/web_api/notrestoredreasons/id/index.md',
+        title: 'NotRestoredReasons: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/notrestoredreasons/index.md',
+        title: 'NotRestoredReasons',
+    },
+    {
+        path: 'lib/javascript/web_api/notrestoredreasons/name/index.md',
+        title: 'NotRestoredReasons: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/notrestoredreasons/reasons/index.md',
+        title: 'NotRestoredReasons: reasons property',
+    },
+    {
+        path: 'lib/javascript/web_api/notrestoredreasons/src/index.md',
+        title: 'NotRestoredReasons: src property',
+    },
+    {
+        path: 'lib/javascript/web_api/notrestoredreasons/tojson/index.md',
+        title: 'NotRestoredReasons: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/notrestoredreasons/url/index.md',
+        title: 'NotRestoredReasons: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_draw_buffers_indexed/blendequationioes/index.md',
+        title: 'OES_draw_buffers_indexed: blendEquationiOES() method',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_draw_buffers_indexed/blendequationseparateioes/index.md',
+        title: 'OES_draw_buffers_indexed: blendEquationSeparateiOES() method',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_draw_buffers_indexed/blendfuncioes/index.md',
+        title: 'OES_draw_buffers_indexed: blendFunciOES() method',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_draw_buffers_indexed/blendfuncseparateioes/index.md',
+        title: 'OES_draw_buffers_indexed: blendFuncSeparateiOES() method',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_draw_buffers_indexed/colormaskioes/index.md',
+        title: 'OES_draw_buffers_indexed: colorMaskiOES() method',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_draw_buffers_indexed/disableioes/index.md',
+        title: 'OES_draw_buffers_indexed: disableiOES() method',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_draw_buffers_indexed/enableioes/index.md',
+        title: 'OES_draw_buffers_indexed: enableiOES() method',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_draw_buffers_indexed/index.md',
+        title: 'OES_draw_buffers_indexed',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_element_index_uint/index.md',
+        title: 'OES_element_index_uint extension',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_fbo_render_mipmap/index.md',
+        title: 'OES_fbo_render_mipmap extension',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_standard_derivatives/index.md',
+        title: 'OES_standard_derivatives extension',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_texture_float/index.md',
+        title: 'OES_texture_float extension',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_texture_float_linear/index.md',
+        title: 'OES_texture_float_linear extension',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_texture_half_float/index.md',
+        title: 'OES_texture_half_float extension',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_texture_half_float_linear/index.md',
+        title: 'OES_texture_half_float_linear extension',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_vertex_array_object/bindvertexarrayoes/index.md',
+        title: 'OES_vertex_array_object: bindVertexArrayOES() method',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_vertex_array_object/createvertexarrayoes/index.md',
+        title: 'OES_vertex_array_object: createVertexArrayOES() method',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_vertex_array_object/deletevertexarrayoes/index.md',
+        title: 'OES_vertex_array_object: deleteVertexArrayOES() method',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_vertex_array_object/index.md',
+        title: 'OES_vertex_array_object extension',
+    },
+    {
+        path: 'lib/javascript/web_api/oes_vertex_array_object/isvertexarrayoes/index.md',
+        title: 'OES_vertex_array_object: isVertexArrayOES() method',
+    },
+    {
+        path: 'lib/javascript/web_api/offlineaudiocompletionevent/index.md',
+        title: 'OfflineAudioCompletionEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/offlineaudiocompletionevent/offlineaudiocompletionevent/index.md',
+        title: 'OfflineAudioCompletionEvent: OfflineAudioCompletionEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/offlineaudiocompletionevent/renderedbuffer/index.md',
+        title: 'OfflineAudioCompletionEvent: renderedBuffer property',
+    },
+    {
+        path: 'lib/javascript/web_api/offlineaudiocontext/complete_event/index.md',
+        title: 'OfflineAudioContext: complete event',
+    },
+    {
+        path: 'lib/javascript/web_api/offlineaudiocontext/index.md',
+        title: 'OfflineAudioContext',
+    },
+    {
+        path: 'lib/javascript/web_api/offlineaudiocontext/length/index.md',
+        title: 'OfflineAudioContext: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/offlineaudiocontext/offlineaudiocontext/index.md',
+        title: 'OfflineAudioContext: OfflineAudioContext() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/offlineaudiocontext/resume/index.md',
+        title: 'OfflineAudioContext: resume() method',
+    },
+    {
+        path: 'lib/javascript/web_api/offlineaudiocontext/startrendering/index.md',
+        title: 'OfflineAudioContext: startRendering() method',
+    },
+    {
+        path: 'lib/javascript/web_api/offlineaudiocontext/suspend/index.md',
+        title: 'OfflineAudioContext: suspend() method',
+    },
+    {
+        path: 'lib/javascript/web_api/offscreencanvas/contextlost_event/index.md',
+        title: 'OffscreenCanvas: contextlost event',
+    },
+    {
+        path: 'lib/javascript/web_api/offscreencanvas/contextrestored_event/index.md',
+        title: 'OffscreenCanvas: contextrestored event',
+    },
+    {
+        path: 'lib/javascript/web_api/offscreencanvas/converttoblob/index.md',
+        title: 'OffscreenCanvas: convertToBlob() method',
+    },
+    {
+        path: 'lib/javascript/web_api/offscreencanvas/getcontext/index.md',
+        title: 'OffscreenCanvas: getContext() method',
+    },
+    {
+        path: 'lib/javascript/web_api/offscreencanvas/height/index.md',
+        title: 'OffscreenCanvas: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/offscreencanvas/index.md',
+        title: 'OffscreenCanvas',
+    },
+    {
+        path: 'lib/javascript/web_api/offscreencanvas/offscreencanvas/index.md',
+        title: 'OffscreenCanvas: OffscreenCanvas() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/offscreencanvas/transfertoimagebitmap/index.md',
+        title: 'OffscreenCanvas: transferToImageBitmap() method',
+    },
+    {
+        path: 'lib/javascript/web_api/offscreencanvas/width/index.md',
+        title: 'OffscreenCanvas: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/offscreencanvasrenderingcontext2d/commit/index.md',
+        title: 'OffscreenCanvasRenderingContext2D: commit() method',
+    },
+    {
+        path: 'lib/javascript/web_api/offscreencanvasrenderingcontext2d/index.md',
+        title: 'OffscreenCanvasRenderingContext2D',
+    },
+    {
+        path: 'lib/javascript/web_api/orientationsensor/index.md',
+        title: 'OrientationSensor',
+    },
+    {
+        path: 'lib/javascript/web_api/orientationsensor/populatematrix/index.md',
+        title: 'OrientationSensor: populateMatrix() method',
+    },
+    {
+        path: 'lib/javascript/web_api/orientationsensor/quaternion/index.md',
+        title: 'OrientationSensor: quaternion property',
+    },
+    {
+        path: 'lib/javascript/web_api/oscillatornode/detune/index.md',
+        title: 'OscillatorNode: detune property',
+    },
+    {
+        path: 'lib/javascript/web_api/oscillatornode/frequency/index.md',
+        title: 'OscillatorNode: frequency property',
+    },
+    {
+        path: 'lib/javascript/web_api/oscillatornode/index.md',
+        title: 'OscillatorNode',
+    },
+    {
+        path: 'lib/javascript/web_api/oscillatornode/oscillatornode/index.md',
+        title: 'OscillatorNode: OscillatorNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/oscillatornode/setperiodicwave/index.md',
+        title: 'OscillatorNode: setPeriodicWave() method',
+    },
+    {
+        path: 'lib/javascript/web_api/oscillatornode/type/index.md',
+        title: 'OscillatorNode: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/otpcredential/code/index.md',
+        title: 'OTPCredential: code property',
+    },
+    {
+        path: 'lib/javascript/web_api/otpcredential/index.md',
+        title: 'OTPCredential',
+    },
+    {
+        path: 'lib/javascript/web_api/overconstrainederror/constraint/index.md',
+        title: 'OverconstrainedError: constraint property',
+    },
+    {
+        path: 'lib/javascript/web_api/overconstrainederror/index.md',
+        title: 'OverconstrainedError',
+    },
+    {
+        path: 'lib/javascript/web_api/overconstrainederror/overconstrainederror/index.md',
+        title: 'OverconstrainedError: OverconstrainedError() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/ovr_multiview2/framebuffertexturemultiviewovr/index.md',
+        title: 'OVR_multiview2: framebufferTextureMultiviewOVR() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ovr_multiview2/index.md',
+        title: 'OVR_multiview2 extension',
+    },
+    {
+        path: 'lib/javascript/web_api/page_visibility_api/index.md',
+        title: 'Page Visibility API',
+    },
+    {
+        path: 'lib/javascript/web_api/pagerevealevent/index.md',
+        title: 'PageRevealEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/pagerevealevent/pagerevealevent/index.md',
+        title: 'PageRevealEvent: PageRevealEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/pagerevealevent/viewtransition/index.md',
+        title: 'PageRevealEvent: viewTransition property',
+    },
+    {
+        path: 'lib/javascript/web_api/pageswapevent/activation/index.md',
+        title: 'PageSwapEvent: activation property',
+    },
+    {
+        path: 'lib/javascript/web_api/pageswapevent/index.md',
+        title: 'PageSwapEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/pageswapevent/pageswapevent/index.md',
+        title: 'PageSwapEvent: PageSwapEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/pageswapevent/viewtransition/index.md',
+        title: 'PageSwapEvent: viewTransition property',
+    },
+    {
+        path: 'lib/javascript/web_api/pagetransitionevent/index.md',
+        title: 'PageTransitionEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/pagetransitionevent/pagetransitionevent/index.md',
+        title: 'PageTransitionEvent: PageTransitionEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/pagetransitionevent/persisted/index.md',
+        title: 'PageTransitionEvent: persisted property',
+    },
+    {
+        path: 'lib/javascript/web_api/paintworkletglobalscope/devicepixelratio/index.md',
+        title: 'PaintWorkletGlobalScope: devicePixelRatio property',
+    },
+    {
+        path: 'lib/javascript/web_api/paintworkletglobalscope/index.md',
+        title: 'PaintWorkletGlobalScope',
+    },
+    {
+        path: 'lib/javascript/web_api/paintworkletglobalscope/registerpaint/index.md',
+        title: 'PaintWorkletGlobalScope: registerPaint() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/coneinnerangle/index.md',
+        title: 'PannerNode: coneInnerAngle property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/coneouterangle/index.md',
+        title: 'PannerNode: coneOuterAngle property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/coneoutergain/index.md',
+        title: 'PannerNode: coneOuterGain property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/distancemodel/index.md',
+        title: 'PannerNode: distanceModel property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/index.md',
+        title: 'PannerNode',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/maxdistance/index.md',
+        title: 'PannerNode: maxDistance property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/orientationx/index.md',
+        title: 'PannerNode: orientationX property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/orientationy/index.md',
+        title: 'PannerNode: orientationY property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/orientationz/index.md',
+        title: 'PannerNode: orientationZ property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/pannernode/index.md',
+        title: 'PannerNode: PannerNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/panningmodel/index.md',
+        title: 'PannerNode: panningModel property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/positionx/index.md',
+        title: 'PannerNode: positionX property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/positiony/index.md',
+        title: 'PannerNode: positionY property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/positionz/index.md',
+        title: 'PannerNode: positionZ property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/refdistance/index.md',
+        title: 'PannerNode: refDistance property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/rollofffactor/index.md',
+        title: 'PannerNode: rolloffFactor property',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/setorientation/index.md',
+        title: 'PannerNode: setOrientation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pannernode/setposition/index.md',
+        title: 'PannerNode: setPosition() method',
+    },
+    {
+        path: 'lib/javascript/web_api/passwordcredential/iconurl/index.md',
+        title: 'PasswordCredential: iconURL property',
+    },
+    {
+        path: 'lib/javascript/web_api/passwordcredential/index.md',
+        title: 'PasswordCredential',
+    },
+    {
+        path: 'lib/javascript/web_api/passwordcredential/name/index.md',
+        title: 'PasswordCredential: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/passwordcredential/password/index.md',
+        title: 'PasswordCredential: password property',
+    },
+    {
+        path: 'lib/javascript/web_api/passwordcredential/passwordcredential/index.md',
+        title: 'PasswordCredential: PasswordCredential() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/passwordcredentialinit/index.md',
+        title: 'PasswordCredentialInit',
+    },
+    {
+        path: 'lib/javascript/web_api/path2d/addpath/index.md',
+        title: 'Path2D: addPath() method',
+    },
+    {
+        path: 'lib/javascript/web_api/path2d/index.md',
+        title: 'Path2D',
+    },
+    {
+        path: 'lib/javascript/web_api/path2d/path2d/index.md',
+        title: 'Path2D: Path2D() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/payment_handler_api/index.md',
+        title: 'Payment Handler API',
+    },
+    {
+        path: 'lib/javascript/web_api/payment_request_api/concepts/index.md',
+        title: 'Payment processing concepts',
+    },
+    {
+        path: 'lib/javascript/web_api/payment_request_api/index.md',
+        title: 'Payment Request API',
+    },
+    {
+        path: 'lib/javascript/web_api/payment_request_api/using_secure_payment_confirmation/index.md',
+        title: 'Using Secure Payment Confirmation',
+    },
+    {
+        path: 'lib/javascript/web_api/payment_request_api/using_the_payment_request_api/index.md',
+        title: 'Using the Payment Request API',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentaddress/addressline/index.md',
+        title: 'PaymentAddress: addressLine property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentaddress/city/index.md',
+        title: 'PaymentAddress: city property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentaddress/country/index.md',
+        title: 'PaymentAddress: country property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentaddress/dependentlocality/index.md',
+        title: 'PaymentAddress: dependentLocality property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentaddress/index.md',
+        title: 'PaymentAddress',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentaddress/organization/index.md',
+        title: 'PaymentAddress: organization property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentaddress/phone/index.md',
+        title: 'PaymentAddress: phone property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentaddress/postalcode/index.md',
+        title: 'PaymentAddress: postalCode property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentaddress/recipient/index.md',
+        title: 'PaymentAddress: recipient property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentaddress/region/index.md',
+        title: 'PaymentAddress: region property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentaddress/sortingcode/index.md',
+        title: 'PaymentAddress: sortingCode property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentaddress/tojson/index.md',
+        title: 'PaymentAddress: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentmanager/enabledelegations/index.md',
+        title: 'PaymentManager: enableDelegations() method',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentmanager/index.md',
+        title: 'PaymentManager',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentmanager/userhint/index.md',
+        title: 'PaymentManager: userHint property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentmethodchangeevent/index.md',
+        title: 'PaymentMethodChangeEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentmethodchangeevent/methoddetails/index.md',
+        title: 'PaymentMethodChangeEvent: methodDetails property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentmethodchangeevent/methodname/index.md',
+        title: 'PaymentMethodChangeEvent: methodName property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentmethodchangeevent/paymentmethodchangeevent/index.md',
+        title: 'PaymentMethodChangeEvent: PaymentMethodChangeEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/abort/index.md',
+        title: 'PaymentRequest: abort() method',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/canmakepayment/index.md',
+        title: 'PaymentRequest: canMakePayment() method',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/id/index.md',
+        title: 'PaymentRequest: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/index.md',
+        title: 'PaymentRequest',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/merchantvalidation_event/index.md',
+        title: 'PaymentRequest: merchantvalidation event',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/paymentmethodchange_event/index.md',
+        title: 'PaymentRequest: paymentmethodchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/paymentrequest/index.md',
+        title: 'PaymentRequest: PaymentRequest() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/shippingaddress/index.md',
+        title: 'PaymentRequest: shippingAddress property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/shippingaddresschange_event/index.md',
+        title: 'PaymentRequest: shippingaddresschange event',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/shippingoption/index.md',
+        title: 'PaymentRequest: shippingOption property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/shippingoptionchange_event/index.md',
+        title: 'PaymentRequest: shippingoptionchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/shippingtype/index.md',
+        title: 'PaymentRequest: shippingType property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequest/show/index.md',
+        title: 'PaymentRequest: show() method',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestevent/changepaymentmethod/index.md',
+        title: 'PaymentRequestEvent: changePaymentMethod() method',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestevent/index.md',
+        title: 'PaymentRequestEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestevent/instrumentkey/index.md',
+        title: 'PaymentRequestEvent: instrumentKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestevent/methoddata/index.md',
+        title: 'PaymentRequestEvent: methodData property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestevent/modifiers/index.md',
+        title: 'PaymentRequestEvent: modifiers property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestevent/openwindow/index.md',
+        title: 'PaymentRequestEvent: openWindow() method',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestevent/paymentrequestevent/index.md',
+        title: 'PaymentRequestEvent: PaymentRequestEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestevent/paymentrequestid/index.md',
+        title: 'PaymentRequestEvent: paymentRequestId property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestevent/paymentrequestorigin/index.md',
+        title: 'PaymentRequestEvent: paymentRequestOrigin property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestevent/respondwith/index.md',
+        title: 'PaymentRequestEvent: respondWith() method',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestevent/toporigin/index.md',
+        title: 'PaymentRequestEvent: topOrigin property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestevent/total/index.md',
+        title: 'PaymentRequestEvent: total property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestupdateevent/index.md',
+        title: 'PaymentRequestUpdateEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestupdateevent/paymentrequestupdateevent/index.md',
+        title: 'PaymentRequestUpdateEvent: PaymentRequestUpdateEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentrequestupdateevent/updatewith/index.md',
+        title: 'PaymentRequestUpdateEvent: updateWith() method',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/complete/index.md',
+        title: 'PaymentResponse: complete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/details/index.md',
+        title: 'PaymentResponse: details property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/index.md',
+        title: 'PaymentResponse',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/methodname/index.md',
+        title: 'PaymentResponse: methodName property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/payerdetailchange_event/index.md',
+        title: 'PaymentResponse: payerdetailchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/payeremail/index.md',
+        title: 'PaymentResponse: payerEmail property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/payername/index.md',
+        title: 'PaymentRequest: payerName property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/payerphone/index.md',
+        title: 'PayerResponse: payerPhone property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/requestid/index.md',
+        title: 'PaymentResponse: requestId property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/retry/index.md',
+        title: 'PaymentResponse: retry() method',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/shippingaddress/index.md',
+        title: 'PaymentResponse: shippingAddress property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/shippingoption/index.md',
+        title: 'PaymentResponse: shippingOption property',
+    },
+    {
+        path: 'lib/javascript/web_api/paymentresponse/tojson/index.md',
+        title: 'PaymentResponse: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pbkdf2params/index.md',
+        title: 'Pbkdf2Params',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/clearmarks/index.md',
+        title: 'Performance: clearMarks() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/clearmeasures/index.md',
+        title: 'Performance: clearMeasures() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/clearresourcetimings/index.md',
+        title: 'Performance: clearResourceTimings() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/eventcounts/index.md',
+        title: 'Performance: eventCounts property',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/getentries/index.md',
+        title: 'Performance: getEntries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/getentriesbyname/index.md',
+        title: 'Performance: getEntriesByName() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/getentriesbytype/index.md',
+        title: 'Performance: getEntriesByType() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/index.md',
+        title: 'Performance',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/mark/index.md',
+        title: 'Performance: mark() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/measure/index.md',
+        title: 'Performance: measure() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/measureuseragentspecificmemory/index.md',
+        title: 'Performance: measureUserAgentSpecificMemory() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/memory/index.md',
+        title: 'Performance: memory property',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/navigation/index.md',
+        title: 'Performance: navigation property',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/now/index.md',
+        title: 'Performance: now() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/resourcetimingbufferfull_event/index.md',
+        title: 'Performance: resourcetimingbufferfull event',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/setresourcetimingbuffersize/index.md',
+        title: 'Performance: setResourceTimingBufferSize() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/timeorigin/index.md',
+        title: 'Performance: timeOrigin property',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/timing/index.md',
+        title: 'Performance: timing property',
+    },
+    {
+        path: 'lib/javascript/web_api/performance/tojson/index.md',
+        title: 'Performance: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performance_api/high_precision_timing/index.md',
+        title: 'High precision timing',
+    },
+    {
+        path: 'lib/javascript/web_api/performance_api/index.md',
+        title: 'Performance APIs',
+    },
+    {
+        path: 'lib/javascript/web_api/performance_api/long_animation_frame_timing/index.md',
+        title: 'Long animation frame timing',
+    },
+    {
+        path: 'lib/javascript/web_api/performance_api/monitoring_bfcache_blocking_reasons/index.md',
+        title: 'Monitoring bfcache blocking reasons',
+    },
+    {
+        path: 'lib/javascript/web_api/performance_api/navigation_timing/index.md',
+        title: 'Navigation timing',
+    },
+    {
+        path: 'lib/javascript/web_api/performance_api/performance_data/index.md',
+        title: 'Performance data',
+    },
+    {
+        path: 'lib/javascript/web_api/performance_api/resource_timing/index.md',
+        title: 'Resource timing',
+    },
+    {
+        path: 'lib/javascript/web_api/performance_api/server_timing/index.md',
+        title: 'Server timing',
+    },
+    {
+        path: 'lib/javascript/web_api/performance_api/user_timing/index.md',
+        title: 'User timing',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceelementtiming/element/index.md',
+        title: 'PerformanceElementTiming: element property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceelementtiming/id/index.md',
+        title: 'PerformanceElementTiming: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceelementtiming/identifier/index.md',
+        title: 'PerformanceElementTiming: identifier property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceelementtiming/index.md',
+        title: 'PerformanceElementTiming',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceelementtiming/intersectionrect/index.md',
+        title: 'PerformanceElementTiming: intersectionRect property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceelementtiming/loadtime/index.md',
+        title: 'PerformanceElementTiming: loadTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceelementtiming/naturalheight/index.md',
+        title: 'PerformanceElementTiming: naturalHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceelementtiming/naturalwidth/index.md',
+        title: 'PerformanceElementTiming: naturalWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceelementtiming/rendertime/index.md',
+        title: 'PerformanceElementTiming: renderTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceelementtiming/tojson/index.md',
+        title: 'PerformanceElementTiming: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceelementtiming/url/index.md',
+        title: 'PerformanceElementTiming: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceentry/duration/index.md',
+        title: 'PerformanceEntry: duration property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceentry/entrytype/index.md',
+        title: 'PerformanceEntry: entryType property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceentry/index.md',
+        title: 'PerformanceEntry',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceentry/name/index.md',
+        title: 'PerformanceEntry: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceentry/starttime/index.md',
+        title: 'PerformanceEntry: startTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceentry/tojson/index.md',
+        title: 'PerformanceEntry: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceeventtiming/cancelable/index.md',
+        title: 'PerformanceEventTiming: cancelable property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceeventtiming/index.md',
+        title: 'PerformanceEventTiming',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceeventtiming/interactionid/index.md',
+        title: 'PerformanceEventTiming: interactionId property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceeventtiming/processingend/index.md',
+        title: 'PerformanceEventTiming: processingEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceeventtiming/processingstart/index.md',
+        title: 'PerformanceEventTiming: processingStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceeventtiming/target/index.md',
+        title: 'PerformanceEventTiming: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceeventtiming/tojson/index.md',
+        title: 'PerformanceEventTiming: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performancelonganimationframetiming/blockingduration/index.md',
+        title: 'PerformanceLongAnimationFrameTiming: blockingDuration property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancelonganimationframetiming/firstuieventtimestamp/index.md',
+        title: 'PerformanceLongAnimationFrameTiming: firstUIEventTimestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancelonganimationframetiming/index.md',
+        title: 'PerformanceLongAnimationFrameTiming',
+    },
+    {
+        path: 'lib/javascript/web_api/performancelonganimationframetiming/renderstart/index.md',
+        title: 'PerformanceLongAnimationFrameTiming: renderStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancelonganimationframetiming/scripts/index.md',
+        title: 'PerformanceLongAnimationFrameTiming: scripts property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancelonganimationframetiming/styleandlayoutstart/index.md',
+        title: 'PerformanceLongAnimationFrameTiming: styleAndLayoutStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancelonganimationframetiming/tojson/index.md',
+        title: 'PerformanceLongAnimationFrameTiming: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performancelongtasktiming/attribution/index.md',
+        title: 'PerformanceLongTaskTiming: attribution property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancelongtasktiming/index.md',
+        title: 'PerformanceLongTaskTiming',
+    },
+    {
+        path: 'lib/javascript/web_api/performancelongtasktiming/tojson/index.md',
+        title: 'PerformanceLongTaskTiming: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performancemark/detail/index.md',
+        title: 'PerformanceMark: detail property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancemark/index.md',
+        title: 'PerformanceMark',
+    },
+    {
+        path: 'lib/javascript/web_api/performancemark/performancemark/index.md',
+        title: 'PerformanceMark: PerformanceMark() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/performancemeasure/detail/index.md',
+        title: 'PerformanceMeasure: detail property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancemeasure/index.md',
+        title: 'PerformanceMeasure',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigation/index.md',
+        title: 'PerformanceNavigation',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigation/redirectcount/index.md',
+        title: 'PerformanceNavigation: redirectCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigation/tojson/index.md',
+        title: 'PerformanceNavigation: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigation/type/index.md',
+        title: 'PerformanceNavigation: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/activationstart/index.md',
+        title: 'PerformanceNavigationTiming: activationStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/criticalchrestart/index.md',
+        title: 'PerformanceNavigationTiming: criticalCHRestart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/domcomplete/index.md',
+        title: 'PerformanceNavigationTiming: domComplete property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/domcontentloadedeventend/index.md',
+        title: 'PerformanceNavigationTiming: domContentLoadedEventEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/domcontentloadedeventstart/index.md',
+        title: 'PerformanceNavigationTiming: domContentLoadedEventStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/dominteractive/index.md',
+        title: 'PerformanceNavigationTiming: domInteractive property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/index.md',
+        title: 'PerformanceNavigationTiming',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/loadeventend/index.md',
+        title: 'PerformanceNavigationTiming: loadEventEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/loadeventstart/index.md',
+        title: 'PerformanceNavigationTiming: loadEventStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/notrestoredreasons/index.md',
+        title: 'PerformanceNavigationTiming: notRestoredReasons property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/redirectcount/index.md',
+        title: 'PerformanceNavigationTiming: redirectCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/tojson/index.md',
+        title: 'PerformanceNavigationTiming: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/type/index.md',
+        title: 'PerformanceNavigationTiming: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/unloadeventend/index.md',
+        title: 'PerformanceNavigationTiming: unloadEventEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancenavigationtiming/unloadeventstart/index.md',
+        title: 'PerformanceNavigationTiming: unloadEventStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceobserver/disconnect/index.md',
+        title: 'PerformanceObserver: disconnect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceobserver/index.md',
+        title: 'PerformanceObserver',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceobserver/observe/index.md',
+        title: 'PerformanceObserver: observe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceobserver/performanceobserver/index.md',
+        title: 'PerformanceObserver: PerformanceObserver() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceobserver/supportedentrytypes_static/index.md',
+        title: 'PerformanceObserver: supportedEntryTypes static property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceobserver/takerecords/index.md',
+        title: 'PerformanceObserver: takeRecords() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceobserverentrylist/getentries/index.md',
+        title: 'PerformanceObserverEntryList: getEntries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceobserverentrylist/getentriesbyname/index.md',
+        title: 'PerformanceObserverEntryList: getEntriesByName() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceobserverentrylist/getentriesbytype/index.md',
+        title: 'PerformanceObserverEntryList: getEntriesByType() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceobserverentrylist/index.md',
+        title: 'PerformanceObserverEntryList',
+    },
+    {
+        path: 'lib/javascript/web_api/performancepainttiming/index.md',
+        title: 'PerformancePaintTiming',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/connectend/index.md',
+        title: 'PerformanceResourceTiming: connectEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/connectstart/index.md',
+        title: 'PerformanceResourceTiming: connectStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/decodedbodysize/index.md',
+        title: 'PerformanceResourceTiming: decodedBodySize property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/deliverytype/index.md',
+        title: 'PerformanceResourceTiming: deliveryType property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/domainlookupend/index.md',
+        title: 'PerformanceResourceTiming: domainLookupEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/domainlookupstart/index.md',
+        title: 'PerformanceResourceTiming: domainLookupStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/encodedbodysize/index.md',
+        title: 'PerformanceResourceTiming: encodedBodySize property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/fetchstart/index.md',
+        title: 'PerformanceResourceTiming: fetchStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/firstinterimresponsestart/index.md',
+        title: 'PerformanceResourceTiming: firstInterimResponseStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/index.md',
+        title: 'PerformanceResourceTiming',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/initiatortype/index.md',
+        title: 'PerformanceResourceTiming: initiatorType property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/nexthopprotocol/index.md',
+        title: 'PerformanceResourceTiming: nextHopProtocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/redirectend/index.md',
+        title: 'PerformanceResourceTiming: redirectEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/redirectstart/index.md',
+        title: 'PerformanceResourceTiming: redirectStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/renderblockingstatus/index.md',
+        title: 'PerformanceResourceTiming: renderBlockingStatus property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/requeststart/index.md',
+        title: 'PerformanceResourceTiming: requestStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/responseend/index.md',
+        title: 'PerformanceResourceTiming: responseEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/responsestart/index.md',
+        title: 'PerformanceResourceTiming: responseStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/responsestatus/index.md',
+        title: 'PerformanceResourceTiming: responseStatus property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/secureconnectionstart/index.md',
+        title: 'PerformanceResourceTiming: secureConnectionStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/servertiming/index.md',
+        title: 'PerformanceResourceTiming: serverTiming property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/tojson/index.md',
+        title: 'PerformanceResourceTiming: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/transfersize/index.md',
+        title: 'PerformanceResourceTiming: transferSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceresourcetiming/workerstart/index.md',
+        title: 'PerformanceResourceTiming: workerStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancescripttiming/executionstart/index.md',
+        title: 'PerformanceScriptTiming: executionStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancescripttiming/forcedstyleandlayoutduration/index.md',
+        title: 'PerformanceScriptTiming: forcedStyleAndLayoutDuration property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancescripttiming/index.md',
+        title: 'PerformanceScriptTiming',
+    },
+    {
+        path: 'lib/javascript/web_api/performancescripttiming/invoker/index.md',
+        title: 'PerformanceScriptTiming: invoker property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancescripttiming/invokertype/index.md',
+        title: 'PerformanceScriptTiming: invokerType property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancescripttiming/pauseduration/index.md',
+        title: 'PerformanceScriptTiming: pauseDuration property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancescripttiming/sourcecharposition/index.md',
+        title: 'PerformanceScriptTiming: sourceCharPosition property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancescripttiming/sourcefunctionname/index.md',
+        title: 'PerformanceScriptTiming: sourceFunctionName property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancescripttiming/sourceurl/index.md',
+        title: 'PerformanceScriptTiming: sourceURL property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancescripttiming/tojson/index.md',
+        title: 'PerformanceScriptTiming: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performancescripttiming/window/index.md',
+        title: 'PerformanceScriptTiming: window property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancescripttiming/windowattribution/index.md',
+        title: 'PerformanceScriptTiming: windowAttribution property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceservertiming/description/index.md',
+        title: 'PerformanceServerTiming: description property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceservertiming/duration/index.md',
+        title: 'PerformanceServerTiming: duration property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceservertiming/index.md',
+        title: 'PerformanceServerTiming',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceservertiming/name/index.md',
+        title: 'PerformanceServerTiming: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/performanceservertiming/tojson/index.md',
+        title: 'PerformanceServerTiming: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/connectend/index.md',
+        title: 'PerformanceTiming: connectEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/connectstart/index.md',
+        title: 'PerformanceTiming: connectStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/domainlookupend/index.md',
+        title: 'PerformanceTiming: domainLookupEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/domainlookupstart/index.md',
+        title: 'PerformanceTiming: domainLookupStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/domcomplete/index.md',
+        title: 'PerformanceTiming: domComplete property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/domcontentloadedeventend/index.md',
+        title: 'PerformanceTiming: domContentLoadedEventEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/domcontentloadedeventstart/index.md',
+        title: 'PerformanceTiming: domContentLoadedEventStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/dominteractive/index.md',
+        title: 'PerformanceTiming: domInteractive property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/domloading/index.md',
+        title: 'PerformanceTiming: domLoading property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/fetchstart/index.md',
+        title: 'PerformanceTiming: fetchStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/index.md',
+        title: 'PerformanceTiming',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/loadeventend/index.md',
+        title: 'PerformanceTiming: loadEventEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/loadeventstart/index.md',
+        title: 'PerformanceTiming: loadEventStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/navigationstart/index.md',
+        title: 'PerformanceTiming: navigationStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/redirectend/index.md',
+        title: 'PerformanceTiming: redirectEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/redirectstart/index.md',
+        title: 'PerformanceTiming: redirectStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/requeststart/index.md',
+        title: 'PerformanceTiming: requestStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/responseend/index.md',
+        title: 'PerformanceTiming: responseEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/responsestart/index.md',
+        title: 'PerformanceTiming: responseStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/secureconnectionstart/index.md',
+        title: 'PerformanceTiming: secureConnectionStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/tojson/index.md',
+        title: 'PerformanceTiming: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/unloadeventend/index.md',
+        title: 'PerformanceTiming: unloadEventEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/performancetiming/unloadeventstart/index.md',
+        title: 'PerformanceTiming: unloadEventStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/periodicsyncevent/index.md',
+        title: 'PeriodicSyncEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/periodicsyncevent/periodicsyncevent/index.md',
+        title: 'PeriodicSyncEvent: PeriodicSyncEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/periodicsyncevent/tag/index.md',
+        title: 'PeriodicSyncEvent: tag property',
+    },
+    {
+        path: 'lib/javascript/web_api/periodicsyncmanager/gettags/index.md',
+        title: 'PeriodicSyncManager: getTags() method',
+    },
+    {
+        path: 'lib/javascript/web_api/periodicsyncmanager/index.md',
+        title: 'PeriodicSyncManager',
+    },
+    {
+        path: 'lib/javascript/web_api/periodicsyncmanager/register/index.md',
+        title: 'PeriodicSyncManager: register() method',
+    },
+    {
+        path: 'lib/javascript/web_api/periodicsyncmanager/unregister/index.md',
+        title: 'PeriodicSyncManager: unregister() method',
+    },
+    {
+        path: 'lib/javascript/web_api/periodicwave/index.md',
+        title: 'PeriodicWave',
+    },
+    {
+        path: 'lib/javascript/web_api/periodicwave/periodicwave/index.md',
+        title: 'PeriodicWave: PeriodicWave() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/permissions/index.md',
+        title: 'Permissions',
+    },
+    {
+        path: 'lib/javascript/web_api/permissions/query/index.md',
+        title: 'Permissions: query() method',
+    },
+    {
+        path: 'lib/javascript/web_api/permissions/revoke/index.md',
+        title: 'Permissions: revoke() method',
+    },
+    {
+        path: 'lib/javascript/web_api/permissions_api/index.md',
+        title: 'Permissions API',
+    },
+    {
+        path: 'lib/javascript/web_api/permissions_api/using_the_permissions_api/index.md',
+        title: 'Using the Permissions API',
+    },
+    {
+        path: 'lib/javascript/web_api/permissionstatus/change_event/index.md',
+        title: 'PermissionStatus: change event',
+    },
+    {
+        path: 'lib/javascript/web_api/permissionstatus/index.md',
+        title: 'PermissionStatus',
+    },
+    {
+        path: 'lib/javascript/web_api/permissionstatus/name/index.md',
+        title: 'PermissionStatus: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/permissionstatus/state/index.md',
+        title: 'PermissionStatus: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/picture-in-picture_api/index.md',
+        title: 'Picture-in-Picture API',
+    },
+    {
+        path: 'lib/javascript/web_api/pictureinpictureevent/index.md',
+        title: 'PictureInPictureEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/pictureinpictureevent/pictureinpictureevent/index.md',
+        title: 'PictureInPictureEvent: PictureInPictureEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/pictureinpictureevent/pictureinpicturewindow/index.md',
+        title: 'PictureInPictureEvent: pictureInPictureWindow property',
+    },
+    {
+        path: 'lib/javascript/web_api/pictureinpicturewindow/height/index.md',
+        title: 'PictureInPictureWindow: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/pictureinpicturewindow/index.md',
+        title: 'PictureInPictureWindow',
+    },
+    {
+        path: 'lib/javascript/web_api/pictureinpicturewindow/resize_event/index.md',
+        title: 'PictureInPictureWindow: resize event',
+    },
+    {
+        path: 'lib/javascript/web_api/pictureinpicturewindow/width/index.md',
+        title: 'PictureInPictureWindow: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/plugin/index.md',
+        title: 'Plugin',
+    },
+    {
+        path: 'lib/javascript/web_api/pluginarray/index.md',
+        title: 'PluginArray',
+    },
+    {
+        path: 'lib/javascript/web_api/pointer_events/index.md',
+        title: 'Pointer events',
+    },
+    {
+        path: 'lib/javascript/web_api/pointer_events/multi-touch_interaction/index.md',
+        title: 'Multi-touch interaction',
+    },
+    {
+        path: 'lib/javascript/web_api/pointer_events/pinch_zoom_gestures/index.md',
+        title: 'Pinch zoom gestures',
+    },
+    {
+        path: 'lib/javascript/web_api/pointer_events/using_pointer_events/index.md',
+        title: 'Using Pointer Events',
+    },
+    {
+        path: 'lib/javascript/web_api/pointer_lock_api/index.md',
+        title: 'Pointer Lock API',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/altitudeangle/index.md',
+        title: 'PointerEvent: altitudeAngle property',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/azimuthangle/index.md',
+        title: 'PointerEvent: azimuthAngle property',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/getcoalescedevents/index.md',
+        title: 'PointerEvent: getCoalescedEvents() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/getpredictedevents/index.md',
+        title: 'PointerEvent: getPredictedEvents() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/height/index.md',
+        title: 'PointerEvent: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/index.md',
+        title: 'PointerEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/isprimary/index.md',
+        title: 'PointerEvent: isPrimary property',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/pointerevent/index.md',
+        title: 'PointerEvent: PointerEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/pointerid/index.md',
+        title: 'PointerEvent: pointerId property',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/pointertype/index.md',
+        title: 'PointerEvent: pointerType property',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/pressure/index.md',
+        title: 'PointerEvent: pressure property',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/tangentialpressure/index.md',
+        title: 'PointerEvent: tangentialPressure property',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/tiltx/index.md',
+        title: 'PointerEvent: tiltX property',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/tilty/index.md',
+        title: 'PointerEvent: tiltY property',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/twist/index.md',
+        title: 'PointerEvent: twist property',
+    },
+    {
+        path: 'lib/javascript/web_api/pointerevent/width/index.md',
+        title: 'PointerEvent: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/popover_api/index.md',
+        title: 'Popover API',
+    },
+    {
+        path: 'lib/javascript/web_api/popover_api/using/index.md',
+        title: 'Using the Popover API',
+    },
+    {
+        path: 'lib/javascript/web_api/popstateevent/index.md',
+        title: 'PopStateEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/popstateevent/popstateevent/index.md',
+        title: 'PopStateEvent: PopStateEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/popstateevent/state/index.md',
+        title: 'PopStateEvent: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/positionsensorvrdevice/getimmediatestate/index.md',
+        title: 'PositionSensorVRDevice: getImmediateState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/positionsensorvrdevice/getstate/index.md',
+        title: 'PositionSensorVRDevice: getState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/positionsensorvrdevice/index.md',
+        title: 'PositionSensorVRDevice',
+    },
+    {
+        path: 'lib/javascript/web_api/positionsensorvrdevice/resetsensor/index.md',
+        title: 'PositionSensorVRDevice: resetSensor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/presentation/defaultrequest/index.md',
+        title: 'Presentation: defaultRequest property',
+    },
+    {
+        path: 'lib/javascript/web_api/presentation/index.md',
+        title: 'Presentation',
+    },
+    {
+        path: 'lib/javascript/web_api/presentation/receiver/index.md',
+        title: 'Presentation: receiver property',
+    },
+    {
+        path: 'lib/javascript/web_api/presentation_api/index.md',
+        title: 'Presentation API',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationavailability/index.md',
+        title: 'PresentationAvailability',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationavailability/value/index.md',
+        title: 'PresentationAvailability: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnection/binarytype/index.md',
+        title: 'PresentationConnection: binaryType property',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnection/close/index.md',
+        title: 'PresentationConnection: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnection/id/index.md',
+        title: 'PresentationConnection: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnection/index.md',
+        title: 'PresentationConnection',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnection/send/index.md',
+        title: 'PresentationConnection: send() method',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnection/state/index.md',
+        title: 'PresentationConnection: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnection/terminate/index.md',
+        title: 'PresentationConnection: terminate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnection/url/index.md',
+        title: 'PresentationConnection: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnectionavailableevent/connection/index.md',
+        title: 'PresentationConnectionAvailableEvent: connection property',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnectionavailableevent/index.md',
+        title: 'PresentationConnectionAvailableEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnectionavailableevent/presentationconnectionavailableevent/index.md',
+        title: 'PresentationConnectionAvailableEvent: PresentationConnectionAvailableEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnectioncloseevent/index.md',
+        title: 'PresentationConnectionCloseEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationconnectionlist/index.md',
+        title: 'PresentationConnectionList',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationreceiver/index.md',
+        title: 'PresentationReceiver',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationrequest/getavailability/index.md',
+        title: 'PresentationRequest: getAvailability() method',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationrequest/index.md',
+        title: 'PresentationRequest',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationrequest/presentationrequest/index.md',
+        title: 'PresentationRequest: PresentationRequest() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationrequest/reconnect/index.md',
+        title: 'PresentationRequest: reconnect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/presentationrequest/start/index.md',
+        title: 'PresentationRequest: start() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pressureobserver/disconnect/index.md',
+        title: 'PressureObserver: disconnect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pressureobserver/index.md',
+        title: 'PressureObserver',
+    },
+    {
+        path: 'lib/javascript/web_api/pressureobserver/knownsources_static/index.md',
+        title: 'PressureObserver: knownSources static property',
+    },
+    {
+        path: 'lib/javascript/web_api/pressureobserver/observe/index.md',
+        title: 'PressureObserver: observe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pressureobserver/pressureobserver/index.md',
+        title: 'PressureObserver: PressureObserver() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/pressureobserver/takerecords/index.md',
+        title: 'PressureObserver: takeRecords() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pressureobserver/unobserve/index.md',
+        title: 'PressureObserver: unobserve() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pressurerecord/index.md',
+        title: 'PressureRecord',
+    },
+    {
+        path: 'lib/javascript/web_api/pressurerecord/source/index.md',
+        title: 'PressureRecord: source property',
+    },
+    {
+        path: 'lib/javascript/web_api/pressurerecord/state/index.md',
+        title: 'PressureRecord: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/pressurerecord/time/index.md',
+        title: 'PressureRecord: time property',
+    },
+    {
+        path: 'lib/javascript/web_api/pressurerecord/tojson/index.md',
+        title: 'PressureRecord: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/prioritized_task_scheduling_api/index.md',
+        title: 'Prioritized Task Scheduling API',
+    },
+    {
+        path: 'lib/javascript/web_api/processinginstruction/index.md',
+        title: 'ProcessingInstruction',
+    },
+    {
+        path: 'lib/javascript/web_api/processinginstruction/sheet/index.md',
+        title: 'ProcessingInstruction: sheet property',
+    },
+    {
+        path: 'lib/javascript/web_api/processinginstruction/target/index.md',
+        title: 'ProcessingInstruction: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/progressevent/index.md',
+        title: 'ProgressEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/progressevent/lengthcomputable/index.md',
+        title: 'ProgressEvent: lengthComputable property',
+    },
+    {
+        path: 'lib/javascript/web_api/progressevent/loaded/index.md',
+        title: 'ProgressEvent: loaded property',
+    },
+    {
+        path: 'lib/javascript/web_api/progressevent/progressevent/index.md',
+        title: 'ProgressEvent: ProgressEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/progressevent/total/index.md',
+        title: 'ProgressEvent: total property',
+    },
+    {
+        path: 'lib/javascript/web_api/promiserejectionevent/index.md',
+        title: 'PromiseRejectionEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/promiserejectionevent/promise/index.md',
+        title: 'PromiseRejectionEvent: promise property',
+    },
+    {
+        path: 'lib/javascript/web_api/promiserejectionevent/promiserejectionevent/index.md',
+        title: 'PromiseRejectionEvent: PromiseRejectionEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/promiserejectionevent/reason/index.md',
+        title: 'PromiseRejectionEvent: reason property',
+    },
+    {
+        path: 'lib/javascript/web_api/publickeycredential/authenticatorattachment/index.md',
+        title: 'PublicKeyCredential: authenticatorAttachment property',
+    },
+    {
+        path: 'lib/javascript/web_api/publickeycredential/getclientextensionresults/index.md',
+        title: 'PublicKeyCredential: getClientExtensionResults() method',
+    },
+    {
+        path: 'lib/javascript/web_api/publickeycredential/id/index.md',
+        title: 'PublicKeyCredential: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/publickeycredential/index.md',
+        title: 'PublicKeyCredential',
+    },
+    {
+        path: 'lib/javascript/web_api/publickeycredential/isconditionalmediationavailable/index.md',
+        title: 'PublicKeyCredential: isConditionalMediationAvailable() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/publickeycredential/isuserverifyingplatformauthenticatoravailable_static/index.md',
+        title: 'PublicKeyCredential: isUserVerifyingPlatformAuthenticatorAvailable() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/publickeycredential/parsecreationoptionsfromjson_static/index.md',
+        title: 'PublicKeyCredential: parseCreationOptionsFromJSON() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/publickeycredential/parserequestoptionsfromjson_static/index.md',
+        title: 'PublicKeyCredential: parseRequestOptionsFromJSON() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/publickeycredential/rawid/index.md',
+        title: 'PublicKeyCredential: rawId property',
+    },
+    {
+        path: 'lib/javascript/web_api/publickeycredential/response/index.md',
+        title: 'PublicKeyCredential: response property',
+    },
+    {
+        path: 'lib/javascript/web_api/publickeycredential/tojson/index.md',
+        title: 'PublicKeyCredential: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/publickeycredentialcreationoptions/index.md',
+        title: 'PublicKeyCredentialCreationOptions',
+    },
+    {
+        path: 'lib/javascript/web_api/push_api/best_practices/index.md',
+        title: 'Web Push API Notifications best practices',
+    },
+    {
+        path: 'lib/javascript/web_api/push_api/index.md',
+        title: 'Push API',
+    },
+    {
+        path: 'lib/javascript/web_api/pushevent/data/index.md',
+        title: 'PushEvent: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/pushevent/index.md',
+        title: 'PushEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/pushevent/pushevent/index.md',
+        title: 'PushEvent: PushEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmanager/getsubscription/index.md',
+        title: 'PushManager: getSubscription() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmanager/haspermission/index.md',
+        title: 'PushManager: hasPermission() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmanager/index.md',
+        title: 'PushManager',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmanager/permissionstate/index.md',
+        title: 'PushManager: permissionState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmanager/register/index.md',
+        title: 'PushManager: register() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmanager/registrations/index.md',
+        title: 'PushManager: registrations() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmanager/subscribe/index.md',
+        title: 'PushManager: subscribe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmanager/supportedcontentencodings_static/index.md',
+        title: 'PushManager: supportedContentEncodings static property',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmanager/unregister/index.md',
+        title: 'PushManager: unregister() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmessagedata/arraybuffer/index.md',
+        title: 'PushMessageData: arrayBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmessagedata/blob/index.md',
+        title: 'PushMessageData: blob() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmessagedata/bytes/index.md',
+        title: 'PushMessageData: bytes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmessagedata/index.md',
+        title: 'PushMessageData',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmessagedata/json/index.md',
+        title: 'PushMessageData: json() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushmessagedata/text/index.md',
+        title: 'PushMessageData: text() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushsubscription/endpoint/index.md',
+        title: 'PushSubscription: endpoint property',
+    },
+    {
+        path: 'lib/javascript/web_api/pushsubscription/expirationtime/index.md',
+        title: 'PushSubscription: expirationTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/pushsubscription/getkey/index.md',
+        title: 'PushSubscription: getKey() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushsubscription/index.md',
+        title: 'PushSubscription',
+    },
+    {
+        path: 'lib/javascript/web_api/pushsubscription/options/index.md',
+        title: 'PushSubscription: options property',
+    },
+    {
+        path: 'lib/javascript/web_api/pushsubscription/subscriptionid/index.md',
+        title: 'PushSubscription: subscriptionId property',
+    },
+    {
+        path: 'lib/javascript/web_api/pushsubscription/tojson/index.md',
+        title: 'PushSubscription: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushsubscription/unsubscribe/index.md',
+        title: 'PushSubscription: unsubscribe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/pushsubscriptionoptions/applicationserverkey/index.md',
+        title: 'PushSubscriptionOptions: applicationServerKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/pushsubscriptionoptions/index.md',
+        title: 'PushSubscriptionOptions',
+    },
+    {
+        path: 'lib/javascript/web_api/pushsubscriptionoptions/uservisibleonly/index.md',
+        title: 'PushSubscriptionOptions: userVisibleOnly property',
+    },
+    {
+        path: 'lib/javascript/web_api/queuemicrotask/index.md',
+        title: 'queueMicrotask() global function',
+    },
+    {
+        path: 'lib/javascript/web_api/radionodelist/index.md',
+        title: 'RadioNodeList',
+    },
+    {
+        path: 'lib/javascript/web_api/radionodelist/value/index.md',
+        title: 'RadioNodeList: value property',
+    },
+    {
+        path: 'lib/javascript/web_api/range/clonecontents/index.md',
+        title: 'Range: cloneContents() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/clonerange/index.md',
+        title: 'Range: cloneRange() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/collapse/index.md',
+        title: 'Range: collapse() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/collapsed/index.md',
+        title: 'Range: collapsed property',
+    },
+    {
+        path: 'lib/javascript/web_api/range/commonancestorcontainer/index.md',
+        title: 'Range: commonAncestorContainer property',
+    },
+    {
+        path: 'lib/javascript/web_api/range/compareboundarypoints/index.md',
+        title: 'Range: compareBoundaryPoints() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/comparenode/index.md',
+        title: 'Range: compareNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/comparepoint/index.md',
+        title: 'Range: comparePoint() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/createcontextualfragment/index.md',
+        title: 'Range: createContextualFragment() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/deletecontents/index.md',
+        title: 'Range: deleteContents() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/detach/index.md',
+        title: 'Range: detach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/endcontainer/index.md',
+        title: 'Range: endContainer property',
+    },
+    {
+        path: 'lib/javascript/web_api/range/endoffset/index.md',
+        title: 'Range: endOffset property',
+    },
+    {
+        path: 'lib/javascript/web_api/range/extractcontents/index.md',
+        title: 'Range: extractContents() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/getboundingclientrect/index.md',
+        title: 'Range: getBoundingClientRect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/getclientrects/index.md',
+        title: 'Range: getClientRects() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/index.md',
+        title: 'Range',
+    },
+    {
+        path: 'lib/javascript/web_api/range/insertnode/index.md',
+        title: 'Range: insertNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/intersectsnode/index.md',
+        title: 'Range: intersectsNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/ispointinrange/index.md',
+        title: 'Range: isPointInRange() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/range/index.md',
+        title: 'Range: Range() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/range/selectnode/index.md',
+        title: 'Range: selectNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/selectnodecontents/index.md',
+        title: 'Range: selectNodeContents() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/setend/index.md',
+        title: 'Range: setEnd() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/setendafter/index.md',
+        title: 'Range: setEndAfter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/setendbefore/index.md',
+        title: 'Range: setEndBefore() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/setstart/index.md',
+        title: 'Range: setStart() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/setstartafter/index.md',
+        title: 'Range: setStartAfter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/setstartbefore/index.md',
+        title: 'Range: setStartBefore() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/startcontainer/index.md',
+        title: 'Range: startContainer property',
+    },
+    {
+        path: 'lib/javascript/web_api/range/startoffset/index.md',
+        title: 'Range: startOffset property',
+    },
+    {
+        path: 'lib/javascript/web_api/range/surroundcontents/index.md',
+        title: 'Range: surroundContents() method',
+    },
+    {
+        path: 'lib/javascript/web_api/range/tostring/index.md',
+        title: 'Range: toString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablebytestreamcontroller/byobrequest/index.md',
+        title: 'ReadableByteStreamController: byobRequest property',
+    },
+    {
+        path: 'lib/javascript/web_api/readablebytestreamcontroller/close/index.md',
+        title: 'ReadableByteStreamController: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablebytestreamcontroller/desiredsize/index.md',
+        title: 'ReadableByteStreamController: desiredSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/readablebytestreamcontroller/enqueue/index.md',
+        title: 'ReadableByteStreamController: enqueue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablebytestreamcontroller/error/index.md',
+        title: 'ReadableByteStreamController: error() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablebytestreamcontroller/index.md',
+        title: 'ReadableByteStreamController',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestream/cancel/index.md',
+        title: 'ReadableStream: cancel() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestream/from_static/index.md',
+        title: 'ReadableStream: from() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestream/getreader/index.md',
+        title: 'ReadableStream: getReader() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestream/index.md',
+        title: 'ReadableStream',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestream/locked/index.md',
+        title: 'ReadableStream: locked property',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestream/pipethrough/index.md',
+        title: 'ReadableStream: pipeThrough() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestream/pipeto/index.md',
+        title: 'ReadableStream: pipeTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestream/readablestream/index.md',
+        title: 'ReadableStream: ReadableStream() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestream/tee/index.md',
+        title: 'ReadableStream: tee() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreambyobreader/cancel/index.md',
+        title: 'ReadableStreamBYOBReader: cancel() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreambyobreader/closed/index.md',
+        title: 'ReadableStreamBYOBReader: closed property',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreambyobreader/index.md',
+        title: 'ReadableStreamBYOBReader',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreambyobreader/read/index.md',
+        title: 'ReadableStreamBYOBReader: read() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreambyobreader/readablestreambyobreader/index.md',
+        title: 'ReadableStreamBYOBReader: ReadableStreamBYOBReader() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreambyobreader/releaselock/index.md',
+        title: 'ReadableStreamBYOBReader: releaseLock() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreambyobrequest/index.md',
+        title: 'ReadableStreamBYOBRequest',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreambyobrequest/respond/index.md',
+        title: 'ReadableStreamBYOBRequest: respond() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreambyobrequest/respondwithnewview/index.md',
+        title: 'ReadableStreamBYOBRequest: respondWithNewView() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreambyobrequest/view/index.md',
+        title: 'ReadableStreamBYOBRequest: view property',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreamdefaultcontroller/close/index.md',
+        title: 'ReadableStreamDefaultController: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreamdefaultcontroller/desiredsize/index.md',
+        title: 'ReadableStreamDefaultController: desiredSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreamdefaultcontroller/enqueue/index.md',
+        title: 'ReadableStreamDefaultController: enqueue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreamdefaultcontroller/error/index.md',
+        title: 'ReadableStreamDefaultController: error() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreamdefaultcontroller/index.md',
+        title: 'ReadableStreamDefaultController',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreamdefaultreader/cancel/index.md',
+        title: 'ReadableStreamDefaultReader: cancel() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreamdefaultreader/closed/index.md',
+        title: 'ReadableStreamDefaultReader: closed property',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreamdefaultreader/index.md',
+        title: 'ReadableStreamDefaultReader',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreamdefaultreader/read/index.md',
+        title: 'ReadableStreamDefaultReader: read() method',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreamdefaultreader/readablestreamdefaultreader/index.md',
+        title: 'ReadableStreamDefaultReader: ReadableStreamDefaultReader() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/readablestreamdefaultreader/releaselock/index.md',
+        title: 'ReadableStreamDefaultReader: releaseLock() method',
+    },
+    {
+        path: 'lib/javascript/web_api/relativeorientationsensor/index.md',
+        title: 'RelativeOrientationSensor',
+    },
+    {
+        path: 'lib/javascript/web_api/relativeorientationsensor/relativeorientationsensor/index.md',
+        title: 'RelativeOrientationSensor: RelativeOrientationSensor() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/remote_playback_api/index.md',
+        title: 'Remote Playback API',
+    },
+    {
+        path: 'lib/javascript/web_api/remoteplayback/cancelwatchavailability/index.md',
+        title: 'RemotePlayback: cancelWatchAvailability() method',
+    },
+    {
+        path: 'lib/javascript/web_api/remoteplayback/connect_event/index.md',
+        title: 'RemotePlayback: connect event',
+    },
+    {
+        path: 'lib/javascript/web_api/remoteplayback/connecting_event/index.md',
+        title: 'RemotePlayback: connecting event',
+    },
+    {
+        path: 'lib/javascript/web_api/remoteplayback/disconnect_event/index.md',
+        title: 'RemotePlayback: disconnect event',
+    },
+    {
+        path: 'lib/javascript/web_api/remoteplayback/index.md',
+        title: 'RemotePlayback',
+    },
+    {
+        path: 'lib/javascript/web_api/remoteplayback/prompt/index.md',
+        title: 'RemotePlayback: prompt() method',
+    },
+    {
+        path: 'lib/javascript/web_api/remoteplayback/state/index.md',
+        title: 'RemotePlayback: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/remoteplayback/watchavailability/index.md',
+        title: 'RemotePlayback: watchAvailability() method',
+    },
+    {
+        path: 'lib/javascript/web_api/report/body/index.md',
+        title: 'Report: body property',
+    },
+    {
+        path: 'lib/javascript/web_api/report/index.md',
+        title: 'Report',
+    },
+    {
+        path: 'lib/javascript/web_api/report/type/index.md',
+        title: 'Report: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/report/url/index.md',
+        title: 'Report: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/reportbody/index.md',
+        title: 'ReportBody',
+    },
+    {
+        path: 'lib/javascript/web_api/reportbody/tojson/index.md',
+        title: 'ReportBody: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/reporterror/index.md',
+        title: 'reportError() global function',
+    },
+    {
+        path: 'lib/javascript/web_api/reporting_api/index.md',
+        title: 'Reporting API',
+    },
+    {
+        path: 'lib/javascript/web_api/reportingobserver/disconnect/index.md',
+        title: 'ReportingObserver: disconnect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/reportingobserver/index.md',
+        title: 'ReportingObserver',
+    },
+    {
+        path: 'lib/javascript/web_api/reportingobserver/observe/index.md',
+        title: 'ReportingObserver: observe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/reportingobserver/reportingobserver/index.md',
+        title: 'ReportingObserver: ReportingObserver() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/reportingobserver/takerecords/index.md',
+        title: 'ReportingObserver: takeRecords() method',
+    },
+    {
+        path: 'lib/javascript/web_api/request/arraybuffer/index.md',
+        title: 'Request: arrayBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/request/blob/index.md',
+        title: 'Request: blob() method',
+    },
+    {
+        path: 'lib/javascript/web_api/request/body/index.md',
+        title: 'Request: body property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/bodyused/index.md',
+        title: 'Request: bodyUsed property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/bytes/index.md',
+        title: 'Request: bytes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/request/cache/index.md',
+        title: 'Request: cache property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/clone/index.md',
+        title: 'Request: clone() method',
+    },
+    {
+        path: 'lib/javascript/web_api/request/credentials/index.md',
+        title: 'Request: credentials property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/destination/index.md',
+        title: 'Request: destination property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/formdata/index.md',
+        title: 'Request: formData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/request/headers/index.md',
+        title: 'Request: headers property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/index.md',
+        title: 'Request',
+    },
+    {
+        path: 'lib/javascript/web_api/request/integrity/index.md',
+        title: 'Request: integrity property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/json/index.md',
+        title: 'Request: json() method',
+    },
+    {
+        path: 'lib/javascript/web_api/request/method/index.md',
+        title: 'Request: method property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/mode/index.md',
+        title: 'Request: mode property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/redirect/index.md',
+        title: 'Request: redirect property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/referrer/index.md',
+        title: 'Request: referrer property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/referrerpolicy/index.md',
+        title: 'Request: referrerPolicy property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/request/index.md',
+        title: 'Request: Request() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/request/signal/index.md',
+        title: 'Request: signal property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/text/index.md',
+        title: 'Request: text() method',
+    },
+    {
+        path: 'lib/javascript/web_api/request/url/index.md',
+        title: 'Request: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/requestinit/index.md',
+        title: 'RequestInit',
+    },
+    {
+        path: 'lib/javascript/web_api/resize_observer_api/index.md',
+        title: 'Resize Observer API',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserver/disconnect/index.md',
+        title: 'ResizeObserver: disconnect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserver/index.md',
+        title: 'ResizeObserver',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserver/observe/index.md',
+        title: 'ResizeObserver: observe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserver/resizeobserver/index.md',
+        title: 'ResizeObserver: ResizeObserver() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserver/unobserve/index.md',
+        title: 'ResizeObserver: unobserve() method',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserverentry/borderboxsize/index.md',
+        title: 'ResizeObserverEntry: borderBoxSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserverentry/contentboxsize/index.md',
+        title: 'ResizeObserverEntry: contentBoxSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserverentry/contentrect/index.md',
+        title: 'ResizeObserverEntry: contentRect property',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserverentry/devicepixelcontentboxsize/index.md',
+        title: 'ResizeObserverEntry: devicePixelContentBoxSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserverentry/index.md',
+        title: 'ResizeObserverEntry',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserverentry/target/index.md',
+        title: 'ResizeObserverEntry: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserversize/blocksize/index.md',
+        title: 'ResizeObserverSize: blockSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserversize/index.md',
+        title: 'ResizeObserverSize',
+    },
+    {
+        path: 'lib/javascript/web_api/resizeobserversize/inlinesize/index.md',
+        title: 'ResizeObserverSize: inlineSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/response/arraybuffer/index.md',
+        title: 'Response: arrayBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/response/blob/index.md',
+        title: 'Response: blob() method',
+    },
+    {
+        path: 'lib/javascript/web_api/response/body/index.md',
+        title: 'Response: body property',
+    },
+    {
+        path: 'lib/javascript/web_api/response/bodyused/index.md',
+        title: 'Response: bodyUsed property',
+    },
+    {
+        path: 'lib/javascript/web_api/response/bytes/index.md',
+        title: 'Response: bytes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/response/clone/index.md',
+        title: 'Response: clone() method',
+    },
+    {
+        path: 'lib/javascript/web_api/response/error_static/index.md',
+        title: 'Response: error() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/response/formdata/index.md',
+        title: 'Response: formData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/response/headers/index.md',
+        title: 'Response: headers property',
+    },
+    {
+        path: 'lib/javascript/web_api/response/index.md',
+        title: 'Response',
+    },
+    {
+        path: 'lib/javascript/web_api/response/json/index.md',
+        title: 'Response: json() method',
+    },
+    {
+        path: 'lib/javascript/web_api/response/json_static/index.md',
+        title: 'Response: json() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/response/ok/index.md',
+        title: 'Response: ok property',
+    },
+    {
+        path: 'lib/javascript/web_api/response/redirect_static/index.md',
+        title: 'Response: redirect() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/response/redirected/index.md',
+        title: 'Response: redirected property',
+    },
+    {
+        path: 'lib/javascript/web_api/response/response/index.md',
+        title: 'Response: Response() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/response/status/index.md',
+        title: 'Response: status property',
+    },
+    {
+        path: 'lib/javascript/web_api/response/statustext/index.md',
+        title: 'Response: statusText property',
+    },
+    {
+        path: 'lib/javascript/web_api/response/text/index.md',
+        title: 'Response: text() method',
+    },
+    {
+        path: 'lib/javascript/web_api/response/type/index.md',
+        title: 'Response: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/response/url/index.md',
+        title: 'Response: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/rsahashedimportparams/index.md',
+        title: 'RsaHashedImportParams',
+    },
+    {
+        path: 'lib/javascript/web_api/rsahashedkeygenparams/index.md',
+        title: 'RsaHashedKeyGenParams',
+    },
+    {
+        path: 'lib/javascript/web_api/rsaoaepparams/index.md',
+        title: 'RsaOaepParams',
+    },
+    {
+        path: 'lib/javascript/web_api/rsapssparams/index.md',
+        title: 'RsaPssParams',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcaudiosourcestats/audiolevel/index.md',
+        title: 'RTCAudioSourceStats: audioLevel property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcaudiosourcestats/id/index.md',
+        title: 'RTCAudioSourceStats: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcaudiosourcestats/index.md',
+        title: 'RTCAudioSourceStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcaudiosourcestats/kind/index.md',
+        title: 'RTCAudioSourceStats: kind property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcaudiosourcestats/timestamp/index.md',
+        title: 'RTCAudioSourceStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcaudiosourcestats/totalaudioenergy/index.md',
+        title: 'RTCAudioSourceStats: totalAudioEnergy property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcaudiosourcestats/totalsamplesduration/index.md',
+        title: 'RTCAudioSourceStats: totalSamplesDuration property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcaudiosourcestats/trackidentifier/index.md',
+        title: 'RTCAudioSourceStats: trackIdentifier property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcaudiosourcestats/type/index.md',
+        title: 'RTCAudioSourceStats: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccertificate/expires/index.md',
+        title: 'RTCCertificate: expires property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccertificate/getfingerprints/index.md',
+        title: 'RTCCertificate: getFingerprints() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccertificate/index.md',
+        title: 'RTCCertificate',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccertificatestats/base64certificate/index.md',
+        title: 'RTCCertificateStats: base64Certificate property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccertificatestats/fingerprint/index.md',
+        title: 'RTCCertificateStats: fingerprint property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccertificatestats/fingerprintalgorithm/index.md',
+        title: 'RTCCertificateStats: fingerprintAlgorithm property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccertificatestats/id/index.md',
+        title: 'RTCCertificateStats: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccertificatestats/index.md',
+        title: 'RTCCertificateStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccertificatestats/timestamp/index.md',
+        title: 'RTCCertificateStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccertificatestats/type/index.md',
+        title: 'RTCCertificateStats: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccodecstats/channels/index.md',
+        title: 'RTCCodecStats: channels property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccodecstats/clockrate/index.md',
+        title: 'RTCCodecStats: clockRate property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccodecstats/id/index.md',
+        title: 'RTCCodecStats: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccodecstats/index.md',
+        title: 'RTCCodecStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccodecstats/mimetype/index.md',
+        title: 'RTCCodecStats: mimeType property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccodecstats/payloadtype/index.md',
+        title: 'RTCCodecStats: payloadType property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccodecstats/sdpfmtpline/index.md',
+        title: 'RTCCodecStats: sdpFmtpLine property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccodecstats/timestamp/index.md',
+        title: 'RTCCodecStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccodecstats/transportid/index.md',
+        title: 'RTCCodecStats: transportId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtccodecstats/type/index.md',
+        title: 'RTCCodecStats: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/binarytype/index.md',
+        title: 'RTCDataChannel: binaryType property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/bufferedamount/index.md',
+        title: 'RTCDataChannel: bufferedAmount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/bufferedamountlow_event/index.md',
+        title: 'RTCDataChannel: bufferedamountlow event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/bufferedamountlowthreshold/index.md',
+        title: 'RTCDataChannel: bufferedAmountLowThreshold property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/close/index.md',
+        title: 'RTCDataChannel: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/close_event/index.md',
+        title: 'RTCDataChannel: close event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/closing_event/index.md',
+        title: 'RTCDataChannel: closing event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/error_event/index.md',
+        title: 'RTCDataChannel: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/id/index.md',
+        title: 'RTCDataChannel: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/index.md',
+        title: 'RTCDataChannel',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/label/index.md',
+        title: 'RTCDataChannel: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/maxpacketlifetime/index.md',
+        title: 'RTCDataChannel: maxPacketLifeTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/maxretransmits/index.md',
+        title: 'RTCDataChannel: maxRetransmits property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/message_event/index.md',
+        title: 'RTCDataChannel: message event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/negotiated/index.md',
+        title: 'RTCDataChannel: negotiated property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/open_event/index.md',
+        title: 'RTCDataChannel: open event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/ordered/index.md',
+        title: 'RTCDataChannel: ordered property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/protocol/index.md',
+        title: 'RTCDataChannel: protocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/readystate/index.md',
+        title: 'RTCDataChannel: readyState property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/reliable/index.md',
+        title: 'RTCDataChannel: reliable property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannel/send/index.md',
+        title: 'RTCDataChannel: send() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelevent/channel/index.md',
+        title: 'RTCDataChannelEvent: channel property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelevent/index.md',
+        title: 'RTCDataChannelEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelevent/rtcdatachannelevent/index.md',
+        title: 'RTCDataChannelEvent: RTCDataChannelEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelstats/bytesreceived/index.md',
+        title: 'RTCDataChannelStats: bytesReceived property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelstats/bytessent/index.md',
+        title: 'RTCDataChannelStats: bytesSent property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelstats/datachannelidentifier/index.md',
+        title: 'RTCDataChannelStats: dataChannelIdentifier property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelstats/id/index.md',
+        title: 'RTCDataChannelStats: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelstats/index.md',
+        title: 'RTCDataChannelStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelstats/label/index.md',
+        title: 'RTCDataChannelStats: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelstats/messagesreceived/index.md',
+        title: 'RTCDataChannelStats: messagesReceived property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelstats/messagessent/index.md',
+        title: 'RTCDataChannelStats: messagesSent property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelstats/protocol/index.md',
+        title: 'RTCDataChannelStats: protocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelstats/state/index.md',
+        title: 'RTCDataChannelStats: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelstats/timestamp/index.md',
+        title: 'RTCDataChannelStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdatachannelstats/type/index.md',
+        title: 'RTCDataChannelStats: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdtlstransport/error_event/index.md',
+        title: 'RTCDtlsTransport: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdtlstransport/icetransport/index.md',
+        title: 'RTCDtlsTransport: iceTransport property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdtlstransport/index.md',
+        title: 'RTCDtlsTransport',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdtlstransport/state/index.md',
+        title: 'RTCDtlsTransport: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdtmfsender/caninsertdtmf/index.md',
+        title: 'RTCDTMFSender: canInsertDTMF property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdtmfsender/index.md',
+        title: 'RTCDTMFSender',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdtmfsender/insertdtmf/index.md',
+        title: 'RTCDTMFSender: insertDTMF() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdtmfsender/tonebuffer/index.md',
+        title: 'RTCDTMFSender: toneBuffer property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdtmfsender/tonechange_event/index.md',
+        title: 'RTCDTMFSender: tonechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdtmftonechangeevent/index.md',
+        title: 'RTCDTMFToneChangeEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdtmftonechangeevent/rtcdtmftonechangeevent/index.md',
+        title: 'RTCDTMFToneChangeEvent: RTCDTMFToneChangeEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcdtmftonechangeevent/tone/index.md',
+        title: 'RTCDTMFToneChangeEvent: tone property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcencodedaudioframe/data/index.md',
+        title: 'RTCEncodedAudioFrame: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcencodedaudioframe/getmetadata/index.md',
+        title: 'RTCEncodedAudioFrame: getMetadata() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcencodedaudioframe/index.md',
+        title: 'RTCEncodedAudioFrame',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcencodedaudioframe/timestamp/index.md',
+        title: 'RTCEncodedAudioFrame: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcencodedvideoframe/data/index.md',
+        title: 'RTCEncodedVideoFrame: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcencodedvideoframe/getmetadata/index.md',
+        title: 'RTCEncodedVideoFrame: getMetadata() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcencodedvideoframe/index.md',
+        title: 'RTCEncodedVideoFrame',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcencodedvideoframe/timestamp/index.md',
+        title: 'RTCEncodedVideoFrame: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcencodedvideoframe/type/index.md',
+        title: 'RTCEncodedVideoFrame: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcerror/errordetail/index.md',
+        title: 'RTCError: errorDetail property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcerror/index.md',
+        title: 'RTCError',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcerror/receivedalert/index.md',
+        title: 'RTCError: receivedAlert property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcerror/sctpcausecode/index.md',
+        title: 'RTCError: sctpCauseCode property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcerror/sdplinenumber/index.md',
+        title: 'RTCError: sdpLineNumber property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcerror/sentalert/index.md',
+        title: 'RTCError: sentAlert property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcerrorevent/error/index.md',
+        title: 'RTCErrorEvent: error property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcerrorevent/index.md',
+        title: 'RTCErrorEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/address/index.md',
+        title: 'RTCIceCandidate: address property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/candidate/index.md',
+        title: 'RTCIceCandidate: candidate property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/component/index.md',
+        title: 'RTCIceCandidate: component property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/foundation/index.md',
+        title: 'RTCIceCandidate: foundation property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/index.md',
+        title: 'RTCIceCandidate',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/port/index.md',
+        title: 'RTCIceCandidate: port property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/priority/index.md',
+        title: 'RTCIceCandidate: priority property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/protocol/index.md',
+        title: 'RTCIceCandidate: protocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/relatedaddress/index.md',
+        title: 'RTCIceCandidate: relatedAddress property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/relatedport/index.md',
+        title: 'RTCIceCandidate: relatedPort property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/rtcicecandidate/index.md',
+        title: 'RTCIceCandidate: RTCIceCandidate() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/sdpmid/index.md',
+        title: 'RTCIceCandidate: sdpMid property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/sdpmlineindex/index.md',
+        title: 'RTCIceCandidate: sdpMLineIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/tcptype/index.md',
+        title: 'RTCIceCandidate: tcpType property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/tojson/index.md',
+        title: 'RTCIceCandidate: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/type/index.md',
+        title: 'RTCIceCandidate: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidate/usernamefragment/index.md',
+        title: 'RTCIceCandidate: usernameFragment property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepair/index.md',
+        title: 'RTCIceCandidatePair',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepair/local/index.md',
+        title: 'RTCIceCandidatePair: local property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepair/remote/index.md',
+        title: 'RTCIceCandidatePair: remote property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/availableincomingbitrate/index.md',
+        title: 'RTCIceCandidatePairStats: availableIncomingBitrate property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/availableoutgoingbitrate/index.md',
+        title: 'RTCIceCandidatePairStats: availableOutgoingBitrate property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/bytesreceived/index.md',
+        title: 'RTCIceCandidatePairStats: bytesReceived property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/bytessent/index.md',
+        title: 'RTCIceCandidatePairStats: bytesSent property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/currentroundtriptime/index.md',
+        title: 'RTCIceCandidatePairStats: currentRoundTripTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/id/index.md',
+        title: 'RTCIceCandidatePairStats: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/index.md',
+        title: 'RTCIceCandidatePairStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/lastpacketreceivedtimestamp/index.md',
+        title: 'RTCIceCandidatePairStats: lastPacketReceivedTimestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/lastpacketsenttimestamp/index.md',
+        title: 'RTCIceCandidateStats: lastPacketSentTimestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/localcandidateid/index.md',
+        title: 'RTCIceCandidateStats: localCandidateId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/nominated/index.md',
+        title: 'RTCIceCandidatePairStats: nominated property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/priority/index.md',
+        title: 'RTCIceCandidatePairStats: priority property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/readable/index.md',
+        title: 'RTCIceCandidatePairStats: readable property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/remotecandidateid/index.md',
+        title: 'RTCIceCandidatePairStats: remoteCandidateId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/requestsreceived/index.md',
+        title: 'RTCIceCandidatePairStats: requestsReceived property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/requestssent/index.md',
+        title: 'RTCIceCandidatePairStats: requestsSent property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/responsesreceived/index.md',
+        title: 'RTCIceCandidatePairStats: responsesReceived property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/responsessent/index.md',
+        title: 'RTCIceCandidatePairStats: responsesSent property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/selected/index.md',
+        title: 'RTCIceCandidatePairStats: selected property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/state/index.md',
+        title: 'RTCIceCandidatePairStats: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/timestamp/index.md',
+        title: 'RTCIceCandidatePairStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/totalroundtriptime/index.md',
+        title: 'RTCIceCandidatePairStats: totalRoundTripTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/transportid/index.md',
+        title: 'RTCIceCandidatePairStats: transportId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/type/index.md',
+        title: 'RTCIceCandidatePairStats: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatepairstats/writable/index.md',
+        title: 'RTCIceCandidatePairStats: writable property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/address/index.md',
+        title: 'RTCIceCandidateStats: address property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/candidatetype/index.md',
+        title: 'RTCIceCandidateStats: candidateType property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/deleted/index.md',
+        title: 'RTCIceCandidateStats: deleted property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/id/index.md',
+        title: 'RTCIceCandidateStats: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/index.md',
+        title: 'RTCIceCandidateStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/port/index.md',
+        title: 'RTCIceCandidateStats: port property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/priority/index.md',
+        title: 'RTCIceCandidateStats: priority property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/protocol/index.md',
+        title: 'RTCIceCandidateStats: protocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/relayprotocol/index.md',
+        title: 'RTCIceCandidateStats: relayProtocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/timestamp/index.md',
+        title: 'RTCIceCandidateStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/transportid/index.md',
+        title: 'RTCIceCandidateStats: transportId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/type/index.md',
+        title: 'RTCIceCandidateStats: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicecandidatestats/url/index.md',
+        title: 'RTCIceCandidateStats: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtciceparameters/index.md',
+        title: 'RTCIceParameters',
+    },
+    {
+        path: 'lib/javascript/web_api/rtciceparameters/password/index.md',
+        title: 'RTCIceParameters: password property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtciceparameters/usernamefragment/index.md',
+        title: 'RTCIceParameters: usernameFragment property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/component/index.md',
+        title: 'RTCIceTransport: component property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/gatheringstate/index.md',
+        title: 'RTCIceTransport: gatheringState property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/gatheringstatechange_event/index.md',
+        title: 'RTCIceTransport: gatheringstatechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/getlocalcandidates/index.md',
+        title: 'RTCIceTransport: getLocalCandidates() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/getlocalparameters/index.md',
+        title: 'RTCIceTransport: getLocalParameters() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/getremotecandidates/index.md',
+        title: 'RTCIceTransport: getRemoteCandidates() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/getremoteparameters/index.md',
+        title: 'RTCIceTransport: getRemoteParameters() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/getselectedcandidatepair/index.md',
+        title: 'RTCIceTransport: getSelectedCandidatePair() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/index.md',
+        title: 'RTCIceTransport',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/role/index.md',
+        title: 'RTCIceTransport: role property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/selectedcandidatepairchange_event/index.md',
+        title: 'RTCIceTransport: selectedcandidatepairchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/state/index.md',
+        title: 'RTCIceTransport: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcicetransport/statechange_event/index.md',
+        title: 'RTCIceTransport: statechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcidentityassertion/index.md',
+        title: 'RTCIdentityAssertion',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/averagertcpinterval/index.md',
+        title: 'RTCInboundRtpStreamStats: averageRtcpInterval property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/bytesreceived/index.md',
+        title: 'RTCInboundRtpStreamStats: bytesReceived property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/fecpacketsdiscarded/index.md',
+        title: 'RTCInboundRtpStreamStats: fecPacketsDiscarded property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/fecpacketsreceived/index.md',
+        title: 'RTCInboundRtpStreamStats: fecPacketsReceived property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/fircount/index.md',
+        title: 'RTCInboundRtpStreamStats: firCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/framesdecoded/index.md',
+        title: 'RTCInboundRtpStreamStats: framesDecoded property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/id/index.md',
+        title: 'RTCInboundRtpStreamStats: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/index.md',
+        title: 'RTCInboundRtpStreamStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/lastpacketreceivedtimestamp/index.md',
+        title: 'RTCInboundRtpStreamStats: lastPacketReceivedTimestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/nackcount/index.md',
+        title: 'RTCInboundRtpStreamStats: nackCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/packetsduplicated/index.md',
+        title: 'RTCInboundRtpStreamStats: packetsDuplicated property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/packetsfaileddecryption/index.md',
+        title: 'RTCInboundRtpStreamStats: packetsFailedDecryption property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/perdscppacketsreceived/index.md',
+        title: 'RTCInboundRtpStreamStats: perDscpPacketsReceived property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/plicount/index.md',
+        title: 'RTCInboundRtpStreamStats: pliCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/qpsum/index.md',
+        title: 'RTCInboundRtpStreamStats: qpSum property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/receiverid/index.md',
+        title: 'RTCInboundRtpStreamStats: receiverId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/remoteid/index.md',
+        title: 'RTCInboundRtpStreamStats: remoteId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/slicount/index.md',
+        title: 'RTCInboundRtpStreamStats: sliCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/timestamp/index.md',
+        title: 'RTCInboundRtpStreamStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/trackid/index.md',
+        title: 'RTCInboundRtpStreamStats: trackId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/type/index.md',
+        title: 'RTCInboundRtpStreamStats: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/averagertcpinterval/index.md',
+        title: 'RTCOutboundRtpStreamStats: averageRtcpInterval property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/fircount/index.md',
+        title: 'RTCOutboundRtpStreamStats: firCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/framesencoded/index.md',
+        title: 'RTCOutboundRtpStreamStats: framesEncoded property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/id/index.md',
+        title: 'RTCOutboundRtpStreamStats: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/index.md',
+        title: 'RTCOutboundRtpStreamStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/nackcount/index.md',
+        title: 'RTCOutboundRtpStreamStats: nackCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/perdscppacketssent/index.md',
+        title: 'RTCOutboundRtpStreamStats: perDscpPacketsSent property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/plicount/index.md',
+        title: 'RTCOutboundRtpStreamStats: pliCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/qpsum/index.md',
+        title: 'RTCOutboundRtpStreamStats: qpSum property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/qualitylimitationreason/index.md',
+        title: 'RTCOutboundRtpStreamStats: qualityLimitationReason property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/remoteid/index.md',
+        title: 'RTCOutboundRtpStreamStats: remoteId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/slicount/index.md',
+        title: 'RTCOutboundRtpStreamStats: sliCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/timestamp/index.md',
+        title: 'RTCOutboundRtpStreamStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/trackid/index.md',
+        title: 'RTCOutboundRtpStreamStats: trackId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcoutboundrtpstreamstats/type/index.md',
+        title: 'RTCOutboundRtpStreamStats: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/addicecandidate/index.md',
+        title: 'RTCPeerConnection: addIceCandidate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/addstream/index.md',
+        title: 'RTCPeerConnection: addStream() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/addstream_event/index.md',
+        title: 'RTCPeerConnection: addstream event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/addtrack/index.md',
+        title: 'RTCPeerConnection: addTrack() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/addtransceiver/index.md',
+        title: 'RTCPeerConnection: addTransceiver() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/cantrickleicecandidates/index.md',
+        title: 'RTCPeerConnection: canTrickleIceCandidates property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/close/index.md',
+        title: 'RTCPeerConnection: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/connectionstate/index.md',
+        title: 'RTCPeerConnection: connectionState property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/connectionstatechange_event/index.md',
+        title: 'RTCPeerConnection: connectionstatechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/createanswer/index.md',
+        title: 'RTCPeerConnection: createAnswer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/createdatachannel/index.md',
+        title: 'RTCPeerConnection: createDataChannel() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/createoffer/index.md',
+        title: 'RTCPeerConnection: createOffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/currentlocaldescription/index.md',
+        title: 'RTCPeerConnection: currentLocalDescription property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/currentremotedescription/index.md',
+        title: 'RTCPeerConnection: currentRemoteDescription property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/datachannel_event/index.md',
+        title: 'RTCPeerConnection: datachannel event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/generatecertificate_static/index.md',
+        title: 'RTCPeerConnection: generateCertificate() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/getconfiguration/index.md',
+        title: 'RTCPeerConnection: getConfiguration() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/getidentityassertion/index.md',
+        title: 'RTCPeerConnection: getIdentityAssertion() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/getreceivers/index.md',
+        title: 'RTCPeerConnection: getReceivers() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/getsenders/index.md',
+        title: 'RTCPeerConnection: getSenders() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/getstats/index.md',
+        title: 'RTCPeerConnection: getStats() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/gettransceivers/index.md',
+        title: 'RTCPeerConnection: getTransceivers() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/icecandidate_event/index.md',
+        title: 'RTCPeerConnection: icecandidate event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/icecandidateerror_event/index.md',
+        title: 'RTCPeerConnection: icecandidateerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/iceconnectionstate/index.md',
+        title: 'RTCPeerConnection: iceConnectionState property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/iceconnectionstatechange_event/index.md',
+        title: 'RTCPeerConnection: iceconnectionstatechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/icegatheringstate/index.md',
+        title: 'RTCPeerConnection: iceGatheringState property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/icegatheringstatechange_event/index.md',
+        title: 'RTCPeerConnection: icegatheringstatechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/index.md',
+        title: 'RTCPeerConnection',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/localdescription/index.md',
+        title: 'RTCPeerConnection: localDescription property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/negotiationneeded_event/index.md',
+        title: 'RTCPeerConnection: negotiationneeded event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/peeridentity/index.md',
+        title: 'RTCPeerConnection: peerIdentity property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/pendinglocaldescription/index.md',
+        title: 'RTCPeerConnection: pendingLocalDescription property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/pendingremotedescription/index.md',
+        title: 'RTCPeerConnection: pendingRemoteDescription property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/remotedescription/index.md',
+        title: 'RTCPeerConnection: remoteDescription property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/removestream/index.md',
+        title: 'RTCPeerConnection: removeStream() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/removestream_event/index.md',
+        title: 'RTCPeerConnection: removestream event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/removetrack/index.md',
+        title: 'RTCPeerConnection: removeTrack() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/restartice/index.md',
+        title: 'RTCPeerConnection: restartIce() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/rtcpeerconnection/index.md',
+        title: 'RTCPeerConnection: RTCPeerConnection() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/sctp/index.md',
+        title: 'RTCPeerConnection: sctp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/setconfiguration/index.md',
+        title: 'RTCPeerConnection: setConfiguration() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/setidentityprovider/index.md',
+        title: 'RTCPeerConnection: setIdentityProvider() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/setlocaldescription/index.md',
+        title: 'RTCPeerConnection: setLocalDescription() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/setremotedescription/index.md',
+        title: 'RTCPeerConnection: setRemoteDescription() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/signalingstate/index.md',
+        title: 'RTCPeerConnection: signalingState property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/signalingstatechange_event/index.md',
+        title: 'RTCPeerConnection: signalingstatechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnection/track_event/index.md',
+        title: 'RTCPeerConnection: track event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnectioniceerrorevent/address/index.md',
+        title: 'RTCPeerConnectionIceErrorEvent: address property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnectioniceerrorevent/index.md',
+        title: 'RTCPeerConnectionIceErrorEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnectioniceevent/candidate/index.md',
+        title: 'RTCPeerConnectionIceEvent: candidate property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnectioniceevent/index.md',
+        title: 'RTCPeerConnectionIceEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnectioniceevent/rtcpeerconnectioniceevent/index.md',
+        title: 'RTCPeerConnectionIceEvent: RTCPeerConnectionIceEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnectionstats/datachannelsclosed/index.md',
+        title: 'RTCPeerConnectionStats: dataChannelsClosed property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnectionstats/datachannelsopened/index.md',
+        title: 'RTCPeerConnectionStats: dataChannelsOpened property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnectionstats/id/index.md',
+        title: 'RTCPeerConnectionStats: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnectionstats/index.md',
+        title: 'RTCPeerConnectionStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnectionstats/timestamp/index.md',
+        title: 'RTCPeerConnectionStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcpeerconnectionstats/type/index.md',
+        title: 'RTCPeerConnectionStats: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcremoteoutboundrtpstreamstats/codecid/index.md',
+        title: 'RTCRemoteOutboundRtpStreamStats: codecId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcremoteoutboundrtpstreamstats/id/index.md',
+        title: 'RTCRemoteOutboundRtpStreamStats: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcremoteoutboundrtpstreamstats/index.md',
+        title: 'RTCRemoteOutboundRtpStreamStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcremoteoutboundrtpstreamstats/kind/index.md',
+        title: 'RTCRemoteOutboundRtpStreamStats: kind property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcremoteoutboundrtpstreamstats/localid/index.md',
+        title: 'RTCRemoteOutboundRtpStreamStats: localId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcremoteoutboundrtpstreamstats/remotetimestamp/index.md',
+        title: 'RTCRemoteOutboundRtpStreamStats: remoteTimestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcremoteoutboundrtpstreamstats/ssrc/index.md',
+        title: 'RTCRemoteOutboundRtpStreamStats: ssrc property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcremoteoutboundrtpstreamstats/timestamp/index.md',
+        title: 'RTCRemoteOutboundRtpStreamStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcremoteoutboundrtpstreamstats/transportid/index.md',
+        title: 'RTCRemoteOutboundRtpStreamStats: transportId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcremoteoutboundrtpstreamstats/type/index.md',
+        title: 'RTCRemoteOutboundRtpStreamStats: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpreceiver/getcapabilities_static/index.md',
+        title: 'RTCRtpReceiver: getCapabilities() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpreceiver/getcontributingsources/index.md',
+        title: 'RTCRtpReceiver: getContributingSources() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpreceiver/getparameters/index.md',
+        title: 'RTCRtpReceiver: getParameters() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpreceiver/getstats/index.md',
+        title: 'RTCRtpReceiver: getStats() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpreceiver/getsynchronizationsources/index.md',
+        title: 'RTCRtpReceiver: getSynchronizationSources() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpreceiver/index.md',
+        title: 'RTCRtpReceiver',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpreceiver/jitterbuffertarget/index.md',
+        title: 'RTCRtpReceiver: jitterBufferTarget property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpreceiver/track/index.md',
+        title: 'RTCRtpReceiver: track property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpreceiver/transform/index.md',
+        title: 'RTCRtpReceiver: transform property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpreceiver/transport/index.md',
+        title: 'RTCRtpReceiver: transport property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpscripttransform/index.md',
+        title: 'RTCRtpScriptTransform',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpscripttransform/rtcrtpscripttransform/index.md',
+        title: 'RTCRtpScriptTransform: RTCRtpScriptTransform() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpscripttransformer/generatekeyframe/index.md',
+        title: 'RTCRtpScriptTransformer: generateKeyFrame()',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpscripttransformer/index.md',
+        title: 'RTCRtpScriptTransformer',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpscripttransformer/options/index.md',
+        title: 'RTCRtpScriptTransformer: options property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpscripttransformer/readable/index.md',
+        title: 'RTCRtpScriptTransformer: readable property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpscripttransformer/sendkeyframerequest/index.md',
+        title: 'RTCRtpScriptTransformer: sendKeyFrameRequest()',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpscripttransformer/writable/index.md',
+        title: 'RTCRtpScriptTransformer: writable property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpsender/dtmf/index.md',
+        title: 'RTCRtpSender: dtmf property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpsender/getcapabilities_static/index.md',
+        title: 'RTCRtpSender: getCapabilities() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpsender/getparameters/index.md',
+        title: 'RTCRtpSender: getParameters() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpsender/getstats/index.md',
+        title: 'RTCRtpSender: getStats() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpsender/index.md',
+        title: 'RTCRtpSender',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpsender/replacetrack/index.md',
+        title: 'RTCRtpSender: replaceTrack() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpsender/setparameters/index.md',
+        title: 'RTCRtpSender: setParameters() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpsender/setstreams/index.md',
+        title: 'RTCRtpSender: setStreams() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpsender/track/index.md',
+        title: 'RTCRtpSender: track property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpsender/transform/index.md',
+        title: 'RTCRtpSender: transform property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpsender/transport/index.md',
+        title: 'RTCRtpSender: transport property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpstreamstats/codecid/index.md',
+        title: 'RTCRtpStreamStats: codecId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpstreamstats/fircount/index.md',
+        title: 'RTCRtpStreamStats: firCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpstreamstats/index.md',
+        title: 'RTCRtpStreamStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpstreamstats/kind/index.md',
+        title: 'RTCRtpStreamStats: kind property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpstreamstats/nackcount/index.md',
+        title: 'RTCRtpStreamStats: nackCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpstreamstats/plicount/index.md',
+        title: 'RTCRtpStreamStats: pliCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpstreamstats/qpsum/index.md',
+        title: 'RTCRtpStreamStats: qpSum property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpstreamstats/ssrc/index.md',
+        title: 'RTCRtpStreamStats: ssrc property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpstreamstats/trackid/index.md',
+        title: 'RTCRtpStreamStats: trackId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtpstreamstats/transportid/index.md',
+        title: 'RTCRtpStreamStats: transportId property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtptransceiver/currentdirection/index.md',
+        title: 'RTCRtpTransceiver: currentDirection property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtptransceiver/direction/index.md',
+        title: 'RTCRtpTransceiver: direction property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtptransceiver/index.md',
+        title: 'RTCRtpTransceiver',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtptransceiver/mid/index.md',
+        title: 'RTCRtpTransceiver: mid property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtptransceiver/receiver/index.md',
+        title: 'RTCRtpTransceiver: receiver property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtptransceiver/sender/index.md',
+        title: 'RTCRtpTransceiver: sender property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtptransceiver/setcodecpreferences/index.md',
+        title: 'RTCRtpTransceiver: setCodecPreferences() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtptransceiver/stop/index.md',
+        title: 'RTCRtpTransceiver: stop() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcrtptransceiver/stopped/index.md',
+        title: 'RTCRtpTransceiver: stopped property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcsctptransport/index.md',
+        title: 'RTCSctpTransport',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcsctptransport/maxchannels/index.md',
+        title: 'RTCSctpTransport: maxChannels property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcsctptransport/maxmessagesize/index.md',
+        title: 'RTCSctpTransport: maxMessageSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcsctptransport/state/index.md',
+        title: 'RTCSctpTransport: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcsctptransport/statechange_event/index.md',
+        title: 'RTCSctpTransport: statechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcsctptransport/transport/index.md',
+        title: 'RTCSctpTransport: transport property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcsessiondescription/index.md',
+        title: 'RTCSessionDescription',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcsessiondescription/rtcsessiondescription/index.md',
+        title: 'RTCSessionDescription: RTCSessionDescription() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcsessiondescription/sdp/index.md',
+        title: 'RTCSessionDescription: sdp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcsessiondescription/tojson/index.md',
+        title: 'RTCSessionDescription: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcsessiondescription/type/index.md',
+        title: 'RTCSessionDescription: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcstatsreport/entries/index.md',
+        title: 'RTCStatsReport: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcstatsreport/foreach/index.md',
+        title: 'RTCStatsReport: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcstatsreport/get/index.md',
+        title: 'RTCStatsReport: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcstatsreport/has/index.md',
+        title: 'RTCStatsReport: has() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcstatsreport/index.md',
+        title: 'RTCStatsReport',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcstatsreport/keys/index.md',
+        title: 'RTCStatsReport: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcstatsreport/size/index.md',
+        title: 'RTCStatsReport: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcstatsreport/symbol.iterator/index.md',
+        title: 'RTCStatsReport: [Symbol.iterator]() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcstatsreport/values/index.md',
+        title: 'RTCStatsReport: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/rtctrackevent/index.md',
+        title: 'RTCTrackEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/rtctrackevent/receiver/index.md',
+        title: 'RTCTrackEvent: receiver property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtctrackevent/rtctrackevent/index.md',
+        title: 'RTCTrackEvent: RTCTrackEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/rtctrackevent/streams/index.md',
+        title: 'RTCTrackEvent: streams property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtctrackevent/track/index.md',
+        title: 'RTCTrackEvent: track property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtctrackevent/transceiver/index.md',
+        title: 'RTCTrackEvent: transceiver property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtctransformevent/index.md',
+        title: 'RTCTransformEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/rtctransformevent/transformer/index.md',
+        title: 'RTCTransformEvent: transformer property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtctransportstats/id/index.md',
+        title: 'RTCTransportStats: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtctransportstats/index.md',
+        title: 'RTCTransportStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtctransportstats/timestamp/index.md',
+        title: 'RTCTransportStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtctransportstats/type/index.md',
+        title: 'RTCTransportStats: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcvideosourcestats/frames/index.md',
+        title: 'RTCVideoSourceStats: frames property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcvideosourcestats/framespersecond/index.md',
+        title: 'RTCVideoSourceStats: framesPerSecond property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcvideosourcestats/height/index.md',
+        title: 'RTCVideoSourceStats: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcvideosourcestats/id/index.md',
+        title: 'RTCVideoSourceStats: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcvideosourcestats/index.md',
+        title: 'RTCVideoSourceStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcvideosourcestats/kind/index.md',
+        title: 'RTCVideoSourceStats: kind property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcvideosourcestats/timestamp/index.md',
+        title: 'RTCVideoSourceStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcvideosourcestats/trackidentifier/index.md',
+        title: 'RTCVideoSourceStats: trackIdentifier property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcvideosourcestats/type/index.md',
+        title: 'RTCVideoSourceStats: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcvideosourcestats/width/index.md',
+        title: 'RTCVideoSourceStats: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/sanitizer/index.md',
+        title: 'Sanitizer',
+    },
+    {
+        path: 'lib/javascript/web_api/sanitizer/sanitize/index.md',
+        title: 'Sanitizer: sanitize() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sanitizer/sanitizer/index.md',
+        title: 'Sanitizer: Sanitizer() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/scheduler/index.md',
+        title: 'Scheduler',
+    },
+    {
+        path: 'lib/javascript/web_api/scheduler/posttask/index.md',
+        title: 'Scheduler: postTask() method',
+    },
+    {
+        path: 'lib/javascript/web_api/scheduling/index.md',
+        title: 'Scheduling',
+    },
+    {
+        path: 'lib/javascript/web_api/scheduling/isinputpending/index.md',
+        title: 'Scheduling: isInputPending() method',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/availheight/index.md',
+        title: 'Screen: availHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/availwidth/index.md',
+        title: 'Screen: availWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/change_event/index.md',
+        title: 'Screen: change event',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/colordepth/index.md',
+        title: 'Screen: colorDepth property',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/height/index.md',
+        title: 'Screen: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/index.md',
+        title: 'Screen',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/isextended/index.md',
+        title: 'Screen: isExtended property',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/lockorientation/index.md',
+        title: 'Screen: lockOrientation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/mozbrightness/index.md',
+        title: 'Screen: mozBrightness property',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/mozenabled/index.md',
+        title: 'Screen: mozEnabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/orientation/index.md',
+        title: 'Screen: orientation property',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/orientationchange_event/index.md',
+        title: 'Screen: orientationchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/pixeldepth/index.md',
+        title: 'Screen: pixelDepth property',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/unlockorientation/index.md',
+        title: 'Screen: unlockOrientation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/screen/width/index.md',
+        title: 'Screen: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/screen_capture_api/index.md',
+        title: 'Screen Capture API',
+    },
+    {
+        path: 'lib/javascript/web_api/screen_capture_api/using_screen_capture/index.md',
+        title: 'Using the Screen Capture API',
+    },
+    {
+        path: 'lib/javascript/web_api/screen_orientation_api/index.md',
+        title: 'Screen Orientation API',
+    },
+    {
+        path: 'lib/javascript/web_api/screen_wake_lock_api/index.md',
+        title: 'Screen Wake Lock API',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetailed/availleft/index.md',
+        title: 'ScreenDetailed: availLeft property',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetailed/availtop/index.md',
+        title: 'ScreenDetailed: availTop property',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetailed/devicepixelratio/index.md',
+        title: 'ScreenDetailed: devicePixelRatio property',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetailed/index.md',
+        title: 'ScreenDetailed',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetailed/isinternal/index.md',
+        title: 'ScreenDetailed: isInternal property',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetailed/isprimary/index.md',
+        title: 'ScreenDetailed: isPrimary property',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetailed/label/index.md',
+        title: 'ScreenDetailed: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetailed/left/index.md',
+        title: 'ScreenDetailed: left property',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetailed/top/index.md',
+        title: 'ScreenDetailed: top property',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetails/currentscreen/index.md',
+        title: 'ScreenDetails: currentScreen property',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetails/currentscreenchange_event/index.md',
+        title: 'ScreenDetails: currentscreenchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetails/index.md',
+        title: 'ScreenDetails',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetails/screens/index.md',
+        title: 'ScreenDetails: screens property',
+    },
+    {
+        path: 'lib/javascript/web_api/screendetails/screenschange_event/index.md',
+        title: 'ScreenDetails: screenschange event',
+    },
+    {
+        path: 'lib/javascript/web_api/screenorientation/angle/index.md',
+        title: 'ScreenOrientation: angle property',
+    },
+    {
+        path: 'lib/javascript/web_api/screenorientation/change_event/index.md',
+        title: 'ScreenOrientation: change event',
+    },
+    {
+        path: 'lib/javascript/web_api/screenorientation/index.md',
+        title: 'ScreenOrientation',
+    },
+    {
+        path: 'lib/javascript/web_api/screenorientation/lock/index.md',
+        title: 'ScreenOrientation: lock() method',
+    },
+    {
+        path: 'lib/javascript/web_api/screenorientation/type/index.md',
+        title: 'ScreenOrientation: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/screenorientation/unlock/index.md',
+        title: 'ScreenOrientation: unlock() method',
+    },
+    {
+        path: 'lib/javascript/web_api/scriptprocessornode/audioprocess_event/index.md',
+        title: 'ScriptProcessorNode: audioprocess event',
+    },
+    {
+        path: 'lib/javascript/web_api/scriptprocessornode/buffersize/index.md',
+        title: 'ScriptProcessorNode: bufferSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/scriptprocessornode/index.md',
+        title: 'ScriptProcessorNode',
+    },
+    {
+        path: 'lib/javascript/web_api/scrolltimeline/axis/index.md',
+        title: 'ScrollTimeline: axis property',
+    },
+    {
+        path: 'lib/javascript/web_api/scrolltimeline/index.md',
+        title: 'ScrollTimeline',
+    },
+    {
+        path: 'lib/javascript/web_api/scrolltimeline/scrolltimeline/index.md',
+        title: 'ScrollTimeline: ScrollTimeline() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/scrolltimeline/source/index.md',
+        title: 'ScrollTimeline: source property',
+    },
+    {
+        path: 'lib/javascript/web_api/securepaymentconfirmationrequest/index.md',
+        title: 'SecurePaymentConfirmationRequest',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/blockeduri/index.md',
+        title: 'SecurityPolicyViolationEvent: blockedURI property',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/columnnumber/index.md',
+        title: 'SecurityPolicyViolationEvent: columnNumber property',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/disposition/index.md',
+        title: 'SecurityPolicyViolationEvent: disposition property',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/documenturi/index.md',
+        title: 'SecurityPolicyViolationEvent: documentURI property',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/effectivedirective/index.md',
+        title: 'SecurityPolicyViolationEvent: effectiveDirective property',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/index.md',
+        title: 'SecurityPolicyViolationEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/linenumber/index.md',
+        title: 'SecurityPolicyViolationEvent: lineNumber property',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/originalpolicy/index.md',
+        title: 'SecurityPolicyViolationEvent: originalPolicy property',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/referrer/index.md',
+        title: 'SecurityPolicyViolationEvent: referrer property',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/sample/index.md',
+        title: 'SecurityPolicyViolationEvent: sample property',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/securitypolicyviolationevent/index.md',
+        title: 'SecurityPolicyViolationEvent: SecurityPolicyViolationEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/sourcefile/index.md',
+        title: 'SecurityPolicyViolationEvent: sourceFile property',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/statuscode/index.md',
+        title: 'SecurityPolicyViolationEvent: statusCode property',
+    },
+    {
+        path: 'lib/javascript/web_api/securitypolicyviolationevent/violateddirective/index.md',
+        title: 'SecurityPolicyViolationEvent: violatedDirective property',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/addrange/index.md',
+        title: 'Selection: addRange() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/anchornode/index.md',
+        title: 'Selection: anchorNode property',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/anchoroffset/index.md',
+        title: 'Selection: anchorOffset property',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/collapse/index.md',
+        title: 'Selection: collapse() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/collapsetoend/index.md',
+        title: 'Selection: collapseToEnd() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/collapsetostart/index.md',
+        title: 'Selection: collapseToStart() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/containsnode/index.md',
+        title: 'Selection: containsNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/deletefromdocument/index.md',
+        title: 'Selection: deleteFromDocument() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/direction/index.md',
+        title: 'Selection: direction property',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/empty/index.md',
+        title: 'Selection: empty() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/extend/index.md',
+        title: 'Selection: extend() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/focusnode/index.md',
+        title: 'Selection: focusNode property',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/focusoffset/index.md',
+        title: 'Selection: focusOffset property',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/getcomposedranges/index.md',
+        title: 'Selection: getComposedRanges() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/getrangeat/index.md',
+        title: 'Selection: getRangeAt() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/index.md',
+        title: 'Selection',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/iscollapsed/index.md',
+        title: 'Selection: isCollapsed property',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/modify/index.md',
+        title: 'Selection: modify() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/rangecount/index.md',
+        title: 'Selection: rangeCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/removeallranges/index.md',
+        title: 'Selection: removeAllRanges() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/removerange/index.md',
+        title: 'Selection: removeRange() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/selectallchildren/index.md',
+        title: 'Selection: selectAllChildren() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/setbaseandextent/index.md',
+        title: 'Selection: setBaseAndExtent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/setposition/index.md',
+        title: 'Selection: setPosition() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/tostring/index.md',
+        title: 'Selection: toString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/selection/type/index.md',
+        title: 'Selection: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/selection_api/index.md',
+        title: 'Selection API',
+    },
+    {
+        path: 'lib/javascript/web_api/sensor/activate_event/index.md',
+        title: 'Sensor: activate event',
+    },
+    {
+        path: 'lib/javascript/web_api/sensor/activated/index.md',
+        title: 'Sensor: activated property',
+    },
+    {
+        path: 'lib/javascript/web_api/sensor/error_event/index.md',
+        title: 'Sensor: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/sensor/hasreading/index.md',
+        title: 'Sensor: hasReading property',
+    },
+    {
+        path: 'lib/javascript/web_api/sensor/index.md',
+        title: 'Sensor',
+    },
+    {
+        path: 'lib/javascript/web_api/sensor/reading_event/index.md',
+        title: 'Sensor: reading event',
+    },
+    {
+        path: 'lib/javascript/web_api/sensor/start/index.md',
+        title: 'Sensor: start() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sensor/stop/index.md',
+        title: 'Sensor: stop() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sensor/timestamp/index.md',
+        title: 'Sensor: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/sensor_apis/index.md',
+        title: 'Sensor APIs',
+    },
+    {
+        path: 'lib/javascript/web_api/sensorerrorevent/error/index.md',
+        title: 'SensorErrorEvent: error property',
+    },
+    {
+        path: 'lib/javascript/web_api/sensorerrorevent/index.md',
+        title: 'SensorErrorEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/sensorerrorevent/sensorerrorevent/index.md',
+        title: 'SensorErrorEvent: SensorErrorEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/serial/getports/index.md',
+        title: 'Serial: getPorts() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serial/index.md',
+        title: 'Serial',
+    },
+    {
+        path: 'lib/javascript/web_api/serial/requestport/index.md',
+        title: 'Serial: requestPort() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serialport/close/index.md',
+        title: 'SerialPort: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serialport/connect_event/index.md',
+        title: 'SerialPort: connect event',
+    },
+    {
+        path: 'lib/javascript/web_api/serialport/disconnect_event/index.md',
+        title: 'SerialPort: disconnect event',
+    },
+    {
+        path: 'lib/javascript/web_api/serialport/forget/index.md',
+        title: 'SerialPort: forget() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serialport/getinfo/index.md',
+        title: 'SerialPort: getInfo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serialport/getsignals/index.md',
+        title: 'SerialPort: getSignals() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serialport/index.md',
+        title: 'SerialPort',
+    },
+    {
+        path: 'lib/javascript/web_api/serialport/open/index.md',
+        title: 'SerialPort: open() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serialport/readable/index.md',
+        title: 'SerialPort: readable property',
+    },
+    {
+        path: 'lib/javascript/web_api/serialport/setsignals/index.md',
+        title: 'SerialPort: setSignals() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serialport/writable/index.md',
+        title: 'SerialPort: writable property',
+    },
+    {
+        path: 'lib/javascript/web_api/server-sent_events/index.md',
+        title: 'Server-sent events',
+    },
+    {
+        path: 'lib/javascript/web_api/server-sent_events/using_server-sent_events/index.md',
+        title: 'Using server-sent events',
+    },
+    {
+        path: 'lib/javascript/web_api/service_worker_api/index.md',
+        title: 'Service Worker API',
+    },
+    {
+        path: 'lib/javascript/web_api/service_worker_api/using_service_workers/index.md',
+        title: 'Using Service Workers',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworker/error_event/index.md',
+        title: 'ServiceWorker: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworker/index.md',
+        title: 'ServiceWorker',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworker/postmessage/index.md',
+        title: 'ServiceWorker: postMessage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworker/scripturl/index.md',
+        title: 'ServiceWorker: scriptURL property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworker/state/index.md',
+        title: 'ServiceWorker: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworker/statechange_event/index.md',
+        title: 'ServiceWorker: statechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkercontainer/controller/index.md',
+        title: 'ServiceWorkerContainer: controller property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkercontainer/controllerchange_event/index.md',
+        title: 'ServiceWorkerContainer: controllerchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkercontainer/error_event/index.md',
+        title: 'ServiceWorkerContainer: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkercontainer/getregistration/index.md',
+        title: 'ServiceWorkerContainer: getRegistration() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkercontainer/getregistrations/index.md',
+        title: 'ServiceWorkerContainer: getRegistrations() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkercontainer/index.md',
+        title: 'ServiceWorkerContainer',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkercontainer/message_event/index.md',
+        title: 'ServiceWorkerContainer: message event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkercontainer/messageerror_event/index.md',
+        title: 'ServiceWorkerContainer: messageerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkercontainer/ready/index.md',
+        title: 'ServiceWorkerContainer: ready property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkercontainer/register/index.md',
+        title: 'ServiceWorkerContainer: register() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkercontainer/startmessages/index.md',
+        title: 'ServiceWorkerContainer: startMessages() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/activate_event/index.md',
+        title: 'ServiceWorkerGlobalScope: activate event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/backgroundfetchabort_event/index.md',
+        title: 'ServiceWorkerGlobalScope: backgroundfetchabort event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/backgroundfetchclick_event/index.md',
+        title: 'ServiceWorkerGlobalScope: backgroundfetchclick event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/backgroundfetchfail_event/index.md',
+        title: 'ServiceWorkerGlobalScope: backgroundfetchfail event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/backgroundfetchsuccess_event/index.md',
+        title: 'ServiceWorkerGlobalScope: backgroundfetchsuccess event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/canmakepayment_event/index.md',
+        title: 'ServiceWorkerGlobalScope: canmakepayment event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/clients/index.md',
+        title: 'ServiceWorkerGlobalScope: clients property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/contentdelete_event/index.md',
+        title: 'ServiceWorkerGlobalScope: contentdelete event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/cookiechange_event/index.md',
+        title: 'ServiceWorkerGlobalScope: cookiechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/cookiestore/index.md',
+        title: 'ServiceWorkerGlobalScope: cookieStore property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/fetch_event/index.md',
+        title: 'ServiceWorkerGlobalScope: fetch event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/index.md',
+        title: 'ServiceWorkerGlobalScope',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/install_event/index.md',
+        title: 'ServiceWorkerGlobalScope: install event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/message_event/index.md',
+        title: 'ServiceWorkerGlobalScope: message event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/messageerror_event/index.md',
+        title: 'ServiceWorkerGlobalScope: messageerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/notificationclick_event/index.md',
+        title: 'ServiceWorkerGlobalScope: notificationclick event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/notificationclose_event/index.md',
+        title: 'ServiceWorkerGlobalScope: notificationclose event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/paymentrequest_event/index.md',
+        title: 'ServiceWorkerGlobalScope: paymentrequest event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/periodicsync_event/index.md',
+        title: 'ServiceWorkerGlobalScope: periodicsync event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/push_event/index.md',
+        title: 'ServiceWorkerGlobalScope: push event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/pushsubscriptionchange_event/index.md',
+        title: 'ServiceWorkerGlobalScope: pushsubscriptionchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/registration/index.md',
+        title: 'ServiceWorkerGlobalScope: registration property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/serviceworker/index.md',
+        title: 'ServiceWorkerGlobalScope: serviceWorker property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/skipwaiting/index.md',
+        title: 'ServiceWorkerGlobalScope: skipWaiting() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerglobalscope/sync_event/index.md',
+        title: 'ServiceWorkerGlobalScope: sync event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/active/index.md',
+        title: 'ServiceWorkerRegistration: active property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/backgroundfetch/index.md',
+        title: 'ServiceWorkerRegistration: backgroundFetch property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/cookies/index.md',
+        title: 'ServiceWorkerRegistration: cookies property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/getnotifications/index.md',
+        title: 'ServiceWorkerRegistration: getNotifications() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/index/index.md',
+        title: 'ServiceWorkerRegistration: index property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/index.md',
+        title: 'ServiceWorkerRegistration',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/installing/index.md',
+        title: 'ServiceWorkerRegistration: installing property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/navigationpreload/index.md',
+        title: 'ServiceWorkerRegistration: navigationPreload property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/paymentmanager/index.md',
+        title: 'ServiceWorkerRegistration: paymentManager property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/periodicsync/index.md',
+        title: 'ServiceWorkerRegistration: periodicSync property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/pushmanager/index.md',
+        title: 'ServiceWorkerRegistration: pushManager property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/scope/index.md',
+        title: 'ServiceWorkerRegistration: scope property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/shownotification/index.md',
+        title: 'ServiceWorkerRegistration: showNotification() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/sync/index.md',
+        title: 'ServiceWorkerRegistration: sync property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/unregister/index.md',
+        title: 'ServiceWorkerRegistration: unregister() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/update/index.md',
+        title: 'ServiceWorkerRegistration: update() method',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/updatefound_event/index.md',
+        title: 'ServiceWorkerRegistration: updatefound event',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/updateviacache/index.md',
+        title: 'ServiceWorkerRegistration: updateViaCache property',
+    },
+    {
+        path: 'lib/javascript/web_api/serviceworkerregistration/waiting/index.md',
+        title: 'ServiceWorkerRegistration: waiting property',
+    },
+    {
+        path: 'lib/javascript/web_api/setinterval/index.md',
+        title: 'setInterval() global function',
+    },
+    {
+        path: 'lib/javascript/web_api/settimeout/index.md',
+        title: 'setTimeout() global function',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/activeelement/index.md',
+        title: 'ShadowRoot: activeElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/adoptedstylesheets/index.md',
+        title: 'ShadowRoot: adoptedStyleSheets property',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/clonable/index.md',
+        title: 'ShadowRoot: clonable property',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/delegatesfocus/index.md',
+        title: 'ShadowRoot: delegatesFocus property',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/fullscreenelement/index.md',
+        title: 'ShadowRoot: fullscreenElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/getanimations/index.md',
+        title: 'ShadowRoot: getAnimations() method',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/gethtml/index.md',
+        title: 'ShadowRoot: getHTML() method',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/host/index.md',
+        title: 'ShadowRoot: host property',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/index.md',
+        title: 'ShadowRoot',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/innerhtml/index.md',
+        title: 'ShadowRoot: innerHTML property',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/mode/index.md',
+        title: 'ShadowRoot: mode property',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/pictureinpictureelement/index.md',
+        title: 'ShadowRoot: pictureInPictureElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/pointerlockelement/index.md',
+        title: 'ShadowRoot: pointerLockElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/serializable/index.md',
+        title: 'ShadowRoot: serializable property',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/sethtmlunsafe/index.md',
+        title: 'ShadowRoot: setHTMLUnsafe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/slotassignment/index.md',
+        title: 'ShadowRoot: slotAssignment property',
+    },
+    {
+        path: 'lib/javascript/web_api/shadowroot/stylesheets/index.md',
+        title: 'ShadowRoot: styleSheets property',
+    },
+    {
+        path: 'lib/javascript/web_api/shared_storage_api/index.md',
+        title: 'Shared Storage API',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstorage/append/index.md',
+        title: 'SharedStorage: append() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstorage/clear/index.md',
+        title: 'SharedStorage: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstorage/delete/index.md',
+        title: 'SharedStorage: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstorage/index.md',
+        title: 'SharedStorage',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstorage/set/index.md',
+        title: 'SharedStorage: set() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstorageoperation/index.md',
+        title: 'SharedStorageOperation',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstoragerunoperation/index.md',
+        title: 'SharedStorageRunOperation',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstoragerunoperation/run/index.md',
+        title: 'SharedStorageRunOperation: run() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstorageselecturloperation/index.md',
+        title: 'SharedStorageSelectURLOperation',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstorageselecturloperation/run/index.md',
+        title: 'SharedStorageSelectURLOperation: run() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstorageworklet/index.md',
+        title: 'SharedStorageWorklet',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstorageworkletglobalscope/index.md',
+        title: 'SharedStorageWorkletGlobalScope',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstorageworkletglobalscope/register/index.md',
+        title: 'SharedStorageWorkletGlobalScope: register() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedstorageworkletglobalscope/sharedstorage/index.md',
+        title: 'SharedStorageWorkletGlobalScope: sharedStorage property',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedworker/error_event/index.md',
+        title: 'SharedWorker: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedworker/index.md',
+        title: 'SharedWorker',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedworker/port/index.md',
+        title: 'SharedWorker: port property',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedworker/sharedworker/index.md',
+        title: 'SharedWorker: SharedWorker() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedworkerglobalscope/close/index.md',
+        title: 'SharedWorkerGlobalScope: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedworkerglobalscope/connect_event/index.md',
+        title: 'SharedWorkerGlobalScope: connect event',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedworkerglobalscope/index.md',
+        title: 'SharedWorkerGlobalScope',
+    },
+    {
+        path: 'lib/javascript/web_api/sharedworkerglobalscope/name/index.md',
+        title: 'SharedWorkerGlobalScope: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/abort/index.md',
+        title: 'SourceBuffer: abort() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/appendbuffer/index.md',
+        title: 'SourceBuffer: appendBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/appendbufferasync/index.md',
+        title: 'SourceBuffer: appendBufferAsync() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/appendwindowend/index.md',
+        title: 'SourceBuffer: appendWindowEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/appendwindowstart/index.md',
+        title: 'SourceBuffer: appendWindowStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/audiotracks/index.md',
+        title: 'SourceBuffer: audioTracks property',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/buffered/index.md',
+        title: 'SourceBuffer: buffered property',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/changetype/index.md',
+        title: 'SourceBuffer: changeType() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/index.md',
+        title: 'SourceBuffer',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/mode/index.md',
+        title: 'SourceBuffer: mode property',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/remove/index.md',
+        title: 'SourceBuffer: remove() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/removeasync/index.md',
+        title: 'SourceBuffer: removeAsync() method',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/texttracks/index.md',
+        title: 'SourceBuffer: textTracks property',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/timestampoffset/index.md',
+        title: 'SourceBuffer: timestampOffset property',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/updating/index.md',
+        title: 'SourceBuffer: updating property',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebuffer/videotracks/index.md',
+        title: 'SourceBuffer: videoTracks property',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebufferlist/index.md',
+        title: 'SourceBufferList',
+    },
+    {
+        path: 'lib/javascript/web_api/sourcebufferlist/length/index.md',
+        title: 'SourceBufferList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/speculation_rules_api/index.md',
+        title: 'Speculation Rules API',
+    },
+    {
+        path: 'lib/javascript/web_api/speechgrammar/index.md',
+        title: 'SpeechGrammar',
+    },
+    {
+        path: 'lib/javascript/web_api/speechgrammar/speechgrammar/index.md',
+        title: 'SpeechGrammar: SpeechGrammar() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/speechgrammar/src/index.md',
+        title: 'SpeechGrammar: src property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechgrammar/weight/index.md',
+        title: 'SpeechGrammar: weight property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechgrammarlist/addfromstring/index.md',
+        title: 'SpeechGrammarList: addFromString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechgrammarlist/addfromuri/index.md',
+        title: 'SpeechGrammarList: addFromURI() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechgrammarlist/index.md',
+        title: 'SpeechGrammarList',
+    },
+    {
+        path: 'lib/javascript/web_api/speechgrammarlist/item/index.md',
+        title: 'SpeechGrammarList: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechgrammarlist/length/index.md',
+        title: 'SpeechGrammarList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechgrammarlist/speechgrammarlist/index.md',
+        title: 'SpeechGrammarList: SpeechGrammarList() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/abort/index.md',
+        title: 'SpeechRecognition: abort() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/audioend_event/index.md',
+        title: 'SpeechRecognition: audioend event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/audiostart_event/index.md',
+        title: 'SpeechRecognition: audiostart event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/continuous/index.md',
+        title: 'SpeechRecognition: continuous property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/end_event/index.md',
+        title: 'SpeechRecognition: end event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/error_event/index.md',
+        title: 'SpeechRecognition: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/grammars/index.md',
+        title: 'SpeechRecognition: grammars property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/index.md',
+        title: 'SpeechRecognition',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/interimresults/index.md',
+        title: 'SpeechRecognition: interimResults property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/lang/index.md',
+        title: 'SpeechRecognition: lang property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/maxalternatives/index.md',
+        title: 'SpeechRecognition: maxAlternatives property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/nomatch_event/index.md',
+        title: 'SpeechRecognition: nomatch event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/result_event/index.md',
+        title: 'SpeechRecognition: result event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/soundend_event/index.md',
+        title: 'SpeechRecognition: soundend event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/soundstart_event/index.md',
+        title: 'SpeechRecognition: soundstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/speechend_event/index.md',
+        title: 'SpeechRecognition: speechend event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/speechrecognition/index.md',
+        title: 'SpeechRecognition: SpeechRecognition() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/speechstart_event/index.md',
+        title: 'SpeechRecognition: speechstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/start/index.md',
+        title: 'SpeechRecognition: start() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/start_event/index.md',
+        title: 'SpeechRecognition: start event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognition/stop/index.md',
+        title: 'SpeechRecognition: stop() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionalternative/confidence/index.md',
+        title: 'SpeechRecognitionAlternative: confidence property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionalternative/index.md',
+        title: 'SpeechRecognitionAlternative',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionalternative/transcript/index.md',
+        title: 'SpeechRecognitionAlternative: transcript property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionerrorevent/error/index.md',
+        title: 'SpeechRecognitionErrorEvent: error property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionerrorevent/index.md',
+        title: 'SpeechRecognitionErrorEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionerrorevent/message/index.md',
+        title: 'SpeechRecognitionErrorEvent: message property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionevent/emma/index.md',
+        title: 'SpeechRecognitionEvent: emma property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionevent/index.md',
+        title: 'SpeechRecognitionEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionevent/interpretation/index.md',
+        title: 'SpeechRecognitionEvent: interpretation property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionevent/resultindex/index.md',
+        title: 'SpeechRecognitionEvent: resultIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionevent/results/index.md',
+        title: 'SpeechRecognitionEvent: results property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionresult/index.md',
+        title: 'SpeechRecognitionResult',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionresult/isfinal/index.md',
+        title: 'SpeechRecognitionResult: isFinal property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionresult/item/index.md',
+        title: 'SpeechRecognitionResult: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionresult/length/index.md',
+        title: 'SpeechRecognitionResult: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionresultlist/index.md',
+        title: 'SpeechRecognitionResultList',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionresultlist/item/index.md',
+        title: 'SpeechRecognitionResultList: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechrecognitionresultlist/length/index.md',
+        title: 'SpeechRecognitionResultList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesis/cancel/index.md',
+        title: 'SpeechSynthesis: cancel() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesis/getvoices/index.md',
+        title: 'SpeechSynthesis: getVoices() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesis/index.md',
+        title: 'SpeechSynthesis',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesis/pause/index.md',
+        title: 'SpeechSynthesis: pause() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesis/paused/index.md',
+        title: 'SpeechSynthesis: paused property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesis/pending/index.md',
+        title: 'SpeechSynthesis: pending property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesis/resume/index.md',
+        title: 'SpeechSynthesis: resume() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesis/speak/index.md',
+        title: 'SpeechSynthesis: speak() method',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesis/speaking/index.md',
+        title: 'SpeechSynthesis: speaking property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesis/voiceschanged_event/index.md',
+        title: 'SpeechSynthesis: voiceschanged event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesiserrorevent/error/index.md',
+        title: 'SpeechSynthesisErrorEvent: error property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesiserrorevent/index.md',
+        title: 'SpeechSynthesisErrorEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesiserrorevent/speechsynthesiserrorevent/index.md',
+        title: 'SpeechSynthesisErrorEvent: SpeechSynthesisErrorEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisevent/charindex/index.md',
+        title: 'SpeechSynthesisEvent: charIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisevent/charlength/index.md',
+        title: 'SpeechSynthesisEvent: charLength property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisevent/elapsedtime/index.md',
+        title: 'SpeechSynthesisEvent: elapsedTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisevent/index.md',
+        title: 'SpeechSynthesisEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisevent/name/index.md',
+        title: 'SpeechSynthesisEvent: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisevent/speechsynthesisevent/index.md',
+        title: 'SpeechSynthesisEvent: SpeechSynthesisEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisevent/utterance/index.md',
+        title: 'SpeechSynthesisEvent: utterance property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/boundary_event/index.md',
+        title: 'SpeechSynthesisUtterance: boundary event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/end_event/index.md',
+        title: 'SpeechSynthesisUtterance: end event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/error_event/index.md',
+        title: 'SpeechSynthesisUtterance: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/index.md',
+        title: 'SpeechSynthesisUtterance',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/lang/index.md',
+        title: 'SpeechSynthesisUtterance: lang property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/mark_event/index.md',
+        title: 'SpeechSynthesisUtterance: mark event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/pause_event/index.md',
+        title: 'SpeechSynthesisUtterance: pause event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/pitch/index.md',
+        title: 'SpeechSynthesisUtterance: pitch property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/rate/index.md',
+        title: 'SpeechSynthesisUtterance: rate property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/resume_event/index.md',
+        title: 'SpeechSynthesisUtterance: resume event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/speechsynthesisutterance/index.md',
+        title: 'SpeechSynthesisUtterance: SpeechSynthesisUtterance() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/start_event/index.md',
+        title: 'SpeechSynthesisUtterance: start event',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/text/index.md',
+        title: 'SpeechSynthesisUtterance: text property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/voice/index.md',
+        title: 'SpeechSynthesisUtterance: voice property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisutterance/volume/index.md',
+        title: 'SpeechSynthesisUtterance: volume property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisvoice/default/index.md',
+        title: 'SpeechSynthesisVoice: default property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisvoice/index.md',
+        title: 'SpeechSynthesisVoice',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisvoice/lang/index.md',
+        title: 'SpeechSynthesisVoice: lang property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisvoice/localservice/index.md',
+        title: 'SpeechSynthesisVoice: localService property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisvoice/name/index.md',
+        title: 'SpeechSynthesisVoice: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/speechsynthesisvoice/voiceuri/index.md',
+        title: 'SpeechSynthesisVoice: voiceURI property',
+    },
+    {
+        path: 'lib/javascript/web_api/staticrange/collapsed/index.md',
+        title: 'StaticRange: collapsed property',
+    },
+    {
+        path: 'lib/javascript/web_api/staticrange/endcontainer/index.md',
+        title: 'StaticRange: endContainer property',
+    },
+    {
+        path: 'lib/javascript/web_api/staticrange/endoffset/index.md',
+        title: 'StaticRange: endOffset property',
+    },
+    {
+        path: 'lib/javascript/web_api/staticrange/index.md',
+        title: 'StaticRange',
+    },
+    {
+        path: 'lib/javascript/web_api/staticrange/startcontainer/index.md',
+        title: 'StaticRange: startContainer property',
+    },
+    {
+        path: 'lib/javascript/web_api/staticrange/startoffset/index.md',
+        title: 'StaticRange: startOffset property',
+    },
+    {
+        path: 'lib/javascript/web_api/staticrange/staticrange/index.md',
+        title: 'StaticRange: StaticRange() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/stereopannernode/index.md',
+        title: 'StereoPannerNode',
+    },
+    {
+        path: 'lib/javascript/web_api/stereopannernode/pan/index.md',
+        title: 'StereoPannerNode: pan property',
+    },
+    {
+        path: 'lib/javascript/web_api/stereopannernode/stereopannernode/index.md',
+        title: 'StereoPannerNode: StereoPannerNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/storage/clear/index.md',
+        title: 'Storage: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/storage/getitem/index.md',
+        title: 'Storage: getItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/storage/index.md',
+        title: 'Storage',
+    },
+    {
+        path: 'lib/javascript/web_api/storage/key/index.md',
+        title: 'Storage: key() method',
+    },
+    {
+        path: 'lib/javascript/web_api/storage/length/index.md',
+        title: 'Storage: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/storage/removeitem/index.md',
+        title: 'Storage: removeItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/storage/setitem/index.md',
+        title: 'Storage: setItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/storage_access_api/index.md',
+        title: 'Storage Access API',
+    },
+    {
+        path: 'lib/javascript/web_api/storage_access_api/related_website_sets/index.md',
+        title: 'Related Website Sets',
+    },
+    {
+        path: 'lib/javascript/web_api/storage_access_api/using/index.md',
+        title: 'Using the Storage Access API',
+    },
+    {
+        path: 'lib/javascript/web_api/storage_api/index.md',
+        title: 'Storage API',
+    },
+    {
+        path: 'lib/javascript/web_api/storage_api/storage_quotas_and_eviction_criteria/index.md',
+        title: 'Storage quotas and eviction criteria',
+    },
+    {
+        path: 'lib/javascript/web_api/storageaccesshandle/broadcastchannel/index.md',
+        title: 'StorageAccessHandle: BroadcastChannel() property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageaccesshandle/caches/index.md',
+        title: 'StorageAccessHandle: caches property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageaccesshandle/createobjecturl/index.md',
+        title: 'StorageAccessHandle: createObjectURL() property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageaccesshandle/estimate/index.md',
+        title: 'StorageAccessHandle: estimate() property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageaccesshandle/getdirectory/index.md',
+        title: 'StorageAccessHandle: getDirectory() property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageaccesshandle/index.md',
+        title: 'StorageAccessHandle',
+    },
+    {
+        path: 'lib/javascript/web_api/storageaccesshandle/indexeddb/index.md',
+        title: 'StorageAccessHandle: indexedDB property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageaccesshandle/localstorage/index.md',
+        title: 'StorageAccessHandle: localStorage property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageaccesshandle/locks/index.md',
+        title: 'StorageAccessHandle: locks property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageaccesshandle/revokeobjecturl/index.md',
+        title: 'StorageAccessHandle: revokeObjectURL() property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageaccesshandle/sessionstorage/index.md',
+        title: 'StorageAccessHandle: sessionStorage property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageaccesshandle/sharedworker/index.md',
+        title: 'StorageAccessHandle: SharedWorker() property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageevent/index.md',
+        title: 'StorageEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/storageevent/initstorageevent/index.md',
+        title: 'StorageEvent: initStorageEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/storageevent/key/index.md',
+        title: 'StorageEvent: key property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageevent/newvalue/index.md',
+        title: 'StorageEvent: newValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageevent/oldvalue/index.md',
+        title: 'StorageEvent: oldValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageevent/storagearea/index.md',
+        title: 'StorageEvent: storageArea property',
+    },
+    {
+        path: 'lib/javascript/web_api/storageevent/storageevent/index.md',
+        title: 'StorageEvent: StorageEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/storageevent/url/index.md',
+        title: 'StorageEvent: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/storagemanager/estimate/index.md',
+        title: 'StorageManager: estimate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/storagemanager/getdirectory/index.md',
+        title: 'StorageManager: getDirectory() method',
+    },
+    {
+        path: 'lib/javascript/web_api/storagemanager/index.md',
+        title: 'StorageManager',
+    },
+    {
+        path: 'lib/javascript/web_api/storagemanager/persist/index.md',
+        title: 'StorageManager: persist() method',
+    },
+    {
+        path: 'lib/javascript/web_api/storagemanager/persisted/index.md',
+        title: 'StorageManager: persisted() method',
+    },
+    {
+        path: 'lib/javascript/web_api/streams_api/concepts/index.md',
+        title: 'Streams API concepts',
+    },
+    {
+        path: 'lib/javascript/web_api/streams_api/index.md',
+        title: 'Streams API',
+    },
+    {
+        path: 'lib/javascript/web_api/streams_api/using_readable_byte_streams/index.md',
+        title: 'Using readable byte streams',
+    },
+    {
+        path: 'lib/javascript/web_api/streams_api/using_readable_streams/index.md',
+        title: 'Using readable streams',
+    },
+    {
+        path: 'lib/javascript/web_api/streams_api/using_writable_streams/index.md',
+        title: 'Using writable streams',
+    },
+    {
+        path: 'lib/javascript/web_api/structuredclone/index.md',
+        title: 'structuredClone() global function',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymap/append/index.md',
+        title: 'StylePropertyMap: append() method',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymap/clear/index.md',
+        title: 'StylePropertyMap: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymap/delete/index.md',
+        title: 'StylePropertyMap: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymap/index.md',
+        title: 'StylePropertyMap',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymap/set/index.md',
+        title: 'StylePropertyMap: set() method',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymapreadonly/entries/index.md',
+        title: 'StylePropertyMapReadOnly: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymapreadonly/foreach/index.md',
+        title: 'StylePropertyMapReadOnly: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymapreadonly/get/index.md',
+        title: 'StylePropertyMapReadOnly: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymapreadonly/getall/index.md',
+        title: 'StylePropertyMapReadOnly: getAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymapreadonly/has/index.md',
+        title: 'StylePropertyMapReadOnly: has() method',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymapreadonly/index.md',
+        title: 'StylePropertyMapReadOnly',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymapreadonly/keys/index.md',
+        title: 'StylePropertyMapReadOnly: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymapreadonly/size/index.md',
+        title: 'StylePropertyMapReadOnly: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/stylepropertymapreadonly/values/index.md',
+        title: 'StylePropertyMapReadOnly: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/stylesheet/disabled/index.md',
+        title: 'StyleSheet: disabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/stylesheet/href/index.md',
+        title: 'StyleSheet: href property',
+    },
+    {
+        path: 'lib/javascript/web_api/stylesheet/index.md',
+        title: 'StyleSheet',
+    },
+    {
+        path: 'lib/javascript/web_api/stylesheet/media/index.md',
+        title: 'StyleSheet: media property',
+    },
+    {
+        path: 'lib/javascript/web_api/stylesheet/ownernode/index.md',
+        title: 'StyleSheet: ownerNode property',
+    },
+    {
+        path: 'lib/javascript/web_api/stylesheet/parentstylesheet/index.md',
+        title: 'StyleSheet: parentStyleSheet property',
+    },
+    {
+        path: 'lib/javascript/web_api/stylesheet/title/index.md',
+        title: 'StyleSheet: title property',
+    },
+    {
+        path: 'lib/javascript/web_api/stylesheet/type/index.md',
+        title: 'StyleSheet: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/stylesheetlist/index.md',
+        title: 'StyleSheetList',
+    },
+    {
+        path: 'lib/javascript/web_api/stylesheetlist/item/index.md',
+        title: 'StyleSheetList: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/stylesheetlist/length/index.md',
+        title: 'StyleSheetList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/submitevent/index.md',
+        title: 'SubmitEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/submitevent/submitevent/index.md',
+        title: 'SubmitEvent: SubmitEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/submitevent/submitter/index.md',
+        title: 'SubmitEvent: submitter property',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/decrypt/index.md',
+        title: 'SubtleCrypto: decrypt() method',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/derivebits/index.md',
+        title: 'SubtleCrypto: deriveBits() method',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/derivekey/index.md',
+        title: 'SubtleCrypto: deriveKey() method',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/digest/index.md',
+        title: 'SubtleCrypto: digest() method',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/encrypt/index.md',
+        title: 'SubtleCrypto: encrypt() method',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/exportkey/index.md',
+        title: 'SubtleCrypto: exportKey() method',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/generatekey/index.md',
+        title: 'SubtleCrypto: generateKey() method',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/importkey/index.md',
+        title: 'SubtleCrypto: importKey() method',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/index.md',
+        title: 'SubtleCrypto',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/sign/index.md',
+        title: 'SubtleCrypto: sign() method',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/unwrapkey/index.md',
+        title: 'SubtleCrypto: unwrapKey() method',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/verify/index.md',
+        title: 'SubtleCrypto: verify() method',
+    },
+    {
+        path: 'lib/javascript/web_api/subtlecrypto/wrapkey/index.md',
+        title: 'SubtleCrypto: wrapKey() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svg_api/index.md',
+        title: 'SVG API',
+    },
+    {
+        path: 'lib/javascript/web_api/svgaelement/index.md',
+        title: 'SVGAElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgaelement/target/index.md',
+        title: 'SVGAElement: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgangle/index.md',
+        title: 'SVGAngle',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatecolorelement/index.md',
+        title: 'SVGAnimateColorElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedangle/index.md',
+        title: 'SVGAnimatedAngle',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedboolean/index.md',
+        title: 'SVGAnimatedBoolean',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedenumeration/animval/index.md',
+        title: 'SVGAnimatedEnumeration: animVal property',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedenumeration/baseval/index.md',
+        title: 'SVGAnimatedEnumeration: baseVal property',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedenumeration/index.md',
+        title: 'SVGAnimatedEnumeration',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedinteger/index.md',
+        title: 'SVGAnimatedInteger',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedlength/animval/index.md',
+        title: 'SVGAnimatedLength: animVal property',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedlength/baseval/index.md',
+        title: 'SVGAnimatedLength: baseVal property',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedlength/index.md',
+        title: 'SVGAnimatedLength',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedlengthlist/index.md',
+        title: 'SVGAnimatedLengthList',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatednumber/index.md',
+        title: 'SVGAnimatedNumber',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatednumberlist/index.md',
+        title: 'SVGAnimatedNumberList',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedpreserveaspectratio/index.md',
+        title: 'SVGAnimatedPreserveAspectRatio',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedrect/index.md',
+        title: 'SVGAnimatedRect',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedstring/animval/index.md',
+        title: 'SVGAnimatedString: animVal property',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedstring/baseval/index.md',
+        title: 'SVGAnimatedString: baseVal property',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedstring/index.md',
+        title: 'SVGAnimatedString',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatedtransformlist/index.md',
+        title: 'SVGAnimatedTransformList',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimateelement/index.md',
+        title: 'SVGAnimateElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatemotionelement/index.md',
+        title: 'SVGAnimateMotionElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimatetransformelement/index.md',
+        title: 'SVGAnimateTransformElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimationelement/beginevent_event/index.md',
+        title: 'SVGAnimationElement: beginEvent event',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimationelement/endevent_event/index.md',
+        title: 'SVGAnimationElement: endEvent event',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimationelement/index.md',
+        title: 'SVGAnimationElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimationelement/repeatevent_event/index.md',
+        title: 'SVGAnimationElement: repeatEvent event',
+    },
+    {
+        path: 'lib/javascript/web_api/svganimationelement/targetelement/index.md',
+        title: 'SVGAnimationElement: targetElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgcircleelement/cx/index.md',
+        title: 'SVGCircleElement: cx property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgcircleelement/cy/index.md',
+        title: 'SVGCircleElement: cy property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgcircleelement/index.md',
+        title: 'SVGCircleElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgcircleelement/r/index.md',
+        title: 'SVGCircleElement: r property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgclippathelement/clippathunits/index.md',
+        title: 'SVGClipPathElement: clipPathUnits property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgclippathelement/index.md',
+        title: 'SVGClipPathElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgclippathelement/transform/index.md',
+        title: 'SVGClipPathElement: transform property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgcomponenttransferfunctionelement/index.md',
+        title: 'SVGComponentTransferFunctionElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgcursorelement/index.md',
+        title: 'SVGCursorElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgdefselement/index.md',
+        title: 'SVGDefsElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgdescelement/index.md',
+        title: 'SVGDescElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgelement/attributestylemap/index.md',
+        title: 'SVGElement: attributeStyleMap property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgelement/dataset/index.md',
+        title: 'SVGElement: dataset property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgelement/error_event/index.md',
+        title: 'SVGElement: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/svgelement/index.md',
+        title: 'SVGElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgelement/load_event/index.md',
+        title: 'SVGElement: load event',
+    },
+    {
+        path: 'lib/javascript/web_api/svgelement/style/index.md',
+        title: 'SVGElement: style property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgellipseelement/index.md',
+        title: 'SVGEllipseElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgevent/index.md',
+        title: 'SVGEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfeblendelement/index.md',
+        title: 'SVGFEBlendElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfecolormatrixelement/index.md',
+        title: 'SVGFEColorMatrixElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfecomponenttransferelement/index.md',
+        title: 'SVGFEComponentTransferElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfecompositeelement/index.md',
+        title: 'SVGFECompositeElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfeconvolvematrixelement/index.md',
+        title: 'SVGFEConvolveMatrixElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfediffuselightingelement/index.md',
+        title: 'SVGFEDiffuseLightingElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfedisplacementmapelement/index.md',
+        title: 'SVGFEDisplacementMapElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfedistantlightelement/index.md',
+        title: 'SVGFEDistantLightElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfedropshadowelement/index.md',
+        title: 'SVGFEDropShadowElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfefloodelement/index.md',
+        title: 'SVGFEFloodElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfefuncaelement/index.md',
+        title: 'SVGFEFuncAElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfefuncbelement/index.md',
+        title: 'SVGFEFuncBElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfefuncgelement/index.md',
+        title: 'SVGFEFuncGElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfefuncrelement/index.md',
+        title: 'SVGFEFuncRElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfegaussianblurelement/index.md',
+        title: 'SVGFEGaussianBlurElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfeimageelement/index.md',
+        title: 'SVGFEImageElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfemergeelement/index.md',
+        title: 'SVGFEMergeElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfemergenodeelement/index.md',
+        title: 'SVGFEMergeNodeElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfemorphologyelement/index.md',
+        title: 'SVGFEMorphologyElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfeoffsetelement/index.md',
+        title: 'SVGFEOffsetElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfepointlightelement/index.md',
+        title: 'SVGFEPointLightElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfespecularlightingelement/index.md',
+        title: 'SVGFESpecularLightingElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfespotlightelement/index.md',
+        title: 'SVGFESpotLightElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfetileelement/index.md',
+        title: 'SVGFETileElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfeturbulenceelement/index.md',
+        title: 'SVGFETurbulenceElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfilterelement/index.md',
+        title: 'SVGFilterElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfontelement/index.md',
+        title: 'SVGFontElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfontfaceelement/index.md',
+        title: 'SVGFontFaceElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfontfaceformatelement/index.md',
+        title: 'SVGFontFaceFormatElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfontfacenameelement/index.md',
+        title: 'SVGFontFaceNameElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfontfacesrcelement/index.md',
+        title: 'SVGFontFaceSrcElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgfontfaceurielement/index.md',
+        title: 'SVGFontFaceUriElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgforeignobjectelement/index.md',
+        title: 'SVGForeignObjectElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svggelement/index.md',
+        title: 'SVGGElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svggeometryelement/getpointatlength/index.md',
+        title: 'SVGGeometryElement: getPointAtLength() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svggeometryelement/gettotallength/index.md',
+        title: 'SVGGeometryElement: getTotalLength() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svggeometryelement/index.md',
+        title: 'SVGGeometryElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svggeometryelement/ispointinfill/index.md',
+        title: 'SVGGeometryElement: isPointInFill() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svggeometryelement/ispointinstroke/index.md',
+        title: 'SVGGeometryElement: isPointInStroke() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svggeometryelement/pathlength/index.md',
+        title: 'SVGGeometryElement: pathLength property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgglyphelement/index.md',
+        title: 'SVGGlyphElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgglyphrefelement/index.md',
+        title: 'SVGGlyphRefElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svggradientelement/index.md',
+        title: 'SVGGradientElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svggraphicselement/copy_event/index.md',
+        title: 'SVGGraphicsElement: copy event',
+    },
+    {
+        path: 'lib/javascript/web_api/svggraphicselement/cut_event/index.md',
+        title: 'SVGGraphicsElement: cut event',
+    },
+    {
+        path: 'lib/javascript/web_api/svggraphicselement/getbbox/index.md',
+        title: 'SVGGraphicsElement: getBBox() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svggraphicselement/index.md',
+        title: 'SVGGraphicsElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svggraphicselement/paste_event/index.md',
+        title: 'SVGGraphicsElement: paste event',
+    },
+    {
+        path: 'lib/javascript/web_api/svghkernelement/index.md',
+        title: 'SVGHKernElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgimageelement/decode/index.md',
+        title: 'SVGImageElement: decode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svgimageelement/decoding/index.md',
+        title: 'SVGImageElement: decoding property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgimageelement/height/index.md',
+        title: 'SVGImageElement: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgimageelement/index.md',
+        title: 'SVGImageElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgimageelement/preserveaspectratio/index.md',
+        title: 'SVGImageElement: preserveAspectRatio property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgimageelement/width/index.md',
+        title: 'SVGImageElement: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgimageelement/x/index.md',
+        title: 'SVGImageElement: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgimageelement/y/index.md',
+        title: 'SVGImageElement: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/svglength/index.md',
+        title: 'SVGLength',
+    },
+    {
+        path: 'lib/javascript/web_api/svglengthlist/index.md',
+        title: 'SVGLengthList',
+    },
+    {
+        path: 'lib/javascript/web_api/svglineargradientelement/index.md',
+        title: 'SVGLinearGradientElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svglineelement/index.md',
+        title: 'SVGLineElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmarkerelement/index.md',
+        title: 'SVGMarkerElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmarkerelement/markerheight/index.md',
+        title: 'SVGMarkerElement: markerHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmarkerelement/markerunits/index.md',
+        title: 'SVGMarkerElement: markerUnits property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmarkerelement/markerwidth/index.md',
+        title: 'SVGMarkerElement: markerWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmarkerelement/orientangle/index.md',
+        title: 'SVGMarkerElement: orientAngle property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmarkerelement/orienttype/index.md',
+        title: 'SVGMarkerElement: orientType property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmarkerelement/preserveaspectratio/index.md',
+        title: 'SVGMarkerElement: preserveAspectRatio property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmarkerelement/refx/index.md',
+        title: 'SVGMarkerElement: refX property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmarkerelement/refy/index.md',
+        title: 'SVGMarkerElement: refY property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmarkerelement/setorienttoangle/index.md',
+        title: 'SVGMarkerElement: setOrientToAngle() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmarkerelement/setorienttoauto/index.md',
+        title: 'SVGMarkerElement: setOrientToAuto() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmarkerelement/viewbox/index.md',
+        title: 'SVGMarkerElement: viewBox property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmaskelement/height/index.md',
+        title: 'SVGMaskElement: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmaskelement/index.md',
+        title: 'SVGMaskElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmaskelement/maskcontentunits/index.md',
+        title: 'SVGMaskElement: maskContentUnits property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmaskelement/maskunits/index.md',
+        title: 'SVGMaskElement: maskUnits property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmaskelement/width/index.md',
+        title: 'SVGMaskElement: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmaskelement/x/index.md',
+        title: 'SVGMaskElement: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmaskelement/y/index.md',
+        title: 'SVGMaskElement: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmetadataelement/index.md',
+        title: 'SVGMetadataElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmissingglyphelement/index.md',
+        title: 'SVGMissingGlyphElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgmpathelement/index.md',
+        title: 'SVGMPathElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgnumber/index.md',
+        title: 'SVGNumber',
+    },
+    {
+        path: 'lib/javascript/web_api/svgnumberlist/index.md',
+        title: 'SVGNumberList',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpathelement/index.md',
+        title: 'SVGPathElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpatternelement/index.md',
+        title: 'SVGPatternElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpoint/index.md',
+        title: 'SVGPoint',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpointlist/appenditem/index.md',
+        title: 'SVGPointList: appendItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpointlist/clear/index.md',
+        title: 'SVGPointList: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpointlist/getitem/index.md',
+        title: 'SVGPointList: getItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpointlist/index.md',
+        title: 'SVGPointList',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpointlist/initialize/index.md',
+        title: 'SVGPointList: initialize() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpointlist/insertitembefore/index.md',
+        title: 'SVGPointList: insertItemBefore() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpointlist/length/index.md',
+        title: 'SVGPointList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpointlist/numberofitems/index.md',
+        title: 'SVGPointList: numberOfItems property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpointlist/removeitem/index.md',
+        title: 'SVGPointList: removeItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpointlist/replaceitem/index.md',
+        title: 'SVGPointList: replaceItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpolygonelement/index.md',
+        title: 'SVGPolygonElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpolylineelement/index.md',
+        title: 'SVGPolylineElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgpreserveaspectratio/index.md',
+        title: 'SVGPreserveAspectRatio',
+    },
+    {
+        path: 'lib/javascript/web_api/svgradialgradientelement/index.md',
+        title: 'SVGRadialGradientElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgrect/index.md',
+        title: 'SVGRect',
+    },
+    {
+        path: 'lib/javascript/web_api/svgrect/the__x__property/index.md',
+        title: 'SVGRect: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgrectelement/index.md',
+        title: 'SVGRectElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgrenderingintent/index.md',
+        title: 'SVGRenderingIntent',
+    },
+    {
+        path: 'lib/javascript/web_api/svgscriptelement/index.md',
+        title: 'SVGScriptElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgsetelement/index.md',
+        title: 'SVGSetElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgstopelement/index.md',
+        title: 'SVGStopElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgstringlist/index.md',
+        title: 'SVGStringList',
+    },
+    {
+        path: 'lib/javascript/web_api/svgstyleelement/disabled/index.md',
+        title: 'SVGStyleElement: disabled property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgstyleelement/index.md',
+        title: 'SVGStyleElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgstyleelement/media/index.md',
+        title: 'SVGStyleElement: media property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgstyleelement/sheet/index.md',
+        title: 'SVGStyleElement: sheet property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgstyleelement/title/index.md',
+        title: 'SVGStyleElement: title property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgstyleelement/type/index.md',
+        title: 'SVGStyleElement: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgsvgelement/index.md',
+        title: 'SVGSVGElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgswitchelement/index.md',
+        title: 'SVGSwitchElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgsymbolelement/index.md',
+        title: 'SVGSymbolElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgtextcontentelement/index.md',
+        title: 'SVGTextContentElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgtextelement/index.md',
+        title: 'SVGTextElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgtextpathelement/index.md',
+        title: 'SVGTextPathElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgtextpositioningelement/index.md',
+        title: 'SVGTextPositioningElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgtitleelement/index.md',
+        title: 'SVGTitleElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgtransform/index.md',
+        title: 'SVGTransform',
+    },
+    {
+        path: 'lib/javascript/web_api/svgtransformlist/index.md',
+        title: 'SVGTransformList',
+    },
+    {
+        path: 'lib/javascript/web_api/svgtrefelement/index.md',
+        title: 'SVGTRefElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgtspanelement/index.md',
+        title: 'SVGTSpanElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgunittypes/index.md',
+        title: 'SVGUnitTypes',
+    },
+    {
+        path: 'lib/javascript/web_api/svguseelement/index.md',
+        title: 'SVGUseElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgviewelement/index.md',
+        title: 'SVGViewElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgvkernelement/index.md',
+        title: 'SVGVKernElement',
+    },
+    {
+        path: 'lib/javascript/web_api/syncevent/index.md',
+        title: 'SyncEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/syncevent/lastchance/index.md',
+        title: 'SyncEvent: lastChance property',
+    },
+    {
+        path: 'lib/javascript/web_api/syncevent/syncevent/index.md',
+        title: 'SyncEvent: SyncEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/syncevent/tag/index.md',
+        title: 'SyncEvent: tag property',
+    },
+    {
+        path: 'lib/javascript/web_api/syncmanager/gettags/index.md',
+        title: 'SyncManager: getTags() method',
+    },
+    {
+        path: 'lib/javascript/web_api/syncmanager/index.md',
+        title: 'SyncManager',
+    },
+    {
+        path: 'lib/javascript/web_api/syncmanager/register/index.md',
+        title: 'SyncManager: register() method',
+    },
+    {
+        path: 'lib/javascript/web_api/taskattributiontiming/containerid/index.md',
+        title: 'TaskAttributionTiming: containerId property',
+    },
+    {
+        path: 'lib/javascript/web_api/taskattributiontiming/containername/index.md',
+        title: 'TaskAttributionTiming: containerName property',
+    },
+    {
+        path: 'lib/javascript/web_api/taskattributiontiming/containersrc/index.md',
+        title: 'TaskAttributionTiming: containerSrc property',
+    },
+    {
+        path: 'lib/javascript/web_api/taskattributiontiming/containertype/index.md',
+        title: 'TaskAttributionTiming: containerType property',
+    },
+    {
+        path: 'lib/javascript/web_api/taskattributiontiming/index.md',
+        title: 'TaskAttributionTiming',
+    },
+    {
+        path: 'lib/javascript/web_api/taskattributiontiming/tojson/index.md',
+        title: 'TaskAttributionTiming: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/taskcontroller/index.md',
+        title: 'TaskController',
+    },
+    {
+        path: 'lib/javascript/web_api/taskcontroller/setpriority/index.md',
+        title: 'TaskController: setPriority() method',
+    },
+    {
+        path: 'lib/javascript/web_api/taskcontroller/taskcontroller/index.md',
+        title: 'TaskController: TaskController() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/taskprioritychangeevent/index.md',
+        title: 'TaskPriorityChangeEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/taskprioritychangeevent/previouspriority/index.md',
+        title: 'TaskPriorityChangeEvent: previousPriority property',
+    },
+    {
+        path: 'lib/javascript/web_api/taskprioritychangeevent/taskprioritychangeevent/index.md',
+        title: 'TaskPriorityChangeEvent: TaskPriorityChangeEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/tasksignal/any_static/index.md',
+        title: 'TaskSignal: any() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/tasksignal/index.md',
+        title: 'TaskSignal',
+    },
+    {
+        path: 'lib/javascript/web_api/tasksignal/priority/index.md',
+        title: 'TaskSignal: priority property',
+    },
+    {
+        path: 'lib/javascript/web_api/tasksignal/prioritychange_event/index.md',
+        title: 'TaskSignal: prioritychange event',
+    },
+    {
+        path: 'lib/javascript/web_api/text/assignedslot/index.md',
+        title: 'Text: assignedSlot property',
+    },
+    {
+        path: 'lib/javascript/web_api/text/index.md',
+        title: 'Text',
+    },
+    {
+        path: 'lib/javascript/web_api/text/splittext/index.md',
+        title: 'Text: splitText() method',
+    },
+    {
+        path: 'lib/javascript/web_api/text/text/index.md',
+        title: 'Text: Text() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/text/wholetext/index.md',
+        title: 'Text: wholeText property',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoder/decode/index.md',
+        title: 'TextDecoder: decode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoder/encoding/index.md',
+        title: 'TextDecoder: encoding property',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoder/fatal/index.md',
+        title: 'TextDecoder: fatal property',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoder/ignorebom/index.md',
+        title: 'TextDecoder: ignoreBOM property',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoder/index.md',
+        title: 'TextDecoder',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoder/textdecoder/index.md',
+        title: 'TextDecoder: TextDecoder() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoderstream/encoding/index.md',
+        title: 'TextDecoderStream: encoding property',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoderstream/fatal/index.md',
+        title: 'TextDecoderStream: fatal property',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoderstream/ignorebom/index.md',
+        title: 'TextDecoderStream: ignoreBOM property',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoderstream/index.md',
+        title: 'TextDecoderStream',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoderstream/readable/index.md',
+        title: 'TextDecoderStream: readable property',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoderstream/textdecoderstream/index.md',
+        title: 'TextDecoderStream: TextDecoderStream() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/textdecoderstream/writable/index.md',
+        title: 'TextDecoderStream: writable property',
+    },
+    {
+        path: 'lib/javascript/web_api/textencoder/encode/index.md',
+        title: 'TextEncoder: encode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/textencoder/encodeinto/index.md',
+        title: 'TextEncoder: encodeInto() method',
+    },
+    {
+        path: 'lib/javascript/web_api/textencoder/encoding/index.md',
+        title: 'TextEncoder: encoding property',
+    },
+    {
+        path: 'lib/javascript/web_api/textencoder/index.md',
+        title: 'TextEncoder',
+    },
+    {
+        path: 'lib/javascript/web_api/textencoder/textencoder/index.md',
+        title: 'TextEncoder: TextEncoder() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/textencoderstream/encoding/index.md',
+        title: 'TextEncoderStream: encoding property',
+    },
+    {
+        path: 'lib/javascript/web_api/textencoderstream/index.md',
+        title: 'TextEncoderStream',
+    },
+    {
+        path: 'lib/javascript/web_api/textencoderstream/readable/index.md',
+        title: 'TextEncoderStream: readable property',
+    },
+    {
+        path: 'lib/javascript/web_api/textencoderstream/textencoderstream/index.md',
+        title: 'TextEncoderStream: TextEncoderStream() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/textencoderstream/writable/index.md',
+        title: 'TextEncoderStream: writable property',
+    },
+    {
+        path: 'lib/javascript/web_api/textevent/data/index.md',
+        title: 'TextEvent: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/textevent/index.md',
+        title: 'TextEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/textevent/inittextevent/index.md',
+        title: 'TextEvent: initTextEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/textformat/index.md',
+        title: 'TextFormat',
+    },
+    {
+        path: 'lib/javascript/web_api/textformat/rangeend/index.md',
+        title: 'TextFormat: rangeEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/textformat/rangestart/index.md',
+        title: 'TextFormat: rangeStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/textformat/textformat/index.md',
+        title: 'TextFormat: TextFormat() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/textformat/underlinestyle/index.md',
+        title: 'TextFormat: underlineStyle property',
+    },
+    {
+        path: 'lib/javascript/web_api/textformat/underlinethickness/index.md',
+        title: 'TextFormat: underlineThickness property',
+    },
+    {
+        path: 'lib/javascript/web_api/textformatupdateevent/gettextformats/index.md',
+        title: 'TextFormatUpdateEvent: getTextFormats() method',
+    },
+    {
+        path: 'lib/javascript/web_api/textformatupdateevent/index.md',
+        title: 'TextFormatUpdateEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/textformatupdateevent/textformatupdateevent/index.md',
+        title: 'TextFormatUpdateEvent: TextFormatUpdateEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/actualboundingboxascent/index.md',
+        title: 'TextMetrics: actualBoundingBoxAscent property',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/actualboundingboxdescent/index.md',
+        title: 'TextMetrics: actualBoundingBoxDescent property',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/actualboundingboxleft/index.md',
+        title: 'TextMetrics: actualBoundingBoxLeft property',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/actualboundingboxright/index.md',
+        title: 'TextMetrics: actualBoundingBoxRight property',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/alphabeticbaseline/index.md',
+        title: 'TextMetrics: alphabeticBaseline property',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/emheightascent/index.md',
+        title: 'TextMetrics: emHeightAscent property',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/emheightdescent/index.md',
+        title: 'TextMetrics: emHeightDescent property',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/fontboundingboxascent/index.md',
+        title: 'TextMetrics: fontBoundingBoxAscent property',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/fontboundingboxdescent/index.md',
+        title: 'TextMetrics: fontBoundingBoxDescent property',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/hangingbaseline/index.md',
+        title: 'TextMetrics: hangingBaseline property',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/ideographicbaseline/index.md',
+        title: 'TextMetrics: ideographicBaseline property',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/index.md',
+        title: 'TextMetrics',
+    },
+    {
+        path: 'lib/javascript/web_api/textmetrics/width/index.md',
+        title: 'TextMetrics: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrack/activecues/index.md',
+        title: 'TextTrack: activeCues property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrack/addcue/index.md',
+        title: 'TextTrack: addCue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrack/cuechange_event/index.md',
+        title: 'TextTrack: cuechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrack/cues/index.md',
+        title: 'TextTrack: cues property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrack/id/index.md',
+        title: 'TextTrack: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrack/inbandmetadatatrackdispatchtype/index.md',
+        title: 'TextTrack: inBandMetadataTrackDispatchType property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrack/index.md',
+        title: 'TextTrack',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrack/kind/index.md',
+        title: 'TextTrack: kind property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrack/label/index.md',
+        title: 'TextTrack: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrack/language/index.md',
+        title: 'TextTrack: language property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrack/mode/index.md',
+        title: 'TextTrack: mode property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrack/removecue/index.md',
+        title: 'TextTrack: removeCue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrackcue/endtime/index.md',
+        title: 'TextTrackCue: endTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrackcue/enter_event/index.md',
+        title: 'TextTrackCue: enter event',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrackcue/exit_event/index.md',
+        title: 'TextTrackCue: exit event',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrackcue/id/index.md',
+        title: 'TextTrackCue: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrackcue/index.md',
+        title: 'TextTrackCue',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrackcue/pauseonexit/index.md',
+        title: 'TextTrackCue: pauseOnExit property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrackcue/starttime/index.md',
+        title: 'TextTrackCue: startTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrackcue/track/index.md',
+        title: 'TextTrackCue: track property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrackcuelist/getcuebyid/index.md',
+        title: 'TextTrackCueList: getCueById() method',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrackcuelist/index.md',
+        title: 'TextTrackCueList',
+    },
+    {
+        path: 'lib/javascript/web_api/texttrackcuelist/length/index.md',
+        title: 'TextTrackCueList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttracklist/addtrack_event/index.md',
+        title: 'TextTrackList: addtrack event',
+    },
+    {
+        path: 'lib/javascript/web_api/texttracklist/change_event/index.md',
+        title: 'TextTrackList: change event',
+    },
+    {
+        path: 'lib/javascript/web_api/texttracklist/gettrackbyid/index.md',
+        title: 'TextTrackList: getTrackById() method',
+    },
+    {
+        path: 'lib/javascript/web_api/texttracklist/index.md',
+        title: 'TextTrackList',
+    },
+    {
+        path: 'lib/javascript/web_api/texttracklist/length/index.md',
+        title: 'TextTrackList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/texttracklist/removetrack_event/index.md',
+        title: 'TextTrackList: removeTrack event',
+    },
+    {
+        path: 'lib/javascript/web_api/textupdateevent/index.md',
+        title: 'TextUpdateEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/textupdateevent/selectionend/index.md',
+        title: 'TextUpdateEvent: selectionEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/textupdateevent/selectionstart/index.md',
+        title: 'TextUpdateEvent: selectionStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/textupdateevent/text/index.md',
+        title: 'TextUpdateEvent: text property',
+    },
+    {
+        path: 'lib/javascript/web_api/textupdateevent/textupdateevent/index.md',
+        title: 'TextUpdateEvent: TextUpdateEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/textupdateevent/updaterangeend/index.md',
+        title: 'TextUpdateEvent: updateRangeEnd property',
+    },
+    {
+        path: 'lib/javascript/web_api/textupdateevent/updaterangestart/index.md',
+        title: 'TextUpdateEvent: updateRangeStart property',
+    },
+    {
+        path: 'lib/javascript/web_api/timeevent/index.md',
+        title: 'TimeEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/timeranges/end/index.md',
+        title: 'TimeRanges: end() method',
+    },
+    {
+        path: 'lib/javascript/web_api/timeranges/index.md',
+        title: 'TimeRanges',
+    },
+    {
+        path: 'lib/javascript/web_api/timeranges/length/index.md',
+        title: 'TimeRanges: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/timeranges/start/index.md',
+        title: 'TimeRanges: start() method',
+    },
+    {
+        path: 'lib/javascript/web_api/toggleevent/index.md',
+        title: 'ToggleEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/toggleevent/newstate/index.md',
+        title: 'ToggleEvent: newState property',
+    },
+    {
+        path: 'lib/javascript/web_api/toggleevent/oldstate/index.md',
+        title: 'ToggleEvent: oldState property',
+    },
+    {
+        path: 'lib/javascript/web_api/toggleevent/toggleevent/index.md',
+        title: 'ToggleEvent: ToggleEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/topics_api/index.md',
+        title: 'Topics API',
+    },
+    {
+        path: 'lib/javascript/web_api/topics_api/using/index.md',
+        title: 'Using the Topics API',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/clientx/index.md',
+        title: 'Touch: clientX property',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/clienty/index.md',
+        title: 'Touch: clientY property',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/force/index.md',
+        title: 'Touch: force property',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/identifier/index.md',
+        title: 'Touch: identifier property',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/index.md',
+        title: 'Touch',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/pagex/index.md',
+        title: 'Touch: pageX property',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/pagey/index.md',
+        title: 'Touch: pageY property',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/radiusx/index.md',
+        title: 'Touch: radiusX property',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/radiusy/index.md',
+        title: 'Touch: radiusY property',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/rotationangle/index.md',
+        title: 'Touch: rotationAngle property',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/screenx/index.md',
+        title: 'Touch: screenX property',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/screeny/index.md',
+        title: 'Touch: screenY property',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/target/index.md',
+        title: 'Touch: target property',
+    },
+    {
+        path: 'lib/javascript/web_api/touch/touch/index.md',
+        title: 'Touch: Touch() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/touch_events/index.md',
+        title: 'Touch events',
+    },
+    {
+        path: 'lib/javascript/web_api/touch_events/multi-touch_interaction/index.md',
+        title: 'Multi-touch interaction',
+    },
+    {
+        path: 'lib/javascript/web_api/touch_events/using_touch_events/index.md',
+        title: 'Using Touch Events',
+    },
+    {
+        path: 'lib/javascript/web_api/touchevent/altkey/index.md',
+        title: 'TouchEvent: altKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/touchevent/changedtouches/index.md',
+        title: 'TouchEvent: changedTouches property',
+    },
+    {
+        path: 'lib/javascript/web_api/touchevent/ctrlkey/index.md',
+        title: 'TouchEvent: ctrlKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/touchevent/index.md',
+        title: 'TouchEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/touchevent/metakey/index.md',
+        title: 'TouchEvent: metaKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/touchevent/shiftkey/index.md',
+        title: 'TouchEvent: shiftKey property',
+    },
+    {
+        path: 'lib/javascript/web_api/touchevent/targettouches/index.md',
+        title: 'TouchEvent: targetTouches property',
+    },
+    {
+        path: 'lib/javascript/web_api/touchevent/touches/index.md',
+        title: 'TouchEvent: touches property',
+    },
+    {
+        path: 'lib/javascript/web_api/touchevent/touchevent/index.md',
+        title: 'TouchEvent: TouchEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/touchlist/index.md',
+        title: 'TouchList',
+    },
+    {
+        path: 'lib/javascript/web_api/touchlist/item/index.md',
+        title: 'TouchList: item() method',
+    },
+    {
+        path: 'lib/javascript/web_api/touchlist/length/index.md',
+        title: 'TouchList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/trackevent/index.md',
+        title: 'TrackEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/trackevent/track/index.md',
+        title: 'TrackEvent: track property',
+    },
+    {
+        path: 'lib/javascript/web_api/trackevent/trackevent/index.md',
+        title: 'TrackEvent: TrackEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/transformstream/index.md',
+        title: 'TransformStream',
+    },
+    {
+        path: 'lib/javascript/web_api/transformstream/readable/index.md',
+        title: 'TransformStream: readable property',
+    },
+    {
+        path: 'lib/javascript/web_api/transformstream/transformstream/index.md',
+        title: 'TransformStream: TransformStream() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/transformstream/writable/index.md',
+        title: 'TransformStream: writable property',
+    },
+    {
+        path: 'lib/javascript/web_api/transformstreamdefaultcontroller/desiredsize/index.md',
+        title: 'TransformStreamDefaultController: desiredSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/transformstreamdefaultcontroller/enqueue/index.md',
+        title: 'TransformStreamDefaultController: enqueue() method',
+    },
+    {
+        path: 'lib/javascript/web_api/transformstreamdefaultcontroller/error/index.md',
+        title: 'TransformStreamDefaultController: error() method',
+    },
+    {
+        path: 'lib/javascript/web_api/transformstreamdefaultcontroller/index.md',
+        title: 'TransformStreamDefaultController',
+    },
+    {
+        path: 'lib/javascript/web_api/transformstreamdefaultcontroller/terminate/index.md',
+        title: 'TransformStreamDefaultController: terminate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/transitionevent/elapsedtime/index.md',
+        title: 'TransitionEvent: elapsedTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/transitionevent/index.md',
+        title: 'TransitionEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/transitionevent/propertyname/index.md',
+        title: 'TransitionEvent: propertyName property',
+    },
+    {
+        path: 'lib/javascript/web_api/transitionevent/pseudoelement/index.md',
+        title: 'TransitionEvent: pseudoElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/transitionevent/transitionevent/index.md',
+        title: 'TransitionEvent: TransitionEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/treewalker/currentnode/index.md',
+        title: 'TreeWalker: currentNode property',
+    },
+    {
+        path: 'lib/javascript/web_api/treewalker/filter/index.md',
+        title: 'TreeWalker: filter property',
+    },
+    {
+        path: 'lib/javascript/web_api/treewalker/firstchild/index.md',
+        title: 'TreeWalker: firstChild() method',
+    },
+    {
+        path: 'lib/javascript/web_api/treewalker/index.md',
+        title: 'TreeWalker',
+    },
+    {
+        path: 'lib/javascript/web_api/treewalker/lastchild/index.md',
+        title: 'TreeWalker: lastChild() method',
+    },
+    {
+        path: 'lib/javascript/web_api/treewalker/nextnode/index.md',
+        title: 'TreeWalker: nextNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/treewalker/nextsibling/index.md',
+        title: 'TreeWalker: nextSibling() method',
+    },
+    {
+        path: 'lib/javascript/web_api/treewalker/parentnode/index.md',
+        title: 'TreeWalker: parentNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/treewalker/previousnode/index.md',
+        title: 'TreeWalker: previousNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/treewalker/previoussibling/index.md',
+        title: 'TreeWalker: previousSibling() method',
+    },
+    {
+        path: 'lib/javascript/web_api/treewalker/root/index.md',
+        title: 'TreeWalker: root property',
+    },
+    {
+        path: 'lib/javascript/web_api/treewalker/whattoshow/index.md',
+        title: 'TreeWalker: whatToShow property',
+    },
+    {
+        path: 'lib/javascript/web_api/trusted_types_api/index.md',
+        title: 'Trusted Types API',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedhtml/index.md',
+        title: 'TrustedHTML',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedhtml/tojson/index.md',
+        title: 'TrustedHTML: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedhtml/tostring/index.md',
+        title: 'TrustedHTML: toString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedscript/index.md',
+        title: 'TrustedScript',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedscript/tojson/index.md',
+        title: 'TrustedScript: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedscript/tostring/index.md',
+        title: 'TrustedScript: toString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedscripturl/index.md',
+        title: 'TrustedScriptURL',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedscripturl/tojson/index.md',
+        title: 'TrustedScriptURL: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedscripturl/tostring/index.md',
+        title: 'TrustedScriptURL: toString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicy/createhtml/index.md',
+        title: 'TrustedTypePolicy: createHTML() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicy/createscript/index.md',
+        title: 'TrustedTypePolicy: createScript() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicy/createscripturl/index.md',
+        title: 'TrustedTypePolicy: createScriptURL() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicy/index.md',
+        title: 'TrustedTypePolicy',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicy/name/index.md',
+        title: 'TrustedTypePolicy: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicyfactory/createpolicy/index.md',
+        title: 'TrustedTypePolicyFactory: createPolicy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicyfactory/defaultpolicy/index.md',
+        title: 'TrustedTypePolicyFactory: defaultPolicy property',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicyfactory/emptyhtml/index.md',
+        title: 'TrustedTypePolicyFactory: emptyHTML property',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicyfactory/emptyscript/index.md',
+        title: 'TrustedTypePolicyFactory: emptyScript property',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicyfactory/getattributetype/index.md',
+        title: 'TrustedTypePolicyFactory: getAttributeType() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicyfactory/getpropertytype/index.md',
+        title: 'TrustedTypePolicyFactory: getPropertyType() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicyfactory/index.md',
+        title: 'TrustedTypePolicyFactory',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicyfactory/ishtml/index.md',
+        title: 'TrustedTypePolicyFactory: isHTML() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicyfactory/isscript/index.md',
+        title: 'TrustedTypePolicyFactory: isScript() method',
+    },
+    {
+        path: 'lib/javascript/web_api/trustedtypepolicyfactory/isscripturl/index.md',
+        title: 'TrustedTypePolicyFactory: isScriptURL() method',
+    },
+    {
+        path: 'lib/javascript/web_api/ui_events/index.md',
+        title: 'UI Events',
+    },
+    {
+        path: 'lib/javascript/web_api/ui_events/keyboard_event_code_values/index.md',
+        title: 'Code values for keyboard events',
+    },
+    {
+        path: 'lib/javascript/web_api/ui_events/keyboard_event_key_values/index.md',
+        title: 'Key values for keyboard events',
+    },
+    {
+        path: 'lib/javascript/web_api/uievent/detail/index.md',
+        title: 'UIEvent: detail property',
+    },
+    {
+        path: 'lib/javascript/web_api/uievent/index.md',
+        title: 'UIEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/uievent/inituievent/index.md',
+        title: 'UIEvent: initUIEvent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/uievent/sourcecapabilities/index.md',
+        title: 'UIEvent: sourceCapabilities property',
+    },
+    {
+        path: 'lib/javascript/web_api/uievent/uievent/index.md',
+        title: 'UIEvent: UIEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/uievent/view/index.md',
+        title: 'UIEvent: view property',
+    },
+    {
+        path: 'lib/javascript/web_api/uievent/which/index.md',
+        title: 'UIEvent: which property',
+    },
+    {
+        path: 'lib/javascript/web_api/url/canparse_static/index.md',
+        title: 'URL: canParse() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/url/createobjecturl_static/index.md',
+        title: 'URL: createObjectURL() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/url/hash/index.md',
+        title: 'URL: hash property',
+    },
+    {
+        path: 'lib/javascript/web_api/url/host/index.md',
+        title: 'URL: host property',
+    },
+    {
+        path: 'lib/javascript/web_api/url/hostname/index.md',
+        title: 'URL: hostname property',
+    },
+    {
+        path: 'lib/javascript/web_api/url/href/index.md',
+        title: 'URL: href property',
+    },
+    {
+        path: 'lib/javascript/web_api/url/index.md',
+        title: 'URL',
+    },
+    {
+        path: 'lib/javascript/web_api/url/origin/index.md',
+        title: 'URL: origin property',
+    },
+    {
+        path: 'lib/javascript/web_api/url/parse_static/index.md',
+        title: 'URL: parse() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/url/password/index.md',
+        title: 'URL: password property',
+    },
+    {
+        path: 'lib/javascript/web_api/url/pathname/index.md',
+        title: 'URL: pathname property',
+    },
+    {
+        path: 'lib/javascript/web_api/url/port/index.md',
+        title: 'URL: port property',
+    },
+    {
+        path: 'lib/javascript/web_api/url/protocol/index.md',
+        title: 'URL: protocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/url/revokeobjecturl_static/index.md',
+        title: 'URL: revokeObjectURL() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/url/search/index.md',
+        title: 'URL: search property',
+    },
+    {
+        path: 'lib/javascript/web_api/url/searchparams/index.md',
+        title: 'URL: searchParams property',
+    },
+    {
+        path: 'lib/javascript/web_api/url/tojson/index.md',
+        title: 'URL: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/url/tostring/index.md',
+        title: 'URL: toString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/url/url/index.md',
+        title: 'URL: URL() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/url/username/index.md',
+        title: 'URL: username property',
+    },
+    {
+        path: 'lib/javascript/web_api/url_api/index.md',
+        title: 'URL API',
+    },
+    {
+        path: 'lib/javascript/web_api/url_api/resolving_relative_references/index.md',
+        title: 'Resolving relative references to a URL',
+    },
+    {
+        path: 'lib/javascript/web_api/url_pattern_api/index.md',
+        title: 'URL Pattern API',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/exec/index.md',
+        title: 'URLPattern: exec() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/hash/index.md',
+        title: 'URLPattern: hash property',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/hostname/index.md',
+        title: 'URLPattern: hostname property',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/index.md',
+        title: 'URLPattern',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/password/index.md',
+        title: 'URLPattern: password property',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/pathname/index.md',
+        title: 'URLPattern: pathname property',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/port/index.md',
+        title: 'URLPattern: port property',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/protocol/index.md',
+        title: 'URLPattern: protocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/search/index.md',
+        title: 'URLPattern: search property',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/test/index.md',
+        title: 'URLPattern: test() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/urlpattern/index.md',
+        title: 'URLPattern: URLPattern() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/username/index.md',
+        title: 'URLPattern: username property',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/append/index.md',
+        title: 'URLSearchParams: append() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/delete/index.md',
+        title: 'URLSearchParams: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/entries/index.md',
+        title: 'URLSearchParams: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/foreach/index.md',
+        title: 'URLSearchParams: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/get/index.md',
+        title: 'URLSearchParams: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/getall/index.md',
+        title: 'URLSearchParams: getAll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/has/index.md',
+        title: 'URLSearchParams: has() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/index.md',
+        title: 'URLSearchParams',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/keys/index.md',
+        title: 'URLSearchParams: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/set/index.md',
+        title: 'URLSearchParams: set() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/size/index.md',
+        title: 'URLSearchParams: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/sort/index.md',
+        title: 'URLSearchParams: sort() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/tostring/index.md',
+        title: 'URLSearchParams: toString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/urlsearchparams/index.md',
+        title: 'URLSearchParams: URLSearchParams() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/urlsearchparams/values/index.md',
+        title: 'URLSearchParams: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usb/connect_event/index.md',
+        title: 'USB: connect event',
+    },
+    {
+        path: 'lib/javascript/web_api/usb/disconnect_event/index.md',
+        title: 'USB: disconnect event',
+    },
+    {
+        path: 'lib/javascript/web_api/usb/getdevices/index.md',
+        title: 'USB: getDevices() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usb/index.md',
+        title: 'USB',
+    },
+    {
+        path: 'lib/javascript/web_api/usb/requestdevice/index.md',
+        title: 'USB: requestDevice() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbalternateinterface/index.md',
+        title: 'USBAlternateInterface',
+    },
+    {
+        path: 'lib/javascript/web_api/usbconfiguration/configurationname/index.md',
+        title: 'USBConfiguration: configurationName property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbconfiguration/configurationvalue/index.md',
+        title: 'USBConfiguration: configurationValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbconfiguration/index.md',
+        title: 'USBConfiguration',
+    },
+    {
+        path: 'lib/javascript/web_api/usbconfiguration/interfaces/index.md',
+        title: 'USBConfiguration: interfaces property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbconfiguration/usbconfiguration/index.md',
+        title: 'USBConfiguration: USBConfiguration() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/usbconnectionevent/device/index.md',
+        title: 'USBConnectionEvent: device property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbconnectionevent/index.md',
+        title: 'USBConnectionEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/usbconnectionevent/usbconnectionevent/index.md',
+        title: 'USBConnectionEvent: USBConnectionEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/claiminterface/index.md',
+        title: 'USBDevice: claimInterface() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/clearhalt/index.md',
+        title: 'USBDevice: clearHalt() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/close/index.md',
+        title: 'USBDevice: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/configuration/index.md',
+        title: 'USBDevice: configuration property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/configurations/index.md',
+        title: 'USBDevice: configurations property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/controltransferin/index.md',
+        title: 'USBDevice: controlTransferIn() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/controltransferout/index.md',
+        title: 'USBDevice: controlTransferOut() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/deviceclass/index.md',
+        title: 'USBDevice: deviceClass property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/deviceprotocol/index.md',
+        title: 'USBDevice: deviceProtocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/devicesubclass/index.md',
+        title: 'USBDevice: deviceSubclass property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/deviceversionmajor/index.md',
+        title: 'USBDevice: deviceVersionMajor property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/deviceversionminor/index.md',
+        title: 'USBDevice: deviceVersionMinor property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/deviceversionsubminor/index.md',
+        title: 'USBDevice: deviceVersionSubminor property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/forget/index.md',
+        title: 'USBDevice: forget() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/index.md',
+        title: 'USBDevice',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/isochronoustransferin/index.md',
+        title: 'USBDevice: isochronousTransferIn() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/isochronoustransferout/index.md',
+        title: 'USBDevice: isochronousTransferOut() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/manufacturername/index.md',
+        title: 'USBDevice: manufacturerName property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/open/index.md',
+        title: 'USBDevice: open() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/opened/index.md',
+        title: 'USBDevice: opened property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/productid/index.md',
+        title: 'USBDevice: productId property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/productname/index.md',
+        title: 'USBDevice: productName property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/releaseinterface/index.md',
+        title: 'USBDevice: releaseInterface() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/reset/index.md',
+        title: 'USBDevice: reset() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/selectalternateinterface/index.md',
+        title: 'USBDevice: selectAlternateInterface() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/selectconfiguration/index.md',
+        title: 'USBDevice: selectConfiguration() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/serialnumber/index.md',
+        title: 'USBDevice: serialNumber property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/transferin/index.md',
+        title: 'USBDevice: transferIn() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/transferout/index.md',
+        title: 'USBDevice: transferOut() method',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/usbversionmajor/index.md',
+        title: 'USBDevice: usbVersionMajor property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/usbversionminor/index.md',
+        title: 'USBDevice: usbVersionMinor property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/usbversionsubminor/index.md',
+        title: 'USBDevice: usbVersionSubminor property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbdevice/vendorid/index.md',
+        title: 'USBDevice: vendorId property',
+    },
+    {
+        path: 'lib/javascript/web_api/usbendpoint/index.md',
+        title: 'USBEndpoint',
+    },
+    {
+        path: 'lib/javascript/web_api/usbinterface/index.md',
+        title: 'USBInterface',
+    },
+    {
+        path: 'lib/javascript/web_api/usbintransferresult/index.md',
+        title: 'USBInTransferResult',
+    },
+    {
+        path: 'lib/javascript/web_api/usbisochronousintransferpacket/index.md',
+        title: 'USBIsochronousInTransferPacket',
+    },
+    {
+        path: 'lib/javascript/web_api/usbisochronousintransferresult/index.md',
+        title: 'USBIsochronousInTransferResult',
+    },
+    {
+        path: 'lib/javascript/web_api/usbisochronousouttransferpacket/index.md',
+        title: 'USBIsochronousOutTransferPacket',
+    },
+    {
+        path: 'lib/javascript/web_api/usbisochronousouttransferresult/index.md',
+        title: 'USBIsochronousOutTransferResult',
+    },
+    {
+        path: 'lib/javascript/web_api/usbouttransferresult/index.md',
+        title: 'USBOutTransferResult',
+    },
+    {
+        path: 'lib/javascript/web_api/user-agent_client_hints_api/index.md',
+        title: 'User-Agent Client Hints API',
+    },
+    {
+        path: 'lib/javascript/web_api/useractivation/hasbeenactive/index.md',
+        title: 'UserActivation: hasBeenActive property',
+    },
+    {
+        path: 'lib/javascript/web_api/useractivation/index.md',
+        title: 'UserActivation',
+    },
+    {
+        path: 'lib/javascript/web_api/useractivation/isactive/index.md',
+        title: 'UserActivation: isActive property',
+    },
+    {
+        path: 'lib/javascript/web_api/validitystate/badinput/index.md',
+        title: 'ValidityState: badInput property',
+    },
+    {
+        path: 'lib/javascript/web_api/validitystate/customerror/index.md',
+        title: 'ValidityState: customError property',
+    },
+    {
+        path: 'lib/javascript/web_api/validitystate/index.md',
+        title: 'ValidityState',
+    },
+    {
+        path: 'lib/javascript/web_api/validitystate/patternmismatch/index.md',
+        title: 'ValidityState: patternMismatch property',
+    },
+    {
+        path: 'lib/javascript/web_api/validitystate/rangeoverflow/index.md',
+        title: 'ValidityState: rangeOverflow property',
+    },
+    {
+        path: 'lib/javascript/web_api/validitystate/rangeunderflow/index.md',
+        title: 'ValidityState: rangeUnderflow property',
+    },
+    {
+        path: 'lib/javascript/web_api/validitystate/stepmismatch/index.md',
+        title: 'ValidityState: stepMismatch property',
+    },
+    {
+        path: 'lib/javascript/web_api/validitystate/toolong/index.md',
+        title: 'ValidityState: tooLong property',
+    },
+    {
+        path: 'lib/javascript/web_api/validitystate/tooshort/index.md',
+        title: 'ValidityState: tooShort property',
+    },
+    {
+        path: 'lib/javascript/web_api/validitystate/typemismatch/index.md',
+        title: 'ValidityState: typeMismatch property',
+    },
+    {
+        path: 'lib/javascript/web_api/validitystate/valid/index.md',
+        title: 'ValidityState: valid property',
+    },
+    {
+        path: 'lib/javascript/web_api/validitystate/valuemissing/index.md',
+        title: 'ValidityState: valueMissing property',
+    },
+    {
+        path: 'lib/javascript/web_api/vibration_api/index.md',
+        title: 'Vibration API',
+    },
+    {
+        path: 'lib/javascript/web_api/videocolorspace/fullrange/index.md',
+        title: 'VideoColorSpace: fullRange property',
+    },
+    {
+        path: 'lib/javascript/web_api/videocolorspace/index.md',
+        title: 'VideoColorSpace',
+    },
+    {
+        path: 'lib/javascript/web_api/videocolorspace/matrix/index.md',
+        title: 'VideoColorSpace: matrix property',
+    },
+    {
+        path: 'lib/javascript/web_api/videocolorspace/primaries/index.md',
+        title: 'VideoColorSpace: primaries property',
+    },
+    {
+        path: 'lib/javascript/web_api/videocolorspace/tojson/index.md',
+        title: 'VideoColorSpace: toJSON() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videocolorspace/transfer/index.md',
+        title: 'VideoColorSpace: transfer property',
+    },
+    {
+        path: 'lib/javascript/web_api/videocolorspace/videocolorspace/index.md',
+        title: 'VideoColorSpace: VideoColorSpace() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/videodecoder/close/index.md',
+        title: 'VideoDecoder: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videodecoder/configure/index.md',
+        title: 'VideoDecoder: configure() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videodecoder/decode/index.md',
+        title: 'VideoDecoder: decode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videodecoder/decodequeuesize/index.md',
+        title: 'VideoDecoder: decodeQueueSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/videodecoder/dequeue_event/index.md',
+        title: 'VideoDecoder: dequeue event',
+    },
+    {
+        path: 'lib/javascript/web_api/videodecoder/flush/index.md',
+        title: 'VideoDecoder: flush() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videodecoder/index.md',
+        title: 'VideoDecoder',
+    },
+    {
+        path: 'lib/javascript/web_api/videodecoder/isconfigsupported_static/index.md',
+        title: 'VideoDecoder: isConfigSupported() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/videodecoder/reset/index.md',
+        title: 'VideoDecoder: reset() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videodecoder/state/index.md',
+        title: 'VideoDecoder: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/videodecoder/videodecoder/index.md',
+        title: 'VideoDecoder: VideoDecoder() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/videoencoder/close/index.md',
+        title: 'VideoEncoder: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videoencoder/configure/index.md',
+        title: 'VideoEncoder: configure() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videoencoder/dequeue_event/index.md',
+        title: 'VideoEncoder: dequeue event',
+    },
+    {
+        path: 'lib/javascript/web_api/videoencoder/encode/index.md',
+        title: 'VideoEncoder: encode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videoencoder/encodequeuesize/index.md',
+        title: 'VideoEncoder: encodeQueueSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoencoder/flush/index.md',
+        title: 'VideoEncoder: flush() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videoencoder/index.md',
+        title: 'VideoEncoder',
+    },
+    {
+        path: 'lib/javascript/web_api/videoencoder/isconfigsupported_static/index.md',
+        title: 'VideoEncoder: isConfigSupported() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/videoencoder/reset/index.md',
+        title: 'VideoEncoder: reset() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videoencoder/state/index.md',
+        title: 'VideoEncoder: state property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoencoder/videoencoder/index.md',
+        title: 'VideoEncoder: VideoEncoder() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/allocationsize/index.md',
+        title: 'VideoFrame: allocationSize() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/clone/index.md',
+        title: 'VideoFrame: clone() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/close/index.md',
+        title: 'VideoFrame: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/codedheight/index.md',
+        title: 'VideoFrame: codedHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/codedrect/index.md',
+        title: 'VideoFrame: codedRect property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/codedwidth/index.md',
+        title: 'VideoFrame: codedWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/colorspace/index.md',
+        title: 'VideoFrame: colorSpace property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/copyto/index.md',
+        title: 'VideoFrame: copyTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/displayheight/index.md',
+        title: 'VideoFrame: displayHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/displaywidth/index.md',
+        title: 'VideoFrame: displayWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/duration/index.md',
+        title: 'VideoFrame: duration property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/format/index.md',
+        title: 'VideoFrame: format property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/index.md',
+        title: 'VideoFrame',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/timestamp/index.md',
+        title: 'VideoFrame: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/videoframe/index.md',
+        title: 'VideoFrame: VideoFrame() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/videoframe/visiblerect/index.md',
+        title: 'VideoFrame: visibleRect property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoplaybackquality/corruptedvideoframes/index.md',
+        title: 'VideoPlaybackQuality: corruptedVideoFrames property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoplaybackquality/creationtime/index.md',
+        title: 'VideoPlaybackQuality: creationTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoplaybackquality/droppedvideoframes/index.md',
+        title: 'VideoPlaybackQuality: droppedVideoFrames property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoplaybackquality/index.md',
+        title: 'VideoPlaybackQuality',
+    },
+    {
+        path: 'lib/javascript/web_api/videoplaybackquality/totalframedelay/index.md',
+        title: 'VideoPlaybackQuality: totalFrameDelay property',
+    },
+    {
+        path: 'lib/javascript/web_api/videoplaybackquality/totalvideoframes/index.md',
+        title: 'VideoPlaybackQuality: totalVideoFrames property',
+    },
+    {
+        path: 'lib/javascript/web_api/videotrack/id/index.md',
+        title: 'VideoTrack: id property',
+    },
+    {
+        path: 'lib/javascript/web_api/videotrack/index.md',
+        title: 'VideoTrack',
+    },
+    {
+        path: 'lib/javascript/web_api/videotrack/kind/index.md',
+        title: 'VideoTrack: kind property',
+    },
+    {
+        path: 'lib/javascript/web_api/videotrack/label/index.md',
+        title: 'VideoTrack: label property',
+    },
+    {
+        path: 'lib/javascript/web_api/videotrack/language/index.md',
+        title: 'VideoTrack: language property',
+    },
+    {
+        path: 'lib/javascript/web_api/videotrack/selected/index.md',
+        title: 'VideoTrack: selected property',
+    },
+    {
+        path: 'lib/javascript/web_api/videotrack/sourcebuffer/index.md',
+        title: 'VideoTrack: sourceBuffer property',
+    },
+    {
+        path: 'lib/javascript/web_api/videotracklist/addtrack_event/index.md',
+        title: 'VideoTrackList: addtrack event',
+    },
+    {
+        path: 'lib/javascript/web_api/videotracklist/change_event/index.md',
+        title: 'VideoTrackList: change event',
+    },
+    {
+        path: 'lib/javascript/web_api/videotracklist/gettrackbyid/index.md',
+        title: 'VideoTrackList: getTrackById() method',
+    },
+    {
+        path: 'lib/javascript/web_api/videotracklist/index.md',
+        title: 'VideoTrackList',
+    },
+    {
+        path: 'lib/javascript/web_api/videotracklist/length/index.md',
+        title: 'VideoTrackList: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/videotracklist/removetrack_event/index.md',
+        title: 'VideoTrackList: removetrack event',
+    },
+    {
+        path: 'lib/javascript/web_api/videotracklist/selectedindex/index.md',
+        title: 'VideoTrackList: selectedIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/view_transitions_api/index.md',
+        title: 'View Transitions API',
+    },
+    {
+        path: 'lib/javascript/web_api/view_transitions_api/using/index.md',
+        title: 'Using the View Transitions API',
+    },
+    {
+        path: 'lib/javascript/web_api/viewtimeline/endoffset/index.md',
+        title: 'ViewTimeline: endOffset property',
+    },
+    {
+        path: 'lib/javascript/web_api/viewtimeline/index.md',
+        title: 'ViewTimeline',
+    },
+    {
+        path: 'lib/javascript/web_api/viewtimeline/startoffset/index.md',
+        title: 'ViewTimeline: startOffset property',
+    },
+    {
+        path: 'lib/javascript/web_api/viewtimeline/subject/index.md',
+        title: 'ViewTimeline: subject property',
+    },
+    {
+        path: 'lib/javascript/web_api/viewtimeline/viewtimeline/index.md',
+        title: 'ViewTimeline: ViewTimeline() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/viewtransition/finished/index.md',
+        title: 'ViewTransition: finished property',
+    },
+    {
+        path: 'lib/javascript/web_api/viewtransition/index.md',
+        title: 'ViewTransition',
+    },
+    {
+        path: 'lib/javascript/web_api/viewtransition/ready/index.md',
+        title: 'ViewTransition: ready property',
+    },
+    {
+        path: 'lib/javascript/web_api/viewtransition/skiptransition/index.md',
+        title: 'ViewTransition: skipTransition() method',
+    },
+    {
+        path: 'lib/javascript/web_api/viewtransition/updatecallbackdone/index.md',
+        title: 'ViewTransition: updateCallbackDone property',
+    },
+    {
+        path: 'lib/javascript/web_api/virtualkeyboard/boundingrect/index.md',
+        title: 'VirtualKeyboard: boundingRect property',
+    },
+    {
+        path: 'lib/javascript/web_api/virtualkeyboard/geometrychange_event/index.md',
+        title: 'VirtualKeyboard: geometrychange event',
+    },
+    {
+        path: 'lib/javascript/web_api/virtualkeyboard/hide/index.md',
+        title: 'VirtualKeyboard: hide() method',
+    },
+    {
+        path: 'lib/javascript/web_api/virtualkeyboard/index.md',
+        title: 'VirtualKeyboard',
+    },
+    {
+        path: 'lib/javascript/web_api/virtualkeyboard/overlayscontent/index.md',
+        title: 'VirtualKeyboard: overlaysContent property',
+    },
+    {
+        path: 'lib/javascript/web_api/virtualkeyboard/show/index.md',
+        title: 'VirtualKeyboard: show() method',
+    },
+    {
+        path: 'lib/javascript/web_api/virtualkeyboard_api/index.md',
+        title: 'VirtualKeyboard API',
+    },
+    {
+        path: 'lib/javascript/web_api/visibilitystateentry/index.md',
+        title: 'VisibilityStateEntry',
+    },
+    {
+        path: 'lib/javascript/web_api/visual_viewport_api/index.md',
+        title: 'Visual Viewport API',
+    },
+    {
+        path: 'lib/javascript/web_api/visualviewport/height/index.md',
+        title: 'VisualViewport: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/visualviewport/index.md',
+        title: 'VisualViewport',
+    },
+    {
+        path: 'lib/javascript/web_api/visualviewport/offsetleft/index.md',
+        title: 'VisualViewport: offsetLeft property',
+    },
+    {
+        path: 'lib/javascript/web_api/visualviewport/offsettop/index.md',
+        title: 'VisualViewport: offsetTop property',
+    },
+    {
+        path: 'lib/javascript/web_api/visualviewport/pageleft/index.md',
+        title: 'VisualViewport: pageLeft property',
+    },
+    {
+        path: 'lib/javascript/web_api/visualviewport/pagetop/index.md',
+        title: 'VisualViewport: pageTop property',
+    },
+    {
+        path: 'lib/javascript/web_api/visualviewport/resize_event/index.md',
+        title: 'VisualViewport: resize event',
+    },
+    {
+        path: 'lib/javascript/web_api/visualviewport/scale/index.md',
+        title: 'VisualViewport: scale property',
+    },
+    {
+        path: 'lib/javascript/web_api/visualviewport/scroll_event/index.md',
+        title: 'VisualViewport: scroll event',
+    },
+    {
+        path: 'lib/javascript/web_api/visualviewport/width/index.md',
+        title: 'VisualViewport: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/cancelanimationframe/index.md',
+        title: 'VRDisplay: cancelAnimationFrame() method',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/capabilities/index.md',
+        title: 'VRDisplay: capabilities property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/depthfar/index.md',
+        title: 'VRDisplay: depthFar property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/depthnear/index.md',
+        title: 'VRDisplay: depthNear property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/displayid/index.md',
+        title: 'VRDisplay: displayId property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/displayname/index.md',
+        title: 'VRDisplay: displayName property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/exitpresent/index.md',
+        title: 'VRDisplay: exitPresent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/geteyeparameters/index.md',
+        title: 'VRDisplay: getEyeParameters() method',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/getframedata/index.md',
+        title: 'VRDisplay: getFrameData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/getimmediatepose/index.md',
+        title: 'VRDisplay: getImmediatePose() method',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/getlayers/index.md',
+        title: 'VRDisplay: getLayers() method',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/getpose/index.md',
+        title: 'VRDisplay: getPose() method',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/index.md',
+        title: 'VRDisplay',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/isconnected/index.md',
+        title: 'VRDisplay: isConnected property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/ispresenting/index.md',
+        title: 'VRDisplay: isPresenting property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/requestanimationframe/index.md',
+        title: 'VRDisplay: requestAnimationFrame() method',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/requestpresent/index.md',
+        title: 'VRDisplay: requestPresent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/resetpose/index.md',
+        title: 'VRDisplay: resetPose() method',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/stageparameters/index.md',
+        title: 'VRDisplay: stageParameters property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplay/submitframe/index.md',
+        title: 'VRDisplay: submitFrame() method',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplaycapabilities/canpresent/index.md',
+        title: 'VRDisplayCapabilities: canPresent property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplaycapabilities/hasexternaldisplay/index.md',
+        title: 'VRDisplayCapabilities: hasExternalDisplay property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplaycapabilities/hasorientation/index.md',
+        title: 'VRDisplayCapabilities: hasOrientation property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplaycapabilities/hasposition/index.md',
+        title: 'VRDisplayCapabilities: hasPosition property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplaycapabilities/index.md',
+        title: 'VRDisplayCapabilities',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplaycapabilities/maxlayers/index.md',
+        title: 'VRDisplayCapabilities: maxLayers property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplayevent/display/index.md',
+        title: 'VRDisplayEvent: display property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplayevent/index.md',
+        title: 'VRDisplayEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplayevent/reason/index.md',
+        title: 'VRDisplayEvent: reason property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrdisplayevent/vrdisplayevent/index.md',
+        title: 'VRDisplayEvent: VRDisplayEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/vreyeparameters/fieldofview/index.md',
+        title: 'VREyeParameters: fieldOfView property',
+    },
+    {
+        path: 'lib/javascript/web_api/vreyeparameters/index.md',
+        title: 'VREyeParameters',
+    },
+    {
+        path: 'lib/javascript/web_api/vreyeparameters/maximumfieldofview/index.md',
+        title: 'VREyeParameters: maximumFieldOfView property',
+    },
+    {
+        path: 'lib/javascript/web_api/vreyeparameters/minimumfieldofview/index.md',
+        title: 'VREyeParameters: minimumFieldOfView property',
+    },
+    {
+        path: 'lib/javascript/web_api/vreyeparameters/offset/index.md',
+        title: 'VREyeParameters: offset property',
+    },
+    {
+        path: 'lib/javascript/web_api/vreyeparameters/renderheight/index.md',
+        title: 'VREyeParameters: renderHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/vreyeparameters/renderwidth/index.md',
+        title: 'VREyeParameters: renderWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrfieldofview/downdegrees/index.md',
+        title: 'VRFieldOfView: downDegrees property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrfieldofview/index.md',
+        title: 'VRFieldOfView',
+    },
+    {
+        path: 'lib/javascript/web_api/vrfieldofview/leftdegrees/index.md',
+        title: 'VRFieldOfView: leftDegrees property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrfieldofview/rightdegrees/index.md',
+        title: 'VRFieldOfView: rightDegrees property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrfieldofview/updegrees/index.md',
+        title: 'VRFieldOfView: upDegrees property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrframedata/index.md',
+        title: 'VRFrameData',
+    },
+    {
+        path: 'lib/javascript/web_api/vrframedata/leftprojectionmatrix/index.md',
+        title: 'VRFrameData: leftProjectionMatrix property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrframedata/leftviewmatrix/index.md',
+        title: 'VRFrameData: leftViewMatrix property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrframedata/pose/index.md',
+        title: 'VRFrameData: pose property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrframedata/rightprojectionmatrix/index.md',
+        title: 'VRFrameData: rightProjectionMatrix property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrframedata/rightviewmatrix/index.md',
+        title: 'VRFrameData: rightViewMatrix property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrframedata/timestamp/index.md',
+        title: 'VRFrameData: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrframedata/vrframedata/index.md',
+        title: 'VRFrameData: VRFrameData() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/vrlayerinit/index.md',
+        title: 'VRLayerInit',
+    },
+    {
+        path: 'lib/javascript/web_api/vrlayerinit/leftbounds/index.md',
+        title: 'VRLayerInit: leftBounds property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrlayerinit/rightbounds/index.md',
+        title: 'VRLayerInit: rightBounds property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrlayerinit/source/index.md',
+        title: 'VRLayerInit: source property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrpose/angularacceleration/index.md',
+        title: 'VRPose: angularAcceleration property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrpose/angularvelocity/index.md',
+        title: 'VRPose: angularVelocity property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrpose/index.md',
+        title: 'VRPose',
+    },
+    {
+        path: 'lib/javascript/web_api/vrpose/linearacceleration/index.md',
+        title: 'VRPose: linearAcceleration property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrpose/linearvelocity/index.md',
+        title: 'VRPose: linearVelocity property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrpose/orientation/index.md',
+        title: 'VRPose: orientation property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrpose/position/index.md',
+        title: 'VRPose: position property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrstageparameters/index.md',
+        title: 'VRStageParameters',
+    },
+    {
+        path: 'lib/javascript/web_api/vrstageparameters/sittingtostandingtransform/index.md',
+        title: 'VRStageParameters: sittingToStandingTransform property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrstageparameters/sizex/index.md',
+        title: 'VRStageParameters: sizeX property',
+    },
+    {
+        path: 'lib/javascript/web_api/vrstageparameters/sizey/index.md',
+        title: 'VRStageParameters: sizeY property',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/align/index.md',
+        title: 'VTTCue: align property',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/getcueashtml/index.md',
+        title: 'VTTCue: getCueAsHTML() method',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/index.md',
+        title: 'VTTCue',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/line/index.md',
+        title: 'VTTCue: line property',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/linealign/index.md',
+        title: 'VTTCue: lineAlign property',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/position/index.md',
+        title: 'VTTCue: position property',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/positionalign/index.md',
+        title: 'VTTCue: positionAlign property',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/region/index.md',
+        title: 'VTTCue: region property',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/size/index.md',
+        title: 'VTTCue: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/snaptolines/index.md',
+        title: 'VTTCue: snapToLines property',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/text/index.md',
+        title: 'VTTCue: text property',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/vertical/index.md',
+        title: 'VTTCue: vertical property',
+    },
+    {
+        path: 'lib/javascript/web_api/vttcue/vttcue/index.md',
+        title: 'VTTCue: VTTCue() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/vttregion/index.md',
+        title: 'VTTRegion',
+    },
+    {
+        path: 'lib/javascript/web_api/wakelock/index.md',
+        title: 'WakeLock',
+    },
+    {
+        path: 'lib/javascript/web_api/wakelock/request/index.md',
+        title: 'WakeLock: request() method',
+    },
+    {
+        path: 'lib/javascript/web_api/wakelocksentinel/index.md',
+        title: 'WakeLockSentinel',
+    },
+    {
+        path: 'lib/javascript/web_api/wakelocksentinel/release/index.md',
+        title: 'WakeLockSentinel: release() method',
+    },
+    {
+        path: 'lib/javascript/web_api/wakelocksentinel/release_event/index.md',
+        title: 'WakeLockSentinel: release event',
+    },
+    {
+        path: 'lib/javascript/web_api/wakelocksentinel/released/index.md',
+        title: 'WakeLockSentinel: released property',
+    },
+    {
+        path: 'lib/javascript/web_api/wakelocksentinel/type/index.md',
+        title: 'WakeLockSentinel: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/waveshapernode/curve/index.md',
+        title: 'WaveShaperNode: curve property',
+    },
+    {
+        path: 'lib/javascript/web_api/waveshapernode/index.md',
+        title: 'WaveShaperNode',
+    },
+    {
+        path: 'lib/javascript/web_api/waveshapernode/oversample/index.md',
+        title: 'WaveShaperNode: oversample property',
+    },
+    {
+        path: 'lib/javascript/web_api/waveshapernode/waveshapernode/index.md',
+        title: 'WaveShaperNode: WaveShaperNode() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/web_animations_api/index.md',
+        title: 'Web Animations API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_animations_api/keyframe_formats/index.md',
+        title: 'Keyframe Formats',
+    },
+    {
+        path: 'lib/javascript/web_api/web_animations_api/using_the_web_animations_api/index.md',
+        title: 'Using the Web Animations API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_animations_api/web_animations_api_concepts/index.md',
+        title: 'Web Animations API Concepts',
+    },
+    {
+        path: 'lib/javascript/web_api/web_audio_api/advanced_techniques/index.md',
+        title: 'Advanced techniques: Creating and sequencing audio',
+    },
+    {
+        path: 'lib/javascript/web_api/web_audio_api/basic_concepts_behind_web_audio_api/index.md',
+        title: 'Basic concepts behind Web Audio API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_audio_api/best_practices/index.md',
+        title: 'Web Audio API best practices',
+    },
+    {
+        path: 'lib/javascript/web_api/web_audio_api/controlling_multiple_parameters_with_constantsourcenode/index.md',
+        title: 'Controlling multiple parameters with ConstantSourceNode',
+    },
+    {
+        path: 'lib/javascript/web_api/web_audio_api/index.md',
+        title: 'Web Audio API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_audio_api/simple_synth/index.md',
+        title: 'Example and tutorial: Simple synth keyboard',
+    },
+    {
+        path: 'lib/javascript/web_api/web_audio_api/tools/index.md',
+        title: 'Tools for analyzing Web Audio usage',
+    },
+    {
+        path: 'lib/javascript/web_api/web_audio_api/using_audioworklet/index.md',
+        title: 'Background audio processing using AudioWorklet',
+    },
+    {
+        path: 'lib/javascript/web_api/web_audio_api/using_iir_filters/index.md',
+        title: 'Using IIR filters',
+    },
+    {
+        path: 'lib/javascript/web_api/web_audio_api/using_web_audio_api/index.md',
+        title: 'Using the Web Audio API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_audio_api/visualizations_with_web_audio_api/index.md',
+        title: 'Visualizations with Web Audio API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_audio_api/web_audio_spatialization_basics/index.md',
+        title: 'Web audio spatialization basics',
+    },
+    {
+        path: 'lib/javascript/web_api/web_authentication_api/attestation_and_assertion/index.md',
+        title: 'Attestation and Assertion',
+    },
+    {
+        path: 'lib/javascript/web_api/web_authentication_api/authenticator_data/index.md',
+        title: 'Authenticator data',
+    },
+    {
+        path: 'lib/javascript/web_api/web_authentication_api/index.md',
+        title: 'Web Authentication API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_authentication_api/webauthn_extensions/index.md',
+        title: 'Web Authentication extensions',
+    },
+    {
+        path: 'lib/javascript/web_api/web_bluetooth_api/index.md',
+        title: 'Web Bluetooth API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_components/index.md',
+        title: 'Web Components',
+    },
+    {
+        path: 'lib/javascript/web_api/web_components/using_custom_elements/index.md',
+        title: 'Using custom elements',
+    },
+    {
+        path: 'lib/javascript/web_api/web_components/using_shadow_dom/index.md',
+        title: 'Using shadow DOM',
+    },
+    {
+        path: 'lib/javascript/web_api/web_components/using_templates_and_slots/index.md',
+        title: 'Using templates and slots',
+    },
+    {
+        path: 'lib/javascript/web_api/web_crypto_api/index.md',
+        title: 'Web Crypto API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_crypto_api/non-cryptographic_uses_of_subtle_crypto/index.md',
+        title: 'Non-cryptographic uses of SubtleCrypto',
+    },
+    {
+        path: 'lib/javascript/web_api/web_locks_api/index.md',
+        title: 'Web Locks API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_midi_api/index.md',
+        title: 'Web MIDI API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_nfc_api/index.md',
+        title: 'Web NFC API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_periodic_background_synchronization_api/index.md',
+        title: 'Web Periodic Background Synchronization API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_serial_api/index.md',
+        title: 'Web Serial API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_share_api/index.md',
+        title: 'Web Share API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_speech_api/index.md',
+        title: 'Web Speech API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_speech_api/using_the_web_speech_api/index.md',
+        title: 'Using the Web Speech API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_storage_api/index.md',
+        title: 'Web Storage API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_storage_api/using_the_web_storage_api/index.md',
+        title: 'Using the Web Storage API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_workers_api/functions_and_classes_available_to_workers/index.md',
+        title: 'Functions and classes available to Web Workers',
+    },
+    {
+        path: 'lib/javascript/web_api/web_workers_api/index.md',
+        title: 'Web Workers API',
+    },
+    {
+        path: 'lib/javascript/web_api/web_workers_api/structured_clone_algorithm/index.md',
+        title: 'The structured clone algorithm',
+    },
+    {
+        path: 'lib/javascript/web_api/web_workers_api/transferable_objects/index.md',
+        title: 'Transferable objects',
+    },
+    {
+        path: 'lib/javascript/web_api/web_workers_api/using_web_workers/index.md',
+        title: 'Using Web Workers',
+    },
+    {
+        path: 'lib/javascript/web_api/webcodecs_api/index.md',
+        title: 'WebCodecs API',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/beginquery/index.md',
+        title: 'WebGL2RenderingContext: beginQuery() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/begintransformfeedback/index.md',
+        title: 'WebGL2RenderingContext: beginTransformFeedback() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/bindbufferbase/index.md',
+        title: 'WebGL2RenderingContext: bindBufferBase() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/bindbufferrange/index.md',
+        title: 'WebGL2RenderingContext: bindBufferRange() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/bindsampler/index.md',
+        title: 'WebGL2RenderingContext: bindSampler() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/bindtransformfeedback/index.md',
+        title: 'WebGL2RenderingContext: bindTransformFeedback() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/bindvertexarray/index.md',
+        title: 'WebGL2RenderingContext: bindVertexArray() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/blitframebuffer/index.md',
+        title: 'WebGL2RenderingContext: blitFramebuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/bufferdata/index.md',
+        title: 'WebGL2RenderingContext: bufferData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/buffersubdata/index.md',
+        title: 'WebGL2RenderingContext: bufferSubData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/clearbuffer/index.md',
+        title: 'WebGL2RenderingContext: clearBuffer[fiuv]() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/clientwaitsync/index.md',
+        title: 'WebGL2RenderingContext: clientWaitSync() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/compressedtexsubimage3d/index.md',
+        title: 'WebGL2RenderingContext: compressedTexSubImage3D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/copybuffersubdata/index.md',
+        title: 'WebGL2RenderingContext: copyBufferSubData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/copytexsubimage3d/index.md',
+        title: 'WebGL2RenderingContext: copyTexSubImage3D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/createquery/index.md',
+        title: 'WebGL2RenderingContext: createQuery() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/createsampler/index.md',
+        title: 'WebGL2RenderingContext: createSampler() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/createtransformfeedback/index.md',
+        title: 'WebGL2RenderingContext: createTransformFeedback() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/createvertexarray/index.md',
+        title: 'WebGL2RenderingContext: createVertexArray() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/deletequery/index.md',
+        title: 'WebGL2RenderingContext: deleteQuery() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/deletesampler/index.md',
+        title: 'WebGL2RenderingContext: deleteSampler() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/deletesync/index.md',
+        title: 'WebGL2RenderingContext: deleteSync() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/deletetransformfeedback/index.md',
+        title: 'WebGL2RenderingContext: deleteTransformFeedback() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/deletevertexarray/index.md',
+        title: 'WebGL2RenderingContext: deleteVertexArray() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/drawarraysinstanced/index.md',
+        title: 'WebGL2RenderingContext: drawArraysInstanced() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/drawbuffers/index.md',
+        title: 'WebGL2RenderingContext: drawBuffers() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/drawelementsinstanced/index.md',
+        title: 'WebGL2RenderingContext: drawElementsInstanced() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/drawrangeelements/index.md',
+        title: 'WebGL2RenderingContext: drawRangeElements() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/endquery/index.md',
+        title: 'WebGL2RenderingContext: endQuery() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/endtransformfeedback/index.md',
+        title: 'WebGL2RenderingContext: endTransformFeedback() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/fencesync/index.md',
+        title: 'WebGL2RenderingContext: fenceSync() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/framebuffertexturelayer/index.md',
+        title: 'WebGL2RenderingContext: framebufferTextureLayer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getactiveuniformblockname/index.md',
+        title: 'WebGL2RenderingContext: getActiveUniformBlockName() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getactiveuniformblockparameter/index.md',
+        title: 'WebGL2RenderingContext: getActiveUniformBlockParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getactiveuniforms/index.md',
+        title: 'WebGL2RenderingContext: getActiveUniforms() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getbuffersubdata/index.md',
+        title: 'WebGL2RenderingContext: getBufferSubData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getfragdatalocation/index.md',
+        title: 'WebGL2RenderingContext: getFragDataLocation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getindexedparameter/index.md',
+        title: 'WebGL2RenderingContext: getIndexedParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getinternalformatparameter/index.md',
+        title: 'WebGL2RenderingContext: getInternalformatParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getquery/index.md',
+        title: 'WebGL2RenderingContext: getQuery() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getqueryparameter/index.md',
+        title: 'WebGL2RenderingContext: getQueryParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getsamplerparameter/index.md',
+        title: 'WebGL2RenderingContext: getSamplerParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getsyncparameter/index.md',
+        title: 'WebGL2RenderingContext: getSyncParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/gettransformfeedbackvarying/index.md',
+        title: 'WebGL2RenderingContext: getTransformFeedbackVarying() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getuniformblockindex/index.md',
+        title: 'WebGL2RenderingContext: getUniformBlockIndex() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/getuniformindices/index.md',
+        title: 'WebGL2RenderingContext: getUniformIndices() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/index.md',
+        title: 'WebGL2RenderingContext',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/invalidateframebuffer/index.md',
+        title: 'WebGL2RenderingContext: invalidateFramebuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/invalidatesubframebuffer/index.md',
+        title: 'WebGL2RenderingContext: invalidateSubFramebuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/isquery/index.md',
+        title: 'WebGL2RenderingContext: isQuery() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/issampler/index.md',
+        title: 'WebGL2RenderingContext: isSampler() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/issync/index.md',
+        title: 'WebGL2RenderingContext: isSync() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/istransformfeedback/index.md',
+        title: 'WebGL2RenderingContext: isTransformFeedback() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/isvertexarray/index.md',
+        title: 'WebGL2RenderingContext: isVertexArray() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/pausetransformfeedback/index.md',
+        title: 'WebGL2RenderingContext: pauseTransformFeedback() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/readbuffer/index.md',
+        title: 'WebGL2RenderingContext: readBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/renderbufferstoragemultisample/index.md',
+        title: 'WebGL2RenderingContext: renderbufferStorageMultisample() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/resumetransformfeedback/index.md',
+        title: 'WebGL2RenderingContext: resumeTransformFeedback() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/samplerparameter/index.md',
+        title: 'WebGL2RenderingContext: samplerParameter[if]() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/teximage3d/index.md',
+        title: 'WebGL2RenderingContext: texImage3D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/texstorage2d/index.md',
+        title: 'WebGL2RenderingContext: texStorage2D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/texstorage3d/index.md',
+        title: 'WebGL2RenderingContext: texStorage3D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/texsubimage3d/index.md',
+        title: 'WebGL2RenderingContext: texSubImage3D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/transformfeedbackvaryings/index.md',
+        title: 'WebGL2RenderingContext: transformFeedbackVaryings() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/uniform/index.md',
+        title: 'WebGL2RenderingContext: uniform[1234][uif][v]() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/uniformblockbinding/index.md',
+        title: 'WebGL2RenderingContext: uniformBlockBinding() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/uniformmatrix/index.md',
+        title: 'WebGL2RenderingContext: uniformMatrix[234]x[234]fv() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/vertexattribdivisor/index.md',
+        title: 'WebGL2RenderingContext: vertexAttribDivisor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/vertexattribi/index.md',
+        title: 'WebGL2RenderingContext: vertexAttribI4[u]i[v]() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/vertexattribipointer/index.md',
+        title: 'WebGL2RenderingContext: vertexAttribIPointer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl2renderingcontext/waitsync/index.md',
+        title: 'WebGL2RenderingContext: waitSync() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/basic_2d_animation_example/index.md',
+        title: 'A basic 2D WebGL animation example',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/basic_scissoring/index.md',
+        title: 'Basic scissoring',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/boilerplate_1/index.md',
+        title: 'Boilerplate 1',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/canvas_size_and_webgl/index.md',
+        title: 'Canvas size and WebGL',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/clearing_by_clicking/index.md',
+        title: 'Clearing by clicking',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/clearing_with_colors/index.md',
+        title: 'Clearing with colors',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/color_masking/index.md',
+        title: 'Color masking',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/detect_webgl/index.md',
+        title: 'Detect WebGL',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/hello_glsl/index.md',
+        title: 'Hello GLSL',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/hello_vertex_attributes/index.md',
+        title: 'Hello vertex attributes',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/index.md',
+        title: 'WebGL by example',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/raining_rectangles/index.md',
+        title: 'Raining rectangles',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/scissor_animation/index.md',
+        title: 'Scissor animation',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/simple_color_animation/index.md',
+        title: 'Simple color animation',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/textures_from_code/index.md',
+        title: 'Textures from code',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/by_example/video_textures/index.md',
+        title: 'Video textures',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/compressed_texture_formats/index.md',
+        title: 'Compressed texture formats',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/constants/index.md',
+        title: 'WebGL constants',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/data/index.md',
+        title: 'Data in WebGL',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/index.md',
+        title: 'WebGL: 2D and 3D graphics for the web',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/matrix_math_for_the_web/index.md',
+        title: 'Matrix math for the web',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/tutorial/adding_2d_content_to_a_webgl_context/index.md',
+        title: 'Adding 2D content to a WebGL context',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/tutorial/animating_objects_with_webgl/index.md',
+        title: 'Animating objects with WebGL',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/tutorial/animating_textures_in_webgl/index.md',
+        title: 'Animating textures in WebGL',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/tutorial/creating_3d_objects_using_webgl/index.md',
+        title: 'Creating 3D objects using WebGL',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/tutorial/getting_started_with_webgl/index.md',
+        title: 'Getting started with WebGL',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/tutorial/index.md',
+        title: 'WebGL tutorial',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/tutorial/lighting_in_webgl/index.md',
+        title: 'Lighting in WebGL',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/tutorial/using_shaders_to_apply_color_in_webgl/index.md',
+        title: 'Using shaders to apply color in WebGL',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/tutorial/using_textures_in_webgl/index.md',
+        title: 'Using textures in WebGL',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/types/index.md',
+        title: 'WebGL types',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/using_extensions/index.md',
+        title: 'Using WebGL extensions',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/webgl_best_practices/index.md',
+        title: 'WebGL best practices',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_api/webgl_model_view_projection/index.md',
+        title: 'WebGL model view projection',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_color_buffer_float/index.md',
+        title: 'WEBGL_color_buffer_float extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_compressed_texture_astc/getsupportedprofiles/index.md',
+        title: 'WEBGL_compressed_texture_astc: getSupportedProfiles() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_compressed_texture_astc/index.md',
+        title: 'WEBGL_compressed_texture_astc extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_compressed_texture_etc/index.md',
+        title: 'WEBGL_compressed_texture_etc extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_compressed_texture_etc1/index.md',
+        title: 'WEBGL_compressed_texture_etc1 extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_compressed_texture_pvrtc/index.md',
+        title: 'WEBGL_compressed_texture_pvrtc extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_compressed_texture_s3tc/index.md',
+        title: 'WEBGL_compressed_texture_s3tc extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_compressed_texture_s3tc_srgb/index.md',
+        title: 'WEBGL_compressed_texture_s3tc_srgb extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_debug_renderer_info/index.md',
+        title: 'WEBGL_debug_renderer_info extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_debug_shaders/gettranslatedshadersource/index.md',
+        title: 'WEBGL_debug_shaders: getTranslatedShaderSource() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_debug_shaders/index.md',
+        title: 'WEBGL_debug_shaders extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_depth_texture/index.md',
+        title: 'WEBGL_depth_texture extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_draw_buffers/drawbufferswebgl/index.md',
+        title: 'WEBGL_draw_buffers: drawBuffersWEBGL() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_draw_buffers/index.md',
+        title: 'WEBGL_draw_buffers extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_lose_context/index.md',
+        title: 'WEBGL_lose_context extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_lose_context/losecontext/index.md',
+        title: 'WEBGL_lose_context: loseContext() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_lose_context/restorecontext/index.md',
+        title: 'WEBGL_lose_context: restoreContext() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_multi_draw/index.md',
+        title: 'WEBGL_multi_draw extension',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_multi_draw/multidrawarraysinstancedwebgl/index.md',
+        title: 'WEBGL_multi_draw: multiDrawArraysInstancedWEBGL() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_multi_draw/multidrawarrayswebgl/index.md',
+        title: 'WEBGL_multi_draw: multiDrawArraysWEBGL() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_multi_draw/multidrawelementsinstancedwebgl/index.md',
+        title: 'WEBGL_multi_draw: multiDrawElementsInstancedWEBGL() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webgl_multi_draw/multidrawelementswebgl/index.md',
+        title: 'WEBGL_multi_draw: multiDrawElementsWEBGL() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglactiveinfo/index.md',
+        title: 'WebGLActiveInfo',
+    },
+    {
+        path: 'lib/javascript/web_api/webglactiveinfo/name/index.md',
+        title: 'WebGLActiveInfo: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/webglactiveinfo/size/index.md',
+        title: 'WebGLActiveInfo: size property',
+    },
+    {
+        path: 'lib/javascript/web_api/webglactiveinfo/type/index.md',
+        title: 'WebGLActiveInfo: type property',
+    },
+    {
+        path: 'lib/javascript/web_api/webglbuffer/index.md',
+        title: 'WebGLBuffer',
+    },
+    {
+        path: 'lib/javascript/web_api/webglcontextevent/index.md',
+        title: 'WebGLContextEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/webglcontextevent/statusmessage/index.md',
+        title: 'WebGLContextEvent: statusMessage property',
+    },
+    {
+        path: 'lib/javascript/web_api/webglcontextevent/webglcontextevent/index.md',
+        title: 'WebGLContextEvent: WebGLContextEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/webglframebuffer/index.md',
+        title: 'WebGLFramebuffer',
+    },
+    {
+        path: 'lib/javascript/web_api/webglobject/index.md',
+        title: 'WebGLObject',
+    },
+    {
+        path: 'lib/javascript/web_api/webglprogram/index.md',
+        title: 'WebGLProgram',
+    },
+    {
+        path: 'lib/javascript/web_api/webglquery/index.md',
+        title: 'WebGLQuery',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderbuffer/index.md',
+        title: 'WebGLRenderbuffer',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/activetexture/index.md',
+        title: 'WebGLRenderingContext: activeTexture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/attachshader/index.md',
+        title: 'WebGLRenderingContext: attachShader() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/bindattriblocation/index.md',
+        title: 'WebGLRenderingContext: bindAttribLocation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/bindbuffer/index.md',
+        title: 'WebGLRenderingContext: bindBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/bindframebuffer/index.md',
+        title: 'WebGLRenderingContext: bindFramebuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/bindrenderbuffer/index.md',
+        title: 'WebGLRenderingContext: bindRenderbuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/bindtexture/index.md',
+        title: 'WebGLRenderingContext: bindTexture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/blendcolor/index.md',
+        title: 'WebGLRenderingContext: blendColor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/blendequation/index.md',
+        title: 'WebGLRenderingContext: blendEquation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/blendequationseparate/index.md',
+        title: 'WebGLRenderingContext: blendEquationSeparate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/blendfunc/index.md',
+        title: 'WebGLRenderingContext: blendFunc() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/blendfuncseparate/index.md',
+        title: 'WebGLRenderingContext: blendFuncSeparate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/bufferdata/index.md',
+        title: 'WebGLRenderingContext: bufferData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/buffersubdata/index.md',
+        title: 'WebGLRenderingContext: bufferSubData() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/canvas/index.md',
+        title: 'WebGLRenderingContext: canvas property',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/checkframebufferstatus/index.md',
+        title: 'WebGLRenderingContext: checkFramebufferStatus() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/clear/index.md',
+        title: 'WebGLRenderingContext: clear() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/clearcolor/index.md',
+        title: 'WebGLRenderingContext: clearColor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/cleardepth/index.md',
+        title: 'WebGLRenderingContext: clearDepth() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/clearstencil/index.md',
+        title: 'WebGLRenderingContext: clearStencil() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/colormask/index.md',
+        title: 'WebGLRenderingContext: colorMask() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/compileshader/index.md',
+        title: 'WebGLRenderingContext: compileShader() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/compressedteximage2d/index.md',
+        title: 'WebGLRenderingContext: compressedTexImage[23]D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/compressedtexsubimage2d/index.md',
+        title: 'WebGLRenderingContext: compressedTexSubImage2D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/copyteximage2d/index.md',
+        title: 'WebGLRenderingContext: copyTexImage2D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/copytexsubimage2d/index.md',
+        title: 'WebGLRenderingContext: copyTexSubImage2D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/createbuffer/index.md',
+        title: 'WebGLRenderingContext: createBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/createframebuffer/index.md',
+        title: 'WebGLRenderingContext: createFramebuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/createprogram/index.md',
+        title: 'WebGLRenderingContext: createProgram() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/createrenderbuffer/index.md',
+        title: 'WebGLRenderingContext: createRenderbuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/createshader/index.md',
+        title: 'WebGLRenderingContext: createShader() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/createtexture/index.md',
+        title: 'WebGLRenderingContext: createTexture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/cullface/index.md',
+        title: 'WebGLRenderingContext: cullFace() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/deletebuffer/index.md',
+        title: 'WebGLRenderingContext: deleteBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/deleteframebuffer/index.md',
+        title: 'WebGLRenderingContext: deleteFramebuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/deleteprogram/index.md',
+        title: 'WebGLRenderingContext: deleteProgram() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/deleterenderbuffer/index.md',
+        title: 'WebGLRenderingContext: deleteRenderbuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/deleteshader/index.md',
+        title: 'WebGLRenderingContext: deleteShader() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/deletetexture/index.md',
+        title: 'WebGLRenderingContext: deleteTexture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/depthfunc/index.md',
+        title: 'WebGLRenderingContext: depthFunc() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/depthmask/index.md',
+        title: 'WebGLRenderingContext: depthMask() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/depthrange/index.md',
+        title: 'WebGLRenderingContext: depthRange() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/detachshader/index.md',
+        title: 'WebGLRenderingContext: detachShader() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/disable/index.md',
+        title: 'WebGLRenderingContext: disable() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/disablevertexattribarray/index.md',
+        title: 'WebGLRenderingContext: disableVertexAttribArray() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/drawarrays/index.md',
+        title: 'WebGLRenderingContext: drawArrays() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/drawelements/index.md',
+        title: 'WebGLRenderingContext: drawElements() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/drawingbuffercolorspace/index.md',
+        title: 'WebGLRenderingContext: drawingBufferColorSpace property',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/drawingbufferheight/index.md',
+        title: 'WebGLRenderingContext: drawingBufferHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/drawingbufferwidth/index.md',
+        title: 'WebGLRenderingContext: drawingBufferWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/enable/index.md',
+        title: 'WebGLRenderingContext: enable() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/enablevertexattribarray/index.md',
+        title: 'WebGLRenderingContext: enableVertexAttribArray() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/finish/index.md',
+        title: 'WebGLRenderingContext: finish() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/flush/index.md',
+        title: 'WebGLRenderingContext: flush() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/framebufferrenderbuffer/index.md',
+        title: 'WebGLRenderingContext: framebufferRenderbuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/framebuffertexture2d/index.md',
+        title: 'WebGLRenderingContext: framebufferTexture2D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/frontface/index.md',
+        title: 'WebGLRenderingContext: frontFace() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/generatemipmap/index.md',
+        title: 'WebGLRenderingContext: generateMipmap() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getactiveattrib/index.md',
+        title: 'WebGLRenderingContext: getActiveAttrib() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getactiveuniform/index.md',
+        title: 'WebGLRenderingContext: getActiveUniform() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getattachedshaders/index.md',
+        title: 'WebGLRenderingContext: getAttachedShaders() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getattriblocation/index.md',
+        title: 'WebGLRenderingContext: getAttribLocation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getbufferparameter/index.md',
+        title: 'WebGLRenderingContext: getBufferParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getcontextattributes/index.md',
+        title: 'WebGLRenderingContext: getContextAttributes() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/geterror/index.md',
+        title: 'WebGLRenderingContext: getError() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getextension/index.md',
+        title: 'WebGLRenderingContext: getExtension() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getframebufferattachmentparameter/index.md',
+        title: 'WebGLRenderingContext: getFramebufferAttachmentParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getparameter/index.md',
+        title: 'WebGLRenderingContext: getParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getprograminfolog/index.md',
+        title: 'WebGLRenderingContext: getProgramInfoLog() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getprogramparameter/index.md',
+        title: 'WebGLRenderingContext: getProgramParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getrenderbufferparameter/index.md',
+        title: 'WebGLRenderingContext: getRenderbufferParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getshaderinfolog/index.md',
+        title: 'WebGLRenderingContext: getShaderInfoLog() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getshaderparameter/index.md',
+        title: 'WebGLRenderingContext: getShaderParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getshaderprecisionformat/index.md',
+        title: 'WebGLRenderingContext: getShaderPrecisionFormat() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getshadersource/index.md',
+        title: 'WebGLRenderingContext: getShaderSource() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getsupportedextensions/index.md',
+        title: 'WebGLRenderingContext: getSupportedExtensions() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/gettexparameter/index.md',
+        title: 'WebGLRenderingContext: getTexParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getuniform/index.md',
+        title: 'WebGLRenderingContext: getUniform() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getuniformlocation/index.md',
+        title: 'WebGLRenderingContext: getUniformLocation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getvertexattrib/index.md',
+        title: 'WebGLRenderingContext: getVertexAttrib() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/getvertexattriboffset/index.md',
+        title: 'WebGLRenderingContext: getVertexAttribOffset() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/hint/index.md',
+        title: 'WebGLRenderingContext: hint() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/index.md',
+        title: 'WebGLRenderingContext',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/isbuffer/index.md',
+        title: 'WebGLRenderingContext: isBuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/iscontextlost/index.md',
+        title: 'WebGLRenderingContext: isContextLost() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/isenabled/index.md',
+        title: 'WebGLRenderingContext: isEnabled() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/isframebuffer/index.md',
+        title: 'WebGLRenderingContext: isFramebuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/isprogram/index.md',
+        title: 'WebGLRenderingContext: isProgram() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/isrenderbuffer/index.md',
+        title: 'WebGLRenderingContext: isRenderbuffer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/isshader/index.md',
+        title: 'WebGLRenderingContext: isShader() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/istexture/index.md',
+        title: 'WebGLRenderingContext: isTexture() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/linewidth/index.md',
+        title: 'WebGLRenderingContext: lineWidth() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/linkprogram/index.md',
+        title: 'WebGLRenderingContext: linkProgram() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/makexrcompatible/index.md',
+        title: 'WebGLRenderingContext: makeXRCompatible() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/pixelstorei/index.md',
+        title: 'WebGLRenderingContext: pixelStorei() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/polygonoffset/index.md',
+        title: 'WebGLRenderingContext: polygonOffset() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/readpixels/index.md',
+        title: 'WebGLRenderingContext: readPixels() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/renderbufferstorage/index.md',
+        title: 'WebGLRenderingContext: renderbufferStorage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/samplecoverage/index.md',
+        title: 'WebGLRenderingContext: sampleCoverage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/scissor/index.md',
+        title: 'WebGLRenderingContext: scissor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/shadersource/index.md',
+        title: 'WebGLRenderingContext: shaderSource() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/stencilfunc/index.md',
+        title: 'WebGLRenderingContext: stencilFunc() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/stencilfuncseparate/index.md',
+        title: 'WebGLRenderingContext: stencilFuncSeparate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/stencilmask/index.md',
+        title: 'WebGLRenderingContext: stencilMask() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/stencilmaskseparate/index.md',
+        title: 'WebGLRenderingContext: stencilMaskSeparate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/stencilop/index.md',
+        title: 'WebGLRenderingContext: stencilOp() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/stencilopseparate/index.md',
+        title: 'WebGLRenderingContext: stencilOpSeparate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/teximage2d/index.md',
+        title: 'WebGLRenderingContext: texImage2D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/texparameter/index.md',
+        title: 'WebGLRenderingContext: texParameter[fi]() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/texsubimage2d/index.md',
+        title: 'WebGLRenderingContext: texSubImage2D() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/uniform/index.md',
+        title: 'WebGLRenderingContext: uniform[1234][fi][v]() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/uniformmatrix/index.md',
+        title: 'WebGLRenderingContext: uniformMatrix[234]fv() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/unpackcolorspace/index.md',
+        title: 'WebGLRenderingContext: unpackColorSpace property',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/useprogram/index.md',
+        title: 'WebGLRenderingContext: useProgram() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/validateprogram/index.md',
+        title: 'WebGLRenderingContext: validateProgram() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/vertexattrib/index.md',
+        title: 'WebGLRenderingContext: vertexAttrib[1234]f[v]() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/vertexattribpointer/index.md',
+        title: 'WebGLRenderingContext: vertexAttribPointer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglrenderingcontext/viewport/index.md',
+        title: 'WebGLRenderingContext: viewport() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webglsampler/index.md',
+        title: 'WebGLSampler',
+    },
+    {
+        path: 'lib/javascript/web_api/webglshader/index.md',
+        title: 'WebGLShader',
+    },
+    {
+        path: 'lib/javascript/web_api/webglshaderprecisionformat/index.md',
+        title: 'WebGLShaderPrecisionFormat',
+    },
+    {
+        path: 'lib/javascript/web_api/webglshaderprecisionformat/precision/index.md',
+        title: 'WebGLShaderPrecisionFormat: precision property',
+    },
+    {
+        path: 'lib/javascript/web_api/webglshaderprecisionformat/rangemax/index.md',
+        title: 'WebGLShaderPrecisionFormat: rangeMax property',
+    },
+    {
+        path: 'lib/javascript/web_api/webglshaderprecisionformat/rangemin/index.md',
+        title: 'WebGLShaderPrecisionFormat: rangeMin property',
+    },
+    {
+        path: 'lib/javascript/web_api/webglsync/index.md',
+        title: 'WebGLSync',
+    },
+    {
+        path: 'lib/javascript/web_api/webgltexture/index.md',
+        title: 'WebGLTexture',
+    },
+    {
+        path: 'lib/javascript/web_api/webgltransformfeedback/index.md',
+        title: 'WebGLTransformFeedback',
+    },
+    {
+        path: 'lib/javascript/web_api/webgluniformlocation/index.md',
+        title: 'WebGLUniformLocation',
+    },
+    {
+        path: 'lib/javascript/web_api/webglvertexarrayobject/index.md',
+        title: 'WebGLVertexArrayObject',
+    },
+    {
+        path: 'lib/javascript/web_api/webgpu_api/index.md',
+        title: 'WebGPU API',
+    },
+    {
+        path: 'lib/javascript/web_api/webhid_api/index.md',
+        title: 'WebHID API',
+    },
+    {
+        path: 'lib/javascript/web_api/webkitpoint/index.md',
+        title: 'Point',
+    },
+    {
+        path: 'lib/javascript/web_api/webotp_api/index.md',
+        title: 'WebOTP API',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/build_a_phone_with_peerjs/build_the_server/index.md',
+        title: 'Building the server',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/build_a_phone_with_peerjs/connect_peers/answer_a_call/index.md',
+        title: 'Answering a Call',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/build_a_phone_with_peerjs/connect_peers/create_a_peer_connection/index.md',
+        title: 'Creating a peer connection',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/build_a_phone_with_peerjs/connect_peers/creating_a_call/index.md',
+        title: 'Creating a Call',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/build_a_phone_with_peerjs/connect_peers/end_a_call/index.md',
+        title: 'Ending a call',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/build_a_phone_with_peerjs/connect_peers/get_microphone_permission/index.md',
+        title: 'Getting browser microphone permission',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/build_a_phone_with_peerjs/connect_peers/index.md',
+        title: 'Connecting the peers',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/build_a_phone_with_peerjs/connect_peers/show_hide_html/index.md',
+        title: 'Showing and hiding HTML',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/build_a_phone_with_peerjs/deployment_and_further_reading/index.md',
+        title: 'Deployment and further reading',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/build_a_phone_with_peerjs/index.md',
+        title: 'Building an Internet-Connected Phone with PeerJS',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/build_a_phone_with_peerjs/setup/index.md',
+        title: 'Setup',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/connectivity/index.md',
+        title: 'WebRTC connectivity',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/index.md',
+        title: 'WebRTC API',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/intro_to_rtp/index.md',
+        title: 'Introduction to the Real-time Transport Protocol (RTP)',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/perfect_negotiation/index.md',
+        title: 'Establishing a connection: The WebRTC perfect negotiation pattern',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/protocols/index.md',
+        title: 'Introduction to WebRTC protocols',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/session_lifetime/index.md',
+        title: 'Lifetime of a WebRTC session',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/signaling_and_video_calling/index.md',
+        title: 'Signaling and video calling',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/simple_rtcdatachannel_sample/index.md',
+        title: 'A simple RTCDataChannel sample',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/using_data_channels/index.md',
+        title: 'Using WebRTC data channels',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/using_dtmf/index.md',
+        title: 'Using DTMF with WebRTC',
+    },
+    {
+        path: 'lib/javascript/web_api/webrtc_api/using_encoded_transforms/index.md',
+        title: 'Using WebRTC Encoded Transforms',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/binarytype/index.md',
+        title: 'WebSocket: binaryType property',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/bufferedamount/index.md',
+        title: 'WebSocket: bufferedAmount property',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/close/index.md',
+        title: 'WebSocket: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/close_event/index.md',
+        title: 'WebSocket: close event',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/error_event/index.md',
+        title: 'WebSocket: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/extensions/index.md',
+        title: 'WebSocket: extensions property',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/index.md',
+        title: 'WebSocket',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/message_event/index.md',
+        title: 'WebSocket: message event',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/open_event/index.md',
+        title: 'WebSocket: open event',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/protocol/index.md',
+        title: 'WebSocket: protocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/readystate/index.md',
+        title: 'WebSocket: readyState property',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/send/index.md',
+        title: 'WebSocket: send() method',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/url/index.md',
+        title: 'WebSocket: url property',
+    },
+    {
+        path: 'lib/javascript/web_api/websocket/websocket/index.md',
+        title: 'WebSocket: WebSocket() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/websockets_api/index.md',
+        title: 'The WebSocket API (WebSockets)',
+    },
+    {
+        path: 'lib/javascript/web_api/websockets_api/writing_a_websocket_server_in_java/index.md',
+        title: 'Writing a WebSocket server in Java',
+    },
+    {
+        path: 'lib/javascript/web_api/websockets_api/writing_a_websocket_server_in_javascript_deno/index.md',
+        title: 'Writing a WebSocket server in JavaScript (Deno)',
+    },
+    {
+        path: 'lib/javascript/web_api/websockets_api/writing_websocket_client_applications/index.md',
+        title: 'Writing WebSocket client applications',
+    },
+    {
+        path: 'lib/javascript/web_api/websockets_api/writing_websocket_server/index.md',
+        title: 'Writing a WebSocket server in C#',
+    },
+    {
+        path: 'lib/javascript/web_api/websockets_api/writing_websocket_servers/index.md',
+        title: 'Writing WebSocket servers',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/close/index.md',
+        title: 'WebTransport: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/closed/index.md',
+        title: 'WebTransport: closed property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/congestioncontrol/index.md',
+        title: 'WebTransport: congestionControl property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/createbidirectionalstream/index.md',
+        title: 'WebTransport: createBidirectionalStream() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/createunidirectionalstream/index.md',
+        title: 'WebTransport: createUnidirectionalStream() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/datagrams/index.md',
+        title: 'WebTransport: datagrams property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/getstats/index.md',
+        title: 'WebTransport: getStats() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/incomingbidirectionalstreams/index.md',
+        title: 'WebTransport: incomingBidirectionalStreams property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/incomingunidirectionalstreams/index.md',
+        title: 'WebTransport: incomingUnidirectionalStreams property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/index.md',
+        title: 'WebTransport',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/ready/index.md',
+        title: 'WebTransport: ready property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/reliability/index.md',
+        title: 'WebTransport: reliability property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport/webtransport/index.md',
+        title: 'WebTransport: WebTransport() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransport_api/index.md',
+        title: 'WebTransport API',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportbidirectionalstream/index.md',
+        title: 'WebTransportBidirectionalStream',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportbidirectionalstream/readable/index.md',
+        title: 'WebTransportBidirectionalStream: readable property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportbidirectionalstream/writable/index.md',
+        title: 'WebTransportBidirectionalStream: writable property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportdatagramduplexstream/incominghighwatermark/index.md',
+        title: 'WebTransportDatagramDuplexStream: incomingHighWaterMark property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportdatagramduplexstream/incomingmaxage/index.md',
+        title: 'WebTransportDatagramDuplexStream: incomingMaxAge property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportdatagramduplexstream/index.md',
+        title: 'WebTransportDatagramDuplexStream',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportdatagramduplexstream/maxdatagramsize/index.md',
+        title: 'WebTransportDatagramDuplexStream: maxDatagramSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportdatagramduplexstream/outgoinghighwatermark/index.md',
+        title: 'WebTransportDatagramDuplexStream: outgoingHighWaterMark property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportdatagramduplexstream/outgoingmaxage/index.md',
+        title: 'WebTransportDatagramDuplexStream: outgoingMaxAge property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportdatagramduplexstream/readable/index.md',
+        title: 'WebTransportDatagramDuplexStream: readable property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportdatagramduplexstream/writable/index.md',
+        title: 'WebTransportDatagramDuplexStream: writable property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransporterror/index.md',
+        title: 'WebTransportError',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransporterror/source/index.md',
+        title: 'WebTransportError: source property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransporterror/streamerrorcode/index.md',
+        title: 'WebTransportError: streamErrorCode property',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransporterror/webtransporterror/index.md',
+        title: 'WebTransportError: WebTransportError() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportreceivestream/getstats/index.md',
+        title: 'WebTransportReceiveStream: getStats() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportreceivestream/index.md',
+        title: 'WebTransportReceiveStream',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportsendstream/getstats/index.md',
+        title: 'WebTransportSendStream: getStats() method',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportsendstream/index.md',
+        title: 'WebTransportSendStream',
+    },
+    {
+        path: 'lib/javascript/web_api/webtransportsendstream/sendorder/index.md',
+        title: 'WebTransportSendStream: sendOrder property',
+    },
+    {
+        path: 'lib/javascript/web_api/webusb_api/index.md',
+        title: 'WebUSB API',
+    },
+    {
+        path: 'lib/javascript/web_api/webvr_api/concepts/index.md',
+        title: 'WebVR concepts',
+    },
+    {
+        path: 'lib/javascript/web_api/webvr_api/index.md',
+        title: 'WebVR API',
+    },
+    {
+        path: 'lib/javascript/web_api/webvr_api/using_the_webvr_api/index.md',
+        title: 'Using the WebVR API',
+    },
+    {
+        path: 'lib/javascript/web_api/webvr_api/using_vr_controllers_with_webvr/index.md',
+        title: 'Using VR controllers with WebVR',
+    },
+    {
+        path: 'lib/javascript/web_api/webvtt_api/index.md',
+        title: 'WebVTT API',
+    },
+    {
+        path: 'lib/javascript/web_api/webvtt_api/web_video_text_tracks_format/index.md',
+        title: 'Web Video Text Tracks Format (WebVTT)',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/bounded_reference_spaces/index.md',
+        title: 'Using bounded reference spaces',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/cameras/index.md',
+        title: 'Viewpoints and viewers: Simulating cameras in WebXR',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/fundamentals/index.md',
+        title: 'Fundamentals of WebXR',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/geometry/index.md',
+        title: 'Geometry and reference spaces in WebXR',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/index.md',
+        title: 'WebXR Device API',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/inputs/index.md',
+        title: 'Inputs and input sources',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/lifecycle/index.md',
+        title: 'WebXR application life cycle',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/lighting/index.md',
+        title: 'Lighting a WebXR setting',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/movement_and_motion/index.md',
+        title: 'Movement, orientation, and motion: A WebXR example',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/performance/index.md',
+        title: 'WebXR performance guide',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/permissions_and_security/index.md',
+        title: 'WebXR permissions and security',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/perspective/index.md',
+        title: 'A perspective retrospective for WebXR developers',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/rendering/index.md',
+        title: 'Rendering and the WebXR frame animation callback',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/spatial_tracking/index.md',
+        title: 'Spaces and reference spaces: Spatial tracking in WebXR',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/startup_and_shutdown/index.md',
+        title: 'Starting up and shutting down a WebXR session',
+    },
+    {
+        path: 'lib/javascript/web_api/webxr_device_api/targeting/index.md',
+        title: 'Targeting and hit detection',
+    },
+    {
+        path: 'lib/javascript/web_api/wgsllanguagefeatures/index.md',
+        title: 'WGSLLanguageFeatures',
+    },
+    {
+        path: 'lib/javascript/web_api/wheelevent/deltamode/index.md',
+        title: 'WheelEvent: deltaMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/wheelevent/deltax/index.md',
+        title: 'WheelEvent: deltaX property',
+    },
+    {
+        path: 'lib/javascript/web_api/wheelevent/deltay/index.md',
+        title: 'WheelEvent: deltaY property',
+    },
+    {
+        path: 'lib/javascript/web_api/wheelevent/deltaz/index.md',
+        title: 'WheelEvent: deltaZ property',
+    },
+    {
+        path: 'lib/javascript/web_api/wheelevent/index.md',
+        title: 'WheelEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/wheelevent/wheelevent/index.md',
+        title: 'WheelEvent: WheelEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/window/afterprint_event/index.md',
+        title: 'Window: afterprint event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/alert/index.md',
+        title: 'Window: alert() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/appinstalled_event/index.md',
+        title: 'Window: appinstalled event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/atob/index.md',
+        title: 'Window: atob() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/back/index.md',
+        title: 'Window: back() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/beforeinstallprompt_event/index.md',
+        title: 'Window: beforeinstallprompt event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/beforeprint_event/index.md',
+        title: 'Window: beforeprint event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/beforeunload_event/index.md',
+        title: 'Window: beforeunload event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/blur/index.md',
+        title: 'Window: blur() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/blur_event/index.md',
+        title: 'Window: blur event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/btoa/index.md',
+        title: 'Window: btoa() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/caches/index.md',
+        title: 'Window: caches property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/cancelanimationframe/index.md',
+        title: 'Window: cancelAnimationFrame() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/cancelidlecallback/index.md',
+        title: 'Window: cancelIdleCallback() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/captureevents/index.md',
+        title: 'Window: captureEvents() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/clearimmediate/index.md',
+        title: 'Window: clearImmediate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/close/index.md',
+        title: 'Window: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/closed/index.md',
+        title: 'Window: closed property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/confirm/index.md',
+        title: 'Window: confirm() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/console/index.md',
+        title: 'Window: console property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/cookiestore/index.md',
+        title: 'Window: cookieStore property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/copy_event/index.md',
+        title: 'Window: copy event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/credentialless/index.md',
+        title: 'Window: credentialless property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/crossoriginisolated/index.md',
+        title: 'Window: crossOriginIsolated property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/crypto/index.md',
+        title: 'Window: crypto property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/customelements/index.md',
+        title: 'Window: customElements property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/cut_event/index.md',
+        title: 'Window: cut event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/devicemotion_event/index.md',
+        title: 'Window: devicemotion event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/deviceorientation_event/index.md',
+        title: 'Window: deviceorientation event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/deviceorientationabsolute_event/index.md',
+        title: 'Window: deviceorientationabsolute event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/devicepixelratio/index.md',
+        title: 'Window: devicePixelRatio property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/document/index.md',
+        title: 'Window: document property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/documentpictureinpicture/index.md',
+        title: 'Window: documentPictureInPicture property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/dump/index.md',
+        title: 'Window: dump() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/error_event/index.md',
+        title: 'Window: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/event/index.md',
+        title: 'Window: event property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/external/index.md',
+        title: 'Window: external property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/fence/index.md',
+        title: 'Window: fence property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/fetch/index.md',
+        title: 'Window: fetch() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/find/index.md',
+        title: 'Window: find() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/focus/index.md',
+        title: 'Window: focus() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/focus_event/index.md',
+        title: 'Window: focus event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/forward/index.md',
+        title: 'Window: forward() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/frameelement/index.md',
+        title: 'Window: frameElement property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/frames/index.md',
+        title: 'Window: frames property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/fullscreen/index.md',
+        title: 'Window: fullScreen property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/gamepadconnected_event/index.md',
+        title: 'Window: gamepadconnected event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/gamepaddisconnected_event/index.md',
+        title: 'Window: gamepaddisconnected event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/getcomputedstyle/index.md',
+        title: 'Window: getComputedStyle() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/getdefaultcomputedstyle/index.md',
+        title: 'Window: getDefaultComputedStyle() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/getscreendetails/index.md',
+        title: 'Window: getScreenDetails() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/getselection/index.md',
+        title: 'Window: getSelection() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/hashchange_event/index.md',
+        title: 'Window: hashchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/history/index.md',
+        title: 'Window: history property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/index.md',
+        title: 'Window',
+    },
+    {
+        path: 'lib/javascript/web_api/window/indexeddb/index.md',
+        title: 'Window: indexedDB property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/innerheight/index.md',
+        title: 'Window: innerHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/innerwidth/index.md',
+        title: 'Window: innerWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/issecurecontext/index.md',
+        title: 'Window: isSecureContext property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/languagechange_event/index.md',
+        title: 'Window: languagechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/launchqueue/index.md',
+        title: 'Window: launchQueue property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/length/index.md',
+        title: 'Window: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/load_event/index.md',
+        title: 'Window: load event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/localstorage/index.md',
+        title: 'Window: localStorage property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/location/index.md',
+        title: 'Window: location property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/locationbar/index.md',
+        title: 'Window: locationbar property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/matchmedia/index.md',
+        title: 'Window: matchMedia() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/menubar/index.md',
+        title: 'Window: menubar property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/message_event/index.md',
+        title: 'Window: message event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/messageerror_event/index.md',
+        title: 'Window: messageerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/moveby/index.md',
+        title: 'Window: moveBy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/moveto/index.md',
+        title: 'Window: moveTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/mozinnerscreenx/index.md',
+        title: 'Window: mozInnerScreenX property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/mozinnerscreeny/index.md',
+        title: 'Window: mozInnerScreenY property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/name/index.md',
+        title: 'Window: name property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/navigation/index.md',
+        title: 'Window: navigation property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/navigator/index.md',
+        title: 'Window: navigator property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/offline_event/index.md',
+        title: 'Window: offline event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/online_event/index.md',
+        title: 'Window: online event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/open/index.md',
+        title: 'Window: open() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/opener/index.md',
+        title: 'Window: opener property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/orientation/index.md',
+        title: 'Window: orientation property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/orientationchange_event/index.md',
+        title: 'Window: orientationchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/origin/index.md',
+        title: 'Window: origin property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/originagentcluster/index.md',
+        title: 'Window: originAgentCluster property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/outerheight/index.md',
+        title: 'Window: outerHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/outerwidth/index.md',
+        title: 'Window: outerWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/pagehide_event/index.md',
+        title: 'Window: pagehide event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/pagereveal_event/index.md',
+        title: 'Window: pagereveal event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/pageshow_event/index.md',
+        title: 'Window: pageshow event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/pageswap_event/index.md',
+        title: 'Window: pageswap event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/parent/index.md',
+        title: 'Window: parent property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/paste_event/index.md',
+        title: 'Window: paste event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/performance/index.md',
+        title: 'Window: performance property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/personalbar/index.md',
+        title: 'Window: personalbar property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/popstate_event/index.md',
+        title: 'Window: popstate event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/postmessage/index.md',
+        title: 'Window: postMessage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/print/index.md',
+        title: 'Window: print() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/prompt/index.md',
+        title: 'Window: prompt() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/querylocalfonts/index.md',
+        title: 'Window: queryLocalFonts() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/rejectionhandled_event/index.md',
+        title: 'Window: rejectionhandled event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/releaseevents/index.md',
+        title: 'Window: releaseEvents() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/requestanimationframe/index.md',
+        title: 'Window: requestAnimationFrame() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/requestfilesystem/index.md',
+        title: 'Window: requestFileSystem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/requestidlecallback/index.md',
+        title: 'Window: requestIdleCallback() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/resize_event/index.md',
+        title: 'Window: resize event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/resizeby/index.md',
+        title: 'Window: resizeBy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/resizeto/index.md',
+        title: 'Window: resizeTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/scheduler/index.md',
+        title: 'Window: scheduler property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/screen/index.md',
+        title: 'Window: screen property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/screenleft/index.md',
+        title: 'Window: screenLeft property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/screentop/index.md',
+        title: 'Window: screenTop property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/screenx/index.md',
+        title: 'Window: screenX property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/screeny/index.md',
+        title: 'Window: screenY property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/scroll/index.md',
+        title: 'Window: scroll() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/scrollbars/index.md',
+        title: 'Window: scrollbars property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/scrollby/index.md',
+        title: 'Window: scrollBy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/scrollbylines/index.md',
+        title: 'Window: scrollByLines() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/scrollbypages/index.md',
+        title: 'Window: scrollByPages() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/scrollmaxx/index.md',
+        title: 'Window: scrollMaxX property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/scrollmaxy/index.md',
+        title: 'Window: scrollMaxY property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/scrollto/index.md',
+        title: 'Window: scrollTo() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/scrollx/index.md',
+        title: 'Window: scrollX property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/scrolly/index.md',
+        title: 'Window: scrollY property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/self/index.md',
+        title: 'Window: self property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/sessionstorage/index.md',
+        title: 'Window: sessionStorage property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/setimmediate/index.md',
+        title: 'Window: setImmediate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/setresizable/index.md',
+        title: 'Window: setResizable() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/sharedstorage/index.md',
+        title: 'Window: sharedStorage property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/showdirectorypicker/index.md',
+        title: 'Window: showDirectoryPicker() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/showmodaldialog/index.md',
+        title: 'Window: showModalDialog() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/showopenfilepicker/index.md',
+        title: 'Window: showOpenFilePicker() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/showsavefilepicker/index.md',
+        title: 'Window: showSaveFilePicker() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/sizetocontent/index.md',
+        title: 'Window: sizeToContent() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/speechsynthesis/index.md',
+        title: 'Window: speechSynthesis property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/status/index.md',
+        title: 'Window: status property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/statusbar/index.md',
+        title: 'Window: statusbar property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/stop/index.md',
+        title: 'Window: stop() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/storage_event/index.md',
+        title: 'Window: storage event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/toolbar/index.md',
+        title: 'Window: toolbar property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/top/index.md',
+        title: 'Window: top property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/trustedtypes/index.md',
+        title: 'Window: trustedTypes property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/unhandledrejection_event/index.md',
+        title: 'Window: unhandledrejection event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/unload_event/index.md',
+        title: 'Window: unload event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/updatecommands/index.md',
+        title: 'Window: updateCommands() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/visualviewport/index.md',
+        title: 'Window: visualViewport property',
+    },
+    {
+        path: 'lib/javascript/web_api/window/vrdisplayactivate_event/index.md',
+        title: 'Window: vrdisplayactivate event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/vrdisplayconnect_event/index.md',
+        title: 'Window: vrdisplayconnect event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/vrdisplaydeactivate_event/index.md',
+        title: 'Window: vrdisplaydeactivate event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/vrdisplaydisconnect_event/index.md',
+        title: 'Window: vrdisplaydisconnect event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/vrdisplaypresentchange_event/index.md',
+        title: 'Window: vrdisplaypresentchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/window/webkitconvertpointfromnodetopage/index.md',
+        title: 'Window: webkitConvertPointFromNodeToPage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/webkitconvertpointfrompagetonode/index.md',
+        title: 'Window: webkitConvertPointFromPageToNode() method',
+    },
+    {
+        path: 'lib/javascript/web_api/window/window/index.md',
+        title: 'Window: window property',
+    },
+    {
+        path: 'lib/javascript/web_api/window_controls_overlay_api/index.md',
+        title: 'Window Controls Overlay API',
+    },
+    {
+        path: 'lib/javascript/web_api/window_management_api/index.md',
+        title: 'Window Management API',
+    },
+    {
+        path: 'lib/javascript/web_api/window_management_api/multi-screen_origin/index.md',
+        title: 'Multi-screen origin',
+    },
+    {
+        path: 'lib/javascript/web_api/window_management_api/using/index.md',
+        title: 'Using the Window Management API',
+    },
+    {
+        path: 'lib/javascript/web_api/windowclient/ancestororigins/index.md',
+        title: 'WindowClient: ancestorOrigins property',
+    },
+    {
+        path: 'lib/javascript/web_api/windowclient/focus/index.md',
+        title: 'WindowClient: focus() method',
+    },
+    {
+        path: 'lib/javascript/web_api/windowclient/focused/index.md',
+        title: 'WindowClient: focused property',
+    },
+    {
+        path: 'lib/javascript/web_api/windowclient/index.md',
+        title: 'WindowClient',
+    },
+    {
+        path: 'lib/javascript/web_api/windowclient/navigate/index.md',
+        title: 'WindowClient: navigate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/windowclient/visibilitystate/index.md',
+        title: 'WindowClient: visibilityState property',
+    },
+    {
+        path: 'lib/javascript/web_api/windowcontrolsoverlay/geometrychange_event/index.md',
+        title: 'WindowControlsOverlay: geometrychange event',
+    },
+    {
+        path: 'lib/javascript/web_api/windowcontrolsoverlay/gettitlebararearect/index.md',
+        title: 'WindowControlsOverlay: getTitlebarAreaRect() method',
+    },
+    {
+        path: 'lib/javascript/web_api/windowcontrolsoverlay/index.md',
+        title: 'WindowControlsOverlay',
+    },
+    {
+        path: 'lib/javascript/web_api/windowcontrolsoverlay/visible/index.md',
+        title: 'WindowControlsOverlay: visible property',
+    },
+    {
+        path: 'lib/javascript/web_api/windowcontrolsoverlaygeometrychangeevent/index.md',
+        title: 'WindowControlsOverlayGeometryChangeEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/windowcontrolsoverlaygeometrychangeevent/titlebararearect/index.md',
+        title: 'WindowControlsOverlayGeometryChangeEvent: titlebarAreaRect property',
+    },
+    {
+        path: 'lib/javascript/web_api/windowcontrolsoverlaygeometrychangeevent/visible/index.md',
+        title: 'WindowControlsOverlayGeometryChangeEvent: visible property',
+    },
+    {
+        path: 'lib/javascript/web_api/windowcontrolsoverlaygeometrychangeevent/windowcontrolsoverlaygeometrychangeevent/index.md',
+        title: 'WindowControlsOverlayGeometryChangeEvent: WindowControlsOverlayGeometryChangeEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/windowsharedstorage/index.md',
+        title: 'WindowSharedStorage',
+    },
+    {
+        path: 'lib/javascript/web_api/windowsharedstorage/run/index.md',
+        title: 'WindowSharedStorage: run() method',
+    },
+    {
+        path: 'lib/javascript/web_api/windowsharedstorage/selecturl/index.md',
+        title: 'WindowSharedStorage: selectURL() method',
+    },
+    {
+        path: 'lib/javascript/web_api/windowsharedstorage/worklet/index.md',
+        title: 'WindowSharedStorage: worklet property',
+    },
+    {
+        path: 'lib/javascript/web_api/worker/error_event/index.md',
+        title: 'Worker: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/worker/index.md',
+        title: 'Worker',
+    },
+    {
+        path: 'lib/javascript/web_api/worker/message_event/index.md',
+        title: 'Worker: message event',
+    },
+    {
+        path: 'lib/javascript/web_api/worker/messageerror_event/index.md',
+        title: 'Worker: messageerror event',
+    },
+    {
+        path: 'lib/javascript/web_api/worker/postmessage/index.md',
+        title: 'Worker: postMessage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/worker/terminate/index.md',
+        title: 'Worker: terminate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/worker/worker/index.md',
+        title: 'Worker: Worker() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/atob/index.md',
+        title: 'WorkerGlobalScope: atob() method',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/btoa/index.md',
+        title: 'WorkerGlobalScope: btoa() method',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/caches/index.md',
+        title: 'WorkerGlobalScope: caches property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/crossoriginisolated/index.md',
+        title: 'WorkerGlobalScope: crossOriginIsolated property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/crypto/index.md',
+        title: 'WorkerGlobalScope: crypto property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/dump/index.md',
+        title: 'WorkerGlobalScope: dump() method',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/error_event/index.md',
+        title: 'WorkerGlobalScope: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/fetch/index.md',
+        title: 'WorkerGlobalScope: fetch() method',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/fonts/index.md',
+        title: 'WorkerGlobalScope: fonts property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/importscripts/index.md',
+        title: 'WorkerGlobalScope: importScripts() method',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/index.md',
+        title: 'WorkerGlobalScope',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/indexeddb/index.md',
+        title: 'WorkerGlobalScope: indexedDB property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/issecurecontext/index.md',
+        title: 'WorkerGlobalScope: isSecureContext property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/languagechange_event/index.md',
+        title: 'WorkerGlobalScope: languagechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/location/index.md',
+        title: 'WorkerGlobalScope: location property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/navigator/index.md',
+        title: 'WorkerGlobalScope: navigator property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/offline_event/index.md',
+        title: 'WorkerGlobalScope: offline event',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/online_event/index.md',
+        title: 'WorkerGlobalScope: online event',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/origin/index.md',
+        title: 'WorkerGlobalScope: origin property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/performance/index.md',
+        title: 'WorkerGlobalScope: performance property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/rejectionhandled_event/index.md',
+        title: 'WorkerGlobalScope: rejectionhandled event',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/scheduler/index.md',
+        title: 'WorkerGlobalScope: scheduler property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/securitypolicyviolation_event/index.md',
+        title: 'WorkerGlobalScope: securitypolicyviolation event',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/self/index.md',
+        title: 'WorkerGlobalScope: self property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/trustedtypes/index.md',
+        title: 'WorkerGlobalScope: trustedTypes property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerglobalscope/unhandledrejection_event/index.md',
+        title: 'WorkerGlobalScope: unhandledrejection event',
+    },
+    {
+        path: 'lib/javascript/web_api/workerlocation/hash/index.md',
+        title: 'WorkerLocation: hash property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerlocation/host/index.md',
+        title: 'WorkerLocation: host property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerlocation/hostname/index.md',
+        title: 'WorkerLocation: hostname property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerlocation/href/index.md',
+        title: 'WorkerLocation: href property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerlocation/index.md',
+        title: 'WorkerLocation',
+    },
+    {
+        path: 'lib/javascript/web_api/workerlocation/origin/index.md',
+        title: 'WorkerLocation: origin property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerlocation/pathname/index.md',
+        title: 'WorkerLocation: pathname property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerlocation/port/index.md',
+        title: 'WorkerLocation: port property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerlocation/protocol/index.md',
+        title: 'WorkerLocation: protocol property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerlocation/search/index.md',
+        title: 'WorkerLocation: search property',
+    },
+    {
+        path: 'lib/javascript/web_api/workerlocation/tostring/index.md',
+        title: 'WorkerLocation: toString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/appcodename/index.md',
+        title: 'WorkerNavigator: appCodeName property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/appname/index.md',
+        title: 'WorkerNavigator: appName property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/appversion/index.md',
+        title: 'WorkerNavigator: appVersion property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/clearappbadge/index.md',
+        title: 'WorkerNavigator: clearAppBadge() method',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/connection/index.md',
+        title: 'WorkerNavigator: connection property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/devicememory/index.md',
+        title: 'WorkerNavigator: deviceMemory property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/globalprivacycontrol/index.md',
+        title: 'WorkerNavigator: globalPrivacyControl property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/gpu/index.md',
+        title: 'WorkerNavigator: gpu property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/hardwareconcurrency/index.md',
+        title: 'WorkerNavigator: hardwareConcurrency property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/index.md',
+        title: 'WorkerNavigator',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/language/index.md',
+        title: 'WorkerNavigator: language property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/languages/index.md',
+        title: 'WorkerNavigator: languages property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/locks/index.md',
+        title: 'WorkerNavigator: locks property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/mediacapabilities/index.md',
+        title: 'WorkerNavigator: mediaCapabilities property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/online/index.md',
+        title: 'WorkerNavigator: onLine property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/permissions/index.md',
+        title: 'WorkerNavigator: permissions property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/platform/index.md',
+        title: 'WorkerNavigator: platform property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/product/index.md',
+        title: 'WorkerNavigator: product property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/serial/index.md',
+        title: 'WorkerNavigator: serial property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/serviceworker/index.md',
+        title: 'WorkerNavigator: serviceWorker property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/setappbadge/index.md',
+        title: 'WorkerNavigator: setAppBadge() method',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/storage/index.md',
+        title: 'WorkerNavigator: storage property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/usb/index.md',
+        title: 'WorkerNavigator: usb property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/useragent/index.md',
+        title: 'WorkerNavigator: userAgent property',
+    },
+    {
+        path: 'lib/javascript/web_api/workernavigator/useragentdata/index.md',
+        title: 'WorkerNavigator: userAgentData property',
+    },
+    {
+        path: 'lib/javascript/web_api/worklet/addmodule/index.md',
+        title: 'Worklet: addModule() method',
+    },
+    {
+        path: 'lib/javascript/web_api/worklet/index.md',
+        title: 'Worklet',
+    },
+    {
+        path: 'lib/javascript/web_api/workletglobalscope/index.md',
+        title: 'WorkletGlobalScope',
+    },
+    {
+        path: 'lib/javascript/web_api/workletsharedstorage/context/index.md',
+        title: 'WorkletSharedStorage: context property',
+    },
+    {
+        path: 'lib/javascript/web_api/workletsharedstorage/entries/index.md',
+        title: 'WorkletSharedStorage: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/workletsharedstorage/get/index.md',
+        title: 'WorkletSharedStorage: get() method',
+    },
+    {
+        path: 'lib/javascript/web_api/workletsharedstorage/index.md',
+        title: 'WorkletSharedStorage',
+    },
+    {
+        path: 'lib/javascript/web_api/workletsharedstorage/keys/index.md',
+        title: 'WorkletSharedStorage: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/workletsharedstorage/length/index.md',
+        title: 'WorkletSharedStorage: length() method',
+    },
+    {
+        path: 'lib/javascript/web_api/workletsharedstorage/remainingbudget/index.md',
+        title: 'WorkletSharedStorage: remainingBudget() method',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestream/abort/index.md',
+        title: 'WritableStream: abort() method',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestream/close/index.md',
+        title: 'WritableStream: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestream/getwriter/index.md',
+        title: 'WritableStream: getWriter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestream/index.md',
+        title: 'WritableStream',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestream/locked/index.md',
+        title: 'WritableStream: locked property',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestream/writablestream/index.md',
+        title: 'WritableStream: WritableStream() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestreamdefaultcontroller/error/index.md',
+        title: 'WritableStreamDefaultController: error() method',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestreamdefaultcontroller/index.md',
+        title: 'WritableStreamDefaultController',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestreamdefaultcontroller/signal/index.md',
+        title: 'WritableStreamDefaultController: signal property',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestreamdefaultwriter/abort/index.md',
+        title: 'WritableStreamDefaultWriter: abort() method',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestreamdefaultwriter/close/index.md',
+        title: 'WritableStreamDefaultWriter: close() method',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestreamdefaultwriter/closed/index.md',
+        title: 'WritableStreamDefaultWriter: closed property',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestreamdefaultwriter/desiredsize/index.md',
+        title: 'WritableStreamDefaultWriter: desiredSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestreamdefaultwriter/index.md',
+        title: 'WritableStreamDefaultWriter',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestreamdefaultwriter/ready/index.md',
+        title: 'WritableStreamDefaultWriter: ready property',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestreamdefaultwriter/releaselock/index.md',
+        title: 'WritableStreamDefaultWriter: releaseLock() method',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestreamdefaultwriter/writablestreamdefaultwriter/index.md',
+        title: 'WritableStreamDefaultWriter: WritableStreamDefaultWriter() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/writablestreamdefaultwriter/write/index.md',
+        title: 'WritableStreamDefaultWriter: write() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xmldocument/index.md',
+        title: 'XMLDocument',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/abort/index.md',
+        title: 'XMLHttpRequest: abort() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/abort_event/index.md',
+        title: 'XMLHttpRequest: abort event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/channel/index.md',
+        title: 'XMLHttpRequest: channel property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/error_event/index.md',
+        title: 'XMLHttpRequest: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/getallresponseheaders/index.md',
+        title: 'XMLHttpRequest: getAllResponseHeaders() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/getresponseheader/index.md',
+        title: 'XMLHttpRequest: getResponseHeader() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/index.md',
+        title: 'XMLHttpRequest',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/load_event/index.md',
+        title: 'XMLHttpRequest: load event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/loadend_event/index.md',
+        title: 'XMLHttpRequest: loadend event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/loadstart_event/index.md',
+        title: 'XMLHttpRequest: loadstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/mozanon/index.md',
+        title: 'XMLHttpRequest: mozAnon property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/mozbackgroundrequest/index.md',
+        title: 'XMLHttpRequest: mozBackgroundRequest property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/mozsystem/index.md',
+        title: 'XMLHttpRequest: mozSystem property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/open/index.md',
+        title: 'XMLHttpRequest: open() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/overridemimetype/index.md',
+        title: 'XMLHttpRequest: overrideMimeType() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/progress_event/index.md',
+        title: 'XMLHttpRequest: progress event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/readystate/index.md',
+        title: 'XMLHttpRequest: readyState property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/readystatechange_event/index.md',
+        title: 'XMLHttpRequest: readystatechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/response/index.md',
+        title: 'XMLHttpRequest: response property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/responsetext/index.md',
+        title: 'XMLHttpRequest: responseText property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/responsetype/index.md',
+        title: 'XMLHttpRequest: responseType property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/responseurl/index.md',
+        title: 'XMLHttpRequest: responseURL property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/responsexml/index.md',
+        title: 'XMLHttpRequest: responseXML property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/send/index.md',
+        title: 'XMLHttpRequest: send() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/setattributionreporting/index.md',
+        title: 'XMLHttpRequest: setAttributionReporting() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/setrequestheader/index.md',
+        title: 'XMLHttpRequest: setRequestHeader() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/status/index.md',
+        title: 'XMLHttpRequest: status property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/statustext/index.md',
+        title: 'XMLHttpRequest: statusText property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/timeout/index.md',
+        title: 'XMLHttpRequest: timeout property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/timeout_event/index.md',
+        title: 'XMLHttpRequest: timeout event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/upload/index.md',
+        title: 'XMLHttpRequest: upload property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/withcredentials/index.md',
+        title: 'XMLHttpRequest: withCredentials property',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest/xmlhttprequest/index.md',
+        title: 'XMLHttpRequest: XMLHttpRequest() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest_api/html_in_xmlhttprequest/index.md',
+        title: 'HTML in XMLHttpRequest',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest_api/index.md',
+        title: 'XMLHttpRequest API',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest_api/sending_and_receiving_binary_data/index.md',
+        title: 'Sending and Receiving Binary Data',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest_api/synchronous_and_asynchronous_requests/index.md',
+        title: 'Synchronous and asynchronous requests',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest_api/using_formdata_objects/index.md',
+        title: 'Using FormData Objects',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequest_api/using_xmlhttprequest/index.md',
+        title: 'Using XMLHttpRequest',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequesteventtarget/index.md',
+        title: 'XMLHttpRequestEventTarget',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequestupload/abort_event/index.md',
+        title: 'XMLHttpRequestUpload: abort event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequestupload/error_event/index.md',
+        title: 'XMLHttpRequestUpload: error event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequestupload/index.md',
+        title: 'XMLHttpRequestUpload',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequestupload/load_event/index.md',
+        title: 'XMLHttpRequestUpload: load event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequestupload/loadend_event/index.md',
+        title: 'XMLHttpRequestUpload: loadend event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequestupload/loadstart_event/index.md',
+        title: 'XMLHttpRequestUpload: loadstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequestupload/progress_event/index.md',
+        title: 'XMLHttpRequestUpload: progress event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlhttprequestupload/timeout_event/index.md',
+        title: 'XMLHttpRequestUpload: timeout event',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlserializer/index.md',
+        title: 'XMLSerializer',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlserializer/serializetostring/index.md',
+        title: 'XMLSerializer: serializeToString() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xmlserializer/xmlserializer/index.md',
+        title: 'XMLSerializer: XMLSerializer() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathevaluator/createexpression/index.md',
+        title: 'XPathEvaluator: createExpression() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathevaluator/creatensresolver/index.md',
+        title: 'XPathEvaluator: createNSResolver() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathevaluator/evaluate/index.md',
+        title: 'XPathEvaluator: evaluate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathevaluator/index.md',
+        title: 'XPathEvaluator',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathevaluator/xpathevaluator/index.md',
+        title: 'XPathEvaluator: XPathEvaluator() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathexception/code/index.md',
+        title: 'XPathException: code property',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathexception/index.md',
+        title: 'XPathException',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathexpression/evaluate/index.md',
+        title: 'XPathExpression: evaluate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathexpression/index.md',
+        title: 'XPathExpression',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathresult/booleanvalue/index.md',
+        title: 'XPathResult: booleanValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathresult/index.md',
+        title: 'XPathResult',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathresult/invaliditeratorstate/index.md',
+        title: 'XPathResult: invalidIteratorState property',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathresult/iteratenext/index.md',
+        title: 'XPathResult: iterateNext() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathresult/numbervalue/index.md',
+        title: 'XPathResult: numberValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathresult/resulttype/index.md',
+        title: 'XPathResult: resultType property',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathresult/singlenodevalue/index.md',
+        title: 'XPathResult: singleNodeValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathresult/snapshotitem/index.md',
+        title: 'XPathResult: snapshotItem() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathresult/snapshotlength/index.md',
+        title: 'XPathResult: snapshotLength property',
+    },
+    {
+        path: 'lib/javascript/web_api/xpathresult/stringvalue/index.md',
+        title: 'XPathResult: stringValue property',
+    },
+    {
+        path: 'lib/javascript/web_api/xranchor/anchorspace/index.md',
+        title: 'XRAnchor: anchorSpace property',
+    },
+    {
+        path: 'lib/javascript/web_api/xranchor/delete/index.md',
+        title: 'XRAnchor: delete() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xranchor/index.md',
+        title: 'XRAnchor',
+    },
+    {
+        path: 'lib/javascript/web_api/xranchorset/index.md',
+        title: 'XRAnchorSet',
+    },
+    {
+        path: 'lib/javascript/web_api/xrboundedreferencespace/boundsgeometry/index.md',
+        title: 'XRBoundedReferenceSpace: boundsGeometry property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrboundedreferencespace/index.md',
+        title: 'XRBoundedReferenceSpace',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcompositionlayer/blendtexturesourcealpha/index.md',
+        title: 'XRCompositionLayer: blendTextureSourceAlpha property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcompositionlayer/destroy/index.md',
+        title: 'XRCompositionLayer: destroy() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcompositionlayer/index.md',
+        title: 'XRCompositionLayer',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcompositionlayer/layout/index.md',
+        title: 'XRCompositionLayer: layout property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcompositionlayer/miplevels/index.md',
+        title: 'XRCompositionLayer: mipLevels property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcompositionlayer/needsredraw/index.md',
+        title: 'XRCompositionLayer: needsRedraw property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcpudepthinformation/data/index.md',
+        title: 'XRCPUDepthInformation: data property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcpudepthinformation/getdepthinmeters/index.md',
+        title: 'XRCPUDepthInformation: getDepthInMeters() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcpudepthinformation/index.md',
+        title: 'XRCPUDepthInformation',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcubelayer/index.md',
+        title: 'XRCubeLayer',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcubelayer/orientation/index.md',
+        title: 'XRCubeLayer: orientation property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcubelayer/redraw_event/index.md',
+        title: 'XRCubeLayer: redraw event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcubelayer/space/index.md',
+        title: 'XRCubeLayer: space property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcylinderlayer/aspectratio/index.md',
+        title: 'XRCylinderLayer: aspectRatio property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcylinderlayer/centralangle/index.md',
+        title: 'XRCylinderLayer: centralAngle property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcylinderlayer/index.md',
+        title: 'XRCylinderLayer',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcylinderlayer/radius/index.md',
+        title: 'XRCylinderLayer: radius property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcylinderlayer/redraw_event/index.md',
+        title: 'XRCylinderLayer: redraw event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcylinderlayer/space/index.md',
+        title: 'XRCylinderLayer: space property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrcylinderlayer/transform/index.md',
+        title: 'XRCylinderLayer: transform property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrdepthinformation/height/index.md',
+        title: 'XRDepthInformation: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrdepthinformation/index.md',
+        title: 'XRDepthInformation',
+    },
+    {
+        path: 'lib/javascript/web_api/xrdepthinformation/normdepthbufferfromnormview/index.md',
+        title: 'XRDepthInformation: normDepthBufferFromNormView property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrdepthinformation/rawvaluetometers/index.md',
+        title: 'XRDepthInformation: rawValueToMeters property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrdepthinformation/width/index.md',
+        title: 'XRDepthInformation: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrequirectlayer/centralhorizontalangle/index.md',
+        title: 'XREquirectLayer: centralHorizontalAngle property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrequirectlayer/index.md',
+        title: 'XREquirectLayer',
+    },
+    {
+        path: 'lib/javascript/web_api/xrequirectlayer/lowerverticalangle/index.md',
+        title: 'XREquirectLayer: lowerVerticalAngle property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrequirectlayer/radius/index.md',
+        title: 'XREquirectLayer: radius property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrequirectlayer/redraw_event/index.md',
+        title: 'XREquirectLayer: redraw event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrequirectlayer/space/index.md',
+        title: 'XREquirectLayer: space property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrequirectlayer/transform/index.md',
+        title: 'XREquirectLayer: transform property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrequirectlayer/upperverticalangle/index.md',
+        title: 'XREquirectLayer: upperVerticalAngle property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/createanchor/index.md',
+        title: 'XRFrame: createAnchor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/filljointradii/index.md',
+        title: 'XRFrame: fillJointRadii() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/fillposes/index.md',
+        title: 'XRFrame: fillPoses() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/getdepthinformation/index.md',
+        title: 'XRFrame: getDepthInformation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/gethittestresults/index.md',
+        title: 'XRFrame: getHitTestResults() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/gethittestresultsfortransientinput/index.md',
+        title: 'XRFrame: getHitTestResultsForTransientInput() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/getjointpose/index.md',
+        title: 'XRFrame: getJointPose() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/getlightestimate/index.md',
+        title: 'XRFrame: getLightEstimate() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/getpose/index.md',
+        title: 'XRFrame: getPose() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/getviewerpose/index.md',
+        title: 'XRFrame: getViewerPose() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/index.md',
+        title: 'XRFrame',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/session/index.md',
+        title: 'XRFrame: session property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrframe/trackedanchors/index.md',
+        title: 'XRFrame: trackedAnchors property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrhand/index.md',
+        title: 'XRHand',
+    },
+    {
+        path: 'lib/javascript/web_api/xrhittestresult/createanchor/index.md',
+        title: 'XRHitTestResult: createAnchor() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrhittestresult/getpose/index.md',
+        title: 'XRHitTestResult: getPose() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrhittestresult/index.md',
+        title: 'XRHitTestResult',
+    },
+    {
+        path: 'lib/javascript/web_api/xrhittestsource/cancel/index.md',
+        title: 'XRHitTestSource: cancel() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrhittestsource/index.md',
+        title: 'XRHitTestSource',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsource/gamepad/index.md',
+        title: 'XRInputSource: gamepad property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsource/gripspace/index.md',
+        title: 'XRInputSource: gripSpace property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsource/hand/index.md',
+        title: 'XRInputSource: hand property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsource/handedness/index.md',
+        title: 'XRInputSource: handedness property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsource/index.md',
+        title: 'XRInputSource',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsource/profiles/index.md',
+        title: 'XRInputSource: profiles property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsource/targetraymode/index.md',
+        title: 'XRInputSource: targetRayMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsource/targetrayspace/index.md',
+        title: 'XRInputSource: targetRaySpace property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourcearray/entries/index.md',
+        title: 'XRInputSourceArray: entries() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourcearray/foreach/index.md',
+        title: 'XRInputSourceArray: forEach() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourcearray/index.md',
+        title: 'XRInputSourceArray',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourcearray/keys/index.md',
+        title: 'XRInputSourceArray: keys() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourcearray/length/index.md',
+        title: 'XRInputSourceArray: length property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourcearray/values/index.md',
+        title: 'XRInputSourceArray: values() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourceevent/frame/index.md',
+        title: 'XRInputSourceEvent: frame property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourceevent/index.md',
+        title: 'XRInputSourceEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourceevent/inputsource/index.md',
+        title: 'XRInputSourceEvent: inputSource property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourceevent/xrinputsourceevent/index.md',
+        title: 'XRInputSourceEvent: XRInputSourceEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourceschangeevent/added/index.md',
+        title: 'XRInputSourcesChangeEvent: added property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourceschangeevent/index.md',
+        title: 'XRInputSourcesChangeEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourceschangeevent/removed/index.md',
+        title: 'XRInputSourcesChangeEvent: removed property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourceschangeevent/session/index.md',
+        title: 'XRInputSourcesChangeEvent: session property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrinputsourceschangeevent/xrinputsourceschangeevent/index.md',
+        title: 'XRInputSourcesChangeEvent: XRInputSourcesChangeEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xrjointpose/index.md',
+        title: 'XRJointPose',
+    },
+    {
+        path: 'lib/javascript/web_api/xrjointpose/radius/index.md',
+        title: 'XRJointPose: radius property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrjointspace/index.md',
+        title: 'XRJointSpace',
+    },
+    {
+        path: 'lib/javascript/web_api/xrjointspace/jointname/index.md',
+        title: 'XRJointSpace: jointName property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrlayer/index.md',
+        title: 'XRLayer',
+    },
+    {
+        path: 'lib/javascript/web_api/xrlayerevent/index.md',
+        title: 'XRLayerEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/xrlayerevent/layer/index.md',
+        title: 'XRLayerEvent: layer property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrlayerevent/xrlayerevent/index.md',
+        title: 'XRLayerEvent: XRLayerEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xrlightestimate/index.md',
+        title: 'XRLightEstimate',
+    },
+    {
+        path: 'lib/javascript/web_api/xrlightestimate/primarylightdirection/index.md',
+        title: 'XRLightEstimate: primaryLightDirection property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrlightestimate/primarylightintensity/index.md',
+        title: 'XRLightEstimate: primaryLightIntensity property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrlightestimate/sphericalharmonicscoefficients/index.md',
+        title: 'XRLightEstimate: sphericalHarmonicsCoefficients property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrlightprobe/index.md',
+        title: 'XRLightProbe',
+    },
+    {
+        path: 'lib/javascript/web_api/xrlightprobe/probespace/index.md',
+        title: 'XRLightProbe: probeSpace property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrlightprobe/reflectionchange_event/index.md',
+        title: 'XRLightProbe: reflectionchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrmediabinding/createcylinderlayer/index.md',
+        title: 'XRMediaBinding: createCylinderLayer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrmediabinding/createequirectlayer/index.md',
+        title: 'XRMediaBinding: createEquirectLayer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrmediabinding/createquadlayer/index.md',
+        title: 'XRMediaBinding: createQuadLayer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrmediabinding/index.md',
+        title: 'XRMediaBinding',
+    },
+    {
+        path: 'lib/javascript/web_api/xrmediabinding/xrmediabinding/index.md',
+        title: 'XRMediaBinding: XRMediaBinding() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xrpose/angularvelocity/index.md',
+        title: 'XRPose: angularVelocity property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrpose/emulatedposition/index.md',
+        title: 'XRPose: emulatedPosition property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrpose/index.md',
+        title: 'XRPose',
+    },
+    {
+        path: 'lib/javascript/web_api/xrpose/linearvelocity/index.md',
+        title: 'XRPose: linearVelocity property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrpose/transform/index.md',
+        title: 'XRPose: transform property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrprojectionlayer/fixedfoveation/index.md',
+        title: 'XRProjectionLayer: fixedFoveation property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrprojectionlayer/ignoredepthvalues/index.md',
+        title: 'XRProjectionLayer: ignoreDepthValues property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrprojectionlayer/index.md',
+        title: 'XRProjectionLayer',
+    },
+    {
+        path: 'lib/javascript/web_api/xrprojectionlayer/texturearraylength/index.md',
+        title: 'XRProjectionLayer: textureArrayLength property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrprojectionlayer/textureheight/index.md',
+        title: 'XRProjectionLayer: textureHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrprojectionlayer/texturewidth/index.md',
+        title: 'XRProjectionLayer: textureWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrquadlayer/height/index.md',
+        title: 'XRQuadLayer: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrquadlayer/index.md',
+        title: 'XRQuadLayer',
+    },
+    {
+        path: 'lib/javascript/web_api/xrquadlayer/redraw_event/index.md',
+        title: 'XRQuadLayer: redraw event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrquadlayer/space/index.md',
+        title: 'XRQuadLayer: space property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrquadlayer/transform/index.md',
+        title: 'XRQuadLayer: transform property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrquadlayer/width/index.md',
+        title: 'XRQuadLayer: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrray/direction/index.md',
+        title: 'XRRay: direction property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrray/index.md',
+        title: 'XRRay',
+    },
+    {
+        path: 'lib/javascript/web_api/xrray/matrix/index.md',
+        title: 'XRRay: matrix property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrray/origin/index.md',
+        title: 'XRRay: origin property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrray/xrray/index.md',
+        title: 'XRRay: XRRay() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xrreferencespace/getoffsetreferencespace/index.md',
+        title: 'XRReferenceSpace: getOffsetReferenceSpace() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrreferencespace/index.md',
+        title: 'XRReferenceSpace',
+    },
+    {
+        path: 'lib/javascript/web_api/xrreferencespace/reset_event/index.md',
+        title: 'XRReferenceSpace: reset event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrreferencespaceevent/index.md',
+        title: 'XRReferenceSpaceEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/xrreferencespaceevent/referencespace/index.md',
+        title: 'XRReferenceSpaceEvent: referenceSpace property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrreferencespaceevent/transform/index.md',
+        title: 'XRReferenceSpaceEvent: transform property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrreferencespaceevent/xrreferencespaceevent/index.md',
+        title: 'XRReferenceSpaceEvent: XRReferenceSpaceEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xrrenderstate/baselayer/index.md',
+        title: 'XRRenderState: baseLayer property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrrenderstate/depthfar/index.md',
+        title: 'XRRenderState: depthFar property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrrenderstate/depthnear/index.md',
+        title: 'XRRenderState: depthNear property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrrenderstate/index.md',
+        title: 'XRRenderState',
+    },
+    {
+        path: 'lib/javascript/web_api/xrrenderstate/inlineverticalfieldofview/index.md',
+        title: 'XRRenderState: inlineVerticalFieldOfView property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrrenderstate/layers/index.md',
+        title: 'XRRenderState: layers property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrrigidtransform/index.md',
+        title: 'XRRigidTransform',
+    },
+    {
+        path: 'lib/javascript/web_api/xrrigidtransform/inverse/index.md',
+        title: 'XRRigidTransform: inverse property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrrigidtransform/matrix/index.md',
+        title: 'XRRigidTransform: matrix property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrrigidtransform/orientation/index.md',
+        title: 'XRRigidTransform: orientation property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrrigidtransform/position/index.md',
+        title: 'XRRigidTransform: position property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrrigidtransform/xrrigidtransform/index.md',
+        title: 'XRRigidTransform: XRRigidTransform() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/cancelanimationframe/index.md',
+        title: 'XRSession: cancelAnimationFrame() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/depthdataformat/index.md',
+        title: 'XRSession: depthDataFormat property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/depthusage/index.md',
+        title: 'XRSession: depthUsage property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/domoverlaystate/index.md',
+        title: 'XRSession: domOverlayState property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/end/index.md',
+        title: 'XRSession: end() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/end_event/index.md',
+        title: 'XRSession: end event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/environmentblendmode/index.md',
+        title: 'XRSession: environmentBlendMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/index.md',
+        title: 'XRSession',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/inputsources/index.md',
+        title: 'XRSession: inputSources property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/inputsourceschange_event/index.md',
+        title: 'XRSession: inputsourceschange event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/interactionmode/index.md',
+        title: 'XRSession: interactionMode property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/preferredreflectionformat/index.md',
+        title: 'XRSession: preferredReflectionFormat property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/renderstate/index.md',
+        title: 'XRSession: renderState property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/requestanimationframe/index.md',
+        title: 'XRSession: requestAnimationFrame() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/requesthittestsource/index.md',
+        title: 'XRSession: requestHitTestSource() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/requesthittestsourcefortransientinput/index.md',
+        title: 'XRSession: requestHitTestSourceForTransientInput() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/requestlightprobe/index.md',
+        title: 'XRSession: requestLightProbe() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/requestreferencespace/index.md',
+        title: 'XRSession: requestReferenceSpace() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/select_event/index.md',
+        title: 'XRSession: select event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/selectend_event/index.md',
+        title: 'XRSession: selectend event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/selectstart_event/index.md',
+        title: 'XRSession: selectstart event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/squeeze_event/index.md',
+        title: 'XRSession: squeeze event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/squeezeend_event/index.md',
+        title: 'XRSession: squeezeend event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/squeezestart_event/index.md',
+        title: 'XRSession: squeezestart event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/updaterenderstate/index.md',
+        title: 'XRSession: updateRenderState() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/visibilitychange_event/index.md',
+        title: 'XRSession: visibilitychange event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsession/visibilitystate/index.md',
+        title: 'XRSession: visibilityState property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsessionevent/index.md',
+        title: 'XRSessionEvent',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsessionevent/session/index.md',
+        title: 'XRSessionEvent: session property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsessionevent/xrsessionevent/index.md',
+        title: 'XRSessionEvent: XRSessionEvent() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xrspace/index.md',
+        title: 'XRSpace',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsubimage/index.md',
+        title: 'XRSubImage',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsubimage/viewport/index.md',
+        title: 'XRSubImage: viewport property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsystem/devicechange_event/index.md',
+        title: 'XRSystem: devicechange event',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsystem/index.md',
+        title: 'XRSystem',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsystem/issessionsupported/index.md',
+        title: 'XRSystem: isSessionSupported() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrsystem/requestsession/index.md',
+        title: 'XRSystem: requestSession() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrtransientinputhittestresult/index.md',
+        title: 'XRTransientInputHitTestResult',
+    },
+    {
+        path: 'lib/javascript/web_api/xrtransientinputhittestresult/inputsource/index.md',
+        title: 'XRTransientInputHitTestResult: inputSource property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrtransientinputhittestresult/results/index.md',
+        title: 'XRTransientInputHitTestResult: results property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrtransientinputhittestsource/cancel/index.md',
+        title: 'XRTransientInputHitTestSource: cancel() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrtransientinputhittestsource/index.md',
+        title: 'XRTransientInputHitTestSource',
+    },
+    {
+        path: 'lib/javascript/web_api/xrview/eye/index.md',
+        title: 'XRView: eye property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrview/index.md',
+        title: 'XRView',
+    },
+    {
+        path: 'lib/javascript/web_api/xrview/isfirstpersonobserver/index.md',
+        title: 'XRView: isFirstPersonObserver property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrview/projectionmatrix/index.md',
+        title: 'XRView: projectionMatrix property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrview/recommendedviewportscale/index.md',
+        title: 'XRView: recommendedViewportScale property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrview/requestviewportscale/index.md',
+        title: 'XRView: requestViewportScale() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrview/transform/index.md',
+        title: 'XRView: transform property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrviewerpose/index.md',
+        title: 'XRViewerPose',
+    },
+    {
+        path: 'lib/javascript/web_api/xrviewerpose/views/index.md',
+        title: 'XRViewerPose: views property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrviewport/height/index.md',
+        title: 'XRViewport: height property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrviewport/index.md',
+        title: 'XRViewport',
+    },
+    {
+        path: 'lib/javascript/web_api/xrviewport/width/index.md',
+        title: 'XRViewport: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrviewport/x/index.md',
+        title: 'XRViewport: x property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrviewport/y/index.md',
+        title: 'XRViewport: y property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglbinding/createcubelayer/index.md',
+        title: 'XRWebGLBinding: createCubeLayer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglbinding/createcylinderlayer/index.md',
+        title: 'XRWebGLBinding: createCylinderLayer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglbinding/createequirectlayer/index.md',
+        title: 'XRWebGLBinding: createEquirectLayer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglbinding/createprojectionlayer/index.md',
+        title: 'XRWebGLBinding: createProjectionLayer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglbinding/createquadlayer/index.md',
+        title: 'XRWebGLBinding: createQuadLayer() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglbinding/getdepthinformation/index.md',
+        title: 'XRWebGLBinding: getDepthInformation() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglbinding/getreflectioncubemap/index.md',
+        title: 'XRWebGLBinding: getReflectionCubeMap() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglbinding/getsubimage/index.md',
+        title: 'XRWebGLBinding: getSubImage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglbinding/getviewsubimage/index.md',
+        title: 'XRWebGLBinding: getViewSubImage() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglbinding/index.md',
+        title: 'XRWebGLBinding',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglbinding/nativeprojectionscalefactor/index.md',
+        title: 'XRWebGLBinding: nativeProjectionScaleFactor property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglbinding/xrwebglbinding/index.md',
+        title: 'XRWebGLBinding: XRWebGLBinding() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebgldepthinformation/index.md',
+        title: 'XRWebGLDepthInformation',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebgldepthinformation/texture/index.md',
+        title: 'XRWebGLDepthInformation: texture property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebgllayer/antialias/index.md',
+        title: 'XRWebGLLayer: antialias property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebgllayer/fixedfoveation/index.md',
+        title: 'XRWebGLLayer: fixedFoveation property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebgllayer/framebuffer/index.md',
+        title: 'XRWebGLLayer: framebuffer property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebgllayer/framebufferheight/index.md',
+        title: 'XRWebGLLayer: framebufferHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebgllayer/framebufferwidth/index.md',
+        title: 'XRWebGLLayer: framebufferWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebgllayer/getnativeframebufferscalefactor_static/index.md',
+        title: 'XRWebGLLayer: getNativeFramebufferScaleFactor() static method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebgllayer/getviewport/index.md',
+        title: 'XRWebGLLayer: getViewport() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebgllayer/ignoredepthvalues/index.md',
+        title: 'XRWebGLLayer: ignoreDepthValues property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebgllayer/index.md',
+        title: 'XRWebGLLayer',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebgllayer/xrwebgllayer/index.md',
+        title: 'XRWebGLLayer: XRWebGLLayer() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglsubimage/colortexture/index.md',
+        title: 'XRWebGLSubImage: colorTexture property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglsubimage/colortextureheight/index.md',
+        title: 'XRWebGLSubImage: colorTextureHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglsubimage/colortexturewidth/index.md',
+        title: 'XRWebGLSubImage: colorTextureWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglsubimage/depthstenciltexture/index.md',
+        title: 'XRWebGLSubImage: depthStencilTexture property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglsubimage/imageindex/index.md',
+        title: 'XRWebGLSubImage: imageIndex property',
+    },
+    {
+        path: 'lib/javascript/web_api/xrwebglsubimage/index.md',
+        title: 'XRWebGLSubImage',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/basic_example/index.md',
+        title: 'XSLT Basic Example',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/clearparameters/index.md',
+        title: 'XSLTProcessor: clearParameters() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/generating_html/index.md',
+        title: 'Generating HTML',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/getparameter/index.md',
+        title: 'XSLTProcessor: getParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/importstylesheet/index.md',
+        title: 'XSLTProcessor: importStylesheet() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/index.md',
+        title: 'XSLTProcessor',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/introduction/index.md',
+        title: 'Introduction',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/removeparameter/index.md',
+        title: 'XSLTProcessor: removeParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/reset/index.md',
+        title: 'XSLTProcessor: reset() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/setparameter/index.md',
+        title: 'XSLTProcessor: setParameter() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/transformtodocument/index.md',
+        title: 'XSLTProcessor: transformToDocument() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/transformtofragment/index.md',
+        title: 'XSLTProcessor: transformToFragment() method',
+    },
+    {
+        path: 'lib/javascript/web_api/xsltprocessor/xsltprocessor/index.md',
+        title: 'XSLTProcessor: XSLTProcessor() constructor',
     },
 ];
