@@ -1,7 +1,7 @@
 {
   "name": "mdnman",
   "type": "module",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Command line interface for the MDN Web Docs",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
