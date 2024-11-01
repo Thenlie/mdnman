@@ -1,7 +1,7 @@
 import { Command } from 'commander';
 import { openEditor, DEFAULT_OUTPUT_PATH, printDoc, writeDocToFile, openLess } from './output.js';
 import { createChoicesFromTitles, stripJsxRef } from '../parser/index.js';
-import { getAllSections, getFirstSection } from '../parser/sections.js';
+import { getAllSections, getFirstSection, getSection } from '../parser/sections.js';
 import { findMDNFile } from './file_handler.js';
 import { search, select } from '@inquirer/prompts';
 import { javascriptTitles } from '../titles/js_titles.js';
@@ -82,9 +82,8 @@ const interactiveActionHandler = async (options: { output: string; path: string 
             },
         ],
     });
-    console.log(language);
     // Prompt user for query (with autocomplete)
-    const query = await search({
+    const documentQuery = await search({
         message: 'Search for an MDN Web Doc',
         source: async (input) => {
             const titles = choiceLanguageMap[language];
@@ -101,14 +100,13 @@ const interactiveActionHandler = async (options: { output: string; path: string 
             );
         },
     });
-    console.log(query);
-    const file = getMDNFile(query);
+    const file = getMDNFile(documentQuery);
     if (!file) {
-        console.error(`[interactiveActionHandler] Error: Could not find file at ${query}`);
+        console.error(`[interactiveActionHandler] Error: Could not find file at ${documentQuery}`);
         return;
     }
     // Prompt user for section (default to no section/complete doc)
-    const section = await search({
+    const sectionQuery = await search({
         message: 'Select a section from the document (select none for the full doc)',
         source: async (input) => {
             const sections = getAllSections(file);
@@ -134,17 +132,26 @@ const interactiveActionHandler = async (options: { output: string; path: string 
             }));
         },
     });
-    console.log(section);
 
-    openLess(query);
-    // if (options.output === 'stdout') {
-    //     printDoc(file);
-    // } else if (options.output === 'vim') {
-    //     writeDocToFile(file);
-    //     openEditor(DEFAULT_OUTPUT_PATH);
-    // } else if (options.output === 'file' && options.path) {
-    //     writeDocToFile(file, options.path);
-    // }
+    const queryObj = JSON.parse(sectionQuery);
+    const section = queryObj.value === 'none' ? file : getSection(file, JSON.parse(sectionQuery));
+
+    if (!section) {
+        console.error(`[interactiveActionHandler] Error: Could not find section ${sectionQuery}`);
+        return;
+    }
+
+    if (options.output === 'stdout') {
+        printDoc(section);
+    } else if (options.output === 'less') {
+        writeDocToFile(section);
+        openLess(DEFAULT_OUTPUT_PATH);
+    } else if (options.output === 'vim') {
+        writeDocToFile(section);
+        openEditor(DEFAULT_OUTPUT_PATH);
+    } else if (options.output === 'file' && options.path) {
+        writeDocToFile(section, options.path);
+    }
 };
 
 const cli = () => {
@@ -178,7 +185,7 @@ const cli = () => {
     program
         .command('interactive')
         .description('Use prompts to search the entire MDN reference library')
-        .option('-o, --output <stdout | file | vim>', 'output type', 'stdout')
+        .option('-o, --output <less | stdout | file | vim>', 'output type', 'less')
         .option('-p, --path <string>', 'output path', './out/ref.md')
         .action(async (options) => interactiveActionHandler(options));
 
