@@ -192,8 +192,5 @@ const cli = () => {
     program.parse();
 };
 
-// Remove before push
-cli();
-
 export default cli;
 export * from './output.js';
