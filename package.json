@@ -27,7 +27,8 @@
   "dependencies": {
     "@inquirer/prompts": "^5.3.2",
     "cli-highlight": "^2.1.11",
-    "commander": "^12.1.0"
+    "commander": "^12.1.0",
+    "mdnman": "^1.2.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
