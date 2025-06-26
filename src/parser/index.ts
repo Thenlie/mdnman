@@ -65,10 +65,11 @@ const stripHeader = (document: string) => {
  * If this results in an empty line, or a line only containing a '-'
  * that line is removed from the document.
  * @param {string} document
+ * @param {boolean} addLinks
  * @returns {string | null}
  * @example Hello{{ world }}! -> Hello!
  */
-const stripJsxRef = (document: string): string | null => {
+const stripJsxRef = (document: string, addLinks: boolean = false): string | null => {
     const regex = /{{.+?}}/gm;
     const lines = document.split('\n');
 
@@ -77,13 +78,23 @@ const stripJsxRef = (document: string): string | null => {
             return line;
         }
         const newLine = line.replace(regex, (match) => {
+            const element = [...match.matchAll(/"([^"]*)"/g)];
+            if (!element || element.length === 0) return '';
+            const path = element[0][1];
+            const val = element.length === 2 ? element[1][1] : element[0][1];
             // if match contains HTMLElement("*"), transform to <*>
-            if (
-                match.match(/{{HTMLElement\("\S+"\)}}/) ||
-                match.match(/{{htmlelement\("\S+"\)}}/)
-            ) {
-                const element = match.match(/"([^"]*)"/);
-                return element ? `<${element[1]}>` : '';
+            if (match.match(/{{HTMLElement\(".+"\)}}/) || match.match(/{{htmlelement\(".+"\)}}/)) {
+                return addLinks
+                    ? `[\`<${val}>\`](${MDN_BASE_URL}/en-US/docs/Web/HTML/Reference/Elements/${path})`
+                    : `\`<${val}>\``;
+            } else if (match.match(/{{DOMxRef\(".+"\)}}/) || match.match(/{{domxref\(".+"\)}}/)) {
+                return addLinks
+                    ? `[\`${val}\`](${MDN_BASE_URL}/en-US/docs/Web/API/${path.replace('.', '/')})`
+                    : `\`${val}\``;
+            } else if (match.match(/{{CSSxRef\(".+"\)}}/) || match.match(/{{cssxref\(".+"\)}}/)) {
+                return addLinks
+                    ? `[\`${val}\`](${MDN_BASE_URL}/en-US/docs/Web/CSS/${path})`
+                    : `\`${val}\``;
             }
             return '';
         });

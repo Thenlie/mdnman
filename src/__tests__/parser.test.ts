@@ -74,19 +74,82 @@ describe('parser', () => {
         });
     });
 
-    describe('stripJsxRef', () => {
-        it('properly removes or transforms text wrapped in double curly braces `{{ }}`', () => {
+    describe.only('stripJsxRef', () => {
+        it('removes text wrapped in double curly braces `{{ }}`', () => {
             expect(stripJsxRef('Hello{{ hello }}')).toBe('Hello');
             expect(stripJsxRef('{{ hello }}')).toBeNull();
-            expect(stripJsxRef('Some test {{HTMLElement("input")}} string')).toBe(
-                'Some test <input> string'
-            );
-            expect(stripJsxRef('Some test {{htmlelement("div")}} string')).toBe(
-                'Some test <div> string'
-            );
-            expect(stripJsxRef('- {{cssxref(div)}} other text')).toBe('-  other text');
-            expect(stripJsxRef('- {{cssxref(div)}}')).toBeNull();
-            expect(stripJsxRef('- {{cssxref(div)}}.')).toBeNull();
+        });
+
+        describe('cssxref & CSSxRef', () => {
+            it('wraps cssxref text in backticks', () => {
+                expect(stripJsxRef('- {{cssxref("div")}} other text')).toBe('- `div` other text');
+                expect(stripJsxRef('- {{cssxref("div")}}')).toBe('- `div`');
+                expect(stripJsxRef('- {{cssxref("div")}}.')).toBe('- `div`.');
+            });
+            it('displays second string when two strings are provided', () => {
+                expect(stripJsxRef('- {{cssxref("var", "var()")}}')).toBe('- `var()`');
+                expect(stripJsxRef('- {{cssxref("var", "var(...)")}}')).toBe('- `var(...)`');
+            });
+            it('provides valid links when addLinks is true', () => {
+                expect(stripJsxRef('- {{cssxref("div")}} other text', true)).toBe(
+                    '- [`div`](https://developer.mozilla.org/en-US/docs/Web/CSS/div) other text'
+                );
+                expect(stripJsxRef('- {{cssxref("var", "var()")}}', true)).toBe(
+                    '- [`var()`](https://developer.mozilla.org/en-US/docs/Web/CSS/var)'
+                );
+                expect(stripJsxRef('- {{CSSxRef("div")}}.', true)).toBe(
+                    '- [`div`](https://developer.mozilla.org/en-US/docs/Web/CSS/div).'
+                );
+            });
+        });
+
+        describe('htmlelement & HTMLElement', () => {
+            it('puts HTMLElement references in angle brackets', () => {
+                expect(stripJsxRef('A test {{HTMLElement("input")}} string')).toBe(
+                    'A test `<input>` string'
+                );
+                expect(stripJsxRef('A test {{htmlelement("div")}} string')).toBe(
+                    'A test `<div>` string'
+                );
+            });
+            it('displays second string when two strings are provided', () => {
+                expect(stripJsxRef('{{htmlelement("input/button","button")}}')).toBe('`<button>`');
+                expect(stripJsxRef('{{HTMLElement("input/radio","radio")}}')).toBe('`<radio>`');
+            });
+            it('provides valid links when addLinks is true', () => {
+                expect(stripJsxRef('- {{htmlelement("div")}} other text', true)).toBe(
+                    '- [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div) other text'
+                );
+                expect(stripJsxRef('- {{HTMLElement("input/radio", "radio")}}', true)).toBe(
+                    '- [`<radio>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio)'
+                );
+                expect(stripJsxRef('- {{htmlelement("input/button", "button")}}.', true)).toBe(
+                    '- [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/button).'
+                );
+            });
+        });
+
+        describe('domxref & DOMxRef', () => {
+            it('puts domxref references in back ticks', () => {
+                expect(stripJsxRef('- {{domxref("Animation.startTime")}}.')).toBe(
+                    '- `Animation.startTime`.'
+                );
+                expect(stripJsxRef('- {{DOMxRef("Animation.startTime")}}')).toBe(
+                    '- `Animation.startTime`'
+                );
+            });
+            it('displays second string when two strings are provided', () => {
+                expect(stripJsxRef('- {{domxref("var", "var()")}}')).toBe('- `var()`');
+                expect(stripJsxRef('- {{DOMxRef("var", "var(...)")}}')).toBe('- `var(...)`');
+            });
+            it('provides valid links when addLinks is true', () => {
+                expect(stripJsxRef('- {{domxref("Animation.startTime")}}.', true)).toBe(
+                    '- [`Animation.startTime`](https://developer.mozilla.org/en-US/docs/Web/API/Animation/startTime).'
+                );
+                expect(stripJsxRef('- {{domxref("var", "var(...)")}}.', true)).toBe(
+                    '- [`var(...)`](https://developer.mozilla.org/en-US/docs/Web/API/var).'
+                );
+            });
         });
     });
 

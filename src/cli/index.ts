@@ -192,5 +192,7 @@ const cli = () => {
     program.parse();
 };
 
+cli();
+
 export default cli;
 export * from './output.js';
