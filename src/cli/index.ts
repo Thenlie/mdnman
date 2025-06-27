@@ -1,6 +1,6 @@
 import { Command } from 'commander';
 import { openEditor, DEFAULT_OUTPUT_PATH, printDoc, writeDocToFile, openLess } from './output.js';
-import { createChoicesFromTitles, transformKumascript } from '../parser/index.js';
+import { completeParse, createChoicesFromTitles } from '../parser/index.js';
 import { getAllSections, getFirstSection, getSection } from '../parser/sections.js';
 import { findMDNFile } from '../file_handler.js';
 import { search, select } from '@inquirer/prompts';
@@ -43,7 +43,7 @@ const commandActionHandler = async (
     if (options.section !== 'none') {
         document = getFirstSection(document, options.section);
     }
-    const strippedDoc = transformKumascript(document);
+    const strippedDoc = completeParse(document);
 
     if (!strippedDoc) {
         console.error(
@@ -141,16 +141,25 @@ const interactiveActionHandler = async (options: { output: string; path: string 
         return;
     }
 
+    const strippedSection = completeParse(section);
+
+    if (!strippedSection) {
+        console.error(
+            `[interactiveActionHandler] Error: Nothing was returned by transformKumascript\n Query: ${sectionQuery}`
+        );
+        return;
+    }
+
     if (options.output === 'stdout') {
-        printDoc(section);
+        printDoc(strippedSection);
     } else if (options.output === 'less') {
-        writeDocToFile(section);
+        writeDocToFile(strippedSection);
         openLess(DEFAULT_OUTPUT_PATH);
     } else if (options.output === 'vim') {
-        writeDocToFile(section);
+        writeDocToFile(strippedSection);
         openEditor(DEFAULT_OUTPUT_PATH);
     } else if (options.output === 'file' && options.path) {
-        writeDocToFile(section, options.path);
+        writeDocToFile(strippedSection, options.path);
     }
 };
 

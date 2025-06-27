@@ -240,6 +240,17 @@ const removeEmptyLines = (document: string): string => {
     return document.replace(/(\n\n)\n+/g, '$1');
 };
 
+/**
+ * Applies transformKumascript, expandLinks, and removeEmptyLines
+ * to a given document
+ * @param {string} document
+ * @returns {string}
+ */
+const completeParse = (document: string): string => {
+    const newDoc = transformKumascript(expandLinks(removeEmptyLines(document)), true);
+    return newDoc || '';
+};
+
 export {
     getHeader,
     stripHeader,
@@ -251,4 +262,5 @@ export {
     truncateString,
     createChoicesFromTitles,
     removeEmptyLines,
+    completeParse,
 };
