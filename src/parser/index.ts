@@ -6,7 +6,9 @@ export type MDNHeader = {
 };
 
 const HEADER_FIELDS = ['title', 'slug', 'page-type', 'browser-compat'] as const;
+const LOCALE = 'en-US';
 const MDN_BASE_URL = 'https://developer.mozilla.org';
+const MDN_DOCS_URL = `${MDN_BASE_URL}/${LOCALE}/docs/Web`;
 
 type HeaderField = (typeof HEADER_FIELDS)[number];
 
@@ -61,15 +63,15 @@ const stripHeader = (document: string) => {
 };
 
 /**
- * Removes all text wrapped in double curly brackets from a string.
- * If this results in an empty line, or a line only containing a '-'
- * that line is removed from the document.
+ * Transforms Kumascript macros into text or markdown links
+ * Follows the patterns defined by the MDN macros
+ * See: https://github.com/mdn/yari/tree/main/kumascript
  * @param {string} document
  * @param {boolean} addLinks
  * @returns {string | null}
- * @example Hello{{ world }}! -> Hello!
+ * @example {{cssxref("color")}} -> color
  */
-const stripJsxRef = (document: string, addLinks: boolean = false): string | null => {
+const transformKumascript = (document: string, addLinks: boolean = false): string | null => {
     const regex = /{{.+?}}/gm;
     const lines = document.split('\n');
 
@@ -78,25 +80,26 @@ const stripJsxRef = (document: string, addLinks: boolean = false): string | null
             return line;
         }
         const newLine = line.replace(regex, (match) => {
-            const element = [...match.matchAll(/"([^"]*)"/g)];
-            if (!element || element.length === 0) return '';
-            const path = element[0][1];
-            const val = element.length === 2 ? element[1][1] : element[0][1];
-            // if match contains HTMLElement("*"), transform to <*>
-            if (match.match(/{{HTMLElement\(".+"\)}}/) || match.match(/{{htmlelement\(".+"\)}}/)) {
-                return addLinks
-                    ? `[\`<${val}>\`](${MDN_BASE_URL}/en-US/docs/Web/HTML/Reference/Elements/${path})`
-                    : `\`<${val}>\``;
-            } else if (match.match(/{{DOMxRef\(".+"\)}}/) || match.match(/{{domxref\(".+"\)}}/)) {
-                return addLinks
-                    ? `[\`${val}\`](${MDN_BASE_URL}/en-US/docs/Web/API/${path.replace('.', '/')})`
-                    : `\`${val}\``;
-            } else if (match.match(/{{CSSxRef\(".+"\)}}/) || match.match(/{{cssxref\(".+"\)}}/)) {
-                return addLinks
-                    ? `[\`${val}\`](${MDN_BASE_URL}/en-US/docs/Web/CSS/${path})`
-                    : `\`${val}\``;
+            const matches = [...match.matchAll(/["']([^"']+)["']/g)];
+            if (!matches || matches.length === 0) return '';
+            const path = matches[0][1];
+            const val = matches.length === 2 ? matches[1][1] : matches[0][1];
+            switch (true) {
+                // if match contains HTMLElement("*"), wrap in <`*`>
+                case /{{htmlelement\(.+\)}}/i.test(match):
+                    return addLinks
+                        ? `[\`<${val}>\`](${MDN_DOCS_URL}/HTML/Reference/Elements/${path})`
+                        : `\`<${val}>\``;
+                // if match contains DOMxRef or CSSxRef, wrap in `*`
+                case /{{domxref\(.+\)}}/i.test(match):
+                    return addLinks
+                        ? `[\`${val}\`](${MDN_DOCS_URL}/API/${path.replace('.', '/')})`
+                        : `\`${val}\``;
+                case /{{cssxref\(.+\)}}/i.test(match):
+                    return addLinks ? `[\`${val}\`](${MDN_DOCS_URL}/CSS/${path})` : `\`${val}\``;
+                default:
+                    return '';
             }
-            return '';
         });
         const trimmedLine = newLine.trim();
         // Only return lines that are non-empty and contain more than a single '-'
@@ -220,7 +223,7 @@ const removeEmptyLines = (document: string): string => {
 export {
     getHeader,
     stripHeader,
-    stripJsxRef,
+    transformKumascript,
     getHtmlDescription,
     expandLinks,
     convertEmojiTags,

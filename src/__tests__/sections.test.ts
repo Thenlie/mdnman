@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { stripJsxRef } from '../parser/index.js';
+import { transformKumascript } from '../parser/index.js';
 import {
     getSection,
     getAllSections,
@@ -88,7 +88,7 @@ describe('sections', () => {
 
     describe('removeEmptySections', () => {
         it('removes empty sections from a given document', () => {
-            const trimmedDoc = stripJsxRef(mapDocument.document);
+            const trimmedDoc = transformKumascript(mapDocument.document);
             expect(removeEmptySections(trimmedDoc || '')).toMatchSnapshot();
         });
     });

@@ -1,6 +1,6 @@
 import { Command } from 'commander';
 import { openEditor, DEFAULT_OUTPUT_PATH, printDoc, writeDocToFile, openLess } from './output.js';
-import { createChoicesFromTitles, stripJsxRef } from '../parser/index.js';
+import { createChoicesFromTitles, transformKumascript } from '../parser/index.js';
 import { getAllSections, getFirstSection, getSection } from '../parser/sections.js';
 import { findMDNFile } from '../file_handler.js';
 import { search, select } from '@inquirer/prompts';
@@ -43,11 +43,11 @@ const commandActionHandler = async (
     if (options.section !== 'none') {
         document = getFirstSection(document, options.section);
     }
-    const strippedDoc = stripJsxRef(document);
+    const strippedDoc = transformKumascript(document);
 
     if (!strippedDoc) {
         console.error(
-            '[commandActionHandler] Error: Nothing was returned from stripJsxRef!\nDocument:',
+            '[commandActionHandler] Error: Nothing was returned from transformKumascript!\nDocument:',
             document
         );
         return;

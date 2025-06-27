@@ -3,7 +3,7 @@ import {
     getHeader,
     getHtmlDescription,
     stripHeader,
-    stripJsxRef,
+    transformKumascript,
     convertEmojiTags,
     truncateString,
     removeEmptyLines,
@@ -74,30 +74,36 @@ describe('parser', () => {
         });
     });
 
-    describe.only('stripJsxRef', () => {
+    describe('transformKumascript', () => {
         it('removes text wrapped in double curly braces `{{ }}`', () => {
-            expect(stripJsxRef('Hello{{ hello }}')).toBe('Hello');
-            expect(stripJsxRef('{{ hello }}')).toBeNull();
+            expect(transformKumascript('Hello{{ hello }}')).toBe('Hello');
+            expect(transformKumascript('{{ hello }}')).toBeNull();
         });
 
         describe('cssxref & CSSxRef', () => {
             it('wraps cssxref text in backticks', () => {
-                expect(stripJsxRef('- {{cssxref("div")}} other text')).toBe('- `div` other text');
-                expect(stripJsxRef('- {{cssxref("div")}}')).toBe('- `div`');
-                expect(stripJsxRef('- {{cssxref("div")}}.')).toBe('- `div`.');
+                expect(transformKumascript('- {{cssxref("div")}} other text')).toBe(
+                    '- `div` other text'
+                );
+                expect(transformKumascript('- {{cssxref("div")}}')).toBe('- `div`');
+                // eslint-disable-next-line quotes
+                expect(transformKumascript("- {{cssxref('div')}}")).toBe('- `div`');
+                expect(transformKumascript('- {{cssxref("div")}}.')).toBe('- `div`.');
             });
             it('displays second string when two strings are provided', () => {
-                expect(stripJsxRef('- {{cssxref("var", "var()")}}')).toBe('- `var()`');
-                expect(stripJsxRef('- {{cssxref("var", "var(...)")}}')).toBe('- `var(...)`');
+                expect(transformKumascript('- {{cssxref("var", "var()")}}')).toBe('- `var()`');
+                expect(transformKumascript('- {{cssxref("var", "var(...)")}}')).toBe(
+                    '- `var(...)`'
+                );
             });
             it('provides valid links when addLinks is true', () => {
-                expect(stripJsxRef('- {{cssxref("div")}} other text', true)).toBe(
+                expect(transformKumascript('- {{cssxref("div")}} other text', true)).toBe(
                     '- [`div`](https://developer.mozilla.org/en-US/docs/Web/CSS/div) other text'
                 );
-                expect(stripJsxRef('- {{cssxref("var", "var()")}}', true)).toBe(
+                expect(transformKumascript('- {{cssxref("var", "var()")}}', true)).toBe(
                     '- [`var()`](https://developer.mozilla.org/en-US/docs/Web/CSS/var)'
                 );
-                expect(stripJsxRef('- {{CSSxRef("div")}}.', true)).toBe(
+                expect(transformKumascript('- {{CSSxRef("div")}}.', true)).toBe(
                     '- [`div`](https://developer.mozilla.org/en-US/docs/Web/CSS/div).'
                 );
             });
@@ -105,25 +111,31 @@ describe('parser', () => {
 
         describe('htmlelement & HTMLElement', () => {
             it('puts HTMLElement references in angle brackets', () => {
-                expect(stripJsxRef('A test {{HTMLElement("input")}} string')).toBe(
+                expect(transformKumascript('A test {{HTMLElement("input")}} string')).toBe(
                     'A test `<input>` string'
                 );
-                expect(stripJsxRef('A test {{htmlelement("div")}} string')).toBe(
+                expect(transformKumascript('A test {{htmlelement("div")}} string')).toBe(
                     'A test `<div>` string'
                 );
             });
             it('displays second string when two strings are provided', () => {
-                expect(stripJsxRef('{{htmlelement("input/button","button")}}')).toBe('`<button>`');
-                expect(stripJsxRef('{{HTMLElement("input/radio","radio")}}')).toBe('`<radio>`');
+                expect(transformKumascript('{{htmlelement("input/button","button")}}')).toBe(
+                    '`<button>`'
+                );
+                expect(transformKumascript('{{HTMLElement("input/radio","radio")}}')).toBe(
+                    '`<radio>`'
+                );
             });
             it('provides valid links when addLinks is true', () => {
-                expect(stripJsxRef('- {{htmlelement("div")}} other text', true)).toBe(
+                expect(transformKumascript('- {{htmlelement("div")}} other text', true)).toBe(
                     '- [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div) other text'
                 );
-                expect(stripJsxRef('- {{HTMLElement("input/radio", "radio")}}', true)).toBe(
+                expect(transformKumascript('- {{HTMLElement("input/radio", "radio")}}', true)).toBe(
                     '- [`<radio>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio)'
                 );
-                expect(stripJsxRef('- {{htmlelement("input/button", "button")}}.', true)).toBe(
+                expect(
+                    transformKumascript('- {{htmlelement("input/button", "button")}}.', true)
+                ).toBe(
                     '- [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/button).'
                 );
             });
@@ -131,22 +143,24 @@ describe('parser', () => {
 
         describe('domxref & DOMxRef', () => {
             it('puts domxref references in back ticks', () => {
-                expect(stripJsxRef('- {{domxref("Animation.startTime")}}.')).toBe(
+                expect(transformKumascript('- {{domxref("Animation.startTime")}}.')).toBe(
                     '- `Animation.startTime`.'
                 );
-                expect(stripJsxRef('- {{DOMxRef("Animation.startTime")}}')).toBe(
+                expect(transformKumascript('- {{DOMxRef("Animation.startTime")}}')).toBe(
                     '- `Animation.startTime`'
                 );
             });
             it('displays second string when two strings are provided', () => {
-                expect(stripJsxRef('- {{domxref("var", "var()")}}')).toBe('- `var()`');
-                expect(stripJsxRef('- {{DOMxRef("var", "var(...)")}}')).toBe('- `var(...)`');
+                expect(transformKumascript('- {{domxref("var", "var()")}}')).toBe('- `var()`');
+                expect(transformKumascript('- {{DOMxRef("var", "var(...)")}}')).toBe(
+                    '- `var(...)`'
+                );
             });
             it('provides valid links when addLinks is true', () => {
-                expect(stripJsxRef('- {{domxref("Animation.startTime")}}.', true)).toBe(
+                expect(transformKumascript('- {{domxref("Animation.startTime")}}.', true)).toBe(
                     '- [`Animation.startTime`](https://developer.mozilla.org/en-US/docs/Web/API/Animation/startTime).'
                 );
-                expect(stripJsxRef('- {{domxref("var", "var(...)")}}.', true)).toBe(
+                expect(transformKumascript('- {{domxref("var", "var(...)")}}.', true)).toBe(
                     '- [`var(...)`](https://developer.mozilla.org/en-US/docs/Web/API/var).'
                 );
             });
@@ -194,7 +208,7 @@ describe('parser', () => {
 
     describe('removeEmptyLines', () => {
         it('removes duplicate newlines from a document', () => {
-            const trimmedDoc = removeEmptySections(stripJsxRef(mapDocument.document) || '');
+            const trimmedDoc = removeEmptySections(transformKumascript(mapDocument.document) || '');
             expect(removeEmptyLines(trimmedDoc)).toMatchSnapshot();
         });
     });
