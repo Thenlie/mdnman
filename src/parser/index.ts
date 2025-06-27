@@ -84,15 +84,17 @@ const transformKumascript = (document: string, addLinks: boolean = false): strin
         const newLine = line.replace(regex, (match) => {
             const matches = [...match.matchAll(/["']([^"']+)["']/g)];
             if (!matches || matches.length === 0) return '';
-            const path = matches[0][1];
+            let path = matches[0][1];
             const val = matches.length === 2 ? matches[1][1] : matches[0][1];
             switch (true) {
                 // if match contains jsxref, wrap in `*`
                 case /{{jsxref\(.+\)}}/i.test(match): {
                     const titleMatch = javascriptTitles.find((title) => title.title === val);
                     const isGlobalObject = titleMatch?.path.includes('global_objects');
-                    path.replace('()', '').replace('.prototype.', '.');
-                    if (path.includes('.') && !path.includes('/')) path.replace('.', '/');
+                    path = path.replace('()', '').replace('.prototype.', '.');
+                    if (path.includes('.') && !path.includes('/')) {
+                        path = path.replace('.', '/');
+                    }
                     return addLinks
                         ? `[\`${val}\`](${MDN_DOCS_URL}/JavaScript/Reference/${isGlobalObject ? 'Global_Objects/' : ''}${path})`
                         : `\`${val}\``;
@@ -109,6 +111,12 @@ const transformKumascript = (document: string, addLinks: boolean = false): strin
                         : `\`${val}\``;
                 case /{{cssxref\(.+\)}}/i.test(match):
                     return addLinks ? `[\`${val}\`](${MDN_DOCS_URL}/CSS/${path})` : `\`${val}\``;
+                case /{{glossary\(.+\)}}/i.test(match): {
+                    path = path.replace(/\s+/g, '_');
+                    return addLinks
+                        ? `[\`${val}\`](${MDN_BASE_URL}/${LOCALE}/docs/Glossary/${path})`
+                        : `\`${val}\``;
+                }
                 default:
                     return '';
             }

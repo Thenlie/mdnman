@@ -182,13 +182,23 @@ describe('parser', () => {
             });
             it('provides valid links when addLinks is true', () => {
                 expect(transformKumascript('- {{jsxref("String.prototype.trimEnd")}}', true)).toBe(
-                    '- [`String.prototype.trimEnd`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/String.prototype.trimEnd)'
+                    '- [`String.prototype.trimEnd`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/String/trimEnd)'
                 );
                 expect(transformKumascript('- {{jsxref("Classes/static", "static")}}', true)).toBe(
                     '- [`static`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static)'
                 );
                 expect(transformKumascript('- {{jsxref("Array.from()")}}', true)).toBe(
-                    '- [`Array.from()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array.from())'
+                    '- [`Array.from()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)'
+                );
+            });
+        });
+
+        describe('Glossary', () => {
+            it('provides valid links when addLinks is true', () => {
+                expect(
+                    transformKumascript('- {{Glossary("grid column", "grid columns")}}', true)
+                ).toBe(
+                    '- [`grid columns`](https://developer.mozilla.org/en-US/docs/Glossary/grid_column)'
                 );
             });
         });
