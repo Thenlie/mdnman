@@ -2,7 +2,7 @@ import { Command } from 'commander';
 import { openEditor, DEFAULT_OUTPUT_PATH, printDoc, writeDocToFile, openLess } from './output.js';
 import { createChoicesFromTitles, stripJsxRef } from '../parser/index.js';
 import { getAllSections, getFirstSection, getSection } from '../parser/sections.js';
-import { findMDNFile } from './file_handler.js';
+import { findMDNFile } from '../file_handler.js';
 import { search, select } from '@inquirer/prompts';
 import { javascriptTitles } from '../titles/js_titles.js';
 import { htmlTitles } from '../titles/html_titles.js';

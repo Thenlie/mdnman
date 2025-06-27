@@ -69,6 +69,9 @@ const writeDocToFile = (document: string, outputPath: string = DEFAULT_OUTPUT_PA
     // Remove MDN header and write document to file
     let doc = document;
     const header = getHeader(document);
+    console.log(
+        `✍️ Writing MDN Doc${header ? ' "' + header.title + '"' : ''} to file ${outputPath}...`
+    );
     if (header) {
         writeStream.write(`# ${header.title}\n`);
         doc = stripHeader(document);
