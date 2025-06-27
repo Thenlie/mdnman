@@ -165,6 +165,33 @@ describe('parser', () => {
                 );
             });
         });
+
+        describe('jsxref', () => {
+            it('wraps jsxref text in backticks', () => {
+                expect(transformKumascript('- {{jsxref("div")}} other text')).toBe(
+                    '- `div` other text'
+                );
+                expect(transformKumascript('- {{jsxref("div")}}')).toBe('- `div`');
+                // eslint-disable-next-line quotes
+                expect(transformKumascript("- {{jsxref('div')}}")).toBe('- `div`');
+                expect(transformKumascript('- {{jsxref("div")}}.')).toBe('- `div`.');
+            });
+            it('displays second string when two strings are provided', () => {
+                expect(transformKumascript('- {{jsxref("var", "var()")}}')).toBe('- `var()`');
+                expect(transformKumascript('- {{jsxref("var", "var(...)")}}')).toBe('- `var(...)`');
+            });
+            it('provides valid links when addLinks is true', () => {
+                expect(transformKumascript('- {{jsxref("String.prototype.trimEnd")}}', true)).toBe(
+                    '- [`String.prototype.trimEnd`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/String.prototype.trimEnd)'
+                );
+                expect(transformKumascript('- {{jsxref("Classes/static", "static")}}', true)).toBe(
+                    '- [`static`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static)'
+                );
+                expect(transformKumascript('- {{jsxref("Array.from()")}}', true)).toBe(
+                    '- [`Array.from()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array.from())'
+                );
+            });
+        });
     });
 
     describe('getHtmlDescription', () => {

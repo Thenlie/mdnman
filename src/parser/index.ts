@@ -1,3 +1,5 @@
+import { javascriptTitles } from '../titles/js_titles.js';
+
 export type MDNHeader = {
     title?: string;
     slug?: string;
@@ -85,12 +87,22 @@ const transformKumascript = (document: string, addLinks: boolean = false): strin
             const path = matches[0][1];
             const val = matches.length === 2 ? matches[1][1] : matches[0][1];
             switch (true) {
-                // if match contains HTMLElement("*"), wrap in <`*`>
+                // if match contains jsxref, wrap in `*`
+                case /{{jsxref\(.+\)}}/i.test(match): {
+                    const titleMatch = javascriptTitles.find((title) => title.title === val);
+                    const isGlobalObject = titleMatch?.path.includes('global_objects');
+                    path.replace('()', '').replace('.prototype.', '.');
+                    if (path.includes('.') && !path.includes('/')) path.replace('.', '/');
+                    return addLinks
+                        ? `[\`${val}\`](${MDN_DOCS_URL}/JavaScript/Reference/${isGlobalObject ? 'Global_Objects/' : ''}${path})`
+                        : `\`${val}\``;
+                }
+                // if match contains htmlelement, wrap in <`*`>
                 case /{{htmlelement\(.+\)}}/i.test(match):
                     return addLinks
                         ? `[\`<${val}>\`](${MDN_DOCS_URL}/HTML/Reference/Elements/${path})`
                         : `\`<${val}>\``;
-                // if match contains DOMxRef or CSSxRef, wrap in `*`
+                // if match contains domxref or cssxref, wrap in `*`
                 case /{{domxref\(.+\)}}/i.test(match):
                     return addLinks
                         ? `[\`${val}\`](${MDN_DOCS_URL}/API/${path.replace('.', '/')})`
