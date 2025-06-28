@@ -52,15 +52,19 @@ const getHeader = (document: string): MDNHeader | null => {
 
 /**
  * Take raw markdown MDN doc and return the same document with the
- * header removed
+ * YAML frontmatter header removed, replaced with a markdown H1
  * @param {string} document
+ * @param {boolean} addHeading | If the title should be added as a H1
  */
-const stripHeader = (document: string) => {
+const stripHeader = (document: string, addHeading: boolean = true) => {
+    const header = getHeader(document);
+    if (!header) return document;
     const docArr = document.split('\n');
     do {
         docArr.shift();
     } while (docArr[0] !== '---');
     docArr.shift();
+    if (addHeading) docArr.unshift(`# ${header.title}`);
     return docArr.join('\n');
 };
 
@@ -241,6 +245,24 @@ const removeEmptyLines = (document: string): string => {
 };
 
 /**
+ * Transforms codeblock coding languages into more commonly supported languages
+ * Ignores hidden codeblocks (ex: ```css hidden)
+ * @param {string} document
+ * @returns {string}
+ */
+const transformCodeblockLangs = (document: string): string => {
+    document
+        .replace('```js', '```javascript')
+        .replace('```js-nolint', '```javascript')
+        .replace('```plain', '```plaintext')
+        .replace('```text', '```plaintext')
+        .replace('```css-nolint', '```css')
+        .replace('```css-nolint example-good', '```css')
+        .replace('```css-nolint example-bad', '```css');
+    return document;
+};
+
+/**
  * Applies transformKumascript, expandLinks, and removeEmptyLines
  * to a given document
  * @param {string} document
@@ -262,5 +284,6 @@ export {
     truncateString,
     createChoicesFromTitles,
     removeEmptyLines,
+    transformCodeblockLangs,
     completeParse,
 };

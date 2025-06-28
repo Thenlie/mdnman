@@ -65,73 +65,82 @@ const commandActionHandler = async (
 
 const interactiveActionHandler = async (options: { output: string; path: string }) => {
     // Prompt user for language
-    const language: SupportedLanguages = await select({
-        message: 'Select a language',
-        choices: [
-            {
-                name: 'JavaScript',
-                value: 'javascript',
-            },
-            {
-                name: 'HTML',
-                value: 'html',
-            },
-            {
-                name: 'CSS',
-                value: 'css',
-            },
-        ],
-    });
-    // Prompt user for query (with autocomplete)
-    const documentQuery = await search({
-        message: 'Search for an MDN Web Doc',
-        source: async (input) => {
-            const titles = choiceLanguageMap[language];
-            const choices = createChoicesFromTitles(titles);
-            if (!input) {
-                return choices;
-            }
-            // Split the input by space, dot, and hyphen
-            const inputValues = input.split(/\.| |-/);
-            return choices.filter((choice) =>
-                inputValues.every((val: string) =>
-                    choice.name.toLowerCase().includes(val.toLowerCase())
-                )
-            );
+    const language: SupportedLanguages = await select(
+        {
+            message: 'Select a language',
+            choices: [
+                {
+                    name: 'JavaScript',
+                    value: 'javascript',
+                },
+                {
+                    name: 'HTML',
+                    value: 'html',
+                },
+                {
+                    name: 'CSS',
+                    value: 'css',
+                },
+            ],
         },
-    });
+        { output: process.stderr }
+    );
+    // Prompt user for query (with autocomplete)
+    const documentQuery = await search(
+        {
+            message: 'Search for an MDN Web Doc',
+            source: async (input) => {
+                const titles = choiceLanguageMap[language];
+                const choices = createChoicesFromTitles(titles);
+                if (!input) {
+                    return choices;
+                }
+                // Split the input by space, dot, and hyphen
+                const inputValues = input.split(/\.| |-/);
+                return choices.filter((choice) =>
+                    inputValues.every((val: string) =>
+                        choice.name.toLowerCase().includes(val.toLowerCase())
+                    )
+                );
+            },
+        },
+        { output: process.stderr }
+    );
     const file = getMDNFile(documentQuery);
     if (!file) {
         console.error(`[interactiveActionHandler] Error: Could not find file at ${documentQuery}`);
         return;
     }
     // Prompt user for section (default to no section/complete doc)
-    const sectionQuery = await search({
-        message: 'Select a section from the document (select none for the full doc)',
-        source: async (input) => {
-            const sections = getAllSections(file);
-            const choices = [{ name: 'none (return full page)', value: 'none' }, ...sections];
-            if (!input) {
-                return choices.map((choice) => ({
+    const sectionQuery = await search(
+        {
+            message: 'Select a section from the document (select none for the full doc)',
+            source: async (input) => {
+                const sections = getAllSections(file);
+                const choices = [{ name: 'none (return full page)', value: 'none' }, ...sections];
+                if (!input) {
+                    return choices.map((choice) => ({
+                        name: choice.name,
+                        value: JSON.stringify(choice),
+                    }));
+                }
+                // Split the input by space, dot, and hyphen
+                const inputValues = input.split(/\.| |-/);
+                const filteredChoices = choices.filter((choice) =>
+                    inputValues.every(
+                        (val: string) =>
+                            choice.name.toLowerCase().includes(val.toLowerCase()) ||
+                            choice.name === 'none (return full page)'
+                    )
+                );
+                return filteredChoices.map((choice) => ({
                     name: choice.name,
                     value: JSON.stringify(choice),
                 }));
-            }
-            // Split the input by space, dot, and hyphen
-            const inputValues = input.split(/\.| |-/);
-            const filteredChoices = choices.filter((choice) =>
-                inputValues.every(
-                    (val: string) =>
-                        choice.name.toLowerCase().includes(val.toLowerCase()) ||
-                        choice.name === 'none (return full page)'
-                )
-            );
-            return filteredChoices.map((choice) => ({
-                name: choice.name,
-                value: JSON.stringify(choice),
-            }));
+            },
         },
-    });
+        { output: process.stderr }
+    );
 
     const queryObj = JSON.parse(sectionQuery);
     const section = queryObj.value === 'none' ? file : getSection(file, JSON.parse(sectionQuery));
@@ -172,7 +181,7 @@ const cli = () => {
         .argument('<query>', 'query to search')
         .option('-o, --output <stdout | file | vim>', 'output type', 'stdout')
         .option('-s, --section <section_name>', 'specified section of MDN doc', 'none')
-        .option('-p, --path <string>', 'output path', './out/ref.md')
+        .option('-p, --path <string>', 'output path', DEFAULT_OUTPUT_PATH)
         .action(async (query, options) => commandActionHandler('javascript', query, options));
 
     program
@@ -194,14 +203,12 @@ const cli = () => {
     program
         .command('interactive')
         .description('Use prompts to search the entire MDN reference library')
-        .option('-o, --output <less | stdout | file | vim>', 'output type', 'less')
-        .option('-p, --path <string>', 'output path', './out/ref.md')
+        .option('-o, --output <less | stdout | file | vim>', 'output type', 'stdout')
+        .option('-p, --path <string>', 'output path', DEFAULT_OUTPUT_PATH)
         .action(async (options) => interactiveActionHandler(options));
 
     program.parse();
 };
-
-cli();
 
 export default cli;
 export * from './output.js';

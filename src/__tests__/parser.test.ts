@@ -206,7 +206,7 @@ describe('parser', () => {
 
     describe('getHtmlDescription', () => {
         it('returns all text in the document up until the first `#`', () => {
-            const strippedFile = stripHeader(htmlFile);
+            const strippedFile = stripHeader(htmlFile, false);
             const description = getHtmlDescription(strippedFile);
             expect(description.trim()).toBe(titleDescription.description);
         });
