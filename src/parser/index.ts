@@ -1,4 +1,5 @@
 import { javascriptTitles } from '../titles/js_titles.js';
+import { removeEmptySections } from './sections.js';
 
 export type MDNHeader = {
     title?: string;
@@ -74,10 +75,10 @@ const stripHeader = (document: string, addHeading: boolean = true) => {
  * See: https://github.com/mdn/yari/tree/main/kumascript
  * @param {string} document
  * @param {boolean} addLinks
- * @returns {string | null}
+ * @returns {string}
  * @example {{cssxref("color")}} -> color
  */
-const transformKumascript = (document: string, addLinks: boolean = false): string | null => {
+const transformKumascript = (document: string, addLinks: boolean = false): string => {
     const regex = /{{.+?}}/gm;
     const lines = document.split('\n');
 
@@ -134,14 +135,7 @@ const transformKumascript = (document: string, addLinks: boolean = false): strin
 
     // Remove all instances of undefined from the lines array
     const filteredLines = transformedLines.filter((line) => line !== undefined);
-
-    if (filteredLines.length === 0) {
-        return null;
-    } else if (filteredLines.length === 1) {
-        return filteredLines[0];
-    } else {
-        return filteredLines.join('\n');
-    }
+    return filteredLines.join('\n');
 };
 
 /**
@@ -245,6 +239,28 @@ const removeEmptyLines = (document: string): string => {
 };
 
 /**
+ * Removes codeblocks that MDN hides from the out
+ * @param {string} document
+ */
+const removeHiddenCodeblocks = (document: string) => {
+    const hiddenBlocks = ['```js hidden', '```css hidden', '```html hidden'];
+
+    const transformedDoc: string[] = [];
+    let shouldRemove = false;
+    const docArr = document.split('\n');
+    docArr.forEach((line) => {
+        if (hiddenBlocks.includes(line.trim())) {
+            shouldRemove = true;
+        } else if (shouldRemove && line.trim() === '```') {
+            shouldRemove = false;
+        } else if (!shouldRemove) {
+            transformedDoc.push(line);
+        }
+    });
+    return transformedDoc.join('\n');
+};
+
+/**
  * Transforms codeblock coding languages into more commonly supported languages
  * Ignores hidden codeblocks (ex: ```css hidden)
  * @param {string} document
@@ -269,8 +285,22 @@ const transformCodeblockLangs = (document: string): string => {
  * @returns {string}
  */
 const completeParse = (document: string): string => {
-    const newDoc = transformKumascript(expandLinks(removeEmptyLines(document)), true);
-    return newDoc || '';
+    // Take a list of functions and run them in order, passing the output of one into the next
+    // eslint-disable-next-line prettier/prettier
+    const flow = <T>(...fns: Array<(input: T) => T>) => (input: T) => fns.reduce((acc, fn) => fn(acc), input);
+
+    // The order here matters, some sections will become empty after Kumascript is removed
+    const cleanAndParse = flow(
+        transformKumascript,
+        transformCodeblockLangs,
+        expandLinks,
+        removeHiddenCodeblocks,
+        removeEmptyLines,
+        removeEmptySections
+    );
+
+    // const newDoc = transformKumascript(expandLinks(removeEmptyLines(document)), true);
+    return cleanAndParse(document);
 };
 
 export {
@@ -284,6 +314,7 @@ export {
     truncateString,
     createChoicesFromTitles,
     removeEmptyLines,
+    removeHiddenCodeblocks,
     transformCodeblockLangs,
     completeParse,
 };

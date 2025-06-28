@@ -77,7 +77,7 @@ describe('parser', () => {
     describe('transformKumascript', () => {
         it('removes text wrapped in double curly braces `{{ }}`', () => {
             expect(transformKumascript('Hello{{ hello }}')).toBe('Hello');
-            expect(transformKumascript('{{ hello }}')).toBeNull();
+            expect(transformKumascript('{{ hello }}')).toBe('');
         });
 
         describe('cssxref & CSSxRef', () => {
