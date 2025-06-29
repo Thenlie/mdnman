@@ -1,17 +1,15 @@
 import { Command } from 'commander';
+import { search, select } from '@inquirer/prompts';
 import { openEditor, DEFAULT_OUTPUT_PATH, printDoc, writeDocToFile, openLess } from './output.js';
 import { completeParse, createChoicesFromTitles } from '../parser/index.js';
 import { getAllSections, getFirstSection, getSection } from '../parser/sections.js';
-import { findMDNFile } from '../file_handler.js';
-import { search, select } from '@inquirer/prompts';
-import { getMDNFile } from '../file_handler.js';
+import { findMDNFile, getMDNFile } from '../file_handler.js';
 import { TITLE_FILE_LIST } from '../titles/index.js';
+import type { SupportedLanguages } from '../types.js';
 
 const program = new Command();
 const GENERIC_ERROR_MESSAGE =
     'Error: Something went wrong while attempting to find the selected MDN directory.\nPlease try again with a different query.';
-
-type SupportedLanguages = 'javascript' | 'html' | 'css';
 
 /**
  * Runs when any CLI command is executed. Handles finding the correct file and outputting it

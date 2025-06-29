@@ -5,3 +5,10 @@ export type MDNSection = {
     level: number;
     position: number;
 };
+
+export type MDNHeader = {
+    title?: string;
+    slug?: string;
+    'page-type'?: string;
+    'browser-compat'?: string;
+};

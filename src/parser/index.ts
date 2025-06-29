@@ -1,12 +1,6 @@
 import { javascriptTitles } from '../titles/js_titles.js';
 import { removeEmptySections } from './sections.js';
-
-export type MDNHeader = {
-    title?: string;
-    slug?: string;
-    'page-type'?: string;
-    'browser-compat'?: string;
-};
+import type { MDNHeader } from '../types.js';
 
 const HEADER_FIELDS = ['title', 'slug', 'page-type', 'browser-compat'] as const;
 const LOCALE = 'en-US';
@@ -18,6 +12,7 @@ type HeaderField = (typeof HEADER_FIELDS)[number];
 /**
  * Type guard to check if a string is a valid header field
  * @param {string} key
+ * @returns {boolean}
  */
 const isHeaderField = (key: string): key is HeaderField => {
     return HEADER_FIELDS.includes(key as HeaderField);
@@ -27,6 +22,7 @@ const isHeaderField = (key: string): key is HeaderField => {
  * Take raw markdown MDN doc and return an object containing the
  * document title, slug and page-type
  * @param {string} document
+ * @returns {MDNHeader | null}
  */
 const getHeader = (document: string): MDNHeader | null => {
     const header: MDNHeader = {};
@@ -56,8 +52,9 @@ const getHeader = (document: string): MDNHeader | null => {
  * YAML frontmatter header removed, replaced with a markdown H1
  * @param {string} document
  * @param {boolean} addHeading | If the title should be added as a H1
+ * @returns {string}
  */
-const stripHeader = (document: string, addHeading: boolean = true) => {
+const stripHeader = (document: string, addHeading: boolean = true): string => {
     const header = getHeader(document);
     if (!header) return document;
     const docArr = document.split('\n');
@@ -143,8 +140,9 @@ const transformKumascript = (document: string, addLinks: boolean = false): strin
  * This is because HTML documents do not specify a "Description" heading,
  * it is just the first paragraph of text.
  * @param {string} document
+ * @returns {string}
  */
-const getHtmlDescription = (document: string) => {
+const getHtmlDescription = (document: string): string => {
     const headingIndex = document.indexOf('#');
     if (!headingIndex) return document;
     return document.substring(0, headingIndex);
@@ -154,8 +152,9 @@ const getHtmlDescription = (document: string) => {
  * Updates all markdown links formatted as "[text](url)" to provide the full path to the MDN docs
  * Uses some weird regex to account for cases where the text has brackets.
  * @param {string} document
+ * @returns {string}
  */
-const expandLinks = (document: string) => {
+const expandLinks = (document: string): string => {
     const regex = /\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(([^)]+)\)/gm;
     return document.replace(regex, (match) => {
         if (match.match(/\(.+\)/)) {
@@ -172,8 +171,10 @@ const expandLinks = (document: string) => {
 /**
  * Converts [!NOTE] and [!WARNING] in a given document to emojis
  * @param {string} document
+ * @returns {string}
+ * @example [!WARNING] -> ⚠️
  */
-const convertEmojiTags = (document: string) => {
+const convertEmojiTags = (document: string): string => {
     const regex = /\[!WARNING\]/;
     const newDoc = document.replace(regex, '⚠️');
     const regex2 = /\[!NOTE\]/;
@@ -184,8 +185,9 @@ const convertEmojiTags = (document: string) => {
  * Removes the first two lines of a document, expecting this is a
  * markdown heading ('#') followed by an empty line
  * @param {string} document
+ * @returns {string}
  */
-const removeTitle = (document: string) => {
+const removeTitle = (document: string): string => {
     // Find the index of the second newline character
     const newlineIndex = document.indexOf('\n', document.indexOf('\n') + 1);
     // If there are fewer than two newlines, return the original string
@@ -200,8 +202,9 @@ const removeTitle = (document: string) => {
  * Appends '...```' if the codeblock backticks were corrected
  * @param {string} document
  * @param {number} length
+ * @returns {string}
  */
-const truncateString = (document: string, length: number) => {
+const truncateString = (document: string, length: number): string => {
     // Returns original document if its length is smaller than the discord maximum length
     if (length > document.length) return document;
     // Prepare document for truncate, appending ellipsis
@@ -220,9 +223,12 @@ const truncateString = (document: string, length: number) => {
 /**
  * Creates an array of objects containing all titles and filepaths
  * from a given mdnman title file
- * @param {Array<{ title: string; path: string }>} titles
+ * @param {Array<{ title: string, path: string }>} titles
+ * @returns {Array<{name: string, value: string }>}
  */
-const createChoicesFromTitles = (titles: Array<{ title: string; path: string }>) => {
+const createChoicesFromTitles = (
+    titles: Array<{ title: string; path: string }>
+): Array<{ name: string; value: string }> => {
     return titles.map((title) => ({
         name: title.title,
         value: title.path,
@@ -241,8 +247,9 @@ const removeEmptyLines = (document: string): string => {
 /**
  * Removes codeblocks that MDN hides from the out
  * @param {string} document
+ * @returns {string}
  */
-const removeHiddenCodeblocks = (document: string) => {
+const removeHiddenCodeblocks = (document: string): string => {
     const hiddenBlocks = ['```js hidden', '```css hidden', '```html hidden'];
 
     const transformedDoc: string[] = [];
@@ -299,7 +306,6 @@ const completeParse = (document: string): string => {
         removeEmptySections
     );
 
-    // const newDoc = transformKumascript(expandLinks(removeEmptyLines(document)), true);
     return cleanAndParse(document);
 };
 

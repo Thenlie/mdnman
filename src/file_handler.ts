@@ -64,6 +64,7 @@ const getMDNFile = (filepath: string): string | null => {
  * If multiple directories are found, prompt the user to select one
  * @param {SupportedLanguages} technology
  * @param {string} query
+ * @returns {Promise<string | null>}
  */
 const findMDNFile = async (
     technology: SupportedLanguages,
