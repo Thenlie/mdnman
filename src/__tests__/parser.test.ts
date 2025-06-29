@@ -107,6 +107,14 @@ describe('parser', () => {
                     '- [`div`](https://developer.mozilla.org/en-US/docs/Web/CSS/div).'
                 );
             });
+            it('handles HTML entities', () => {
+                expect(transformKumascript('- {{cssxref("&lt;blend-mode&gt;")}}')).toBe(
+                    '- `<blend-mode>`'
+                );
+                expect(transformKumascript('- {{cssxref("&lt;blend-mode&gt;")}}', true)).toBe(
+                    '- [`<blend-mode>`](https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode)'
+                );
+            });
         });
 
         describe('htmlelement & HTMLElement', () => {

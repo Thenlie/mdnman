@@ -86,8 +86,10 @@ const transformKumascript = (document: string, addLinks: boolean = false): strin
         const newLine = line.replace(regex, (match) => {
             const matches = [...match.matchAll(/["']([^"']+)["']/g)];
             if (!matches || matches.length === 0) return '';
-            let path = matches[0][1];
-            const val = matches.length === 2 ? matches[1][1] : matches[0][1];
+            let path = matches[0][1].replace('&lt;', '').replace('&gt;', '');
+            const val = (matches.length === 2 ? matches[1][1] : matches[0][1])
+                .replace('&lt;', '<')
+                .replace('&gt;', '>');
             switch (true) {
                 // if match contains jsxref, wrap in `*`
                 case /{{jsxref\(.+\)}}/i.test(match): {
