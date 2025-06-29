@@ -267,15 +267,15 @@ const removeHiddenCodeblocks = (document: string) => {
  * @returns {string}
  */
 const transformCodeblockLangs = (document: string): string => {
-    document
-        .replace('```js', '```javascript')
+    const newDocument = document
         .replace('```js-nolint', '```javascript')
+        .replace('```js', '```javascript')
         .replace('```plain', '```plaintext')
         .replace('```text', '```plaintext')
         .replace('```css-nolint', '```css')
         .replace('```css-nolint example-good', '```css')
         .replace('```css-nolint example-bad', '```css');
-    return document;
+    return newDocument;
 };
 
 /**

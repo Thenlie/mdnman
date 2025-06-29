@@ -1,8 +1,7 @@
-import { completeParse, getHeader, removeHiddenCodeblocks, stripHeader } from '../parser/index.js';
+import { completeParse, getHeader, stripHeader } from '../parser/index.js';
 import fs from 'fs';
 import path from 'path';
 import child_process from 'node:child_process';
-import { removeEmptySections } from '../parser/sections.js';
 
 const DEFAULT_OUTPUT_PATH = './ref.md';
 
@@ -106,9 +105,7 @@ const writeDocToFile = (document: string, outputPath: string = DEFAULT_OUTPUT_PA
  * @param {string} document
  */
 const printDoc = (document: string) => {
-    const formattedDoc = completeParse(
-        removeEmptySections(removeHiddenCodeblocks(stripHeader(document)))
-    );
+    const formattedDoc = completeParse(stripHeader(document));
     console.log(formattedDoc);
 };
 
