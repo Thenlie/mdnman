@@ -2,17 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import { select } from '@inquirer/prompts';
 import type { SupportedLanguages } from './types.js';
-import { javascriptTitles } from './titles/js_titles.js';
-import { htmlTitles } from './titles/html_titles.js';
-import { cssTitles } from './titles/css_titles.js';
+import { TITLE_FILE_LIST } from './titles/index.js';
 
 const _dirname = import.meta.dirname;
-
-const FILE_LIST = {
-    javascript: javascriptTitles,
-    html: htmlTitles,
-    css: cssTitles,
-};
 
 /**
  * Check if a provided filepath is valid.
@@ -78,7 +70,7 @@ const findMDNFile = async (
     query: string
 ): Promise<string | null> => {
     const q = query.trim().toLowerCase();
-    const files = FILE_LIST[technology];
+    const files = TITLE_FILE_LIST[technology];
     // find all files with the query in the title
     const matchedTitles = files.filter((file) => file.title.toLowerCase().includes(q));
 
@@ -116,7 +108,7 @@ const optimisticallyFindMDNFile = (
     query: string
 ): string | null => {
     const q = query.trim().toLowerCase();
-    const files = FILE_LIST[technology];
+    const files = TITLE_FILE_LIST[technology];
     // find all files with the query in the title
     const matchedTitles = files.filter((file) => file.title.toLowerCase().includes(q));
     if (matchedTitles.length < 1) {

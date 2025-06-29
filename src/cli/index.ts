@@ -4,23 +4,14 @@ import { completeParse, createChoicesFromTitles } from '../parser/index.js';
 import { getAllSections, getFirstSection, getSection } from '../parser/sections.js';
 import { findMDNFile } from '../file_handler.js';
 import { search, select } from '@inquirer/prompts';
-import { javascriptTitles } from '../titles/js_titles.js';
-import { htmlTitles } from '../titles/html_titles.js';
-import { cssTitles } from '../titles/css_titles.js';
 import { getMDNFile } from '../file_handler.js';
+import { TITLE_FILE_LIST } from '../titles/index.js';
 
 const program = new Command();
 const GENERIC_ERROR_MESSAGE =
     'Error: Something went wrong while attempting to find the selected MDN directory.\nPlease try again with a different query.';
 
 type SupportedLanguages = 'javascript' | 'html' | 'css';
-
-// TODO: Make this an exported constant
-const choiceLanguageMap = {
-    javascript: javascriptTitles,
-    html: htmlTitles,
-    css: cssTitles,
-};
 
 /**
  * Runs when any CLI command is executed. Handles finding the correct file and outputting it
@@ -63,7 +54,16 @@ const commandActionHandler = async (
     }
 };
 
-const interactiveActionHandler = async (options: { output: string; path: string }) => {
+/**
+ * Unique handler for interactive command. Prompts the user for coding language,
+ * document and optionally a section
+ * @param {{output: string, path: string }} options
+ * @returns {Promise<void>}
+ */
+const interactiveActionHandler = async (options: {
+    output: string;
+    path: string;
+}): Promise<void> => {
     // Prompt user for language
     const language: SupportedLanguages = await select(
         {
@@ -90,7 +90,7 @@ const interactiveActionHandler = async (options: { output: string; path: string 
         {
             message: 'Search for an MDN Web Doc',
             source: async (input) => {
-                const titles = choiceLanguageMap[language];
+                const titles = TITLE_FILE_LIST[language];
                 const choices = createChoicesFromTitles(titles);
                 if (!input) {
                     return choices;
