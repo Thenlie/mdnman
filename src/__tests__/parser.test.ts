@@ -7,6 +7,7 @@ import {
     convertEmojiTags,
     truncateString,
     removeEmptyLines,
+    transformCodeblockLangs,
 } from '../parser/index.js';
 import { getFirstSection, removeEmptySections } from '../parser/sections.js';
 import fs from 'fs';
@@ -256,6 +257,37 @@ describe('parser', () => {
         it('removes duplicate newlines from a document', () => {
             const trimmedDoc = removeEmptySections(transformKumascript(mapDocument.document) || '');
             expect(removeEmptyLines(trimmedDoc)).toMatchSnapshot();
+        });
+    });
+
+    describe.only('transformCodeblockLangs', () => {
+        it('properly replaces codeblock languages with valid ones', () => {
+            expect(transformCodeblockLangs('```js')).toBe('```js');
+            expect(transformCodeblockLangs('```js-nolint')).toBe('```js');
+            expect(transformCodeblockLangs('```js example-good')).toBe('```js');
+            expect(transformCodeblockLangs('```js example-bad')).toBe('```js');
+            expect(transformCodeblockLangs('```css')).toBe('```css');
+            expect(transformCodeblockLangs('```css-nolint')).toBe('```css');
+            expect(transformCodeblockLangs('```css example-good')).toBe('```css');
+            expect(transformCodeblockLangs('```css example-bad')).toBe('```css');
+            expect(transformCodeblockLangs('```html')).toBe('```html');
+            expect(transformCodeblockLangs('```html-nolint')).toBe('```html');
+            expect(transformCodeblockLangs('```html example-good')).toBe('```html');
+            expect(transformCodeblockLangs('```html example-bad')).toBe('```html');
+            expect(transformCodeblockLangs('```plain')).toBe('```txt');
+            expect(transformCodeblockLangs('```plain-nolint')).toBe('```txt');
+            expect(transformCodeblockLangs('```plain example-good')).toBe('```txt');
+            expect(transformCodeblockLangs('```plain example-bad')).toBe('```txt');
+        });
+        it('does not remove hidden text from codeblock', () => {
+            expect(transformCodeblockLangs('```js hidden')).toBe('```js hidden');
+            expect(transformCodeblockLangs('```js-nolint hidden')).toBe('```js hidden');
+            expect(transformCodeblockLangs('```css hidden')).toBe('```css hidden');
+            expect(transformCodeblockLangs('```css-nolint hidden')).toBe('```css hidden');
+            expect(transformCodeblockLangs('```html hidden')).toBe('```html hidden');
+            expect(transformCodeblockLangs('```html-nolint hidden')).toBe('```html hidden');
+            expect(transformCodeblockLangs('```plain hidden')).toBe('```txt hidden');
+            expect(transformCodeblockLangs('```plain-nolint hidden')).toBe('```txt hidden');
         });
     });
 });

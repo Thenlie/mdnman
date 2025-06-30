@@ -270,20 +270,21 @@ const removeHiddenCodeblocks = (document: string): string => {
 };
 
 /**
- * Transforms codeblock coding languages into more commonly supported languages
- * Ignores hidden codeblocks (ex: ```css hidden)
+ * Transforms codeblock coding languages into more commonly supported languages.
+ * Does not remove hidden label (ex: ```css hidden)
  * @param {string} document
  * @returns {string}
+ * @example ```js-nolint -> ```js
+ * @example ```js-nolint hidden -> ```js hidden
  */
 const transformCodeblockLangs = (document: string): string => {
     const newDocument = document
-        .replace(/```js-nolint/g, '```javascript')
-        .replace(/```js/g, '```javascript')
-        .replace(/```plain/g, '```plaintext')
-        .replace(/```text/g, '```plaintext')
-        .replace(/```css-nolint/g, '```css')
-        .replace(/```css-nolint example-good/g, '```css')
-        .replace(/```css-nolint example-bad/g, '```css');
+        .replace(/```js(-nolint)?( example-(good|bad))?/g, '```js')
+        .replace(/```css(-nolint)?( example-(good|bad))?/g, '```css')
+        .replace(/```html(-nolint)?( example-(good|bad))?/g, '```html')
+        .replace(/```json(-nolint)?( example-(good|bad))?/g, '```json')
+        .replace(/```plain(-nolint)?( example-(good|bad))?/g, '```txt')
+        .replace(/```text(-nolint)?( example-(good|bad))?/g, '```txt');
     return newDocument;
 };
 
