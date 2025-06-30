@@ -92,7 +92,7 @@ const transformKumascript = (document: string, addLinks: boolean = false): strin
                 .replace('&gt;', '>');
             switch (true) {
                 // if match contains jsxref, wrap in `*`
-                case /{{jsxref\(.+\)}}/i.test(match): {
+                case /{{\s?jsxref\(.+\)\s?}}/i.test(match): {
                     const titleMatch = javascriptTitles.find((title) => title.title === val);
                     const isGlobalObject = titleMatch?.path.includes('global_objects');
                     path = path.replace('()', '').replace('.prototype.', '.');
@@ -104,18 +104,18 @@ const transformKumascript = (document: string, addLinks: boolean = false): strin
                         : `\`${val}\``;
                 }
                 // if match contains htmlelement, wrap in <`*`>
-                case /{{htmlelement\(.+\)}}/i.test(match):
+                case /{{\s?htmlelement\(.+\)\s?}}/i.test(match):
                     return addLinks
                         ? `[\`<${val}>\`](${MDN_DOCS_URL}/HTML/Reference/Elements/${path})`
                         : `\`<${val}>\``;
                 // if match contains domxref or cssxref, wrap in `*`
-                case /{{domxref\(.+\)}}/i.test(match):
+                case /{{\s?domxref\(.+\)\s?}}/i.test(match):
                     return addLinks
                         ? `[\`${val}\`](${MDN_DOCS_URL}/API/${path.replace('.', '/')})`
                         : `\`${val}\``;
-                case /{{cssxref\(.+\)}}/i.test(match):
+                case /{{\s?cssxref\(.+\)\s?}}/i.test(match):
                     return addLinks ? `[\`${val}\`](${MDN_DOCS_URL}/CSS/${path})` : `\`${val}\``;
-                case /{{glossary\(.+\)}}/i.test(match): {
+                case /{{\s?glossary\(.+\)\s?}}/i.test(match): {
                     path = path.replace(/\s+/g, '_');
                     return addLinks
                         ? `[\`${val}\`](${MDN_BASE_URL}/${LOCALE}/docs/Glossary/${path})`
@@ -288,8 +288,8 @@ const transformCodeblockLangs = (document: string): string => {
 };
 
 /**
- * Applies transformKumascript, expandLinks, and removeEmptyLines
- * to a given document
+ * Applies transformKumascript, transformCodeblockLangs, expandLinks, removeEmptyLines,
+ * removeEmptySections and removeHiddenCodeblocks to a given document
  * @param {string} document
  * @returns {string}
  */

@@ -88,6 +88,7 @@ describe('parser', () => {
                 expect(transformKumascript('- {{cssxref("div")}}')).toBe('- `div`');
                 // eslint-disable-next-line quotes
                 expect(transformKumascript("- {{cssxref('div')}}")).toBe('- `div`');
+                expect(transformKumascript('- {{ cssxref("div") }}')).toBe('- `div`');
                 expect(transformKumascript('- {{cssxref("div")}}.')).toBe('- `div`.');
             });
             it('displays second string when two strings are provided', () => {
