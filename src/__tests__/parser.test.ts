@@ -239,18 +239,26 @@ describe('parser', () => {
                 "The `splice()` method is a [mutating method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#copying_methods_and_mutating_methods). It may change the content of `this`. If the specified number of elements to insert differs from the number of elements being removed, the array's `length` will be changed as well. At the same time, it uses [`[Symbol.species]`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Symbol.species) to create a new array instance to be returned. If the deleted portion is [sparse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections#sparse_arrays), the array returned by `splice()` is sparse as well, with those corresponding indices being empty slots. The `splice()` method is [generic](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#generic_array_methods). It only expects the `this` value to have a `length` property and integer-keyed properties. Although strings are also array-like, this method is not suitable to be applied on them, as strings are immutable."
             );
         });
-        it('removes links to images', () => {
+        it('properly expand image links', () => {
             expect(
                 expandLinks('![test image](border-image-slice.png)', 'Web/CSS/border-image-slice')
             ).toBe(
-                'https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice/border-image-slice.png'
+                '[test image](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice/border-image-slice.png)'
+            );
+            expect(
+                expandLinks(
+                    '![A browser with developer tools open to the debugger panel showing how execution is paused at the debugger statement to allow close inspection of variables, scopes, events, etc.](screen_shot_2014-02-07_at_9.14.35_am.png)',
+                    'Web/JavaScript/Reference/Statements/debugger'
+                )
+            ).toBe(
+                '[A browser with developer tools open to the debugger panel showing how execution is paused at the debugger statement to allow close inspection of variables, scopes, events, etc.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger/screen_shot_2014-02-07_at_9.14.35_am.png)'
             );
         });
         it('properly transforms section tags', () => {
             expect(
                 expandLinks('[year numbers](#year_numbers)', 'Web/HTML/Date_and_time_formats')
             ).toBe(
-                'https://developer.mozilla.org/en-US/docs/Web/HTML/Date_and_time_formats/#year_numbers'
+                '[year numbers](https://developer.mozilla.org/en-US/docs/Web/HTML/Date_and_time_formats/#year_numbers)'
             );
         });
     });

@@ -179,7 +179,7 @@ const expandLinks = (document: string, slug: string): string => {
             path[1].endsWith('.jpg') ||
             path[1].endsWith('.svg')
         ) {
-            return `${MDN_BASE_URL}/${LOCALE}/docs/${slug}/${path[1]}`;
+            return `${mask[0].slice(0, -1)}(${MDN_BASE_URL}/${LOCALE}/docs/${slug}/${path[1]})`;
         }
         return `${mask[0].slice(0, -1)}(${MDN_BASE_URL + path[0].slice(1, path[0].length - 1)})`;
     });
