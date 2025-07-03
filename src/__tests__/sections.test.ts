@@ -5,7 +5,7 @@ import {
     getAllSections,
     removeEmptySections,
     removeSection,
-    getFirstSection,
+    getNamedSection,
 } from '../parser/sections.js';
 import mapDocument from './__fixtures__/map.document.json';
 import { MDNSection } from '../types.js';
@@ -56,11 +56,11 @@ describe('sections', () => {
         }
     });
 
-    describe('getFirstSection', () => {
+    describe('getNamedSection', () => {
         it('properly returns a section with the provided name', () => {
-            expect(getFirstSection(jsFile, 'Description')).toMatchSnapshot();
-            expect(getFirstSection(htmlFile, 'Accessibility concerns')).toMatchSnapshot();
-            expect(getFirstSection(css2File, 'Syntax')).toMatchSnapshot();
+            expect(getNamedSection(jsFile, 'Description')).toMatchSnapshot();
+            expect(getNamedSection(htmlFile, 'Accessibility concerns')).toMatchSnapshot();
+            expect(getNamedSection(css2File, 'Syntax')).toMatchSnapshot();
         });
     });
 

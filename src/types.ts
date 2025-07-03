@@ -7,8 +7,8 @@ export type MDNSection = {
 };
 
 export type MDNHeader = {
-    title?: string;
-    slug?: string;
+    title: string;
+    slug: string;
     'page-type'?: string;
     'browser-compat'?: string;
 };

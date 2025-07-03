@@ -1,7 +1,12 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`sections getAllSections returns all sections from a given document 1`] = `
 [
+  {
+    "level": 1,
+    "name": "Introduction",
+    "position": 0,
+  },
   {
     "level": 2,
     "name": "Syntax",
@@ -85,7 +90,7 @@ exports[`sections getAllSections returns all sections from a given document 1`] 
 ]
 `;
 
-exports[`sections getFirstSection properly returns a section with the provided name 1`] = `
+exports[`sections getNamedSection properly returns a section with the provided name 1`] = `
 "## Description
 
 The \`map()\` method is an [iterative method](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#iterative_methods). It calls a provided \`callbackFn\` function once for each element in an array and constructs a new array from the results. Read the [iterative methods](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#iterative_methods) section for more information about how these methods work in general.
@@ -98,7 +103,7 @@ Since \`map\` builds a new array, calling it without using the returned array is
 "
 `;
 
-exports[`sections getFirstSection properly returns a section with the provided name 2`] = `
+exports[`sections getNamedSection properly returns a section with the provided name 2`] = `
 "## Accessibility concerns
 
 Use of the \`title\` attribute is highly problematic for:
@@ -118,7 +123,7 @@ This is due to inconsistent browser support, compounded by the additional assist
 "
 `;
 
-exports[`sections getFirstSection properly returns a section with the provided name 3`] = `
+exports[`sections getNamedSection properly returns a section with the provided name 3`] = `
 "## Syntax
 
 \`\`\`css

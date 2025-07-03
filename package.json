@@ -16,7 +16,8 @@
     "lint": "eslint",
     "test": "jest",
     "prerelease": "tsc && eslint",
-    "release": "np"
+    "release": "np",
+    "pack": "npm run build && npm pack"
   },
   "keywords": [],
   "author": "Thenlie",

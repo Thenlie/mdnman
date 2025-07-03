@@ -1,8 +1,8 @@
 import { Command } from 'commander';
 import { search, select } from '@inquirer/prompts';
 import { openEditor, DEFAULT_OUTPUT_PATH, printDoc, writeDocToFile, openLess } from './output.js';
-import { completeParse, createChoicesFromTitles } from '../parser/index.js';
-import { getAllSections, getFirstSection, getSection } from '../parser/sections.js';
+import { completeParse, createChoicesFromTitles, getHeader } from '../parser/index.js';
+import { getAllSections, getNamedSection, getSection } from '../parser/sections.js';
 import { findMDNFile, getMDNFile } from '../file_handler.js';
 import { TITLE_FILE_LIST } from '../titles/index.js';
 import type { SupportedLanguages } from '../types.js';
@@ -29,10 +29,16 @@ const commandActionHandler = async (
         console.error('[commandActionHandler]', GENERIC_ERROR_MESSAGE);
         return;
     }
-    if (options.section !== 'none') {
-        document = getFirstSection(document, options.section);
+    const header = getHeader(document);
+    if (!header) {
+        console.error('[commandActionHandler] header', GENERIC_ERROR_MESSAGE);
+        return;
     }
-    const strippedDoc = completeParse(document);
+    const slug = header.slug;
+    if (options.section !== 'none') {
+        document = getNamedSection(document, options.section);
+    }
+    const strippedDoc = completeParse(document, slug || '');
 
     if (!strippedDoc) {
         console.error(
@@ -43,7 +49,7 @@ const commandActionHandler = async (
     }
 
     if (options.output === 'stdout') {
-        printDoc(strippedDoc);
+        printDoc(strippedDoc, slug);
     } else if (options.output === 'vim') {
         writeDocToFile(strippedDoc);
         openEditor(DEFAULT_OUTPUT_PATH);
@@ -109,6 +115,14 @@ const interactiveActionHandler = async (options: {
         console.error(`[interactiveActionHandler] Error: Could not find file at ${documentQuery}`);
         return;
     }
+    const header = getHeader(file);
+    if (!header) {
+        console.error(
+            `[interactiveActionHandler] Error: Could not find file header ${documentQuery}`
+        );
+        return;
+    }
+
     // Prompt user for section (default to no section/complete doc)
     const sectionQuery = await search(
         {
@@ -148,7 +162,7 @@ const interactiveActionHandler = async (options: {
         return;
     }
 
-    const strippedSection = completeParse(section);
+    const strippedSection = completeParse(section, header.slug);
 
     if (!strippedSection) {
         console.error(
@@ -158,7 +172,7 @@ const interactiveActionHandler = async (options: {
     }
 
     if (options.output === 'stdout') {
-        printDoc(strippedSection);
+        printDoc(strippedSection, header.slug);
     } else if (options.output === 'less') {
         writeDocToFile(strippedSection);
         openLess(DEFAULT_OUTPUT_PATH);

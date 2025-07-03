@@ -25,7 +25,7 @@ const isHeaderField = (key: string): key is HeaderField => {
  * @returns {MDNHeader | null}
  */
 const getHeader = (document: string): MDNHeader | null => {
-    const header: MDNHeader = {};
+    const header: MDNHeader = { title: '', slug: '' };
     let flag = false;
     let failSafe = false;
     const docArr = document.split('\n');
@@ -85,7 +85,16 @@ const transformKumascript = (document: string, addLinks: boolean = false): strin
         }
         const newLine = line.replace(regex, (match) => {
             const matches = [...match.matchAll(/["']([^"']+)["']/g)];
-            if (!matches || matches.length === 0) return '';
+            // if (!matches || matches.length === 0) return '';
+            if (!matches || matches.length === 0) {
+                // The Kumascript macro does not contain quotes.
+                switch (true) {
+                    case /{{deprecated_header}}/i.test(match):
+                        return 'Deprecated: This feature is no longer recommended';
+                    default:
+                        return '';
+                }
+            }
             let path = matches[0][1].replace('&lt;', '').replace('&gt;', '');
             const val = (matches.length === 2 ? matches[1][1] : matches[0][1])
                 .replace('&lt;', '<')
@@ -154,15 +163,24 @@ const getHtmlDescription = (document: string): string => {
  * Updates all markdown links formatted as "[text](url)" to provide the full path to the MDN docs
  * Uses some weird regex to account for cases where the text has brackets.
  * @param {string} document
+ * @param {string} slug
  * @returns {string}
  */
-const expandLinks = (document: string): string => {
-    const regex = /\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(([^)]+)\)/gm;
+const expandLinks = (document: string, slug: string): string => {
+    const regex = /!?\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(([^)]+)\)/gm;
     return document.replace(regex, (match) => {
         if (match.match(/\(.+\)/)) {
             const mask = match.match(/\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(/);
             const path = match.match(/\(([^)]+)\)/);
             if (mask && path) {
+                if (
+                    path[1].startsWith('#') ||
+                    path[1].endsWith('.png') ||
+                    path[1].endsWith('.jpg') ||
+                    path[1].endsWith('.svg')
+                ) {
+                    return `${MDN_BASE_URL}/${LOCALE}/docs/${slug}/${path[1]}`;
+                }
                 return `${mask[0].slice(0, -1)}(${MDN_BASE_URL + path[0].slice(1, path[0].length - 1)})`;
             }
         }
@@ -292,9 +310,10 @@ const transformCodeblockLangs = (document: string): string => {
  * Applies transformKumascript, transformCodeblockLangs, expandLinks, removeEmptyLines,
  * removeEmptySections and removeHiddenCodeblocks to a given document
  * @param {string} document
+ * @param {string} slug
  * @returns {string}
  */
-const completeParse = (document: string): string => {
+const completeParse = (document: string, slug: string): string => {
     // Take a list of functions and run them in order, passing the output of one into the next
     // eslint-disable-next-line prettier/prettier
     const flow = <T>(...fns: Array<(input: T) => T>) => (input: T) => fns.reduce((acc, fn) => fn(acc), input);
@@ -303,13 +322,14 @@ const completeParse = (document: string): string => {
     const cleanAndParse = flow(
         transformKumascript,
         transformCodeblockLangs,
-        expandLinks,
         removeHiddenCodeblocks,
         removeEmptyLines,
         removeEmptySections
     );
 
-    return cleanAndParse(document);
+    const expandedDocument = expandLinks(document, slug);
+
+    return cleanAndParse(expandedDocument);
 };
 
 export {

@@ -90,8 +90,7 @@ const writeDocToFile = (document: string, outputPath: string = DEFAULT_OUTPUT_PA
     const header = getHeader(document);
     console.log(`✍️ Writing MDN Doc${header ? ' ' + header.title + '' : ''} to file ${outputPath}`);
     if (header) {
-        writeStream.write(`# ${header.title}\n`);
-        doc = stripHeader(document);
+        doc = stripHeader(document, true);
     }
     // Write rest of document to file
     const docArr = doc.split('\n');
@@ -104,8 +103,8 @@ const writeDocToFile = (document: string, outputPath: string = DEFAULT_OUTPUT_PA
  * Take raw markdown MDN doc and format it before outputting to the console
  * @param {string} document
  */
-const printDoc = (document: string) => {
-    const formattedDoc = completeParse(stripHeader(document));
+const printDoc = (document: string, slug: string) => {
+    const formattedDoc = completeParse(stripHeader(document), slug);
     console.log(formattedDoc);
 };
 

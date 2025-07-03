@@ -1,4 +1,5 @@
 import type { MDNSection } from '../types.js';
+import { stripHeader } from './index.js';
 
 /**
  * Take a raw markdown MDN doc and return the first section of the document
@@ -8,7 +9,7 @@ import type { MDNSection } from '../types.js';
  * @param {string} sectionName
  * @returns {string}
  */
-const getFirstSection = (document: string, sectionName: string): string => {
+const getNamedSection = (document: string, sectionName: string): string => {
     const docArr = document.split('\n');
     const result = [];
     let inSection = false;
@@ -61,7 +62,7 @@ const getSection = (document: string, inputSection: MDNSection): string | null =
         );
         return null;
     } else if (matchingSections.length === 1) {
-        return getFirstSection(document, inputSection.name);
+        return getNamedSection(document, inputSection.name);
     }
 
     const docArr = document.split('\n');
@@ -110,7 +111,7 @@ const getSection = (document: string, inputSection: MDNSection): string | null =
 const getAllSections = (document: string): MDNSection[] => {
     const docArr = document.split('\n');
     const sections = docArr.filter((line) => /^#+ /.test(line));
-    return sections.map((line, i) => {
+    const mainSections = sections.map((line, i) => {
         // Create a two element array where the first element is the '#'s
         // and the second is the string that follows
         const lineArr = line.split(/ (.*)/, 2);
@@ -120,6 +121,13 @@ const getAllSections = (document: string): MDNSection[] => {
             position: i + 1,
         };
     });
+    // Add the static Description section since it does not have a '#' heading
+    mainSections.unshift({
+        name: 'Introduction',
+        level: 1,
+        position: 0,
+    });
+    return mainSections;
 };
 
 /**
@@ -160,6 +168,8 @@ const removeSection = (document: string, sectionName: string): string => {
  */
 const removeEmptySections = (document: string): string => {
     const sections = getAllSections(document);
+    // Remove the introduction section from the list of sections
+    sections.shift();
     let trimmedDoc = document;
     for (let i = 0; i < sections.length; i++) {
         const section = getSection(document, sections[i]);
@@ -178,7 +188,33 @@ const removeEmptySections = (document: string): string => {
             trimmedDoc = removeSection(trimmedDoc, sections[i].name);
         }
     }
+    // console.log('Leithen', trimmedDoc);
+    // const intro = getIntroSection(document);
     return trimmedDoc;
 };
 
-export { getSection, getFirstSection, getAllSections, removeSection, removeEmptySections };
+/**
+ * The description of each MDN Doc is the first content in the document, listed before
+ * any section headings. This function returns that section of the document.
+ * @param {string} document
+ * @returns {string}
+ */
+const getIntroSection = (document: string): string => {
+    const parsedDocument = stripHeader(document, false);
+    const section: string[] = [];
+    const docArr = parsedDocument.split('\n');
+    for (let i = 0; i < docArr.length; i++) {
+        if (docArr[i].startsWith('##')) break;
+        section.push(docArr[i]);
+    }
+    return section.join('\n');
+};
+
+export {
+    getSection,
+    getNamedSection,
+    getAllSections,
+    removeSection,
+    removeEmptySections,
+    getIntroSection,
+};

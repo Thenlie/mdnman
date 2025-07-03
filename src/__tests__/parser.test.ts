@@ -9,7 +9,7 @@ import {
     removeEmptyLines,
     transformCodeblockLangs,
 } from '../parser/index.js';
-import { getFirstSection, removeEmptySections } from '../parser/sections.js';
+import { getNamedSection, removeEmptySections } from '../parser/sections.js';
 import fs from 'fs';
 import mapHeader from './__fixtures__/map.header.json';
 import titleDescription from './__fixtures__/title.description.json';
@@ -212,6 +212,13 @@ describe('parser', () => {
                 );
             });
         });
+        describe('Deprecated Header', () => {
+            it('provides a shortened deprecated header message', () => {
+                expect(transformKumascript('{{Deprecated_Header}}')).toBe(
+                    'Deprecated: This feature is no longer recommended'
+                );
+            });
+        });
     });
 
     describe('getHtmlDescription', () => {
@@ -222,14 +229,28 @@ describe('parser', () => {
         });
     });
 
-    describe('expandLinks', () => {
+    describe.only('expandLinks', () => {
         it('properly expands links to a valid MDN URL', () => {
-            expect(expandLinks('[data tables](/en-US/docs/Web/HTML/Element/table)')).toBe(
+            expect(expandLinks('[data tables](/en-US/docs/Web/HTML/Element/table)', '')).toBe(
                 '[data tables](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)'
             );
-            expect(expandLinks(spliceDescription.description)).toBe(
+            expect(expandLinks(spliceDescription.description, '')).toBe(
                 // eslint-disable-next-line quotes
                 "The `splice()` method is a [mutating method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#copying_methods_and_mutating_methods). It may change the content of `this`. If the specified number of elements to insert differs from the number of elements being removed, the array's `length` will be changed as well. At the same time, it uses [`[Symbol.species]`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Symbol.species) to create a new array instance to be returned. If the deleted portion is [sparse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections#sparse_arrays), the array returned by `splice()` is sparse as well, with those corresponding indices being empty slots. The `splice()` method is [generic](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#generic_array_methods). It only expects the `this` value to have a `length` property and integer-keyed properties. Although strings are also array-like, this method is not suitable to be applied on them, as strings are immutable."
+            );
+        });
+        it('removes links to images', () => {
+            expect(
+                expandLinks('[test image](border-image-slice.png)', 'Web/CSS/border-image-slice')
+            ).toBe(
+                'https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice/border-image-slice.png'
+            );
+        });
+        it('properly transforms section tags', () => {
+            expect(
+                expandLinks('[year numbers](#year_numbers)', 'Web/HTML/Date_and_time_formats')
+            ).toBe(
+                'https://developer.mozilla.org/en-US/docs/Web/HTML/Date_and_time_formats/#year_numbers'
             );
         });
     });
@@ -245,7 +266,7 @@ describe('parser', () => {
 
     describe('truncateString', () => {
         it('cuts a string down to the provided length and corrects missing codeblock backticks if needed', () => {
-            const section = getFirstSection(substrFile, 'Examples');
+            const section = getNamedSection(substrFile, 'Examples');
             const truncatedStr = truncateString(section, 1024);
             expect(truncatedStr).toHaveLength(1024);
             expect(truncatedStr).toMatchSnapshot();
@@ -260,7 +281,7 @@ describe('parser', () => {
         });
     });
 
-    describe.only('transformCodeblockLangs', () => {
+    describe('transformCodeblockLangs', () => {
         it('properly replaces codeblock languages with valid ones', () => {
             expect(transformCodeblockLangs('```js')).toBe('```js');
             expect(transformCodeblockLangs('```js-nolint')).toBe('```js');
