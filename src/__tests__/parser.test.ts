@@ -241,7 +241,7 @@ describe('parser', () => {
         });
         it('removes links to images', () => {
             expect(
-                expandLinks('[test image](border-image-slice.png)', 'Web/CSS/border-image-slice')
+                expandLinks('![test image](border-image-slice.png)', 'Web/CSS/border-image-slice')
             ).toBe(
                 'https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice/border-image-slice.png'
             );

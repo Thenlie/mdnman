@@ -169,22 +169,19 @@ const getHtmlDescription = (document: string): string => {
 const expandLinks = (document: string, slug: string): string => {
     const regex = /!?\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(([^)]+)\)/gm;
     return document.replace(regex, (match) => {
-        if (match.match(/\(.+\)/)) {
-            const mask = match.match(/\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(/);
-            const path = match.match(/\(([^)]+)\)/);
-            if (mask && path) {
-                if (
-                    path[1].startsWith('#') ||
-                    path[1].endsWith('.png') ||
-                    path[1].endsWith('.jpg') ||
-                    path[1].endsWith('.svg')
-                ) {
-                    return `${MDN_BASE_URL}/${LOCALE}/docs/${slug}/${path[1]}`;
-                }
-                return `${mask[0].slice(0, -1)}(${MDN_BASE_URL + path[0].slice(1, path[0].length - 1)})`;
-            }
+        if (!match.match(/\(.+\)/)) return match;
+        const mask = match.match(/\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(/);
+        const path = match.match(/\(([^)]+)\)/);
+        if (!mask || !path) return match;
+        if (
+            path[1].startsWith('#') ||
+            path[1].endsWith('.png') ||
+            path[1].endsWith('.jpg') ||
+            path[1].endsWith('.svg')
+        ) {
+            return `${MDN_BASE_URL}/${LOCALE}/docs/${slug}/${path[1]}`;
         }
-        return match;
+        return `${mask[0].slice(0, -1)}(${MDN_BASE_URL + path[0].slice(1, path[0].length - 1)})`;
     });
 };
 
