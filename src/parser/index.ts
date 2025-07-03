@@ -171,7 +171,7 @@ const expandLinks = (document: string, slug: string): string => {
     return document.replace(regex, (match) => {
         if (!match.match(/\(.+\)/)) return match;
         const mask = match.match(/\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(/);
-        const path = match.match(/\(([^)]+)\)/);
+        const path = match.match(/\]\(([^)]+)\)/);
         if (!mask || !path) return match;
         if (
             path[1].startsWith('#') ||
@@ -181,7 +181,10 @@ const expandLinks = (document: string, slug: string): string => {
         ) {
             return `${mask[0].slice(0, -1)}(${MDN_BASE_URL}/${LOCALE}/docs/${slug}/${path[1]})`;
         }
-        return `${mask[0].slice(0, -1)}(${MDN_BASE_URL + path[0].slice(1, path[0].length - 1)})`;
+        if (path[1].startsWith('http')) {
+            return `${mask[0].slice(0, -1)}(${path[0].slice(2, path[0].length - 1)})`;
+        }
+        return `${mask[0].slice(0, -1)}(${MDN_BASE_URL + path[0].slice(2, path[0].length - 1)})`;
     });
 };
 
