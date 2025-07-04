@@ -1,0 +1,3 @@
+[submodule "upstream/mdn"]
+	path = upstream/mdn
+	url = git@github.com:mdn/content.git

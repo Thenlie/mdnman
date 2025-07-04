@@ -297,9 +297,15 @@ const removeHiddenCodeblocks = (document: string): string => {
  */
 const transformCodeblockLangs = (document: string): string => {
     const newDocument = document
-        .replace(/```js(-nolint)?( example-(good|bad))?/g, '```js')
-        .replace(/```css(-nolint)?( example-(good|bad))?/g, '```css')
-        .replace(/```html(-nolint)?( example-(good|bad))?/g, '```html')
+        .replace(/```js(-nolint)?( example-(good|bad))?( interactive-example(-choice)?)?/g, '```js')
+        .replace(
+            /```css(-nolint)?( example-(good|bad))?( interactive-example(-choice)?)?/g,
+            '```css'
+        )
+        .replace(
+            /```html(-nolint)?( example-(good|bad))?( interactive-example(-choice)?)?/g,
+            '```html'
+        )
         .replace(/```json(-nolint)?( example-(good|bad))?/g, '```json')
         .replace(/```plain(-nolint)?( example-(good|bad))?/g, '```txt')
         .replace(/```text(-nolint)?( example-(good|bad))?/g, '```txt');

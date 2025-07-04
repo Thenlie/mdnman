@@ -12,6 +12,7 @@
     "start": "tsx src/index.ts",
     "cli": "tsx tools/cli.ts",
     "titles": "tsx tools/generate_titles.ts",
+    "syncLib": "tsx tools/sync_lib.ts",
     "build": "tsc",
     "lint": "eslint",
     "test": "jest",
