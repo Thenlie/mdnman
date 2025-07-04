@@ -19,7 +19,8 @@ The most common use case for this method (and even then, probably not a very com
   Perhaps the user has moved into a new region, so using new regional ICE servers is necessary, for example.
   In this situation, one might call `setConfiguration()` to switch to new regional ICE servers, then initiate an [ICE restart](/en-US/docs/Web/API/WebRTC_API/Session_lifetime#ice_restart).
 
-> **Note:** You cannot change the identity information for a connection once it's already been set.
+> [!NOTE]
+> You cannot change the identity information for a connection once it's already been set.
 
 ## Syntax
 
@@ -33,6 +34,10 @@ setConfiguration(configuration)
   - : An object which provides the options to be set.
     The changes are not additive; instead, the new values completely replace the existing ones.
     See [`RTCPeerConnection()`](/en-US/docs/Web/API/RTCPeerConnection/RTCPeerConnection#parameters) for more information on what options are allowed.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ### Exceptions
 
@@ -58,7 +63,7 @@ In this example, it has already been determined that ICE restart is needed, and 
 const restartConfig = {
   iceServers: [
     {
-      urls: "turn:asia.myturnserver.net",
+      urls: "turn:asia.turn-server.net",
       username: "allie@oopcode.com",
       credential: "topsecretpassword",
     },
@@ -67,18 +72,20 @@ const restartConfig = {
 
 myPeerConnection.setConfiguration(restartConfig);
 
+myPeerConnection.restartIce();
+
 myPeerConnection
-  .createOffer({ iceRestart: true })
+  .createOffer() // restartIce() causes iceRestart to be set true
   .then((offer) => myPeerConnection.setLocalDescription(offer))
   .then(() => {
     // send the offer to the other peer using the signaling server
   })
-  .catch(reportError);
+  .catch(window.reportError);
 ```
 
 First, a new object is created, `restartConfig`, specifying the new ICE server and its credentials.
 This is then passed into `setConfiguration()`.
-ICE negotiation is restarted by calling {{domxref("RTCPeerConnection.createOffer()", "createOffer()")}}, specifying `true` as the value of the `iceRestart` option.
+ICE negotiation is restarted by calling {{domxref("RTCPeerConnection.restartIce()", "restartIce()")}}, which causes the next offer created to include the new ICE server information.
 From there, we handle the process as usual, by setting the local description to the returned offer and then sending that offer to the other peer.
 
 ## Specifications

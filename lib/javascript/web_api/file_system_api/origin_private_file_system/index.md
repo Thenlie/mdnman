@@ -19,7 +19,7 @@ The [File System Access API](https://wicg.github.io/file-system-access/), which 
 
 This works, but it has some restrictions. These changes are being made to the user-visible file system, so there are a lot of security checks in place (for example, [safe browsing](https://developers.google.com/safe-browsing) in Chrome) to guard against malicious content being written to that file system. These writes are not in-place, and instead use a temporary file. The original is not modified unless it passes all the security checks.
 
-As a result, these operations are fairly slow. It is not so noticeable when you are making small text updates, but the performance suffers when making more significant, large-scale file updates such as [SQLite](https://www.sqlite.org/wasm) database modifications.
+As a result, these operations are fairly slow. It is not so noticeable when you are making small text updates, but the performance suffers when making more significant, large-scale file updates such as [SQLite](https://sqlite.org/wasm) database modifications.
 
 ## How does the OPFS solve such problems?
 
@@ -75,7 +75,7 @@ const existingDirectoryHandle =
 
 1. Make a {{domxref("FileSystemDirectoryHandle.getFileHandle()")}} call to return a {{domxref("FileSystemFileHandle")}} object.
 2. Call {{domxref("FileSystemFileHandle.createWritable()")}} to return a {{domxref("FileSystemWritableFileStream")}} object, which is a specialized type of {{domxref("WritableStream")}}.
-3. Write contents to it using a {{domxref("FileSystemWritableFilestream.write()")}} call.
+3. Write contents to it using a {{domxref("FileSystemWritableFileStream.write()")}} call.
 4. Close the stream using {{domxref("WritableStream.close()")}}.
 
 ### Deleting a file or folder
@@ -127,7 +127,7 @@ You can synchronously access a file by calling {{domxref("FileSystemFileHandle.c
 
 ```js
 const opfsRoot = await navigator.storage.getDirectory();
-const fileHandle = await opfsRoot.getFileHandle("my highspeed file.txt", {
+const fileHandle = await opfsRoot.getFileHandle("my-high-speed-file.txt", {
   create: true,
 });
 const syncAccessHandle = await fileHandle.createSyncAccessHandle();
@@ -179,7 +179,7 @@ size = accessHandle.getSize();
 const dataView = new DataView(new ArrayBuffer(size));
 
 // Read the entire file into the data view.
-accessHandle.read(dataView);
+accessHandle.read(dataView, { at: 0 });
 // Logs `"Some textMore content"`.
 console.log(textDecoder.decode(dataView));
 

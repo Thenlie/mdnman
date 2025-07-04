@@ -10,7 +10,8 @@ WebRTC lets you build peer-to-peer communication of arbitrary data, audio, or vi
 
 This article doesn't get into details of the actual APIs involved in establishing and handling a WebRTC connection; it reviews the process in general with some information about why each step is required. See [Signaling and video calling](/en-US/docs/Web/API/WebRTC_API/Signaling_and_video_calling) for an actual example with a step-by-step explanation of what the code does.
 
-> **Note:** This page is currently under construction, and some of the content will move to other pages as the WebRTC guide material is built out. Pardon our dust!
+> [!NOTE]
+> This page is currently under construction, and some of the content will move to other pages as the WebRTC guide material is built out. Pardon our dust!
 
 ## Establishing the connection
 
@@ -62,14 +63,22 @@ There's a sequence of things that have to happen in order to make it possible to
 
 Sometimes, during the lifetime of a WebRTC session, network conditions change. One of the users might transition from a cellular to a Wi-Fi network, or the network might become congested, for example. When this happens, the ICE agent may choose to perform **ICE restart**. This is a process by which the network connection is renegotiated, exactly the same way the initial ICE negotiation is performed, with one exception: media continues to flow across the original network connection until the new one is up and running. Then media shifts to the new network connection and the old one is closed.
 
-> **Note:** Different browsers support ICE restart under different sets of conditions. Not all browsers will perform ICE restart due to network congestion, for example.
+> [!NOTE]
+> Different browsers support ICE restart under different sets of conditions. Not all browsers will perform ICE restart due to network congestion, for example.
 
-If you need to change the configuration of the connection in some way (such as changing to a different set of ICE servers), you can do so before restarting ICE by calling {{domxref("RTCPeerConnection.setConfiguration()")}} with an updated configuration object before restarting ICE.
+The handling of the `failed` [ICE connection state](/en-US/docs/Web/API/RTCPeerConnection/iceConnectionState) below shows how you might restart the connection.
 
-To explicitly trigger ICE restart, start the renegotiation process by calling {{domxref("RTCPeerConnection.createOffer()")}}, specifying the `iceRestart` option with a value of `true`. Then handle the connection process from then on just like you normally would. This generates new values for the ICE username fragment (ufrag) and password, which will be used by the renegotiation process and the resulting connection.
+```js
+pc.oniceconnectionstatechange = () => {
+  if (pc.iceConnectionState === "failed") {
+    pc.setConfiguration(restartConfig);
+    pc.restartIce();
+  }
+};
+```
+
+The code first calls {{domxref("RTCPeerConnection.setConfiguration()")}} with an updated configuration object. This should be done before restarting ICE if you need to change the connection configuration in some way (such as changing to a different set of ICE servers).
+
+The handler then calls {{domxref("RTCPeerConnection.restartIce()")}}. This tells the ICE layer to automatically add the `iceRestart` flag to the next `createOffer()` call, which triggers an ICE restart. It also creates new values for the ICE username fragment (ufrag) and password, which will be used by the renegotiation process and the resulting connection.
 
 The answerer side of the connection will automatically begin ICE restart when new values are detected for the ICE ufrag and ICE password.
-
-## Transmission
-
-## Reception

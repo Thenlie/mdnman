@@ -39,7 +39,8 @@ canvas.addEventListener("click", async () => {
 });
 ```
 
-> **Note:** If a user has exited pointer lock via the [default unlock gesture](https://w3c.github.io/pointerlock/#dfn-default-unlock-gesture), or pointer lock has not previously been entered for this document, an event generated as a result of an [engagement gesture](https://w3c.github.io/pointerlock/#dfn-engagement-gesture) must be received by the document before [`requestPointerLock`](https://w3c.github.io/pointerlock/#dom-element-requestpointerlock) will succeed. (from <https://w3c.github.io/pointerlock/#extensions-to-the-element-interface>)
+> [!NOTE]
+> If a user has exited pointer lock via the [default unlock gesture](https://w3c.github.io/pointerlock/#dfn-default-unlock-gesture), or pointer lock has not previously been entered for this document, an event generated as a result of an [engagement gesture](https://w3c.github.io/pointerlock/#dfn-engagement-gesture) must be received by the document before [`requestPointerLock`](https://w3c.github.io/pointerlock/#dom-element-requestpointerlock) will succeed. (from <https://w3c.github.io/pointerlock/#extensions-to-the-element-interface>)
 
 Operating systems enable mouse acceleration by default, which is useful when you sometimes want slow precise movement (think about you might use a graphics package), but also want to move great distances with a faster mouse movement (think about scrolling, and selecting several files). For some first-person perspective games however, raw mouse input data is preferred for controlling camera rotation — where the same distance movement, fast or slow, results in the same rotation. This results in a better gaming experience and higher accuracy, according to professional gamers.
 
@@ -153,7 +154,7 @@ When the mouse is unlocked, the system cursor can exit and re-enter the browser 
 
 ## Simple example walkthrough
 
-We've written a [pointer lock demo](https://mdn.github.io/dom-examples/pointer-lock/) ([see source code](https://github.com/mdn/dom-examples/tree/main/pointer-lock)) to show you how to use it to set up a simple control system. This demo uses JavaScript to draw a ball on top of an {{ htmlelement("canvas") }} element. When you click the canvas, pointer lock is then used to remove the mouse pointer and allow you to move the ball directly using the mouse. Let's see how this works.
+We've written a [pointer lock demo](https://mdn.github.io/dom-examples/pointer-lock/) ([see source code](https://github.com/mdn/dom-examples/tree/main/pointer-lock)) to show you how to use it to set up a simple control system. This demo uses JavaScript to draw a ball on top of a {{ htmlelement("canvas") }} element. When you click the canvas, pointer lock is then used to remove the mouse pointer and allow you to move the ball directly using the mouse. Let's see how this works.
 
 We set initial x and y positions on the canvas:
 
@@ -174,7 +175,8 @@ canvas.addEventListener("click", async () => {
 });
 ```
 
-> **Note:** The above snippet works in browsers that don't support the promise version of `requestPointerLock()`. See [Handling promise and non-promise versions of requestPointerLock()](#handling_promise_and_non-promise_versions_of_requestpointerlock) for an explanation.
+> [!NOTE]
+> The above snippet works in browsers that don't support the promise version of `requestPointerLock()`. See [Handling promise and non-promise versions of requestPointerLock()](#handling_promise_and_non-promise_versions_of_requestpointerlock) for an explanation.
 
 Now for the dedicated pointer lock event listener: `pointerlockchange`. When this occurs, we run a function called `lockChangeAlert()` to handle the change.
 
@@ -219,12 +221,10 @@ function updatePosition(e) {
   }
   tracker.textContent = `X position: ${x}, Y position: ${y}`;
 
-  if (!animation) {
-    animation = requestAnimationFrame(() => {
-      animation = null;
-      canvasDraw();
-    });
-  }
+  animation ??= requestAnimationFrame(() => {
+    animation = null;
+    canvasDraw();
+  });
 }
 ```
 

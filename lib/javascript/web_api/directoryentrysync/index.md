@@ -55,7 +55,7 @@ createReader()
 
 ##### Parameters
 
-None
+None.
 
 ##### Return value
 
@@ -247,7 +247,7 @@ removeRecursively()
 
 ##### Parameters
 
-None
+None.
 
 ##### Return value
 
@@ -306,4 +306,3 @@ Use the [File and Directory Entries API](/en-US/docs/Web/API/File_and_Directory_
 ## See also
 
 - [File and Directory Entries API](/en-US/docs/Web/API/File_and_Directory_Entries_API)
-- [Introduction to the File and Directory Entries API](/en-US/docs/Web/API/File_and_Directory_Entries_API/Introduction)

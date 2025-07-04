@@ -1,13 +1,14 @@
 ---
-title: "::-webkit-meter-bar"
+title: ::-webkit-meter-bar
 slug: Web/CSS/::-webkit-meter-bar
 page-type: css-pseudo-element
 status:
+  - deprecated
   - non-standard
 browser-compat: css.selectors.-webkit-meter-bar
 ---
 
-{{CSSRef}}{{Non-standard_header}}
+{{CSSRef}}{{Non-standard_header}}{{deprecated_header}}
 
 The **`::-webkit-meter-bar`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US/docs/Glossary/Pseudo-element) is a [WebKit extension](/en-US/docs/Web/CSS/WebKit_Extensions) that represents the background of a {{HTMLElement("meter")}} element. It is used for selecting and applying styles to the container of a meter gauge.
 
@@ -18,10 +19,6 @@ The **`::-webkit-meter-bar`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US
   /* ... */
 }
 ```
-
-## Specifications
-
-Not part of any standard.
 
 ## Examples
 
@@ -79,6 +76,10 @@ if (is_safari) {
 
 {{ EmbedLiveSample('Examples') }}
 
+## Specifications
+
+Not part of any standard.
+
 ## Browser compatibility
 
 {{Compat}}
@@ -86,7 +87,6 @@ if (is_safari) {
 ## See also
 
 - The pseudo-elements used by WebKit/Blink to style other parts of a {{htmlelement("meter")}} element are as follows:
-
   - {{cssxref("::-webkit-meter-inner-element")}}
   - {{cssxref("::-webkit-meter-even-less-good-value")}}
   - {{cssxref("::-webkit-meter-optimum-value")}}

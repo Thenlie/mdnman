@@ -1,21 +1,44 @@
 ---
-title: title
-slug: Web/HTML/Global_attributes/title
+title: HTML title global attribute
+short-title: title
+slug: Web/HTML/Reference/Global_attributes/title
 page-type: html-attribute
 browser-compat: html.global_attributes.title
 ---
 
 {{HTMLSidebar("Global_attributes")}}
 
-The **`title`** [global attribute](/en-US/docs/Web/HTML/Global_attributes) contains text representing advisory information related to the element it belongs to.
+The **`title`** [global attribute](/en-US/docs/Web/HTML/Reference/Global_attributes) contains text representing advisory information related to the element it belongs to.
 
-{{EmbedInteractiveExample("pages/tabbed/attribute-title.html","tabbed-shorter")}}
+{{InteractiveExample("HTML Demo: title", "tabbed-shorter")}}
+
+```html interactive-example
+<p>
+  Use the <code>title</code> attribute on an <code>iframe</code> to clearly
+  identify the content of the <code>iframe</code> to screen readers.
+</p>
+
+<iframe
+  title="Wikipedia page for the HTML language"
+  src="https://en.m.wikipedia.org/wiki/HTML"></iframe>
+<iframe
+  title="Wikipedia page for the CSS language"
+  src="https://en.m.wikipedia.org/wiki/CSS"></iframe>
+```
+
+```css interactive-example
+iframe {
+  height: 200px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+```
 
 The main use of the `title` attribute is to label {{HTMLElement("iframe")}} elements for assistive technology.
 
-The `title` attribute may also be used to label controls in [data tables](/en-US/docs/Web/HTML/Element/table).
+The `title` attribute may also be used to label controls in [data tables](/en-US/docs/Web/HTML/Reference/Elements/table).
 
-The `title` attribute, when added to [`<link rel="stylesheet">`](/en-US/docs/Web/HTML/Element/link), creates an alternate stylesheet. When defining an alternative style sheet with `<link rel="alternate">` the attribute is required and must be set to a non-empty string.
+The `title` attribute, when added to [`<link rel="stylesheet">`](/en-US/docs/Web/HTML/Reference/Elements/link), creates an alternate stylesheet. When defining an alternative style sheet with `<link rel="alternate">` the attribute is required and must be set to a non-empty string.
 
 If included on the {{htmlelement('abbr')}} opening tag, the `title` must be a full expansion of the abbreviation or acronym. Instead of using `title`, when possible, provide an expansion of the abbreviation or acronym in plain text on first use, using the `<abbr>` to mark up the abbreviation. This enables all users know what name or term the abbreviation or acronym shortens while providing a hint to user agents on how to announce the content.
 
@@ -101,5 +124,5 @@ This is due to inconsistent browser support, compounded by the additional assist
 
 ## See also
 
-- All [global attributes](/en-US/docs/Web/HTML/Global_attributes).
+- All [global attributes](/en-US/docs/Web/HTML/Reference/Global_attributes).
 - {{domxref("HTMLElement.title")}} that reflects this attribute.

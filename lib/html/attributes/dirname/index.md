@@ -1,6 +1,7 @@
 ---
 title: "HTML attribute: dirname"
-slug: Web/HTML/Attributes/dirname
+short-title: dirname
+slug: Web/HTML/Reference/Attributes/dirname
 page-type: html-attribute
 browser-compat:
   - html.elements.textarea.dirname
@@ -104,6 +105,6 @@ https://www.example.com/submit?user=LTR+Username&user-direction=rtl&comment=LTR+
 
 ## See also
 
-- [`dir` attribute](/en-US/docs/Web/HTML/Global_attributes/dir)
+- [`dir` attribute](/en-US/docs/Web/HTML/Reference/Global_attributes/dir)
 - {{htmlelement("input")}}
 - {{htmlelement("textarea")}}

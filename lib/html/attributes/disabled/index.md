@@ -1,6 +1,7 @@
 ---
 title: "HTML attribute: disabled"
-slug: Web/HTML/Attributes/disabled
+short-title: disabled
+slug: Web/HTML/Reference/Attributes/disabled
 page-type: html-attribute
 browser-compat:
   - html.elements.button.disabled
@@ -16,7 +17,39 @@ browser-compat:
 
 The Boolean **`disabled`** attribute, when present, makes the element not mutable, focusable, or even submitted with the form. The user can neither edit nor focus on the control, nor its form control descendants.
 
-{{EmbedInteractiveExample("pages/tabbed/attribute-disabled.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: disabled", "tabbed-standard")}}
+
+```html interactive-example
+<form>
+  <label for="name">Name:</label>
+  <input id="name" name="name" type="text" />
+
+  <label for="emp">Employed:</label>
+  <select id="emp" name="emp" disabled>
+    <option>No</option>
+    <option>Yes</option>
+  </select>
+
+  <label for="empDate">Employment Date:</label>
+  <input id="empDate" name="empDate" type="date" disabled />
+
+  <label for="resume">Resume:</label>
+  <input id="resume" name="resume" type="file" />
+</form>
+```
+
+```css interactive-example
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+*:disabled {
+  background-color: dimgrey;
+  color: linen;
+  opacity: 1;
+}
+```
 
 ## Overview
 
@@ -33,13 +66,13 @@ When a supporting element has the `disabled` attribute applied, the {{cssxref(":
 
 This Boolean attribute prevents the user from interacting with the button. If this attribute isn't set, the button can still be disabled from a containing element, for example {{htmlelement('fieldset')}}; if there is no containing element with the `disabled` attribute set, then the button is enabled.
 
-Firefox will, unlike other browsers, persist the dynamic disabled state of a {{htmlelement('button')}} across page loads. Use the [`autocomplete`](/en-US/docs/Web/HTML/Attributes/autocomplete) attribute to control this feature.
+Firefox will, unlike other browsers, persist the dynamic disabled state of a {{htmlelement('button')}} across page loads. Use the [`autocomplete`](/en-US/docs/Web/HTML/Reference/Attributes/autocomplete) attribute to control this feature.
 
 ### Attribute interactions
 
-The difference between `disabled` and [`readonly`](/en-US/docs/Web/HTML/Attributes/readonly) is that read-only controls can still function and are still focusable, whereas disabled controls can not receive focus and are not submitted with the form and generally do not function as controls until they are enabled.
+The difference between `disabled` and [`readonly`](/en-US/docs/Web/HTML/Reference/Attributes/readonly) is that read-only controls can still function and are still focusable, whereas disabled controls can not receive focus and are not submitted with the form and generally do not function as controls until they are enabled.
 
-Because a disabled field cannot have its value changed, [`required`](/en-US/docs/Web/HTML/Attributes/required) does not have any effect on inputs with the `disabled` attribute also specified. Additionally, since the elements become immutable, most other attributes, such as [`pattern`](/en-US/docs/Web/HTML/Attributes/pattern), have no effect, until the control is enabled.
+Because a disabled field cannot have its value changed, [`required`](/en-US/docs/Web/HTML/Reference/Attributes/required) does not have any effect on inputs with the `disabled` attribute also specified. Additionally, since the elements become immutable, most other attributes, such as [`pattern`](/en-US/docs/Web/HTML/Reference/Attributes/pattern), have no effect, until the control is enabled.
 
 > [!NOTE]
 > The `required` attribute is not permitted on inputs with the `disabled` attribute specified.
@@ -48,7 +81,7 @@ Because a disabled field cannot have its value changed, [`required`](/en-US/docs
 
 Browsers display disabled form controls greyed as disabled form controls are immutable, won't receive focus or any browsing events, like mouse clicks or focus-related ones, and aren't submitted with the form.
 
-If present on a supporting elements, the `{{cssxref(':disabled')}}` pseudo class will match. If the attribute is not included, the `{{cssxref(':enabled')}}` pseudo class will match. If the element doesn't support the disabled attribute, the attribute will have no effect, including not leading to being matched by the `:disabled` and `:enabled` pseudo classes.
+If present on a supporting elements, the {{cssxref(':disabled')}} pseudo class will match. If the attribute is not included, the {{cssxref(':enabled')}} pseudo class will match. If the element doesn't support the disabled attribute, the attribute will have no effect, including not leading to being matched by the `:disabled` and `:enabled` pseudo classes.
 
 ### Constraint validation
 
@@ -63,12 +96,12 @@ When form controls are disabled, many browsers will display them in a lighter, g
   <legend>Checkboxes</legend>
   <p>
     <label>
-      <input type="checkbox" name="chbox" value="regular" /> Regular
+      <input type="checkbox" name="ch-box" value="regular" /> Regular
     </label>
   </p>
   <p>
     <label>
-      <input type="checkbox" name="chbox" value="disabled" disabled /> disabled
+      <input type="checkbox" name="ch-box" value="disabled" disabled /> disabled
     </label>
   </p>
 </fieldset>

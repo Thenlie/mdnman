@@ -1,13 +1,14 @@
 ---
-title: translate
-slug: Web/HTML/Global_attributes/translate
+title: HTML translate global attribute
+short-title: translate
+slug: Web/HTML/Reference/Global_attributes/translate
 page-type: html-attribute
 browser-compat: html.global_attributes.translate
 ---
 
 {{HTMLSidebar("Global_attributes")}}
 
-The **`translate`** [global attribute](/en-US/docs/Web/HTML/Global_attributes) is an [enumerated](/en-US/docs/Glossary/Enumerated) attribute that is used to specify whether an element's _translatable attribute_ values and its {{domxref("Text")}} node children should be translated when the page is localized, or whether to leave them unchanged.
+The **`translate`** [global attribute](/en-US/docs/Web/HTML/Reference/Global_attributes) is an [enumerated](/en-US/docs/Glossary/Enumerated) attribute that is used to specify whether an element's _translatable attribute_ values and its {{domxref("Text")}} node children should be translated when the page is localized, or whether to leave them unchanged.
 
 It can have the following values:
 
@@ -36,7 +37,7 @@ In this example, the `translate` attribute is used to ask translation tools not 
 
 ## See also
 
-- All [global attributes](/en-US/docs/Web/HTML/Global_attributes).
+- All [global attributes](/en-US/docs/Web/HTML/Reference/Global_attributes).
 - The {{domxref("HTMLElement.translate")}} property that reflects this attribute.
 - [Using HTML's translate attribute](https://www.w3.org/International/questions/qa-translate-flag).
-- HTML [`lang`](/en-US/docs/Web/HTML/Global_attributes#lang) attribute
+- HTML [`lang`](/en-US/docs/Web/HTML/Reference/Global_attributes/lang) attribute

@@ -16,17 +16,17 @@ To see the final code, check out the [source code](https://github.com/mdn/dom-ex
 
 The source code is organized into the following files:
 
-- [index.html](https://github.com/mdn/dom-examples/tree/main/edit-context/html-editor/index.html) contains the editor UI element, and loads the necessary CSS and JavaScript code for the demo.
-- [styles.css](https://github.com/mdn/dom-examples/tree/main/edit-context/html-editor/styles.css) contains the styles for the editor UI.
-- [editor.js](https://github.com/mdn/dom-examples/tree/main/edit-context/html-editor/editor.js) contains the JavaScript code that sets up the editor UI, renders the HTML code, and handles user input.
-- [tokenizer.js](https://github.com/mdn/dom-examples/tree/main/edit-context/html-editor/tokenizer.js) contains the JavaScript code that splits the HTML code into separate tokens, such as opening tags, closing tags, and text nodes.
-- [converter.js](https://github.com/mdn/dom-examples/tree/main/edit-context/html-editor/converter.js) contains the JavaScript code that converts between the character offsets that the EditContext API uses, and the DOM nodes that the browser uses for text selections.
+- [index.html](https://github.com/mdn/dom-examples/blob/main/edit-context/html-editor/index.html) contains the editor UI element, and loads the necessary CSS and JavaScript code for the demo.
+- [styles.css](https://github.com/mdn/dom-examples/blob/main/edit-context/html-editor/styles.css) contains the styles for the editor UI.
+- [editor.js](https://github.com/mdn/dom-examples/blob/main/edit-context/html-editor/editor.js) contains the JavaScript code that sets up the editor UI, renders the HTML code, and handles user input.
+- [tokenizer.js](https://github.com/mdn/dom-examples/blob/main/edit-context/html-editor/tokenizer.js) contains the JavaScript code that splits the HTML code into separate tokens, such as opening tags, closing tags, and text nodes.
+- [converter.js](https://github.com/mdn/dom-examples/blob/main/edit-context/html-editor/converter.js) contains the JavaScript code that converts between the character offsets that the EditContext API uses, and the DOM nodes that the browser uses for text selections.
 
 To use the live demo, open [Edit Context API: HTML editor demo](https://mdn.github.io/dom-examples/edit-context/html-editor/) in a browser that supports the EditContext API.
 
 ## Creating the editor UI
 
-The first step is to create the UI for the editor. The editor is a {{HTMLElement("div")}} element with the [`spellcheck`](/en-US/docs/Web/HTML/Global_attributes/spellcheck) attribute set to `false` to disable spell checking:
+The first step is to create the UI for the editor. The editor is a {{HTMLElement("div")}} element with the [`spellcheck`](/en-US/docs/Web/HTML/Reference/Global_attributes/spellcheck) attribute set to `false` to disable spell checking:
 
 ```html
 <div id="html-editor" spellcheck="false"></div>
@@ -53,7 +53,7 @@ To style the editor element, the following CSS code is used. The code makes the 
 
 ## Making the editor editable
 
-To make an element editable on the web, most of the time, you use an {{HTMLElement("input")}} element, a {{HTMLElement("textarea")}} element, or the [`contenteditable`](/en-US/docs/Web/HTML/Global_attributes/contenteditable) attribute.
+To make an element editable on the web, most of the time, you use an {{HTMLElement("input")}} element, a {{HTMLElement("textarea")}} element, or the [`contenteditable`](/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable) attribute.
 
 However, with the EditContext API, you can make other types of elements editable without using an attribute. To see the list of elements that can be used with the EditContext API, see [Possible elements](/en-US/docs/Web/API/HTMLElement/editContext#possible_elements) on the HTMLElement `editContext` property page.
 
@@ -122,7 +122,7 @@ function render(text, selectionStart, selectionEnd) {
 
   // Code to render the text selection is omitted for brevity.
   // See "Rendering the selection", below.
-  // ...
+  // …
 }
 ```
 
@@ -163,11 +163,11 @@ As seen in the previous `render()` function code example, each token is given a 
 
 .token-tagName {
   font-weight: bold;
-  color: rgb(117, 186, 242);
+  color: rgb(117 186 242);
 }
 
 .token-attributeName {
-  color: rgb(207, 81, 198);
+  color: rgb(207 81 198);
 }
 
 .token-attributeValue {
@@ -199,7 +199,7 @@ As seen in the previous `render()` function code example, each token is given a 
 
 ### Rendering the selection
 
-Even though the demo app uses a `<div>` element for the editor, which already supports displaying a blinking text cursor and highlighting user selections, the EditContext API still requires to render the selection. This is because the EditContext API can be used with other types of elements that don't support these behaviors. Rendering the selection ourselves also gives us more control over how the selection is displayed. Finally, because the `render()` function clears the HTML content of the editor element everytime it runs, any selection that the user might have made is lost the next time the `render()` function runs.
+Even though the demo app uses a `<div>` element for the editor, which already supports displaying a blinking text cursor and highlighting user selections, the EditContext API still requires to render the selection. This is because the EditContext API can be used with other types of elements that don't support these behaviors. Rendering the selection ourselves also gives us more control over how the selection is displayed. Finally, because the `render()` function clears the HTML content of the editor element every time it runs, any selection that the user might have made is lost the next time the `render()` function runs.
 
 To render the selection, the demo app uses the {{domxref("Selection.setBaseAndExtent()")}} method at the end of the `render()` function. To use the `setBaseAndExtent()` method, we need a pair of DOM nodes and character offsets that represent the start and end of the selection. However, the EditContext API maintains the state for the current selection only as a pair of start and end character offsets into the entire edit buffer. The demo app code uses another function, called `fromOffsetsToSelection()` that's used to convert these character offsets into four values:
 
@@ -210,12 +210,12 @@ To render the selection, the demo app uses the {{domxref("Selection.setBaseAndEx
 
 ```js
 function render(text, selectionStart, selectionEnd) {
-  // ...
+  // …
   // The beginning of the render function is omitted for brevity.
 
   // Convert the start/end offsets to a DOM selection.
   const { anchorNode, anchorOffset, extentNode, extentOffset } =
-    fromOffsetsToSelection(selectionStart, selectionEnd);
+    fromOffsetsToSelection(selectionStart, selectionEnd, editorEl);
 
   // Render the selection in the editor element.
   document
@@ -224,7 +224,7 @@ function render(text, selectionStart, selectionEnd) {
 }
 ```
 
-You can see the code for the `fromOffsetsToSelection()` function in the [converter.js](https://github.com/mdn/dom-examples/tree/main/edit-context/html-editor/converter.js) file.
+You can see the code for the `fromOffsetsToSelection()` function in the [converter.js](https://github.com/mdn/dom-examples/blob/main/edit-context/html-editor/converter.js) file.
 
 ## Updating the control bounds
 
@@ -340,7 +340,7 @@ function updateSelection(start, end) {
 }
 ```
 
-You can see the code for the `fromSelectionToOffsets()` function in the [converter.js](https://github.com/mdn/dom-examples/tree/main/edit-context/html-editor/converter.js) file.
+You can see the code for the `fromSelectionToOffsets()` function in the [converter.js](https://github.com/mdn/dom-examples/blob/main/edit-context/html-editor/converter.js) file.
 
 ## Calculating character bounds
 
@@ -374,7 +374,7 @@ editContext.addEventListener("characterboundsupdate", (e) => {
 });
 ```
 
-You can see the code for the `fromOffsetsToRenderedTokenNodes()` function in the [converter.js](https://github.com/mdn/dom-examples/tree/main/edit-context/html-editor/converter.js) file.
+You can see the code for the `fromOffsetsToRenderedTokenNodes()` function in the [converter.js](https://github.com/mdn/dom-examples/blob/main/edit-context/html-editor/converter.js) file.
 
 ## Applying IME composition text formats
 

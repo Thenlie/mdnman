@@ -35,15 +35,12 @@ rx: unset;
 The {{cssxref("length")}}, {{cssxref("percentage")}}, or `auto` keyword value denotes the horizontal radius of ellipses and the horizontal border-radius of rectangles.
 
 - {{cssxref("length")}}
-
   - : Absolute or relative lengths can be expressed in any unit allowed by the CSS {{cssxref("&lt;length&gt;")}} data type. Negative values are invalid.
 
 - {{cssxref("percentage")}}
-
   - : Percentages refer to the width of the current SVG viewport. The used value for a `<rect>` is never more than 50% of the width of the rectangle.
 
 - `auto`
-
   - : When set or defaulting to `auto`, the `rx` value equals the absolute length value used for {{cssxref("ry")}}. If both `rx` and `ry` have a computed value of `auto`, the used value is `0`.
 
 ## Formal definition
@@ -199,5 +196,6 @@ When using percentage values for `rx`, the values are relative to the width of t
 - {{cssxref("stroke")}}
 - {{cssxref("paint-order")}}
 - {{cssxref("border-radius")}} shorthand property
-- {{cssxref("radial-gradient")}}
+- {{cssxref("gradient/radial-gradient", "radial-gradient")}}
 - {{cssxref("basic-shape")}} data type
+- SVG {{SVGAttr("rx")}} attribute

@@ -9,7 +9,27 @@ browser-compat: css.properties.ruby-position
 
 The **`ruby-position`** [CSS](/en-US/docs/Web/CSS) property defines the position of a ruby element relative to its base element. It can be positioned over the element (`over`), under it (`under`), or between the characters on their right side (`inter-character`).
 
-{{EmbedInteractiveExample("pages/css/ruby-position.html")}}
+{{InteractiveExample("CSS Demo: ruby-position")}}
+
+```css interactive-example-choice
+ruby-position: over;
+```
+
+```css interactive-example-choice
+ruby-position: under;
+```
+
+```html interactive-example
+<section id="default-example">
+  <ruby id="example-element"> 明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp> </ruby>
+</section>
+```
+
+```css interactive-example
+#example-element {
+  font-size: 2em;
+}
+```
 
 ## Syntax
 
@@ -18,6 +38,9 @@ The **`ruby-position`** [CSS](/en-US/docs/Web/CSS) property defines the position
 ruby-position: over;
 ruby-position: under;
 ruby-position: alternate;
+ruby-position: alternate over;
+ruby-position: alternate under;
+ruby-position: inter-character;
 
 /* Global values */
 ruby-position: inherit;
@@ -37,9 +60,8 @@ ruby-position: unset;
     Is a keyword indicating that the ruby has to be placed under the main text for horizontal scripts and left to it for vertical scripts.
 - `alternate`
   - : Is a keyword indicating that the ruby alternates between over and under, when there are multiple levels of annotation.
-
-> [!NOTE]
-> The specification also lists an additional value, `inter-character`, which is not currently supported in any browsers. When implemented, `inter-character` will behave as `over` in vertical writing modes. Otherwise, it indicates that the ruby has to be placed between the different characters, appearing on the right of the base in horizontal text and forcing the children of the ruby annotation container to have a `vertical-rl` writing mode.
+- `inter-character`
+  - : When specified, it behaves as `over` in vertical writing modes. Otherwise, it indicates that the ruby has to be placed between the different characters, appearing on the right of the base in horizontal text and forcing the children of the ruby annotation container to have a `vertical-rl` writing mode.
 
 ## Formal definition
 

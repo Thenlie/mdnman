@@ -1,6 +1,7 @@
 ---
 title: "HTML attribute: step"
-slug: Web/HTML/Attributes/step
+short-title: step
+slug: Web/HTML/Reference/Attributes/step
 page-type: html-attribute
 browser-compat: html.elements.input.step
 ---
@@ -9,7 +10,7 @@ browser-compat: html.elements.input.step
 
 The **`step`** attribute is a number that specifies the granularity that the value must adhere to or the keyword `any`. It is valid for the numeric input types, including the {{HTMLElement("input/date", "date")}}, {{HTMLElement("input/month", "month")}}, {{HTMLElement("input/week", "week")}}, {{HTMLElement("input/time", "time")}}, {{HTMLElement("input/datetime-local", "datetime-local")}}, {{HTMLElement("input/number", "number")}} and {{HTMLElement("input/range", "range")}} types.
 
-The `step` sets the _stepping interval_ when clicking up and down spinner buttons, moving a slider left and right on a range, and validating the different date types. If not explicitly included, `step` defaults to 1 for `number` and `range`, and 1 unit type (minute, week, month, day) for the date/time input types. The value must be a positive number - integer or float — or the special value `any`, which means no stepping is implied and any value is allowed (barring other constraints, such as [`min`](/en-US/docs/Web/HTML/Attributes/min) and [`max`](/en-US/docs/Web/HTML/Attributes/max)).
+The `step` sets the _stepping interval_ when clicking up and down spinner buttons, moving a slider left and right on a range, and validating the different date types. If not explicitly included, `step` defaults to 1 for `number` and `range`, and 1 unit type (minute, week, month, day) for the date/time input types. The value must be a positive number - integer or float — or the special value `any`, which means no stepping is implied and any value is allowed (barring other constraints, such as [`min`](/en-US/docs/Web/HTML/Reference/Attributes/min) and [`max`](/en-US/docs/Web/HTML/Reference/Attributes/max)).
 
 The default stepping value for `number` inputs is 1, allowing only integers to be entered, _unless_ the stepping base is not an integer. The default stepping value for `time` is 60 seconds, with 900 being equal to 15 minutes.
 
@@ -74,7 +75,7 @@ The default stepping value for `number` inputs is 1, allowing only integers to b
   </tbody>
 </table>
 
-If `any` is not explicitly set, valid values for the `number`, date/time input types, and `range` input types are equal to the basis for stepping - the [`min`](/en-US/docs/Web/HTML/Attributes/min) value and increments of the step value, up to the [`max`](/en-US/docs/Web/HTML/Attributes/max) value, if specified. The following example results in any even integer, 10 or greater, being valid:
+If `any` is not explicitly set, valid values for the `number`, date/time input types, and `range` input types are equal to the basis for stepping - the [`min`](/en-US/docs/Web/HTML/Reference/Attributes/min) value and increments of the step value, up to the [`max`](/en-US/docs/Web/HTML/Reference/Attributes/max) value, if specified. The following example results in any even integer, 10 or greater, being valid:
 
 ```html
 <input type="number" min="10" step="2" />
@@ -112,11 +113,11 @@ Valid values include 1.2, 3.2, 5.2, 7.2, 9.2, 11.2, and so on. Only floats with 
 > [!NOTE]
 > When the data entered by the user doesn't adhere to the stepping configuration, the value is considered invalid in constraint validation and will match the {{cssxref(":invalid")}} and {{cssxref(":out-of-range")}} pseudoclasses.
 
-See [Client-side validation](/en-US/docs/Web/HTML/Constraint_validation) and {{domxref("ValidityState.stepMismatch", "stepMismatch")}} for more information.
+See [Client-side validation](/en-US/docs/Web/HTML/Guides/Constraint_validation) and {{domxref("ValidityState.stepMismatch", "stepMismatch")}} for more information.
 
 ## Accessibility concerns
 
-Provide instructions to help users understand how to complete the form and use individual form controls. Indicate any required and optional input, data formats, and other relevant information. When using the `min` attribute, ensure this minimum requirement is understood by the user. Providing instructions within the {{htmlelement('label')}} may be sufficient. If providing instructions outside of labels, which allows more flexible positioning and design, consider using [`aria-labelledby`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-labelledby) or [`aria-describedby`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby).
+Provide instructions to help users understand how to complete the form and use individual form controls. Indicate any required and optional input, data formats, and other relevant information. When using the `min` attribute, ensure this minimum requirement is understood by the user. Providing instructions within the {{htmlelement('label')}} may be sufficient. If providing instructions outside of labels, which allows more flexible positioning and design, consider using [`aria-labelledby`](/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-labelledby) or [`aria-describedby`](/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby).
 
 ## Specifications
 
@@ -128,10 +129,10 @@ Provide instructions to help users understand how to complete the form and use i
 
 ## See also
 
-- [`max`](/en-US/docs/Web/HTML/Attributes/max)
-- [`min`](/en-US/docs/Web/HTML/Attributes/min)
-- [Constraint validation](/en-US/docs/Web/HTML/Constraint_validation)
-- [Form validation](/en-US/docs/Learn/Forms/Form_validation)
+- [`max`](/en-US/docs/Web/HTML/Reference/Attributes/max)
+- [`min`](/en-US/docs/Web/HTML/Reference/Attributes/min)
+- [Constraint validation](/en-US/docs/Web/HTML/Guides/Constraint_validation)
+- [Form validation](/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)
 - {{domxref('validityState.stepMismatch')}}
 - {{cssxref(':out-of-range')}}
 - {{htmlelement('input')}}

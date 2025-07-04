@@ -43,10 +43,6 @@ export const cssTitles: {
         title: '-webkit-box-reflect',
     },
     {
-        path: 'lib/css/-webkit-line-clamp/index.md',
-        title: '-webkit-line-clamp',
-    },
-    {
         path: 'lib/css/-webkit-mask-box-image/index.md',
         title: '-webkit-mask-box-image',
     },
@@ -243,6 +239,10 @@ export const cssTitles: {
         title: '@import',
     },
     {
+        path: 'lib/css/@import/layer_function/index.md',
+        title: 'layer()',
+    },
+    {
         path: 'lib/css/@keyframes/index.md',
         title: '@keyframes',
     },
@@ -309,6 +309,10 @@ export const cssTitles: {
     {
         path: 'lib/css/@media/device-height/index.md',
         title: 'device-height',
+    },
+    {
+        path: 'lib/css/@media/device-posture/index.md',
+        title: 'device-posture',
     },
     {
         path: 'lib/css/@media/device-width/index.md',
@@ -615,6 +619,10 @@ export const cssTitles: {
         title: ':has()',
     },
     {
+        path: 'lib/css/_colon_has-slotted/index.md',
+        title: ':has-slotted',
+    },
+    {
         path: 'lib/css/_colon_host/index.md',
         title: ':host',
     },
@@ -707,6 +715,10 @@ export const cssTitles: {
         title: ':only-of-type',
     },
     {
+        path: 'lib/css/_colon_open/index.md',
+        title: ':open',
+    },
+    {
         path: 'lib/css/_colon_optional/index.md',
         title: ':optional',
     },
@@ -777,6 +789,10 @@ export const cssTitles: {
     {
         path: 'lib/css/_colon_target/index.md',
         title: ':target',
+    },
+    {
+        path: 'lib/css/_colon_target-current/index.md',
+        title: ':target-current',
     },
     {
         path: 'lib/css/_colon_target-within/index.md',
@@ -911,8 +927,20 @@ export const cssTitles: {
         title: '::before',
     },
     {
+        path: 'lib/css/_doublecolon_checkmark/index.md',
+        title: '::checkmark',
+    },
+    {
+        path: 'lib/css/_doublecolon_column/index.md',
+        title: '::column',
+    },
+    {
         path: 'lib/css/_doublecolon_cue/index.md',
         title: '::cue',
+    },
+    {
+        path: 'lib/css/_doublecolon_details-content/index.md',
+        title: '::details-content',
     },
     {
         path: 'lib/css/_doublecolon_file-selector-button/index.md',
@@ -943,8 +971,28 @@ export const cssTitles: {
         title: '::part()',
     },
     {
+        path: 'lib/css/_doublecolon_picker/index.md',
+        title: '::picker()',
+    },
+    {
+        path: 'lib/css/_doublecolon_picker-icon/index.md',
+        title: '::picker-icon',
+    },
+    {
         path: 'lib/css/_doublecolon_placeholder/index.md',
         title: '::placeholder',
+    },
+    {
+        path: 'lib/css/_doublecolon_scroll-button/index.md',
+        title: '::scroll-button()',
+    },
+    {
+        path: 'lib/css/_doublecolon_scroll-marker/index.md',
+        title: '::scroll-marker',
+    },
+    {
+        path: 'lib/css/_doublecolon_scroll-marker-group/index.md',
+        title: '::scroll-marker-group',
     },
     {
         path: 'lib/css/_doublecolon_selection/index.md',
@@ -968,19 +1016,19 @@ export const cssTitles: {
     },
     {
         path: 'lib/css/_doublecolon_view-transition-group/index.md',
-        title: '::view-transition-group',
+        title: '::view-transition-group()',
     },
     {
         path: 'lib/css/_doublecolon_view-transition-image-pair/index.md',
-        title: '::view-transition-image-pair',
+        title: '::view-transition-image-pair()',
     },
     {
         path: 'lib/css/_doublecolon_view-transition-new/index.md',
-        title: '::view-transition-new',
+        title: '::view-transition-new()',
     },
     {
         path: 'lib/css/_doublecolon_view-transition-old/index.md',
-        title: '::view-transition-old',
+        title: '::view-transition-old()',
     },
     {
         path: 'lib/css/abs/index.md',
@@ -999,10 +1047,6 @@ export const cssTitles: {
         title: 'acos()',
     },
     {
-        path: 'lib/css/actual_value/index.md',
-        title: 'Actual value',
-    },
-    {
         path: 'lib/css/align-content/index.md',
         title: 'align-content',
     },
@@ -1015,16 +1059,16 @@ export const cssTitles: {
         title: 'align-self',
     },
     {
+        path: 'lib/css/alignment-baseline/index.md',
+        title: 'alignment-baseline',
+    },
+    {
         path: 'lib/css/all/index.md',
         title: 'all',
     },
     {
         path: 'lib/css/alpha-value/index.md',
         title: '<alpha-value>',
-    },
-    {
-        path: 'lib/css/alternative_style_sheets/index.md',
-        title: 'Alternative style sheets',
     },
     {
         path: 'lib/css/anchor/index.md',
@@ -1123,14 +1167,6 @@ export const cssTitles: {
         title: 'aspect-ratio',
     },
     {
-        path: 'lib/css/at-rule/index.md',
-        title: 'At-rules',
-    },
-    {
-        path: 'lib/css/at-rule-functions/index.md',
-        title: 'CSS at-rule functions',
-    },
-    {
         path: 'lib/css/atan/index.md',
         title: 'atan()',
     },
@@ -1201,6 +1237,10 @@ export const cssTitles: {
     {
         path: 'lib/css/background-size/index.md',
         title: 'background-size',
+    },
+    {
+        path: 'lib/css/baseline-position/index.md',
+        title: '<baseline-position>',
     },
     {
         path: 'lib/css/basic-shape/circle/index.md',
@@ -1563,6 +1603,10 @@ export const cssTitles: {
         title: '<calc-keyword>',
     },
     {
+        path: 'lib/css/calc-size/index.md',
+        title: 'calc-size()',
+    },
+    {
         path: 'lib/css/calc-sum/index.md',
         title: '<calc-sum>',
     },
@@ -1573,10 +1617,6 @@ export const cssTitles: {
     {
         path: 'lib/css/caret-color/index.md',
         title: 'caret-color',
-    },
-    {
-        path: 'lib/css/cascade/index.md',
-        title: 'Introducing the CSS Cascade',
     },
     {
         path: 'lib/css/child_combinator/index.md',
@@ -1603,12 +1643,20 @@ export const cssTitles: {
         title: 'clip-path',
     },
     {
+        path: 'lib/css/clip-rule/index.md',
+        title: 'clip-rule',
+    },
+    {
         path: 'lib/css/color/index.md',
         title: 'color',
     },
     {
         path: 'lib/css/color-interpolation/index.md',
         title: 'color-interpolation',
+    },
+    {
+        path: 'lib/css/color-interpolation-filters/index.md',
+        title: 'color-interpolation-filters',
     },
     {
         path: 'lib/css/color-interpolation-method/index.md',
@@ -1623,12 +1671,12 @@ export const cssTitles: {
         title: 'color()',
     },
     {
-        path: 'lib/css/color_value/color-contrast/index.md',
-        title: 'color-contrast()',
-    },
-    {
         path: 'lib/css/color_value/color-mix/index.md',
         title: 'color-mix()',
+    },
+    {
+        path: 'lib/css/color_value/contrast-color/index.md',
+        title: 'contrast-color()',
     },
     {
         path: 'lib/css/color_value/device-cmyk/index.md',
@@ -1715,14 +1763,6 @@ export const cssTitles: {
         title: 'columns',
     },
     {
-        path: 'lib/css/comments/index.md',
-        title: 'Comments',
-    },
-    {
-        path: 'lib/css/computed_value/index.md',
-        title: 'Computed value',
-    },
-    {
         path: 'lib/css/contain/index.md',
         title: 'contain',
     },
@@ -1759,12 +1799,16 @@ export const cssTitles: {
         title: 'container-type',
     },
     {
-        path: 'lib/css/containing_block/index.md',
-        title: 'Layout and the containing block',
-    },
-    {
         path: 'lib/css/content/index.md',
         title: 'content',
+    },
+    {
+        path: 'lib/css/content-distribution/index.md',
+        title: '<content-distribution>',
+    },
+    {
+        path: 'lib/css/content-position/index.md',
+        title: '<content-position>',
     },
     {
         path: 'lib/css/content-visibility/index.md',
@@ -1804,7 +1848,7 @@ export const cssTitles: {
     },
     {
         path: 'lib/css/css_anchor_positioning/try_options_hiding/index.md',
-        title: 'Handling overflow: try fallbacks and conditional hiding',
+        title: 'Fallback options and conditional hiding for overflow',
     },
     {
         path: 'lib/css/css_anchor_positioning/using/index.md',
@@ -1817,10 +1861,6 @@ export const cssTitles: {
     {
         path: 'lib/css/css_animations/index.md',
         title: 'CSS animations',
-    },
-    {
-        path: 'lib/css/css_animations/tips/index.md',
-        title: 'CSS animation tips and tricks',
     },
     {
         path: 'lib/css/css_animations/using_css_animations/index.md',
@@ -1847,12 +1887,20 @@ export const cssTitles: {
         title: 'Resizing background images with background-size',
     },
     {
+        path: 'lib/css/css_backgrounds_and_borders/scaling_of_svg_backgrounds/index.md',
+        title: 'Scaling SVG backgrounds',
+    },
+    {
         path: 'lib/css/css_backgrounds_and_borders/using_multiple_backgrounds/index.md',
         title: 'Using multiple backgrounds',
     },
     {
         path: 'lib/css/css_basic_user_interface/index.md',
         title: 'CSS basic user interface',
+    },
+    {
+        path: 'lib/css/css_box_alignment/box_alignment/index.md',
+        title: 'CSS box alignment overview',
     },
     {
         path: 'lib/css/css_box_alignment/box_alignment_in_block_abspos_tables/index.md',
@@ -1880,7 +1928,7 @@ export const cssTitles: {
     },
     {
         path: 'lib/css/css_box_model/introduction_to_the_css_box_model/index.md',
-        title: 'Introduction to the CSS basic box model',
+        title: 'Introduction to the CSS box model',
     },
     {
         path: 'lib/css/css_box_model/mastering_margin_collapsing/index.md',
@@ -1895,12 +1943,36 @@ export const cssTitles: {
         title: 'Understanding and setting aspect ratios',
     },
     {
+        path: 'lib/css/css_cascade/cascade/index.md',
+        title: 'Introduction to the CSS cascade',
+    },
+    {
         path: 'lib/css/css_cascade/index.md',
-        title: 'CSS cascade and inheritance',
+        title: 'CSS cascading and inheritance',
+    },
+    {
+        path: 'lib/css/css_cascade/inheritance/index.md',
+        title: 'Inheritance',
+    },
+    {
+        path: 'lib/css/css_cascade/shorthand_properties/index.md',
+        title: 'Shorthand properties',
+    },
+    {
+        path: 'lib/css/css_cascade/specificity/index.md',
+        title: 'Specificity',
+    },
+    {
+        path: 'lib/css/css_cascade/value_processing/index.md',
+        title: 'CSS property value processing',
     },
     {
         path: 'lib/css/css_cascading_variables/index.md',
         title: 'CSS custom properties for cascading variables',
+    },
+    {
+        path: 'lib/css/css_cascading_variables/using_css_custom_properties/index.md',
+        title: 'Using CSS custom properties (variables)',
     },
     {
         path: 'lib/css/css_color_adjustment/index.md',
@@ -1935,6 +2007,10 @@ export const cssTitles: {
         title: 'CSS compositing and blending',
     },
     {
+        path: 'lib/css/css_conditional_rules/container_scroll-state_queries/index.md',
+        title: 'Using container scroll-state queries',
+    },
+    {
         path: 'lib/css/css_conditional_rules/index.md',
         title: 'CSS conditional rules',
     },
@@ -1967,12 +2043,48 @@ export const cssTitles: {
         title: 'Using CSS counters',
     },
     {
+        path: 'lib/css/css_display/block_and_inline_layout_in_normal_flow/index.md',
+        title: 'Block and inline layout in normal flow',
+    },
+    {
         path: 'lib/css/css_display/block_formatting_context/index.md',
         title: 'Block formatting context',
     },
     {
+        path: 'lib/css/css_display/containing_block/index.md',
+        title: 'Layout and the containing block',
+    },
+    {
+        path: 'lib/css/css_display/flow_layout/index.md',
+        title: 'CSS flow layout',
+    },
+    {
+        path: 'lib/css/css_display/flow_layout_and_overflow/index.md',
+        title: 'Flow layout and overflow',
+    },
+    {
+        path: 'lib/css/css_display/flow_layout_and_writing_modes/index.md',
+        title: 'Flow layout and writing modes',
+    },
+    {
+        path: 'lib/css/css_display/in_flow_and_out_of_flow/index.md',
+        title: 'In flow and out of flow',
+    },
+    {
         path: 'lib/css/css_display/index.md',
         title: 'CSS display',
+    },
+    {
+        path: 'lib/css/css_display/introduction_to_formatting_contexts/index.md',
+        title: 'Introduction to formatting contexts',
+    },
+    {
+        path: 'lib/css/css_display/multi-keyword_syntax_of_display/index.md',
+        title: 'Using the multi-keyword syntax with CSS display',
+    },
+    {
+        path: 'lib/css/css_display/visual_formatting_model/index.md',
+        title: 'Visual formatting model',
     },
     {
         path: 'lib/css/css_filter_effects/index.md',
@@ -2015,30 +2127,6 @@ export const cssTitles: {
         title: 'Typical use cases of flexbox',
     },
     {
-        path: 'lib/css/css_flow_layout/block_and_inline_layout_in_normal_flow/index.md',
-        title: 'Block and inline layout in normal flow',
-    },
-    {
-        path: 'lib/css/css_flow_layout/flow_layout_and_overflow/index.md',
-        title: 'Flow layout and overflow',
-    },
-    {
-        path: 'lib/css/css_flow_layout/flow_layout_and_writing_modes/index.md',
-        title: 'Flow layout and writing modes',
-    },
-    {
-        path: 'lib/css/css_flow_layout/in_flow_and_out_of_flow/index.md',
-        title: 'In flow and out of flow',
-    },
-    {
-        path: 'lib/css/css_flow_layout/index.md',
-        title: 'CSS flow layout',
-    },
-    {
-        path: 'lib/css/css_flow_layout/introduction_to_formatting_contexts/index.md',
-        title: 'Introduction to formatting contexts',
-    },
-    {
         path: 'lib/css/css_font_loading/index.md',
         title: 'CSS font loading',
     },
@@ -2048,27 +2136,19 @@ export const cssTitles: {
     },
     {
         path: 'lib/css/css_fonts/opentype_fonts_guide/index.md',
-        title: 'OpenType font features guide',
+        title: 'OpenType font features',
     },
     {
         path: 'lib/css/css_fonts/variable_fonts_guide/index.md',
-        title: 'Variable fonts guide',
+        title: 'Variable fonts',
     },
     {
         path: 'lib/css/css_fonts/woff/index.md',
-        title: 'The Web Open Font Format (WOFF)',
+        title: 'Web Open Font Format (WOFF)',
     },
     {
         path: 'lib/css/css_fragmentation/index.md',
         title: 'CSS fragmentation',
-    },
-    {
-        path: 'lib/css/css_functions/index.md',
-        title: 'CSS value functions',
-    },
-    {
-        path: 'lib/css/css_functions/using_css_math_functions/index.md',
-        title: 'Using CSS math functions',
     },
     {
         path: 'lib/css/css_generated_content/index.md',
@@ -2084,15 +2164,11 @@ export const cssTitles: {
     },
     {
         path: 'lib/css/css_grid_layout/box_alignment_in_grid_layout/index.md',
-        title: 'Box alignment in grid layout',
+        title: 'Aligning items in CSS grid layout',
     },
     {
         path: 'lib/css/css_grid_layout/grid_layout_and_accessibility/index.md',
         title: 'Grid layout and accessibility',
-    },
-    {
-        path: 'lib/css/css_grid_layout/grid_layout_and_progressive_enhancement/index.md',
-        title: 'CSS grid layout and progressive enhancement',
     },
     {
         path: 'lib/css/css_grid_layout/grid_layout_using_line-based_placement/index.md',
@@ -2131,10 +2207,6 @@ export const cssTitles: {
         title: 'Subgrid',
     },
     {
-        path: 'lib/css/css_houdini/index.md',
-        title: 'CSS Houdini',
-    },
-    {
         path: 'lib/css/css_images/implementing_image_sprites_in_css/index.md',
         title: 'Implementing image sprites in CSS',
     },
@@ -2143,8 +2215,20 @@ export const cssTitles: {
         title: 'CSS images',
     },
     {
+        path: 'lib/css/css_images/replaced_element_properties/index.md',
+        title: 'Styling replaced elements',
+    },
+    {
         path: 'lib/css/css_images/using_css_gradients/index.md',
         title: 'Using CSS gradients',
+    },
+    {
+        path: 'lib/css/css_inline_layout/index.md',
+        title: 'CSS inline layout',
+    },
+    {
+        path: 'lib/css/css_inline_layout/inline_formatting_context/index.md',
+        title: 'Inline formatting context',
     },
     {
         path: 'lib/css/css_lists/consistent_list_indentation/index.md',
@@ -2175,8 +2259,20 @@ export const cssTitles: {
         title: 'Logical properties for sizing',
     },
     {
+        path: 'lib/css/css_masking/clipping/index.md',
+        title: 'Introduction to CSS clipping',
+    },
+    {
         path: 'lib/css/css_masking/index.md',
         title: 'CSS masking',
+    },
+    {
+        path: 'lib/css/css_masking/masking/index.md',
+        title: 'Introduction to CSS masking',
+    },
+    {
+        path: 'lib/css/css_masking/multiple_masks/index.md',
+        title: 'Declaring multiple masks',
     },
     {
         path: 'lib/css/css_media_queries/index.md',
@@ -2199,16 +2295,12 @@ export const cssTitles: {
         title: 'Using media queries for accessibility',
     },
     {
-        path: 'lib/css/css_miscellaneous/index.md',
-        title: 'CSS miscellaneous',
-    },
-    {
         path: 'lib/css/css_motion_path/index.md',
         title: 'CSS motion path',
     },
     {
         path: 'lib/css/css_multicol_layout/basic_concepts/index.md',
-        title: 'Basic concepts of multi-column layout',
+        title: 'Basic concepts of multi-column layouts',
     },
     {
         path: 'lib/css/css_multicol_layout/handling_content_breaks_in_multicol_layout/index.md',
@@ -2255,6 +2347,10 @@ export const cssTitles: {
         title: 'Using CSS nesting',
     },
     {
+        path: 'lib/css/css_overflow/css_carousels/index.md',
+        title: 'Creating CSS carousels',
+    },
+    {
         path: 'lib/css/css_overflow/index.md',
         title: 'CSS overflow',
     },
@@ -2271,36 +2367,40 @@ export const cssTitles: {
         title: 'CSS positioned layout',
     },
     {
+        path: 'lib/css/css_positioned_layout/stacking_context/index.md',
+        title: 'Stacking context',
+    },
+    {
+        path: 'lib/css/css_positioned_layout/stacking_context/stacking_context_example_1/index.md',
+        title: 'Stacking context example 1',
+    },
+    {
+        path: 'lib/css/css_positioned_layout/stacking_context/stacking_context_example_2/index.md',
+        title: 'Stacking context example 2',
+    },
+    {
+        path: 'lib/css/css_positioned_layout/stacking_context/stacking_context_example_3/index.md',
+        title: 'Stacking context example 3',
+    },
+    {
+        path: 'lib/css/css_positioned_layout/stacking_floating_elements/index.md',
+        title: 'Stacking floating elements',
+    },
+    {
+        path: 'lib/css/css_positioned_layout/stacking_without_z-index/index.md',
+        title: 'Stacking without the z-index property',
+    },
+    {
         path: 'lib/css/css_positioned_layout/understanding_z-index/index.md',
         title: 'Understanding z-index',
     },
     {
-        path: 'lib/css/css_positioned_layout/understanding_z-index/stacking_context/index.md',
-        title: 'Stacking context',
-    },
-    {
-        path: 'lib/css/css_positioned_layout/understanding_z-index/stacking_context_example_1/index.md',
-        title: 'Stacking context example 1',
-    },
-    {
-        path: 'lib/css/css_positioned_layout/understanding_z-index/stacking_context_example_2/index.md',
-        title: 'Stacking context example 2',
-    },
-    {
-        path: 'lib/css/css_positioned_layout/understanding_z-index/stacking_context_example_3/index.md',
-        title: 'Stacking context example 3',
-    },
-    {
-        path: 'lib/css/css_positioned_layout/understanding_z-index/stacking_floating_elements/index.md',
-        title: 'Stacking floating elements',
-    },
-    {
-        path: 'lib/css/css_positioned_layout/understanding_z-index/stacking_without_z-index/index.md',
-        title: 'Stacking without the z-index property',
-    },
-    {
-        path: 'lib/css/css_positioned_layout/understanding_z-index/using_z-index/index.md',
+        path: 'lib/css/css_positioned_layout/using_z-index/index.md',
         title: 'Using z-index',
+    },
+    {
+        path: 'lib/css/css_properties_and_values_api/houdini/index.md',
+        title: 'CSS Houdini',
     },
     {
         path: 'lib/css/css_properties_and_values_api/index.md',
@@ -2323,6 +2423,14 @@ export const cssTitles: {
         title: 'CSS scroll-driven animations',
     },
     {
+        path: 'lib/css/css_scroll_anchoring/index.md',
+        title: 'CSS scroll anchoring',
+    },
+    {
+        path: 'lib/css/css_scroll_anchoring/scroll_anchoring/index.md',
+        title: 'Overview of scroll anchoring',
+    },
+    {
         path: 'lib/css/css_scroll_snap/basic_concepts/index.md',
         title: 'Basic concepts of scroll snap',
     },
@@ -2331,12 +2439,20 @@ export const cssTitles: {
         title: 'CSS scroll snap',
     },
     {
+        path: 'lib/css/css_scroll_snap/using_scroll_snap_events/index.md',
+        title: 'Using scroll snap events',
+    },
+    {
         path: 'lib/css/css_scrollbars_styling/index.md',
         title: 'CSS scrollbars styling',
     },
     {
         path: 'lib/css/css_selectors/index.md',
         title: 'CSS selectors',
+    },
+    {
+        path: 'lib/css/css_selectors/privacy_and_the_visited_selector/index.md',
+        title: 'Privacy and the :visited selector',
     },
     {
         path: 'lib/css/css_selectors/selector_structure/index.md',
@@ -2375,12 +2491,28 @@ export const cssTitles: {
         title: 'Shapes from images',
     },
     {
+        path: 'lib/css/css_syntax/at-rule/index.md',
+        title: 'At-rules',
+    },
+    {
+        path: 'lib/css/css_syntax/at-rule_functions/index.md',
+        title: 'CSS at-rule functions',
+    },
+    {
+        path: 'lib/css/css_syntax/comments/index.md',
+        title: 'Comments',
+    },
+    {
         path: 'lib/css/css_syntax/error_handling/index.md',
         title: 'CSS error handling',
     },
     {
         path: 'lib/css/css_syntax/index.md',
         title: 'CSS syntax',
+    },
+    {
+        path: 'lib/css/css_syntax/syntax/index.md',
+        title: 'Introduction to CSS syntax: declarations, rulesets, and statements',
     },
     {
         path: 'lib/css/css_table/index.md',
@@ -2415,12 +2547,36 @@ export const cssTitles: {
         title: 'Using CSS transitions',
     },
     {
-        path: 'lib/css/css_types/index.md',
+        path: 'lib/css/css_values_and_units/css_data_types/index.md',
         title: 'CSS data types',
+    },
+    {
+        path: 'lib/css/css_values_and_units/css_value_functions/index.md',
+        title: 'CSS value functions',
     },
     {
         path: 'lib/css/css_values_and_units/index.md',
         title: 'CSS values and units',
+    },
+    {
+        path: 'lib/css/css_values_and_units/numeric_data_types/index.md',
+        title: 'Numeric data types',
+    },
+    {
+        path: 'lib/css/css_values_and_units/textual_data_types/index.md',
+        title: 'Textual data types',
+    },
+    {
+        path: 'lib/css/css_values_and_units/using_css_math_functions/index.md',
+        title: 'Using CSS math functions',
+    },
+    {
+        path: 'lib/css/css_values_and_units/value_definition_syntax/index.md',
+        title: 'Value definition syntax',
+    },
+    {
+        path: 'lib/css/css_view_transitions/index.md',
+        title: 'CSS view transitions',
     },
     {
         path: 'lib/css/css_writing_modes/index.md',
@@ -2439,6 +2595,10 @@ export const cssTitles: {
         title: 'CSSOM view',
     },
     {
+        path: 'lib/css/cssom_view/viewport_concepts/index.md',
+        title: 'Viewport concepts',
+    },
+    {
         path: 'lib/css/cursor/index.md',
         title: 'cursor',
     },
@@ -2453,6 +2613,10 @@ export const cssTitles: {
     {
         path: 'lib/css/cy/index.md',
         title: 'cy',
+    },
+    {
+        path: 'lib/css/d/index.md',
+        title: 'd',
     },
     {
         path: 'lib/css/dashed-ident/index.md',
@@ -2473,10 +2637,6 @@ export const cssTitles: {
     {
         path: 'lib/css/display/index.md',
         title: 'display',
-    },
-    {
-        path: 'lib/css/display/multi-keyword_syntax_of_display/index.md',
-        title: 'Using the multi-keyword syntax with CSS display',
     },
     {
         path: 'lib/css/display-box/index.md',
@@ -2503,8 +2663,24 @@ export const cssTitles: {
         title: '<display-outside>',
     },
     {
+        path: 'lib/css/dominant-baseline/index.md',
+        title: 'dominant-baseline',
+    },
+    {
+        path: 'lib/css/easing-function/cubic-bezier/index.md',
+        title: 'cubic-bezier()',
+    },
+    {
         path: 'lib/css/easing-function/index.md',
         title: '<easing-function>',
+    },
+    {
+        path: 'lib/css/easing-function/linear/index.md',
+        title: 'linear()',
+    },
+    {
+        path: 'lib/css/easing-function/steps/index.md',
+        title: 'steps()',
     },
     {
         path: 'lib/css/element/index.md',
@@ -2525,6 +2701,18 @@ export const cssTitles: {
     {
         path: 'lib/css/field-sizing/index.md',
         title: 'field-sizing',
+    },
+    {
+        path: 'lib/css/fill/index.md',
+        title: 'fill',
+    },
+    {
+        path: 'lib/css/fill-opacity/index.md',
+        title: 'fill-opacity',
+    },
+    {
+        path: 'lib/css/fill-rule/index.md',
+        title: 'fill-rule',
     },
     {
         path: 'lib/css/filter/index.md',
@@ -2617,6 +2805,14 @@ export const cssTitles: {
     {
         path: 'lib/css/float/index.md',
         title: 'float',
+    },
+    {
+        path: 'lib/css/flood-color/index.md',
+        title: 'flood-color',
+    },
+    {
+        path: 'lib/css/flood-opacity/index.md',
+        title: 'flood-opacity',
     },
     {
         path: 'lib/css/font/index.md',
@@ -2839,6 +3035,10 @@ export const cssTitles: {
         title: 'grid-template-rows',
     },
     {
+        path: 'lib/css/guides/index.md',
+        title: 'CSS guides',
+    },
+    {
         path: 'lib/css/hanging-punctuation/index.md',
         title: 'hanging-punctuation',
     },
@@ -2923,10 +3123,6 @@ export const cssTitles: {
         title: 'inherit',
     },
     {
-        path: 'lib/css/inheritance/index.md',
-        title: 'Inheritance',
-    },
-    {
         path: 'lib/css/initial/index.md',
         title: 'initial',
     },
@@ -2935,28 +3131,12 @@ export const cssTitles: {
         title: 'initial-letter',
     },
     {
-        path: 'lib/css/initial_value/index.md',
-        title: 'Initial value',
-    },
-    {
         path: 'lib/css/inline-size/index.md',
         title: 'inline-size',
     },
     {
-        path: 'lib/css/inline_formatting_context/index.md',
-        title: 'Inline formatting context',
-    },
-    {
         path: 'lib/css/inset/index.md',
         title: 'inset',
-    },
-    {
-        path: 'lib/css/inset-area/index.md',
-        title: 'inset-area',
-    },
-    {
-        path: 'lib/css/inset-area_value/index.md',
-        title: '<inset-area>',
     },
     {
         path: 'lib/css/inset-block/index.md',
@@ -2985,6 +3165,10 @@ export const cssTitles: {
     {
         path: 'lib/css/integer/index.md',
         title: '<integer>',
+    },
+    {
+        path: 'lib/css/interpolate-size/index.md',
+        title: 'interpolate-size',
     },
     {
         path: 'lib/css/isolation/index.md',
@@ -3032,7 +3216,7 @@ export const cssTitles: {
     },
     {
         path: 'lib/css/layout_cookbook/index.md',
-        title: 'CSS Layout cookbook',
+        title: 'CSS layout cookbook',
     },
     {
         path: 'lib/css/layout_cookbook/list_group_with_badges/index.md',
@@ -3055,10 +3239,6 @@ export const cssTitles: {
         title: 'Sticky footers',
     },
     {
-        path: 'lib/css/layout_mode/index.md',
-        title: 'Layout mode',
-    },
-    {
         path: 'lib/css/left/index.md',
         title: 'left',
     },
@@ -3075,8 +3255,16 @@ export const cssTitles: {
         title: 'letter-spacing',
     },
     {
+        path: 'lib/css/lighting-color/index.md',
+        title: 'lighting-color',
+    },
+    {
         path: 'lib/css/line-break/index.md',
         title: 'line-break',
+    },
+    {
+        path: 'lib/css/line-clamp/index.md',
+        title: 'line-clamp',
     },
     {
         path: 'lib/css/line-height/index.md',
@@ -3159,6 +3347,22 @@ export const cssTitles: {
         title: 'margin-trim',
     },
     {
+        path: 'lib/css/marker/index.md',
+        title: 'marker',
+    },
+    {
+        path: 'lib/css/marker-end/index.md',
+        title: 'marker-end',
+    },
+    {
+        path: 'lib/css/marker-mid/index.md',
+        title: 'marker-mid',
+    },
+    {
+        path: 'lib/css/marker-start/index.md',
+        title: 'marker-start',
+    },
+    {
         path: 'lib/css/mask/index.md',
         title: 'mask',
     },
@@ -3225,10 +3429,6 @@ export const cssTitles: {
     {
         path: 'lib/css/mask-type/index.md',
         title: 'mask-type',
-    },
-    {
-        path: 'lib/css/masonry-auto-flow/index.md',
-        title: 'masonry-auto-flow',
     },
     {
         path: 'lib/css/math-depth/index.md',
@@ -3304,7 +3504,7 @@ export const cssTitles: {
     },
     {
         path: 'lib/css/mozilla_extensions/index.md',
-        title: 'Mozilla vendor-prefixed CSS extensions',
+        title: 'Firefox (-moz-) vendor-prefixed CSS extensions',
     },
     {
         path: 'lib/css/named-color/index.md',
@@ -3395,10 +3595,6 @@ export const cssTitles: {
         title: 'overflow',
     },
     {
-        path: 'lib/css/overflow-anchor/guide_to_scroll_anchoring/index.md',
-        title: 'Guide to scroll anchoring',
-    },
-    {
         path: 'lib/css/overflow-anchor/index.md',
         title: 'overflow-anchor',
     },
@@ -3413,6 +3609,10 @@ export const cssTitles: {
     {
         path: 'lib/css/overflow-inline/index.md',
         title: 'overflow-inline',
+    },
+    {
+        path: 'lib/css/overflow-position/index.md',
+        title: '<overflow-position>',
     },
     {
         path: 'lib/css/overflow-wrap/index.md',
@@ -3555,6 +3755,14 @@ export const cssTitles: {
         title: 'position-anchor',
     },
     {
+        path: 'lib/css/position-area/index.md',
+        title: 'position-area',
+    },
+    {
+        path: 'lib/css/position-area_value/index.md',
+        title: '<position-area>',
+    },
+    {
         path: 'lib/css/position-try/index.md',
         title: 'position-try',
     },
@@ -3583,8 +3791,8 @@ export const cssTitles: {
         title: 'print-color-adjust',
     },
     {
-        path: 'lib/css/privacy_and_the__colon_visited_selector/index.md',
-        title: 'Privacy and the :visited selector',
+        path: 'lib/css/properties/index.md',
+        title: 'CSS properties',
     },
     {
         path: 'lib/css/pseudo-classes/index.md',
@@ -3611,6 +3819,14 @@ export const cssTitles: {
         title: 'ray()',
     },
     {
+        path: 'lib/css/reading-flow/index.md',
+        title: 'reading-flow',
+    },
+    {
+        path: 'lib/css/reading-order/index.md',
+        title: 'reading-order',
+    },
+    {
         path: 'lib/css/reference/index.md',
         title: 'CSS reference',
     },
@@ -3627,20 +3843,12 @@ export const cssTitles: {
         title: 'repeat()',
     },
     {
-        path: 'lib/css/replaced_element/index.md',
-        title: 'Replaced elements',
-    },
-    {
         path: 'lib/css/resize/index.md',
         title: 'resize',
     },
     {
         path: 'lib/css/resolution/index.md',
         title: '<resolution>',
-    },
-    {
-        path: 'lib/css/resolved_value/index.md',
-        title: 'Resolved value',
     },
     {
         path: 'lib/css/revert/index.md',
@@ -3685,10 +3893,6 @@ export const cssTitles: {
     {
         path: 'lib/css/scale/index.md',
         title: 'scale',
-    },
-    {
-        path: 'lib/css/scaling_of_svg_backgrounds/index.md',
-        title: 'Scaling of SVG backgrounds',
     },
     {
         path: 'lib/css/scroll-behavior/index.md',
@@ -3737,6 +3941,10 @@ export const cssTitles: {
     {
         path: 'lib/css/scroll-margin-top/index.md',
         title: 'scroll-margin-top',
+    },
+    {
+        path: 'lib/css/scroll-marker-group/index.md',
+        title: 'scroll-marker-group',
     },
     {
         path: 'lib/css/scroll-padding/index.md',
@@ -3823,6 +4031,10 @@ export const cssTitles: {
         title: 'Selector list',
     },
     {
+        path: 'lib/css/self-position/index.md',
+        title: '<self-position>',
+    },
+    {
         path: 'lib/css/shape/index.md',
         title: '<shape>',
     },
@@ -3839,8 +4051,8 @@ export const cssTitles: {
         title: 'shape-outside',
     },
     {
-        path: 'lib/css/shorthand_properties/index.md',
-        title: 'Shorthand properties',
+        path: 'lib/css/shape-rendering/index.md',
+        title: 'shape-rendering',
     },
     {
         path: 'lib/css/sign/index.md',
@@ -3851,20 +4063,56 @@ export const cssTitles: {
         title: 'sin()',
     },
     {
-        path: 'lib/css/specificity/index.md',
-        title: 'Specificity',
-    },
-    {
-        path: 'lib/css/specified_value/index.md',
-        title: 'Specified value',
+        path: 'lib/css/speak-as/index.md',
+        title: 'speak-as',
     },
     {
         path: 'lib/css/sqrt/index.md',
         title: 'sqrt()',
     },
     {
+        path: 'lib/css/stop-color/index.md',
+        title: 'stop-color',
+    },
+    {
+        path: 'lib/css/stop-opacity/index.md',
+        title: 'stop-opacity',
+    },
+    {
         path: 'lib/css/string/index.md',
         title: '<string>',
+    },
+    {
+        path: 'lib/css/stroke/index.md',
+        title: 'stroke',
+    },
+    {
+        path: 'lib/css/stroke-dasharray/index.md',
+        title: 'stroke-dasharray',
+    },
+    {
+        path: 'lib/css/stroke-dashoffset/index.md',
+        title: 'stroke-dashoffset',
+    },
+    {
+        path: 'lib/css/stroke-linecap/index.md',
+        title: 'stroke-linecap',
+    },
+    {
+        path: 'lib/css/stroke-linejoin/index.md',
+        title: 'stroke-linejoin',
+    },
+    {
+        path: 'lib/css/stroke-miterlimit/index.md',
+        title: 'stroke-miterlimit',
+    },
+    {
+        path: 'lib/css/stroke-opacity/index.md',
+        title: 'stroke-opacity',
+    },
+    {
+        path: 'lib/css/stroke-width/index.md',
+        title: 'stroke-width',
     },
     {
         path: 'lib/css/subsequent-sibling_combinator/index.md',
@@ -3873,10 +4121,6 @@ export const cssTitles: {
     {
         path: 'lib/css/symbols/index.md',
         title: 'symbols()',
-    },
-    {
-        path: 'lib/css/syntax/index.md',
-        title: 'Syntax',
     },
     {
         path: 'lib/css/system-color/index.md',
@@ -3901,6 +4145,22 @@ export const cssTitles: {
     {
         path: 'lib/css/text-align-last/index.md',
         title: 'text-align-last',
+    },
+    {
+        path: 'lib/css/text-anchor/index.md',
+        title: 'text-anchor',
+    },
+    {
+        path: 'lib/css/text-box/index.md',
+        title: 'text-box',
+    },
+    {
+        path: 'lib/css/text-box-edge/index.md',
+        title: 'text-box-edge',
+    },
+    {
+        path: 'lib/css/text-box-trim/index.md',
+        title: 'text-box-trim',
     },
     {
         path: 'lib/css/text-combine-upright/index.md',
@@ -3933,6 +4193,10 @@ export const cssTitles: {
     {
         path: 'lib/css/text-decoration-thickness/index.md',
         title: 'text-decoration-thickness',
+    },
+    {
+        path: 'lib/css/text-edge/index.md',
+        title: '<text-edge>',
     },
     {
         path: 'lib/css/text-emphasis/index.md',
@@ -4179,12 +4443,12 @@ export const cssTitles: {
         title: 'unset',
     },
     {
-        path: 'lib/css/url/index.md',
+        path: 'lib/css/url_function/index.md',
         title: 'url()',
     },
     {
-        path: 'lib/css/used_value/index.md',
-        title: 'Used value',
+        path: 'lib/css/url_value/index.md',
+        title: '<url>',
     },
     {
         path: 'lib/css/user-modify/index.md',
@@ -4195,16 +4459,12 @@ export const cssTitles: {
         title: 'user-select',
     },
     {
-        path: 'lib/css/using_css_custom_properties/index.md',
-        title: 'Using CSS custom properties (variables)',
-    },
-    {
-        path: 'lib/css/value_definition_syntax/index.md',
-        title: 'Value definition syntax',
-    },
-    {
         path: 'lib/css/var/index.md',
         title: 'var()',
+    },
+    {
+        path: 'lib/css/vector-effect/index.md',
+        title: 'vector-effect',
     },
     {
         path: 'lib/css/vertical-align/index.md',
@@ -4227,24 +4487,20 @@ export const cssTitles: {
         title: 'view-timeline-name',
     },
     {
-        path: 'lib/css/view-transition-name/index.md',
-        title: 'view-transition-name',
+        path: 'lib/css/view-transition-class/index.md',
+        title: 'view-transition-class',
     },
     {
-        path: 'lib/css/viewport_concepts/index.md',
-        title: 'Viewport concepts',
+        path: 'lib/css/view-transition-name/index.md',
+        title: 'view-transition-name',
     },
     {
         path: 'lib/css/visibility/index.md',
         title: 'visibility',
     },
     {
-        path: 'lib/css/visual_formatting_model/index.md',
-        title: 'Visual formatting model',
-    },
-    {
         path: 'lib/css/webkit_extensions/index.md',
-        title: '-webkit-prefixed CSS extensions',
+        title: 'WebKit (-webkit-) vendor-prefixed CSS extensions',
     },
     {
         path: 'lib/css/white-space/index.md',
@@ -4277,6 +4533,14 @@ export const cssTitles: {
     {
         path: 'lib/css/writing-mode/index.md',
         title: 'writing-mode',
+    },
+    {
+        path: 'lib/css/x/index.md',
+        title: 'x',
+    },
+    {
+        path: 'lib/css/y/index.md',
+        title: 'y',
     },
     {
         path: 'lib/css/z-index/index.md',

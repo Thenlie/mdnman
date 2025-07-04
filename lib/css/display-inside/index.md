@@ -3,12 +3,11 @@ title: <display-inside>
 slug: Web/CSS/display-inside
 page-type: css-type
 browser-compat:
-  - css.properties.display.multi-keyword_values
   - css.properties.display.flow-root
-  - css.properties.display.table_values
-  - css.properties.display.grid
+  - css.properties.display.table
   - css.properties.display.flex
-  - css.properties.display.ruby_values
+  - css.properties.display.grid
+  - css.properties.display.ruby
 spec-urls: https://drafts.csswg.org/css-display/#typedef-display-inside
 ---
 
@@ -21,7 +20,6 @@ These keywords specify the element's inner {{CSSxRef("display")}} type, which de
 Valid `<display-inside>` values:
 
 - `flow`
-
   - : The element lays out its contents using flow layout (block-and-inline layout).
 
     If its outer display type is `inline`, and it is participating in a block or inline formatting context, then it generates an inline box. Otherwise it generates a block container box.
@@ -39,7 +37,8 @@ Valid `<display-inside>` values:
 - `ruby`
   - : The element behaves like an inline element and lays out its content according to the ruby formatting model. It behaves like the corresponding HTML {{HTMLElement("ruby")}} elements.
 
-> **Note:** Browsers that support the two value syntax, on finding the inner value only, such as when `display: flex` or `display: grid` is specified, will set their outer value to `block`. This will result in expected behavior; for example if you specify an element to be `display: grid`, you would expect that the box created on the grid container would be a block level box.
+> [!NOTE]
+> Browsers that support the two value syntax, on finding the inner value only, such as when `display: flex` or `display: grid` is specified, will set their outer value to `block`. This will result in expected behavior; for example if you specify an element to be `display: grid`, you would expect that the box created on the grid container would be a block level box.
 
 ## Formal syntax
 
@@ -62,7 +61,7 @@ In this example the parent box has been given `display: flow-root` and so establ
 
 ```css
 .box {
-  background-color: rgb(224, 206, 247);
+  background-color: rgb(224 206 247);
   border: 5px solid rebeccapurple;
   display: flow-root;
 }
@@ -92,7 +91,6 @@ In this example the parent box has been given `display: flow-root` and so establ
 ## See also
 
 - {{CSSxRef("display")}}
-
   - {{CSSxRef("&lt;display-outside&gt;")}}
   - {{CSSxRef("&lt;display-listitem&gt;")}}
   - {{CSSxRef("&lt;display-internal&gt;")}}

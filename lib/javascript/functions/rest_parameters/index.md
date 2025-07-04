@@ -9,7 +9,23 @@ browser-compat: javascript.functions.rest_parameters
 
 The **rest parameter** syntax allows a function to accept an indefinite number of arguments as an array, providing a way to represent [variadic functions](https://en.wikipedia.org/wiki/Variadic_function) in JavaScript.
 
-{{EmbedInteractiveExample("pages/js/functions-restparameters.html", "taller")}}
+{{InteractiveExample("JavaScript Demo: Rest parameters", "taller")}}
+
+```js interactive-example
+function sum(...theArgs) {
+  let total = 0;
+  for (const arg of theArgs) {
+    total += arg;
+  }
+  return total;
+}
+
+console.log(sum(1, 2, 3));
+// Expected output: 6
+
+console.log(sum(1, 2, 3, 4));
+// Expected output: 10
+```
 
 ## Syntax
 
@@ -45,7 +61,7 @@ myFun("one", "two", "three", "four", "five", "six");
 // manyMoreArgs, ["three", "four", "five", "six"]
 ```
 
-The rest parameter may be [destructured](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment), which allows you to ignore certain parameter positions.
+The rest parameter may be [destructured](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring), which allows you to ignore certain parameter positions.
 
 ```js
 function ignoreFirst(...[, b, c]) {
@@ -66,7 +82,7 @@ The rest parameter is not counted towards the function's [`length`](/en-US/docs/
 
 ### The difference between rest parameters and the arguments object
 
-There are three main differences between rest parameters and the {{jsxref("Functions/arguments", "arguments")}} object:
+There are four main differences between rest parameters and the {{jsxref("Functions/arguments", "arguments")}} object:
 
 - The `arguments` object is **not a real array**, while rest parameters are {{jsxref("Array")}} instances, meaning methods like {{jsxref("Array/sort", "sort()")}}, {{jsxref("Array/map", "map()")}}, {{jsxref("Array/forEach", "forEach()")}} or {{jsxref("Array/pop", "pop()")}} can be applied on it directly.
 - The `arguments` object has the additional (deprecated) [`callee`](/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee) property.

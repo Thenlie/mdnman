@@ -1,5 +1,5 @@
 ---
-title: "StorageAccessHandle: revokeObjectURL() property"
+title: "StorageAccessHandle: revokeObjectURL() method"
 short-title: revokeObjectURL()
 slug: Web/API/StorageAccessHandle/revokeObjectURL
 page-type: web-api-instance-method
@@ -8,12 +8,13 @@ browser-compat: api.StorageAccessHandle.revokeObjectURL
 
 {{APIRef("Storage Access API")}}
 
-> **Note:** See {{domxref("URL.revokeObjectURL_static", "revokeObjectURL()")}} to understand usage.
+> [!NOTE]
+> See {{domxref("URL.revokeObjectURL_static", "revokeObjectURL()")}} to understand usage.
 
 ## Syntax
 
 ```js-nolint
-handle.revokeObjectURL(objectURL)
+revokeObjectURL(objectURL)
 ```
 
 ### Parameters
@@ -46,7 +47,8 @@ document.requestStorageAccess({ revokeObjectURL: true }).then(
 );
 ```
 
-> **Note:** See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
+> [!NOTE]
+> See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
 
 ## Specifications
 

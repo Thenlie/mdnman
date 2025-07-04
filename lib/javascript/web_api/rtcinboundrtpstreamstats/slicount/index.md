@@ -3,7 +3,7 @@ title: "RTCInboundRtpStreamStats: sliCount property"
 short-title: sliCount
 slug: Web/API/RTCInboundRtpStreamStats/sliCount
 page-type: web-api-instance-property
-browser-compat: api.RTCInboundRtpStreamStats.sliCount
+browser-compat: api.RTCStatsReport.type_inbound-rtp.sliCount
 ---
 
 {{APIRef("WebRTC")}}
@@ -30,7 +30,8 @@ be an indication of an unreliable network.
 
 This is a very technical part of how video codecs work. For details, see {{RFC(4585, "6.3.2")}}.
 
-> **Note:** This value is only present for video media.
+> [!NOTE]
+> This value is only present for video media.
 
 ## Specifications
 

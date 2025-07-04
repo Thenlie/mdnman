@@ -6,9 +6,10 @@ page-type: guide
 
 {{DefaultAPISidebar("Storage Access API")}}
 
-The [Storage Access API](/en-US/docs/Web/API/Storage_Access_API) can be used by embedded cross-site documents to verify whether they have access to [third-party cookies](/en-US/docs/Web/Privacy/Third-party_cookies) and [unpartitioned state](/en-US/docs/Web/Privacy/State_Partitioning#state_partitioning) and, if not, to request access. We'll briefly look at a common storage access scenario.
+The [Storage Access API](/en-US/docs/Web/API/Storage_Access_API) can be used by embedded cross-site documents to verify whether they have access to [third-party cookies](/en-US/docs/Web/Privacy/Guides/Third-party_cookies) and [unpartitioned state](/en-US/docs/Web/Privacy/Guides/State_Partitioning#state_partitioning) and, if not, to request access. We'll briefly look at a common storage access scenario.
 
-> **Note:** When we talk about third-party cookies in the content of the Storage Access API, we implicitly mean [_unpartitioned_](/en-US/docs/Web/API/Storage_Access_API#unpartitioned_versus_partitioned_cookies) third-party cookies.
+> [!NOTE]
+> When we talk about third-party cookies in the content of the Storage Access API, we implicitly mean [_unpartitioned_](/en-US/docs/Web/API/Storage_Access_API#unpartitioned_versus_partitioned_cookies) third-party cookies.
 
 ## Usage notes
 
@@ -18,7 +19,7 @@ In the example below, we show how an embedded cross-site {{htmlelement("iframe")
 
 ## Allowing a sandboxed \<iframe> to use the API
 
-First of all, if the `<iframe>` is sandboxed, the embedding website needs to add the `allow-storage-access-by-user-activation` [sandbox token](/en-US/docs/Web/HTML/Element/iframe#sandbox) to allow Storage Access API requests to be successful, along with `allow-scripts` and `allow-same-origin` to allow it to execute a script to call the API and execute it in an origin that can have cookies and state:
+First of all, if the `<iframe>` is sandboxed, the embedding website needs to add the `allow-storage-access-by-user-activation` [sandbox token](/en-US/docs/Web/HTML/Reference/Elements/iframe#sandbox) to allow Storage Access API requests to be successful, along with `allow-scripts` and `allow-same-origin` to allow it to execute a script to call the API and execute it in an origin that can have cookies and state:
 
 ```html
 <iframe
@@ -111,7 +112,8 @@ async function handleCookieAccess() {
 }
 ```
 
-> **Note:** `requestStorageAccess()` requests are automatically denied unless the embedded content is currently processing a user gesture such as a tap or click ({{Glossary("transient activation")}}), or if permission was already granted previously. If permission was not previously granted, `requestStorageAccess()` requests must be run inside a user gesture-based event handler, as shown above.
+> [!NOTE]
+> `requestStorageAccess()` requests are automatically denied unless the embedded content is currently processing a user gesture such as a tap or click ({{Glossary("transient activation")}}), or if permission was already granted previously. If permission was not previously granted, `requestStorageAccess()` requests must be run inside a user gesture-based event handler, as shown above.
 
 ### Related website sets
 
@@ -164,7 +166,8 @@ function rSAFor() {
 }
 ```
 
-> **Note:** Unlike with `requestStorageAccess()`, Chrome doesn't check for an interaction in a top-level document within the last 30 days when `requestStorageAccessFor()` is called because the user is already on the page. See [Browser-specific variations > Chrome](/en-US/docs/Web/API/Storage_Access_API#chrome) for more details of this behavior.
+> [!NOTE]
+> Unlike with `requestStorageAccess()`, Chrome doesn't check for an interaction in a top-level document within the last 30 days when `requestStorageAccessFor()` is called because the user is already on the page. See [Browser-specific variations > Chrome](/en-US/docs/Web/API/Storage_Access_API#chrome) for more details of this behavior.
 
 When querying permission status for storage access requests made on behalf of another origin, the permission name used is different from the rest of the Storage Access API: `"top-level-storage-access"` rather than `"storage-access"`. In the above code, we use the following call:
 
@@ -180,7 +183,7 @@ to discover if the origin has previously been granted permission or if cookie ac
 - If the permission status is `"granted"` we can start using cookies; `requestStorageAccessFor()` was already called, so there is no need to call it again.
 - If the permission status is `"prompt"` we need to call `document.requestStorageAccessFor("https://example.com")` from within a user gesture, such as a button click.
 
-After the `"top-level-storage-access"` permission is granted, cross-site requests will include cookies if they include [CORS](/en-US/docs/Web/HTTP/CORS) / [`crossorigin`](/en-US/docs/Web/HTML/Attributes/crossorigin), so sites may want to wait before triggering a request. Such requests must use the [`credentials: "include"`](/en-US/docs/Web/API/RequestInit#credentials) option and resources must include the `crossorigin="use-credentials"` attribute.
+After the `"top-level-storage-access"` permission is granted, cross-site requests will include cookies if they include [CORS](/en-US/docs/Web/HTTP/Guides/CORS) / [`crossorigin`](/en-US/docs/Web/HTML/Reference/Attributes/crossorigin), so sites may want to wait before triggering a request. Such requests must use the [`credentials: "include"`](/en-US/docs/Web/API/RequestInit#credentials) option and resources must include the `crossorigin="use-credentials"` attribute.
 
 For example:
 

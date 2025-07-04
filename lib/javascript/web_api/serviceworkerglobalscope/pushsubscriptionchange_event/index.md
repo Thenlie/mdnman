@@ -18,10 +18,10 @@ This event is not cancelable and does not bubble.
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
-```js
-addEventListener("pushsubscriptionchange", (event) => {});
+```js-nolint
+addEventListener("pushsubscriptionchange", (event) => { })
 
-onpushsubscriptionchange = (event) => {};
+onpushsubscriptionchange = (event) => { }
 ```
 
 ## Event type
@@ -34,7 +34,8 @@ Although examples demonstrating how to share subscription related information wi
 
 Consider using another method to synchronize subscription information between your service worker and the app server, or make sure your code using `fetch()` is robust enough to handle cases where attempts to exchange data fail.
 
-> **Note:** In earlier drafts of the specification, this event was defined to be sent when a {{domxref("PushSubscription")}} has expired.
+> [!NOTE]
+> In earlier drafts of the specification, this event was defined to be sent when a {{domxref("PushSubscription")}} has expired.
 
 ## Examples
 

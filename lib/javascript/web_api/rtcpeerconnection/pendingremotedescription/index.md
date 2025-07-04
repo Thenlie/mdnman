@@ -26,7 +26,7 @@ This example looks at the `pendingRemoteDescription` to determine whether or not
 
 ```js
 const pc = new RTCPeerConnection();
-// ...
+// …
 const sd = pc.pendingRemoteDescription;
 if (sd) {
   // There's a description change underway!
@@ -43,7 +43,8 @@ if (sd) {
 
 {{Compat}}
 
-> **Note:** The addition of `pendingRemoteDescription` and {{domxref("RTCPeerConnection.currentRemoteDescription", "currentRemoteDescription")}} to the WebRTC spec is relatively recent.
+> [!NOTE]
+> The addition of `pendingRemoteDescription` and {{domxref("RTCPeerConnection.currentRemoteDescription", "currentRemoteDescription")}} to the WebRTC spec is relatively recent.
 > In browsers which don't support them, only {{domxref("RTCPeerConnection.remoteDescription", "remoteDescription")}} is available.
 
 ## See also

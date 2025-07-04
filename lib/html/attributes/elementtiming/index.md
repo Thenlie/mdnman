@@ -1,6 +1,7 @@
 ---
 title: "HTML attribute: elementtiming"
-slug: Web/HTML/Attributes/elementtiming
+short-title: elementtiming
+slug: Web/HTML/Reference/Attributes/elementtiming
 page-type: html-attribute
 ---
 
@@ -12,7 +13,7 @@ This attribute may be applied to {{htmlelement("img")}}, {{SVGElement("image")}}
 
 In the DOM, this attribute is reflected as {{domxref("Element.elementTiming")}}.
 
-## Usage
+## Usage notes
 
 The value given for `elementtiming` becomes an identifier for the observed element.
 
@@ -30,9 +31,12 @@ Good contenders for elements you might want to observe are:
 ## Examples
 
 ```html
-<img alt="Alt for a main blog post image" src="my-massive-image.jpg" elementtiming="Main image">
+<img
+  alt="Alt for a main blog post image"
+  src="my-massive-image.jpg"
+  elementtiming="Main image" />
 
-<p elementtiming="important-text">Some very important information.</p">
+<p elementtiming="important-text">Some very important information.</p>
 ```
 
 ## See also

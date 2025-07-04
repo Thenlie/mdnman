@@ -1,5 +1,5 @@
 ---
-title: "StorageAccessHandle: estimate() property"
+title: "StorageAccessHandle: estimate() method"
 short-title: estimate()
 slug: Web/API/StorageAccessHandle/estimate
 page-type: web-api-instance-method
@@ -8,12 +8,13 @@ browser-compat: api.StorageAccessHandle.estimate
 
 {{APIRef("Storage Access API")}}
 
-> **Note:** See {{domxref("StorageManager.estimate()")}} to understand usage.
+> [!NOTE]
+> See {{domxref("StorageManager.estimate()")}} to understand usage.
 
 ## Syntax
 
 ```js-nolint
-handle.estimate()
+estimate()
 ```
 
 ### Parameters
@@ -45,7 +46,8 @@ document.requestStorageAccess({ estimate: true }).then(
 );
 ```
 
-> **Note:** See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
+> [!NOTE]
+> See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
 
 ## Specifications
 

@@ -6,7 +6,7 @@ page-type: web-api-instance-property
 browser-compat: api.origin
 ---
 
-{{APIRef("Web Workers API")}}
+{{APIRef("Web Workers API")}}{{AvailableInWorkers("worker")}}
 
 The **`origin`** read-only property of the {{domxref("WorkerGlobalScope")}} interface returns the origin of the global scope, serialized as a string.
 
@@ -24,7 +24,7 @@ self.onmessage = () => {
 };
 ```
 
-If the origin is not a scheme/host/port tuple (say you are trying to run it locally, i.e. via `file://` URL), `origin` will return the string `"null"`.
+If the origin is not a scheme/host/port tuple (say you are trying to run it locally, i.e., via `file://` URL), `origin` will return the string `"null"`.
 
 ## Specifications
 

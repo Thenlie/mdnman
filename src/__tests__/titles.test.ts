@@ -15,10 +15,10 @@ describe('title utils', () => {
                 'lib/javascript/global_objects/string/split/index.md'
             );
             expect(getPathFromTitle('<div>: The Content Division element', 'html')).toBe(
-                'lib/html/element/div/index.md'
+                'lib/html/elements/div/index.md'
             );
-            expect(getPathFromTitle('aria-labelledby', 'html')).toBe(
-                'lib/html/aria/aria-labelledby/index.md'
+            expect(getPathFromTitle('ARIA: aria-labelledby attribute', 'html')).toBe(
+                'lib/html/attributes/aria-labelledby/index.md'
             );
             expect(getPathFromTitle('box-sizing', 'css')).toBe('lib/css/box-sizing/index.md');
             expect(getPathFromTitle('font-weight', 'css')).toBe(

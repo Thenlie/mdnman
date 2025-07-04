@@ -1,15 +1,16 @@
 ---
-title: itemid
-slug: Web/HTML/Global_attributes/itemid
+title: HTML itemid global attribute
+short-title: itemid
+slug: Web/HTML/Reference/Global_attributes/itemid
 page-type: html-attribute
 spec-urls: https://html.spec.whatwg.org/multipage/microdata.html#attr-itemid
 ---
 
 {{HTMLSidebar("Global_attributes")}}
 
-The **`itemid`** [global attribute](/en-US/docs/Web/HTML/Global_attributes) provides microdata in the form of a unique, global identifier of an item.
+The **`itemid`** [global attribute](/en-US/docs/Web/HTML/Reference/Global_attributes) provides microdata in the form of a unique, global identifier of an item.
 
-An `itemid` attribute can only be specified for an element that has both [`itemscope`](/en-US/docs/Web/HTML/Global_attributes/itemscope) and [`itemtype`](/en-US/docs/Web/HTML/Global_attributes/itemtype) attributes. Also, `itemid` can only be specified on elements that possess an `itemscope` attribute whose corresponding `itemtype` refers to or defines a vocabulary that supports global identifiers.
+An `itemid` attribute can only be specified for an element that has both [`itemscope`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemscope) and [`itemtype`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemtype) attributes. Also, `itemid` can only be specified on elements that possess an `itemscope` attribute whose corresponding `itemtype` refers to or defines a vocabulary that supports global identifiers.
 
 The exact meaning of an `itemtype`'s global identifier is provided by the definition of that identifier within the specified vocabulary. The vocabulary defines whether several items with the same global identifier can coexist and, if so, how items with the same identifier are handled.
 
@@ -75,10 +76,9 @@ This example uses microdata attributes to represent the following structured dat
 
 ## See also
 
-- All [global attributes](/en-US/docs/Web/HTML/Global_attributes).
+- All [global attributes](/en-US/docs/Web/HTML/Reference/Global_attributes).
 - Other microdata related global attributes:
-
-  - [`itemprop`](/en-US/docs/Web/HTML/Global_attributes/itemprop)
-  - [`itemref`](/en-US/docs/Web/HTML/Global_attributes/itemref)
-  - [`itemscope`](/en-US/docs/Web/HTML/Global_attributes/itemscope)
-  - [`itemtype`](/en-US/docs/Web/HTML/Global_attributes/itemtype)
+  - [`itemprop`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemprop)
+  - [`itemref`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemref)
+  - [`itemscope`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemscope)
+  - [`itemtype`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemtype)

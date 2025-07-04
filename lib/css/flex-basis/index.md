@@ -10,9 +10,47 @@ browser-compat: css.properties.flex-basis
 The **`flex-basis`** [CSS](/en-US/docs/Web/CSS) property sets the initial main size of a {{glossary("flex item")}}. It sets the size of the content box unless otherwise set with {{Cssxref("box-sizing")}}.
 
 > [!NOTE]
-> It is recommended to use the {{cssxref("flex")}} shorthand instead of separate `flex-grow`, `flex-shrink`, and `flex-basis` declarations. We have separated them here as this document is about one of the shorthand components: the `flex-basis` property.
+> It is recommended to use the {{cssxref("flex")}} shorthand with a keyword value like `auto` or `initial` instead of setting `flex-basis` on its own. The [keyword values](/en-US/docs/Web/CSS/flex#values) expand to reliable combinations of {{cssxref("flex-grow")}}, {{cssxref("flex-shrink")}}, and `flex-basis`, which help to achieve the commonly desired flex behaviors.
 
-{{EmbedInteractiveExample("pages/css/flex-basis.html")}}
+{{InteractiveExample("CSS Demo: flex-basis")}}
+
+```css interactive-example-choice
+flex-basis: auto;
+```
+
+```css interactive-example-choice
+flex-basis: 0;
+```
+
+```css interactive-example-choice
+flex-basis: 200px;
+```
+
+```html interactive-example
+<section class="default-example" id="default-example">
+  <div class="transition-all" id="example-element">Item One</div>
+  <div>Item Two</div>
+  <div>Item Three</div>
+</section>
+```
+
+```css interactive-example
+.default-example {
+  border: 1px solid #c5c5c5;
+  width: auto;
+  max-height: 300px;
+  display: flex;
+}
+
+.default-example > div {
+  background-color: rgb(0 0 255 / 0.2);
+  border: 3px solid blue;
+  margin: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+```
 
 In this example, the {{cssxref("flex-grow")}} and {{cssxref("flex-shrink")}} properties are both set to `1` on all three items, indicating that the flex item can grow and shrink from the initial `flex-basis`.
 
@@ -50,17 +88,15 @@ The `flex-basis` property is specified as either the keyword `content` or a `<'w
 ### Values
 
 - `<'width'>`
-
   - : Any of the following units:
     - {{cssxref("&lt;length&gt;")}} sets an absolute value.
-    - {{cssxref("&lt;percentage&gt;")}} sets a percentage of the width or height of the containing block's content area.
+    - {{cssxref("&lt;percentage&gt;")}} sets a percentage of the width or height of the containing block's content area. Percentage values of `flex-basis` are resolved against the flex container. If the flex container's size is indefinite, the used value for `flex-basis` is `content`.
     - `auto` uses the value of the {{cssxref("width")}} in horizontal writing mode, and the value of the {{cssxref("height")}} in vertical writing mode; when the corresponding value is also `auto`, the `content` value is used instead.
     - {{cssxref("max-content")}} sets the intrinsic preferred width.
     - {{cssxref("min-content")}} sets the intrinsic minimum width.
     - {{cssxref("fit-content")}} sets the maximum possible size of a containing block's content area, bounded by the `min-content` and `max-content` values, and calculated based on the content of the current element.
 
 - `content`
-
   - : Indicates automatic sizing, based on the flex item's content.
 
 ## Formal definition
@@ -169,6 +205,71 @@ The `flex-basis` property is specified as either the keyword `content` or a `<'w
 #### Results
 
 {{EmbedLiveSample('Setting_flex_item_initial_sizes', '', '360')}}
+
+### Flex basis `0` vs `0%`
+
+This example demonstrates the difference between a `flex-basis` of `0` versus a `flex-basis` of `0%` when `flex-direction` is set to `column` and the flex containers and flex items don't have a set height; while `0` is an absolute length, percentage flex-basis values resolve to [`content`](#content) values.
+
+#### HTML
+
+We include two same-structure flex containers, which will be styled similarly except for their `flex-basis` values. The containers each have two children: a heading `<div>` and a `<section>`. The `<section>` element has a content `<div>` child, which will not be set as a flex item but will be given a height.
+
+```html
+<div class="container basis-0">
+  <div>heading</div>
+  <section>
+    flex-basis: 0;
+    <div class="content"></div>
+  </section>
+</div>
+<div class="container basis-0-percent">
+  <div>heading</div>
+  <section>
+    flex-basis: 0%;
+    <div class="content"></div>
+  </section>
+</div>
+```
+
+#### CSS
+
+We style the containers as inline flex containers that will appear side by side to better enable comparing them. We set the `flex-direction` to `column`. The first container's flex items have a `flex-basis` value of `0`, while the second container's flex items have a `flex-basis` value of `0%`. Neither the flex containers nor their flex items have a height explicitly set, but the heights of `section` elements cannot exceed `200px` and their children have a height of `300px`.
+
+```css
+.container {
+  width: 40vw;
+  padding: 1rem;
+  border: 1px dashed blue;
+
+  display: inline-flex;
+  flex-direction: column;
+}
+
+section {
+  border: 1px solid red;
+
+  overflow: auto;
+  min-height: 200px;
+}
+
+.content {
+  background: wheat;
+  height: 300px;
+}
+
+.container.basis-0 > * {
+  flex-basis: 0;
+}
+.container.basis-0-percent > * {
+  flex-basis: 0%;
+}
+```
+
+#### Results
+
+{{EmbedLiveSample('flex_basis_0_vs_0', '100%', '400')}}
+
+In the first container, with `flex-basis: 0`, the `<section>` element has an initial main size of zero, and it grows to the `200px` height limit. In the second container, with `flex-basis: 0%`, the `<section>` element has an initial main size of `300px` because, as the flex container doesn't have a set height, the percentage flex-basis values resolve to the [`content`](#content) value.
 
 ## Specifications
 

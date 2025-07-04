@@ -9,7 +9,7 @@ browser-compat: css.properties.font-palette.palette-mix_function
 
 {{CSSRef}}{{SeeCompatTable}}
 
-The **`palette-mix()`** [CSS](/en-US/docs/Web/CSS) [function](/en-US/docs/Web/CSS/CSS_Functions) can be used to create a new {{cssxref("font-palette")}} value by blending together two `font-palette` values by specified percentages and color interpolation methods.
+The **`palette-mix()`** [CSS](/en-US/docs/Web/CSS) [function](/en-US/docs/Web/CSS/CSS_Values_and_Units/CSS_Value_Functions) can be used to create a new {{cssxref("font-palette")}} value by blending together two `font-palette` values by specified percentages and color interpolation methods.
 
 ## Syntax
 
@@ -35,7 +35,7 @@ font-palette: palette-mix(in hsl shorter hue, --blues, --yellows)
 
 Functional notation:
 
-```text
+```plain
 palette-mix(method, palette1 [p1], palette2 [p2])
 ```
 
@@ -44,14 +44,16 @@ palette-mix(method, palette1 [p1], palette2 [p2])
 - `palette1`, `palette2`
   - : The {{cssxref("font-palette")}} values to blend together. These can be _any_ `font-palette` values, including `palette-mix()` functions, `normal`, `dark`, and `light`.
 - `p1`, `p2` {{optional_inline}}
-
   - : {{cssxref("&lt;percentage&gt;")}} values between `0%` and `100%` specifying the amount of each palette to mix. They are normalized as follows:
-
     - If both `p1` and `p2` are omitted, then `p1 = p2 = 50%`.
     - If `p1` is omitted, then `p1 = 100% - p2`.
     - If `p2` is omitted, then `p2 = 100% - p1`.
     - If `p1 = p2 = 0%`, the function is invalid.
     - If `p1 + p2 ≠ 100%`, then `p1' = p1 / (p1 + p2)` and `p2' = p2 / (p1 + p2)`, where `p1'` and `p2'` are the normalization results.
+
+## Formal syntax
+
+{{CSSSyntax}}
 
 ## Examples
 

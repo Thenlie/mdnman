@@ -37,7 +37,8 @@ The [logical properties and values module](/en-US/docs/Web/CSS/CSS_logical_prope
 - {{cssxref("min-width")}}
 - {{cssxref("width")}}
 
-> **Note:** The CSS box sizing module introduces the `min-intrinsic-sizing` property that has not yet been implemented.
+> [!NOTE]
+> The CSS box sizing module introduces the `min-intrinsic-sizing` property that has not yet been implemented.
 
 ### Data types and values
 
@@ -47,7 +48,8 @@ The [logical properties and values module](/en-US/docs/Web/CSS/CSS_logical_prope
 - {{cssxref("fit-content")}} value
 - {{cssxref("fit-content_function", "fit-content()")}} function
 
-> **Note:** The CSS box sizing module introduces the `stretch` and `contain` keywords as sizing values that have not yet been implemented on the box sizing properties.
+> [!NOTE]
+> The CSS box sizing module introduces the `stretch` and `contain` keywords as sizing values that have not yet been implemented on the box sizing properties.
 
 ### Functions
 
@@ -60,23 +62,18 @@ The [logical properties and values module](/en-US/docs/Web/CSS/CSS_logical_prope
 ## Guides
 
 - [Understanding aspect ratios](/en-US/docs/Web/CSS/CSS_box_sizing/Understanding_aspect-ratio)
-
   - : Learn about the `aspect-ratio` property, discuss aspect ratios for replaced and non-replaced elements, and examine some common aspect ratio use cases.
 
 - [Introduction to the CSS box model](/en-US/docs/Web/CSS/CSS_box_model/Introduction_to_the_CSS_box_model)
-
   - : Explains one of the fundamental concepts of CSS: the box model. This model defines how CSS lays out elements, including their content, padding, border, and margin areas.
 
 - [Mastering margin collapsing](/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing)
-
   - : Sometimes, two adjacent margins are collapsed into one. This article describes the rules that govern when and why this happens, and how to control it.
 
-- [Visual formatting model](/en-US/docs/Web/CSS/Visual_formatting_model)
-
+- [Visual formatting model](/en-US/docs/Web/CSS/CSS_display/Visual_formatting_model)
   - : Explains the visual formatting model.
 
 - [Controlling ratios of flex items along the main axis](/en-US/docs/Web/CSS/CSS_flexible_box_layout/Controlling_ratios_of_flex_items_along_the_main_axis)
-
   - : Explains intrinsic sizing as a precursor to understanding how to control the size and flexibility of flex items along the main axis using {{CSSxRef("flex-grow")}}, {{CSSxRef("flex-shrink")}}, and {{CSSxRef("flex-basis")}}.
 
 ## Related concepts

@@ -6,7 +6,7 @@ page-type: web-api-instance-property
 browser-compat: api.Element.ariaLevel
 ---
 
-{{DefaultAPISidebar("DOM")}}
+{{APIRef("DOM")}}
 
 The **`ariaLevel`** property of the {{domxref("Element")}} interface reflects the value of the `aria-level` attribute, which defines the hierarchical level of an element within a structure.
 
@@ -44,4 +44,4 @@ console.log(el.ariaLevel); // "2"
 
 ## See also
 
-- [ARIA: heading role](/en-US/docs/Web/Accessibility/ARIA/Roles/heading_role)
+- [ARIA: heading role](/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/heading_role)

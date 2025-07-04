@@ -25,7 +25,6 @@ createScriptProcessor(bufferSize, numberOfInputChannels, numberOfOutputChannels)
 ### Parameters
 
 - `bufferSize`
-
   - : The buffer size in units of sample-frames. If specified, the bufferSize must be one
     of the following values: 256, 512, 1024, 2048, 4096, 8192, 16384. If it's not passed
     in, or if the value is 0, then the implementation will choose the best buffer size for
@@ -47,7 +46,7 @@ createScriptProcessor(bufferSize, numberOfInputChannels, numberOfOutputChannels)
     Values of up to 32 are supported.
 
 > [!WARNING]
-> Webkit currently (version 31) requires that a valid
+> WebKit currently (version 31) requires that a valid
 > `bufferSize` be passed when calling this method.
 
 > [!NOTE]
@@ -67,7 +66,7 @@ The following example shows how to use a `ScriptProcessorNode` to take a track l
 For each channel and each sample frame, the script node's {{domxref("ScriptProcessorNode.audioprocess_event", "audioprocess")}} event handler uses the associated `audioProcessingEvent` to loop through each channel of the input buffer, and each sample in each channel, and add a small amount of white noise, before setting that result to be the output sample in each case.
 
 > [!NOTE]
-> You can [run the full example live](https://mdn.github.io/webaudio-examples/script-processor-node/), or [view the source](https://github.com/mdn/webaudio-examples/blob/main/script-processor-node/).
+> You can [run the full example live](https://mdn.github.io/webaudio-examples/script-processor-node/), or [view the source](https://github.com/mdn/webaudio-examples/tree/main/script-processor-node).
 
 ```js
 const myScript = document.querySelector("script");
@@ -141,9 +140,7 @@ playButton.addEventListener("click", () => {
 
 ## Specifications
 
-Since the August 29 2014 [Web Audio API specification](https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-createscriptprocessor) publication, this feature has been deprecated. It is no longer on track to become a standard.
-
-It was replaced by [AudioWorklets](/en-US/docs/Web/API/AudioWorklet) and the {{domxref("AudioWorkletNode")}} interface.
+{{Specifications}}
 
 ## Browser compatibility
 

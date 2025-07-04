@@ -17,7 +17,7 @@ Unlike most global objects, `Math` is not a constructor. You cannot use it with 
 
 > [!NOTE]
 > Many `Math` functions have a precision that's _implementation-dependent_.
-> 
+>
 > This means that different browsers can give a different result. Even the same JavaScript engine on a different OS or architecture can give different results!
 
 ## Static properties
@@ -109,6 +109,8 @@ Unlike most global objects, `Math` is not a constructor. You cannot use it with 
   - : Returns the hyperbolic sine of the input.
 - {{jsxref("Math.sqrt()")}}
   - : Returns the positive square root of the input.
+- {{jsxref("Math.sumPrecise()")}}
+  - : Returns the sum of a passed iterable of numbers, avoiding floating point precision loss in intermediate results.
 - {{jsxref("Math.tan()")}}
   - : Returns the tangent of the input.
 - {{jsxref("Math.tanh()")}}

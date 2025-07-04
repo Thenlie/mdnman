@@ -36,24 +36,21 @@ Hexadecimal (hex) string notation uses a hexadecimal value to represent each com
 A color in hexadecimal string notation always begins with the character `"#"`. After that comes the hexadecimal digits of the color code. The string is case-insensitive.
 
 - `"#rrggbb"`
-
   - : Specifies a fully opaque color whose red component is the hexadecimal number `0xrr`, green component is `0xgg`, and blue component is `0xbb`.
 
 - `"#rrggbbaa"`
-
   - : Specifies a color whose red component is the hexadecimal number `0xrr`, green component is `0xgg`, and blue component is `0xbb`. The alpha channel is specified by `0xaa`; the lower this value is, the more translucent the color becomes.
 
 - `"#rgb"`
-
   - : Specifies a color whose red component is the hexadecimal number `0xrr`, green component is `0xgg`, and blue component is `0xbb`.
 
 - `"#rgba"`
-
   - : Specifies a color whose red component is the hexadecimal number `0xrr`, green component is `0xgg`, and blue component is `0xbb`. The alpha channel is specified by `0xaa`; the lower this value is, the more translucent the color becomes.
 
 As shown above, the red, green, and blue color components can each be represented as a double-digit hex value representing a number between 0 (`00`) and 255 (`FF`) or a single-digit hex value (a number between 0 (`0`) and 15 (`F`).
 
-> **Note:** The leading `0x` in the values above indicates a hexadecimal integer literal. Hexadecimal integers can include digits (`0` - `9`) and the letters `a` – `f` and `A` – `F`. The case of a character does not change its value. Therefore: `0xa` = `0xA` = `10` and `0xf` = `0xF` = `15`.
+> [!NOTE]
+> The leading `0x` in the values above indicates a hexadecimal integer literal. Hexadecimal integers can include digits (`0` - `9`) and the letters `a` – `f` and `A` – `F`. The case of a character does not change its value. Therefore: `0xa` = `0xA` = `10` and `0xf` = `0xF` = `15`.
 
 These two hex colors are equivalent color values; they're both red:
 
@@ -75,7 +72,7 @@ See the {{cssxref("hex-color")}} data type for more information on hexadecimal s
 
 #### HTML color input type
 
-There are many situations in which your website may need to let the user select a color. Perhaps you have a customizable user interface, or you're implementing a drawing app. Maybe you have editable text and need to let the user choose the text color. Or perhaps your app lets the user assign colors to folders or items. For such use cases, the {{HTMLElement("input")}} element has a `"color"` [`type`](/en-US/docs/Web/HTML/Element/input#type), which renders a color picker control.
+There are many situations in which your website may need to let the user select a color. Perhaps you have a customizable user interface, or you're implementing a drawing app. Maybe you have editable text and need to let the user choose the text color. Or perhaps your app lets the user assign colors to folders or items. For such use cases, the {{HTMLElement("input")}} element has a `"color"` [`type`](/en-US/docs/Web/HTML/Reference/Elements/input#type), which renders a color picker control.
 
 This example allows you to choose a color. Once a choice is made, the {{cssxref("border-color")}} is set to that color, and the value is displayed.
 
@@ -105,7 +102,7 @@ The HTML creates a box containing a color picker control (with a label created u
 }
 ```
 
-The following JavaScript updates the border's color to match the color picker's initial value, then adds two event handlers to the [`<input type="color">`](/en-US/docs/Web/HTML/Element/input/color) element to respond to changes made to its value.
+The following JavaScript updates the border's color to match the color picker's initial value, then adds two event handlers to the [`<input type="color">`](/en-US/docs/Web/HTML/Reference/Elements/input/color) element to respond to changes made to its value.
 
 ```js
 const colorPicker = document.querySelector("#colorPicker");
@@ -142,11 +139,9 @@ RGB (Red/Green/Blue) functional notation, like hexadecimal string notation, repr
 Legal values for each of these parameters are:
 
 - `red`, `green`, and `blue`
-
   - : Each must be an {{cssxref("&lt;number&gt;")}} value between 0 and 255 (inclusive), a {{cssxref("&lt;percentage&gt;")}} from 0% to 100%, or the keyword `none`, which is equal to `0` in this case.
 
 - `alpha`
-
   - : The alpha channel is specified as a percentage between `0%` (fully transparent) and `100%` (fully opaque), or a number between `0.0` (equivalent to `0%`) and `1.0` (equivalent to `100%`).
 
 For example, a bright red that's 50% opaque can be represented as `rgb(255 0 0 / 50%)` or `rgb(100% 0 0 / 0.5)`.
@@ -239,7 +234,8 @@ th {
 
 The last value is semi-opaque; it includes the optional alpha value, preceded by a forward slash.
 
-> **Note:** When you omit the hue's unit, it's assumed to be in degrees (`deg`).
+> [!NOTE]
+> When you omit the hue's unit, it's assumed to be in degrees (`deg`).
 
 ### HWB functional notation
 
@@ -330,7 +326,7 @@ th {
 
 ### LCH and OKLCH: CIELAB and Oklab color spaces
 
-While `hsl()` and `hwb()` are intuitive, they have a major drawback. With these functions, every fully-saturated hue angle (`hsl(<angle> 100% 50%)` or `hwb(<angle> 0% 0%)`) has the same lightess, but that is not how human vision or monitors work. Putting white text on fully saturated blue (`hsl(240deg 100% 50%)`) is legible, but that same text on fully saturated yellow (`hsl(60deg 100% 50%)`) will not only be illegible, but may hurt your user's eyes. In these color functions, the lightness of a color is relative to other colors, not to human perception. In reality, not all hues have the same max saturation.
+While `hsl()` and `hwb()` are intuitive, they have a major drawback. With these functions, every fully-saturated hue angle (`hsl(<angle> 100% 50%)` or `hwb(<angle> 0% 0%)`) has the same lightness, but that is not how human vision or monitors work. Putting white text on fully saturated blue (`hsl(240deg 100% 50%)`) is legible, but that same text on fully saturated yellow (`hsl(60deg 100% 50%)`) will not only be illegible, but may hurt your user's eyes. In these color functions, the lightness of a color is relative to other colors, not to human perception. In reality, not all hues have the same max saturation.
 
 Wouldn't it be fantastic if you could simply change the hue channel of a color on a site without making text illegible? You can with color functions in the CIELAB and Oklab color spaces.
 
@@ -537,7 +533,7 @@ The [`lab()`](/en-US/docs/Web/CSS/color_value/lab) functional notation expresses
 Similar to `lch()` and `oklch()`, the `lightness` is either:
 
 - A {{cssxref("percentage")}}, with `0%` being completely black and `100%` being completely white.
-- A number between `0` and `100` for `lab()` and `0` and `1` for `oklab()`, where `0` is completely black and`1`/`100` is completely white.
+- A number between `0` and `100` for `lab()` and `0` and `1` for `oklab()`, where `0` is completely black and `1`/`100` is completely white.
 
 The `a` value is `<number>` between `-125` and `125` for `lab()` or `-0.4` and `0.4` for `oklab()`, a `<percentage>` between `-100%` and `100%`, or the keyword `none` (equivalent to `0%` in this case). This value specifies the color's distance along the a-axis in the color space, which defines how green (moving towards -100%) or red (moving towards +100%) the color is.
 
@@ -689,6 +685,6 @@ The {{cssxref("color_value/light-dark", "light-dark()")}} function lets you spec
 - [Applying color to HTML elements using CSS](/en-US/docs/Web/CSS/CSS_colors/Applying_color)
 - [Using color wisely](/en-US/docs/Web/CSS/CSS_colors/Using_color_wisely)
 - [Using relative colors](/en-US/docs/Web/CSS/CSS_colors/Relative_colors)
-- [Understanding color and luminance](/en-US/docs/Web/Accessibility/Understanding_Colors_and_Luminance)
-- [WCAG 1.4.1: Color contrast](/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast)
+- [Understanding color and luminance](/en-US/docs/Web/Accessibility/Guides/Colors_and_Luminance)
+- [WCAG 1.4.1: Color contrast](/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG/Perceivable/Color_contrast)
 - [CSS color module](/en-US/docs/Web/CSS/CSS_colors)

@@ -1,6 +1,7 @@
 ---
 title: "HTML attribute: crossorigin"
-slug: Web/HTML/Attributes/crossorigin
+short-title: crossorigin
+slug: Web/HTML/Reference/Attributes/crossorigin
 page-type: html-attribute
 browser-compat:
   - html.elements.audio.crossorigin
@@ -13,7 +14,7 @@ spec-urls: https://html.spec.whatwg.org/multipage/urls-and-fetching.html#cors-se
 
 {{HTMLSidebar}}
 
-The **`crossorigin`** attribute, valid on the {{HTMLElement("audio")}}, {{HTMLElement("img")}}, {{HTMLElement("link")}}, {{HTMLElement("script")}}, and {{HTMLElement("video")}} elements, provides support for [CORS](/en-US/docs/Web/HTTP/CORS), defining how the element handles cross-origin requests, thereby enabling the configuration of the CORS requests for the element's fetched data. Depending on the element, the attribute can be a CORS settings attribute.
+The **`crossorigin`** attribute, valid on the {{HTMLElement("audio")}}, {{HTMLElement("img")}}, {{HTMLElement("link")}}, {{HTMLElement("script")}}, and {{HTMLElement("video")}} elements, provides support for [CORS](/en-US/docs/Web/HTTP/Guides/CORS), defining how the element handles cross-origin requests, thereby enabling the configuration of the CORS requests for the element's fetched data. Depending on the element, the attribute can be a CORS settings attribute.
 
 The `crossorigin` content attribute on media elements is a CORS settings attribute.
 
@@ -39,7 +40,7 @@ By default (that is, when the attribute is not specified), CORS is not used at a
     <tr>
       <td><code>img</code>, <code>audio</code>, <code>video</code></td>
       <td>
-        When resource is placed in {{HTMLElement("canvas")}}, element is marked as <a href="/en-US/docs/Web/HTML/CORS_enabled_image#security_and_tainted_canvases"><em>tainted</em></a>.
+        When resource is placed in {{HTMLElement("canvas")}}, element is marked as <a href="/en-US/docs/Web/HTML/How_to/CORS_enabled_image#security_and_tainted_canvases"><em>tainted</em></a>.
       </td>
     </tr>
     <tr>
@@ -58,7 +59,7 @@ By default (that is, when the attribute is not specified), CORS is not used at a
 </table>
 
 > [!NOTE]
-> The `crossorigin` attribute is not supported for [`rel="icon"`](/en-US/docs/Web/HTML/Attributes/rel#icon) in Chromium-based browsers. See the [open Chromium issue](https://crbug.com/1121645).
+> The `crossorigin` attribute is not supported for [`rel="icon"`](/en-US/docs/Web/HTML/Reference/Attributes/rel#icon) in Chromium-based browsers. See the [open Chromium issue](https://crbug.com/1121645).
 
 ### Example: `crossorigin` with the `<script>` element
 
@@ -72,7 +73,7 @@ You can use the following {{HTMLElement("script")}} element to tell a browser to
 
 ### Example: Web manifest with credentials
 
-The `use-credentials` value must be used when fetching a [manifest](/en-US/docs/Web/Manifest) that requires credentials, even if the file is from the same origin.
+The `use-credentials` value must be used when fetching a [manifest](/en-US/docs/Web/Progressive_web_apps/Manifest) that requires credentials, even if the file is from the same origin.
 
 ```html
 <link rel="manifest" href="/app.webmanifest" crossorigin="use-credentials" />
@@ -88,7 +89,5 @@ The `use-credentials` value must be used when fetching a [manifest](/en-US/docs/
 
 ## See also
 
-- [Cross-Origin Resource Sharing (CORS)](/en-US/docs/Web/HTTP/CORS)
-- [HTML attribute: `rel`](/en-US/docs/Web/HTML/Attributes/rel)
-
-{{QuickLinksWithSubpages("/en-US/docs/Web/HTML/")}}
+- [Cross-Origin Resource Sharing (CORS)](/en-US/docs/Web/HTTP/Guides/CORS)
+- [HTML attribute: `rel`](/en-US/docs/Web/HTML/Reference/Attributes/rel)

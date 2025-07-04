@@ -19,19 +19,19 @@ describe('getMDNFile', () => {
     });
     it('returns MDN doc when provided valid parameters', () => {
         expect(getMDNFile('lib/javascript/global_objects/array/filter/index.md')).toMatchSnapshot();
-        expect(getMDNFile('lib/html/element/div/index.md')).toMatchSnapshot();
+        expect(getMDNFile('lib/html/elements/div/index.md')).toMatchSnapshot();
         expect(getMDNFile('lib/css/border/index.md')).toMatchSnapshot();
     });
     it('appends `index.md` when provided a directory', () => {
         expect(getMDNFile('lib/javascript/global_objects/array/map')).toMatchSnapshot();
-        expect(getMDNFile('lib/html/element/a')).toMatchSnapshot();
+        expect(getMDNFile('lib/html/elements/a')).toMatchSnapshot();
         expect(getMDNFile('lib/css/color')).toMatchSnapshot();
     });
     it('returns null when provided invalid parameters', () => {
-        expect(getMDNFile('lib/javascript')).toBeNull();
+        expect(getMDNFile('lib')).toBeNull();
         expect(mockConsoleError).toHaveBeenCalledTimes(1);
         expect(mockConsoleError).toHaveBeenCalledWith(
-            '[getMDNFile] Error: Path "lib/javascript" is a directory, not a file!'
+            '[getMDNFile] Error: Path "lib" is a directory, not a file!'
         );
         expect(getMDNFile('lib/global_attributes/div/index.md')).toBeNull();
         expect(mockConsoleError).toHaveBeenCalledTimes(2);

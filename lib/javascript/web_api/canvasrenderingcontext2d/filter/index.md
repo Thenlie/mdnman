@@ -18,9 +18,9 @@ It is similar to the CSS {{cssxref("filter")}} property and accepts the same val
 The `filter` property accepts a value of `"none"` or one or more
 of the following filter functions in a string.
 
-- [`url()`](/en-US/docs/Web/CSS/url)
-  - : A CSS {{cssxref("url", "url()")}}. Takes an IRI pointing to an SVG filter element,
-    which may be embedded in an external XML file.
+- [`url()`](/en-US/docs/Web/CSS/url_function)
+  - : A CSS {{cssxref("url_function", "url()")}}. Takes any URL that resolves to SVG filter element.
+    This can be the ID of an element, a path to external XML file, or even a data encoded SVG value.
 - [`blur()`](/en-US/docs/Web/CSS/filter-function/blur)
   - : A CSS {{cssxref("&lt;length&gt;")}}. Applies a Gaussian blur to the drawing. It
     defines the value of the standard deviation to the Gaussian function, i.e., how many
@@ -37,11 +37,9 @@ of the following filter functions in a string.
     value of `0%` will create a drawing that is completely black. A value of
     `100%` leaves the drawing unchanged.
 - [`drop-shadow()`](/en-US/docs/Web/CSS/filter-function/drop-shadow)
-
   - : Applies a drop shadow effect to the drawing. A drop shadow is effectively a blurred,
     offset version of the drawing's alpha mask drawn in a particular color, composited
     below the drawing. This function takes up to five arguments:
-
     - `<offset-x>`
       - : See {{cssxref("&lt;length&gt;")}} for possible
         units. Specifies the horizontal distance of the shadow.
@@ -121,9 +119,17 @@ photo of a rhino.
 
 ```html
 <canvas id="canvas" width="400" height="150"></canvas>
-<div style="display:none;">
-  <img id="source" src="rhino.jpg" />
+<div class="hidden">
+  <img
+    id="source"
+    src="https://mdn.github.io/shared-assets/images/examples/rhino.jpg" />
 </div>
+```
+
+```css hidden
+.hidden {
+  display: none;
+}
 ```
 
 #### JavaScript

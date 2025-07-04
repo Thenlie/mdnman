@@ -1,15 +1,16 @@
 ---
-title: itemscope
-slug: Web/HTML/Global_attributes/itemscope
+title: HTML itemscope global attribute
+short-title: itemscope
+slug: Web/HTML/Reference/Global_attributes/itemscope
 page-type: html-attribute
 spec-urls: https://html.spec.whatwg.org/multipage/microdata.html#attr-itemscope
 ---
 
 {{HTMLSidebar("Global_attributes")}}
 
-**`itemscope`** is a boolean [global attribute](/en-US/docs/Web/HTML/Global_attributes) that defines the scope of associated metadata. Specifying the **`itemscope`** attribute for an element creates a new item, which results in a number of name-value pairs that are associated with the element.
+**`itemscope`** is a boolean [global attribute](/en-US/docs/Web/HTML/Reference/Global_attributes) that defines the scope of associated metadata. Specifying the **`itemscope`** attribute for an element creates a new item, which results in a number of name-value pairs that are associated with the element.
 
-A related attribute, [`itemtype`](/en-US/docs/Web/HTML/Global_attributes/itemtype), is used to specify the valid URL of a vocabulary (such as [schema.org](https://schema.org/)) that describes the item and its properties context. In each of the following examples, the vocabulary is from [schema.org](https://schema.org/).
+A related attribute, [`itemtype`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemtype), is used to specify the valid URL of a vocabulary (such as [schema.org](https://schema.org/)) that describes the item and its properties context. In each of the following examples, the vocabulary is from [schema.org](https://schema.org/).
 
 Every HTML element may have an `itemscope` attribute specified. An `itemscope` element that does not have an associated `itemtype` must have an associated `itemref`.
 
@@ -18,7 +19,7 @@ Every HTML element may have an `itemscope` attribute specified. An `itemscope` e
 
 ### itemscope id attributes
 
-When you specify the `itemscope` attribute for an element, a new item is created. The item consists of a group of name-value pairs. For elements with an `itemscope` attribute and an `itemtype` attribute, you may also specify an [`id`](/en-US/docs/Web/HTML/Global_attributes#id) attribute. You can use the `id` attribute to set a global identifier for the new item. A global identifier allows the item to relate to other items found on pages across the Web.
+When you specify the `itemscope` attribute for an element, a new item is created. The item consists of a group of name-value pairs. For elements with an `itemscope` attribute and an `itemtype` attribute, you may also specify an [`id`](/en-US/docs/Web/HTML/Reference/Global_attributes/id) attribute. You can use the `id` attribute to set a global identifier for the new item. A global identifier allows the item to relate to other items found on pages across the Web.
 
 ## Examples
 
@@ -75,7 +76,7 @@ The following example specifies the `itemtype` as "http\://schema.org/Movie", an
 
 ### Representing structured data for a recipe
 
-There are four `itemscope` attributes in the following example. Each `itemscope` attribute sets the scope of its corresponding `itemtype` attribute. The `itemtype`s, `Recipe`, `AggregateRating`, and `NutritionInformation` in the following example are part of the [schema.org](https://www.schema.org) structured data for a recipe, as specified by the first `itemtype`, `http://schema.org/Recipe`.
+There are four `itemscope` attributes in the following example. Each `itemscope` attribute sets the scope of its corresponding `itemtype` attribute. The `itemtype`s, `Recipe`, `AggregateRating`, and `NutritionInformation` in the following example are part of the [schema.org](https://www.schema.org/) structured data for a recipe, as specified by the first `itemtype`, `http://schema.org/Recipe`.
 
 <table class="standard-table">
   <tbody>
@@ -270,10 +271,9 @@ There are four `itemscope` attributes in the following example. Each `itemscope`
 
 ## See also
 
-- [Other different global attributes](/en-US/docs/Web/HTML/Global_attributes)
+- [Other different global attributes](/en-US/docs/Web/HTML/Reference/Global_attributes)
 - Other microdata related global attributes:
-
-  - [`itemid`](/en-US/docs/Web/HTML/Global_attributes/itemid)
-  - [`itemprop`](/en-US/docs/Web/HTML/Global_attributes/itemprop)
-  - [`itemref`](/en-US/docs/Web/HTML/Global_attributes/itemref)
-  - [`itemtype`](/en-US/docs/Web/HTML/Global_attributes/itemtype)
+  - [`itemid`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemid)
+  - [`itemprop`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemprop)
+  - [`itemref`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemref)
+  - [`itemtype`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemtype)

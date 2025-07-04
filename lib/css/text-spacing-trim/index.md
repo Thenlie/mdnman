@@ -31,9 +31,7 @@ text-spacing-trim: unset;
 ### Values
 
 - `<spacing-trim>`
-
   - : Defines the different spacing trim options. Available values are:
-
     - `normal`
       - : Sets CJK full-width opening punctuation characters to be full-width at the start of each line. Sets CJK full-width closing punctuation characters to be full-width at the end of each line, or half-width if they do not fit on the line before justification. [Collapses spacing](#full-width_punctuation_collapsing) between punctuation characters.
     - `space-all`
@@ -41,11 +39,10 @@ text-spacing-trim: unset;
     - `space-first`
       - : Behaves as `normal`, except that CJK full-width opening punctuation characters are set to be full-width at the start of the first line of the text's block container, and the start of every subsequent line coming after an explicit line break such as a newline character.
     - `trim-start`
-
       - : Behaves as `normal`, except that CJK full-width opening punctuation characters are set to be half-width at the start of each line.
 
     > [!NOTE]
-    > The [CSS Text](/en-US/docs/Web/CSS/CSS_text) module also defines `trim-both,` `trim-all,` and `auto` values. However, these are not currently implemented in any browser.
+    > The [CSS Text](/en-US/docs/Web/CSS/CSS_text) module also defines `trim-both`, `trim-all`, and `auto` values. However, these are not currently implemented in any browser.
 
 ## Description
 
@@ -58,7 +55,8 @@ Many CJK punctuation characters include glyph-internal spacing. For example, the
 - If a full-width punctuation character is set to be full-width, it has internal spacing set on both sides and is the full width of an ideograph.
 - If a full-width punctuation character is set to be half-width, it has internal spacing set on one side only, and its other side is flush to the start (in the case of opening punctuation characters) or end (in the case of closing punctuation characters). Half-width characters are typically half the width of an ideograph.
 
-> **Note:** To avoid the risk of excessive kerning, fonts must have the OpenType Alternate Half Widths (`halt`) feature, the Contextual Half-width Spacing (`chws`) feature, or both. If the font doesn't have either feature, `text-spacing-trim` is disabled.
+> [!NOTE]
+> To avoid the risk of excessive kerning, fonts must have the OpenType Alternate Half Widths (`halt`) feature, the Contextual Half-width Spacing (`chws`) feature, or both. If the font doesn't have either feature, `text-spacing-trim` is disabled.
 
 ### Full-width punctuation collapsing
 
@@ -120,7 +118,8 @@ This example compares the effect of four different `text-spacing-trim` propertie
 
 ```css
 main {
-  font-family: "Yu Gothic", "YuGothic", "Noto Sans JP", "Hiragino Sans",
+  font-family:
+    "Yu Gothic", "YuGothic", "Noto Sans JP", "Hiragino Sans",
     "Hiragino Kaku Gothic ProN", sans-serif;
   display: grid;
   gap: 0.5em;
@@ -173,5 +172,5 @@ p {
 
 ## See also
 
-- [`ic`](/en-US/docs/Web/CSS/CSS_Values_and_Units#local_font-relative_lengths) and [`ric`](/en-US/docs/Web/CSS/CSS_Values_and_Units#root_font-relative_lengths) units
+- [`ic`](/en-US/docs/Web/CSS/CSS_Values_and_Units/Numeric_data_types#local_font-relative_lengths) and [`ric`](/en-US/docs/Web/CSS/CSS_Values_and_Units/Numeric_data_types#root_font-relative_lengths) units
 - [CSS Text](/en-US/docs/Web/CSS/CSS_text) module

@@ -1,19 +1,20 @@
 ---
-title: Microformats
-slug: Web/HTML/microformats
+title: Using microformats in HTML
+short-title: Microformats
+slug: Web/HTML/Guides/Microformats
 page-type: guide
 ---
 
 {{HTMLSidebar}}
 
-[_Microformats_](https://microformats.org/) are standards used to embed semantics and structured data in HTML, and provide an API to be used by social web applications, search engines, aggregators, and other tools. These minimal patterns of HTML are used for marking up entities that range from fundamental to domain-specific information, such as people, organizations, events, and locations.
+[_Microformats_](https://microformats.org/wiki/Main_Page) are standards used to embed semantics and structured data in HTML, and provide an API to be used by social web applications, search engines, aggregators, and other tools. These minimal patterns of HTML are used for marking up entities that range from fundamental to domain-specific information, such as people, organizations, events, and locations.
 
-- To create a microformats object, h-\* class names are used in the class attribute.
-- To add a property to an object, the p-\*, u-\*, dt-\*, e-\* class names are used on one of the object's descendants.
+- To create a microformats object, `h-*` class names are used in the class attribute.
+- To add a property to an object, the `p-*`, `u-*`, `dt-*`, `e-*` class names are used on one of the object's descendants.
 
 Microformats use supporting vocabularies to describe objects and name-value pairs to assign values to their properties. The properties are carried in class attributes that can be added to any HTML element, while the data values re-use HTML element content and semantic attributes.
 
-Microformats2 (sometimes referred to as mf2) is an update to microformats that provides a simpler way of annotating HTML structured syntax and vocabularies than previous approaches of using RDFa and microdata. These previous approaches require learning new attributes.
+Microformats2 (sometimes referred to as mf2) is an update to microformats that provides a method of annotating HTML structured syntax and vocabularies than previous approaches of using RDFa and microdata. These previous approaches require learning new attributes.
 
 There are [open source parsing libraries for most languages](https://microformats.org/wiki/microformats2#Parsers) for microformats2.
 
@@ -33,7 +34,7 @@ As in this example, some markup patterns require only a single microformat root 
 
 ## Microformats Use Cases
 
-Microformats have numerous use cases. First, the [Webmention standard](https://www.w3.org/TR/webmention/) uses microformats to provide a way in which messages and comments can be sent from one site to another. The Webmention specification defines specific attributes that sites may publish and consume to create a rich, interoperable way of publishing messages and comments. Microformats can also be used with Webmentions to enable sending social reactions such as likes, reposts, and bookmarks from one site to another.
+Microformats have numerous use cases. First, the [Webmention standard](https://webmention.net/draft/) uses microformats to provide a way in which messages and comments can be sent from one site to another. The Webmention specification defines specific attributes that sites may publish and consume to create a rich, interoperable way of publishing messages and comments. Microformats can also be used with Webmentions to enable sending social reactions such as likes, reposts, and bookmarks from one site to another.
 
 Microformats also enable easy syndication across sites. An aggregator could parse a page with published microformats to look for information such as a post title, a post body, and the author of a post. This aggregator could then use the semantic information gathered to render a result on their site. For instance, news aggregators and community posting boards could facilitate submissions and use microformats to exact relevant content from a page. Further, a website could use microformats to send crafted requests to third-parties to publish content, such as social networks.
 
@@ -47,26 +48,22 @@ All microformats consist of a root, and a collection of properties. Properties a
 
 All microformats class names use prefixes. Prefixes are **syntax independent of vocabularies**, which are developed separately.
 
-- **"h-\*" for root class names**, e.g. "h-card", "h-entry", "h-feed", and many more. These top-level root classes usually indicate a type and corresponding expected vocabulary of properties. For example:
-
+- **"h-\*" for root class names**, e.g., "h-card", "h-entry", "h-feed", and many more. These top-level root classes usually indicate a type and corresponding expected vocabulary of properties. For example:
   - [h-card](https://microformats.org/wiki/h-card) describes a person or organization
   - [h-entry](https://microformats.org/wiki/h-entry) describes episodic or date stamped online content like a blog post
   - [h-feed](https://microformats.org/wiki/h-feed) describes a stream or feed of posts
   - You can find many more [vocabularies on the microformats2 wiki.](https://microformats.org/wiki/microformats2#v2_vocabularies)
 
-- **"p-\*" for plain (text) properties**, e.g. "p-name", "p-summary"
+- **"p-\*" for plain (text) properties**, e.g., "p-name", "p-summary"
+  - Generic plain text parsing, element text in general. On certain HTML elements, use special attributes first, e.g., img/alt, abbr/title.
 
-  - Generic plain text parsing, element text in general. On certain HTML elements, use special attributes first, e.g. img/alt, abbr/title.
-
-- **"u-\*" for URL properties**, e.g. "u-url", "u-photo", "u-logo"
-
+- **"u-\*" for URL properties**, e.g., "u-url", "u-photo", "u-logo"
   - Special parsing: element attributes a/href, img/src, object/data etc. attributes over element contents.
 
-- **"dt-\*" for datetime properties**, e.g. "dt-start", "dt-end", "dt-bday"
-
+- **"dt-\*" for datetime properties**, e.g., "dt-start", "dt-end", "dt-bday"
   - Special parsing: time element datetime attribute, [value-class-pattern](https://microformats.org/wiki/value-class-pattern) and separate date time value parsing for readability.
 
-- **"e-\*" for element tree properties** where the entire contained element hierarchy is the value, e.g. "e-content". The "e-" prefix can also be mnemonically remembered as "element tree", "embedded markup", or "encapsulated markup".
+- **"e-\*" for element tree properties** where the entire contained element hierarchy is the value, e.g., "e-content". The "e-" prefix can also be mnemonically remembered as "element tree", "embedded markup", or "encapsulated markup".
 
 ## Some microformats examples
 
@@ -143,7 +140,7 @@ Note: the nested h-card has implied 'name' and 'url' properties, just like any o
 
 ### h-entry
 
-The [h-entry](https://microformats.org/wiki/h-entry) microformat represents episodic or datestamped content on the web. h-entry is often used with content intended to be syndicated, e.g. blog posts and short notes.
+The [h-entry](https://microformats.org/wiki/h-entry) microformat represents episodic or datestamped content on the web. h-entry is often used with content intended to be syndicated, e.g., blog posts and short notes.
 
 Example h-entry as a blog post:
 
@@ -197,7 +194,7 @@ Example h-entry as a blog post:
     Replied to
     <a
       class="u-in-reply-to"
-      href="https://developer.mozilla.org/en-US/docs/Web/HTML/microformats">
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats">
       a post on <strong>developer.mozilla.org</strong>
     </a>
     :
@@ -228,7 +225,7 @@ Example h-entry as a blog post:
       "type": ["h-entry"],
       "properties": {
         "in-reply-to": [
-          "https://developer.mozilla.org/en-US/docs/Web/HTML/microformats"
+          "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats"
         ],
         "name": ["Hey thanks for making this microformats resource"],
         "url": [
@@ -470,8 +467,8 @@ Supported in all browsers' support for the class attribute and its DOM API.
 
 ## See also
 
-- [class attribute](/en-US/docs/Web/HTML/Global_attributes/class)
+- [class attribute](/en-US/docs/Web/HTML/Reference/Global_attributes/class)
 - [Microformat](https://en.wikipedia.org/wiki/Microformat) on Wikipedia
-- [Microformats official website](https://microformats.org/)
+- [Microformats official website](https://microformats.org/wiki/Main_Page)
 - [Search engines support](https://microformats.org/wiki/search_engines) on Microformats official website
 - [Microformats on IndieWebCamp](https://indieweb.org/microformats)

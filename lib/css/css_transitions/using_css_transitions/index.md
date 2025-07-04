@@ -1,5 +1,6 @@
 ---
 title: Using CSS transitions
+short-title: Using transitions
 slug: Web/CSS/CSS_transitions/Using_CSS_transitions
 page-type: guide
 spec-urls: https://drafts.csswg.org/css-transitions/
@@ -19,7 +20,8 @@ CSS transitions let you decide which properties to animate (by [_listing them ex
 
 The Web author can define which property has to be animated and in which way. This allows the creation of complex transitions. However, some properties are [not animatable](/en-US/docs/Web/CSS/CSS_animated_properties) as it doesn't make sense to animate them.
 
-> **Note:** The `auto` value is often a very complex case. The specification recommends not animating from and to `auto`. Some user agents, like those based on Gecko, implement this requirement and others, like those based on WebKit, are less strict. Using animations with `auto` may lead to unpredictable results, depending on the browser and its version, and should be avoided.
+> [!NOTE]
+> The `auto` value is often a very complex case. The specification recommends not animating from and to `auto`. Some user agents, like those based on Gecko, implement this requirement and others, like those based on WebKit, are less strict. Using animations with `auto` may lead to unpredictable results, depending on the browser and its version, and should be avoided.
 
 ## Defining transitions
 
@@ -38,10 +40,8 @@ You can control the individual components of the transition with the following s
 
 The `transition` shorthand CSS syntax is written as follows:
 
-```css
-div {
-  transition: <property> <duration> <timing-function> <delay>;
-}
+```plain
+transition: <property> <duration> <timing-function> <delay>;
 ```
 
 ## Examples
@@ -219,7 +219,7 @@ The HTML contains two {{htmlelement("p")}} elements with a {{htmlelement("div")}
 </div>
 
 <p>
-  This is another paragraph to show that <code>display: none; </code> is being
+  This is another paragraph to show that <code>display: none;</code> is being
   applied and removed on the above <code>&lt;div&gt; </code>. If only its
   <code>opacity</code> was being changed, it would always take up the space in
   the DOM.
@@ -287,25 +287,25 @@ The code renders as follows:
 
 ## JavaScript examples
 
-> **Note:** Care should be taken when using a transition immediately after:
-> 
+> [!NOTE]
+> Care should be taken when using a transition immediately after:
+>
 > - adding the element to the DOM using `.appendChild()`
 > - removing an element's `display: none;` property.
-> 
+>
 > This is treated as if the initial state had never occurred and the element was always in its final state. The easy way to overcome this limitation is to apply a `setTimeout()` of a handful of milliseconds before changing the CSS property you intend to transition to.
 
 ### Using transitions to make JavaScript functionality smooth
 
 Transitions are a great tool to make things look much smoother without having to do anything to your JavaScript functionality. Take the following example.
 
-```html
+```html live-sample___js-transitions
 <p>Click anywhere to move the ball</p>
 <div id="foo" class="ball"></div>
 ```
 
-Using JavaScript you can make the effect of moving the ball to a certain position happen:
-
-```js
+```js live-sample___js-transitions
+// Make the ball move to a certain position:
 const f = document.getElementById("foo");
 document.addEventListener(
   "click",
@@ -317,9 +317,38 @@ document.addEventListener(
 );
 ```
 
-With CSS you can make it smooth without any extra effort. Add a transition to the element and any change will happen smoothly:
+With CSS, you can smooth the styles applied through JavaScript. Add a transition to the element and any change will happen smoothly:
 
-```css
+```css hidden live-sample___js-transitions
+body {
+  background-color: #fff;
+  color: #333;
+  font:
+    1.2em / 1.5 Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-top: 3em;
+}
+
+main {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 660px;
+  height: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+```
+
+```css live-sample___js-transitions
 .ball {
   border-radius: 25px;
   width: 50px;
@@ -332,7 +361,7 @@ With CSS you can make it smooth without any extra effort. Add a transition to th
 }
 ```
 
-{{EmbedGHLiveSample("css-examples/transitions/js-transitions.html", '100%', 500)}}
+{{EmbedLiveSample("js-transitions", "", "400px")}}
 
 ### Detecting the start and completion of a transition
 
@@ -356,7 +385,8 @@ el.addEventListener("transitionrun", signalStart, true);
 el.addEventListener("transitionstart", signalStart, true);
 ```
 
-> **Note:** The `transitionend` event doesn't fire if the transition is aborted before the transition is completed because either the element is made {{cssxref("display")}}`: none` or the animating property's value is changed.
+> [!NOTE]
+> The `transitionend` event doesn't fire if the transition is aborted before the transition is completed because either the element is made {{cssxref("display", "display: none")}} or the animating property's value is changed.
 
 ## Specifications
 

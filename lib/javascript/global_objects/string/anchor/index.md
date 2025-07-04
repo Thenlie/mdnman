@@ -1,5 +1,6 @@
 ---
 title: String.prototype.anchor()
+short-title: anchor()
 slug: Web/JavaScript/Reference/Global_Objects/String/anchor
 page-type: javascript-instance-method
 status:
@@ -13,7 +14,7 @@ The **`anchor()`** method of {{jsxref("String")}} values creates a string that e
 
 > [!NOTE]
 > All [HTML wrapper methods](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods) are deprecated and only standardized for compatibility purposes. Use [DOM APIs](/en-US/docs/Web/API/Document_Object_Model) such as [`document.createElement()`](/en-US/docs/Web/API/Document/createElement) instead.
-> 
+>
 > The HTML specification no longer allows the {{HTMLElement("a")}} element to have a `name` attribute, so this method doesn't even create valid markup.
 
 ## Syntax
@@ -72,5 +73,6 @@ document.body.appendChild(elem);
 ## See also
 
 - [Polyfill of `String.prototype.anchor` in `core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+- [es-shims polyfill of `String.prototype.anchor`](https://www.npmjs.com/package/es-string-html-methods)
 - [HTML wrapper methods](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#html_wrapper_methods)
 - {{HTMLElement("a")}}

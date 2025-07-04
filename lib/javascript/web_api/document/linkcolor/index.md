@@ -15,8 +15,7 @@ links within the document.
 
 This property is deprecated. As an alternative, you can set the CSS
 {{cssxref("color")}} property on either HTML anchor links ({{HtmlElement("a")}}) or on
-{{cssxref(":link")}} pseudo-classes. Another alternative is
-`document.body.link`, although this is [deprecated in HTML 4.01](https://www.w3.org/TR/html401/struct/global.html#adef-link).
+{{cssxref(":link")}} pseudo-classes.
 
 ## Value
 
@@ -32,9 +31,7 @@ document.linkColor = "blue";
 
 ## Specifications
 
-HTML5
-
-`Document.linkColor` is [deprecated in DOM Level 2 HTML](https://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-26809268).
+{{Specifications}}
 
 ## Browser compatibility
 

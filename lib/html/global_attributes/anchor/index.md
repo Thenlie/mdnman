@@ -1,6 +1,7 @@
 ---
-title: anchor
-slug: Web/HTML/Global_attributes/anchor
+title: HTML anchor global attribute
+short-title: anchor
+slug: Web/HTML/Reference/Global_attributes/anchor
 page-type: html-attribute
 status:
   - experimental
@@ -10,7 +11,7 @@ browser-compat: html.global_attributes.anchor
 
 {{HTMLSidebar("Global_attributes")}}{{Non-standard_Header}}{{SeeCompatTable}}
 
-The **`anchor`** [global attribute](/en-US/docs/Web/HTML/Global_attributes) is used to associate a positioned element with an anchor element. The attribute's value is the [`id`](/en-US/docs/Web/HTML/Global_attributes/id) value of the element you want to anchor the positioned element to. The element can then be positioned using [CSS anchor positioning](/en-US/docs/Web/CSS/CSS_anchor_positioning/Using).
+The **`anchor`** [global attribute](/en-US/docs/Web/HTML/Reference/Global_attributes) is used to associate a positioned element with an anchor element. The attribute's value is the [`id`](/en-US/docs/Web/HTML/Reference/Global_attributes/id) value of the element you want to anchor the positioned element to. The element can then be positioned using [CSS anchor positioning](/en-US/docs/Web/CSS/CSS_anchor_positioning/Using).
 
 > [!NOTE]
 > Alternatively, you can associate a positioned element with an anchor element via CSS, using the {{cssxref("anchor-name")}} and {{cssxref("position-anchor")}} properties. If both anchoring techniques are used on the same element, the CSS technique takes precedence over the HTML technique.
@@ -121,4 +122,3 @@ This attribute is not currently part of the HTML specification. Read the discuss
 - CSS {{cssxref("anchor-name")}} property
 - CSS {{cssxref("position-anchor")}} property
 - [CSS anchor positioning](/en-US/docs/Web/CSS/CSS_anchor_positioning) module
-- [Using CSS anchor positioning](/en-US/docs/Web/CSS/CSS_anchor_positioning/Using) guide

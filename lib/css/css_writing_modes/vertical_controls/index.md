@@ -8,10 +8,10 @@ page-type: guide
 
 The guide explains how to use the CSS {{cssxref("writing-mode")}} and {{cssxref("direction")}} properties to create and configure vertical form controls. This includes:
 
-- [`<input type="range">`](/en-US/docs/Web/HTML/Element/input/range) sliders, {{htmlelement("progress")}} bars, and {{htmlelement("meter")}} elements.
+- [`<input type="range">`](/en-US/docs/Web/HTML/Reference/Elements/input/range) sliders, {{htmlelement("progress")}} bars, and {{htmlelement("meter")}} elements.
 - {{htmlelement("select")}} elements.
-- {{htmlelement("button")}} elements and button input types such as [`<input type="button">`](/en-US/docs/Web/HTML/Element/input/button), [`<input type="reset">`](/en-US/docs/Web/HTML/Element/input/reset), and [`<input type="submit">`](/en-US/docs/Web/HTML/Element/input/submit).
-- {{htmlelement("textarea")}} elements and text-based input types such as [`<input type="text">`](/en-US/docs/Web/HTML/Element/input/text), [`<input type="datetime-local">`](/en-US/docs/Web/HTML/Element/input/datetime-local), and [`<input type="url">`](/en-US/docs/Web/HTML/Element/input/url).
+- {{htmlelement("button")}} elements and button input types such as [`<input type="button">`](/en-US/docs/Web/HTML/Reference/Elements/input/button), [`<input type="reset">`](/en-US/docs/Web/HTML/Reference/Elements/input/reset), and [`<input type="submit">`](/en-US/docs/Web/HTML/Reference/Elements/input/submit).
+- {{htmlelement("textarea")}} elements and text-based input types such as [`<input type="text">`](/en-US/docs/Web/HTML/Reference/Elements/input/text), [`<input type="datetime-local">`](/en-US/docs/Web/HTML/Reference/Elements/input/datetime-local), and [`<input type="url">`](/en-US/docs/Web/HTML/Reference/Elements/input/url).
 
 ## General technique
 
@@ -26,9 +26,11 @@ Specifically:
 
 You could use a [transform](/en-US/docs/Web/CSS/transform) to rotate the controls by 90 degrees, but that would place the controls in their own layer and cause unintended layout side effects such as other content being overlapped. Using `writing-mode` offers a more reliable solution.
 
-> **Note:** While the {{cssxref("writing-mode")}} property is well supported, creating vertically-oriented form controls with `writing-mode` only gained full browser support in 2024.
+> [!NOTE]
+> While the {{cssxref("writing-mode")}} property is well supported, creating vertically-oriented form controls with `writing-mode` only gained full browser support in 2024.
 
-> **Note:** The experimental `sideways-lr` and `sideways-rl` values have a similar effect as `vertical-lr` and `vertical-rl` respectively, except that normally vertical text characters (for example in Chinese or Japanese) are rotated 90 degrees to display on their sides, while horizontal text characters (for example in Latin languages) are unaffected by these values.
+> [!NOTE]
+> The experimental `sideways-lr` and `sideways-rl` values have a similar effect as `vertical-lr` and `vertical-rl` respectively, except that normally vertical text characters (for example in Chinese or Japanese) are rotated 90 degrees to display on their sides, while horizontal text characters (for example in Latin languages) are unaffected by these values.
 
 In addition, the {{cssxref("direction")}} property can be used to control the direction of the content inside the controls:
 
@@ -45,7 +47,7 @@ Let's have a look at creating vertical range sliders, meters, and progress bars.
 
 ### Basic example
 
-A typical set of visual [`<input type="range">`](/en-US/docs/Web/HTML/Element/input/range) slider, {{htmlelement("progress")}}, and {{htmlelement("meter")}} controls is created like this:
+A typical set of visual [`<input type="range">`](/en-US/docs/Web/HTML/Reference/Elements/input/range) slider, {{htmlelement("progress")}}, and {{htmlelement("meter")}} controls is created like this:
 
 ```html
 <form>
@@ -57,7 +59,8 @@ A typical set of visual [`<input type="range">`](/en-US/docs/Web/HTML/Element/in
 </form>
 ```
 
-> **Note:** Best practice is to include a {{htmlelement("label")}} element for each form control, to associate a meaningful text description with each field for accessibility purposes (see [Meaningful text labels](/en-US/docs/Learn/Accessibility/HTML#meaningful_text_labels) for more information). We haven't done that here, as this article focuses purely on aspects of the form controls' visual rendering, but you should make sure you do so in production code.
+> [!NOTE]
+> Best practice is to include a {{htmlelement("label")}} element for each form control, to associate a meaningful text description with each field for accessibility purposes (see [Use meaningful text labels](/en-US/docs/Learn_web_development/Core/Accessibility/HTML#use_meaningful_text_labels) for more information). We haven't done that here, as this article focuses purely on aspects of the form controls' visual rendering, but you should make sure you do so in production code.
 
 To display the controls vertically, we can use CSS like this:
 
@@ -113,7 +116,7 @@ In older browsers that do not support the creation of vertical form controls wit
 - The non-standard [`appearance: slider-vertical`](/en-US/docs/Web/CSS/appearance) property can be used in older versions of Safari and Chrome.
 - The non-standard `orient="vertical"` attribute can be added to the `<input type="range">` element itself in older versions of Firefox.
 
-The HTML for this example includes an [`<input type="range">`](/en-US/docs/Web/HTML/Element/input/range) slider only, with `orient="vertical"` added to make it display vertically in older Firefox versions:
+The HTML for this example includes an [`<input type="range">`](/en-US/docs/Web/HTML/Reference/Elements/input/range) slider only, with `orient="vertical"` added to make it display vertically in older Firefox versions:
 
 ```html
 <form>
@@ -271,7 +274,7 @@ The result looks like so:
 
 ## Buttons
 
-This section shows how to handle vertical {{htmlelement("button")}} elements. Note that while we have only used a `<button>` element in the examples below, the behavior is the same for other elements that create buttons, such as [`<input>`](/en-US/docs/Web/HTML/Element/input) types of [`button`](/en-US/docs/Web/HTML/Element/input/button), [`reset`](/en-US/docs/Web/HTML/Element/input/reset), and [`submit`](/en-US/docs/Web/HTML/Element/input/submit).
+This section shows how to handle vertical {{htmlelement("button")}} elements. Note that while we have only used a `<button>` element in the examples below, the behavior is the same for other elements that create buttons, such as [`<input>`](/en-US/docs/Web/HTML/Reference/Elements/input) types of [`button`](/en-US/docs/Web/HTML/Reference/Elements/input/button), [`reset`](/en-US/docs/Web/HTML/Reference/Elements/input/reset), and [`submit`](/en-US/docs/Web/HTML/Reference/Elements/input/submit).
 
 ### Basic button example
 
@@ -357,7 +360,7 @@ The result looks like so:
 
 ## Text-based form controls
 
-Last but not least, we'll look at handling vertical {{htmlelement("textarea")}}s and textual `<input>` types. Note that, while the only `<input>` type we are including is an `<input type="text">` element in the examples below, the behavior is the same for other textual [`<input>`](/en-US/docs/Web/HTML/Element/input) types: [`password`](/en-US/docs/Web/HTML/Element/input/button), [`number`](/en-US/docs/Web/HTML/Element/input/reset), [`url`](/en-US/docs/Web/HTML/Element/input/submit), etc.
+Last but not least, we'll look at handling vertical {{htmlelement("textarea")}}s and textual `<input>` types. Note that, while the only `<input>` type we are including is an `<input type="text">` element in the examples below, the behavior is the same for other textual [`<input>`](/en-US/docs/Web/HTML/Reference/Elements/input) types: [`password`](/en-US/docs/Web/HTML/Reference/Elements/input/button), [`number`](/en-US/docs/Web/HTML/Reference/Elements/input/reset), [`url`](/en-US/docs/Web/HTML/Reference/Elements/input/submit), etc.
 
 ### Basic text input and textarea example
 
@@ -468,7 +471,7 @@ The result looks like so:
 
 ## See also
 
-- The [`<input>`](/en-US/docs/Web/HTML/Element/input) element.
+- The [`<input>`](/en-US/docs/Web/HTML/Reference/Elements/input) element.
 - Other relevant elements: {{htmlelement("button")}}, {{htmlelement("meter")}}, {{htmlelement("progress")}}, and {{htmlelement("select")}}.
-- [Handling different text directions](/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions)
-- [Styling web forms](/en-US/docs/Learn/Forms/Styling_web_forms)
+- [Learn: Handling different text directions](/en-US/docs/Learn_web_development/Core/Styling_basics/Handling_different_text_directions)
+- [Styling web forms](/en-US/docs/Learn_web_development/Extensions/Forms/Styling_web_forms)

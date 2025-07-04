@@ -1,5 +1,5 @@
 ---
-title: "StorageAccessHandle: BroadcastChannel() property"
+title: "StorageAccessHandle: BroadcastChannel() method"
 short-title: BroadcastChannel()
 slug: Web/API/StorageAccessHandle/BroadcastChannel
 page-type: web-api-instance-method
@@ -8,12 +8,13 @@ browser-compat: api.StorageAccessHandle.BroadcastChannel
 
 {{APIRef("Storage Access API")}}
 
-> **Note:** See {{domxref("BroadcastChannel.BroadcastChannel", "BroadcastChannel()")}} to understand usage.
+> [!NOTE]
+> See {{domxref("BroadcastChannel.BroadcastChannel", "BroadcastChannel()")}} to understand usage.
 
 ## Syntax
 
 ```js-nolint
-handle.BroadcastChannel(channelName)
+BroadcastChannel(channelName)
 ```
 
 ### Parameters
@@ -46,7 +47,8 @@ document.requestStorageAccess({ BroadcastChannel: true }).then(
 );
 ```
 
-> **Note:** See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
+> [!NOTE]
+> See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
 
 ## Specifications
 

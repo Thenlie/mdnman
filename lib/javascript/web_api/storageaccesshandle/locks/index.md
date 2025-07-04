@@ -20,9 +20,7 @@ A {{domxref("LockManager")}} object.
 document.requestStorageAccess({ locks: true }).then(
   (handle) => {
     console.log("locks access granted");
-    await handle.locks.request('foo', async lock => {
-        return "ok";
-    });
+    handle.locks.request("foo", (lock) => "ok");
   },
   () => {
     console.log("locks access denied");
@@ -30,7 +28,8 @@ document.requestStorageAccess({ locks: true }).then(
 );
 ```
 
-> **Note:** See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
+> [!NOTE]
+> See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
 
 ## Specifications
 

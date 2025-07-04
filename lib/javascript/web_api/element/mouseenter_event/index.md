@@ -10,16 +10,16 @@ browser-compat: api.Element.mouseenter_event
 
 The **`mouseenter`** event is fired at an {{domxref("Element")}} when a pointing device (usually a mouse) is initially moved so that its hotspot is within the element at which the event was fired.
 
-Note that "moving into an event" refers to the element's position in the DOM tree, not to its visual position. For example, if a child element is positioned so it is placed outside its parent, then moving into the child element will trigger `mouseenter` on the parent element, even though the pointer is still outside the bounds of the parent element.
+Note that "moving into an element" refers to the element's position in the DOM tree, not to its visual position. For example, if a child element is positioned so it is placed outside its parent, then moving into the child element will trigger `mouseenter` on the parent element, even though the pointer is still outside the bounds of the parent element.
 
 ## Syntax
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
-```js
-addEventListener("mouseenter", (event) => {});
+```js-nolint
+addEventListener("mouseenter", (event) => { })
 
-onmouseenter = (event) => {};
+onmouseenter = (event) => { }
 ```
 
 ## Event type
@@ -82,10 +82,11 @@ _This interface also inherits properties of its parents, {{domxref("UIEvent")}} 
 
 ## Usage notes
 
-Though similar to {{domxref("Element/mouseover_event", "mouseover")}}, `mouseenter` differs in that it doesn't [bubble](/en-US/docs/Web/API/Event/bubbles) and it isn't sent to any descendants when the pointer is moved from one of its descendants' physical space to its own physical space.
+Though similar to {{domxref("Element/mouseover_event", "mouseover")}}, `mouseenter` differs in that it doesn't [bubble](/en-US/docs/Web/API/Event/bubbles) and it isn't sent to any descendants when the pointer is moved from one of its descendants' physical space to its own physical space. Other than that, enter and over events for the same situation are dispatched at the same time, if appropriate.
 
 ### Behavior of `mouseenter` events
 
+This describes the mouseenter events received by each of four concentric divs with no padding or margin, so the events all happen at the same time:
 ![Mouseenter behavior diagram](mouseenter.png)
 One `mouseenter` event is sent to each element of the hierarchy when entering them. Here 4 events are sent to the four elements of the hierarchy when the pointer reaches the text.
 
@@ -177,7 +178,7 @@ function addListItem(text) {
 
 ## See also
 
-- [Introduction to events](/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+- [Learn: Introduction to events](/en-US/docs/Learn_web_development/Core/Scripting/Events)
 - {{domxref("Element/mousedown_event", "mousedown")}}
 - {{domxref("Element/mouseup_event", "mouseup")}}
 - {{domxref("Element/mousemove_event", "mousemove")}}
@@ -187,3 +188,4 @@ function addListItem(text) {
 - {{domxref("Element/mouseout_event", "mouseout")}}
 - {{domxref("Element/mouseleave_event", "mouseleave")}}
 - {{domxref("Element/contextmenu_event", "contextmenu")}}
+- {{domxref("Element/pointerenter_event", "pointerenter")}}

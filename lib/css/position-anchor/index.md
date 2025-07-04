@@ -2,14 +2,12 @@
 title: position-anchor
 slug: Web/CSS/position-anchor
 page-type: css-property
-status:
-  - experimental
 browser-compat: css.properties.position-anchor
 ---
 
-{{CSSRef}}{{seecompattable}}
+{{CSSRef}}
 
-The **`position-anchor`** [CSS](/en-US/docs/Web/CSS) property specifices the anchor name of the **anchor element** (i.e. an element that has an **anchor name** set on it via the {{cssxref("anchor-name")}} property) a positioned element is associated with.
+The **`position-anchor`** [CSS](/en-US/docs/Web/CSS) property specifies the anchor name of the **anchor element** (i.e., an element that has an **anchor name** set on it via the {{cssxref("anchor-name")}} property) a positioned element is associated with.
 
 ## Syntax
 
@@ -29,24 +27,22 @@ position-anchor: unset;
 ### Values
 
 - `auto`
-
-  - : Associates a positioned element with its implicit anchor element, if it has one — for example as set by the non-standard HTML [`anchor`](/en-US/docs/Web/HTML/Global_attributes/anchor) attribute.
+  - : Associates a positioned element with its implicit anchor element, if it has one — for example as set by the non-standard HTML [`anchor`](/en-US/docs/Web/HTML/Reference/Global_attributes/anchor) attribute.
 
 - {{cssxref("dashed-ident")}}
-
   - : The name of the anchor element to associate the positioned element with, as listed in the anchor element's {{cssxref("anchor-name")}} property. This is known as the **default anchor specifier**.
 
 ## Description
 
 This property is only relevant to "positioned" elements — elements and pseudo elements that have a {{cssxref("position")}} of `absolute` or `fixed` set.
 
-To position an element relative to an anchor element, the positioned element requires three features: an association, a position, and a location. The `position-anchor` and {{cssxref("anchor-name")}} properties provide the association.
+To position an element relative to an anchor element, the positioned element requires three features: an association, a position, and a location. The `position-anchor` and {{cssxref("anchor-name")}} properties provide an explicit association.
 
 The anchor element accepts one or more `<dashed-ident>` anchor names set on it via the `anchor-name` property. When one of those names is then set as the value of the positioned element's `position-anchor` property, the two elements are associated.
 
 If there are multiple anchor elements with the anchor name listed in the `position-anchor` property, the positioned element will be associated with the last anchor element in the source order with that anchor name.
 
-To tether a positioned element to its anchor, it must be placed relative to an anchor element using an anchor positioning feature, such as the {{cssxref("anchor()")}} function (set as a value on {{glossary("inset properties")}}) or the {{cssxref("inset-area")}} property.
+To tether a positioned element to its anchor, it must be placed relative to an anchor element using an anchor positioning feature, such as the {{cssxref("anchor()")}} function (set as a value on {{glossary("inset properties")}}) or the {{cssxref("position-area")}} property.
 
 If the associated anchor is hidden, for example with {{cssxref("display", "display: none")}} or {{cssxref("visibility", "visibility: hidden")}}, or if it is part of the [skipped contents](/en-US/docs/Web/CSS/CSS_containment/Using_CSS_containment#skips_its_contents) of another element due to it having {{cssxref("content-visibility", "content-visibility: hidden")}} set on it, the anchor positioned element will not be displayed.
 
@@ -72,7 +68,7 @@ In this example, an {{htmlelement("output")}} is positioned relative to an ancho
 
 #### HTML
 
-We include an [`<input type="range">`](/en-US/docs/Web/HTML/Element/input/range) element and an [`<output>`](/en-US/docs/Web/HTML/Element/output) element to display the value of the range. The value displayed in the `<output>` element is updated via JavaScript as the slider value changes.
+We include an [`<input type="range">`](/en-US/docs/Web/HTML/Reference/Elements/input/range) element and an [`<output>`](/en-US/docs/Web/HTML/Reference/Elements/output) element to display the value of the range. The value displayed in the `<output>` element is updated via JavaScript as the slider value changes.
 
 ```html
 <label for="slider">Change the value:</label>
@@ -215,7 +211,7 @@ body {
 }
 ```
 
-Each of the positioned elements is given a {{cssxref("position-anchor")}} property with a value matching one of the two anchor names. The positioned elements are then given anchor-relative positioning information using a combination of inset, alignment, and margin properties.
+Each of the positioned elements is given a `position-anchor` property with a value matching one of the two anchor names. The positioned elements are then given anchor-relative positioning information using a combination of inset, alignment, and margin properties.
 
 ```css hidden
 .infobox {
@@ -303,6 +299,6 @@ Select different values from the drop-down menus to change the anchors that the 
 ## See also
 
 - {{cssxref("anchor-name")}}
-- HTML [`anchor`](/en-US/docs/Web/HTML/Global_attributes/anchor) attribute
+- HTML [`anchor`](/en-US/docs/Web/HTML/Reference/Global_attributes/anchor) attribute
 - [CSS anchor positioning](/en-US/docs/Web/CSS/CSS_anchor_positioning) module
 - [Using CSS anchor positioning](/en-US/docs/Web/CSS/CSS_anchor_positioning/Using) guide

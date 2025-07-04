@@ -7,7 +7,7 @@ spec-urls: https://drafts.csswg.org/web-animations/
 
 {{DefaultAPISidebar("Web Animations")}}
 
-The **Web Animations API** allows for synchronizing and timing changes to the presentation of a Web page, i.e. animation of DOM elements. It does so by combining two models: the Timing Model and the Animation Model.
+The **Web Animations API** allows for synchronizing and timing changes to the presentation of a Web page, i.e., animation of DOM elements. It does so by combining two models: the Timing Model and the Animation Model.
 
 ## Concepts and usage
 
@@ -42,7 +42,7 @@ The Web Animations API adds features to {{domxref("document")}} and {{domxref("e
 - {{domxref("Element.animate()")}}
   - : A shortcut method for creating and playing an animation on an element. It returns the created {{domxref("Animation")}} object instance.
 - {{domxref("Element.getAnimations()")}}
-  - : Returns an Array of {{domxref("Animation")}} objects currently affecting an element or which are scheduled to do so in future.
+  - : Returns an Array of {{domxref("Animation")}} objects currently affecting an element or which are scheduled to do so in the future.
 
 ## Specifications
 

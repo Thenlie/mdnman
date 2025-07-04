@@ -13,17 +13,15 @@ Async generator methods always yield {{jsxref("Promise")}} objects.
 
 `AsyncGenerator` is a subclass of the hidden {{jsxref("AsyncIterator")}} class.
 
-{{EmbedInteractiveExample("pages/js/expressions-async-function-asterisk.html", "taller")}}
-
 ## Constructor
 
 There's no JavaScript entity that corresponds to the `AsyncGenerator` constructor. Instances of `AsyncGenerator` must be returned from [async generator functions](/en-US/docs/Web/JavaScript/Reference/Statements/async_function*):
 
 ```js
 async function* createAsyncGenerator() {
-  yield await Promise.resolve(1);
+  yield Promise.resolve(1);
   yield await Promise.resolve(2);
-  yield await Promise.resolve(3);
+  yield 3;
 }
 const asyncGen = createAsyncGenerator();
 asyncGen.next().then((res) => console.log(res.value)); // 1
@@ -38,10 +36,10 @@ There's only a hidden object which is the prototype object shared by all objects
 These properties are defined on `AsyncGenerator.prototype` and shared by all `AsyncGenerator` instances.
 
 - {{jsxref("Object/constructor", "AsyncGenerator.prototype.constructor")}}
-
   - : The constructor function that created the instance object. For `AsyncGenerator` instances, the initial value is [`AsyncGeneratorFunction.prototype`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGeneratorFunction).
 
-    > **Note:** `AsyncGenerator` objects do not store a reference to the async generator function that created them.
+    > [!NOTE]
+    > `AsyncGenerator` objects do not store a reference to the async generator function that created them.
 
 - `AsyncGenerator.prototype[Symbol.toStringTag]`
   - : The initial value of the [`[Symbol.toStringTag]`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag) property is the string `"AsyncGenerator"`. This property is used in {{jsxref("Object.prototype.toString()")}}.
@@ -67,7 +65,7 @@ The following example iterates over an async generator, logging values 1–6 to 
 // An async task. Pretend it's doing something more useful
 // in practice.
 function delayedValue(time, value) {
-  return new Promise((resolve /*, reject*/) => {
+  return new Promise((resolve /*, reject */) => {
     setTimeout(() => resolve(value), time);
   });
 }

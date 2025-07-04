@@ -16,10 +16,10 @@ The event is not cancelable.
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
-```js
-addEventListener("visibilitychange", (event) => {});
+```js-nolint
+addEventListener("visibilitychange", (event) => { })
 
-onvisibilitychange = (event) => {};
+onvisibilitychange = (event) => { }
 ```
 
 ## Event type
@@ -46,11 +46,9 @@ document.addEventListener("visibilitychange", () => {
   if (document.hidden) {
     playingOnHide = !audio.paused;
     audio.pause();
-  } else {
+  } else if (playingOnHide) {
     // Resume playing if audio was "playing on hide"
-    if (playingOnHide) {
-      audio.play();
-    }
+    audio.play();
   }
 });
 ```
@@ -82,4 +80,4 @@ document.onvisibilitychange = () => {
 - {{domxref("Document.visibilityState")}}
 - {{domxref("Document.hidden")}}
 - [Don't lose user and app state, use Page Visibility](https://www.igvita.com/2015/11/20/dont-lose-user-and-app-state-use-page-visibility/) explains in detail why you should use `visibilitychange`, not `beforeunload`/`unload`.
-- [Page Lifecycle API](https://developer.chrome.com/blog/page-lifecycle-api/) gives best-practices guidance on handling page lifecycle behavior in your web applications.
+- [Page Lifecycle API](https://developer.chrome.com/docs/web-platform/page-lifecycle-api) gives best-practices guidance on handling page lifecycle behavior in your web applications.

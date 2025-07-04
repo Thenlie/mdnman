@@ -1,13 +1,14 @@
 ---
-title: itemprop
-slug: Web/HTML/Global_attributes/itemprop
+title: HTML itemprop global attribute
+short-title: itemprop
+slug: Web/HTML/Reference/Global_attributes/itemprop
 page-type: html-attribute
 spec-urls: https://html.spec.whatwg.org/multipage/microdata.html#names:-the-itemprop-attribute
 ---
 
 {{HTMLSidebar("Global_attributes")}}
 
-The **`itemprop`** [global attribute](/en-US/docs/Web/HTML/Global_attributes) is used to add properties to an item. Every HTML element can have an `itemprop` attribute specified, and an `itemprop` consists of a name-value pair. Each name-value pair is called a **property**, and a group of one or more properties forms an **item**. Property values are either a string or a URL and can be associated with a very wide range of elements including {{HTMLElement("audio")}}, {{HTMLElement("embed")}}, {{HTMLElement("iframe")}}, {{HTMLElement("img")}}, {{HTMLElement("link")}}, {{HTMLElement("object")}}, {{HTMLElement("source")}}, {{HTMLElement("track")}}, and {{HTMLElement("video")}}.
+The **`itemprop`** [global attribute](/en-US/docs/Web/HTML/Reference/Global_attributes) is used to add properties to an item. Every HTML element can have an `itemprop` attribute specified, and an `itemprop` consists of a name-value pair. Each name-value pair is called a **property**, and a group of one or more properties forms an **item**. Property values are either a string or a URL and can be associated with a very wide range of elements including {{HTMLElement("audio")}}, {{HTMLElement("embed")}}, {{HTMLElement("iframe")}}, {{HTMLElement("img")}}, {{HTMLElement("link")}}, {{HTMLElement("object")}}, {{HTMLElement("source")}}, {{HTMLElement("track")}}, and {{HTMLElement("video")}}.
 
 ## Examples
 
@@ -67,7 +68,7 @@ The example below shows the source for a set of elements marked up with `itempro
 
 ## Properties
 
-Properties have values that are either a string or a URL. When a string value is a URL, it is expressed using the {{HTMLElement("a")}} element and its [`href`](/en-US/docs/Web/HTML/Element/a#href) attribute, the {{HTMLElement("img")}} element and its [`src`](/en-US/docs/Web/HTML/Element/img#src) attribute, or other elements that link to or embed external resources.
+Properties have values that are either a string or a URL. When a string value is a URL, it is expressed using the {{HTMLElement("a")}} element and its [`href`](/en-US/docs/Web/HTML/Reference/Elements/a#href) attribute, the {{HTMLElement("img")}} element and its [`src`](/en-US/docs/Web/HTML/Reference/Elements/img#src) attribute, or other elements that link to or embed external resources.
 
 ### Three properties with values that are strings
 
@@ -131,7 +132,7 @@ Similarly, for date- and time-related data, the time element and its datetime at
 </div>
 ```
 
-Properties can also be groups of name-value pairs, by putting the itemscope attribute on the element that declares the property. Each value is either a string or a group of name-value pairs (i.e. an item).
+Properties can also be groups of name-value pairs, by putting the itemscope attribute on the element that declares the property. Each value is either a string or a group of name-value pairs (i.e., an item).
 
 ### An outer item representing a person, and an inner one representing a band
 
@@ -276,52 +277,42 @@ A property is an unordered set of unique tokens that are case-sensitive and repr
 **Tokens** are either strings or URL's. An item is called a **typed item** if it is a URL. Otherwise, it is a string. Strings cannot contain a period or a colon (see below).
 
 1. If the item is a typed item it must be either:
-
    1. A defined property name, or
    2. A valid URL, which refers to the vocabulary definition, or
-   3. A valid URL that is used as a proprietary item property name (i.e. one not defined in a public specification), or
+   3. A valid URL that is used as a proprietary item property name (i.e., one not defined in a public specification), or
 
 2. If the item is not a typed item it must be:
-
-   1. A string that contains no "`.`" (U+002E FULL STOP) characters and no "`:`" characters (U+003A COLON) and is used as a proprietary item property name (again, one not defined in a public specification).
+   1. A string that contains no `.` (U+002E FULL STOP) characters and no `:` characters (U+003A COLON) and is used as a proprietary item property name (again, one not defined in a public specification).
 
 > [!NOTE]
 > The rules above disallow ":" characters in non-URL values because otherwise they could not be distinguished from URLs. Values with "." characters are reserved for future extensions. Space characters are disallowed because otherwise the values would be parsed as multiple tokens.
 
-## Values
+## Value
 
 The property value of a name-value pair is as given for the first matching case in the following list:
 
 - If the element has an `itemscope` attribute
-
   - The value is the **item** created by the element
 
 - If the element is a `meta` element
-
   - The value is the value of the element's `content` attribute
 
 - If the element is an `audio`, `embed`, `iframe`, `img`, `source`, `track`, or `video` element
-
-  - The value is the resulting URL string that results from parsing the value of the element's src attribute relative to the node document (part of the [Microdata DOM API](/en-US/docs/Web/HTML/Microdata)) of the element at the time the attribute is set
+  - The value is the resulting URL string that results from parsing the value of the element's src attribute relative to the node document (part of the [Microdata DOM API](/en-US/docs/Web/HTML/Guides/Microdata)) of the element at the time the attribute is set
 
 - If the element is an `a`, `area`, or `link` element
-
   - The value is the resulting URL string that results from parsing the value of the element's href attribute relative to the node document of the element at the time the attribute is set
 
 - If the element is an `object` element
-
   - The value is the resulting URL string that results from parsing the value of the element's data attribute relative to the node document of the element at the time the attribute is set
 
 - If the element is a `data` element
-
   - The value is the value of the element's value attribute
 
 - If the element is a `meter` element
-
   - The value is the value of the element's `value` attribute
 
 - If the element is a `time` element
-
   - The value is the element's `datetime` value
 
 Otherwise
@@ -429,10 +420,9 @@ This example uses microdata attributes to represent the following structured dat
 
 ## See also
 
-- [Other different global attributes](/en-US/docs/Web/HTML/Global_attributes)
+- [Other different global attributes](/en-US/docs/Web/HTML/Reference/Global_attributes)
 - Other microdata related global attributes:
-
-  - [`itemid`](/en-US/docs/Web/HTML/Global_attributes/itemid)
-  - [`itemref`](/en-US/docs/Web/HTML/Global_attributes/itemref)
-  - [`itemscope`](/en-US/docs/Web/HTML/Global_attributes/itemscope)
-  - [`itemtype`](/en-US/docs/Web/HTML/Global_attributes/itemtype)
+  - [`itemid`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemid)
+  - [`itemref`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemref)
+  - [`itemscope`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemscope)
+  - [`itemtype`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemtype)

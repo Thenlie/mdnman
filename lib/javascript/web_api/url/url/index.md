@@ -26,16 +26,16 @@ new URL(url, base)
     If `url` is a relative reference, `base` is required, and is used to resolve the final URL.
     If `url` is an absolute URL, a given `base` will not be used to create the resulting URL.
 - `base` {{optional_inline}}
-
   - : A string representing the base URL to use in cases where `url` is a relative reference.
     If not specified, it defaults to `undefined`.
 
-    When specify a `base` URL, the resolved URL is not simply a concatenation of `url` and `base`.
-    Relative references to the parent and current directory are resolved are relative to the current directory of the `base` URL, which includes path segments up until the last forward-slash, but not any after.
+    When a `base` is specified, the resolved URL is not simply a concatenation of `url` and `base`.
+    Relative references to the parent and current directory are resolved relative to the current directory of the `base` URL, which includes path segments up until the last forward-slash, but not any after.
     Relative references to the root are resolved relative to the base origin.
     For more information see [Resolving relative references to a URL](/en-US/docs/Web/API/URL_API/Resolving_relative_references).
 
-> **Note:** The `url` and `base` arguments will each be stringified from whatever value you pass, such as an {{domxref("HTMLAnchorElement")}} or {{domxref("HTMLAreaElement")}} element, just like with other Web APIs that accept a string.
+> [!NOTE]
+> The `url` and `base` arguments will each be stringified from whatever value you pass, such as an {{domxref("HTMLAnchorElement")}} or {{domxref("HTMLAreaElement")}} element, just like with other Web APIs that accept a string.
 > In particular, you can use an existing {{domxref("URL")}} object for either argument, and it will be stringified from the object's {{domxref("URL.href", "href")}} property.
 
 ### Exceptions
@@ -47,7 +47,8 @@ new URL(url, base)
 
 Here are some examples of using the constructor.
 
-> **Note:** [Resolving relative references to a URL](/en-US/docs/Web/API/URL_API/Resolving_relative_references) provides additional examples demonstrating how different `url` and `base` values are resolved to a final absolute URL.
+> [!NOTE]
+> [Resolving relative references to a URL](/en-US/docs/Web/API/URL_API/Resolving_relative_references) provides additional examples demonstrating how different `url` and `base` values are resolved to a final absolute URL.
 
 ```js
 // Base URLs:

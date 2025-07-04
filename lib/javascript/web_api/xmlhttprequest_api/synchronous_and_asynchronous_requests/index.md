@@ -48,7 +48,7 @@ In some cases, you must read many external files. This is a standard function wh
 
 ```js
 function xhrSuccess() {
-  this.callback.apply(this, this.arguments);
+  this.callback(...this.arguments);
 }
 
 function xhrError() {
@@ -127,7 +127,8 @@ Here, we're specifying a timeout of 2000 ms.
 
 ## Synchronous request
 
-> **Warning:** Synchronous XHR requests often cause hangs on the web, especially with poor network conditions or when the remote server is slow to respond. Synchronous XHR is now deprecated and should be avoided in favor of asynchronous requests.
+> [!WARNING]
+> Synchronous XHR requests often cause hangs on the web, especially with poor network conditions or when the remote server is slow to respond. Synchronous XHR is now deprecated and should be avoided in favor of asynchronous requests.
 
 All new XHR features such as `timeout` or `abort` are not allowed for synchronous XHR. Doing so will raise an `InvalidAccessError`.
 
@@ -153,28 +154,15 @@ The `if` statement checks the status code after the transaction is completed. If
 
 One of the few cases in which a synchronous request does not usually block execution is the use of {{domxref('XMLHttpRequest')}} within a [`Worker`](/en-US/docs/Web/API/Worker).
 
-**`example.html`** (the main page):
+**`example.js`** (script to be invoked on the main page):
 
-```html
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>MDN Example</title>
-    <script>
-      const worker = new Worker("myTask.js");
-      worker.onmessage = (event) => {
-        alert(`Worker said: ${event.data}`);
-      };
+```js
+const worker = new Worker("myTask.js");
+worker.onmessage = (event) => {
+  console.log(`Worker said: ${event.data}`);
+};
 
-      worker.postMessage("Hello");
-    </script>
-  </head>
-  <body>
-    …
-  </body>
-</html>
+worker.postMessage("Hello");
 ```
 
 **`myFile.txt`** (the target of the synchronous {{domxref('XMLHttpRequest')}} invocation):
@@ -196,7 +184,8 @@ self.onmessage = (event) => {
 };
 ```
 
-> **Note:** The effect is asynchronous, because of the use of the `Worker`.
+> [!NOTE]
+> The effect is asynchronous, because of the use of the `Worker`.
 
 This pattern can be useful, for example in order to interact with the server in the background, or to preload content. See [Using web workers](/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) for examples and details.
 

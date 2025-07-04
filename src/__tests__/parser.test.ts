@@ -12,7 +12,6 @@ import {
 import { getNamedSection, removeEmptySections } from '../parser/sections.js';
 import fs from 'fs';
 import mapHeader from './__fixtures__/map.header.json';
-import titleDescription from './__fixtures__/title.description.json';
 import spliceDescription from './__fixtures__/splice.description.json';
 import mapDocument from './__fixtures__/map.document.json';
 
@@ -225,7 +224,7 @@ describe('parser', () => {
         it('returns all text in the document up until the first `#`', () => {
             const strippedFile = stripHeader(htmlFile, false);
             const description = getHtmlDescription(strippedFile);
-            expect(description.trim()).toBe(titleDescription.description);
+            expect(description.trim()).toMatchSnapshot();
         });
     });
 

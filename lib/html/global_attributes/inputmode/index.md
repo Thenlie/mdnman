@@ -1,20 +1,21 @@
 ---
-title: inputmode
-slug: Web/HTML/Global_attributes/inputmode
+title: HTML inputmode global attribute
+short-title: inputmode
+slug: Web/HTML/Reference/Global_attributes/inputmode
 page-type: html-attribute
 browser-compat: html.global_attributes.inputmode
 ---
 
 {{HTMLSidebar("Global_attributes")}}
 
-The **`inputmode`** [global attribute](/en-US/docs/Web/HTML/Global_attributes) is an [enumerated](/en-US/docs/Glossary/Enumerated) attribute that hints at the type of data that might be entered by the user while editing the element or its contents.
+The **`inputmode`** [global attribute](/en-US/docs/Web/HTML/Reference/Global_attributes) is an [enumerated](/en-US/docs/Glossary/Enumerated) attribute that hints at the type of data that might be entered by the user while editing the element or its contents.
 This allows a browser to display an appropriate virtual keyboard.
 
-It is used primarily on {{HTMLElement("input")}} elements, but is usable on any element in [`contenteditable`](/en-US/docs/Web/HTML/Global_attributes#contenteditable) mode.
+It is used primarily on {{HTMLElement("input")}} elements, but is usable on any element in [`contenteditable`](/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable) mode.
 
-It's important to understand that the `inputmode` attribute doesn't cause any validity requirements to be enforced on input. To require that input conforms to a particular data type, choose an appropriate [`<input>`](/en-US/docs/Web/HTML/Element/input#input_types) element type. For specific guidance on choosing {{HTMLElement("input")}} types, see the [Values](#values) section.
+It's important to understand that the `inputmode` attribute doesn't cause any validity requirements to be enforced on input. To require that input conforms to a particular data type, choose an appropriate [`<input>`](/en-US/docs/Web/HTML/Reference/Elements/input#input_types) element type. For specific guidance on choosing {{HTMLElement("input")}} types, see the [Value](#value) section.
 
-## Values
+## Value
 
 The attribute can have any of the following values:
 
@@ -30,8 +31,8 @@ The attribute can have any of the following values:
   - : Numeric input keyboard, but only requires the digits 0–9.
     Devices may or may not show a minus key.
 - `tel`
-  - : A telephone keypad input, including the digits 0–9, the asterisk (<kbd>*</kbd>), and the pound (<kbd>#</kbd>) key.
-    Inputs that *require\* a telephone number should typically use `{{HTMLElement("input/tel", '&lt;input type="tel"&gt;')}}` instead.
+  - : A telephone keypad input, including the digits 0–9, the asterisk (<kbd>\*</kbd>), and the pound (<kbd>#</kbd>) key.
+    Inputs that _require_ a telephone number should typically use `{{HTMLElement("input/tel", '&lt;input type="tel"&gt;')}}` instead.
 - `search`
   - : A virtual keyboard optimized for search input.
     For instance, the [return/submit key](https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute) may be labeled "Search", along with possible other optimizations.
@@ -56,5 +57,5 @@ The attribute can have any of the following values:
 
 ## See also
 
-- All [global attributes](/en-US/docs/Web/HTML/Global_attributes).
-- [`enterkeyhint`](/en-US/docs/Web/HTML/Global_attributes/enterkeyhint) global attribute
+- All [global attributes](/en-US/docs/Web/HTML/Reference/Global_attributes).
+- [`enterkeyhint`](/en-US/docs/Web/HTML/Reference/Global_attributes/enterkeyhint) global attribute

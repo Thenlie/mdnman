@@ -2,12 +2,10 @@
 title: position-try
 slug: Web/CSS/position-try
 page-type: css-shorthand-property
-status:
-  - experimental
 browser-compat: css.properties.position-try
 ---
 
-{{CSSRef}}{{seecompattable}}
+{{CSSRef}}
 
 The **`position-try`** [CSS](/en-US/docs/Web/CSS) property is a shorthand that corresponds to the {{cssxref("position-try-order")}} and {{cssxref("position-try-fallbacks")}} properties.
 
@@ -168,11 +166,11 @@ The element appears below its anchor, even though it is initially positioned abo
 
 ## See also
 
-- {{cssxref("inset-area")}}
+- {{cssxref("position-area")}}
 - {{cssxref("position-try-fallbacks")}}
 - {{cssxref("position-try-order")}}
 - The {{cssxref("@position-try")}} at-rule
-- The [`<inset-area>`](/en-US/docs/Web/CSS/inset-area_value) value
+- The [`<position-area>`](/en-US/docs/Web/CSS/position-area_value) value
 - [CSS anchor positioning](/en-US/docs/Web/CSS/CSS_anchor_positioning) module
 - [Using CSS anchor positioning](/en-US/docs/Web/CSS/CSS_anchor_positioning/Using) guide
-- [Handling overflow: try fallbacks and conditional hiding](/en-US/docs/Web/CSS/CSS_anchor_positioning/Try_options_hiding) guide
+- [Fallback options and conditional hiding for overflow](/en-US/docs/Web/CSS/CSS_anchor_positioning/Try_options_hiding) guide

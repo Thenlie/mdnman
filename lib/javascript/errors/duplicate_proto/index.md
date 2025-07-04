@@ -41,17 +41,19 @@ const obj = { __proto__: {}, __proto__: { a: 1 } };
 const obj = { __proto__: { a: 1 } };
 
 // These syntaxes all create a property called "__proto__" and can coexist
-// They would overwrite each other and the the last one is actually used
+// They would overwrite each other and the last one is actually used
 const __proto__ = null;
 const obj2 = {
   ["__proto__"]: {},
   __proto__,
   __proto__() {},
-  get __proto__() {},
+  get __proto__() {
+    return 1;
+  },
 };
 ```
 
 ## See also
 
 - [Object initializer](/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
-- [Inheritance and the prototype chain](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+- [Inheritance and the prototype chain](/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain)

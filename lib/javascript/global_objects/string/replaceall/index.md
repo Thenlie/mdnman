@@ -1,5 +1,6 @@
 ---
 title: String.prototype.replaceAll()
+short-title: replaceAll()
 slug: Web/JavaScript/Reference/Global_Objects/String/replaceAll
 page-type: javascript-instance-method
 browser-compat: javascript.builtins.String.replaceAll
@@ -9,7 +10,19 @@ browser-compat: javascript.builtins.String.replaceAll
 
 The **`replaceAll()`** method of {{jsxref("String")}} values returns a new string with all matches of a `pattern` replaced by a `replacement`. The `pattern` can be a string or a {{jsxref("RegExp")}}, and the `replacement` can be a string or a function to be called for each match. The original string is left unchanged.
 
-{{EmbedInteractiveExample("pages/js/string-replaceall.html")}}
+{{InteractiveExample("JavaScript Demo: String.prototype.replaceAll()")}}
+
+```js interactive-example
+const paragraph = "I think Ruth's dog is cuter than your dog!";
+
+console.log(paragraph.replaceAll("dog", "monkey"));
+// Expected output: "I think Ruth's monkey is cuter than your monkey!"
+
+// Global flag required when calling replaceAll with regex
+const regex = /dog/gi;
+console.log(paragraph.replaceAll(regex, "ferret"));
+// Expected output: "I think Ruth's ferret is cuter than your ferret!"
+```
 
 ## Syntax
 
@@ -20,7 +33,6 @@ replaceAll(pattern, replacement)
 ### Parameters
 
 - `pattern`
-
   - : Can be a string or an object with a [`Symbol.replace`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/replace) method — the typical example being a [regular expression](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp). Any value that doesn't have the `Symbol.replace` method will be coerced to a string.
 
     If `pattern` [is a regex](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#special_handling_for_regexes), then it must have the global (`g`) flag set, or a {{jsxref("TypeError")}} is thrown.
@@ -41,7 +53,7 @@ A new string, with all matches of a pattern replaced by a replacement.
 
 This method does not mutate the string value it's called on. It returns a new string.
 
-Unlike [`replace()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), this method would replace all occurrences of a string, not just the first one. This is especially useful if the string is not statically known, as calling the [`RegExp()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/RegExp) constructor without escaping special characters may unintentionally change its semantics.
+Unlike [`replace()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), this method replaces all occurrences of a string, not just the first one. While it is also possible to use `replace()` with a global regex dynamically constructed with [`RegExp()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/RegExp) to replace all instances of a string, this can have unintended consequences if the string contains special characters that have meaning in regular expressions (which might happen if the replacement string comes from user input). While you can mitigate this case using {{jsxref("RegExp.escape()")}} to make the regular expression string into a literal pattern, it is better to just use `replaceAll()` and pass the string without converting it to a regex.
 
 ```js
 function unsafeRedactName(text, name) {
@@ -104,6 +116,8 @@ This will work:
 ## See also
 
 - [Polyfill of `String.prototype.replaceAll` in `core-js`](https://github.com/zloirock/core-js#ecmascript-string-and-regexp)
+- [es-shims polyfill of `String.prototype.replaceAll`](https://www.npmjs.com/package/string.prototype.replaceall)
+- [Regular expressions](/en-US/docs/Web/JavaScript/Guide/Regular_expressions) guide
 - {{jsxref("String.prototype.replace()")}}
 - {{jsxref("String.prototype.match()")}}
 - {{jsxref("RegExp.prototype.exec()")}}

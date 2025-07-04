@@ -15,12 +15,12 @@ This interface inherits from the {{domxref("ExtendableEvent")}} interface.
 
 ## Constructor
 
-- {{domxref("InstallEvent.InstallEvent", "InstallEvent()")}} {{Deprecated_Inline}} {{Non-standard_Inline}}
+- {{domxref("InstallEvent.InstallEvent", "InstallEvent()")}} {{experimental_inline}}
   - : Creates a new `InstallEvent` object.
 
 ## Instance properties
 
-_Inherits properties from its ancestor, {{domxref("Event")}}_.
+_Inherits properties from its parent, {{domxref("ExtendableEvent")}}_.
 
 ## Instance methods
 
@@ -59,16 +59,15 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
       .open(CURRENT_CACHES["prefetch"])
-      .then((cache) => {
-        return cache
-          .addAll(
-            urlsToPrefetch.map((urlToPrefetch) => {
-              return new Request(urlToPrefetch, { mode: "no-cors" });
-            }),
-          )
-          .then(() => {
-            console.log("All resources have been fetched and cached.");
-          });
+      .then((cache) =>
+        cache.addAll(
+          urlsToPrefetch.map(
+            (urlToPrefetch) => new Request(urlToPrefetch, { mode: "no-cors" }),
+          ),
+        ),
+      )
+      .then(() => {
+        console.log("All resources have been fetched and cached.");
       })
       .catch((error) => {
         console.error("Pre-fetching failed:", error);
@@ -76,6 +75,10 @@ self.addEventListener("install", (event) => {
   );
 });
 ```
+
+## Specifications
+
+{{Specifications}}
 
 ## Browser compatibility
 

@@ -32,11 +32,9 @@ cy: unset;
 The {{cssxref("length")}} and {{cssxref("percentage")}} values denote the vertical center of the circle or ellipse.
 
 - {{cssxref("length")}}
-
   - : As an absolute or relative length, it can be expressed in any unit allowed by the CSS {{cssxref("&lt;length&gt;")}} data type. Negative values are invalid.
 
 - {{cssxref("percentage")}}
-
   - : Percentages refer to the height of the current SVG viewport.
 
 ## Formal definition
@@ -135,5 +133,5 @@ In this case, the y-axis coordinates of the center of the circle and ellipse are
 - {{cssxref("stroke")}}
 - {{cssxref("paint-order")}}
 - {{cssxref("border-radius")}} shorthand property
-- {{cssxref("radial-gradient")}}
+- {{cssxref("gradient/radial-gradient", "radial-gradient")}}
 - {{cssxref("basic-shape")}} data type

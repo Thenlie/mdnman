@@ -1,5 +1,6 @@
 ---
 title: Math.hypot()
+short-title: hypot()
 slug: Web/JavaScript/Reference/Global_Objects/Math/hypot
 page-type: javascript-static-method
 browser-compat: javascript.builtins.Math.hypot
@@ -15,7 +16,21 @@ The **`Math.hypot()`** static method returns the square root of the sum of squar
 </math>
 <!-- prettier-ignore-end -->
 
-{{EmbedInteractiveExample("pages/js/math-hypot.html")}}
+{{InteractiveExample("JavaScript Demo: Math.hypot()")}}
+
+```js interactive-example
+console.log(Math.hypot(3, 4));
+// Expected output: 5
+
+console.log(Math.hypot(5, 12));
+// Expected output: 13
+
+console.log(Math.hypot(3, 4, 5));
+// Expected output: 7.0710678118654755
+
+console.log(Math.hypot(-5));
+// Expected output: 5
+```
 
 ## Syntax
 
@@ -41,7 +56,7 @@ Calculating the hypotenuse of a right triangle, or the magnitude of a complex nu
 
 This function makes this calculation easier and faster; you call `Math.hypot(v1, v2)`, or `Math.hypot(v1, /* …, */, vN)`.
 
-`Math.hypot` also avoids overflow/underflow problems if the magnitude of your numbers is very large. The largest number you can represent in JS is [`Number.MAX_VALUE`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE), which is around 10<sup>308</sup>. If your numbers are larger than about 10<sup>154</sup>, taking the square of them will result in Infinity. For example, `Math.sqrt(1e200*1e200 + 1e200*1e200) = Infinity`. If you use `hypot()` instead, you get a better answer: `Math.hypot(1e200, 1e200) = 1.4142...e+200` . This is also true with very small numbers. `Math.sqrt(1e-200*1e-200 + 1e-200*1e-200) = 0`, but `Math.hypot(1e-200, 1e-200) = 1.4142...e-200`.
+`Math.hypot` also avoids overflow/underflow problems if the magnitude of your numbers is very large. The largest number you can represent in JS is [`Number.MAX_VALUE`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE), which is around 10<sup>308</sup>. If your numbers are larger than about 10<sup>154</sup>, taking the square of them will result in Infinity. For example, `Math.sqrt(1e200*1e200 + 1e200*1e200) = Infinity`. If you use `hypot()` instead, you get a better answer: `Math.hypot(1e200, 1e200) = 1.4142...e+200`. This is also true with very small numbers. `Math.sqrt(1e-200*1e-200 + 1e-200*1e-200) = 0`, but `Math.hypot(1e-200, 1e-200) = 1.4142...e-200`.
 
 With one argument, `Math.hypot()` is equivalent to [`Math.abs()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs). [`Math.hypot.length`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length) is 2, which weakly signals that it's designed to handle at least two parameters.
 

@@ -1,5 +1,5 @@
 ---
-title: "StorageAccessHandle: getDirectory() property"
+title: "StorageAccessHandle: getDirectory() method"
 short-title: getDirectory()
 slug: Web/API/StorageAccessHandle/getDirectory
 page-type: web-api-instance-method
@@ -8,12 +8,13 @@ browser-compat: api.StorageAccessHandle.getDirectory
 
 {{APIRef("Storage Access API")}}
 
-> **Note:** See {{domxref("StorageManager.getDirectory()")}} to understand usage.
+> [!NOTE]
+> See {{domxref("StorageManager.getDirectory()")}} to understand usage.
 
 ## Syntax
 
 ```js-nolint
-handle.getDirectory()
+getDirectory()
 ```
 
 ### Parameters
@@ -45,7 +46,8 @@ document.requestStorageAccess({ getDirectory: true }).then(
 );
 ```
 
-> **Note:** See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
+> [!NOTE]
+> See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
 
 ## Specifications
 

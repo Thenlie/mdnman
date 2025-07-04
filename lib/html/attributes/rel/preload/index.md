@@ -1,13 +1,13 @@
 ---
 title: rel=preload
-slug: Web/HTML/Attributes/rel/preload
+slug: Web/HTML/Reference/Attributes/rel/preload
 page-type: html-attribute-value
 browser-compat: html.elements.link.rel.preload
 ---
 
 {{HTMLSidebar}}
 
-The `preload` value of the {{htmlelement("link")}} element's [`rel`](/en-US/docs/Web/HTML/Element/link#rel) attribute lets you declare fetch requests in the
+The `preload` value of the {{htmlelement("link")}} element's [`rel`](/en-US/docs/Web/HTML/Reference/Elements/link#rel) attribute lets you declare fetch requests in the
 HTML's {{htmlelement("head")}}, specifying resources that your page will need very soon, which you want to start loading early in the page lifecycle,
 before browsers' main rendering machinery kicks in. This ensures they are available earlier and are less likely to block the page's render, improving performance. Even though the name contains the term _load_, it doesn't load and execute the script but only schedules it to be downloaded and cached with a higher priority.
 
@@ -21,10 +21,10 @@ You most commonly use `<link>` to load a CSS file to style your page with:
 
 Here however, we will use a `rel` value of `preload`, which turns `<link>` into a preloader for any resource we want. You will also need to specify:
 
-- The path to the resource in the [`href`](/en-US/docs/Web/HTML/Element/link#href) attribute.
-- The type of resource in the [`as`](/en-US/docs/Web/HTML/Element/link#as) attribute.
+- The path to the resource in the [`href`](/en-US/docs/Web/HTML/Reference/Elements/link#href) attribute.
+- The type of resource in the [`as`](/en-US/docs/Web/HTML/Reference/Elements/link#as) attribute.
 
-A simple example might look like this (see our [JS and CSS example source](https://github.com/mdn/html-examples/tree/main/link-rel-preload/js-and-css), and [also live](https://mdn.github.io/html-examples/link-rel-preload/js-and-css/)):
+An example might look like this (see our [JS and CSS example source](https://github.com/mdn/html-examples/tree/main/link-rel-preload/js-and-css), and [also live](https://mdn.github.io/html-examples/link-rel-preload/js-and-css/)):
 
 ```html
 <head>
@@ -53,7 +53,7 @@ Here we preload our CSS and JavaScript files so they will be available as soon a
 `preload` has other advantages too. Using `as` to specify the type of content to be preloaded allows the browser to:
 
 - Store in the cache for future requests, reusing the resource if appropriate.
-- Apply the correct [content security policy](/en-US/docs/Web/HTTP/CSP) to the resource.
+- Apply the correct [content security policy](/en-US/docs/Web/HTTP/Guides/CSP) to the resource.
 - Set the correct {{HTTPHeader("Accept")}} request headers for it.
 
 ### What types of content can be preloaded?
@@ -67,14 +67,15 @@ Many content types can be preloaded. The possible `as` attribute values are:
 - `style`: CSS stylesheet.
 - `track`: WebVTT file.
 
-> **Note:** `font` and `fetch` preloading requires the `crossorigin` attribute to be set; see [CORS-enabled fetches](#cors-enabled_fetches) below.
+> [!NOTE]
+> `font` and `fetch` preloading requires the `crossorigin` attribute to be set; see [CORS-enabled fetches](#cors-enabled_fetches) below.
 
 > [!NOTE]
 > There's more detail about these values and the web features they expect to be consumed by in the HTML spec — see [Link type "preload"](https://html.spec.whatwg.org/#match-preload-type). Also note that the full list of values the `as` attribute can take is governed by the Fetch spec — see [request destinations](https://fetch.spec.whatwg.org/#concept-request-destination).
 
 ## Including a MIME type
 
-`<link>` elements can accept a [`type`](/en-US/docs/Web/HTML/Element/link#type) attribute, which contains the MIME type of the resource the element points to. This is especially useful when preloading resources — the browser will use the `type` attribute value to work out if it supports that resource, and will only download it if so, ignoring it if not.
+`<link>` elements can accept a [`type`](/en-US/docs/Web/HTML/Reference/Elements/link#type) attribute, which contains the MIME type of the resource the element points to. This is especially useful when preloading resources — the browser will use the `type` attribute value to work out if it supports that resource, and will only download it if so, ignoring it if not.
 
 ```html
 <head>
@@ -102,7 +103,7 @@ However, the lack of preloading doesn't prevent the `image/webp` image from actu
 
 ## CORS-enabled fetches
 
-When preloading resources that are fetched with [CORS](/en-US/docs/Web/HTTP/CORS) enabled (e.g. [`fetch()`](/en-US/docs/Web/API/Window/fetch), [`XMLHttpRequest`](/en-US/docs/Web/API/XMLHttpRequest) or [fonts](/en-US/docs/Web/CSS/@font-face)), special care needs to be taken to setting the [`crossorigin`](/en-US/docs/Web/HTML/Element/link#crossorigin) attribute on your [`<link>`](/en-US/docs/Web/HTML/Element/link) element. The attribute needs to be set to match the resource's CORS and credentials mode, even when the fetch is not cross-origin.
+When preloading resources that are fetched with [CORS](/en-US/docs/Web/HTTP/Guides/CORS) enabled (e.g., [`fetch()`](/en-US/docs/Web/API/Window/fetch), [`XMLHttpRequest`](/en-US/docs/Web/API/XMLHttpRequest) or [fonts](/en-US/docs/Web/CSS/@font-face)), special care needs to be taken to setting the [`crossorigin`](/en-US/docs/Web/HTML/Reference/Elements/link#crossorigin) attribute on your [`<link>`](/en-US/docs/Web/HTML/Reference/Elements/link) element. The attribute needs to be set to match the resource's CORS and credentials mode, even when the fetch is not cross-origin.
 
 As mentioned above, one interesting case where this applies is font files. Because of various reasons, these have to be fetched using anonymous-mode CORS (see [Font fetching requirements](https://drafts.csswg.org/css-fonts/#font-fetching-requirements)).
 
@@ -137,7 +138,7 @@ Not only are we providing the MIME type hints in the `type` attributes, but we a
 
 ## Including media
 
-One nice feature of `<link>` elements is their ability to accept [`media`](/en-US/docs/Web/HTML/Element/link#media) attributes. These can accept [media types](/en-US/docs/Web/CSS/@media#media_types) or full-blown [media queries](/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries), allowing you to do responsive preloading!
+One nice feature of `<link>` elements is their ability to accept [`media`](/en-US/docs/Web/HTML/Reference/Elements/link#media) attributes. These can accept [media types](/en-US/docs/Web/CSS/@media#media_types) or full-blown [media queries](/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries), allowing you to do responsive preloading!
 
 Let's look at an example (see it on GitHub — [source code](https://github.com/mdn/html-examples/tree/main/link-rel-preload/media), [live example](https://mdn.github.io/html-examples/link-rel-preload/media/)):
 
@@ -150,12 +151,12 @@ Let's look at an example (see it on GitHub — [source code](https://github.com/
     rel="preload"
     href="bg-image-narrow.png"
     as="image"
-    media="(max-width: 600px)" />
+    media="(width <= 600px)" />
   <link
     rel="preload"
     href="bg-image-wide.png"
     as="image"
-    media="(min-width: 601px)" />
+    media="(width > 600px)" />
 
   <link rel="stylesheet" href="main.css" />
 </head>
@@ -165,7 +166,7 @@ Let's look at an example (see it on GitHub — [source code](https://github.com/
   </header>
 
   <script>
-    const mediaQueryList = window.matchMedia("(max-width: 600px)");
+    const mediaQueryList = window.matchMedia("(width <= 600px)");
     const header = document.querySelector("header");
 
     if (mediaQueryList.matches) {
@@ -181,12 +182,12 @@ We include `media` attributes on our `<link>` elements so that a narrow image is
 
 This makes it much more likely that the font will be available for the page render, cutting down on FOUT (flash of unstyled text).
 
-This doesn't have to be limited to images, or even files of the same type — think big! You could perhaps preload and display a simple SVG diagram if the user is on a narrow screen where bandwidth and CPU is potentially more limited, or preload a complex chunk of JavaScript then use it to render an interactive 3D model if the user's resources are more plentiful.
+This doesn't have to be limited to images, or even files of the same type — think big! You could perhaps preload and display a simplified SVG diagram if the user is on a narrow screen where bandwidth and CPU is potentially more limited, or preload a complex chunk of JavaScript then use it to render an interactive 3D model if the user's resources are more plentiful.
 
 ## Scripting and preloads
 
 > [!NOTE]
-> Use [`<link rel="modulepreload">`](/en-US/docs/Web/HTML/Attributes/rel/modulepreload) instead if you are working with [JavaScript modules](/en-US/docs/Web/JavaScript/Guide/Modules).
+> Use [`<link rel="modulepreload">`](/en-US/docs/Web/HTML/Reference/Attributes/rel/modulepreload) instead if you are working with [JavaScript modules](/en-US/docs/Web/JavaScript/Guide/Modules).
 
 Another nice thing about these preloads is that you can execute them with script.
 For example, here we create a {{domxref("HTMLLinkElement")}} instance, then attach it to the DOM:
@@ -219,5 +220,5 @@ This is useful when you want to preload a script, but then defer execution until
 
 ## See also
 
-- [Speculative loading](/en-US/docs/Web/Performance/Speculative_loading) for a comparison of `<link rel="preload">` and other similar performance improvement features.
+- [Speculative loading](/en-US/docs/Web/Performance/Guides/Speculative_loading) for a comparison of `<link rel="preload">` and other similar performance improvement features.
 - [Preload: What Is It Good For?](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/) by Yoav Weiss

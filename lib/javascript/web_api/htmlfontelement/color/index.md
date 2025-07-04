@@ -12,7 +12,7 @@ browser-compat: api.HTMLFontElement.color
 
 The obsolete
 **`HTMLFontElement.color`**
-property is a string that reflects the [`color`](/en-US/docs/Web/HTML/Element/font#color) HTML attribute, containing either a named color or a color specified in the
+property is a string that reflects the [`color`](/en-US/docs/Web/HTML/Reference/Elements/font#color) HTML attribute, containing either a named color or a color specified in the
 hexadecimal #RRGGBB format.
 
 The format of the string must follow one of the following HTML microsyntaxes (see [`<color>`](/en-US/docs/Web/CSS/color_value)):
@@ -21,7 +21,7 @@ The format of the string must follow one of the following HTML microsyntaxes (se
 | ------------------------ | -------------------------------- | ------------------------- |
 | Valid name color string  | _nameOfColor (case insensitive)_ | `Green`, `green`, `GREEN` |
 | Valid hex color string   | _#RRGGBB_                        | `#008000`                 |
-| RGB using decimal values | _rgb(x,x,x) (x in 0-255 range)_  | `rgb(0 128 0)`            |
+| RGB using decimal values | _rgb(x x x) (x in 0-255 range)_  | `rgb(0 128 0)`            |
 
 ## Value
 
@@ -40,7 +40,7 @@ f.color = "green";
 
 ## Specifications
 
-The `<font>` element has been deprecated and is no longer supported and, as a result, neither is `<font>.color`.
+{{Specifications}}
 
 ## Browser compatibility
 

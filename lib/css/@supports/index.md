@@ -7,34 +7,58 @@ browser-compat: css.at-rules.supports
 
 {{CSSRef}}
 
-The **`@supports`** [CSS](/en-US/docs/Web/CSS) [at-rule](/en-US/docs/Web/CSS/At-rule) lets you specify CSS declarations that depend on a browser's support for CSS features.
+The **`@supports`** [CSS](/en-US/docs/Web/CSS) [at-rule](/en-US/docs/Web/CSS/CSS_syntax/At-rule) lets you specify CSS declarations that depend on a browser's support for CSS features.
 Using this at-rule is commonly called a _feature query_.
 The rule must be placed at the top level of your code or nested inside any other conditional group at-rule.
 
-{{EmbedInteractiveExample("pages/tabbed/at-rule-supports.html", "tabbed-standard")}}
+{{InteractiveExample("CSS Demo: @supports", "tabbed-standard")}}
+
+```css interactive-example
+.flex-container > * {
+  padding: 0.3em;
+  list-style-type: none;
+  text-shadow: 0 0 2px red;
+  float: left;
+}
+
+@supports (display: flex) {
+  .flex-container > * {
+    text-shadow: 0 0 2px blue;
+    float: none;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+}
+```
+
+```html interactive-example
+<ul class="flex-container">
+  <li><a href="#">Index</a></li>
+  <li><a href="#">About me</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+```
 
 In JavaScript, `@supports` can be accessed via the CSS object model interface {{DOMxRef("CSSSupportsRule")}}.
 
 ## Syntax
 
-The `@supports` at-rule consists of a block of statements with a _supports condition._
-The supports condition is a set of one or more name-value pairs (e.g., `<property>: <value>`).
-
 ```css
 @supports (<supports-condition>) {
   /* If the condition is true, use the CSS in this block. */
 }
-```
 
-The conditions can be combined by conjunctions (`and`), disjunctions (`or`), and/or negations (`not`).
-
-```css
 @supports (<supports-condition>) and (<supports-condition>) {
   /* If both conditions are true, use the CSS in this block. */
 }
 ```
 
+The `@supports` at-rule consists of a block of statements with a _supports condition._
+The conditions can be combined by conjunctions (`and`), disjunctions (`or`), and/or negations (`not`).
 The precedence of operators can be defined with parentheses.
+
 Supports conditions can use either a `<property>: <value>` declaration syntax or a `<function()>` syntax.
 The following sections describe the use of each type of supports condition.
 
@@ -87,7 +111,7 @@ The table below describes the font technologies (`<font-tech>`), including color
 | **`<font-features-tech>`**     |                                                                                               |
 | `features-opentype`            | OpenType `GSUB` and `GPOS` tables                                                             |
 | `features-aat`                 | TrueType `morx` and `kerx` tables                                                             |
-| `features-graphite`            | Graphite features, namely `Silf`, `Glat` , `Gloc` , `Feat`, and `Sill` tables                 |
+| `features-graphite`            | Graphite features, namely `Silf`, `Glat`, `Gloc`, `Feat`, and `Sill` tables                   |
 | **Other `<font-tech>` values** |                                                                                               |
 | `incremental-patch`            | Incremental font loading using the patch subset method                                        |
 | `incremental-range`            | Incremental font loading using the range request method                                       |
@@ -137,7 +161,8 @@ The following examples are both valid:
 }
 ```
 
-> **Note:** There is no need to enclose the `not` operator between two parentheses at the top level.
+> [!NOTE]
+> There is no need to enclose the `not` operator between two parentheses at the top level.
 > To combine it with other operators, like `and` and `or`, the parentheses are required.
 
 ### The and operator
@@ -171,12 +196,20 @@ The `or` operator creates a new expression from the disjunction of two shorter e
 Multiple disjunctions can be juxtaposed without the need of more parentheses. The following are both equivalent:
 
 ```css
-@supports (transform-style: preserve) or (-moz-transform-style: preserve) or (-webkit-transform-style: preserve) {}
+@supports (transform-style: preserve) or (-moz-transform-style: preserve) or
+  (-webkit-transform-style: preserve) {
+}
 
-@supports (transform-style: preserve-3d) or ((-moz-transform-style: preserve-3d) or (-webkit-transform-style: preserve-3d))) {}
+@supports (transform-style: preserve-3d) or
+  (
+    (-moz-transform-style: preserve-3d) or
+      (-webkit-transform-style: preserve-3d)
+  ) {
+}
 ```
 
-> **Note:** When using both `and` and `or` operators, the parentheses must be used to define the order in which they apply. Otherwise, the condition is invalid and the whole rule is ignored.
+> [!NOTE]
+> When using both `and` and `or` operators, the parentheses must be used to define the order in which they apply. Otherwise, the condition is invalid and the whole rule is ignored.
 
 ## Formal syntax
 
@@ -288,4 +321,6 @@ The following example applies the CSS style if the browser supports the `woff2` 
 ## See also
 
 - [Using feature queries](/en-US/docs/Web/CSS/CSS_conditional_rules/Using_feature_queries)
-- The CSSOM class {{DOMxRef("CSSSupportsRule")}}, and the {{DOMxref("CSS.supports_static", "CSS.supports()")}} method that allows the same check to be performed via JavaScript.
+- [CSS at-rule functions](/en-US/docs/Web/CSS/CSS_syntax/At-rule_functions)
+- {{DOMxRef("CSSSupportsRule")}}
+- {{DOMxref("CSS.supports_static", "CSS.supports()")}} method

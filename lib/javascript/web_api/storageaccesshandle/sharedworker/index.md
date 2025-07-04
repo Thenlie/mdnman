@@ -1,5 +1,5 @@
 ---
-title: "StorageAccessHandle: SharedWorker() property"
+title: "StorageAccessHandle: SharedWorker() method"
 short-title: SharedWorker()
 slug: Web/API/StorageAccessHandle/SharedWorker
 page-type: web-api-instance-method
@@ -8,14 +8,15 @@ browser-compat: api.StorageAccessHandle.SharedWorker
 
 {{APIRef("Storage Access API")}}
 
-> **Note:** See {{domxref("SharedWorker.SharedWorker", "SharedWorker()")}} to understand usage.
+> [!NOTE]
+> See {{domxref("SharedWorker.SharedWorker", "SharedWorker()")}} to understand usage.
 
 ## Syntax
 
 ```js-nolint
-handle.SharedWorker(aURL)
-handle.SharedWorker(aURL, name)
-handle.SharedWorker(aURL, options)
+SharedWorker(aURL)
+SharedWorker(aURL, name)
+SharedWorker(aURL, options)
 ```
 
 ### Parameters
@@ -27,7 +28,8 @@ handle.SharedWorker(aURL, options)
 - `options` {{optional_inline}}
   - : See {{domxref("SharedWorker.SharedWorker", "SharedWorker()")}}.
 
-> **Note:** `options.sameSiteCookies` only supports the value "none", which is the default.
+> [!NOTE]
+> `options.sameSiteCookies` only supports the value "none", which is the default.
 
 ### Return value
 
@@ -54,7 +56,8 @@ document.requestStorageAccess({ SharedWorker: true }).then(
 );
 ```
 
-> **Note:** See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
+> [!NOTE]
+> See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
 
 ## Specifications
 

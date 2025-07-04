@@ -1,16 +1,17 @@
 ---
-title: autocapitalize
-slug: Web/HTML/Global_attributes/autocapitalize
+title: HTML autocapitalize global attribute
+short-title: autocapitalize
+slug: Web/HTML/Reference/Global_attributes/autocapitalize
 page-type: html-attribute
 browser-compat: html.global_attributes.autocapitalize
 ---
 
 {{HTMLSidebar("Global_attributes")}}
 
-The **`autocapitalize`** [global attribute](/en-US/docs/Web/HTML/Global_attributes) is an [enumerated](/en-US/docs/Glossary/Enumerated) attribute that controls whether inputted text is automatically capitalized and, if so, in what manner. This is relevant to:
+The **`autocapitalize`** [global attribute](/en-US/docs/Web/HTML/Reference/Global_attributes) is an [enumerated](/en-US/docs/Glossary/Enumerated) attribute that controls whether inputted text is automatically capitalized and, if so, in what manner. This is relevant to:
 
 - {{htmlelement("input")}} and {{htmlelement("textarea")}} elements.
-- Any element with [`contenteditable`](/en-US/docs/Web/HTML/Global_attributes/contenteditable) set on it.
+- Any element with [`contenteditable`](/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable) set on it.
 
 `autocapitalize` doesn't affect behavior when typing on a physical keyboard. It affects the behavior of other input mechanisms such as virtual keyboards on mobile devices and voice input. This can assist users by making data entry quicker and easier, for example by automatically capitalizing the first letter of each sentence.
 

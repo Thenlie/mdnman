@@ -1,17 +1,18 @@
 ---
-title: exportparts
-slug: Web/HTML/Global_attributes/exportparts
+title: HTML exportparts global attribute
+short-title: exportparts
+slug: Web/HTML/Reference/Global_attributes/exportparts
 page-type: html-attribute
 browser-compat: html.global_attributes.exportparts
 ---
 
 {{HTMLSidebar("Global_attributes")}}
 
-The **`exportparts`** [global attribute](/en-US/docs/Web/HTML/Global_attributes) allows you to select and style elements existing in nested {{Glossary("shadow tree", "shadow trees")}}, by exporting their `part` names.
+The **`exportparts`** [global attribute](/en-US/docs/Web/HTML/Reference/Global_attributes) allows you to select and style elements existing in nested {{Glossary("shadow tree", "shadow trees")}}, by exporting their `part` names.
 
 The shadow tree is an isolated structure where identifiers, classes, and styles cannot be reached by selectors or queries belonging to a regular DOM. There are two HTML attributes that can be applied to shadow tree elements that enable targeting CSS styles from outside to shadow tree: `part` and `exportparts`.
 
-The global [`part`](/en-US/docs/Web/HTML/Global_attributes#part) attribute makes a shadow tree element visible to its parent DOM. A `part` name is used as the parameter of the {{CSSxRef("::part", "::part()")}} pseudo-element. In this way, you can apply CSS styles to elements in the shadow tree from outside of it. However, the `::part()` pseudo-element is only visible to the parent DOM. This means that when a shadow tree is nested, the parts are not visible to any ancestors other than the direct parent. The `exportparts` attribute solves this limitation.
+The global [`part`](/en-US/docs/Web/HTML/Reference/Global_attributes/part) attribute makes a shadow tree element visible to its parent DOM. A `part` name is used as the parameter of the {{CSSxRef("::part", "::part()")}} pseudo-element. In this way, you can apply CSS styles to elements in the shadow tree from outside of it. However, the `::part()` pseudo-element is only visible to the parent DOM. This means that when a shadow tree is nested, the parts are not visible to any ancestors other than the direct parent. The `exportparts` attribute solves this limitation.
 
 The `exportparts` attribute enables shadow tree parts to be visible outside the shadow DOM. This concept is referred to as "exporting". The `exportparts` attribute is placed on the element's _shadow host_, which is the element to which the _shadow tree_ is attached. The value of this attribute is a comma-separated list of `part` names present in the shadow tree. These names are made available to the DOMs outside the current structure.
 
@@ -100,7 +101,7 @@ We style parts of the `<card-component>` shadow tree using the {{cssxref("::part
 
 ### Nested component
 
-Continuing the above `<card-component>` example, we create a nested component by wrapping the `<card-component>` within another component; in this case, the `<card-wrapper>` component. We then export the parts from the nested component that we want to make styleable from outside the component's shadow tree with the `exportparts` attribute.
+Continuing the above `<card-component>` example, we create a nested component by wrapping the `<card-component>` within another component; in this case, the `<card-wrapper>` component. We then export the parts from the nested component that we want to make stylable from outside the component's shadow tree with the `exportparts` attribute.
 
 #### HTML
 
@@ -250,8 +251,8 @@ We update the prior `<card-wrapper>` custom element with the remapping syntax (o
 <template id="card-wrapper">
   <card-component
     exportparts="
-       base:card__base, 
-       header:card__header, 
+       base:card__base,
+       header:card__header,
        footer:card__footer
      ">
     <span slot="header_slot"><slot name="H"></slot></span>
@@ -299,7 +300,7 @@ customElements.define(
 
 #### CSS
 
-In targetting the parts of the `<card-component>` from within the `<card-wrapper>`, we can only style the exported parts via their exposed part names:
+In targeting the parts of the `<card-component>` from within the `<card-wrapper>`, we can only style the exported parts via their exposed part names:
 
 ```css
 /* selects the exported parts name */
@@ -327,7 +328,7 @@ In targetting the parts of the `<card-component>` from within the `<card-wrapper
 
 ## See also
 
-- [`part`](/en-US/docs/Web/HTML/Global_attributes/part) HTML attribute
+- [`part`](/en-US/docs/Web/HTML/Reference/Global_attributes/part) HTML attribute
 - {{HTMLElement("template")}} and {{HTMLElement("slot")}} HTML elements
 - {{CSSXref("::part")}} and {{CSSXref("::slotted")}} pseudo-elements
 - {{CSSXref(":host")}} pseudo-class

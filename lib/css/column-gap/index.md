@@ -13,7 +13,51 @@ Initially a part of [Multi-column Layout](/en-US/docs/Web/CSS/CSS_multicol_layou
 
 Early versions of the specification called this property `grid-column-gap`, and to maintain compatibility with legacy websites, browsers will still accept `grid-column-gap` as an alias for `column-gap`.
 
-{{EmbedInteractiveExample("pages/css/column-gap.html")}}
+{{InteractiveExample("CSS Demo: column-gap")}}
+
+```css interactive-example-choice
+column-gap: 0;
+```
+
+```css interactive-example-choice
+column-gap: 10%;
+```
+
+```css interactive-example-choice
+column-gap: 1em;
+```
+
+```css interactive-example-choice
+column-gap: 20px;
+```
+
+```html interactive-example
+<section class="default-example" id="default-example">
+  <div class="example-container">
+    <div class="transition-all" id="example-element">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div>Five</div>
+    </div>
+  </div>
+</section>
+```
+
+```css interactive-example
+#example-element {
+  border: 1px solid #c5c5c5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 200px;
+}
+
+#example-element > div {
+  background-color: rgb(0 0 255 / 0.2);
+  border: 3px solid blue;
+}
+```
 
 ## Syntax
 
@@ -104,7 +148,8 @@ div:nth-of-type(3n) {
 
 {{EmbedLiveSample("Flex_layout", "auto", "220px")}}
 
-> **Note:** While there is horizontal space between adjacent flex items in each flex row, there is no space between the rows. To set vertical space between flex rows, you can specify a non-zero value for the {{cssxref("row-gap")}} property. The {{cssxref("gap")}} shorthand property is also available to set both the `row-gap` and `column-gap` in one declaration, in that order.
+> [!NOTE]
+> While there is horizontal space between adjacent flex items in each flex row, there is no space between the rows. To set vertical space between flex rows, you can specify a non-zero value for the {{cssxref("row-gap")}} property. The {{cssxref("gap")}} shorthand property is also available to set both the `row-gap` and `column-gap` in one declaration, in that order.
 
 ### Grid layout
 

@@ -21,7 +21,8 @@ That way, the offer contains all of the candidates.
 A boolean value that is `true` if the remote peer can accept trickled ICE candidates and `false` if it cannot.
 If no remote peer has been established, this value is `null`.
 
-> **Note:** This property's value is determined once the local peer has called {{domxref("RTCPeerConnection.setRemoteDescription()")}};
+> [!NOTE]
+> This property's value is determined once the local peer has called {{domxref("RTCPeerConnection.setRemoteDescription()")}};
 > the provided description is used by the ICE agent to determine whether or not the remote peer supports trickled ICE candidates.
 
 ## Examples
@@ -48,7 +49,7 @@ async function newPeer(remoteOffer) {
   await pc.setLocalDescription(offer);
   if (pc.canTrickleIceCandidates) return pc.localDescription;
   const answer = await waitToCompleteIceGathering(pc);
-  sendAnswerToPeer(answer); //To peer via signaling channel
+  sendAnswerToPeer(answer); // To peer via signaling channel
 }
 // Handle error with try/catch
 

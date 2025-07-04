@@ -1,6 +1,7 @@
 ---
 title: "HTML attribute: placeholder"
-slug: Web/HTML/Attributes/placeholder
+short-title: placeholder
+slug: Web/HTML/Reference/Attributes/placeholder
 page-type: html-attribute
 browser-compat:
   - html.elements.input.placeholder
@@ -16,7 +17,7 @@ Effective placeholder text includes a word or short phrase that hints at the exp
 The `placeholder` attribute is supported by the following input types: `{{HTMLElement("input/text", "text")}}`, `{{HTMLElement("input/search", "search")}}`, `{{HTMLElement("input/url", "url")}}`, `{{HTMLElement("input/tel", "tel")}}`, `{{HTMLElement("input/email", "email")}}`, and `{{HTMLElement("input/password", "password")}}`. It is also supported by the `{{HTMLElement("textarea")}}` element. The [example](#example) below shows the `placeholder` attribute in use to explain the expected format of an input field.
 
 > [!NOTE]
-> The `placeholder` attribute can't include any line feeds (LF) or carriage returns (CR). If either is included in the value, the placeholder text will be clipped.
+> Except in `{{HTMLElement("textarea")}}` elements, the `placeholder` attribute can't include any line feeds (LF) or carriage returns (CR). If either is included in the value, the placeholder text will be clipped.
 
 ## Accessibility concerns
 
@@ -31,7 +32,7 @@ Placeholders can not be relied upon as a replacement for a label even for those 
 ### HTML
 
 ```html
-<form action="/en-US/docs/Web/HTML/Attributes/placeholder">
+<form action="/en-US/docs/Web/HTML/Reference/Attributes/placeholder">
   <label for="name">Enter your name:</label>
   <input type="text" id="name" name="name" placeholder="e.g. Mike Shinoda" />
   <button type="submit">Submit</button>
@@ -52,6 +53,6 @@ Placeholders can not be relied upon as a replacement for a label even for those 
 
 ## See also
 
-- HTML [`title`](/en-US/docs/Web/HTML/Global_attributes/title)
+- HTML [`title`](/en-US/docs/Web/HTML/Reference/Global_attributes/title)
 - CSS [`:placeholder-shown`](/en-US/docs/Web/CSS/:placeholder-shown) pseudo-class selector
 - CSS [`::placeholder`](/en-US/docs/Web/CSS/::placeholder) pseudo-element selector

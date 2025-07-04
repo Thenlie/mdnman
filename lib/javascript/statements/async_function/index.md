@@ -11,7 +11,26 @@ The **`async function`** declaration creates a {{Glossary("binding")}} of a new 
 
 You can also define async functions using the [`async function` expression](/en-US/docs/Web/JavaScript/Reference/Operators/async_function).
 
-{{EmbedInteractiveExample("pages/js/statement-async.html", "taller")}}
+{{InteractiveExample("JavaScript Demo: async function declaration", "taller")}}
+
+```js interactive-example
+function resolveAfter2Seconds() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("resolved");
+    }, 2000);
+  });
+}
+
+async function asyncCall() {
+  console.log("calling");
+  const result = await resolveAfter2Seconds();
+  console.log(result);
+  // Expected output: "resolved"
+}
+
+asyncCall();
+```
 
 ## Syntax
 
@@ -48,7 +67,7 @@ Async functions can contain zero or more {{jsxref("Operators/await", "await")}} 
 
 > [!NOTE]
 > The `await` keyword is only valid inside async functions within regular JavaScript code. If you use it outside of an async function's body, you will get a {{jsxref("SyntaxError")}}.
-> 
+>
 > `await` can be used on its own with [JavaScript modules.](/en-US/docs/Web/JavaScript/Guide/Modules)
 
 > [!NOTE]
@@ -166,7 +185,9 @@ control returns from `p1`.
 ```js
 async function foo() {
   const p1 = new Promise((resolve) => setTimeout(() => resolve("1"), 1000));
-  const p2 = new Promise((_, reject) => setTimeout(() => reject("2"), 500));
+  const p2 = new Promise((_, reject) =>
+    setTimeout(() => reject(new Error("failed")), 500),
+  );
   const results = [await p1, await p2]; // Do not do this! Use Promise.all or Promise.allSettled instead.
 }
 foo().catch(() => {}); // Attempt to swallow all errors...
@@ -275,7 +296,7 @@ after 3 seconds.
 
 In `sequentialWait`, both timers are created and then `await`ed.
 The timers run concurrently, which means the code finishes in 2 rather than 3 seconds,
-i.e. the slowest timer.
+i.e., the slowest timer.
 However, the `await` calls still run in series, which means the second
 `await` will wait for the first one to finish. In this case, the result of
 the fastest timer is processed after the slowest.
@@ -286,11 +307,11 @@ to {{jsxref("Promise.all()")}} or {{jsxref("Promise.allSettled()")}} before that
 > [!WARNING]
 > The functions `sequentialWait` and `concurrent1`
 > are not functionally equivalent.
-> 
+>
 > In `sequentialWait`, if promise `fast` rejects before promise
 > `slow` is fulfilled, then an unhandled promise rejection error will be
 > raised, regardless of whether the caller has configured a catch clause.
-> 
+>
 > In `concurrent1`, `Promise.all` wires up the promise
 > chain in one go, meaning that the operation will fail-fast regardless of the order of
 > rejection of the promises, and the error will always occur within the configured

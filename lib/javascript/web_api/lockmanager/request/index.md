@@ -34,31 +34,26 @@ request(name, options, callback)
 ### Parameters
 
 - `name`
-
   - : An identifier for the lock you want to request.
 
 - `options` {{optional_inline}}
-
   - : An object describing characteristics of the lock you want to create.
     Valid values are:
-
     - `mode` {{optional_inline}}
-
       - : Either `"exclusive"` or `"shared"`.
         The default value is `"exclusive"`.
 
     - `ifAvailable` {{optional_inline}}
-
       - : If `true`, the lock request will only be granted if it is not already held.
         If it cannot be granted, the callback will be invoked with `null` instead of a `Lock` instance.
         The default value is `false`.
 
     - `steal` {{optional_inline}}
-
       - : If `true`, then any held locks with the same name will be released, and the request will be granted, preempting any queued requests for it.
         The default value is `false`.
 
-        > **Warning:** Use with care!
+        > [!WARNING]
+        > Use with care!
         > Code that was previously running inside the lock continues to run, and may clash with the code that now holds the lock.
 
     - `signal` {{optional_inline}}

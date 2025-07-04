@@ -15,7 +15,8 @@ can then be populated by data, and played via an {{ domxref("AudioBufferSourceNo
 For more details about audio buffers, check out the {{ domxref("AudioBuffer") }}
 reference page.
 
-> **Note:** `createBuffer()` used to be able to take compressed
+> [!NOTE]
+> `createBuffer()` used to be able to take compressed
 > data and give back decoded samples, but this ability was removed from the specification,
 > because all the decoding was done on the main thread, so
 > `createBuffer()` was blocking other code execution. The asynchronous method
@@ -24,6 +25,8 @@ reference page.
 > then play via an {{ domxref("AudioBufferSourceNode") }}. For simple use cases
 > like playing an MP3, `decodeAudioData()` is what you should be using.
 
+For an in-depth explanation of how audio buffers work, including what the parameters do, read [Audio buffers: frames, samples and channels](/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_buffers_frames_samples_and_channels) from our Basic concepts guide.
+
 ## Syntax
 
 ```js-nolint
@@ -31,10 +34,6 @@ createBuffer(numOfChannels, length, sampleRate)
 ```
 
 ### Parameters
-
-> [!NOTE]
-> For an in-depth explanation of how audio buffers work, and
-> what these parameters mean, read [Audio buffers: frames, samples and channels](/en-US/docs/Web/API/Web_Audio_API/Basic_concepts_behind_Web_Audio_API#audio_buffers_frames_samples_and_channels) from our Basic concepts guide.
 
 - `numOfChannels`
   - : An integer representing the number of channels this buffer should have. The default
@@ -81,12 +80,12 @@ const buffer = audioCtx.createBuffer(1, 22050, 22050);
 ```
 
 If you use this call, you will get a mono buffer (one channel), that, when played back
-on an `AudioContext` running at 44100Hz, will be automatically \*resampled\* to
+on an `AudioContext` running at 44100Hz, will be automatically _resampled_ to
 44100Hz (and therefore yield 44100 frames), and last for 1.0 second: 44100 frames /
 44100Hz = 1 second.
 
 > [!NOTE]
-> audio resampling is very similar to image resizing: say you've
+> Audio resampling is very similar to image resizing: say you've
 > got a 16 x 16 image, but you want it to fill a 32x32 area: you resize (resample) it.
 > the result has less quality (it can be blurry or edgy, depending on the resizing
 > algorithm), but it works, and the resized image takes up less space. Resampled audio

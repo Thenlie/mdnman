@@ -27,7 +27,9 @@ A {{jsxref('Promise')}} that fulfills with a {{domxref("FileSystemDirectoryHandl
 ### Exceptions
 
 - `SecurityError` {{domxref("DOMException")}}
-  - : Thrown if the user agent is not able to map the requested directory to the local OPFS.
+  - : Thrown if the browser is not able to map the requested directory to the local OPFS, for example due to storage or memory constraints. Also thrown in some browsers if `getDirectory()` is called in private browsing mode.
+- `UnknownError` {{domxref("DOMException")}}
+  - : Thrown in some browsers if `getDirectory()` is called in private browsing mode.
 
 ## Examples
 
@@ -70,7 +72,8 @@ onmessage = async (e) => {
 };
 ```
 
-> **Note:** In earlier versions of the spec, {{domxref("FileSystemSyncAccessHandle.close()", "close()")}}, {{domxref("FileSystemSyncAccessHandle.flush()", "flush()")}}, {{domxref("FileSystemSyncAccessHandle.getSize()", "getSize()")}}, and {{domxref("FileSystemSyncAccessHandle.truncate()", "truncate()")}} were wrongly specified as asynchronous methods, and older versions of some browsers implement them in this way. However, all current browsers that support these methods implement them as synchronous methods.
+> [!NOTE]
+> In earlier versions of the spec, {{domxref("FileSystemSyncAccessHandle.close()", "close()")}}, {{domxref("FileSystemSyncAccessHandle.flush()", "flush()")}}, {{domxref("FileSystemSyncAccessHandle.getSize()", "getSize()")}}, and {{domxref("FileSystemSyncAccessHandle.truncate()", "truncate()")}} were wrongly specified as asynchronous methods, and older versions of some browsers implement them in this way. However, all current browsers that support these methods implement them as synchronous methods.
 
 ## Specifications
 

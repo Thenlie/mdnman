@@ -1,15 +1,16 @@
 ---
-title: itemtype
-slug: Web/HTML/Global_attributes/itemtype
+title: HTML itemtype global attribute
+short-title: itemtype
+slug: Web/HTML/Reference/Global_attributes/itemtype
 page-type: html-attribute
 spec-urls: https://html.spec.whatwg.org/multipage/microdata.html#attr-itemtype
 ---
 
 {{HTMLSidebar("Global_attributes")}}
 
-The [global attribute](/en-US/docs/Web/HTML/Global_attributes) **`itemtype`** specifies the URL of the vocabulary that will be used to define `itemprop`'s (item properties) in the data structure.
+The [global attribute](/en-US/docs/Web/HTML/Reference/Global_attributes) **`itemtype`** specifies the URL of the vocabulary that will be used to define `itemprop`'s (item properties) in the data structure.
 
-[`itemscope`](/en-US/docs/Web/HTML/Global_attributes/itemscope) is used to set the scope of where in the data structure the vocabulary set by `itemtype` will be active.
+[`itemscope`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemscope) is used to set the scope of where in the data structure the vocabulary set by `itemtype` will be active.
 
 Google and other major search engines support the [schema.org](https://schema.org/) vocabulary for structured data. This vocabulary defines a standard set of type names and property names. For example, `MusicEvent` indicates a concert performance, with [`startDate`](https://schema.org/startDate) and [`location`](https://schema.org/location) properties specifying the concert's key details. In this case, [`MusicEvent`](https://schema.org/MusicEvent) would be the URL used by `itemtype`, with `startDate` and location as `itemprop`'s which [`MusicEvent`](https://schema.org/MusicEvent) defines.
 
@@ -131,7 +132,7 @@ This example uses microdata attributes to represent structured data for a produc
 </table>
 
 > [!NOTE]
-> A handy tool for extracting microdata structures from HTML is Google's [Structured Data Testing Tool](https://developers.google.com/search/docs/advanced/structured-data). Try it on the HTML shown here.
+> A handy tool for extracting microdata structures from HTML is Google's [Structured Data Testing Tool](https://developers.google.com/search/docs/appearance/structured-data). Try it on the HTML shown here.
 
 #### HTML
 
@@ -197,10 +198,9 @@ This example uses microdata attributes to represent structured data for a produc
 
 ## See also
 
-- [Other different global attributes](/en-US/docs/Web/HTML/Global_attributes)
+- [Other different global attributes](/en-US/docs/Web/HTML/Reference/Global_attributes)
 - Other microdata related global attributes:
-
-  - [`itemid`](/en-US/docs/Web/HTML/Global_attributes/itemid)
-  - [`itemprop`](/en-US/docs/Web/HTML/Global_attributes/itemprop)
-  - [`itemref`](/en-US/docs/Web/HTML/Global_attributes/itemref)
-  - [`itemscope`](/en-US/docs/Web/HTML/Global_attributes/itemscope)
+  - [`itemid`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemid)
+  - [`itemprop`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemprop)
+  - [`itemref`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemref)
+  - [`itemscope`](/en-US/docs/Web/HTML/Reference/Global_attributes/itemscope)

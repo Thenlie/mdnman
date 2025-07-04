@@ -19,26 +19,25 @@ and what the default value of the custom property is.
 ## Syntax
 
 ```js-nolint
-CSS.registerProperty(PropertyDefinition)
+CSS.registerProperty(propertyDefinition)
 ```
 
 ### Parameters
 
-A `PropertyDefinition` dictionary object, which can contain the following
-members:
-
-- `name`
-  - : A string representing the
-    name of the property being defined.
-- `syntax` {{optional_inline}}
-  - : A string representing
-    the expected syntax of the defined property. Defaults to `"*"`.
-- `inherits`
-  - : A boolean value defining whether the defined property should be inherited
-    (`true`), or not (`false`). Defaults to `false`.
-- `initialValue` {{optional_inline}}
-  - : A string representing
-    the initial value of the defined property.
+- `propertyDefinition`
+  - : An object containing the following properties:
+    - `name`
+      - : A string representing the
+        name of the property being defined.
+    - `syntax` {{optional_inline}}
+      - : A string representing
+        the expected syntax of the defined property. Defaults to `"*"`.
+    - `inherits`
+      - : A boolean value defining whether the defined property should be inherited
+        (`true`), or not (`false`). Defaults to `false`.
+    - `initialValue` {{optional_inline}}
+      - : A string representing
+        the initial value of the defined property.
 
 ### Return value
 
@@ -50,7 +49,7 @@ members:
   - : The given `name` has already been registered.
 - `SyntaxError` {{domxref("DOMException")}}
   - : The given `name` isn't a valid custom property name (starts with two
-    dashes, e.g. `--foo`).
+    dashes, e.g., `--foo`).
 - {{jsxref("TypeError")}}
   - : The required `name` and/or `inherits` dictionary members were
     not provided.

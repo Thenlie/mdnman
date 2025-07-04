@@ -1,5 +1,6 @@
 ---
 title: SharedArrayBuffer() constructor
+short-title: SharedArrayBuffer()
 slug: Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/SharedArrayBuffer
 page-type: javascript-constructor
 browser-compat: javascript.builtins.SharedArrayBuffer.SharedArrayBuffer
@@ -12,7 +13,15 @@ browser-compat: javascript.builtins.SharedArrayBuffer.SharedArrayBuffer
 
 The **`SharedArrayBuffer()`** constructor creates {{jsxref("SharedArrayBuffer")}} objects.
 
-{{EmbedInteractiveExample("pages/js/sharedarraybuffer-constructor.html", "shorter")}}
+{{InteractiveExample("JavaScript Demo: SharedArrayBuffer() constructor", "shorter")}}
+
+```js interactive-example
+// Create a SharedArrayBuffer with a size in bytes
+const buffer = new SharedArrayBuffer(8);
+
+console.log(buffer.byteLength);
+// Expected output: 8
+```
 
 ## Syntax
 
@@ -21,7 +30,8 @@ new SharedArrayBuffer(length)
 new SharedArrayBuffer(length, options)
 ```
 
-> **Note:** `SharedArrayBuffer()` can only be constructed with [`new`](/en-US/docs/Web/JavaScript/Reference/Operators/new). Attempting to call it without `new` throws a {{jsxref("TypeError")}}.
+> [!NOTE]
+> `SharedArrayBuffer()` can only be constructed with [`new`](/en-US/docs/Web/JavaScript/Reference/Operators/new). Attempting to call it without `new` throws a {{jsxref("TypeError")}}.
 
 ### Parameters
 

@@ -1,5 +1,5 @@
 ---
-title: "StorageAccessHandle: createObjectURL() property"
+title: "StorageAccessHandle: createObjectURL() method"
 short-title: createObjectURL()
 slug: Web/API/StorageAccessHandle/createObjectURL
 page-type: web-api-instance-method
@@ -8,12 +8,13 @@ browser-compat: api.StorageAccessHandle.createObjectURL
 
 {{APIRef("Storage Access API")}}
 
-> **Note:** See {{domxref("URL.createObjectURL_static", "createObjectURL()")}} to understand usage.
+> [!NOTE]
+> See {{domxref("URL.createObjectURL_static", "createObjectURL()")}} to understand usage.
 
 ## Syntax
 
 ```js-nolint
-handle.createObjectURL(object)
+createObjectURL(object)
 ```
 
 ### Parameters
@@ -46,7 +47,8 @@ document.requestStorageAccess({ createObjectURL: true }).then(
 );
 ```
 
-> **Note:** See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
+> [!NOTE]
+> See [Using the Storage Access API](/en-US/docs/Web/API/Storage_Access_API/Using) for a more complete example.
 
 ## Specifications
 
