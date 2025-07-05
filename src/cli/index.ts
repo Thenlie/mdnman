@@ -34,11 +34,11 @@ const commandActionHandler = async (
         console.error('[commandActionHandler] header', GENERIC_ERROR_MESSAGE);
         return;
     }
-    const slug = header.slug;
+
     if (options.section !== 'none') {
         document = getNamedSection(document, options.section);
     }
-    const strippedDoc = completeParse(document, slug || '');
+    const strippedDoc = completeParse(document, header.slug || '');
 
     if (!strippedDoc) {
         console.error(
@@ -48,14 +48,7 @@ const commandActionHandler = async (
         return;
     }
 
-    if (options.output === 'stdout') {
-        printDoc(strippedDoc, slug);
-    } else if (options.output === 'vim') {
-        writeDocToFile(strippedDoc);
-        openEditor(DEFAULT_OUTPUT_PATH);
-    } else if (options.output === 'file' && options.path) {
-        writeDocToFile(strippedDoc, options.path);
-    }
+    outputHandler(options, strippedDoc, header.slug);
 };
 
 /**
@@ -171,16 +164,35 @@ const interactiveActionHandler = async (options: {
         return;
     }
 
-    if (options.output === 'stdout') {
-        printDoc(strippedSection, header.slug);
-    } else if (options.output === 'less') {
-        writeDocToFile(strippedSection);
-        openLess(DEFAULT_OUTPUT_PATH);
-    } else if (options.output === 'vim') {
-        writeDocToFile(strippedSection);
-        openEditor(DEFAULT_OUTPUT_PATH);
-    } else if (options.output === 'file' && options.path) {
-        writeDocToFile(strippedSection, options.path);
+    outputHandler(options, strippedSection, header.slug);
+};
+
+/**
+ * Pass a document to the correct output function based on provided options
+ * @param {{ output: string, path: string}} options
+ * @param {string} document
+ * @param {string} slug
+ */
+const outputHandler = (
+    options: { output: string; path: string },
+    document: string,
+    slug: string
+) => {
+    switch (options.output) {
+        case 'stdout':
+            printDoc(document, slug);
+            break;
+        case 'pager':
+            writeDocToFile(document);
+            openLess(DEFAULT_OUTPUT_PATH);
+            break;
+        case 'vim':
+            writeDocToFile(document);
+            openEditor(DEFAULT_OUTPUT_PATH);
+            break;
+        case 'file':
+            writeDocToFile(document, options.path);
+            break;
     }
 };
 
@@ -215,7 +227,7 @@ const cli = () => {
     program
         .command('interactive')
         .description('Use prompts to search the entire MDN reference library')
-        .option('-o, --output <less | stdout | file | vim>', 'output type', 'stdout')
+        .option('-o, --output <pager | stdout | file | vim>', 'output type', 'stdout')
         .option('-p, --path <string>', 'output path', DEFAULT_OUTPUT_PATH)
         .action(async (options) => interactiveActionHandler(options));
 

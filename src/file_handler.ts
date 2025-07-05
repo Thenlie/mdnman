@@ -82,13 +82,16 @@ const findMDNFile = async (
     let selected = matchedTitles[0].path;
     if (matchedTitles.length > 1) {
         // prompt with list of matching files
-        selected = await select({
-            message: 'Chose reference you would like to view',
-            choices: matchedTitles.map((title) => ({ name: title.title, value: title.path })),
-        });
+        selected = await select(
+            {
+                message: 'Chose reference you would like to view',
+                choices: matchedTitles.map((title) => ({ name: title.title, value: title.path })),
+            },
+            { output: process.stderr }
+        );
     }
     try {
-        const file = fs.readFileSync(path.join(_dirname, '../..', selected)).toString();
+        const file = fs.readFileSync(path.join(_dirname, '..', selected)).toString();
         return file;
     } catch (error) {
         console.error('[findMDNFile]', error);

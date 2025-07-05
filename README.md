@@ -2,6 +2,8 @@
 
 JavaScript reference CLI made possible by [MDN Web Docs](https://developer.mozilla.org/en-US/).
 
+The goal of MDN Man is to create an easy way for the MDN Web Docs to be displayed in other formats such as the command line and Discord/Slack bots. The repository features a build in command line interface as well as a number of functions that can be used to query, parse and display content from the MDN Web Docs.
+
 ## Installation
 
 When using mdnman within a JavaScript or TypeScript project, install locally via NPM.
@@ -24,20 +26,21 @@ At it's core, mdnman is a command line interface for the MDN Web Docs. It is int
 
 #### Commands
 
-| Command | Arguments        | Description                        |
-|---------|------------------|------------------------------------|
-| js      | query (string)   | Query the MDN JavaScript reference |
-| html    | query (string)   | Query the MDN HTML reference       |
-| css     | query (string)   | Query the MDN CSS reference        |
-| help    | command (string) | Get help for a specific command    |
+| Command     | Arguments        | Description                        |
+|-------------|------------------|------------------------------------|
+| interactive | query (string)   | Query MDN docs via prompts         |
+| js          | query (string)   | Query MDN JavaScript reference |
+| html        | query (string)   | Query MDN HTML reference       |
+| css         | query (string)   | Query MDN CSS reference        |
+| help        | command (string) | Get help for a specific command    |
 
 #### Options
 
-| Option  | Flag          | Description                                        | Default | Values              |
-|---------|---------------|----------------------------------------------------|---------|---------------------|
-| Output  | -o, --output  | Specify where the output of the command should go  | stdout  | stdout, vim         |
-| Section | -s, --section | Specify a single section of the document to return | none    | Any section heading |
-| Help    | -h, --help    | Get help for a given command                       | N/A     | Any command         |
+| Option  | Flag          | Description                                        | Default | Values                    |
+|---------|---------------|----------------------------------------------------|---------|---------------------------|
+| Help    | -h, --help    | Get help for a given command                       | N/A     | Any command               |
+| Output  | -o, --output  | Specify where the output of the command should go  | stdout  | stdout, vim, pager, file  |
+| Section | -s, --section | Specify a single section of the document to return | none    | Any section heading       |
 
 #### Examples
 
@@ -50,7 +53,7 @@ mdnman js map
 ```
 
 ```sh
-mdnman --output vim --section parameters splice
+mdnman js --output vim --section parameters splice
 ```
 
 ### Node Package Manager
@@ -60,11 +63,11 @@ You can also install mdnman through npm to utilize it in your own project. The m
 #### Quick Start
 
 ```ts
-import { getMDNDoc, printDoc } from "mdnman/dist";
+import { getMDNDoc, printDoc } from "mdnman";
 
 const doc = await getMDNDoc('javascript', 'map')
 if (doc) {
-    printDoc(doc);
+    printDoc(completeParse(doc));
 }
 ```
 
