@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "saturday"
+      time: "10:00"
+      timezone: "America/Denver"
+    target-branch: "develop"
+    labels:
+      - "dependencies"
+    reviewers:
+      - "Thenlie"
+    assignees:
+      - "dependabot"
+    groups:
+      types:
+        applies-to: version-updates
+        patterns:
+          - "@types/*"
