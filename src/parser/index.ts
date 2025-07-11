@@ -167,24 +167,28 @@ const getHtmlDescription = (document: string): string => {
  * @returns {string}
  */
 const expandLinks = (document: string, slug: string): string => {
-    const regex = /!?\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(([^)]+)\)/gm;
+    // Find text formatted as  ![...](...)
+    const regex = /!?\[([^[\]]*(?:\[[^[\]]*\][^[\]]*)*)\]\(([^()\s]+(?:\([^()\s]*\)[^()\s]*)*)\)/gm;
+
     return document.replace(regex, (match) => {
         if (!match.match(/\(.+\)/)) return match;
-        const mask = match.match(/\[([^\]]*(?:`[^`]*`[^\]]*)*)\]\(/);
-        const path = match.match(/\]\(([^)]+)\)/);
+        if (match.startsWith('!')) match = match.substring(1);
+        const split = match.split('](');
+        const mask = split[0].substring(1);
+        const path = split[1].substring(0, split[1].length - 1);
+
         if (!mask || !path) return match;
-        if (
-            path[1].startsWith('#') ||
-            path[1].endsWith('.png') ||
-            path[1].endsWith('.jpg') ||
-            path[1].endsWith('.svg')
-        ) {
-            return `${mask[0].slice(0, -1)}(${MDN_BASE_URL}/${LOCALE}/docs/${slug}/${path[1]})`;
+        if (path.startsWith('#')) {
+            return `[${mask}](${MDN_BASE_URL}/${LOCALE}/docs/${slug}/${path})`;
         }
-        if (path[1].startsWith('http')) {
-            return `${mask[0].slice(0, -1)}(${path[0].slice(2, path[0].length - 1)})`;
+        if (path.endsWith('.png') || path.endsWith('.jpg') || path.endsWith('.svg')) {
+            return `![${mask}](${MDN_BASE_URL}/${LOCALE}/docs/${slug}/${path})`;
         }
-        return `${mask[0].slice(0, -1)}(${MDN_BASE_URL + path[0].slice(2, path[0].length - 1)})`;
+        if (path.startsWith('http') || path.startsWith('<http')) {
+            return `[${mask}](${path})`;
+        }
+
+        return `[${mask}](${MDN_BASE_URL + path})`;
     });
 };
 

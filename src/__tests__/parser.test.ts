@@ -229,7 +229,7 @@ describe('parser', () => {
     });
 
     describe('expandLinks', () => {
-        it('expands links to a valid MDN URL', () => {
+        it('expands truncated MDN links to valid MDN URL', () => {
             expect(expandLinks('[data tables](/en-US/docs/Web/HTML/Element/table)', '')).toBe(
                 '[data tables](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)'
             );
@@ -242,7 +242,7 @@ describe('parser', () => {
             expect(
                 expandLinks('![test image](border-image-slice.png)', 'Web/CSS/border-image-slice')
             ).toBe(
-                '[test image](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice/border-image-slice.png)'
+                '![test image](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice/border-image-slice.png)'
             );
             expect(
                 expandLinks(
@@ -250,7 +250,7 @@ describe('parser', () => {
                     'Web/JavaScript/Reference/Statements/debugger'
                 )
             ).toBe(
-                '[A browser with developer tools open to the debugger panel showing how execution is paused at the debugger statement to allow close inspection of variables, scopes, events, etc.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger/screen_shot_2014-02-07_at_9.14.35_am.png)'
+                '![A browser with developer tools open to the debugger panel showing how execution is paused at the debugger statement to allow close inspection of variables, scopes, events, etc.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger/screen_shot_2014-02-07_at_9.14.35_am.png)'
             );
         });
         it('transforms section tags', () => {
@@ -270,6 +270,25 @@ describe('parser', () => {
                     ''
                 )
             ).toBe('[Paint Program (by Rick Byers)](https://rbyers.github.io/paint.html)');
+        });
+        it('handles URLs wrapped in <>', () => {
+            expect(expandLinks('[test](https://www.wikipedia.org)', '')).toBe(
+                '[test](https://www.wikipedia.org)'
+            );
+            expect(expandLinks('[test](<https://www.wikipedia.org>)', '')).toBe(
+                '[test](<https://www.wikipedia.org>)'
+            );
+            expect(
+                expandLinks('[test](<https://en.wikipedia.org/wiki/E_(mathematical_constant)>)', '')
+            ).toBe('[test](<https://en.wikipedia.org/wiki/E_(mathematical_constant)>)');
+            expect(
+                expandLinks(
+                    '[`[[DefineOwnProperty]]`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/defineProperty)',
+                    ''
+                )
+            ).toBe(
+                '[`[[DefineOwnProperty]]`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/defineProperty)'
+            );
         });
     });
 
