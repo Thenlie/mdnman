@@ -300,20 +300,25 @@ const removeHiddenCodeblocks = (document: string): string => {
  * @example ```js-nolint hidden -> ```js hidden
  */
 const transformCodeblockLangs = (document: string): string => {
-    const newDocument = document
-        .replace(/```js(-nolint)?( example-(good|bad))?( interactive-example(-choice)?)?/g, '```js')
-        .replace(
-            /```css(-nolint)?( example-(good|bad))?( interactive-example(-choice)?)?/g,
-            '```css'
-        )
-        .replace(
-            /```html(-nolint)?( example-(good|bad))?( interactive-example(-choice)?)?/g,
-            '```html'
-        )
-        .replace(/```json(-nolint)?( example-(good|bad))?/g, '```json')
-        .replace(/```plain(-nolint)?( example-(good|bad))?/g, '```txt')
-        .replace(/```text(-nolint)?( example-(good|bad))?/g, '```txt');
-    return newDocument;
+    const backticks = '```';
+    const languageMap: Record<string, string> = {
+        js: 'js',
+        css: 'css',
+        html: 'html',
+        json: 'json',
+        plain: 'txt',
+        text: 'txt',
+    };
+    let newDoc = document;
+    for (const [inputLang, outputLang] of Object.entries(languageMap)) {
+        const regex = new RegExp(`^${backticks}${inputLang}.*$`, 'gm');
+        newDoc = newDoc.replace(regex, (match) =>
+            match.includes('hidden')
+                ? `${backticks}${outputLang} hidden`
+                : `${backticks}${outputLang}`
+        );
+    }
+    return newDoc;
 };
 
 /**

@@ -346,6 +346,11 @@ describe('parser', () => {
             expect(transformCodeblockLangs('```html-nolint hidden')).toBe('```html hidden');
             expect(transformCodeblockLangs('```plain hidden')).toBe('```txt hidden');
             expect(transformCodeblockLangs('```plain-nolint hidden')).toBe('```txt hidden');
+            expect(
+                transformCodeblockLangs(
+                    '```css hidden live-sample___shapes1 live-sample___shapes2 live-sample___shapes3'
+                )
+            ).toBe('```css hidden');
         });
     });
 });
