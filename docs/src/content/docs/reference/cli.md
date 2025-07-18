@@ -1,6 +1,7 @@
 ---
 title: Command Line Interface
 description: MDNMan Command Line Interface Reference
+slug: cli
 ---
 
 The MDNMan CLI allows developers to quickly access and explore the [MDN Web Docs](https://developer.mozilla.org/en-US/) reference library directly from the command line. This tool is ideal for looking up JavaScript, HTML, and CSS documentation without leaving your terminal.
