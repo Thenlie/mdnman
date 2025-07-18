@@ -1,5 +1,5 @@
 ---
-title: CLI Reference
+title: Command Line Interface
 description: MDNMan Command Line Interface Reference
 ---
 
@@ -13,27 +13,35 @@ These commands search the MDN reference documentation for JavaScript (`js`), HTM
 
 ### Options
 
-| Option&nbsp;Name | Alias | Description                                                                                                                     |
-| ----------- | ----- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `--output`  | `-o`  | Specifies the format in which to return the MDN documentation. Supported formats may include `text`, `json`, or `markdown`.     |
-| `--section` | `-s`  | Limits the result to a specific section of the documentation (e.g., `syntax`, `examples`, `specifications`).                    |
-| `--path`    | `-p`  | Writes the output to the specified file path instead of displaying it in the terminal. Useful for saving documentation locally. |
-| `--help`    | `-h`  | Displays help information and usage details for the selected command.                                                           |
+| Option&nbsp;Name | Alias | Default Value | Description                                                                                                                     |
+| ---------------- | ----- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `--output`       | `-o`  | `stdout`      | Specifies the format in which to return the MDN documentation. Supported formats include `stdout`, `file`, and `vim`.           |
+| `--section`      | `-s`  | none          | Limits the result to a specific section of the documentation (e.g., `syntax`, `examples`, `specifications`).                    |
+| `--path`         | `-p`  | `./ref`       | Writes the output to the specified file path instead of displaying it in the terminal. Useful for saving documentation locally. |
+| `--help`         | `-h`  | none          | Displays help information and usage details for the selected command.                                                           |
 
-### Usage
+### Example Usage
 
 ```sh
-mdnman js Array.prototype.forEach
-mdnman html div
-mdnman css font-family
+mdnman js foreach
+mdnman html div --output file --path my/custom/path
+mdnman css font-family --output vim --section syntax
 ```
 
 ## `interactive`
 
 Launches an interactive mode that lets you search and browse the MDN reference library through a guided, prompt-based interface.
 
-### Usage
+### Options
+
+| Option&nbsp;Name | Alias | Default Value | Description                                                                                                                     |
+| ---------------- | ----- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `--output`       | `-o`  | `stdout`      | Specifies the format in which to return the MDN documentation. Supported formats include `pager`, `stdout`, `file`, and `vim.`  |
+| `--path`         | `-p`  | `./ref`       | Writes the output to the specified file path instead of displaying it in the terminal. Useful for saving documentation locally. |
+| `--help`         | `-h`  | none          | Displays help information and usage details for the selected command.                                                           |
+
+### Example Usage
 
 ```sh
-mdnman interactive
+mdnman interactive --output file --path my/custom/path
 ```
