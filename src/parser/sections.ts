@@ -188,8 +188,6 @@ const removeEmptySections = (document: string): string => {
             trimmedDoc = removeSection(trimmedDoc, sections[i].name);
         }
     }
-    // console.log('Leithen', trimmedDoc);
-    // const intro = getIntroSection(document);
     return trimmedDoc;
 };
 

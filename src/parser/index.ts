@@ -160,7 +160,7 @@ const getHtmlDescription = (document: string): string => {
 };
 
 /**
- * Updates all markdown links formatted as "[text](url)" to provide the full path to the MDN docs
+ * Updates all markdown links formatted as `[text](url)` to provide the full path to the MDN docs
  * Uses some weird regex to account for cases where the text has brackets.
  * @param {string} document
  * @param {string} slug
@@ -326,24 +326,23 @@ const transformCodeblockLangs = (document: string): string => {
  * removeEmptySections and removeHiddenCodeblocks to a given document
  * @param {string} document
  * @param {string} slug
+ * @param {boolean} expandKumaLinks
  * @returns {string}
  */
-const completeParse = (document: string, slug: string): string => {
+const completeParse = (document: string, slug: string, expandKumaLinks: boolean = true): string => {
     // Take a list of functions and run them in order, passing the output of one into the next
     // eslint-disable-next-line prettier/prettier
     const flow = <T>(...fns: Array<(input: T) => T>) => (input: T) => fns.reduce((acc, fn) => fn(acc), input);
 
-    // The order here matters, some sections will become empty after Kumascript is removed
     const cleanAndParse = flow(
-        transformKumascript,
         transformCodeblockLangs,
         removeHiddenCodeblocks,
         removeEmptyLines,
         removeEmptySections
     );
 
-    const expandedDocument = expandLinks(document, slug);
-
+    // The order here matters, some sections will become empty after Kumascript is removed
+    const expandedDocument = transformKumascript(expandLinks(document, slug), expandKumaLinks);
     return cleanAndParse(expandedDocument);
 };
 
