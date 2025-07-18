@@ -5,6 +5,8 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
     base: '/mdnman/',
+    output: 'static',
+    trailingSlash: 'always',
     integrations: [
         starlight({
             title: 'MDNMan',
