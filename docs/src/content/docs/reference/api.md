@@ -8,7 +8,11 @@ The MDNMan Node API allows developers to integrate [MDN Web Docs](https://develo
 
 ## Querying
 
-These methods retrieve content from the MDN reference library. They can locate entire documents or target specific sections.
+These methods retrieve content from the MDN reference library.
+
+:::note
+It is important to note that these methods are querying the internal MDNMan library. This means that all files are retrieved without a network call ensuring speed and reliability.
+:::
 
 ### `getMDNFile`
 
@@ -46,7 +50,7 @@ Searches the MDNMan library for a directory with a name containing the search qu
 If there is a single match, that document is returned. If there are multiple matches, the user is prompted to select on.
 
 :::caution
-Since this method may prompt the user via [Inquirer.js](https://github.com/SBoudrias/Inquirer.js) it should only be used in command line interfaces.
+Since this method may prompt the user via [Inquirer.js](https://github.com/SBoudrias/Inquirer.js) it should only be used in command line interfaces. If you would like a similar method to use outside of a CLI, try [`optimisticallyFindMDNFile`](#optimisticallyfindmdnfile)
 :::
 
 #### Parameters
@@ -76,48 +80,106 @@ if (file) {
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Search the MDNMan library for a directory with a name containing the users search.
+Return the contents of the file in that directory. If multiple files are found, return the first one.
 
 #### Parameters
 
-`filepath`
+`technology`
+
+> 'javascript', 'html', or 'css'
+
+`query`
+
+> The search term used to query the MDNMan library
+
+#### Return Value
+
+Either the MDN file that was found, or `null` if no file was found with the given query.
 
 #### Example
 
 ```js
-// code here
+const file = ('foreach');
+if (file) {
+    console.log(file);
+}
 ```
+
+## Parsing
+
+These methods modify or extract parts of MDN content to make it easier to render, display, or transform into different formats.
 
 ### `getSection`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Returns a specified section of a provided MDN reference document.
 
 #### Parameters
 
-`filepath`
+`document`
+
+> The MDN reference document
+
+`inputSection`
+
+> An object containing defining information about the desired section
+>
+> _See (`#MDNSection type`)_
+
+#### Return Value
+
+Either the MDN section that was found, or `null` if no section was found in the provided document.
 
 #### Example
 
 ```js
-// code here
+const file = await findMDNFile('foreach');
+if (!file) return;
+const section = getSection(file, {
+    name: 'Syntax',
+    level: 2,
+    position: 1,
+});
+if (section) {
+    console.log(section);
+}
 ```
 
 ### `getNamedSection`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Returns the first section of a provided MDN reference document that matches the provided name.
+
+:::tip{icon=open-book}
+If the document contains multiple sections with the same heading and you want to access one that isn't the first match, use [`getSection`](#getsection) instead.
+:::
 
 #### Parameters
 
-`filepath`
+`document`
+
+> The MDN reference document
+
+`sectionName`
+
+> Name of the section to retrieve
+
+#### Return Value
+
+Either the MDN section that was found, or `null` if no section was found in the provided document.
 
 #### Example
 
 ```js
-// code here
+const file = await findMDNFile('foreach');
+if (!file) return;
+const section = getNamedSection(file, 'Syntax');
+if (section) {
+    console.log(section);
+}
 ```
 
 ### `getAllSections`
@@ -151,10 +213,6 @@ Get an MDN reference document based on an explicit filepath to the MDNMan librar
 ```js
 // code here
 ```
-
-## Parsing
-
-These methods modify or extract parts of MDN content to make it easier to render, display, or transform into different formats.
 
 ### `removeSection`
 
