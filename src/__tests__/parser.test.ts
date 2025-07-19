@@ -1,8 +1,6 @@
 import {
     expandLinks,
     getHeader,
-    getHtmlDescription,
-    stripHeader,
     transformKumascript,
     convertEmojiTags,
     truncateString,
@@ -17,10 +15,8 @@ import mapDocument from './__fixtures__/map.document.json';
 
 const JS_FILE_PATH = './lib/javascript/global_objects/array/map/index.md';
 const JS_STR_SUBSTR_PATH = './lib/javascript/global_objects/string/substring/index.md';
-const HTML_FILE_PATH = './lib/html/global_attributes/title/index.md';
 let jsFile: string;
 let substrFile: string;
-let htmlFile: string;
 
 const failingStr = `
 ## Description
@@ -55,7 +51,6 @@ describe('parser', () => {
     beforeAll(() => {
         try {
             jsFile = fs.readFileSync(JS_FILE_PATH).toString();
-            htmlFile = fs.readFileSync(HTML_FILE_PATH).toString();
             substrFile = fs.readFileSync(JS_STR_SUBSTR_PATH).toString();
         } catch (error) {
             throw new Error('Error reading file: ' + error);
@@ -217,14 +212,6 @@ describe('parser', () => {
                     'Deprecated: This feature is no longer recommended'
                 );
             });
-        });
-    });
-
-    describe('getHtmlDescription', () => {
-        it('returns all text in the document up until the first `#`', () => {
-            const strippedFile = stripHeader(htmlFile, false);
-            const description = getHtmlDescription(strippedFile);
-            expect(description.trim()).toMatchSnapshot();
         });
     });
 

@@ -27,15 +27,15 @@ Get an MDN reference document based on an explicit filepath to the MDNMan librar
 > Full path to the MDNMan library. Starts with 'lib' and ends with 'index.md'.
 > If 'index.md' is not attached, the function will attempt to add it to the end of the provided path.
 >
-> _example: 'lib///global_objects/string/split/index.md'_
+> _example: 'lib/javascript/global_objects/string/split/index.md'_
 
 #### Return Value
 
 Either the MDN file that was found, or `null` if the path was invalid.
 
-#### Example
+#### Example Usage
 
-```js
+```js "getMDNFile"
 const file = getMDNFile('lib/javascript/global_objects/map/index.md');
 if (file) {
     console.log(file);
@@ -58,6 +58,8 @@ Since this method may prompt the user via [Inquirer.js](https://github.com/SBoud
 `technology`
 
 > 'javascript', 'html', or 'css'
+>
+> _See [`SupportedLanguages`](#supportedlanguages)_
 
 `query`
 
@@ -67,10 +69,10 @@ Since this method may prompt the user via [Inquirer.js](https://github.com/SBoud
 
 Either the MDN file that was found, or `null` if no file was found with the given query.
 
-#### Example
+#### Example Usage
 
-```js
-const file = await findMDNFile('foreach');
+```js "findMDNFile"
+const file = await findMDNFile('javascript', 'foreach');
 if (file) {
     console.log(file);
 }
@@ -88,6 +90,8 @@ Return the contents of the file in that directory. If multiple files are found, 
 `technology`
 
 > 'javascript', 'html', or 'css'
+>
+> _See [`SupportedLanguages`](#supportedlanguages)_
 
 `query`
 
@@ -97,10 +101,10 @@ Return the contents of the file in that directory. If multiple files are found, 
 
 Either the MDN file that was found, or `null` if no file was found with the given query.
 
-#### Example
+#### Example Usage
 
-```js
-const file = ('foreach');
+```js "optimisticallyFindMDNFile"
+const file = optimisticallyFindMDNFile('css', 'font-family');
 if (file) {
     console.log(file);
 }
@@ -126,15 +130,15 @@ Returns a specified section of a provided MDN reference document.
 
 > An object containing defining information about the desired section
 >
-> _See (`#MDNSection type`)_
+> _See ([`MDNSection`](#mdnsection) type)_
 
 #### Return Value
 
 Either the MDN section that was found, or `null` if no section was found in the provided document.
 
-#### Example
+#### Example Usage
 
-```js
+```js "getSection"
 const file = await findMDNFile('foreach');
 if (!file) return;
 const section = getSection(file, {
@@ -171,9 +175,9 @@ If the document contains multiple sections with the same heading and you want to
 
 Either the MDN section that was found, or `null` if no section was found in the provided document.
 
-#### Example
+#### Example Usage
 
-```js
+```js "getNamedSection"
 const file = await findMDNFile('foreach');
 if (!file) return;
 const section = getNamedSection(file, 'Syntax');
@@ -186,160 +190,261 @@ if (section) {
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Returns a list of all sections in a provided MDN reference document.
 
 #### Parameters
 
-`filepath`
+`document`
 
-#### Example
+> The MDN reference document to be parsed
 
-```js
-// code here
+#### Return value
+
+A list of all sections in the provided document. If no sections are found, an empty list is returned.
+
+_See ([`#MDNSection`](#mdnsection) type)_
+
+#### Example Usage
+
+```js "getAllSection"
+const file = await findMDNFile('foreach');
+if (!file) return;
+const sections = getAllSections(file);
+sections.forEach(section => console.log(section.name))
 ```
 
 ### `getIntroSection`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Returns the introduction text of a provided MDN reference document. This is all the text until the  first section heading.
 
 #### Parameters
 
-`filepath`
+`document`
 
-#### Example
+> The MDN reference document
 
-```js
-// code here
+#### Return Value
+
+All the text in the MDN reference document up to the first section heading. Does not include the page header.
+
+#### Example Usage
+
+```js "getIntroSection"
+const file = await findMDNFile('foreach');
+if (!file) return;
+const intro = getIntroSection(file);
+console.log(intro);
 ```
 
 ### `removeSection`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Removes a single section for the provided MDN reference document and returns the updated document.
+
+:::caution
+This method will remove the first section with a matching name. If the document contains duplicate sections, only the first section will be removed.
+:::
 
 #### Parameters
 
-`filepath`
+`document`
 
-#### Example
+> The MDN reference document
 
-```js
-// code here
+`sectionName`
+
+> The name of the section to remove
+
+#### Return Value
+
+The MDN reference document with the named section removed. If the section is not found, the document is returned un-changed.
+
+#### Example Usage
+
+```js "removeSection"
+const file = await findMDNFile('foreach');
+if (!file) return;
+const trimmedFile = removeSection(file, 'See Also');
+console.log(trimmedFile);
 ```
 
 ### `removeEmptySections`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Removes all sections that have no inner content from an MDN reference document and returns the updated document.
 
 #### Parameters
 
-`filepath`
+`document`
 
-#### Example
+> The MDN reference document
 
-```js
-// code here
+#### Return Value
+
+The MDN reference document with empty sections removed. If no empty sections are found, the document is returned un-changed.
+
+#### Example Usage
+
+```js "removeEmptySections"
+const file = await findMDNFile('foreach');
+if (!file) return;
+const trimmedFile = removeEmptySections(file);
+console.log(trimmedFile);
 ```
 
 ### `getHeader`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Parses the markdown style header from a provided MDN reference document and returns an object containing the useful information from it.
 
 #### Parameters
 
-`filepath`
+`document`
 
-#### Example
+> The MDN reference document
 
-```js
-// code here
+#### Return Value
+
+An object containing useful information from the documents header. If no header is found, `null` is returned.
+
+_See ([`#MDNHeader`](#mdnheader) type)_
+
+#### Example Usage
+
+```js "getHeader"
+const file = await findMDNFile('foreach');
+if (!file) return;
+const header = getHeader(file);
+if (header) {
+    console.log(header.title)
+}
 ```
 
 ### `stripHeader`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Removes the markdown style header from a provided MDN reference document
 
 #### Parameters
 
-`filepath`
+`document`
 
-#### Example
+> The MDN reference document
 
-```js
-// code here
+`addHeading`
+
+> Adds an H1 markdown heading with the header title when true. Defaults to `true`.
+
+#### Return Value
+
+The MDN reference document with the header removed. If no header is found, the document is returned un-changed.
+
+#### Example Usage
+
+```js "stripHeader"
+const file = await findMDNFile('foreach');
+if (!file) return;
+const trimmedFile = stripHeader(file, false);
+console.log(trimmedFile)
 ```
 
 ### `transformKumascript`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Replaces Kumascript macros with human readable text and/or links. Most basic macros such as internal MDN links are handled. If they are not, the macro is removed from the document.
+
+_example:_ {{cssxref("div")}} → `div`
+
+:::tip{icon=open-book}
+"Kumascript" is a template/macro system used on the MDN web docs. You can read more about it in the [mdn docs](https://github.com/mdn/yari/tree/main/docs/kumascript).
+:::
 
 #### Parameters
 
-`filepath`
+`document`
 
-#### Example
+> The MDN reference document
 
-```js
-// code here
-```
+`addLinks`
 
-### `getHtmlDescription`
+> Replaces Kumascript macros with a markdown link when `true`. Replaces with text when `false`.
 
-#### Description
+#### Return value
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+The MDN reference document with Kumascript macros transformed.
 
-#### Parameters
+#### Example Usage
 
-`filepath`
-
-#### Example
-
-```js
-// code here
+```js "transformKumascript"
+const file = await findMDNFile('foreach');
+if (!file) return;
+const parsedFile = transformKumascript(file, false);
+console.log(parsedFile)
 ```
 
 ### `expandLinks`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Converts all shortened MDN links into full URLs
 
 #### Parameters
 
-`filepath`
+`document`
 
-#### Example
+> The MDN reference document
+
+`slug`
+
+> The `document`'s header slug. Can be retrieved with [getHeader](#getheader)
+
+#### Return Value
+
+The updated MDN reference document
+
+#### Example Usage
 
 ```js
-// code here
+const file = await findMDNFile('foreach');
+if (!file) return;
+const header = getHeader(file);
+if (!header) return;
+const parsedFile = expandLinks(file, header.slug);
+console.log(parsedFile)
 ```
 
 ### `convertEmojiTags`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Converts markdown style emoji tags into real emojis.
+
+_example:_ [!Warning] → ⚠️
 
 #### Parameters
 
-`filepath`
+`document`
 
-#### Example
+> The MDN reference document
+
+#### Return Value
+
+The updated MDN reference document
+
+#### Example Usage
 
 ```js
-// code here
+const file = await findMDNFile('foreach');
+if (!file) return;
+const parsedFile = convertEmojiTags(file);
+console.log(parsedFile)
 ```
 
 ### `removeTitle`
@@ -352,7 +457,7 @@ Get an MDN reference document based on an explicit filepath to the MDNMan librar
 
 `filepath`
 
-#### Example
+#### Example Usage
 
 ```js
 // code here
@@ -368,7 +473,7 @@ Get an MDN reference document based on an explicit filepath to the MDNMan librar
 
 `filepath`
 
-#### Example
+#### Example Usage
 
 ```js
 // code here
@@ -384,7 +489,7 @@ Get an MDN reference document based on an explicit filepath to the MDNMan librar
 
 `filepath`
 
-#### Example
+#### Example Usage
 
 ```js
 // code here
@@ -400,7 +505,7 @@ Get an MDN reference document based on an explicit filepath to the MDNMan librar
 
 `filepath`
 
-#### Example
+#### Example Usage
 
 ```js
 // code here
@@ -416,7 +521,7 @@ Get an MDN reference document based on an explicit filepath to the MDNMan librar
 
 `filepath`
 
-#### Example
+#### Example Usage
 
 ```js
 // code here
@@ -432,7 +537,7 @@ Get an MDN reference document based on an explicit filepath to the MDNMan librar
 
 `filepath`
 
-#### Example
+#### Example Usage
 
 ```js
 // code here
@@ -448,8 +553,16 @@ Get an MDN reference document based on an explicit filepath to the MDNMan librar
 
 `filepath`
 
-#### Example
+#### Example Usage
 
 ```js
 // code here
 ```
+
+## Types
+
+### `MDNSection`
+
+### `MDNHeader`
+
+### `SupportedLanguages`

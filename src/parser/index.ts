@@ -147,19 +147,6 @@ const transformKumascript = (document: string, addLinks: boolean = false): strin
 };
 
 /**
- * Returns all text until the first `#` in a document.
- * This is because HTML documents do not specify a "Description" heading,
- * it is just the first paragraph of text.
- * @param {string} document
- * @returns {string}
- */
-const getHtmlDescription = (document: string): string => {
-    const headingIndex = document.indexOf('#');
-    if (!headingIndex) return document;
-    return document.substring(0, headingIndex);
-};
-
-/**
  * Updates all markdown links formatted as `[text](url)` to provide the full path to the MDN docs
  * Uses some weird regex to account for cases where the text has brackets.
  * @param {string} document
@@ -350,7 +337,6 @@ export {
     getHeader,
     stripHeader,
     transformKumascript,
-    getHtmlDescription,
     expandLinks,
     convertEmojiTags,
     removeTitle,

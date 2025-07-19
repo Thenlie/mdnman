@@ -9,7 +9,8 @@ export default defineConfig({
     trailingSlash: 'always',
     integrations: [
         starlight({
-            title: 'MDNMan',
+            title: 'mdn man _',
+            customCss: ['@fontsource/arvo/400.css', './src/styles/custom.css'],
             social: [
                 { icon: 'github', label: 'GitHub', href: 'https://github.com/thenlie/mdnman' },
             ],
