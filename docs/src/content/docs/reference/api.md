@@ -467,96 +467,150 @@ Get an MDN reference document based on an explicit filepath to the MDNMan librar
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Cuts a provided MDN reference document down to the provided character length. If the length of the document is longer than the provided length, '...' will be appended to the string. If the truncation happens in the middle of a link, the entire link is removed.
 
 #### Parameters
 
-`filepath`
+`document`
+
+> The MDN reference document
+
+`length`
+
+> The number of character the final document should be
+
+#### Return Value
+
+The truncated MDN reference document
 
 #### Example Usage
 
 ```js
-// code here
-```
-
-### `createChoicesFromTitles`
-
-#### Description
-
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
-
-#### Parameters
-
-`filepath`
-
-#### Example Usage
-
-```js
-// code here
+const file = await findMDNFile('foreach');
+if (!file) return;
+const truncatedFile = truncateString(file, 1024);
+console.log(truncatedFile)
 ```
 
 ### `removeEmptyLines`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Removes triple newlines from the document. This prevent more than one empty line in a row.
 
 #### Parameters
 
-`filepath`
+`document`
+
+> The MDN reference document
+
+#### Return Value
+
+The modified MDN reference document
 
 #### Example Usage
 
 ```js
-// code here
+const file = await findMDNFile('foreach');
+if (!file) return;
+const trimmedFile = removeEmptyLines(file);
+console.log(trimmedFile)
 ```
 
 ### `removeHiddenCodeblocks`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Removes any codeblocks from the document that have a "hidden" label.
+
+:::tip{icon=open-book}
+The MDN Web Docs occasionally have an embedded, hidden code block that is used to display an interactive element, or add additional styling. Since this element is not being displayed in the raw markdown, the codeblock should also be removed.
+:::
 
 #### Parameters
 
-`filepath`
+`document`
+
+> The MDN reference document
+
+#### Return Value
+
+The updated MDN reference document
 
 #### Example Usage
 
 ```js
-// code here
+const file = await findMDNFile('foreach');
+if (!file) return;
+const trimmedFile = removeHiddenCodeblocks(file);
+console.log(trimmedFile)
 ```
 
 ### `transformCodeblockLangs`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Replaces codeblock fences with standard languages. These supported languages are: js, css, html, json and txt.
 
 #### Parameters
 
-`filepath`
+`document`
+
+> The MDN reference document
+
+#### Return Value
+
+The modified MDN reference document
 
 #### Example Usage
 
 ```js
-// code here
+const file = await findMDNFile('foreach');
+if (!file) return;
+const transformedFile = transformCodeblockLangs(file);
+console.log(transformedFile)
 ```
 
 ### `completeParse`
 
 #### Description
 
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
+Combines several parsing functions into a single command for ease of use. The following commands are run:
+
+- [transformKumascript](#transformkumascript)
+- [expandLinks](#expandlinks)
+- [transformCodeblockLangs](#transformcodeblocklangs)
+- [removeHiddenCodeblocks](#removeHiddencodeblocks)
+- [removeEmptyLines](#removeemptylines)
+- [removeEmptySections](#removeemptysections)
 
 #### Parameters
 
-`filepath`
+`document`
+
+> The MDN reference document
+
+`slug`
+
+> The `document`'s header slug. Can be retrieved with [getHeader](#getheader)
+
+`expandKumaLinks`
+
+> Whether to turn Kumascript macros into links or text. Defaults to `true`
+
+#### Return Value
+
+The parsed MDN reference document
 
 #### Example Usage
 
 ```js
-// code here
+const file = await findMDNFile('foreach');
+if (!file) return;
+const header = getHeader(file);
+if (!header) return;
+const parsedFile = completeParse(file, header.slug, false);
+console.log(transformedFile)
 ```
 
 ## Types
