@@ -59,7 +59,7 @@ Since this method may prompt the user via [Inquirer.js](https://github.com/SBoud
 
 > 'javascript', 'html', or 'css'
 >
-> _See [`SupportedLanguages`](#supportedlanguages)_
+> _See [`SupportedLanguages`](/mdnman/types/#supportedlanguages) type_
 
 `query`
 
@@ -91,7 +91,7 @@ Return the contents of the file in that directory. If multiple files are found, 
 
 > 'javascript', 'html', or 'css'
 >
-> _See [`SupportedLanguages`](#supportedlanguages)_
+> _See [`SupportedLanguages`](/mdnman/types/#supportedlanguages) type_
 
 `query`
 
@@ -130,7 +130,7 @@ Returns a specified section of a provided MDN reference document.
 
 > An object containing defining information about the desired section
 >
-> _See ([`MDNSection`](#mdnsection) type)_
+> _See ([`MDNSection`](/mdnman/types/#mdnsection) type)_
 
 #### Return Value
 
@@ -202,7 +202,7 @@ Returns a list of all sections in a provided MDN reference document.
 
 A list of all sections in the provided document. If no sections are found, an empty list is returned.
 
-_See ([`#MDNSection`](#mdnsection) type)_
+_See ([`#MDNSection`](/mdnman/types/#mdnsection) type)_
 
 #### Example Usage
 
@@ -312,7 +312,7 @@ Parses the markdown style header from a provided MDN reference document and retu
 
 An object containing useful information from the documents header. If no header is found, `null` is returned.
 
-_See ([`#MDNHeader`](#mdnheader) type)_
+_See ([`#MDNHeader`](/mdnman/types/#mdnheader) type)_
 
 #### Example Usage
 
@@ -411,7 +411,7 @@ The updated MDN reference document
 
 #### Example Usage
 
-```js
+```js "expandLinks"
 const file = await findMDNFile('foreach');
 if (!file) return;
 const header = getHeader(file);
@@ -440,27 +440,11 @@ The updated MDN reference document
 
 #### Example Usage
 
-```js
+```js "convertEmojiTags"
 const file = await findMDNFile('foreach');
 if (!file) return;
 const parsedFile = convertEmojiTags(file);
 console.log(parsedFile)
-```
-
-### `removeTitle`
-
-#### Description
-
-Get an MDN reference document based on an explicit filepath to the MDNMan library.
-
-#### Parameters
-
-`filepath`
-
-#### Example Usage
-
-```js
-// code here
 ```
 
 ### `truncateString`
@@ -485,7 +469,7 @@ The truncated MDN reference document
 
 #### Example Usage
 
-```js
+```js "truncateString"
 const file = await findMDNFile('foreach');
 if (!file) return;
 const truncatedFile = truncateString(file, 1024);
@@ -510,7 +494,7 @@ The modified MDN reference document
 
 #### Example Usage
 
-```js
+```js "removeEmptyLines"
 const file = await findMDNFile('foreach');
 if (!file) return;
 const trimmedFile = removeEmptyLines(file);
@@ -539,7 +523,7 @@ The updated MDN reference document
 
 #### Example Usage
 
-```js
+```js "removeHiddenCodeblocks"
 const file = await findMDNFile('foreach');
 if (!file) return;
 const trimmedFile = removeHiddenCodeblocks(file);
@@ -564,7 +548,7 @@ The modified MDN reference document
 
 #### Example Usage
 
-```js
+```js "transformCodeblockLangs"
 const file = await findMDNFile('foreach');
 if (!file) return;
 const transformedFile = transformCodeblockLangs(file);
@@ -604,19 +588,11 @@ The parsed MDN reference document
 
 #### Example Usage
 
-```js
+```js "completeParse"
 const file = await findMDNFile('foreach');
 if (!file) return;
 const header = getHeader(file);
 if (!header) return;
 const parsedFile = completeParse(file, header.slug, false);
-console.log(transformedFile)
+console.log(parsedFile)
 ```
-
-## Types
-
-### `MDNSection`
-
-### `MDNHeader`
-
-### `SupportedLanguages`

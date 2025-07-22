@@ -18,7 +18,7 @@ These commands search the MDN reference documentation for JavaScript (`js`), HTM
 | ---------------- | ----- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | `--output`       | `-o`  | `stdout`      | Specifies the format in which to return the MDN documentation. Supported formats include `stdout`, `file`, and `vim`.           |
 | `--section`      | `-s`  | none          | Limits the result to a specific section of the documentation (e.g., `syntax`, `examples`, `specifications`).                    |
-| `--path`         | `-p`  | `./ref`       | Writes the output to the specified file path instead of displaying it in the terminal. Useful for saving documentation locally. |
+| `--path`         | `-p`  | `./ref.md`       | Writes the output to the specified file path instead of displaying it in the terminal. Useful for saving documentation locally. |
 | `--help`         | `-h`  | none          | Displays help information and usage details for the selected command.                                                           |
 
 ### Example Usage
@@ -38,7 +38,7 @@ Launches an interactive mode that lets you search and browse the MDN reference l
 | Option&nbsp;Name | Alias | Default Value | Description                                                                                                                     |
 | ---------------- | ----- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | `--output`       | `-o`  | `stdout`      | Specifies the format in which to return the MDN documentation. Supported formats include `pager`, `stdout`, `file`, and `vim.`  |
-| `--path`         | `-p`  | `./ref`       | Writes the output to the specified file path instead of displaying it in the terminal. Useful for saving documentation locally. |
+| `--path`         | `-p`  | `./ref.md`       | Writes the output to the specified file path instead of displaying it in the terminal. Useful for saving documentation locally. |
 | `--help`         | `-h`  | none          | Displays help information and usage details for the selected command.                                                           |
 
 ### Example Usage
