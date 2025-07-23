@@ -123,6 +123,7 @@ const transformKumascript = (document: string, addLinks: boolean = false): strin
                         ? `[\`${val}\`](${MDN_DOCS_URL}/API/${path.replace('.', '/')})`
                         : `\`${val}\``;
                 case /{{\s?cssxref\(.+\)\s?}}/i.test(match):
+                    path = path.replace('()', '');
                     return addLinks ? `[\`${val}\`](${MDN_DOCS_URL}/CSS/${path})` : `\`${val}\``;
                 case /{{\s?glossary\(.+\)\s?}}/i.test(match): {
                     path = path.replace(/\s+/g, '_');
@@ -158,8 +159,12 @@ const expandLinks = (document: string, slug: string): string => {
     const regex = /!?\[([^[\]]*(?:\[[^[\]]*\][^[\]]*)*)\]\(([^()\s]+(?:\([^()\s]*\)[^()\s]*)*)\)/gm;
 
     return document.replace(regex, (match) => {
+        let prefix = '';
         if (!match.match(/\(.+\)/)) return match;
-        if (match.startsWith('!')) match = match.substring(1);
+        if (match.startsWith('!')) {
+            prefix = '!';
+            match = match.substring(1);
+        }
         const split = match.split('](');
         const mask = split[0].substring(1);
         const path = split[1].substring(0, split[1].length - 1);
@@ -168,11 +173,11 @@ const expandLinks = (document: string, slug: string): string => {
         if (path.startsWith('#')) {
             return `[${mask}](${MDN_BASE_URL}/${LOCALE}/docs/${slug}/${path})`;
         }
+        if (path.startsWith('http') || path.startsWith('<http')) {
+            return `${prefix}[${mask}](${path})`;
+        }
         if (path.endsWith('.png') || path.endsWith('.jpg') || path.endsWith('.svg')) {
             return `![${mask}](${MDN_BASE_URL}/${LOCALE}/docs/${slug}/${path})`;
-        }
-        if (path.startsWith('http') || path.startsWith('<http')) {
-            return `[${mask}](${path})`;
         }
 
         return `[${mask}](${MDN_BASE_URL + path})`;
