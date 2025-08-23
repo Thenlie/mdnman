@@ -5,3 +5,4 @@ files/en-us/web/javascript/reference
 files/en-us/web/javascript/guide
 files/en-us/web/api
 files/en-us/web/accessibility/aria/reference
+files/en-us/glossary

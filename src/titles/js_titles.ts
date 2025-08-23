@@ -888,6 +888,42 @@ export const javascriptTitles: {
         title: 'ArrayBuffer.prototype.transferToFixedLength()',
     },
     {
+        path: 'lib/javascript/global_objects/asyncdisposablestack/adopt/index.md',
+        title: 'AsyncDisposableStack.prototype.adopt()',
+    },
+    {
+        path: 'lib/javascript/global_objects/asyncdisposablestack/asyncdisposablestack/index.md',
+        title: 'AsyncDisposableStack() constructor',
+    },
+    {
+        path: 'lib/javascript/global_objects/asyncdisposablestack/defer/index.md',
+        title: 'AsyncDisposableStack.prototype.defer()',
+    },
+    {
+        path: 'lib/javascript/global_objects/asyncdisposablestack/disposeasync/index.md',
+        title: 'AsyncDisposableStack.prototype.disposeAsync()',
+    },
+    {
+        path: 'lib/javascript/global_objects/asyncdisposablestack/disposed/index.md',
+        title: 'AsyncDisposableStack.prototype.disposed',
+    },
+    {
+        path: 'lib/javascript/global_objects/asyncdisposablestack/index.md',
+        title: 'AsyncDisposableStack',
+    },
+    {
+        path: 'lib/javascript/global_objects/asyncdisposablestack/move/index.md',
+        title: 'AsyncDisposableStack.prototype.move()',
+    },
+    {
+        path: 'lib/javascript/global_objects/asyncdisposablestack/symbol.asyncdispose/index.md',
+        title: 'AsyncDisposableStack.prototype[Symbol.asyncDispose]()',
+    },
+    {
+        path: 'lib/javascript/global_objects/asyncdisposablestack/use/index.md',
+        title: 'AsyncDisposableStack.prototype.use()',
+    },
+    {
         path: 'lib/javascript/global_objects/asyncfunction/asyncfunction/index.md',
         title: 'AsyncFunction() constructor',
     },
@@ -926,6 +962,10 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/global_objects/asynciterator/index.md',
         title: 'AsyncIterator',
+    },
+    {
+        path: 'lib/javascript/global_objects/asynciterator/symbol.asyncdispose/index.md',
+        title: 'AsyncIterator.prototype[Symbol.asyncDispose]()',
     },
     {
         path: 'lib/javascript/global_objects/asynciterator/symbol.asynciterator/index.md',
@@ -1374,6 +1414,42 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/global_objects/decodeuricomponent/index.md',
         title: 'decodeURIComponent()',
+    },
+    {
+        path: 'lib/javascript/global_objects/disposablestack/adopt/index.md',
+        title: 'DisposableStack.prototype.adopt()',
+    },
+    {
+        path: 'lib/javascript/global_objects/disposablestack/defer/index.md',
+        title: 'DisposableStack.prototype.defer()',
+    },
+    {
+        path: 'lib/javascript/global_objects/disposablestack/disposablestack/index.md',
+        title: 'DisposableStack() constructor',
+    },
+    {
+        path: 'lib/javascript/global_objects/disposablestack/dispose/index.md',
+        title: 'DisposableStack.prototype.dispose()',
+    },
+    {
+        path: 'lib/javascript/global_objects/disposablestack/disposed/index.md',
+        title: 'DisposableStack.prototype.disposed',
+    },
+    {
+        path: 'lib/javascript/global_objects/disposablestack/index.md',
+        title: 'DisposableStack',
+    },
+    {
+        path: 'lib/javascript/global_objects/disposablestack/move/index.md',
+        title: 'DisposableStack.prototype.move()',
+    },
+    {
+        path: 'lib/javascript/global_objects/disposablestack/symbol.dispose/index.md',
+        title: 'DisposableStack.prototype[Symbol.dispose]()',
+    },
+    {
+        path: 'lib/javascript/global_objects/disposablestack/use/index.md',
+        title: 'DisposableStack.prototype.use()',
     },
     {
         path: 'lib/javascript/global_objects/encodeuri/index.md',
@@ -1832,6 +1908,10 @@ export const javascriptTitles: {
         title: 'Intl.Locale.prototype.toString()',
     },
     {
+        path: 'lib/javascript/global_objects/intl/locale/variants/index.md',
+        title: 'Intl.Locale.prototype.variants',
+    },
+    {
         path: 'lib/javascript/global_objects/intl/numberformat/format/index.md',
         title: 'Intl.NumberFormat.prototype.format()',
     },
@@ -2002,6 +2082,10 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/global_objects/iterator/some/index.md',
         title: 'Iterator.prototype.some()',
+    },
+    {
+        path: 'lib/javascript/global_objects/iterator/symbol.dispose/index.md',
+        title: 'Iterator.prototype[Symbol.dispose]()',
     },
     {
         path: 'lib/javascript/global_objects/iterator/symbol.iterator/index.md',
@@ -3172,12 +3256,36 @@ export const javascriptTitles: {
         title: 'String.prototype.valueOf()',
     },
     {
+        path: 'lib/javascript/global_objects/suppressederror/error/index.md',
+        title: 'SuppressedError: error',
+    },
+    {
+        path: 'lib/javascript/global_objects/suppressederror/index.md',
+        title: 'SuppressedError',
+    },
+    {
+        path: 'lib/javascript/global_objects/suppressederror/suppressed/index.md',
+        title: 'SuppressedError: suppressed',
+    },
+    {
+        path: 'lib/javascript/global_objects/suppressederror/suppressederror/index.md',
+        title: 'SuppressedError() constructor',
+    },
+    {
+        path: 'lib/javascript/global_objects/symbol/asyncdispose/index.md',
+        title: 'Symbol.asyncDispose',
+    },
+    {
         path: 'lib/javascript/global_objects/symbol/asynciterator/index.md',
         title: 'Symbol.asyncIterator',
     },
     {
         path: 'lib/javascript/global_objects/symbol/description/index.md',
         title: 'Symbol.prototype.description',
+    },
+    {
+        path: 'lib/javascript/global_objects/symbol/dispose/index.md',
+        title: 'Symbol.dispose',
     },
     {
         path: 'lib/javascript/global_objects/symbol/for/index.md',
@@ -5004,12 +5112,20 @@ export const javascriptTitles: {
         title: 'Representing dates & times',
     },
     {
+        path: 'lib/javascript/resource_management/index.md',
+        title: 'JavaScript resource management',
+    },
+    {
         path: 'lib/javascript/statements/async_function/index.md',
         title: 'async function',
     },
     {
         path: 'lib/javascript/statements/async_function_star_/index.md',
         title: 'async function*',
+    },
+    {
+        path: 'lib/javascript/statements/await_using/index.md',
+        title: 'await using',
     },
     {
         path: 'lib/javascript/statements/block/index.md',
@@ -5114,6 +5230,10 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/statements/try...catch/index.md',
         title: 'try...catch',
+    },
+    {
+        path: 'lib/javascript/statements/using/index.md',
+        title: 'using',
     },
     {
         path: 'lib/javascript/statements/var/index.md',
@@ -6124,8 +6244,8 @@ export const javascriptTitles: {
         title: 'AudioWorkletProcessor',
     },
     {
-        path: 'lib/javascript/web_api/audioworkletprocessor/parameterdescriptors/index.md',
-        title: 'AudioWorkletProcessor: parameterDescriptors property',
+        path: 'lib/javascript/web_api/audioworkletprocessor/parameterdescriptors_static/index.md',
+        title: 'AudioWorkletProcessor: parameterDescriptors static property',
     },
     {
         path: 'lib/javascript/web_api/audioworkletprocessor/port/index.md',
@@ -7336,16 +7456,56 @@ export const javascriptTitles: {
         title: 'CaptureController: CaptureController() constructor',
     },
     {
+        path: 'lib/javascript/web_api/capturecontroller/decreasezoomlevel/index.md',
+        title: 'CaptureController: decreaseZoomLevel() method',
+    },
+    {
+        path: 'lib/javascript/web_api/capturecontroller/forwardwheel/index.md',
+        title: 'CaptureController: forwardWheel() method',
+    },
+    {
+        path: 'lib/javascript/web_api/capturecontroller/getsupportedzoomlevels/index.md',
+        title: 'CaptureController: getSupportedZoomLevels() method',
+    },
+    {
+        path: 'lib/javascript/web_api/capturecontroller/increasezoomlevel/index.md',
+        title: 'CaptureController: increaseZoomLevel() method',
+    },
+    {
         path: 'lib/javascript/web_api/capturecontroller/index.md',
         title: 'CaptureController',
+    },
+    {
+        path: 'lib/javascript/web_api/capturecontroller/resetzoomlevel/index.md',
+        title: 'CaptureController: resetZoomLevel() method',
     },
     {
         path: 'lib/javascript/web_api/capturecontroller/setfocusbehavior/index.md',
         title: 'CaptureController: setFocusBehavior() method',
     },
     {
+        path: 'lib/javascript/web_api/capturecontroller/zoomlevel/index.md',
+        title: 'CaptureController: zoomLevel property',
+    },
+    {
+        path: 'lib/javascript/web_api/capturecontroller/zoomlevelchange_event/index.md',
+        title: 'CaptureController: zoomlevelchange event',
+    },
+    {
+        path: 'lib/javascript/web_api/caretposition/getclientrect/index.md',
+        title: 'CaretPosition: getClientRect() method',
+    },
+    {
         path: 'lib/javascript/web_api/caretposition/index.md',
         title: 'CaretPosition',
+    },
+    {
+        path: 'lib/javascript/web_api/caretposition/offset/index.md',
+        title: 'CaretPosition: offset property',
+    },
+    {
+        path: 'lib/javascript/web_api/caretposition/offsetnode/index.md',
+        title: 'CaretPosition: offsetNode property',
     },
     {
         path: 'lib/javascript/web_api/cdatasection/index.md',
@@ -10152,6 +10312,10 @@ export const javascriptTitles: {
         title: 'Document: xmlVersion property',
     },
     {
+        path: 'lib/javascript/web_api/document_object_model/events/index.md',
+        title: 'DOM events',
+    },
+    {
         path: 'lib/javascript/web_api/document_object_model/examples/index.md',
         title: 'Examples of web and XML development using the DOM',
     },
@@ -10172,20 +10336,12 @@ export const javascriptTitles: {
         title: 'Attribute reflection',
     },
     {
-        path: 'lib/javascript/web_api/document_object_model/transforming_with_xslt/index.md',
-        title: 'Transforming with XSLT',
-    },
-    {
         path: 'lib/javascript/web_api/document_object_model/traversing_an_html_table_with_javascript_and_dom_interfaces/index.md',
         title: 'Traversing an HTML table with JavaScript and DOM Interfaces',
     },
     {
         path: 'lib/javascript/web_api/document_object_model/using_the_document_object_model/index.md',
         title: 'Using the Document Object Model',
-    },
-    {
-        path: 'lib/javascript/web_api/document_object_model/whitespace/index.md',
-        title: 'How whitespace is handled by HTML, CSS, and in the DOM',
     },
     {
         path: 'lib/javascript/web_api/document_picture-in-picture_api/index.md',
@@ -14528,6 +14684,10 @@ export const javascriptTitles: {
         title: 'HighlightRegistry: has() method',
     },
     {
+        path: 'lib/javascript/web_api/highlightregistry/highlightsfrompoint/index.md',
+        title: 'HighlightRegistry: highlightsFromPoint() method',
+    },
+    {
         path: 'lib/javascript/web_api/highlightregistry/index.md',
         title: 'HighlightRegistry',
     },
@@ -15768,6 +15928,10 @@ export const javascriptTitles: {
         title: 'HTMLInputElement: accept property',
     },
     {
+        path: 'lib/javascript/web_api/htmlinputelement/alpha/index.md',
+        title: 'HTMLInputElement: alpha property',
+    },
+    {
         path: 'lib/javascript/web_api/htmlinputelement/alt/index.md',
         title: 'HTMLInputElement: alt property',
     },
@@ -15790,6 +15954,10 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/web_api/htmlinputelement/checkvalidity/index.md',
         title: 'HTMLInputElement: checkValidity() method',
+    },
+    {
+        path: 'lib/javascript/web_api/htmlinputelement/colorspace/index.md',
+        title: 'HTMLInputElement: colorSpace property',
     },
     {
         path: 'lib/javascript/web_api/htmlinputelement/defaultchecked/index.md',
@@ -17932,6 +18100,14 @@ export const javascriptTitles: {
         title: 'IDBVersionChangeEvent: oldVersion property',
     },
     {
+        path: 'lib/javascript/web_api/identitycredential/configurl/index.md',
+        title: 'IdentityCredential: configURL property',
+    },
+    {
+        path: 'lib/javascript/web_api/identitycredential/disconnect_static/index.md',
+        title: 'IdentityCredential: disconnect() static method',
+    },
+    {
         path: 'lib/javascript/web_api/identitycredential/index.md',
         title: 'IdentityCredential',
     },
@@ -18292,6 +18468,10 @@ export const javascriptTitles: {
         title: 'Timing element visibility with the Intersection Observer API',
     },
     {
+        path: 'lib/javascript/web_api/intersectionobserver/delay/index.md',
+        title: 'IntersectionObserver: delay property',
+    },
+    {
         path: 'lib/javascript/web_api/intersectionobserver/disconnect/index.md',
         title: 'IntersectionObserver: disconnect() method',
     },
@@ -18316,12 +18496,20 @@ export const javascriptTitles: {
         title: 'IntersectionObserver: rootMargin property',
     },
     {
+        path: 'lib/javascript/web_api/intersectionobserver/scrollmargin/index.md',
+        title: 'IntersectionObserver: scrollMargin property',
+    },
+    {
         path: 'lib/javascript/web_api/intersectionobserver/takerecords/index.md',
         title: 'IntersectionObserver: takeRecords() method',
     },
     {
         path: 'lib/javascript/web_api/intersectionobserver/thresholds/index.md',
         title: 'IntersectionObserver: thresholds property',
+    },
+    {
+        path: 'lib/javascript/web_api/intersectionobserver/trackvisibility/index.md',
+        title: 'IntersectionObserver: trackVisibility property',
     },
     {
         path: 'lib/javascript/web_api/intersectionobserver/unobserve/index.md',
@@ -19316,6 +19504,10 @@ export const javascriptTitles: {
         title: 'MediaSession: setPositionState() method',
     },
     {
+        path: 'lib/javascript/web_api/mediasession/setscreenshareactive/index.md',
+        title: 'MediaSession: setScreenshareActive() method',
+    },
+    {
         path: 'lib/javascript/web_api/mediasource/activesourcebuffers/index.md',
         title: 'MediaSource: activeSourceBuffers property',
     },
@@ -19370,6 +19562,18 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/web_api/mediasource/sourcebuffers/index.md',
         title: 'MediaSource: sourceBuffers property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/sourceclose_event/index.md',
+        title: 'MediaSource: sourceclose event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/sourceended_event/index.md',
+        title: 'MediaSource: sourceended event',
+    },
+    {
+        path: 'lib/javascript/web_api/mediasource/sourceopen_event/index.md',
+        title: 'MediaSource: sourceopen event',
     },
     {
         path: 'lib/javascript/web_api/mediasourcehandle/index.md',
@@ -19734,6 +19938,10 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/web_api/mediatracksettings/samplesize/index.md',
         title: 'MediaTrackSettings: sampleSize property',
+    },
+    {
+        path: 'lib/javascript/web_api/mediatracksettings/screenpixelratio/index.md',
+        title: 'MediaTrackSettings: screenPixelRatio property',
     },
     {
         path: 'lib/javascript/web_api/mediatracksettings/suppresslocalaudioplayback/index.md',
@@ -21924,10 +22132,6 @@ export const javascriptTitles: {
         title: 'PaymentRequestEvent',
     },
     {
-        path: 'lib/javascript/web_api/paymentrequestevent/instrumentkey/index.md',
-        title: 'PaymentRequestEvent: instrumentKey property',
-    },
-    {
         path: 'lib/javascript/web_api/paymentrequestevent/methoddata/index.md',
         title: 'PaymentRequestEvent: methodData property',
     },
@@ -23332,6 +23536,22 @@ export const javascriptTitles: {
         title: 'PushSubscriptionOptions: userVisibleOnly property',
     },
     {
+        path: 'lib/javascript/web_api/quotaexceedederror/index.md',
+        title: 'QuotaExceededError',
+    },
+    {
+        path: 'lib/javascript/web_api/quotaexceedederror/quota/index.md',
+        title: 'QuotaExceededError: quota property',
+    },
+    {
+        path: 'lib/javascript/web_api/quotaexceedederror/quotaexceedederror/index.md',
+        title: 'QuotaExceededError: QuotaExceededError() constructor',
+    },
+    {
+        path: 'lib/javascript/web_api/quotaexceedederror/requested/index.md',
+        title: 'QuotaExceededError: requested property',
+    },
+    {
         path: 'lib/javascript/web_api/radionodelist/index.md',
         title: 'RadioNodeList',
     },
@@ -23742,6 +23962,10 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/web_api/request/destination/index.md',
         title: 'Request: destination property',
+    },
+    {
+        path: 'lib/javascript/web_api/request/duplex/index.md',
+        title: 'Request: duplex property',
     },
     {
         path: 'lib/javascript/web_api/request/formdata/index.md',
@@ -24684,8 +24908,8 @@ export const javascriptTitles: {
         title: 'RTCIdentityAssertion',
     },
     {
-        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/averagertcpinterval/index.md',
-        title: 'RTCInboundRtpStreamStats: averageRtcpInterval property',
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/audiolevel/index.md',
+        title: 'RTCInboundRtpStreamStats: audioLevel property',
     },
     {
         path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/bytesreceived/index.md',
@@ -24696,6 +24920,18 @@ export const javascriptTitles: {
         title: 'RTCInboundRtpStreamStats: codecId property',
     },
     {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/concealedsamples/index.md',
+        title: 'RTCInboundRtpStreamStats: concealedSamples property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/concealmentevents/index.md',
+        title: 'RTCInboundRtpStreamStats: concealmentEvents property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/estimatedplayouttimestamp/index.md',
+        title: 'RTCInboundRtpStreamStats: estimatedPlayoutTimestamp property',
+    },
+    {
         path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/fecpacketsdiscarded/index.md',
         title: 'RTCInboundRtpStreamStats: fecPacketsDiscarded property',
     },
@@ -24704,8 +24940,36 @@ export const javascriptTitles: {
         title: 'RTCInboundRtpStreamStats: fecPacketsReceived property',
     },
     {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/frameheight/index.md',
+        title: 'RTCInboundRtpStreamStats: frameHeight property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/framesassembledfrommultiplepackets/index.md',
+        title: 'RTCInboundRtpStreamStats: framesAssembledFromMultiplePackets property',
+    },
+    {
         path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/framesdecoded/index.md',
         title: 'RTCInboundRtpStreamStats: framesDecoded property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/framespersecond/index.md',
+        title: 'RTCInboundRtpStreamStats: framesPerSecond property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/framesreceived/index.md',
+        title: 'RTCInboundRtpStreamStats: framesReceived property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/framewidth/index.md',
+        title: 'RTCInboundRtpStreamStats: frameWidth property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/freezecount/index.md',
+        title: 'RTCInboundRtpStreamStats: freezeCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/headerbytesreceived/index.md',
+        title: 'RTCInboundRtpStreamStats: headerBytesReceived property',
     },
     {
         path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/id/index.md',
@@ -24714,6 +24978,34 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/index.md',
         title: 'RTCInboundRtpStreamStats',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/insertedsamplesfordeceleration/index.md',
+        title: 'RTCInboundRtpStreamStats: insertedSamplesForDeceleration property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/jitter/index.md',
+        title: 'RTCInboundRtpStreamStats: jitter property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/jitterbufferdelay/index.md',
+        title: 'RTCInboundRtpStreamStats: jitterBufferDelay property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/jitterbufferemittedcount/index.md',
+        title: 'RTCInboundRtpStreamStats: jitterBufferEmittedCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/jitterbufferminimumdelay/index.md',
+        title: 'RTCInboundRtpStreamStats: jitterBufferMinimumDelay property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/jitterbuffertargetdelay/index.md',
+        title: 'RTCInboundRtpStreamStats: jitterBufferTargetDelay property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/keyframesdecoded/index.md',
+        title: 'RTCInboundRtpStreamStats: keyFramesDecoded property',
     },
     {
         path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/kind/index.md',
@@ -24732,32 +25024,40 @@ export const javascriptTitles: {
         title: 'RTCInboundRtpStreamStats: nackCount property',
     },
     {
-        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/packetsduplicated/index.md',
-        title: 'RTCInboundRtpStreamStats: packetsDuplicated property',
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/packetsdiscarded/index.md',
+        title: 'RTCInboundRtpStreamStats: packetsDiscarded property',
     },
     {
-        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/packetsfaileddecryption/index.md',
-        title: 'RTCInboundRtpStreamStats: packetsFailedDecryption property',
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/packetslost/index.md',
+        title: 'RTCInboundRtpStreamStats: packetsLost property',
     },
     {
-        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/perdscppacketsreceived/index.md',
-        title: 'RTCInboundRtpStreamStats: perDscpPacketsReceived property',
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/packetsreceived/index.md',
+        title: 'RTCInboundRtpStreamStats: packetsReceived property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/pausecount/index.md',
+        title: 'RTCInboundRtpStreamStats: pauseCount property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/playoutid/index.md',
+        title: 'RTCInboundRtpStreamStats: playoutId property',
     },
     {
         path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/qpsum/index.md',
         title: 'RTCInboundRtpStreamStats: qpSum property',
     },
     {
-        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/receiverid/index.md',
-        title: 'RTCInboundRtpStreamStats: receiverId property',
-    },
-    {
         path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/remoteid/index.md',
         title: 'RTCInboundRtpStreamStats: remoteId property',
     },
     {
-        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/slicount/index.md',
-        title: 'RTCInboundRtpStreamStats: sliCount property',
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/removedsamplesforacceleration/index.md',
+        title: 'RTCInboundRtpStreamStats: removedSamplesForAcceleration property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/silentconcealedsamples/index.md',
+        title: 'RTCInboundRtpStreamStats: silentConcealedSamples property',
     },
     {
         path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/ssrc/index.md',
@@ -24766,6 +25066,50 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/timestamp/index.md',
         title: 'RTCInboundRtpStreamStats: timestamp property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/totalassemblytime/index.md',
+        title: 'RTCInboundRtpStreamStats: totalAssemblyTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/totalaudioenergy/index.md',
+        title: 'RTCInboundRtpStreamStats: totalAudioEnergy property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/totaldecodetime/index.md',
+        title: 'RTCInboundRtpStreamStats: totalDecodeTime property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/totalfreezesduration/index.md',
+        title: 'RTCInboundRtpStreamStats: totalFreezesDuration property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/totalinterframedelay/index.md',
+        title: 'RTCInboundRtpStreamStats: totalInterFrameDelay property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/totalpausesduration/index.md',
+        title: 'RTCInboundRtpStreamStats: totalPausesDuration property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/totalprocessingdelay/index.md',
+        title: 'RTCInboundRtpStreamStats: totalProcessingDelay property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/totalsamplesduration/index.md',
+        title: 'RTCInboundRtpStreamStats: totalSamplesDuration property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/totalsamplesreceived/index.md',
+        title: 'RTCInboundRtpStreamStats: totalSamplesReceived property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/totalsquaredinterframedelay/index.md',
+        title: 'RTCInboundRtpStreamStats: totalSquaredInterFrameDelay property',
+    },
+    {
+        path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/trackidentifier/index.md',
+        title: 'RTCInboundRtpStreamStats: trackIdentifier property',
     },
     {
         path: 'lib/javascript/web_api/rtcinboundrtpstreamstats/transportid/index.md',
@@ -25770,6 +26114,10 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/web_api/screen/width/index.md',
         title: 'Screen: width property',
+    },
+    {
+        path: 'lib/javascript/web_api/screen_capture_api/captured_surface_control/index.md',
+        title: 'Using the Captured Surface Control API',
     },
     {
         path: 'lib/javascript/web_api/screen_capture_api/element_region_capture/index.md',
@@ -27510,6 +27858,14 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/web_api/svgaelement/index.md',
         title: 'SVGAElement',
+    },
+    {
+        path: 'lib/javascript/web_api/svgaelement/rel/index.md',
+        title: 'SVGAElement: rel property',
+    },
+    {
+        path: 'lib/javascript/web_api/svgaelement/rellist/index.md',
+        title: 'SVGAElement: relList property',
     },
     {
         path: 'lib/javascript/web_api/svgaelement/target/index.md',
@@ -30236,6 +30592,10 @@ export const javascriptTitles: {
         title: 'ToggleEvent: oldState property',
     },
     {
+        path: 'lib/javascript/web_api/toggleevent/source/index.md',
+        title: 'ToggleEvent: source property',
+    },
+    {
         path: 'lib/javascript/web_api/toggleevent/toggleevent/index.md',
         title: 'ToggleEvent: ToggleEvent() constructor',
     },
@@ -30770,6 +31130,10 @@ export const javascriptTitles: {
     {
         path: 'lib/javascript/web_api/urlpattern/hash/index.md',
         title: 'URLPattern: hash property',
+    },
+    {
+        path: 'lib/javascript/web_api/urlpattern/hasregexpgroups/index.md',
+        title: 'URLPattern: hasRegExpGroups property',
     },
     {
         path: 'lib/javascript/web_api/urlpattern/hostname/index.md',

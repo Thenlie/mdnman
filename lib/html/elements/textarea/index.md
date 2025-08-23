@@ -3,9 +3,8 @@ title: "<textarea>: The Textarea element"
 slug: Web/HTML/Reference/Elements/textarea
 page-type: html-element
 browser-compat: html.elements.textarea
+sidebar: htmlsidebar
 ---
-
-{{HTMLSidebar}}
 
 The **`<textarea>`** [HTML](/en-US/docs/Web/HTML) element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
 
@@ -31,8 +30,8 @@ textarea {
   max-width: 100%;
   line-height: 1.5;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 1px #999;
+  border: 1px solid #cccccc;
+  box-shadow: 1px 1px 1px #999999;
 }
 
 label {

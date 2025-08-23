@@ -3,9 +3,8 @@ title: rel=preload
 slug: Web/HTML/Reference/Attributes/rel/preload
 page-type: html-attribute-value
 browser-compat: html.elements.link.rel.preload
+sidebar: htmlsidebar
 ---
-
-{{HTMLSidebar}}
 
 The `preload` value of the {{htmlelement("link")}} element's [`rel`](/en-US/docs/Web/HTML/Reference/Elements/link#rel) attribute lets you declare fetch requests in the
 HTML's {{htmlelement("head")}}, specifying resources that your page will need very soon, which you want to start loading early in the page lifecycle,
@@ -170,9 +169,9 @@ Let's look at an example (see it on GitHub — [source code](https://github.com/
     const header = document.querySelector("header");
 
     if (mediaQueryList.matches) {
-      header.style.backgroundImage = "url(bg-image-narrow.png)";
+      header.style.backgroundImage = 'url("bg-image-narrow.png")';
     } else {
-      header.style.backgroundImage = "url(bg-image-wide.png)";
+      header.style.backgroundImage = 'url("bg-image-wide.png")';
     }
   </script>
 </body>

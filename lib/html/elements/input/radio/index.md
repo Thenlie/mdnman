@@ -3,9 +3,8 @@ title: <input type="radio">
 slug: Web/HTML/Reference/Elements/input/radio
 page-type: html-attribute-value
 browser-compat: html.elements.input.type_radio
+sidebar: htmlsidebar
 ---
-
-{{HTMLSidebar}}
 
 {{htmlelement("input")}} elements of type **`radio`** are generally used in **radio groups**—collections of radio buttons describing a set of related options.
 
@@ -274,7 +273,7 @@ input {
   width: 16px;
   height: 16px;
 
-  border: 2px solid #999;
+  border: 2px solid #999999;
   transition: 0.2s all linear;
   margin-right: 5px;
 
@@ -298,7 +297,7 @@ legend {
 
 button:hover,
 button:focus {
-  color: #999;
+  color: #999999;
 }
 
 button:active {

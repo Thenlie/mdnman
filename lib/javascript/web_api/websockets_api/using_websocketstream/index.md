@@ -2,12 +2,9 @@
 title: Using WebSocketStream to write a client
 slug: Web/API/WebSockets_API/Using_WebSocketStream
 page-type: guide
-status:
-  - experimental
-  - non-standard
 ---
 
-{{DefaultAPISidebar("WebSockets API")}}{{non-standard_header}}
+{{DefaultAPISidebar("WebSockets API")}}
 
 The {{domxref("WebSocketStream")}} API is a {{jsxref("Promise")}}-based alternative to {{domxref("WebSocket")}} for creating and using client-side WebSocket connections. `WebSocketStream` uses the [Streams API](/en-US/docs/Web/API/Streams_API) to handle receiving and sending messages, meaning that socket connections can take advantage of stream [backpressure](/en-US/docs/Web/API/Streams_API/Concepts#backpressure) automatically (no additional action required by the developer), regulating the speed of reading or writing to avoid bottlenecks in the application.
 
@@ -102,7 +99,7 @@ Alternatively you can use the {{domxref("WebSocketStream.close()")}} method to c
 
 ```js
 wss.close({
-  code: 4000,
+  closeCode: 4000,
   reason: "Night draws to a close",
 });
 ```
@@ -139,7 +136,7 @@ function writeToScreen(message) {
 }
 ```
 
-Next, we create an `if ... else` structure to feature detect `WebSocketStream` and output an informative message on non-supporting browsers:
+Next, we create an `if...else` structure to feature detect `WebSocketStream` and output an informative message on non-supporting browsers:
 
 ```js
 if (!("WebSocketStream" in self)) {
@@ -214,7 +211,7 @@ Finally, we add an event listener to the close button that closes the connection
 ```js
 closeBtn.addEventListener("click", () => {
   wss.close({
-    code: 1000,
+    closeCode: 1000,
     reason: "That's all folks",
   });
 
@@ -277,7 +274,7 @@ if (!("WebSocketStream" in self)) {
 
   closeBtn.addEventListener("click", () => {
     wss.close({
-      code: 1000,
+      closeCode: 1000,
       reason: "That's all folks",
     });
 
