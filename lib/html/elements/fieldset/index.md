@@ -3,9 +3,8 @@ title: "<fieldset>: The Field Set element"
 slug: Web/HTML/Reference/Elements/fieldset
 page-type: html-element
 browser-compat: html.elements.fieldset
+sidebar: htmlsidebar
 ---
-
-{{HTMLSidebar}}
 
 The **`<fieldset>`** [HTML](/en-US/docs/Web/HTML) element is used to group several controls as well as labels ({{HTMLElement("label")}}) within a web form.
 
@@ -30,8 +29,8 @@ The **`<fieldset>`** [HTML](/en-US/docs/Web/HTML) element is used to group sever
 
 ```css interactive-example
 legend {
-  background-color: #000;
-  color: #fff;
+  background-color: black;
+  color: white;
   padding: 3px 6px;
 }
 

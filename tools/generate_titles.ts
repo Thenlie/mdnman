@@ -7,6 +7,7 @@ const DIRECTORY_MAP = [
     { name: 'javascript', path: 'lib/javascript', out: 'src/titles/js_titles.ts' },
     { name: 'html', path: 'lib/html', out: 'src/titles/html_titles.ts' },
     { name: 'css', path: 'lib/css', out: 'src/titles/css_titles.ts' },
+    { name: 'glossary', path: 'lib/glossary', out: 'src/titles/glossary_titles.ts' },
 ];
 
 /**

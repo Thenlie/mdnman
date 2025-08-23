@@ -1,4 +1,4 @@
-export type SupportedLanguages = 'javascript' | 'html' | 'css';
+export type SupportedLanguages = 'javascript' | 'html' | 'css' | 'glossary';
 
 export type MDNSection = {
     name: string;

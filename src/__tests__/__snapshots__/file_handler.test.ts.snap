@@ -7,9 +7,8 @@ short-title: map()
 slug: Web/JavaScript/Reference/Global_Objects/Array/map
 page-type: javascript-instance-method
 browser-compat: javascript.builtins.Array.map
+sidebar: jsref
 ---
-
-{{JSRef}}
 
 The **\`map()\`** method of {{jsxref("Array")}} instances creates
 a new array populated with the results of calling a provided function on
@@ -18,12 +17,12 @@ every element in the calling array.
 {{InteractiveExample("JavaScript Demo: Array.prototype.map()")}}
 
 \`\`\`js interactive-example
-const array1 = [1, 4, 9, 16];
+const array = [1, 4, 9, 16];
 
 // Pass a function to map
-const map1 = array1.map((x) => x * 2);
+const mapped = array.map((x) => x * 2);
 
-console.log(map1);
+console.log(mapped);
 // Expected output: Array [2, 8, 18, 32]
 \`\`\`
 
@@ -308,9 +307,8 @@ title: "<a>: The Anchor element"
 slug: Web/HTML/Reference/Elements/a
 page-type: html-element
 browser-compat: html.elements.a
+sidebar: htmlsidebar
 ---
-
-{{HTMLSidebar}}
 
 The **\`<a>\`** [HTML](/en-US/docs/Web/HTML) element (or _anchor_ element), with [its \`href\` attribute](#href), creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.
 
@@ -364,7 +362,7 @@ This element's attributes include the [global attributes](/en-US/docs/Web/HTML/R
     - Without a value, the browser will suggest a filename/extension, generated from various sources:
       - The {{HTTPHeader("Content-Disposition")}} HTTP header
       - The final segment in the URL [path](/en-US/docs/Web/API/URL/pathname)
-      - The {{Glossary("MIME_type", "media type")}} (from the {{HTTPHeader("Content-Type")}} header, the start of a [\`data:\` URL](/en-US/docs/Web/URI/Reference/Schemes/data), or {{domxref("Blob.type")}} for a [\`blob:\` URL](/en-US/docs/Web/API/URL/createObjectURL_static))
+      - The {{Glossary("MIME_type", "media type")}} (from the {{HTTPHeader("Content-Type")}} header, the start of a [\`data:\` URL](/en-US/docs/Web/URI/Reference/Schemes/data), or {{domxref("Blob.type")}} for a [\`blob:\` URL](/en-US/docs/Web/URI/Reference/Schemes/blob))
 
     - \`filename\`: defining a value suggests it as the filename. \`/\` and \`\\\` characters are converted to underscores (\`_\`). Filesystems may forbid other characters in filenames, so browsers will adjust the suggested name if necessary.
 
@@ -559,7 +557,7 @@ A **skip link** is a link placed as early as possible in {{HTMLElement("body")}}
 .skip-link {
   position: absolute;
   top: -3em;
-  background: #fff;
+  background: white;
 }
 .skip-link:focus {
   top: 0;
@@ -711,13 +709,13 @@ html {
   font-family: sans-serif;
 }
 canvas {
-  background: #fff;
+  background: white;
   border: 1px dashed;
 }
 a {
   display: inline-block;
-  background: #69c;
-  color: #fff;
+  background: #6699cc;
+  color: white;
   padding: 5px 10px;
 }
 \`\`\`
@@ -878,11 +876,10 @@ title: color
 slug: Web/CSS/color
 page-type: css-property
 browser-compat: css.properties.color
+sidebar: cssref
 ---
 
-{{CSSRef}}
-
-The **\`color\`** [CSS](/en-US/docs/Web/CSS) property sets the foreground [color value](/en-US/docs/Web/CSS/color_value) of an element's text and [text decorations](/en-US/docs/Web/CSS/text-decoration), and sets the [\`currentcolor\`](/en-US/docs/Web/CSS/color_value#currentcolor_keyword) value. \`currentcolor\` may be used as an indirect value on _other_ properties and is the default for other color properties, such as {{cssxref("border-color")}}.
+The **\`color\`** [CSS](/en-US/docs/Web/CSS) property sets the foreground [color value](/en-US/docs/Web/CSS/color_value) of an element's text and [text decorations](/en-US/docs/Web/CSS/text-decoration), and sets the [\`currentColor\`](/en-US/docs/Web/CSS/color_value#currentcolor_keyword) value. \`currentColor\` may be used as an indirect value on _other_ properties and is the default for other color properties, such as {{cssxref("border-color")}}.
 
 {{InteractiveExample("CSS Demo: color")}}
 
@@ -903,7 +900,7 @@ color: hsl(30deg 82% 43%);
 \`\`\`
 
 \`\`\`css interactive-example-choice
-color: hsla(237deg 74% 33% / 61%);
+color: hsl(237deg 74% 33% / 61%);
 \`\`\`
 
 \`\`\`css interactive-example-choice
@@ -938,7 +935,7 @@ For an overview of using color in HTML, see [Applying color to HTML elements usi
 
 \`\`\`css
 /* Keyword values */
-color: currentcolor;
+color: currentColor;
 
 /* <named-color> values */
 color: red;
@@ -993,8 +990,8 @@ Note that the value must be a uniform color. It can't be a {{cssxref("&lt;gradie
 
 - {{cssxref("&lt;color&gt;")}}
   - : Sets the color of the textual and decorative parts of the element.
-- [\`currentcolor\`](/en-US/docs/Web/CSS/color_value#currentcolor_keyword)
-  - : Sets the color to the element's \`color\` property value. However, if set as the value of \`color\`, \`currentcolor\` is treated as \`inherit\`.
+- [\`currentColor\`](/en-US/docs/Web/CSS/color_value#currentcolor_keyword)
+  - : Sets the color to the element's \`color\` property value. However, if set as the value of \`color\`, \`currentColor\` is treated as \`inherit\`.
 
 ## Accessibility
 
@@ -1077,9 +1074,8 @@ short-title: filter()
 slug: Web/JavaScript/Reference/Global_Objects/Array/filter
 page-type: javascript-instance-method
 browser-compat: javascript.builtins.Array.filter
+sidebar: jsref
 ---
-
-{{JSRef}}
 
 The **\`filter()\`** method of {{jsxref("Array")}} instances creates a [shallow copy](/en-US/docs/Glossary/Shallow_copy) of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
 
@@ -1298,9 +1294,8 @@ title: "<div>: The Content Division element"
 slug: Web/HTML/Reference/Elements/div
 page-type: html-element
 browser-compat: html.elements.div
+sidebar: htmlsidebar
 ---
-
-{{HTMLSidebar}}
 
 The **\`<div>\`** [HTML](/en-US/docs/Web/HTML) element is the generic container for flow content. It has no effect on the content or layout until styled in some way using {{glossary("CSS")}} (e.g., styling is directly applied to it, or some kind of layout model like [Flexbox](/en-US/docs/Web/CSS/CSS_flexible_box_layout) is applied to its parent element).
 
@@ -1317,8 +1312,8 @@ The **\`<div>\`** [HTML](/en-US/docs/Web/HTML) element is the generic container 
 
 \`\`\`css interactive-example
 .warning {
-  border: 10px ridge #f00;
-  background-color: #ff0;
+  border: 10px ridge red;
+  background-color: yellow;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -1384,10 +1379,10 @@ This example creates a shadowed box by applying a style to the \`<div>\` using C
 \`\`\`css
 .shadowbox {
   width: 15em;
-  border: 1px solid #333;
-  box-shadow: 8px 8px 5px #444;
+  border: 1px solid #333333;
+  box-shadow: 8px 8px 5px #444444;
   padding: 8px 12px;
-  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+  background-image: linear-gradient(180deg, white, #dddddd 40%, #cccccc);
 }
 \`\`\`
 
@@ -1480,9 +1475,8 @@ title: border
 slug: Web/CSS/border
 page-type: css-shorthand-property
 browser-compat: css.properties.border
+sidebar: cssref
 ---
-
-{{CSSRef}}
 
 The **\`border\`** [shorthand](/en-US/docs/Web/CSS/CSS_cascade/Shorthand_properties) [CSS](/en-US/docs/Web/CSS) property sets an element's border. It sets the values of {{Cssxref("border-width")}}, {{Cssxref("border-style")}}, and {{Cssxref("border-color")}}.
 
@@ -1518,8 +1512,8 @@ border: 4mm ridge rgb(211 220 50 / 0.6);
 
 \`\`\`css interactive-example
 #example-element {
-  background-color: #eee;
-  color: #8b008b;
+  background-color: #eeeeee;
+  color: darkmagenta;
   padding: 0.75em;
   width: 80%;
   height: 100px;
@@ -1544,7 +1538,7 @@ border: solid;
 border: 2px dotted;
 
 /* style | color */
-border: outset #f33;
+border: outset #ff3333;
 
 /* width | style | color */
 border: medium dashed green;
@@ -1569,7 +1563,7 @@ The \`border\` property may be specified using one, two, or three of the values 
 - {{cssxref("&lt;line-style&gt;")}}
   - : Sets the style of the border. Defaults to \`none\` if absent. See {{Cssxref("border-style")}}.
 - {{cssxref("&lt;color&gt;")}}
-  - : Sets the color of the border. Defaults to \`currentcolor\` if absent. See {{Cssxref("border-color")}}.
+  - : Sets the color of the border. Defaults to \`currentColor\` if absent. See {{Cssxref("border-color")}}.
 
 ## Description
 
@@ -1647,9 +1641,8 @@ short-title: "[Symbol.split]()"
 slug: Web/JavaScript/Reference/Global_Objects/RegExp/Symbol.split
 page-type: javascript-instance-method
 browser-compat: javascript.builtins.RegExp.@@split
+sidebar: jsref
 ---
-
-{{JSRef}}
 
 The **\`[Symbol.split]()\`** method of {{jsxref("RegExp")}} instances specifies how [\`String.prototype.split\`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) should behave when the regular expression is passed in as the separator.
 
@@ -1776,9 +1769,8 @@ page-type: html-attribute
 browser-compat:
   - html.elements.textarea.dirname
   - html.elements.input.dirname
+sidebar: htmlsidebar
 ---
-
-{{HTMLSidebar}}
 
 The **\`dirname\`** attribute can be used on the {{htmlelement("textarea")}} element and several {{htmlelement("input")}} types and describes the directionality of the element's text content during form submission.
 The browser uses this attribute's value to determine whether text the user has entered is left-to-right or right-to-left oriented.
@@ -1887,9 +1879,8 @@ title: font-family
 slug: Web/CSS/@font-face/font-family
 page-type: css-at-rule-descriptor
 browser-compat: css.at-rules.font-face.font-family
+sidebar: cssref
 ---
-
-{{CSSRef}}
 
 The **\`font-family\`** CSS descriptor sets the font family for a font specified in an {{cssxref("@font-face")}} at-rule.
 

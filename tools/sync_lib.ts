@@ -13,6 +13,7 @@ const filesToCopy: { from: string; to: string }[] = [
     { from: 'files/en-us/web/javascript/guide', to: 'javascript' },
     { from: 'files/en-us/web/api', to: 'javascript/web_api' },
     { from: 'files/en-us/web/accessibility/aria/reference', to: 'html' },
+    { from: 'files/en-us/glossary', to: 'glossary' },
 ];
 
 // Clear the destination folder (be careful doing this)

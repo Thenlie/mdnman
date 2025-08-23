@@ -19,10 +19,6 @@ export const cssTitles: {
         title: '-moz-image-rect',
     },
     {
-        path: 'lib/css/-moz-image-region/index.md',
-        title: '-moz-image-region',
-    },
-    {
         path: 'lib/css/-moz-orient/index.md',
         title: '-moz-orient',
     },
@@ -287,10 +283,6 @@ export const cssTitles: {
         title: 'aspect-ratio',
     },
     {
-        path: 'lib/css/@media/aural/index.md',
-        title: 'aural',
-    },
-    {
         path: 'lib/css/@media/color/index.md',
         title: 'color',
     },
@@ -535,6 +527,10 @@ export const cssTitles: {
         title: ':active',
     },
     {
+        path: 'lib/css/_colon_active-view-transition/index.md',
+        title: ':active-view-transition',
+    },
+    {
         path: 'lib/css/_colon_any-link/index.md',
         title: ':any-link',
     },
@@ -621,6 +617,14 @@ export const cssTitles: {
     {
         path: 'lib/css/_colon_has-slotted/index.md',
         title: ':has-slotted',
+    },
+    {
+        path: 'lib/css/_colon_heading/index.md',
+        title: ':heading',
+    },
+    {
+        path: 'lib/css/_colon_heading_function/index.md',
+        title: ':heading()',
     },
     {
         path: 'lib/css/_colon_host/index.md',
@@ -1615,6 +1619,10 @@ export const cssTitles: {
         title: 'caption-side',
     },
     {
+        path: 'lib/css/caret-animation/index.md',
+        title: 'caret-animation',
+    },
+    {
         path: 'lib/css/caret-color/index.md',
         title: 'caret-color',
     },
@@ -2043,6 +2051,10 @@ export const cssTitles: {
         title: 'Using CSS counters',
     },
     {
+        path: 'lib/css/css_custom_highlight_api/index.md',
+        title: 'CSS custom highlight API',
+    },
+    {
         path: 'lib/css/css_display/block_and_inline_layout_in_normal_flow/index.md',
         title: 'Block and inline layout in normal flow',
     },
@@ -2085,6 +2097,18 @@ export const cssTitles: {
     {
         path: 'lib/css/css_display/visual_formatting_model/index.md',
         title: 'Visual formatting model',
+    },
+    {
+        path: 'lib/css/css_easing_functions/index.md',
+        title: 'CSS easing functions',
+    },
+    {
+        path: 'lib/css/css_environment_variables/index.md',
+        title: 'CSS environment variables',
+    },
+    {
+        path: 'lib/css/css_environment_variables/using_environment_variables/index.md',
+        title: 'Using environment variables',
     },
     {
         path: 'lib/css/css_filter_effects/index.md',
@@ -2267,6 +2291,10 @@ export const cssTitles: {
         title: 'CSS masking',
     },
     {
+        path: 'lib/css/css_masking/mask_properties/index.md',
+        title: 'CSS mask properties',
+    },
+    {
         path: 'lib/css/css_masking/masking/index.md',
         title: 'Introduction to CSS masking',
     },
@@ -2411,6 +2439,10 @@ export const cssTitles: {
         title: 'CSS pseudo-elements',
     },
     {
+        path: 'lib/css/css_round_display/index.md',
+        title: 'CSS round display',
+    },
+    {
         path: 'lib/css/css_ruby_layout/index.md',
         title: 'CSS ruby layout',
     },
@@ -2487,6 +2519,10 @@ export const cssTitles: {
         title: 'Overview of shapes',
     },
     {
+        path: 'lib/css/css_shapes/shape_generator/index.md',
+        title: 'Shape generator',
+    },
+    {
         path: 'lib/css/css_shapes/shapes_from_images/index.md',
         title: 'Shapes from images',
     },
@@ -2523,12 +2559,20 @@ export const cssTitles: {
         title: 'CSS text',
     },
     {
+        path: 'lib/css/css_text/whitespace/index.md',
+        title: 'Handling whitespace',
+    },
+    {
         path: 'lib/css/css_text/wrapping_breaking_text/index.md',
         title: 'Wrapping and breaking text',
     },
     {
         path: 'lib/css/css_text_decoration/index.md',
         title: 'CSS text decoration',
+    },
+    {
+        path: 'lib/css/css_text_decoration/text_shadows/index.md',
+        title: 'Introduction to text shadows',
     },
     {
         path: 'lib/css/css_transforms/index.md',
@@ -3081,6 +3125,10 @@ export const cssTitles: {
     {
         path: 'lib/css/ident/index.md',
         title: '<ident>',
+    },
+    {
+        path: 'lib/css/if/index.md',
+        title: 'if()',
     },
     {
         path: 'lib/css/image/image/index.md',
@@ -3879,6 +3927,10 @@ export const cssTitles: {
         title: 'ruby-align',
     },
     {
+        path: 'lib/css/ruby-overhang/index.md',
+        title: 'ruby-overhang',
+    },
+    {
         path: 'lib/css/ruby-position/index.md',
         title: 'ruby-position',
     },
@@ -4053,6 +4105,14 @@ export const cssTitles: {
     {
         path: 'lib/css/shape-rendering/index.md',
         title: 'shape-rendering',
+    },
+    {
+        path: 'lib/css/sibling-count/index.md',
+        title: 'sibling-count()',
+    },
+    {
+        path: 'lib/css/sibling-index/index.md',
+        title: 'sibling-index()',
     },
     {
         path: 'lib/css/sign/index.md',
