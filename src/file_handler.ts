@@ -62,16 +62,16 @@ const getMDNFile = (filepath: string): string | null => {
  * Search the lib folder for a directory with a name containing the users search
  * Return the contents of the index.md file in that directory as a string
  * If multiple directories are found, prompt the user to select one
- * @param {SupportedLanguages} technology
+ * @param {SupportedLanguages} mdnCategory
  * @param {string} query
  * @returns {Promise<string | null>}
  */
 const findMDNFile = async (
-    technology: SupportedLanguages,
+    mdnCategory: SupportedLanguages,
     query: string
 ): Promise<string | null> => {
     const q = query.trim().toLowerCase();
-    const files = TITLE_FILE_LIST[technology];
+    const files = TITLE_FILE_LIST[mdnCategory];
     // find all files with the query in the title
     const matchedTitles = files.filter((file) => file.title.toLowerCase().includes(q));
 
@@ -103,16 +103,16 @@ const findMDNFile = async (
  * Search the lib folder for a directory with a name containing the users search.
  * Return the contents of the index.md file in that directory as a string.
  * If multiple directories are found, return the first one.
- * @param {SupportedLanguages} technology
+ * @param {SupportedLanguages} mdnCategory
  * @param {string} query
  * @returns {string | null}
  */
 const optimisticallyFindMDNFile = (
-    technology: SupportedLanguages,
+    mdnCategory: SupportedLanguages,
     query: string
 ): string | null => {
     const q = query.trim().toLowerCase();
-    const files = TITLE_FILE_LIST[technology];
+    const files = TITLE_FILE_LIST[mdnCategory];
     // find all files with the query in the title
     const matchedTitles = files.filter((file) => file.title.toLowerCase().includes(q));
     if (matchedTitles.length < 1) {

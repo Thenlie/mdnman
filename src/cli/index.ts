@@ -14,17 +14,17 @@ const GENERIC_ERROR_MESSAGE =
 /**
  * Runs when any CLI command is executed. Handles finding the correct file and outputting it
  * based on the user defined options
- * @param {SupportedLanguages} lang
+ * @param {SupportedLanguages} category
  * @param {string} query
  * @param {{output: string, section: string}} options
  * @returns {Promise<void>}
  */
 const commandActionHandler = async (
-    lang: SupportedLanguages,
+    category: SupportedLanguages,
     query: string,
     options: { output: string; section: string; path: string }
 ): Promise<void> => {
-    let document = await findMDNFile(lang, query);
+    let document = await findMDNFile(category, query);
     if (!document) {
         console.error('[commandActionHandler]', GENERIC_ERROR_MESSAGE);
         return;
@@ -62,9 +62,9 @@ const interactiveActionHandler = async (options: {
     path: string;
 }): Promise<void> => {
     // Prompt user for language
-    const language: SupportedLanguages = await select(
+    const category: SupportedLanguages = await select(
         {
-            message: 'Select a language',
+            message: 'Select a category',
             choices: [
                 {
                     name: 'JavaScript',
@@ -78,6 +78,10 @@ const interactiveActionHandler = async (options: {
                     name: 'CSS',
                     value: 'css',
                 },
+                {
+                    name: 'Glossary',
+                    value: 'glossary',
+                },
             ],
         },
         { output: process.stderr }
@@ -87,7 +91,7 @@ const interactiveActionHandler = async (options: {
         {
             message: 'Search for an MDN Web Doc',
             source: async (input) => {
-                const titles = TITLE_FILE_LIST[language];
+                const titles = TITLE_FILE_LIST[category];
                 const choices = createChoicesFromTitles(titles);
                 if (!input) {
                     return choices;
@@ -223,6 +227,14 @@ const cli = () => {
         .option('-o, --output <stdout | file | vim>', 'output type', 'stdout')
         .option('-s, --section <section_name>', 'specified section of MDN doc', 'none')
         .action(async (query, options) => commandActionHandler('css', query, options));
+
+    program
+        .command('glossary')
+        .description('Search the MDN Glossary')
+        .argument('<query>', 'query to search')
+        .option('-o, --output <stdout | file | vim>', 'output type', 'stdout')
+        .option('-s, --section <section_name>', 'specified section of MDN doc', 'none')
+        .action(async (query, options) => commandActionHandler('glossary', query, options));
 
     program
         .command('interactive')

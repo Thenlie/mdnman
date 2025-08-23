@@ -1,7 +1,5 @@
 import type { SupportedLanguages } from '../types.js';
-import { cssTitles } from './css_titles.js';
-import { htmlTitles } from './html_titles.js';
-import { javascriptTitles } from './js_titles.js';
+import { TITLE_FILE_LIST } from './index.js';
 
 /**
  * Checks if the provided title matches any documents in the list.
@@ -11,23 +9,14 @@ import { javascriptTitles } from './js_titles.js';
  * @returns {string | null}
  */
 const getPathFromTitle = (inputTitle: string, language: SupportedLanguages): string | null => {
-    let titles;
-    switch (language) {
-        case 'html':
-            titles = htmlTitles;
-            break;
-        case 'css':
-            titles = cssTitles;
-            break;
-        case 'javascript':
-            titles = javascriptTitles;
-            break;
-        default:
-            console.error(
-                `[getPathFromTitle] Error: "${language}" is not a supported language! Please choose "javascript", "html" or "css".`
-            );
-            return null;
+    if (!(language in TITLE_FILE_LIST)) {
+        console.error(
+            `[getPathFromTitle] Error: "${language}" is not a supported language! Please choose "javascript", "html" or "css".`
+        );
+        return null;
     }
+
+    const titles = TITLE_FILE_LIST[language];
     const match = titles.find((title) => title.title === inputTitle);
     if (!match) {
         console.error(
