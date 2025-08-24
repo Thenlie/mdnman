@@ -55,11 +55,11 @@ Since this method may prompt the user via [Inquirer.js](https://github.com/SBoud
 
 #### Parameters
 
-`technology`
+`mdnCategory`
 
-> 'javascript', 'html', or 'css'
+> 'javascript', 'html', 'css', or 'glossary'
 >
-> _See [`SupportedLanguages`](/mdnman/types/#supportedlanguages) type_
+> _See [`SupportedCategories`](/mdnman/types/#supportedcategories) type_
 
 `query`
 
@@ -87,11 +87,11 @@ Return the contents of the file in that directory. If multiple files are found, 
 
 #### Parameters
 
-`technology`
+`mdnCategory`
 
-> 'javascript', 'html', or 'css'
+> 'javascript', 'html', 'css', or 'glossary'
 >
-> _See [`SupportedLanguages`](/mdnman/types/#supportedlanguages) type_
+> _See [`SupportedCategories`](/mdnman/types/#supportedcategories) type_
 
 `query`
 
