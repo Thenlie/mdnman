@@ -5,7 +5,7 @@ import { completeParse, createChoicesFromTitles, getHeader } from '../parser/ind
 import { getAllSections, getNamedSection, getSection } from '../parser/sections.js';
 import { findMDNFile, getMDNFile } from '../file_handler.js';
 import { TITLE_FILE_LIST } from '../titles/index.js';
-import type { SupportedLanguages } from '../types.js';
+import type { SupportedCategories } from '../types.js';
 
 const program = new Command();
 const GENERIC_ERROR_MESSAGE =
@@ -14,13 +14,13 @@ const GENERIC_ERROR_MESSAGE =
 /**
  * Runs when any CLI command is executed. Handles finding the correct file and outputting it
  * based on the user defined options
- * @param {SupportedLanguages} category
+ * @param {SupportedCategories} category
  * @param {string} query
  * @param {{output: string, section: string}} options
  * @returns {Promise<void>}
  */
 const commandActionHandler = async (
-    category: SupportedLanguages,
+    category: SupportedCategories,
     query: string,
     options: { output: string; section: string; path: string }
 ): Promise<void> => {
@@ -62,7 +62,7 @@ const interactiveActionHandler = async (options: {
     path: string;
 }): Promise<void> => {
     // Prompt user for language
-    const category: SupportedLanguages = await select(
+    const category: SupportedCategories = await select(
         {
             message: 'Select a category',
             choices: [

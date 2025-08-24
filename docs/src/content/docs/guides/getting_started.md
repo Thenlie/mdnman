@@ -52,11 +52,12 @@ Options:
   -h, --help              display help for command
 
 Commands:
-  js [options] <query>    Search the MDN JavaScript reference library
-  html [options] <query>  Search the MDN HTML reference library
-  css [options] <query>   Search the MDN CSS reference library
-  interactive [options]   Use prompts to search the entire MDN reference library
-  help [command]          display help for command
+  js [options] <query>       Search the MDN JavaScript reference library
+  html [options] <query>     Search the MDN HTML reference library
+  css [options] <query>      Search the MDN CSS reference library
+  glossary [options] <query> Search the MDN Glossary
+  interactive [options]      Use prompts to search the entire MDN reference library
+  help [command]             Get help for specific command
 ```
 
 A complete command with options would look like this.

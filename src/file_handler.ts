@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { select } from '@inquirer/prompts';
-import type { SupportedLanguages } from './types.js';
+import type { SupportedCategories } from './types.js';
 import { TITLE_FILE_LIST } from './titles/index.js';
 
 const _dirname = import.meta.dirname;
@@ -62,12 +62,12 @@ const getMDNFile = (filepath: string): string | null => {
  * Search the lib folder for a directory with a name containing the users search
  * Return the contents of the index.md file in that directory as a string
  * If multiple directories are found, prompt the user to select one
- * @param {SupportedLanguages} mdnCategory
+ * @param {SupportedCategories} mdnCategory
  * @param {string} query
  * @returns {Promise<string | null>}
  */
 const findMDNFile = async (
-    mdnCategory: SupportedLanguages,
+    mdnCategory: SupportedCategories,
     query: string
 ): Promise<string | null> => {
     const q = query.trim().toLowerCase();
@@ -103,12 +103,12 @@ const findMDNFile = async (
  * Search the lib folder for a directory with a name containing the users search.
  * Return the contents of the index.md file in that directory as a string.
  * If multiple directories are found, return the first one.
- * @param {SupportedLanguages} mdnCategory
+ * @param {SupportedCategories} mdnCategory
  * @param {string} query
  * @returns {string | null}
  */
 const optimisticallyFindMDNFile = (
-    mdnCategory: SupportedLanguages,
+    mdnCategory: SupportedCategories,
     query: string
 ): string | null => {
     const q = query.trim().toLowerCase();

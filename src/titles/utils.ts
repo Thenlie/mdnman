@@ -1,4 +1,4 @@
-import type { SupportedLanguages } from '../types.js';
+import type { SupportedCategories } from '../types.js';
 import { TITLE_FILE_LIST } from './index.js';
 
 /**
@@ -8,7 +8,7 @@ import { TITLE_FILE_LIST } from './index.js';
  * @param language
  * @returns {string | null}
  */
-const getPathFromTitle = (inputTitle: string, language: SupportedLanguages): string | null => {
+const getPathFromTitle = (inputTitle: string, language: SupportedCategories): string | null => {
     if (!(language in TITLE_FILE_LIST)) {
         console.error(
             `[getPathFromTitle] Error: "${language}" is not a supported language! Please choose "javascript", "html" or "css".`

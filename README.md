@@ -26,13 +26,14 @@ At it's core, mdnman is a command line interface for the MDN Web Docs. It is int
 
 #### Commands
 
-| Command     | Arguments        | Description                        |
-|-------------|------------------|------------------------------------|
-| interactive | query (string)   | Query MDN docs via prompts         |
-| js          | query (string)   | Query MDN JavaScript reference |
-| html        | query (string)   | Query MDN HTML reference       |
-| css         | query (string)   | Query MDN CSS reference        |
-| help        | command (string) | Get help for a specific command    |
+| Command     | Arguments        | Description                      |
+|-------------|------------------|----------------------------------|
+| interactive | query (string)   | Query MDN docs via prompts       |
+| js          | query (string)   | Query MDN JavaScript reference   |
+| html        | query (string)   | Query MDN HTML reference         |
+| css         | query (string)   | Query MDN CSS reference          |
+| glossary    | query (string)   | Query MDN Glossary               |
+| help        | command (string) | Get help for a specific command  |
 
 #### Options
 

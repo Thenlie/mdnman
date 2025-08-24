@@ -40,10 +40,10 @@ type MDNHeader = {
 };
 ```
 
-## `SupportedLanguages`
+## `SupportedCategories`
 
 MDNMan's supported categories of the MDN web docs.
 
 ```ts
-export type SupportedLanguages = 'javascript' | 'html' | 'css';
+export type SupportedCategories = 'javascript' | 'html' | 'css' | 'glossary';
 ```

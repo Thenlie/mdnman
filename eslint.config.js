@@ -4,8 +4,10 @@ import tslint from 'typescript-eslint';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
 
 export default [
-    { files: ['**/*.{js,mjs,cjs,ts}'] },
-    { languageOptions: { globals: globals.node } },
+    {
+        files: ['**/*.{js,mjs,cjs,ts}'],
+        languageOptions: { globals: globals.node },
+    },
     pluginJs.configs.recommended,
     ...tslint.configs.recommended,
     {
@@ -28,6 +30,6 @@ export default [
         },
     },
     {
-        ignores: ['dist/*'],
+        ignores: ['dist', 'lib', 'upstream', 'docs/.astro', 'docs/dist'],
     },
 ];
