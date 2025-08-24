@@ -4,6 +4,10 @@ JavaScript reference CLI made possible by [MDN Web Docs](https://developer.mozil
 
 The goal of MDN Man is to create an easy way for the MDN Web Docs to be displayed in other formats such as the command line and Discord/Slack bots. The repository features a build in command line interface as well as a number of functions that can be used to query, parse and display content from the MDN Web Docs.
 
+## Documentation
+
+View the official documentation at [thenlie.github.io/mdnman/](https://thenlie.github.io/mdnman/)
+
 ## Installation
 
 When using mdnman within a JavaScript or TypeScript project, install locally via NPM.
