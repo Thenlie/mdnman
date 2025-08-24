@@ -1,10 +1,20 @@
 import fs from 'fs';
-import path from 'path';
+import { fileURLToPath } from 'url';
+import path, { dirname } from 'path';
 import { select } from '@inquirer/prompts';
 import type { SupportedCategories } from './types.js';
 import { TITLE_FILE_LIST } from './titles/index.js';
 
-const _dirname = import.meta.dirname;
+let _dirname;
+
+if (import.meta.dirname) {
+    // Node.js >= 20.11
+    _dirname = import.meta.dirname;
+} else {
+    // Node.js <= 20.11
+    const _filename = fileURLToPath(import.meta.url);
+    _dirname = dirname(_filename);
+}
 
 /**
  * Check if a provided filepath is valid.
